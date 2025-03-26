@@ -1,27 +1,35 @@
 import { NextResponse } from 'next/server';
 import { RunTaskCommand, RunTaskCommandInput, LaunchType, AssignPublicIp } from "@aws-sdk/client-ecs";
-import {client} from "@/lib/aws"
+import { client } from "@/lib/aws"
 
 export async function POST(request: Request) {
   try { 
     const { videoId, videoTitle, podcastSlug } = await request.json();
-
+    
+    // Get the environment from environment variables
+    const environment = process.env.DEPLOYMENT_ENVIRONMENT;
+    
+    // Construct resource names with the environment
+    const clusterName = `ecs-cluster-podcast-summaries-${environment}`;
+    const taskDefinition = `podcast-summaries-${environment}`;
+    const containerName = `podcast-summaries-${environment}`;
+    const s3BucketName = `podcast-summaries-${environment}`;
 
     // Configure the ECS RunTask command based on your infrastructure
     const input: RunTaskCommandInput = {
-      cluster: "ecs-cluster-podcast-summaries-dev",
-      taskDefinition: "podcast-summaries-dev",
+      cluster: clusterName,
+      taskDefinition: taskDefinition,
       launchType: "FARGATE" as LaunchType,
-      networkConfiguration: {
+      networkConfiguration: {   
         awsvpcConfiguration: {
-          subnets: ["subnet-podcast-summaries-dev"],
+          subnets: ["subnet-01401cab59270f3ab"],
           assignPublicIp: "ENABLED" as AssignPublicIp
         }
       },
       overrides: {
         containerOverrides: [
           {
-            name: "podcast-summaries-dev", // Container name from your task definition
+            name: containerName,
             environment: [
               {
                 name: "VIDEO_ID",
@@ -37,7 +45,23 @@ export async function POST(request: Request) {
               },
               {
                 name: "S3_BUCKET",
-                value: "podcast-summaries-dev" // S3 bucket name from your infra
+                value: s3BucketName
+              },
+              {
+                name: "SUPABASE_URL",
+                value: process.env.SUPABASE_URL
+              },
+              {
+                name: "SUPABASE_SERVICE_ROLE_KEY",
+                value: process.env.SUPABASE_SERVICE_ROLE_KEY
+              },
+              {
+                name: "OPENAI_API_KEY",
+                value: process.env.OPENAI_API_KEY
+              },
+              {
+                name: "DEPLOYMENT_ENVIRONMENT",
+                value: environment
               }
             ]
           }
@@ -49,15 +73,13 @@ export async function POST(request: Request) {
     const command = new RunTaskCommand(input);
     const response = await client.send(command);
 
-    if (!response.tasks || response.tasks.length === 0) {
-      throw new Error("Failed to start ECS task");
-    }
+    console.log("ECS response: ", response)
 
     // Return success response with task info
     return NextResponse.json({
       success: true, 
       message: "ECS task initiated successfully",
-      taskArn: response.tasks[0].taskArn
+      environment: environment
     });
   } catch (error) {
     console.error('Error starting ECS task:', error);
