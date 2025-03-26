@@ -43,7 +43,7 @@ export function CreatePodcastSummaryForm() {
       <h2 className="text-secondary-foreground text-2xl font-semibold tracking-tight">
         Create Podcast Summary
       </h2>
-      <p className="text-muted-foreground mb-10 text-sm">
+      <p className="text-muted-foreground mb-12 text-sm">
         Enter the YouTube video details to create a podcast summary
       </p>
       <form
@@ -69,7 +69,7 @@ export function CreatePodcastSummaryForm() {
               id="videoId"
               type="text"
               name="videoId"
-              defaultValue={lastResult?.initialValue?.videoId as string}
+            //   defaultValue={lastResult?.initialValue?.videoId as string}
               aria-invalid={fields.videoId.errors ? "true" : undefined}
               aria-describedby={fields.videoId.errors ? "videoId-error" : undefined}
             />
@@ -83,7 +83,7 @@ export function CreatePodcastSummaryForm() {
               id="videoTitle"
               type="text"
               name="videoTitle"
-              defaultValue={lastResult?.initialValue?.videoTitle as string}
+            //   defaultValue={lastResult?.initialValue?.videoTitle as string}
               aria-invalid={fields.videoTitle.errors ? "true" : undefined}
               aria-describedby={fields.videoTitle.errors ? "videoTitle-error" : undefined}
             />
@@ -97,7 +97,7 @@ export function CreatePodcastSummaryForm() {
               id="podcastSlug"
               type="text"
               name="podcastSlug"
-              defaultValue={lastResult?.initialValue?.podcastSlug as string}
+            //   defaultValue={lastResult?.initialValue?.podcastSlug as string}
               aria-invalid={fields.podcastSlug.errors ? "true" : undefined}
               aria-describedby={fields.podcastSlug.errors ? "podcastSlug-error" : undefined}
             />

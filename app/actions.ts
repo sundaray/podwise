@@ -1,5 +1,6 @@
 "use server";
 
+import chalk from "chalk"
 import { parseWithZod } from "@conform-to/zod";
 import { CreatePodcastSummaryFormSchema } from "@/schema";
 import { SubmissionResult } from "@conform-to/dom";
@@ -20,7 +21,7 @@ export async function createPodcastSummary(
 
   // Return validation errors if any
   if (submission.status !== "success") {
-    return submission.reply();
+    return submission.reply({resetForm: false});
   }
 
   // Extract form data
@@ -55,7 +56,7 @@ export async function createPodcastSummary(
     }
 
     return {
-        ...submission.reply(),
+        ...submission.reply({resetForm: true}),
         success: true,
         message: result.message
       };
@@ -64,11 +65,12 @@ export async function createPodcastSummary(
   } catch (error) {
     errorOccurred = true;
     if (error instanceof Error) {
-      console.error(`[createPodcastSummary] error: `, error.message);
+      console.error(chalk.red("[createPodcastSummary] error: "), error.message);
     } else {
-      console.error(`[createPodcastSummary] error: `, error);
+      console.error(chalk.red("[createPodcastSummary] error: "), error);
     }
     return submission.reply({
+      resetForm: false,  
       formErrors: ["Something went wrong. Please try again."],
     });
   } 
