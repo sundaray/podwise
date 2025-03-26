@@ -24,13 +24,37 @@ export async function createPodcastSummary(
   let errorOccurred = false;
 
   try {
-        console.log("Creating podcast summary for:", {
+    console.log("Creating podcast summary for:", {
       videoId,
       videoTitle,
       podcastSlug,
     });
     
-    // We'll leave this empty for now as mentioned in your instructions
+    // Call the route handler to initiate the ECS task
+    const response = await fetch(`${process.env.NEXT_PUBLIC_APP_URL}/api/create-podcast-summary`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        videoId,
+        videoTitle,
+        podcastSlug,
+      }),
+    });
+
+    const result = await response.json();
+    
+    if (!response.ok) {
+      throw new Error(result.error || "Failed to start ECS task");
+    }
+    
+    // Return the successful response back to the client
+    return {
+        status: "success", // Add a status field to indicate success
+        message: result.message || "Podcast summary creation started successfully!",
+        ...submission.reply() // Include the original submission reply for form state
+      };
     
   } catch (error) {
     errorOccurred = true;
@@ -42,10 +66,5 @@ export async function createPodcastSummary(
     return submission.reply({
       formErrors: ["Something went wrong. Please try again."],
     });
-  } finally {
-    if (!errorOccurred) {
-      // Redirect to a success page or dashboard
-      redirect("/podcast-summaries");
-    }
-  }
+  } 
 }
