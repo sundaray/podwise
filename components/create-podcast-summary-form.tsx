@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import { useForm } from "@conform-to/react";
 import { parseWithZod } from "@conform-to/zod";
 import { useActionState } from "react";
@@ -10,6 +9,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Icons } from "@/components/icons";
 import { ErrorMessage } from "@/components/error-message";
+import { SuccessMessage } from "@/components/success-message"
 
 import { createPodcastSummary } from "@/app/actions";
 import { CreatePodcastSummaryFormSchema } from "@/schema";
@@ -36,12 +36,14 @@ export function CreatePodcastSummaryForm() {
     },
   });
 
+  const successMessage = lastResult?.success ? lastResult.message : null;
+
   return (
     <div className="px-4 sm:mx-auto sm:max-w-md">
       <h2 className="text-secondary-foreground text-2xl font-semibold tracking-tight">
         Create Podcast Summary
       </h2>
-      <p className="text-muted-foreground mb-8 text-sm">
+      <p className="text-muted-foreground mb-10 text-sm">
         Enter the YouTube video details to create a podcast summary
       </p>
       <form
@@ -49,8 +51,15 @@ export function CreatePodcastSummaryForm() {
         onSubmit={form.onSubmit}
         action={formAction}
         noValidate
-        aria-describedby={form.errors ? "form-error" : undefined}
+        aria-describedby={
+            successMessage 
+              ? "form-success"
+              : form.errors 
+                ? "form-error" 
+                : undefined
+          }
       >
+        {successMessage && <SuccessMessage id="form-success" message={successMessage} />}
         {form.errors && <ErrorMessage id="form-error" errors={form.errors} />}
         <div className="mt-4 grid gap-4">
           {/* YouTube Video ID field */}

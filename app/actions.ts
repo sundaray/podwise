@@ -1,13 +1,18 @@
 "use server";
 
-import { redirect } from "next/navigation";
 import { parseWithZod } from "@conform-to/zod";
 import { CreatePodcastSummaryFormSchema } from "@/schema";
+import { SubmissionResult } from "@conform-to/dom";
+
+type PodcastSummaryResult = SubmissionResult<string[]> & {
+    success?:boolean,
+    message?: string;
+};
 
 export async function createPodcastSummary(
   prevState: unknown,
   formData: FormData,
-) {
+):Promise<PodcastSummaryResult> {
   // Parse and validate form data using zod schema
   const submission = parseWithZod(formData, {
     schema: CreatePodcastSummaryFormSchema,
@@ -48,13 +53,13 @@ export async function createPodcastSummary(
     if (!response.ok) {
       throw new Error(result.error || "Failed to start ECS task");
     }
-    
-    // Return the successful response back to the client
+
     return {
-        status: "success", // Add a status field to indicate success
-        message: result.message || "Podcast summary creation started successfully!",
-        ...submission.reply() // Include the original submission reply for form state
+        ...submission.reply(),
+        success: true,
+        message: result.message
       };
+    
     
   } catch (error) {
     errorOccurred = true;
