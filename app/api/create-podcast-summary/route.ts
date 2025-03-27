@@ -48,6 +48,10 @@ export async function POST(request: Request) {
                 value: s3BucketName
               },
               {
+                name: "USER_EMAIL",
+                value: process.env.USER_EMAIL
+              },
+              {
                 name: "SUPABASE_URL",
                 value: process.env.SUPABASE_URL
               },
@@ -58,6 +62,10 @@ export async function POST(request: Request) {
               {
                 name: "OPENAI_API_KEY",
                 value: process.env.OPENAI_API_KEY
+              },
+              {
+                name: "YOUTUBE_API_KEY",
+                value: process.env.YOUTUBE_API_KEY
               },
               {
                 name: "DEPLOYMENT_ENVIRONMENT",

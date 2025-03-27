@@ -59,8 +59,8 @@ export function CreatePodcastSummaryForm() {
                 : undefined
           }
       >
-        {successMessage && <SuccessMessage id="form-success" message={successMessage} />}
-        {form.errors && <ErrorMessage id="form-error" errors={form.errors} />}
+        <SuccessMessage id="form-success" message={successMessage} />
+        <ErrorMessage id="form-error" errors={form.errors} />
         <div className="mt-4 grid gap-4">
           {/* YouTube Video ID field */}
           <div className="grid gap-2">
