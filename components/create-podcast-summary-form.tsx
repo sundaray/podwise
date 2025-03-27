@@ -7,6 +7,13 @@ import { useActionState } from "react";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 import { Icons } from "@/components/icons";
 import { ErrorMessage } from "@/components/error-message";
 import { SuccessMessage } from "@/components/success-message"
@@ -104,18 +111,30 @@ export function CreatePodcastSummaryForm() {
             <ErrorMessage id="podcastSlug-error" errors={fields.podcastSlug.errors} />
           </div>
 
-          {/* Podcast host field */}
+          {/* Podcast host field  */}
           <div className="grid gap-2">
             <Label htmlFor="podcastHost">Podcast host</Label>
-            <Input
-              id="podcastHost"
-              type="text"
+            <Select 
               name="podcastHost"
-              defaultValue={lastResult?.initialValue?.podcastHost as string}
-              aria-invalid={fields.podcastHost.errors ? "true" : undefined}
-              aria-describedby={fields.podcastHost.errors ? "podcastHost-error" : undefined}
+            >
+              <SelectTrigger
+                id="podcastHost"
+                className="w-full"
+                aria-invalid={fields.podcastHost.errors ? "true" : undefined}
+                aria-describedby={
+                  fields.podcastHost.errors ? "podcastHost-error" : undefined
+                }
+              >
+                <SelectValue placeholder="Select a host" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="mel-robbins">Mel Robbins</SelectItem>
+              </SelectContent>
+            </Select>
+            <ErrorMessage
+              id="podcastHost-error"
+              errors={fields.podcastHost.errors}
             />
-            <ErrorMessage id="podcastHost-error" errors={fields.podcastHost.errors} />
           </div>
 
           {/* Submit button */}

@@ -10,7 +10,8 @@ export const CreatePodcastSummaryFormSchema = z.object({
   podcastSlug: z
     .string({ required_error: "Podcast slug is required" }),
 
-  podcastHost: z
-    .string({ required_error: "Podcast host is required" })
+    podcastHost: z.enum(["mel-robbins", "joe-rogan", "tim-ferriss"], {
+      required_error: "Podcast host is required"
+    }),
 });
 
