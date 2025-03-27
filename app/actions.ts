@@ -21,20 +21,13 @@ export async function createPodcastSummary(
 
   // Return validation errors if any
   if (submission.status !== "success") {
-    return submission.reply({resetForm: false});
+    return submission.reply();
   }
 
   // Extract form data
-  const { videoId, videoTitle, podcastSlug } = submission.value;
-
-  let errorOccurred = false;
+  const { videoId, videoTitle, podcastSlug, podcastHost } = submission.value;
 
   try {
-    console.log("Creating podcast summary for:", {
-      videoId,
-      videoTitle,
-      podcastSlug,
-    });
     
     // Call the route handler to initiate the ECS task
     const response = await fetch(`${process.env.NEXT_PUBLIC_APP_URL}/api/create-podcast-summary`, {
@@ -46,6 +39,7 @@ export async function createPodcastSummary(
         videoId,
         videoTitle,
         podcastSlug,
+        podcastHost
       }),
     });
 
@@ -63,14 +57,12 @@ export async function createPodcastSummary(
     
     
   } catch (error) {
-    errorOccurred = true;
     if (error instanceof Error) {
       console.error(chalk.red("[createPodcastSummary] error: "), error.message);
     } else {
       console.error(chalk.red("[createPodcastSummary] error: "), error);
     }
     return submission.reply({
-      resetForm: false,  
       formErrors: ["Something went wrong. Please try again."],
     });
   } 

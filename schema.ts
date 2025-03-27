@@ -8,6 +8,9 @@ export const CreatePodcastSummaryFormSchema = z.object({
     .string({ required_error: "YouTube video title is required" }),
   
   podcastSlug: z
-    .string({ required_error: "Podcast slug is required" })
+    .string({ required_error: "Podcast slug is required" }),
+
+  podcastHost: z
+    .string({ required_error: "Podcast host is required" })
 });
 

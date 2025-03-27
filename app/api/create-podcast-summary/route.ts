@@ -4,7 +4,7 @@ import { client } from "@/lib/aws"
 
 export async function POST(request: Request) {
   try { 
-    const { videoId, videoTitle, podcastSlug } = await request.json();
+    const { videoId, videoTitle, podcastSlug, podcastHost } = await request.json();
     
     // Get the environment from environment variables
     const environment = process.env.DEPLOYMENT_ENVIRONMENT;
@@ -42,6 +42,10 @@ export async function POST(request: Request) {
               {
                 name: "PODCAST_SLUG",
                 value: podcastSlug
+              },
+              {
+                name: "PODCAST_HOST",
+                value: podcastHost
               },
               {
                 name: "S3_BUCKET",
