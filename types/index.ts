@@ -5,6 +5,7 @@ export type Frontmatter = {
   tags: string[]
   published: boolean
   image: string
+  podcastHost: string
 }
 
 
