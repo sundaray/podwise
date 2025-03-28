@@ -120,3 +120,20 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+@layer components {
+
+  .podcast-summary h1 {
+    @apply mb-4 font-semibold text-4xl text-pretty text-gray-900 tracking-tight mt-4;
+  }
+
+  .podcast-summary h2 {
+    @apply font-semibold text-gray-900 text-2xl mb-2 mt-6 tracking-tight;
+  }
+
+  .podcast-summary p {
+    @apply leading-6 sm:leading-7 text-gray-700;
+  }
+
+}

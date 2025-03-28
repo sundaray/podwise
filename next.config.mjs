@@ -5,8 +5,15 @@ import remarkMdxFrontmatter from "remark-mdx-frontmatter";
 const nextConfig = {
   pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
   images: {
-    domains: ["firebasestorage.googleapis.com"],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'podcast-summaries-dev.s3.amazonaws.com',
+        pathname: '/podcast-thumbnails/**',
+      },
+    ],
   },
+
 };
 
 
