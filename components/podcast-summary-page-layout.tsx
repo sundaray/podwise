@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { Frontmatter } from "@/types"
+import { format, parseISO } from 'date-fns'
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -19,9 +20,10 @@ export function PodcastSummaryPageLayout({ children, frontmatter }: PodcastSumma
 
   const imageUrl = `https://podcast-summaries-dev.s3.amazonaws.com/podcast-thumbnails/${image}`
 
+  const formattedDate = format(parseISO(publishedAt), 'MMMM d, yyyy')
+
   return (
-          <>
-          <article className="mx-auto max-w-3xl px-4 podcast-summary">
+          <div className="mx-auto max-w-3xl px-4 podcast-summary">
           <Breadcrumb>
             <BreadcrumbList>
               <BreadcrumbItem>
@@ -34,8 +36,12 @@ export function PodcastSummaryPageLayout({ children, frontmatter }: PodcastSumma
                   <BreadcrumbSeparator />
             </BreadcrumbList>
           </Breadcrumb>
+          <article className="podcast-summary">
             <header>
-              <h1 className="mt-7">{title}</h1>
+              <h1 className="mt-7 mb-2">{title}</h1>
+              <div className="text-gray-500 font-medium">
+              Posted <time dateTime={parseISO(publishedAt).toISOString()}>{formattedDate}</time>
+            </div>
               <Image
               src={imageUrl}
               alt={`Thumbnail for ${title}`}
@@ -49,6 +55,6 @@ export function PodcastSummaryPageLayout({ children, frontmatter }: PodcastSumma
             </header>
             {children}
           </article>
-          </>
+          </div>
   ) 
 }
