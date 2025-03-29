@@ -10,6 +10,8 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb"
 import {Icons} from "@/components/icons"
+import { formatHostForUrl } from "@/lib/utils";
+
 
 
 type PodcastSummaryPageLayoutProps = {
@@ -18,9 +20,12 @@ type PodcastSummaryPageLayoutProps = {
 } 
 
 export function PodcastSummaryPageLayout({ children, frontmatter }: PodcastSummaryPageLayoutProps) {
+  
   const { title, publishedAt, updatedAt, tags, image, podcastHost } = frontmatter
+  const formattedPodcastHost = formatHostForUrl(podcastHost);
 
-  const imageUrl = `https://podcast-summaries-dev.s3.amazonaws.com/podcast-thumbnails/${image}`
+
+  const imageUrl = `https://podcast-summaries-dev.s3.amazonaws.com/podcast-thumbnails/${formattedPodcastHost}/${image}`
 
   const formattedDate = format(parseISO(publishedAt), 'MMMM d, yyyy')
 
@@ -59,12 +64,12 @@ export function PodcastSummaryPageLayout({ children, frontmatter }: PodcastSumma
           </article>
           <div className="flex items-center mt-7">
   <Icons.tags className="size-5 mr-2 text-gray-500" aria-hidden="true" />
-  <ul className="flex flex-wrap gap-2">
+  <ul className="flex flex-wrap gap-3">
     {tags.map((tag) => (
       <li key={tag}>
         <Link 
           href={`/tags/${tag.toLowerCase()}`}
-          className="inline-block px-3 py-1 text-sm font-medium bg-gray-100 text-gray-700 rounded-full hover:bg-gray-200 hover:text-gray-900 transition"
+          className="inline-block px-4 py-2 text-sm font-medium bg-gray-100 text-gray-700 rounded-full hover:bg-gray-200 hover:text-gray-900 transition"
         >
           {tag}
         </Link>

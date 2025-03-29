@@ -17,5 +17,12 @@ export const CreatePodcastSummaryFormSchema = z.object({
 
 export const FetchYouTubeThumbnailFormSchema = z.object({
   videoId: z
-    .string({ required_error: "YouTube video ID is required" })
+    .string({ required_error: "YouTube video ID is required" }),
+  
+  podcastSlug: z
+    .string({ required_error: "Podcast slug is required" }),
+    
+  podcastHost: z.enum(["mel-robbins", "joe-rogan", "tim-ferriss"], {
+    required_error: "Podcast host is required"
+  }),
 });

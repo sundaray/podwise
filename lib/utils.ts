@@ -5,3 +5,6 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
 
+export function formatHostForUrl(host: string): string {
+  return host.toLowerCase().replace(/\s+/g, '-');
+}

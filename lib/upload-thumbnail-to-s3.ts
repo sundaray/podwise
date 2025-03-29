@@ -8,12 +8,12 @@ import { PutObjectCommand } from "@aws-sdk/client-s3";
  */
 export async function uploadThumbnailToS3(
   buffer: Buffer, 
-  fileName: string, 
-  extension: string
+  fileName: string,  
+  extension: string,
+  podcastHost: string
 ): Promise<string> {
-
   const bucketName = "podcast-summaries-dev";
-  const s3Key = `podcast-thumbnails/mel-robbins/${fileName}${extension}`;
+  const s3Key = `podcast-thumbnails/${podcastHost}/${fileName}${extension}`;
   
   const contentType = 
     extension === ".jpg" ? "image/jpeg" : 

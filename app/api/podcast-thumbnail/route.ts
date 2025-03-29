@@ -5,12 +5,11 @@ import { uploadThumbnailToS3 } from "@/lib/upload-thumbnail-to-s3";
 
 export async function POST(request: NextRequest) {
   try {
-    const body = await request.json();
-    const { videoId } = body;
+    const { videoId, podcastHost, podcastSlug } = await request.json();
     
-    if (!videoId) {
+    if (!videoId || !podcastHost || !podcastSlug) {
       return NextResponse.json(
-        { error: "Missing videoId in request body" },
+        { error: "Missing required fields: videoId, podcastHost, and podcastSlug are required" },
         { status: 400 }
       );
     }
@@ -25,7 +24,7 @@ export async function POST(request: NextRequest) {
     console.log(`Downloaded thumbnail from: ${thumbnailUrl}`);
     
     // Upload to S3
-    const s3Path = await uploadThumbnailToS3(thumbnailBuffer, videoId, extension);
+    const s3Path = await uploadThumbnailToS3(thumbnailBuffer, podcastSlug, extension, podcastHost);
     
     // Return success response with thumbnail URL and S3 path
     return NextResponse.json({ 

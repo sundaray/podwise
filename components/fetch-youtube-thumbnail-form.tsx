@@ -7,6 +7,13 @@ import { useActionState } from "react";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 import { Icons } from "@/components/icons";
 import { ErrorMessage } from "@/components/error-message";
 import { SuccessMessage } from "@/components/success-message";
@@ -32,7 +39,6 @@ export function FetchYouTubeThumbnailForm() {
   });
 
   const successMessage = lastResult?.success ? lastResult.message : null;
-  const thumbnailUrl = lastResult?.thumbnailUrl;
 
   return (
     <div className="px-4 sm:mx-auto sm:max-w-md">
@@ -54,6 +60,7 @@ export function FetchYouTubeThumbnailForm() {
         <SuccessMessage id="form-success" message={successMessage} />
         <ErrorMessage id="form-error" errors={form.errors} />
         <div className="grid gap-4">
+          {/* YouTube Video ID field */}
           <div className="grid gap-2">
             <Label htmlFor="videoId">YouTube video ID</Label>
             <Input
@@ -65,6 +72,48 @@ export function FetchYouTubeThumbnailForm() {
               aria-describedby={fields.videoId.errors ? "videoId-error" : undefined}
             />
             <ErrorMessage id="videoId-error" errors={fields.videoId.errors} />
+          </div>
+
+          {/* Podcast slug field */}
+          <div className="grid gap-2">
+            <Label htmlFor="podcastSlug">Podcast slug</Label>
+            <Input
+              id="podcastSlug"
+              type="text"
+              name="podcastSlug"
+              defaultValue={lastResult?.initialValue?.podcastSlug as string}
+              aria-invalid={fields.podcastSlug.errors ? "true" : undefined}
+              aria-describedby={fields.podcastSlug.errors ? "podcastSlug-error" : undefined}
+            />
+            <ErrorMessage id="podcastSlug-error" errors={fields.podcastSlug.errors} />
+          </div>
+
+          {/* Podcast host field */}
+          <div className="grid gap-2">
+            <Label htmlFor="podcastHost">Podcast host</Label>
+            <Select 
+              name="podcastHost"
+            >
+              <SelectTrigger
+                id="podcastHost"
+                className="w-full"
+                aria-invalid={fields.podcastHost.errors ? "true" : undefined}
+                aria-describedby={
+                  fields.podcastHost.errors ? "podcastHost-error" : undefined
+                }
+              >
+                <SelectValue placeholder="Select a host" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="mel-robbins">Mel Robbins</SelectItem>
+                <SelectItem value="joe-rogan">Joe Rogan</SelectItem>
+                <SelectItem value="tim-ferriss">Tim Ferriss</SelectItem>
+              </SelectContent>
+            </Select>
+            <ErrorMessage
+              id="podcastHost-error"
+              errors={fields.podcastHost.errors}
+            />
           </div>
 
           <Button type="submit" disabled={isPending} className="mt-2">
@@ -79,22 +128,6 @@ export function FetchYouTubeThumbnailForm() {
           </Button>
         </div>
       </form>
-      
-      {thumbnailUrl && (
-        <div className="mt-6">
-          <h3 className="text-secondary-foreground text-lg font-medium mb-2">Fetched Thumbnail</h3>
-          <div className="rounded-md overflow-hidden">
-            <img 
-              src={thumbnailUrl} 
-              alt="YouTube Thumbnail" 
-              className="w-full h-auto"
-            />
-          </div>
-          <p className="text-muted-foreground text-xs mt-2">
-            S3 Path: {lastResult?.s3Path}
-          </p>
-        </div>
-      )}
     </div>
   );
 }

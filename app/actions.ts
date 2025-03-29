@@ -69,8 +69,8 @@ export async function createPodcastSummary(
 }
 
 type ThumbnailResult = SubmissionResult<string[]> & {
-  success: boolean,
-  message: string;
+  success?: boolean,
+  message?: string;
 };
 
 export async function fetchYouTubeThumbnail(
@@ -86,7 +86,7 @@ export async function fetchYouTubeThumbnail(
     return submission.reply();
   }
 
-  const { videoId } = submission.value;
+  const { videoId, podcastHost, podcastSlug } = submission.value;
 
   try {
     const response = await fetch(`${process.env.NEXT_PUBLIC_APP_URL}/api/podcast-thumbnail`, {
@@ -94,7 +94,7 @@ export async function fetchYouTubeThumbnail(
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ videoId }),
+      body: JSON.stringify({ videoId, podcastHost, podcastSlug }),
     });
 
     const result = await response.json();
