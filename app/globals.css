@@ -129,7 +129,7 @@
   }
 
   .podcast-summary h2 {
-    @apply font-semibold text-gray-900 text-2xl mb-2 mt-7 tracking-tight;
+    @apply font-semibold text-gray-900 text-2xl mb-2 mt-7 tracking-tight text-pretty;
   }
 
   .podcast-summary p {
