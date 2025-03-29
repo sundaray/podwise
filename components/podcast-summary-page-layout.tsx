@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/breadcrumb"
 import {Icons} from "@/components/icons"
 import { formatHostForUrl } from "@/lib/utils";
+import { ScrollToTop } from "@/components/scroll-to-top"
 
 
 
@@ -30,7 +31,7 @@ export function PodcastSummaryPageLayout({ children, frontmatter }: PodcastSumma
   const formattedDate = format(parseISO(publishedAt), 'MMMM d, yyyy')
 
   return (
-          <div className="mx-auto max-w-3xl px-4 podcast-summary">
+          <div className="mx-auto max-w-3xl px-4 md:px-8 podcast-summary">
           <Breadcrumb>
             <BreadcrumbList>
               <BreadcrumbItem>
@@ -77,6 +78,7 @@ export function PodcastSummaryPageLayout({ children, frontmatter }: PodcastSumma
     ))}
   </ul>
 </div>
+<ScrollToTop />
           </div>
   ) 
 }
