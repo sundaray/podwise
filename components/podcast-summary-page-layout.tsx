@@ -1,13 +1,15 @@
 import Image from "next/image"
+import Link from "next/link"
 import { Frontmatter } from "@/types"
 import { format, parseISO } from 'date-fns'
 import {
   Breadcrumb,
   BreadcrumbItem,
   BreadcrumbLink,
-  BreadcrumbList,
+  BreadcrumbList, 
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb"
+import {Icons} from "@/components/icons"
 
 
 type PodcastSummaryPageLayoutProps = {
@@ -55,6 +57,21 @@ export function PodcastSummaryPageLayout({ children, frontmatter }: PodcastSumma
             </header>
             {children}
           </article>
+          <div className="flex items-center mt-7">
+  <Icons.tags className="size-5 mr-2 text-gray-500" aria-hidden="true" />
+  <ul className="flex flex-wrap gap-2">
+    {tags.map((tag) => (
+      <li key={tag}>
+        <Link 
+          href={`/tags/${tag.toLowerCase()}`}
+          className="inline-block px-3 py-1 text-sm font-medium bg-gray-100 text-gray-700 rounded-full hover:bg-gray-200 hover:text-gray-900 transition"
+        >
+          {tag}
+        </Link>
+      </li>
+    ))}
+  </ul>
+</div>
           </div>
   ) 
 }

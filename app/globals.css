@@ -125,7 +125,7 @@
 @layer components {
 
   .podcast-summary h1 {
-    @apply font-semibold text-4xl text-pretty text-gray-900 tracking-tight;
+    @apply font-bold text-4xl text-pretty text-gray-900 tracking-tight;
   }
 
   .podcast-summary h2 {
