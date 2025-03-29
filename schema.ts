@@ -15,3 +15,7 @@ export const CreatePodcastSummaryFormSchema = z.object({
     }),
 });
 
+export const FetchYouTubeThumbnailFormSchema = z.object({
+  videoId: z
+    .string({ required_error: "YouTube video ID is required" })
+});

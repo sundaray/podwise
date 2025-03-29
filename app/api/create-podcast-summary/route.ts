@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 import { RunTaskCommand, RunTaskCommandInput, LaunchType, AssignPublicIp } from "@aws-sdk/client-ecs";
-import { client } from "@/lib/aws"
+import { ecsClient } from "@/lib/aws"
 
 export async function POST(request: Request) {
   try { 
@@ -83,7 +83,7 @@ export async function POST(request: Request) {
 
     // Create and send the command to run the ECS task
     const command = new RunTaskCommand(input);
-    const response = await client.send(command);
+    const response = await ecsClient.send(command);
 
     console.log("ECS response: ", response)
 

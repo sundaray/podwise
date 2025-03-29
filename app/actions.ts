@@ -2,7 +2,7 @@
 
 import chalk from "chalk"
 import { parseWithZod } from "@conform-to/zod";
-import { CreatePodcastSummaryFormSchema } from "@/schema";
+import { CreatePodcastSummaryFormSchema, FetchYouTubeThumbnailFormSchema } from "@/schema";
 import { SubmissionResult } from "@conform-to/dom";
 
 type PodcastSummaryResult = SubmissionResult<string[]> & {
@@ -61,6 +61,58 @@ export async function createPodcastSummary(
       console.error(chalk.red("[createPodcastSummary] error: "), error.message);
     } else {
       console.error(chalk.red("[createPodcastSummary] error: "), error);
+    }
+    return submission.reply({
+      formErrors: ["Something went wrong. Please try again."],
+    });
+  } 
+}
+
+type ThumbnailResult = SubmissionResult<string[]> & {
+  success: boolean,
+  message: string;
+};
+
+export async function fetchYouTubeThumbnail(
+  prevState: unknown,
+  formData: FormData,
+): Promise<ThumbnailResult> {
+  // Parse and validate form data
+  const submission = parseWithZod(formData, {
+    schema: FetchYouTubeThumbnailFormSchema,
+  });
+
+  if (submission.status !== "success") {
+    return submission.reply();
+  }
+
+  const { videoId } = submission.value;
+
+  try {
+    const response = await fetch(`${process.env.NEXT_PUBLIC_APP_URL}/api/podcast-thumbnail`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ videoId }),
+    });
+
+    const result = await response.json();
+    
+    if (!response.ok) {
+      throw new Error(result.error || "Failed to fetch YouTube thumbnail");
+    }
+
+    return {
+      ...submission.reply(),
+      success: true,
+      message: "Successfully fetched and saved YouTube thumbnail",
+    };
+  } catch (error) {
+    if (error instanceof Error) {
+      console.error(chalk.red("[fetchYouTubeThumbnail] error: "), error.message);
+    } else {
+      console.error(chalk.red("[fetchYouTubeThumbnail] error: "), error);
     }
     return submission.reply({
       formErrors: ["Something went wrong. Please try again."],

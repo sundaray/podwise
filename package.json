@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@aws-sdk/client-ecs": "^3.775.0",
+    "@aws-sdk/client-s3": "^3.777.0",
     "@conform-to/react": "^1.3.0",
     "@conform-to/zod": "^1.3.0",
     "@mdx-js/loader": "^3.1.0",
@@ -30,6 +31,7 @@
     "react-dom": "^19.0.0",
     "remark-frontmatter": "^5.0.0",
     "remark-mdx-frontmatter": "^5.1.0",
+    "server-only": "^0.0.1",
     "tailwind-merge": "^3.0.2",
     "tw-animate-css": "^1.2.4",
     "zod": "^3.24.2"
