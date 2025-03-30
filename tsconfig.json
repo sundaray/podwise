@@ -22,6 +22,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "next.config.mjs", "components/success-message.tsxx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "next.config.mjs", "components/success-message.tsxx", "app/podcasts/mel-robbins/brain-hidden-power-boost-focus-confidence-creativity/page.mdx"],
   "exclude": ["node_modules"]
 }
