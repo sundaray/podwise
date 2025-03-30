@@ -121,19 +121,16 @@
   }
 }
 
-
 @layer components {
-
   .podcast-summary h1 {
-    @apply font-bold text-4xl text-pretty text-gray-900 tracking-tight;
+    @apply text-4xl font-bold tracking-tight text-pretty text-gray-900;
   }
 
   .podcast-summary h2 {
-    @apply font-semibold text-gray-900 text-2xl mb-2 mt-7 tracking-tight text-pretty;
+    @apply mt-7 mb-2 text-2xl font-semibold tracking-tight text-pretty text-gray-900;
   }
 
   .podcast-summary p {
-    @apply leading-6 sm:leading-7 text-gray-700 mb-7;
+    @apply mb-7 leading-6 text-gray-700 sm:leading-7;
   }
-
 }
