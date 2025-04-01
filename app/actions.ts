@@ -1,19 +1,22 @@
 "use server";
 
-import chalk from "chalk"
+import chalk from "chalk";
 import { parseWithZod } from "@conform-to/zod";
-import { CreatePodcastSummaryFormSchema, FetchYouTubeThumbnailFormSchema } from "@/schema";
+import {
+  CreatePodcastSummaryFormSchema,
+  FetchYouTubeThumbnailFormSchema,
+} from "@/schema";
 import { SubmissionResult } from "@conform-to/dom";
 
 type PodcastSummaryResult = SubmissionResult<string[]> & {
-    success?:boolean,
-    message?: string;
+  success?: boolean;
+  message?: string;
 };
 
 export async function createPodcastSummary(
   prevState: unknown,
   formData: FormData,
-):Promise<PodcastSummaryResult> {
+): Promise<PodcastSummaryResult> {
   // Parse and validate form data using zod schema
   const submission = parseWithZod(formData, {
     schema: CreatePodcastSummaryFormSchema,
@@ -28,34 +31,34 @@ export async function createPodcastSummary(
   const { videoId, videoTitle, podcastSlug, podcastHost } = submission.value;
 
   try {
-    
     // Call the route handler to initiate the ECS task
-    const response = await fetch(`${process.env.NEXT_PUBLIC_APP_URL}/api/create-podcast-summary`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
+    const response = await fetch(
+      `${process.env.NEXT_PUBLIC_APP_URL}/api/create-podcast-summary`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          videoId,
+          videoTitle,
+          podcastSlug,
+          podcastHost,
+        }),
       },
-      body: JSON.stringify({
-        videoId,
-        videoTitle,
-        podcastSlug,
-        podcastHost
-      }),
-    });
+    );
 
     const result = await response.json();
-    
+
     if (!response.ok) {
       throw new Error(result.error || "Failed to start ECS task");
     }
 
     return {
-        ...submission.reply({resetForm: true}),
-        success: true,
-        message: result.message
-      };
-    
-    
+      ...submission.reply({ resetForm: true }),
+      success: true,
+      message: result.message,
+    };
   } catch (error) {
     if (error instanceof Error) {
       console.error(chalk.red("[createPodcastSummary] error: "), error.message);
@@ -65,11 +68,11 @@ export async function createPodcastSummary(
     return submission.reply({
       formErrors: ["Something went wrong. Please try again."],
     });
-  } 
+  }
 }
 
 type ThumbnailResult = SubmissionResult<string[]> & {
-  success?: boolean,
+  success?: boolean;
   message?: string;
 };
 
@@ -89,33 +92,39 @@ export async function fetchYouTubeThumbnail(
   const { videoId, podcastHost, podcastSlug } = submission.value;
 
   try {
-    const response = await fetch(`${process.env.NEXT_PUBLIC_APP_URL}/api/podcast-thumbnail`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
+    const response = await fetch(
+      `${process.env.NEXT_PUBLIC_APP_URL}/api/podcast-thumbnail`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ videoId, podcastHost, podcastSlug }),
       },
-      body: JSON.stringify({ videoId, podcastHost, podcastSlug }),
-    });
+    );
 
     const result = await response.json();
-    
+
     if (!response.ok) {
       throw new Error(result.error || "Failed to fetch YouTube thumbnail");
     }
 
     return {
-      ...submission.reply(),
+      ...submission.reply({ resetForm: true }),
       success: true,
       message: "Successfully fetched and saved YouTube thumbnail",
     };
   } catch (error) {
     if (error instanceof Error) {
-      console.error(chalk.red("[fetchYouTubeThumbnail] error: "), error.message);
+      console.error(
+        chalk.red("[fetchYouTubeThumbnail] error: "),
+        error.message,
+      );
     } else {
       console.error(chalk.red("[fetchYouTubeThumbnail] error: "), error);
     }
     return submission.reply({
       formErrors: ["Something went wrong. Please try again."],
     });
-  } 
+  }
 }

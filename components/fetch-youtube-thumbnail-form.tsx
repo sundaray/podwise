@@ -45,7 +45,7 @@ export function FetchYouTubeThumbnailForm() {
       <h2 className="text-secondary-foreground text-2xl font-semibold tracking-tight">
         Fetch YouTube Thumbnail
       </h2>
-      <p className="text-muted-foreground text-sm mb-4">
+      <p className="text-muted-foreground mb-4 text-sm">
         Enter a YouTube video ID to fetch and save its thumbnail
       </p>
       <form
@@ -54,7 +54,11 @@ export function FetchYouTubeThumbnailForm() {
         action={formAction}
         noValidate
         aria-describedby={
-          successMessage ? "form-success" : form.errors ? "form-error" : undefined
+          successMessage
+            ? "form-success"
+            : form.errors
+              ? "form-error"
+              : undefined
         }
       >
         <SuccessMessage id="form-success" message={successMessage} />
@@ -69,7 +73,9 @@ export function FetchYouTubeThumbnailForm() {
               name="videoId"
               defaultValue={lastResult?.initialValue?.videoId as string}
               aria-invalid={fields.videoId.errors ? "true" : undefined}
-              aria-describedby={fields.videoId.errors ? "videoId-error" : undefined}
+              aria-describedby={
+                fields.videoId.errors ? "videoId-error" : undefined
+              }
             />
             <ErrorMessage id="videoId-error" errors={fields.videoId.errors} />
           </div>
@@ -83,17 +89,20 @@ export function FetchYouTubeThumbnailForm() {
               name="podcastSlug"
               defaultValue={lastResult?.initialValue?.podcastSlug as string}
               aria-invalid={fields.podcastSlug.errors ? "true" : undefined}
-              aria-describedby={fields.podcastSlug.errors ? "podcastSlug-error" : undefined}
+              aria-describedby={
+                fields.podcastSlug.errors ? "podcastSlug-error" : undefined
+              }
             />
-            <ErrorMessage id="podcastSlug-error" errors={fields.podcastSlug.errors} />
+            <ErrorMessage
+              id="podcastSlug-error"
+              errors={fields.podcastSlug.errors}
+            />
           </div>
 
           {/* Podcast host field */}
           <div className="grid gap-2">
             <Label htmlFor="podcastHost">Podcast host</Label>
-            <Select 
-              name="podcastHost"
-            >
+            <Select name="podcastHost">
               <SelectTrigger
                 id="podcastHost"
                 className="w-full"
@@ -106,7 +115,7 @@ export function FetchYouTubeThumbnailForm() {
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value="mel-robbins">Mel Robbins</SelectItem>
-                <SelectItem value="joe-rogan">Joe Rogan</SelectItem>
+                <SelectItem value="chris-williamson">Chris Williamson</SelectItem>
                 <SelectItem value="tim-ferriss">Tim Ferriss</SelectItem>
               </SelectContent>
             </Select>
@@ -119,7 +128,7 @@ export function FetchYouTubeThumbnailForm() {
           <Button type="submit" disabled={isPending} className="mt-2">
             {isPending ? (
               <>
-                <Icons.loader className="size-3 animate-spin mr-2" />
+                <Icons.loader className="mr-2 size-3 animate-spin" />
                 Fetching...
               </>
             ) : (

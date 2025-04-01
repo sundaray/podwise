@@ -18,12 +18,17 @@ type PodcastSummaryPageLayoutProps = {
   frontmatter: Frontmatter;
 };
 
+// Tiny 1x1 SVG for solid color #F3F4F6, URL-encoded for Data URL
+const solidColorPlaceholder =
+  "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1' fill='%23F3F4F6'%3E%3Crect width='1' height='1'/%3E%3C/svg%3E";
+
 export function PodcastSummaryPageLayout({
   children,
   frontmatter,
 }: PodcastSummaryPageLayoutProps) {
   const { title, publishedAt, updatedAt, tags, image, podcastHost } =
     frontmatter;
+
   const formattedPodcastHost = formatHostForUrl(podcastHost);
 
   const imageUrl = `https://podcast-summaries-dev.s3.amazonaws.com/podcast-thumbnails/${formattedPodcastHost}/${image}`;
@@ -72,18 +77,19 @@ export function PodcastSummaryPageLayout({
             quality={100}
             priority
             className="my-7 h-auto w-full"
+            placeholder={solidColorPlaceholder}
           />
         </header>
         {children}
       </article>
       <div className="mt-7 flex items-center">
-        <Icons.tags className="mr-4 size-6 text-gray-500" aria-hidden="true" />
+        <span className="mr-4 font-semibold text-gray-900">Tags:</span>
         <ul className="flex flex-wrap gap-3">
           {tags.map((tag) => (
             <li key={tag}>
               <Link
                 href={`/tags/${tag.toLowerCase()}`}
-                className="inline-block rounded-full border bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700 transition hover:bg-gray-200 hover:text-gray-900"
+                className="rounded-full border bg-gray-100 px-2 py-1 text-sm font-medium text-gray-700 transition hover:bg-gray-200 hover:text-gray-900 md:px-4 md:py-2"
               >
                 {tag}
               </Link>
