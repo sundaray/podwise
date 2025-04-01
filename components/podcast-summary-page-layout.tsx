@@ -61,7 +61,7 @@ export function PodcastSummaryPageLayout({
       </Breadcrumb>
       <article className="podcast-summary">
         <header>
-          <h1 className="mt-7 mb-2">{title}</h1>
+          <h1 className="my-7">{title}</h1>
           <div className="font-medium text-gray-500">
             Posted{" "}
             <time dateTime={parseISO(publishedAt).toISOString()}>
