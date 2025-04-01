@@ -16,13 +16,12 @@ import {
 } from "@/components/ui/select";
 import { Icons } from "@/components/icons";
 import { ErrorMessage } from "@/components/error-message";
-import { SuccessMessage } from "@/components/success-message"
+import { SuccessMessage } from "@/components/success-message";
 
 import { createPodcastSummary } from "@/app/actions";
 import { CreatePodcastSummaryFormSchema } from "@/schema";
 
 export function CreatePodcastSummaryForm() {
-
   // Set up form state using useActionState
   const [lastResult, formAction, isPending] = useActionState(
     createPodcastSummary,
@@ -50,7 +49,7 @@ export function CreatePodcastSummaryForm() {
       <h2 className="text-secondary-foreground text-2xl font-semibold tracking-tight">
         Create Podcast Summary
       </h2>
-      <p className="text-muted-foreground text-sm mb-4">
+      <p className="text-muted-foreground mb-4 text-sm">
         Enter the YouTube video details to create a podcast summary
       </p>
       <form
@@ -59,12 +58,12 @@ export function CreatePodcastSummaryForm() {
         action={formAction}
         noValidate
         aria-describedby={
-            successMessage 
-              ? "form-success"
-              : form.errors 
-                ? "form-error" 
-                : undefined
-          }
+          successMessage
+            ? "form-success"
+            : form.errors
+              ? "form-error"
+              : undefined
+        }
       >
         <SuccessMessage id="form-success" message={successMessage} />
         <ErrorMessage id="form-error" errors={form.errors} />
@@ -78,7 +77,9 @@ export function CreatePodcastSummaryForm() {
               name="videoId"
               defaultValue={lastResult?.initialValue?.videoId as string}
               aria-invalid={fields.videoId.errors ? "true" : undefined}
-              aria-describedby={fields.videoId.errors ? "videoId-error" : undefined}
+              aria-describedby={
+                fields.videoId.errors ? "videoId-error" : undefined
+              }
             />
             <ErrorMessage id="videoId-error" errors={fields.videoId.errors} />
           </div>
@@ -92,9 +93,14 @@ export function CreatePodcastSummaryForm() {
               name="videoTitle"
               defaultValue={lastResult?.initialValue?.videoTitle as string}
               aria-invalid={fields.videoTitle.errors ? "true" : undefined}
-              aria-describedby={fields.videoTitle.errors ? "videoTitle-error" : undefined}
+              aria-describedby={
+                fields.videoTitle.errors ? "videoTitle-error" : undefined
+              }
             />
-            <ErrorMessage id="videoTitle-error" errors={fields.videoTitle.errors} />
+            <ErrorMessage
+              id="videoTitle-error"
+              errors={fields.videoTitle.errors}
+            />
           </div>
 
           {/* Podcast slug field */}
@@ -106,17 +112,20 @@ export function CreatePodcastSummaryForm() {
               name="podcastSlug"
               defaultValue={lastResult?.initialValue?.podcastSlug as string}
               aria-invalid={fields.podcastSlug.errors ? "true" : undefined}
-              aria-describedby={fields.podcastSlug.errors ? "podcastSlug-error" : undefined}
+              aria-describedby={
+                fields.podcastSlug.errors ? "podcastSlug-error" : undefined
+              }
             />
-            <ErrorMessage id="podcastSlug-error" errors={fields.podcastSlug.errors} />
+            <ErrorMessage
+              id="podcastSlug-error"
+              errors={fields.podcastSlug.errors}
+            />
           </div>
 
           {/* Podcast host field  */}
           <div className="grid gap-2">
             <Label htmlFor="podcastHost">Podcast host</Label>
-            <Select 
-              name="podcastHost"
-            >
+            <Select name="podcastHost">
               <SelectTrigger
                 id="podcastHost"
                 className="w-full"
@@ -141,7 +150,7 @@ export function CreatePodcastSummaryForm() {
           <Button type="submit" disabled={isPending} className="mt-2">
             {isPending ? (
               <>
-                <Icons.loader className="size-3 animate-spin mr-2" />
+                <Icons.loader className="mr-2 size-3 animate-spin" />
                 Creating...
               </>
             ) : (

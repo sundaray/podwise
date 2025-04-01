@@ -44,7 +44,7 @@ export function PodcastSummaryPageLayout({
               href="/"
               className="font-medium text-sky-600 hover:text-sky-600 hover:underline hover:underline-offset-2"
             >
-              Podcasts
+              Home
             </BreadcrumbLink>
           </BreadcrumbItem>
           <BreadcrumbSeparator />
