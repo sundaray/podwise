@@ -29,7 +29,7 @@
     ".next/types/**/*.ts",
     "next.config.mjs",
     "components/success-message.tsxx",
-    "app/(podcasts)/mel-robbins/brain-hidden-power-boost-focus-confidence-creativity/page.mdx"
+    "app/podcasts/mel-robbins/brain-hidden-power-boost-focus-confidence-creativity/page.mdx"
   ],
   "exclude": ["node_modules"]
 }
