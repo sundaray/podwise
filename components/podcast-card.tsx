@@ -42,7 +42,7 @@ export async function PodcastCard({ podcast, hostPath }: PodcastCardProps) {
       </h2>
 
       {videoDetails && (
-        <p className="mt-2 text-sm text-gray-500">
+        <p className="mt-2 text-sm text-gray-700">
           {videoDetails.formattedViewCount} •{" "}
           {videoDetails.formattedPublishedDate}
         </p>

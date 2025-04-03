@@ -50,7 +50,7 @@ export function PodcastSummaryPageLayout({
           <BreadcrumbSeparator />
           <BreadcrumbItem>
             <BreadcrumbLink
-              href="/podcasts/mel-robbins"
+              href={`/podcasts/${formattedPodcastHost}`}
               className="font-medium text-sky-600 hover:text-sky-600 hover:underline hover:underline-offset-2"
             >
               {podcastHost}
