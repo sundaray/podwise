@@ -6,7 +6,11 @@ type SuccessMessageProps = {
   className?: string;
 };
 
-export function SuccessMessage({ id, message, className }: SuccessMessageProps) {
+export function SuccessMessage({
+  id,
+  message,
+  className,
+}: SuccessMessageProps) {
   // Define base classes that will always be applied
   const baseClasses =
     "min-h-[20px] duration-200 text-sm text-green-600 ease-out animate-in fade-in-0 slide-in-from-left-1";

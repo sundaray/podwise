@@ -63,9 +63,9 @@ export function FetchYouTubeThumbnailForm() {
       >
         <SuccessMessage id="form-success" message={successMessage} />
         <ErrorMessage id="form-error" errors={form.errors} />
-        <div className="grid gap-4">
+        <div className="grid gap-2">
           {/* YouTube Video ID field */}
-          <div className="grid gap-2">
+          <div className="mt-4 grid gap-1">
             <Label htmlFor="videoId">YouTube video ID</Label>
             <Input
               id="videoId"
@@ -81,7 +81,7 @@ export function FetchYouTubeThumbnailForm() {
           </div>
 
           {/* Podcast slug field */}
-          <div className="grid gap-2">
+          <div className="grid gap-1">
             <Label htmlFor="podcastSlug">Podcast slug</Label>
             <Input
               id="podcastSlug"
@@ -100,7 +100,7 @@ export function FetchYouTubeThumbnailForm() {
           </div>
 
           {/* Podcast host field */}
-          <div className="grid gap-2">
+          <div className="grid gap-1">
             <Label htmlFor="podcastHost">Podcast host</Label>
             <Select name="podcastHost">
               <SelectTrigger
@@ -115,7 +115,9 @@ export function FetchYouTubeThumbnailForm() {
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value="mel-robbins">Mel Robbins</SelectItem>
-                <SelectItem value="chris-williamson">Chris Williamson</SelectItem>
+                <SelectItem value="chris-williamson">
+                  Chris Williamson
+                </SelectItem>
                 <SelectItem value="tim-ferriss">Tim Ferriss</SelectItem>
               </SelectContent>
             </Select>
@@ -125,7 +127,7 @@ export function FetchYouTubeThumbnailForm() {
             />
           </div>
 
-          <Button type="submit" disabled={isPending} className="mt-2">
+          <Button type="submit" disabled={isPending}>
             {isPending ? (
               <>
                 <Icons.loader className="mr-2 size-3 animate-spin" />
