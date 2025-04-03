@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { getVideoDetails } from "@/lib/get-video-details";
 
 type PodcastCardProps = {
   podcast: {
@@ -7,6 +8,7 @@ type PodcastCardProps = {
     slug: string;
     image: string;
     podcastHost: string;
+    videoId: string;
   };
   hostPath: string;
 };
@@ -14,8 +16,10 @@ type PodcastCardProps = {
 const solidColorPlaceholder =
   "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1' fill='%23F3F4F6'%3E%3Crect width='1' height='1'/%3E%3C/svg%3E";
 
-export function PodcastCard({ podcast, hostPath }: PodcastCardProps) {
-  const { title, slug, image } = podcast;
+export async function PodcastCard({ podcast, hostPath }: PodcastCardProps) {
+  const { title, slug, image, videoId } = podcast;
+
+  const videoDetails = await getVideoDetails(videoId);
 
   return (
     <div className="group relative overflow-hidden">
@@ -33,9 +37,16 @@ export function PodcastCard({ podcast, hostPath }: PodcastCardProps) {
         />
       </div>
 
-      <h2 className="text-md mt-3 font-bold tracking-tight text-gray-900 transition-colors group-hover:text-sky-600 md:text-lg">
+      <h2 className="text-md mt-2 font-bold tracking-tight text-gray-900 transition-colors group-hover:text-sky-600 md:text-lg">
         {title}
       </h2>
+
+      {videoDetails && (
+        <p className="mt-2 text-sm text-gray-500">
+          {videoDetails.formattedViewCount} •{" "}
+          {videoDetails.formattedPublishedDate}
+        </p>
+      )}
 
       <Link
         href={`/podcasts/${hostPath}/${slug}`}
