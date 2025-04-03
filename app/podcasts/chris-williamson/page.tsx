@@ -27,7 +27,7 @@ export default async function ChrisWilliamsonPodcastPage() {
   });
 
   return (
-    <div className="mx-auto max-w-6xl px-4">
+    <div className="container mx-auto max-w-5xl px-4">
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 md:gap-10">
         {sortedPodcasts.map((podcast) => (
           <PodcastCard key={podcast.slug} podcast={podcast} hostPath={host} />

@@ -22,22 +22,19 @@ export async function PodcastCard({ podcast, hostPath }: PodcastCardProps) {
   const videoDetails = await getVideoDetails(videoId);
 
   return (
-    <div className="group relative overflow-hidden">
-      <div className="aspect-video overflow-hidden">
-        <Image
-          src={`https://podcast-summaries-dev.s3.amazonaws.com/podcast-thumbnails/${hostPath}/${image}`}
-          alt={`Thumbnail for ${title}`}
-          width={1280}
-          height={720}
-          sizes="(min-width: 1024px) 25vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw"
-          quality={100}
-          priority
-          className="h-auto w-full object-cover transition-all duration-200 group-hover:brightness-80"
-          placeholder={solidColorPlaceholder}
-        />
-      </div>
-
-      <h2 className="text-md mt-2 font-bold tracking-tight text-gray-900 transition-colors group-hover:text-sky-600 md:text-lg">
+    <div className="group relative">
+      <Image
+        src={`https://podcast-summaries-dev.s3.amazonaws.com/podcast-thumbnails/${hostPath}/${image}`}
+        alt={`Thumbnail for ${title}`}
+        width={1280}
+        height={720}
+        sizes="(min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw"
+        quality={100}
+        priority
+        className="h-auto w-full object-cover transition-all group-hover:brightness-80"
+        placeholder={solidColorPlaceholder}
+      />
+      <h2 className="text-md mt-2 font-bold tracking-tight text-gray-900 transition-colors group-hover:text-sky-600">
         {title}
       </h2>
 
