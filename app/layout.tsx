@@ -30,7 +30,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
     >
       <body className="bg-background min-h-screen antialiased">
         <NextTopLoader showSpinner={false} color="#0284C7" shadow={false} />
-        <main className="flex-1 py-16">{children}</main>
+          <main className="flex-1 py-16">{children}</main>
       </body>
     </html>
   );
