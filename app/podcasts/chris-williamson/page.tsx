@@ -45,8 +45,8 @@ export default async function ChrisWilliamsonPodcastPage({
   const paginatedPodcasts = sortedPodcasts.slice(startIndex, endIndex);
 
   return (
-    <div className="container mx-auto max-w-5xl px-4">
-      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 md:gap-10">
+    <div className="group container mx-auto max-w-5xl px-4">
+      <div className="grid grid-cols-1 gap-6 group-has-[[data-pending]]:animate-pulse sm:grid-cols-2 md:grid-cols-3 md:gap-10">
         {paginatedPodcasts.map((podcast) => (
           <PodcastCard key={podcast.slug} podcast={podcast} hostPath={host} />
         ))}

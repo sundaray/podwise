@@ -1,7 +1,6 @@
 "use client";
 
-import * as React from "react";
-import { useSearchParams } from "next/navigation";
+import { useTransition } from "react";
 import { useQueryState, parseAsInteger } from "nuqs";
 import { useMemo } from "react"; // Import useMemo
 
@@ -27,8 +26,14 @@ export function PodcastPagination({
   totalPages,
   className,
 }: PodcastPaginationProps) {
-  const [page] = useQueryState("page", parseAsInteger.withDefault(1));
-  const currentSearchParams = useSearchParams();
+  const [isLoading, startTransition] = useTransition();
+  const [page, setPage] = useQueryState(
+    "page",
+    parseAsInteger.withDefault(1).withOptions({
+      startTransition,
+      shallow: false,
+    }),
+  );
 
   // --- Logic to calculate pagination range ---
   const paginationRange = useMemo((): (number | string)[] => {
@@ -88,14 +93,6 @@ export function PodcastPagination({
   }, [page, totalPages]);
   // --- End of pagination range logic ---
 
-  // Helper creates href objects for next/link
-  const createPageHref = (pageNumber: number | string) => {
-    if (typeof pageNumber !== "number") return {};
-    const params = new URLSearchParams(currentSearchParams);
-    params.set("page", String(pageNumber));
-    return { search: params.toString() };
-  };
-
   // Don't render if only one page
   if (totalPages <= 1) {
     return null;
@@ -105,15 +102,19 @@ export function PodcastPagination({
   const isLastPage = page === totalPages;
 
   return (
-    <Pagination className={cn("my-8 border-t py-12", className)}>
+    <Pagination
+      className={cn("my-8 border-t py-12", className)}
+      data-pending={isLoading ? "" : undefined}
+    >
       <PaginationContent>
         {/* Previous Button */}
         <PaginationItem>
           <PaginationPrevious
-            href={isFirstPage ? {} : createPageHref(page - 1)}
+            href="#"
             aria-disabled={isFirstPage}
             tabIndex={isFirstPage ? -1 : undefined}
             className={cn(isFirstPage && "pointer-events-none opacity-50")}
+            onClick={() => setPage(page - 1)}
           />
         </PaginationItem>
 
@@ -137,8 +138,9 @@ export function PodcastPagination({
           return (
             <PaginationItem key={pageNumber}>
               <PaginationLink
-                href={createPageHref(pageNumber)}
+                href="#"
                 isActive={isActive}
+                onClick={() => setPage(pageNumber)}
               >
                 {pageNumber}
               </PaginationLink>
@@ -149,10 +151,11 @@ export function PodcastPagination({
         {/* Next Button */}
         <PaginationItem>
           <PaginationNext
-            href={isLastPage ? {} : createPageHref(page + 1)}
+            href="#"
             aria-disabled={isLastPage}
             tabIndex={isLastPage ? -1 : undefined}
             className={cn(isLastPage && "pointer-events-none opacity-50")}
+            onClick={() => setPage(page + 1)}
           />
         </PaginationItem>
       </PaginationContent>
