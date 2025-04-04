@@ -5,6 +5,7 @@ export const chrisWilliamsonPodcastList = [
     image: "15-harsh-truths-from-greatest-founders-david-senra.jpg",
     podcastHost: "Chris Williamson",
     videoId: "p_8KKY8fQdA",
+    isPremium: false,
   },
   {
     title: "44 Harsh Truths About Human Nature - Naval Ravikant",
@@ -12,6 +13,7 @@ export const chrisWilliamsonPodcastList = [
     image: "44-harsh-truths-about-human-nature-naval-ravikant.jpg",
     podcastHost: "Chris Williamson",
     videoId: "KyfUysrNaco",
+    isPremium: true,
   },
   {
     title: "9 Ways People Destroy Their Own Relationships - Jillian Turecki",
@@ -19,6 +21,7 @@ export const chrisWilliamsonPodcastList = [
     image: "9-ways-people-destroy-relationships-jillian-turecki.jpg",
     podcastHost: "Chris Williamson",
     videoId: "_DPyc6D9-Xs",
+    isPremium: true,
   },
   {
     title: "The Key Strategies Of Behaviour Change - Dr Rangan Chatterjee",
@@ -26,6 +29,7 @@ export const chrisWilliamsonPodcastList = [
     image: "behavior-change-strategies-rangan-chatterjee.jpg",
     podcastHost: "Chris Williamson",
     videoId: "qBcH7puhMo8",
+    isPremium: false,
   },
   {
     title:
@@ -34,6 +38,7 @@ export const chrisWilliamsonPodcastList = [
     image: "break-free-from-fear-erwin-mcmanus.jpg",
     podcastHost: "Chris Williamson",
     videoId: "eBYC63aiqRU",
+    isPremium: true,
   },
   {
     title: "How To Build An Extraordinary Life - Tony Robbins",
@@ -41,6 +46,7 @@ export const chrisWilliamsonPodcastList = [
     image: "build-extraordinary-life-tony-robbins.jpg",
     podcastHost: "Chris Williamson",
     videoId: "eeU1fNZ2pZA",
+    isPremium: true,
   },
   {
     title:
@@ -49,6 +55,7 @@ export const chrisWilliamsonPodcastList = [
     image: "childhood-bullying-adult-mental-health-tracy-vaillancourt.jpg",
     podcastHost: "Chris Williamson",
     videoId: "RE4n29uEldA",
+    isPremium: true,
   },
   {
     title: "How To Defeat Your Social Media Addiction - Catherine Price",
@@ -56,6 +63,7 @@ export const chrisWilliamsonPodcastList = [
     image: "defeat-social-media-addiction-catherine-price.jpg",
     podcastHost: "Chris Williamson",
     videoId: "JHjhw8Ek3Zk",
+    isPremium: true,
   },
   {
     title: "How To Design Your Life For Peak Creativity - Dan Koe",
@@ -63,6 +71,7 @@ export const chrisWilliamsonPodcastList = [
     image: "design-life-for-peak-creativity-dan-koe.jpg",
     podcastHost: "Chris Williamson",
     videoId: "xfi2O6xjr_w",
+    isPremium: true,
   },
   {
     title: "Destroy Your Mental Limits & Unlock Your Best Self - Adam Grant",
@@ -70,6 +79,7 @@ export const chrisWilliamsonPodcastList = [
     image: "destroy-mental-limits-unlock-best-self-adam-grant.jpg",
     podcastHost: "Chris Williamson",
     videoId: "DLfWv_Ey27s",
+    isPremium: false,
   },
   {
     title:
@@ -78,6 +88,7 @@ export const chrisWilliamsonPodcastList = [
     image: "effortless-confidence-social-persuasion-vanessa-van-edwards.jpg",
     podcastHost: "Chris Williamson",
     videoId: "ITxbwgyGh6w",
+    isPremium: true,
   },
   {
     title:
@@ -86,6 +97,7 @@ export const chrisWilliamsonPodcastList = [
     image: "emotional-intelligence-self-understanding-julie-smith.jpg",
     podcastHost: "Chris Williamson",
     videoId: "-lDza7kSqvw",
+    isPremium: true,
   },
   {
     title: "How To Fix Your Negative Patterns - Alain de Botton",
@@ -93,6 +105,7 @@ export const chrisWilliamsonPodcastList = [
     image: "fix-negative-patterns-alain-de-botton.jpg",
     podcastHost: "Chris Williamson",
     videoId: "BQHo-z-pA8E",
+    isPremium: true,
   },
   {
     title: "How To Fix Your Sleep & Supercharge Your Life - Dr Matthew Walker",
@@ -100,6 +113,7 @@ export const chrisWilliamsonPodcastList = [
     image: "fix-sleep-supercharge-life-matthew-walker.jpg",
     podcastHost: "Chris Williamson",
     videoId: "Hf_NTmu2uvg",
+    isPremium: false,
   },
   {
     title: "Why Do We Date People That Need Fixing？ - Dr John Delony",
@@ -107,6 +121,7 @@ export const chrisWilliamsonPodcastList = [
     image: "fixing-relationships-john-delony.jpg",
     podcastHost: "Chris Williamson",
     videoId: "yscguH7dLbY",
+    isPremium: true,
   },
   {
     title: "How To Focus On What Matters Most - Greg McKeown",
@@ -114,6 +129,7 @@ export const chrisWilliamsonPodcastList = [
     image: "focus-on-what-matters-most-greg-mckeown.jpg",
     podcastHost: "Chris Williamson",
     videoId: "ZDJiIFc3Mj8",
+    isPremium: false,
   },
   {
     title: "Has Modern Society Set Women Up For Failure? - Louise Perry",
@@ -121,6 +137,7 @@ export const chrisWilliamsonPodcastList = [
     image: "has-modern-society-set-women-up-for-failure-louise-perry.jpg",
     podcastHost: "Chris Williamson",
     videoId: "NkSXtukw1VA",
+    isPremium: true,
   },
   {
     title: "The Hidden Truth About Our Collapsing Birth Rates - Mads Larsen",
@@ -128,6 +145,7 @@ export const chrisWilliamsonPodcastList = [
     image: "hidden-truth-about-collapsing-birth-rates-mads-larsen.jpg",
     podcastHost: "Chris Williamson",
     videoId: "7fL_xEBYTDs",
+    isPremium: false,
   },
   {
     title: "How Nervous People Can Perform Under Pressure - Steve Magness",
@@ -135,6 +153,7 @@ export const chrisWilliamsonPodcastList = [
     image: "how-nervous-people-can-perform-under-pressure-steve-magness.jpg",
     podcastHost: "Chris Williamson",
     videoId: "s6bRXTvgVVw",
+    isPremium: true,
   },
   {
     title: "The Invisible Psychology Of Happiness & Meaning - Lionel Page",
@@ -142,6 +161,7 @@ export const chrisWilliamsonPodcastList = [
     image: "invisible-psychology-happiness-meaning-lionel-page.jpg",
     podcastHost: "Chris Williamson",
     videoId: "5bXDdrG4kw4",
+    isPremium: false,
   },
   {
     title: "Life Lessons From A Modern Cowboy - Dry Creek Dewayne",
@@ -149,6 +169,7 @@ export const chrisWilliamsonPodcastList = [
     image: "life-lessons-from-modern-cowboy-dry-creek-dewayne.jpg",
     podcastHost: "Chris Williamson",
     videoId: "YB8ma6fmb1A",
+    isPremium: false,
   },
   {
     title: "Exercise Scientist’s Masterclass On Longevity - Dr Mike Israetel",
@@ -156,6 +177,7 @@ export const chrisWilliamsonPodcastList = [
     image: "longevity-masterclass-from-exercise-scientist-mike-israetel.jpg",
     podcastHost: "Chris Williamson",
     videoId: "OUEaDmRQ_Ng",
+    isPremium: false,
   },
   {
     title: "A Man's Guide To Mastering Your Emotions - Connor Beaton",
@@ -163,6 +185,7 @@ export const chrisWilliamsonPodcastList = [
     image: "mastering-your-emotions-connor-beaton.jpg",
     podcastHost: "Chris Williamson",
     videoId: "YvDOLGoJrYQ",
+    isPremium: true,
   },
   {
     title: "Why Do Modern Movies Suck So Much? - Critical Drinker",
@@ -170,6 +193,7 @@ export const chrisWilliamsonPodcastList = [
     image: "modern-movies-analysis-critical-drinker.jpg",
     podcastHost: "Chris Williamson",
     videoId: "PxIgDAc48qw",
+    isPremium: true,
   },
   {
     title:
@@ -179,6 +203,7 @@ export const chrisWilliamsonPodcastList = [
       "motivation-discipline-getting-through-hard-times-jesse-james-west.jpg",
     podcastHost: "Chris Williamson",
     videoId: "NkwNpKjeYyo",
+    isPremium: false,
   },
   {
     title: "How One Year Of Focus Can Change Everything - Sahil Bloom",
@@ -186,6 +211,7 @@ export const chrisWilliamsonPodcastList = [
     image: "one-year-of-focus-sahil-bloom-key-takeaways.jpg",
     podcastHost: "Chris Williamson",
     videoId: "vR1BaN-7Yrk",
+    isPremium: true,
   },
   {
     title:
@@ -195,6 +221,7 @@ export const chrisWilliamsonPodcastList = [
       "psychological-secrets-that-build-billion-dollar-brands-rory-sutherland.jpg",
     podcastHost: "Chris Williamson",
     videoId: "qvpw4_O25eU",
+    isPremium: true,
   },
   {
     title: "The Psychology Of Finding Meaning In Life - John Vervaeke",
@@ -202,6 +229,7 @@ export const chrisWilliamsonPodcastList = [
     image: "psychology-finding-meaning-life-john-vervaeke.jpg",
     podcastHost: "Chris Williamson",
     videoId: "bfAlC2Tn0bg",
+    isPremium: true,
   },
   {
     title: "Pushing The Boundaries Of Mental Toughness - Nedd Brockman",
@@ -209,6 +237,7 @@ export const chrisWilliamsonPodcastList = [
     image: "pushing-boundaries-mental-toughness-nedd-brockman.jpg",
     podcastHost: "Chris Williamson",
     videoId: "tGdpAipQpI0",
+    isPremium: false,
   },
   {
     title: "How To Put Yourself First Without Feeling Guilty - Nick Pollard",
@@ -216,6 +245,7 @@ export const chrisWilliamsonPodcastList = [
     image: "put-yourself-first-without-feeling-guilty-nick-pollard.jpg",
     podcastHost: "Chris Williamson",
     videoId: "mqtdA2F-XxU",
+    isPremium: false,
   },
   {
     title:
@@ -224,6 +254,7 @@ export const chrisWilliamsonPodcastList = [
     image: "rewiring-brain-for-happiness-rick-hanson.jpg",
     podcastHost: "Chris Williamson",
     videoId: "IIcmtqHsD8g",
+    isPremium: true,
   },
   {
     title:
@@ -232,6 +263,7 @@ export const chrisWilliamsonPodcastList = [
     image: "stop-betraying-yourself-be-more-authentic-david-sutcliffe.jpg",
     podcastHost: "Chris Williamson",
     videoId: "tCcEgF2qRO0",
+    isPremium: false,
   },
   {
     title: "The Secret Habits Of Supercommunicators - Charles Duhigg",
@@ -239,6 +271,7 @@ export const chrisWilliamsonPodcastList = [
     image: "super-communicators-secret-habits-charles-duhigg.jpg",
     podcastHost: "Chris Williamson",
     videoId: "ZOD-C67bUc4",
+    isPremium: true,
   },
   {
     title: "How To Take Control Of Your Own Destiny - George Mack",
@@ -246,6 +279,7 @@ export const chrisWilliamsonPodcastList = [
     image: "take-control-of-your-own-destiny-george-mack.jpg",
     podcastHost: "Chris Williamson",
     videoId: "iVl5FLRuGXI",
+    isPremium: true,
   },
   {
     title: "How To Think Like History’s Greatest Genius - Michael Gelb",
@@ -253,6 +287,7 @@ export const chrisWilliamsonPodcastList = [
     image: "think-like-historys-greatest-genius-michael-gelb.jpg",
     podcastHost: "Chris Williamson",
     videoId: "B2bHy6o7i1A",
+    isPremium: false,
   },
   {
     title: "The Art Of Unlocking Your Inner Peace - Yung Pueblo",
@@ -260,6 +295,7 @@ export const chrisWilliamsonPodcastList = [
     image: "unlocking-inner-peace-yung-pueblo.jpg",
     podcastHost: "Chris Williamson",
     videoId: "NAxDJzd_meg",
+    isPremium: true,
   },
   {
     title: "What Traits Should You Look For In A Partner? - Dr Shannon Curry",
@@ -267,6 +303,7 @@ export const chrisWilliamsonPodcastList = [
     image: "what-traits-to-look-for-in-partner-shannon-curry.jpg",
     podcastHost: "Chris Williamson",
     videoId: "hDD3ZNUmEiQ",
+    isPremium: true,
   },
   {
     title: "Why Does Mainstream Media Suck So Much? - Dave Smith",
@@ -274,6 +311,7 @@ export const chrisWilliamsonPodcastList = [
     image: "why-mainstream-media-sucks-dave-smith.jpg",
     podcastHost: "Chris Williamson",
     videoId: "u0Yv7rNj43o",
+    isPremium: false,
   },
   {
     title:
@@ -282,6 +320,7 @@ export const chrisWilliamsonPodcastList = [
     image: "why-modern-life-feels-empty-william-von-hippel.jpg",
     podcastHost: "Chris Williamson",
     videoId: "B7An4jA2Wec",
+    isPremium: true,
   },
   {
     title: "Why Modern Women Feel More Lost Than Ever - Freya India",
@@ -289,5 +328,6 @@ export const chrisWilliamsonPodcastList = [
     image: "why-modern-women-feel-lost-freya-india.jpg",
     podcastHost: "Chris Williamson",
     videoId: "wmU7VVxhERw",
+    isPremium: true,
   },
 ];

@@ -52,10 +52,7 @@ export default async function ChrisWilliamsonPodcastPage({
         ))}
       </div>
 
-      {/* Render Pagination Component wrapped in Suspense */}
-      <Suspense
-        fallback={<div className="bg-muted w-full animate-pulse rounded" />}
-      >
+      <Suspense>
         <PodcastPagination totalPages={totalPages} />
       </Suspense>
     </div>
