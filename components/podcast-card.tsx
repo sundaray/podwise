@@ -22,7 +22,7 @@ export async function PodcastCard({ podcast, hostPath }: PodcastCardProps) {
   const videoDetails = await getVideoDetails(videoId);
 
   return (
-    <div className="group relative">
+    <div className="group/card relative">
       <Image
         src={`https://podcast-summaries-dev.s3.amazonaws.com/podcast-thumbnails/${hostPath}/${image}`}
         alt={`Thumbnail for ${title}`}
@@ -31,10 +31,10 @@ export async function PodcastCard({ podcast, hostPath }: PodcastCardProps) {
         sizes="(min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw"
         quality={100}
         priority
-        className="h-auto w-full object-cover transition-all group-hover:brightness-80"
+        className="h-auto w-full object-cover transition-all group-hover/card:brightness-80"
         placeholder={solidColorPlaceholder}
       />
-      <h2 className="text-md mt-2 font-bold tracking-tight text-gray-900 transition-colors group-hover:text-sky-600">
+      <h2 className="text-md mt-2 font-bold tracking-tight text-gray-900 transition-colors group-hover/card:text-sky-600">
         {title}
       </h2>
 
