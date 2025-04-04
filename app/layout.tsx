@@ -31,9 +31,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
     >
       <body className="bg-background min-h-screen antialiased">
         <NextTopLoader showSpinner={false} color="#0284C7" shadow={false} />
-        <NuqsAdapter>
-          <main className="flex-1 py-16">{children}</main>
-        </NuqsAdapter>
+        <NuqsAdapter>{children}</NuqsAdapter>
       </body>
     </html>
   );
