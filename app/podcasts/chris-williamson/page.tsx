@@ -47,7 +47,7 @@ export default async function ChrisWilliamsonPodcastPage({
   );
 
   // Pagination calculations
-  const totalPodcasts = sortedPodcasts.length;
+  const totalPodcasts = filteredPodcasts.length;
   const totalPages = Math.ceil(totalPodcasts / ITEMS_PER_PAGE);
   const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
   const endIndex = startIndex + ITEMS_PER_PAGE;
