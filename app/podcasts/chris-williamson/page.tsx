@@ -2,7 +2,9 @@ import { Suspense } from "react";
 import { chrisWilliamsonPodcastList } from "@/podcast-list/chris-williamson";
 import { PodcastCard } from "@/components/podcast-card";
 import { PodcastPagination } from "@/components/podcast-pagination";
+import { PodcastTabs } from "@/components/podcast-tabs";
 import { getVideoDetails } from "@/lib/get-video-details";
+import { filterPodcastsByType } from "@/lib/podcast-filters";
 import { loadPodcastListSearchParams } from "@/lib/search-params";
 import type { SearchParams } from "nuqs/server";
 
@@ -18,7 +20,8 @@ export default async function ChrisWilliamsonPodcastPage({
 }: ChrisWilliamsonPodcastPageProps) {
   const host = "chris-williamson";
 
-  const { page: currentPage } = await loadPodcastListSearchParams(searchParams);
+  const { page: currentPage, type } =
+    await loadPodcastListSearchParams(searchParams);
 
   // Fetch and sort data (consider caching)
   const podcastsWithDetails = await Promise.all(
@@ -37,21 +40,29 @@ export default async function ChrisWilliamsonPodcastPage({
     return dateB.getTime() - dateA.getTime();
   });
 
+  // Filter podcasts based on type
+  const filteredPodcasts = filterPodcastsByType(
+    sortedPodcasts,
+    type as "all" | "free" | "premium",
+  );
+
   // Pagination calculations
   const totalPodcasts = sortedPodcasts.length;
   const totalPages = Math.ceil(totalPodcasts / ITEMS_PER_PAGE);
   const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
   const endIndex = startIndex + ITEMS_PER_PAGE;
-  const paginatedPodcasts = sortedPodcasts.slice(startIndex, endIndex);
+  const paginatedPodcasts = filteredPodcasts.slice(startIndex, endIndex);
 
   return (
-    <div className="group container mx-auto max-w-5xl px-4">
+    <div className="group container mx-auto max-w-5xl space-y-4 px-4">
+      <Suspense>
+        <PodcastTabs />
+      </Suspense>
       <div className="grid grid-cols-1 gap-6 group-has-[[data-pending]]:animate-pulse sm:grid-cols-2 md:grid-cols-3 md:gap-10">
         {paginatedPodcasts.map((podcast) => (
           <PodcastCard key={podcast.slug} podcast={podcast} hostPath={host} />
         ))}
       </div>
-
       <Suspense>
         <PodcastPagination totalPages={totalPages} />
       </Suspense>

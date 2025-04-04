@@ -52,7 +52,7 @@ export function PodcastPagination({
 
   return (
     <Pagination
-      className={cn("my-8 border-t py-12", className)}
+      className={cn("border-t py-16", className)}
       data-pending={isLoading ? "" : undefined}
     >
       <PaginationContent>
