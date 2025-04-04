@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import NextTopLoader from "nextjs-toploader";
+import { NuqsAdapter } from "nuqs/adapters/next/app";
 
 import "@/app/globals.css";
 
@@ -30,7 +31,9 @@ export default async function RootLayout({ children }: RootLayoutProps) {
     >
       <body className="bg-background min-h-screen antialiased">
         <NextTopLoader showSpinner={false} color="#0284C7" shadow={false} />
+        <NuqsAdapter>
           <main className="flex-1 py-16">{children}</main>
+        </NuqsAdapter>
       </body>
     </html>
   );

@@ -1,8 +1,9 @@
-import { parseAsIndex } from "nuqs";
-import { createLoader } from "nuqs/server";
+import { parseAsInteger, createLoader } from "nuqs/server";
 
-export const paginationParams = {
-  page: parseAsIndex, // Default to first page (index 0)
+export const podcastListSearchParams = {
+  page: parseAsInteger.withDefault(1),
 };
 
-export const loadSearchParams = createLoader(paginationParams);
+export const loadPodcastListSearchParams = createLoader(
+  podcastListSearchParams,
+);
