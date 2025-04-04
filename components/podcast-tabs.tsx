@@ -4,14 +4,7 @@ import { useTransition } from "react";
 import { useQueryState, parseAsString, parseAsInteger } from "nuqs";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
-type PodcastTier = "all" | "free" | "premium";
-
-type PodcastTabsProps = {
-  className?: string;
-  onTierChange?: (tier: PodcastTier) => void;
-};
-
-export function PodcastTabs({ className }: PodcastTabsProps) {
+export function PodcastTabs() {
   const [isLoading, startTransition] = useTransition();
 
   // Set up query parameter for podcast tier
@@ -42,10 +35,10 @@ export function PodcastTabs({ className }: PodcastTabsProps) {
     <Tabs
       value={tier}
       onValueChange={handleTypeChange}
-      className={className}
+      className="h-10"
       data-pending={isLoading ? "" : undefined}
     >
-      <TabsList className="grid max-w-md grid-cols-3 rounded-full">
+      <TabsList className="grid h-10 max-w-md grid-cols-3 rounded-full">
         <TabsTrigger value="all" className="rounded-full">
           All
         </TabsTrigger>

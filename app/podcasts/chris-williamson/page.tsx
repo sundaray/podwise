@@ -2,9 +2,10 @@ import { Suspense } from "react";
 import { chrisWilliamsonPodcastList } from "@/podcast-list/chris-williamson";
 import { PodcastCard } from "@/components/podcast-card";
 import { PodcastPagination } from "@/components/podcast-pagination";
+import { PodcastSearch } from "@/components/podcast-search";
 import { PodcastTabs } from "@/components/podcast-tabs";
 import { getVideoDetails } from "@/lib/get-video-details";
-import { filterPodcastsByTier } from "@/lib/podcast-filters";
+import { filterPodcasts } from "@/lib/podcast-filters";
 import { loadPodcastListSearchParams } from "@/lib/search-params";
 import type { SearchParams } from "nuqs/server";
 
@@ -20,8 +21,11 @@ export default async function ChrisWilliamsonPodcastPage({
 }: ChrisWilliamsonPodcastPageProps) {
   const host = "chris-williamson";
 
-  const { page: currentPage, tier } =
-    await loadPodcastListSearchParams(searchParams);
+  const {
+    page: currentPage,
+    tier,
+    query,
+  } = await loadPodcastListSearchParams(searchParams);
 
   // Fetch and sort data (consider caching)
   const podcastsWithDetails = await Promise.all(
@@ -41,9 +45,10 @@ export default async function ChrisWilliamsonPodcastPage({
   });
 
   // Filter podcasts based on type
-  const filteredPodcasts = filterPodcastsByTier(
+  const filteredPodcasts = filterPodcasts(
     sortedPodcasts,
     tier as "all" | "free" | "premium",
+    query,
   );
 
   // Pagination calculations
@@ -53,16 +58,40 @@ export default async function ChrisWilliamsonPodcastPage({
   const endIndex = startIndex + ITEMS_PER_PAGE;
   const paginatedPodcasts = filteredPodcasts.slice(startIndex, endIndex);
 
+  // Create user-friendly status message
+  let statusMessage = `Showing ${paginatedPodcasts.length} of ${totalPodcasts} podcast${totalPodcasts !== 1 ? "s" : ""}`;
+
+  if (tier !== "all") {
+    statusMessage += ` (${tier} only)`;
+  }
+
+  if (query) {
+    statusMessage += ` matching "${query}"`;
+  }
+
   return (
-    <div className="group container mx-auto max-w-5xl space-y-8 px-4">
+    <div className="group container mx-auto max-w-6xl space-y-6 px-4 md:space-y-10">
+      <Suspense>
+        <PodcastSearch />
+      </Suspense>
+
       <Suspense>
         <PodcastTabs />
       </Suspense>
-      <div className="grid grid-cols-1 gap-6 group-has-[[data-pending]]:animate-pulse sm:grid-cols-2 md:grid-cols-3 md:gap-10">
-        {paginatedPodcasts.map((podcast) => (
-          <PodcastCard key={podcast.slug} podcast={podcast} hostPath={host} />
-        ))}
-      </div>
+
+      {(tier !== "all" || query) && totalPodcasts > 0 && (
+        <p className="text-center text-pretty text-gray-700">{statusMessage}</p>
+      )}
+
+      {paginatedPodcasts.length > 0 ? (
+        <div className="group grid grid-cols-1 gap-6 group-has-[[data-pending]]:animate-pulse sm:grid-cols-2 md:grid-cols-3 md:gap-10">
+          {paginatedPodcasts.map((podcast) => (
+            <PodcastCard key={podcast.slug} podcast={podcast} hostPath={host} />
+          ))}
+        </div>
+      ) : (
+        <p className="text-center text-red-600">No podcasts found</p>
+      )}
       <Suspense>
         <PodcastPagination totalPages={totalPages} />
       </Suspense>

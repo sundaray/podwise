@@ -116,7 +116,7 @@ export const chrisWilliamsonPodcastList = [
     isPremium: false,
   },
   {
-    title: "Why Do We Date People That Need Fixing？ - Dr John Delony",
+    title: "Why Do We Date People That Need Fixing？- Dr John Delony",
     slug: "fixing-relationships-john-delony",
     image: "fixing-relationships-john-delony.jpg",
     podcastHost: "Chris Williamson",

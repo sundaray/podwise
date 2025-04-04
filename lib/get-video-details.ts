@@ -1,17 +1,26 @@
 import "server-only";
 
-import { cache } from "react";
-import { formatDistanceToNow, parseISO } from "date-fns";
+import { parseISO } from "date-fns";
 
-export const getVideoDetails = cache(async (videoId: string) => {
+export const getVideoDetails = async (videoId: string) => {
   if (!videoId) return null;
+
+  const sixHoursInSeconds = 6 * 60 * 60; // 21600
 
   try {
     const response = await fetch(
       `https://www.googleapis.com/youtube/v3/videos?part=statistics,snippet&id=${videoId}&key=${process.env.YOUTUBE_API_KEY}`,
+      {
+        // Configure Next.js fetch caching options
+        next: {
+          // Revalidate this data at most once every 6 hours (21600 seconds)
+          revalidate: sixHoursInSeconds,
+        },
+      },
     );
 
     if (!response.ok) {
+      console.error("YouTube API error: ", response);
       throw new Error(`YouTube API error: ${response.status}`);
     }
 
@@ -35,7 +44,7 @@ export const getVideoDetails = cache(async (videoId: string) => {
     console.error("Failed to fetch video details:", error);
     return null;
   }
-});
+};
 
 // Format large numbers to K/M format (e.g., 1000 => 1K)
 function formatViewCount(count: number): string {

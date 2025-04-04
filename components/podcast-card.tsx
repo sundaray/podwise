@@ -41,12 +41,12 @@ export async function PodcastCard({ podcast, hostPath }: PodcastCardProps) {
         className="h-auto w-full object-cover transition-all group-hover/card:brightness-80"
         placeholder={solidColorPlaceholder}
       />
-      <h2 className="text-md mt-2 font-bold tracking-tight text-gray-900 transition-colors group-hover/card:text-sky-600">
+      <h2 className="text-md mt-2 font-bold tracking-tight text-gray-900 transition-colors group-hover/card:text-sky-600 md:text-lg">
         {title}
       </h2>
 
       {videoDetails && (
-        <p className="mt-2 text-sm text-gray-700">
+        <p className="mt-2 text-sm text-gray-700 transition-colors group-hover/card:text-gray-500">
           {videoDetails.formattedViewCount} •{" "}
           {videoDetails.formattedPublishedDate}
         </p>

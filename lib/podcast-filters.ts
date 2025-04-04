@@ -2,25 +2,39 @@ function filterPodcastsByTier<T extends { isPremium?: boolean }>(
   podcasts: T[],
   tier: "all" | "free" | "premium",
 ): T[] {
-  // If type is "all" or invalid, return all podcasts without filtering
   if (tier === "all") {
     return podcasts;
   }
 
-  // For "free" or "premium" types, filter the podcasts accordingly
   return podcasts.filter((podcast) => {
-    // If the podcast doesn't have the isPremium property defined,
-    // treat it as a free podcast (isPremium = false) for safety
     const isPremium = podcast.isPremium ?? false;
-
-    // For "free" tier, include podcasts where isPremium is false
-    // For "premium" tier, include podcasts where isPremium is true
     return tier === "free" ? !isPremium : isPremium;
   });
 }
 
-function isValidPodcastType(tier: string): tier is "all" | "free" | "premium" {
-  return ["all", "free", "premium"].includes(tier);
+function filterPodcastsByQuery<T extends { title: string }>(
+  podcasts: T[],
+  query: string,
+): T[] {
+  if (!query.trim()) {
+    return podcasts;
+  }
+
+  const normalizedQuery = query.trim().toLowerCase();
+
+  return podcasts.filter((podcast) =>
+    podcast.title.toLowerCase().includes(normalizedQuery),
+  );
 }
 
-export { filterPodcastsByTier, isValidPodcastType };
+function filterPodcasts<T extends { title: string; isPremium?: boolean }>(
+  podcasts: T[],
+  tier: "all" | "free" | "premium",
+  query: string,
+): T[] {
+  const tierFiltered = filterPodcastsByTier(podcasts, tier);
+
+  return filterPodcastsByQuery(tierFiltered, query);
+}
+
+export { filterPodcastsByTier, filterPodcastsByQuery, filterPodcasts };

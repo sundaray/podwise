@@ -8,8 +8,10 @@ import {
   EyeOff,
   Loader,
   LogOut,
+  Search,
   Star,
   Tags,
+  X,
 } from "lucide-react";
 
 export const Icons = {
@@ -22,6 +24,8 @@ export const Icons = {
   eyeOff: EyeOff,
   logOut: LogOut,
   loader: Loader,
+  search: Search,
   star: Star,
   tags: Tags,
+  x: X,
 };
