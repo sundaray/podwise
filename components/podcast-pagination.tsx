@@ -18,8 +18,6 @@ import { cn } from "@/lib/utils";
 
 const SIBLING_COUNT = 1; // Number of pages to show on each side of the current page
 
-export const dynamic = "force-dynamic";
-
 type PodcastPaginationProps = {
   totalPages: number;
   className?: string;
@@ -107,7 +105,7 @@ export function PodcastPagination({
   const isLastPage = page === totalPages;
 
   return (
-    <Pagination className={cn("my-6", className)}>
+    <Pagination className={cn("my-8 border-t py-12", className)}>
       <PaginationContent>
         {/* Previous Button */}
         <PaginationItem>
@@ -116,7 +114,6 @@ export function PodcastPagination({
             aria-disabled={isFirstPage}
             tabIndex={isFirstPage ? -1 : undefined}
             className={cn(isFirstPage && "pointer-events-none opacity-50")}
-            scroll={!isFirstPage}
           />
         </PaginationItem>
 
@@ -142,8 +139,6 @@ export function PodcastPagination({
               <PaginationLink
                 href={createPageHref(pageNumber)}
                 isActive={isActive}
-                aria-current={isActive ? "page" : undefined}
-                scroll={true}
               >
                 {pageNumber}
               </PaginationLink>
@@ -158,7 +153,6 @@ export function PodcastPagination({
             aria-disabled={isLastPage}
             tabIndex={isLastPage ? -1 : undefined}
             className={cn(isLastPage && "pointer-events-none opacity-50")}
-            scroll={!isLastPage}
           />
         </PaginationItem>
       </PaginationContent>

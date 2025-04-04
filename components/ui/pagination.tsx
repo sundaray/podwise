@@ -59,6 +59,9 @@ function PaginationLink({
           variant: isActive ? "outline" : "ghost",
           size,
         }),
+        "rounded-full",
+        isActive &&
+          "border-sky-600 bg-sky-600 text-white hover:border-sky-600 hover:bg-sky-600 hover:text-white",
         className,
       )}
       {...props}
