@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { Icons } from "@/components/icons";
 import { getVideoDetails } from "@/lib/get-video-details";
 
 type PodcastCardProps = {
@@ -9,6 +10,7 @@ type PodcastCardProps = {
     image: string;
     podcastHost: string;
     videoId: string;
+    isPremium: boolean;
   };
   hostPath: string;
 };
@@ -17,12 +19,17 @@ const solidColorPlaceholder =
   "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1' fill='%23F3F4F6'%3E%3Crect width='1' height='1'/%3E%3C/svg%3E";
 
 export async function PodcastCard({ podcast, hostPath }: PodcastCardProps) {
-  const { title, slug, image, videoId } = podcast;
+  const { title, slug, image, videoId, isPremium } = podcast;
 
   const videoDetails = await getVideoDetails(videoId);
 
   return (
     <div className="group/card relative">
+      {isPremium && (
+        <div className="absolute top-0 right-0 z-10 flex size-8 items-center justify-center bg-purple-600">
+          <Icons.star className="size-4 text-white" />
+        </div>
+      )}
       <Image
         src={`https://podcast-summaries-dev.s3.amazonaws.com/podcast-thumbnails/${hostPath}/${image}`}
         alt={`Thumbnail for ${title}`}

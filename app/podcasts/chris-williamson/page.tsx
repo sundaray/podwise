@@ -4,7 +4,7 @@ import { PodcastCard } from "@/components/podcast-card";
 import { PodcastPagination } from "@/components/podcast-pagination";
 import { PodcastTabs } from "@/components/podcast-tabs";
 import { getVideoDetails } from "@/lib/get-video-details";
-import { filterPodcastsByType } from "@/lib/podcast-filters";
+import { filterPodcastsByTier } from "@/lib/podcast-filters";
 import { loadPodcastListSearchParams } from "@/lib/search-params";
 import type { SearchParams } from "nuqs/server";
 
@@ -20,7 +20,7 @@ export default async function ChrisWilliamsonPodcastPage({
 }: ChrisWilliamsonPodcastPageProps) {
   const host = "chris-williamson";
 
-  const { page: currentPage, type } =
+  const { page: currentPage, tier } =
     await loadPodcastListSearchParams(searchParams);
 
   // Fetch and sort data (consider caching)
@@ -41,9 +41,9 @@ export default async function ChrisWilliamsonPodcastPage({
   });
 
   // Filter podcasts based on type
-  const filteredPodcasts = filterPodcastsByType(
+  const filteredPodcasts = filterPodcastsByTier(
     sortedPodcasts,
-    type as "all" | "free" | "premium",
+    tier as "all" | "free" | "premium",
   );
 
   // Pagination calculations
@@ -54,7 +54,7 @@ export default async function ChrisWilliamsonPodcastPage({
   const paginatedPodcasts = filteredPodcasts.slice(startIndex, endIndex);
 
   return (
-    <div className="group container mx-auto max-w-5xl space-y-4 px-4">
+    <div className="group container mx-auto max-w-5xl space-y-8 px-4">
       <Suspense>
         <PodcastTabs />
       </Suspense>
