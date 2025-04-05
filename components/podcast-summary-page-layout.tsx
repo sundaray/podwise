@@ -9,7 +9,6 @@ import {
   BreadcrumbList,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
-import { Icons } from "@/components/icons";
 import { formatHostForUrl } from "@/lib/utils";
 import { ScrollToTop } from "@/components/scroll-to-top";
 
@@ -30,6 +29,8 @@ export function PodcastSummaryPageLayout({
     frontmatter;
 
   const formattedPodcastHost = formatHostForUrl(podcastHost);
+
+  console.log("Podcast host: ", formattedPodcastHost);
 
   const imageUrl = `https://podcast-summaries-dev.s3.amazonaws.com/podcast-thumbnails/${formattedPodcastHost}/${image}`;
 
