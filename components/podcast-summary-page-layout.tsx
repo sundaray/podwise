@@ -50,30 +50,30 @@ export function PodcastSummaryPageLayout({
           <BreadcrumbItem>
             <BreadcrumbLink
               href="/"
-              className="font-medium text-sky-700 hover:text-sky-700 hover:underline hover:underline-offset-2"
+              className="font-medium text-sky-700 hover:text-sky-700"
             >
               Home
             </BreadcrumbLink>
           </BreadcrumbItem>
-          <BreadcrumbSeparator />
+          <BreadcrumbSeparator className="text-gray-500" />
           <BreadcrumbItem>
             <BreadcrumbLink
               href="/podcasts"
-              className="font-medium text-sky-700 hover:text-sky-700 hover:underline hover:underline-offset-2"
+              className="font-medium text-sky-700 hover:text-sky-700"
             >
               Podcasts
             </BreadcrumbLink>
           </BreadcrumbItem>
-          <BreadcrumbSeparator />
+          <BreadcrumbSeparator className="text-gray-500"/>
           <BreadcrumbItem>
             <BreadcrumbLink
               href={`/podcasts/${formattedPodcastHost}`}
-              className="font-medium text-sky-700 hover:text-sky-700 hover:underline hover:underline-offset-2"
+              className="font-medium text-sky-700 hover:text-sky-700"
             >
               {podcastHost}
             </BreadcrumbLink>
           </BreadcrumbItem>
-          <BreadcrumbSeparator />
+          <BreadcrumbSeparator className="text-gray-500"/>
         </BreadcrumbList>
       </Breadcrumb>
       <article className="podcast-summary">
