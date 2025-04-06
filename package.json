@@ -33,6 +33,7 @@
     "nextjs-toploader": "^3.8.16",
     "nuqs": "^2.4.1",
     "react": "^19.0.0",
+    "react-aria-components": "^1.7.1",
     "react-dom": "^19.0.0",
     "remark-frontmatter": "^5.0.0",
     "remark-mdx-frontmatter": "^5.1.0",

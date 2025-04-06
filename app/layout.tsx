@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import NextTopLoader from "nextjs-toploader";
 import { NuqsAdapter } from "nuqs/adapters/next/app";
+import { ClientProviders } from "@/components/react-aria-provider";
 
 import "@/app/globals.css";
 
@@ -31,7 +32,9 @@ export default async function RootLayout({ children }: RootLayoutProps) {
     >
       <body className="bg-background min-h-screen antialiased">
         <NextTopLoader showSpinner={false} color="#0284C7" shadow={false} />
-        <NuqsAdapter>{children}</NuqsAdapter>
+        <ClientProviders>
+          <NuqsAdapter>{children}</NuqsAdapter>
+        </ClientProviders>
       </body>
     </html>
   );

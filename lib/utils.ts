@@ -6,5 +6,9 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export function formatHostForUrl(host: string): string {
-  return host.toLowerCase().replace(/\s+/g, "-");
+  return host.trim().toLowerCase().replace(/\s+/g, "-");
 }
+
+export const formatTagForUrl = (tag: string): string => {
+  return tag.trim().toLowerCase().replace(/\s+/g, "-");
+};

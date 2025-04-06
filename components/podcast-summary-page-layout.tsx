@@ -1,5 +1,6 @@
+"use client";
+
 import Image from "next/image";
-import Link from "next/link";
 import { Frontmatter } from "@/types";
 import { format, parseISO } from "date-fns";
 import {
@@ -9,7 +10,8 @@ import {
   BreadcrumbList,
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
-import { formatHostForUrl } from "@/lib/utils";
+import { TagGroup, TagList, Tag, Label } from "react-aria-components";
+import { formatHostForUrl, formatTagForUrl } from "@/lib/utils";
 import { ScrollToTop } from "@/components/scroll-to-top";
 
 type PodcastSummaryPageLayoutProps = {
@@ -25,16 +27,21 @@ export function PodcastSummaryPageLayout({
   children,
   frontmatter,
 }: PodcastSummaryPageLayoutProps) {
-  const { title, publishedAt, updatedAt, tags, image, podcastHost } =
-    frontmatter;
+  const { title, publishedAt, tags, image, podcastHost } = frontmatter;
 
   const formattedPodcastHost = formatHostForUrl(podcastHost);
-
-  console.log("Podcast host: ", formattedPodcastHost);
 
   const imageUrl = `https://podcast-summaries-dev.s3.amazonaws.com/podcast-thumbnails/${formattedPodcastHost}/${image}`;
 
   const formattedDate = format(parseISO(publishedAt), "MMMM d, yyyy");
+
+  const tagItems = tags.map((tagName) => {
+    const trimmedName = tagName.trim();
+    return {
+      id: trimmedName,
+      name: trimmedName,
+    };
+  });
 
   return (
     <div className="podcast-summary mx-auto max-w-3xl px-4 md:px-8">
@@ -43,7 +50,7 @@ export function PodcastSummaryPageLayout({
           <BreadcrumbItem>
             <BreadcrumbLink
               href="/"
-              className="font-medium text-sky-600 hover:text-sky-600 hover:underline hover:underline-offset-2"
+              className="font-medium text-sky-700 hover:text-sky-700 hover:underline hover:underline-offset-2"
             >
               Home
             </BreadcrumbLink>
@@ -51,8 +58,17 @@ export function PodcastSummaryPageLayout({
           <BreadcrumbSeparator />
           <BreadcrumbItem>
             <BreadcrumbLink
+              href="/podcasts"
+              className="font-medium text-sky-700 hover:text-sky-700 hover:underline hover:underline-offset-2"
+            >
+              Podcasts
+            </BreadcrumbLink>
+          </BreadcrumbItem>
+          <BreadcrumbSeparator />
+          <BreadcrumbItem>
+            <BreadcrumbLink
               href={`/podcasts/${formattedPodcastHost}`}
-              className="font-medium text-sky-600 hover:text-sky-600 hover:underline hover:underline-offset-2"
+              className="font-medium text-sky-700 hover:text-sky-700 hover:underline hover:underline-offset-2"
             >
               {podcastHost}
             </BreadcrumbLink>
@@ -83,20 +99,21 @@ export function PodcastSummaryPageLayout({
         </header>
         {children}
       </article>
-      <div className="mt-7 flex items-center">
-        <span className="mr-4 font-semibold text-gray-900">Tags:</span>
-        <ul className="flex flex-wrap gap-3">
-          {tags.map((tag) => (
-            <li key={tag}>
-              <Link
-                href={`/tags/${tag.toLowerCase()}`}
-                className="rounded-full border bg-gray-100 px-2 py-1 text-sm font-medium text-gray-700 transition hover:bg-gray-200 hover:text-gray-900 md:px-4 md:py-2"
+      <div className="mt-7 flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-4">
+        <Label className="shrink-0 font-semibold text-gray-900">Tags:</Label>
+        <TagGroup aria-label="Podcast Tags">
+          <TagList items={tagItems} className="flex flex-wrap gap-3">
+            {(item) => (
+              <Tag
+                key={item.id}
+                href={`/tags/${formatTagForUrl(item.name)}`}
+                className="cursor-pointer rounded-full border border-sky-200 bg-sky-100 px-2 py-1 text-sm font-medium text-sky-700 transition hover:border-sky-700 hover:bg-sky-700 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-700 focus-visible:ring-offset-2 md:px-4 md:py-2"
               >
-                {tag}
-              </Link>
-            </li>
-          ))}
-        </ul>
+                {item.name}
+              </Tag>
+            )}
+          </TagList>
+        </TagGroup>
       </div>
       <ScrollToTop />
     </div>
