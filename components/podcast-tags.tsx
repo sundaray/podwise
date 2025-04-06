@@ -10,11 +10,11 @@ export function PodcastTags() {
 
   return (
     <div className="podcast-tags-container mx-auto max-w-4xl px-4 md:px-8">
-      <h1 className="text-center mb-4 text-4xl font-bold tracking-tight">
-        Browse Podcast Summaries by Tags
+      <h1 className="mb-4 text-center text-4xl font-bold tracking-tight">
+        Podcast Summary Tags
       </h1>
-      <p className="mb-8 text-gray-700 text-center">
-        {uniqueTagCount} unique tags to explore
+      <p className="mb-8 text-center text-pretty text-gray-700">
+        Click any tag to explore related podcast summaries.
       </p>
 
       <div className="tag-sections space-y-12">

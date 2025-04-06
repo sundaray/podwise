@@ -28,7 +28,7 @@ export const chrisWilliamsonPodcastList = [
   {
     title: "The Key Strategies Of Behaviour Change - Dr Rangan Chatterjee",
     slug: "behavior-change-strategies-rangan-chatterjee",
-    tags: [" Behavior Change", " Self-Awareness", " Mental Health"],
+    tags: ["Behavior Change", "Self-Awareness", "Mental Health"],
     image: "behavior-change-strategies-rangan-chatterjee.jpg",
     podcastHost: "Chris Williamson",
     videoId: "qBcH7puhMo8",
