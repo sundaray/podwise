@@ -2,6 +2,7 @@ export const chrisWilliamsonPodcastList = [
   {
     title: "15 Harsh Truths From History’s Greatest Founders - David Senra",
     slug: "15-harsh-truths-from-greatest-founders-david-senra",
+    tags: ["Entrepreneurship", "Founder Mindset", "Success Principles"],
     image: "15-harsh-truths-from-greatest-founders-david-senra.jpg",
     podcastHost: "Chris Williamson",
     videoId: "p_8KKY8fQdA",
@@ -10,6 +11,7 @@ export const chrisWilliamsonPodcastList = [
   {
     title: "44 Harsh Truths About Human Nature - Naval Ravikant",
     slug: "44-harsh-truths-about-human-nature-naval-ravikant",
+    tags: ["Personal Development", "Philosophy", "Success Mindset"],
     image: "44-harsh-truths-about-human-nature-naval-ravikant.jpg",
     podcastHost: "Chris Williamson",
     videoId: "KyfUysrNaco",
@@ -26,6 +28,7 @@ export const chrisWilliamsonPodcastList = [
   {
     title: "The Key Strategies Of Behaviour Change - Dr Rangan Chatterjee",
     slug: "behavior-change-strategies-rangan-chatterjee",
+    tags: [" Behavior Change", " Self-Awareness", " Mental Health"],
     image: "behavior-change-strategies-rangan-chatterjee.jpg",
     podcastHost: "Chris Williamson",
     videoId: "qBcH7puhMo8",
