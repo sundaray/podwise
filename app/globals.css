@@ -131,7 +131,7 @@
   }
 
   .podcast-summary p {
-    @apply mb-7 leading-7 text-gray-700;
+    @apply mb-7 leading-7 text-gray-900;
   }
 }
 

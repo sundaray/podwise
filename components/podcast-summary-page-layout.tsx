@@ -63,7 +63,7 @@ export function PodcastSummaryPageLayout({
       <article className="podcast-summary">
         <header>
           <h1 className="my-7">{title}</h1>
-          <div className="font-medium text-gray-500">
+          <div className="text-gray-700">
             Posted{" "}
             <time dateTime={parseISO(publishedAt).toISOString()}>
               {formattedDate}
