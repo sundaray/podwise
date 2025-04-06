@@ -31,7 +31,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
       className={`${geistSans.variable} ${geistMono.variable} scroll-smooth antialiased`}
     >
       <body className="bg-background min-h-screen antialiased">
-        <NextTopLoader showSpinner={false} color="#0284C7" shadow={false} />
+        <NextTopLoader showSpinner={false} color="#0ea5e9" shadow={false} />
         <ClientProviders>
           <NuqsAdapter>{children}</NuqsAdapter>
         </ClientProviders>
