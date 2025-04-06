@@ -79,7 +79,7 @@ export function PodcastSummaryPageLayout({
       <article className="podcast-summary">
         <header>
           <h1 className="my-7">{title}</h1>
-          <div className="text-gray-700">
+          <div className="relative flex items-center pl-4 text-gray-700 before:absolute before:left-0 before:h-4 before:w-0.5 before:bg-sky-700">
             Posted{" "}
             <time dateTime={parseISO(publishedAt).toISOString()}>
               {formattedDate}
@@ -93,7 +93,7 @@ export function PodcastSummaryPageLayout({
             sizes="(min-width: 768px) 50vw, 100vw"
             quality={100}
             priority
-            className="my-7 h-auto w-full"
+            className="my-7 h-auto w-full shadow-md"
             placeholder={solidColorPlaceholder}
           />
         </header>
