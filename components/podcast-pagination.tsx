@@ -52,7 +52,7 @@ export function PodcastPagination({
 
   return (
     <Pagination
-      className={cn("border-t py-12", className)}
+      className={cn("py-20", className)}
       data-pending={isLoading ? "" : undefined}
     >
       <PaginationContent>
@@ -62,7 +62,10 @@ export function PodcastPagination({
             href="#"
             aria-disabled={isFirstPage}
             tabIndex={isFirstPage ? -1 : undefined}
-            className={cn(isFirstPage && "pointer-events-none opacity-50")}
+            className={cn(
+              "text-sky-700 hover:text-sky-700",
+              isFirstPage && "pointer-events-none opacity-50",
+            )}
             onClick={() => setPage(page - 1)}
           />
         </PaginationItem>
@@ -89,6 +92,7 @@ export function PodcastPagination({
               <PaginationLink
                 href="#"
                 isActive={isActive}
+                className={cn("text-gray-700", isActive && "text-white")}
                 onClick={() => setPage(pageNumber)}
               >
                 {pageNumber}
@@ -103,7 +107,10 @@ export function PodcastPagination({
             href="#"
             aria-disabled={isLastPage}
             tabIndex={isLastPage ? -1 : undefined}
-            className={cn(isLastPage && "pointer-events-none opacity-50")}
+            className={cn(
+              "text-sky-700 hover:text-sky-700",
+              isLastPage && "pointer-events-none opacity-50",
+            )}
             onClick={() => setPage(page + 1)}
           />
         </PaginationItem>

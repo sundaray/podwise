@@ -60,7 +60,7 @@ function PaginationLink({
         }),
         "rounded-full",
         isActive &&
-          "border-sky-600 bg-sky-600 text-white hover:border-sky-600 hover:bg-sky-600 hover:text-white",
+          "border-sky-700 bg-sky-700 text-white hover:border-sky-700 hover:bg-sky-700 hover:text-white",
         className,
       )}
       {...props}

@@ -35,17 +35,17 @@ export function PodcastTabs() {
     <Tabs
       value={tier}
       onValueChange={handleTypeChange}
-      className="h-10"
+      className="mb-10 h-10"
       data-pending={isLoading ? "" : undefined}
     >
       <TabsList className="grid h-10 max-w-md grid-cols-3 rounded-full">
-        <TabsTrigger value="all" className="rounded-full">
+        <TabsTrigger value="all" className="rounded-full text-gray-700">
           All
         </TabsTrigger>
-        <TabsTrigger value="free" className="rounded-full">
+        <TabsTrigger value="free" className="rounded-full text-gray-700">
           Free
         </TabsTrigger>
-        <TabsTrigger value="premium" className="rounded-full">
+        <TabsTrigger value="premium" className="rounded-full text-gray-700">
           Premium
         </TabsTrigger>
       </TabsList>

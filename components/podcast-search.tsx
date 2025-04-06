@@ -37,12 +37,12 @@ export function PodcastSearch() {
 
   return (
     <div
-      className="group/search relative mx-auto max-w-2xl py-12"
+      className="group/search relative mx-auto mb-20 max-w-2xl"
       data-pending={isPending ? "" : undefined}
     >
-      <Icons.search className="absolute top-1/2 left-4 size-5 -translate-y-1/2 text-gray-500 transition-colors group-has-[:focus]/search:text-gray-900" />
+      <Icons.search className="absolute top-1/2 left-4 size-5 -translate-y-1/2 text-gray-500 transition-colors group-has-[:focus]/search:text-gray-700" />
       <Input
-        className="h-12 border-gray-300 px-10"
+        className="h-12 bg-gray-100 px-10"
         type="search"
         placeholder="Search podcasts by title"
         defaultValue={query || ""}

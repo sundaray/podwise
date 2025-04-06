@@ -70,7 +70,7 @@ export default async function ChrisWilliamsonPodcastPage({
   }
 
   return (
-    <div className="group container mx-auto max-w-6xl space-y-6 px-4 md:space-y-10">
+    <div className="group container mx-auto max-w-6xl px-4">
       <Suspense>
         <PodcastSearch />
       </Suspense>
@@ -84,7 +84,7 @@ export default async function ChrisWilliamsonPodcastPage({
       )}
 
       {paginatedPodcasts.length > 0 ? (
-        <div className="group grid grid-cols-1 gap-6 group-has-[[data-pending]]:animate-pulse sm:grid-cols-2 md:grid-cols-3 md:gap-10">
+        <div className="group pb-10 grid grid-cols-1 gap-6 border-b group-has-[[data-pending]]:animate-pulse sm:grid-cols-2 md:grid-cols-3 md:gap-10">
           {paginatedPodcasts.map((podcast) => (
             <PodcastCard key={podcast.slug} podcast={podcast} hostPath={host} />
           ))}
