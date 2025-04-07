@@ -59,15 +59,13 @@ export default async function ChrisWilliamsonPodcastPage({
   const paginatedPodcasts = filteredPodcasts.slice(startIndex, endIndex);
 
   // Create user-friendly status message
-  let statusMessage = `Showing ${paginatedPodcasts.length} of ${totalPodcasts} podcast${totalPodcasts !== 1 ? "s" : ""}`;
-
-  if (tier !== "all") {
-    statusMessage += ` (${tier} only)`;
-  }
-
-  if (query) {
-    statusMessage += ` matching "${query}"`;
-  }
+  const statusMessage = (
+    <>
+      Showing {paginatedPodcasts.length} of {totalPodcasts}{" "}
+      {tier !== "all" && <em>{tier}</em>} podcast summaries
+      {query ? ` matching "${query}"` : ""}
+    </>
+  );
 
   return (
     <div className="group container mx-auto max-w-6xl px-4">
@@ -80,11 +78,13 @@ export default async function ChrisWilliamsonPodcastPage({
       </Suspense>
 
       {(tier !== "all" || query) && totalPodcasts > 0 && (
-        <p className="text-center text-pretty text-gray-700">{statusMessage}</p>
+        <p className="mb-10 text-center text-sm font-medium text-pretty text-gray-500">
+          {statusMessage}
+        </p>
       )}
 
       {paginatedPodcasts.length > 0 ? (
-        <div className="group pb-10 grid grid-cols-1 gap-6 border-b group-has-[[data-pending]]:animate-pulse sm:grid-cols-2 md:grid-cols-3 md:gap-10">
+        <div className="group grid grid-cols-1 gap-6 border-b pb-10 group-has-[[data-pending]]:animate-pulse sm:grid-cols-2 md:grid-cols-3 md:gap-10">
           {paginatedPodcasts.map((podcast) => (
             <PodcastCard key={podcast.slug} podcast={podcast} hostPath={host} />
           ))}
