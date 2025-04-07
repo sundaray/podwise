@@ -14,7 +14,7 @@ export function PodcastDisclaimer({ youTubeLink }: { youTubeLink: string }) {
         >
           original podcast episode
         </a>{" "}
-        for the full authentic conversation and complete context.
+        for the full conversation and complete context.
       </p>
     </div>
   );
