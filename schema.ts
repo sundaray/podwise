@@ -7,9 +7,12 @@ export const CreatePodcastSummaryFormSchema = z.object({
 
   podcastSlug: z.string({ required_error: "Podcast slug is required" }),
 
-  podcastHost: z.enum(["mel-robbins", "joe-rogan", "tim-ferriss"], {
-    required_error: "Podcast host is required",
-  }),
+  podcastHost: z.enum(
+    ["mel-robbins", "joe-rogan", "jay-shetty", "chris-williamson"],
+    {
+      required_error: "Podcast host is required",
+    },
+  ),
 });
 
 export const FetchYouTubeThumbnailFormSchema = z.object({
@@ -18,7 +21,7 @@ export const FetchYouTubeThumbnailFormSchema = z.object({
   podcastSlug: z.string({ required_error: "Podcast slug is required" }),
 
   podcastHost: z.enum(
-    ["mel-robbins", "chris-williamson", "tim-ferriss", "lewis-howes"],
+    ["mel-robbins", "chris-williamson", "jay-shetty", "lewis-howes"],
     {
       required_error: "Podcast host is required",
     },

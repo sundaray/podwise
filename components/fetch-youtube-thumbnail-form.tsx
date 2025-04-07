@@ -119,7 +119,7 @@ export function FetchYouTubeThumbnailForm() {
                   Chris Williamson
                 </SelectItem>
                 <SelectItem value="lewis-howes">Lewis Howes</SelectItem>
-                <SelectItem value="tim-ferriss">Tim Ferriss</SelectItem>
+                <SelectItem value="jay-shetty">Jay Shetty</SelectItem>
               </SelectContent>
             </Select>
             <ErrorMessage

@@ -1,9 +1,9 @@
 import Image from "next/image";
 import { Frontmatter } from "@/types";
 import { format, parseISO } from "date-fns";
-import { formatHostForUrl, formatTagForUrl } from "@/lib/utils";
+import { formatHostForUrl } from "@/lib/utils";
 import { PodcastBreadcrumbs } from "@/components/podcast-breadcrumbs";
-import {PodcastSummaryTags} from "@/components/podcast-summary-tags"
+import { PodcastSummaryTags } from "@/components/podcast-summary-tags";
 import { ScrollToTop } from "@/components/scroll-to-top";
 
 type PodcastSummaryPageLayoutProps = {
@@ -25,8 +25,9 @@ export function PodcastSummaryPageLayout({
 
   const imageUrl = `https://podcast-summaries-dev.s3.amazonaws.com/podcast-thumbnails/${formattedPodcastHost}/${image}`;
 
-  const formattedDate = format(parseISO(publishedAt), "MMMM d, yyyy");
+  console.log("Image URL: ", imageUrl);
 
+  const formattedDate = format(parseISO(publishedAt), "MMMM d, yyyy");
 
   return (
     <div className="mx-auto max-w-3xl px-4 md:px-8">
@@ -34,7 +35,7 @@ export function PodcastSummaryPageLayout({
       <article className="podcast-summary">
         <header>
           <h1 className="my-7">{title}</h1>
-          <div className="relative flex items-center pl-4 text-gray-700 before:absolute before:left-0 before:h-4 before:w-0.5 before:bg-sky-700">
+          <div className="relative flex items-center pl-4 text-gray-700 before:absolute before:left-0 before:h-3 before:w-[1.5px] before:bg-sky-700">
             Posted{" "}
             <time dateTime={parseISO(publishedAt).toISOString()}>
               {formattedDate}
