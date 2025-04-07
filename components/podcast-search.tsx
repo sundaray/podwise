@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useTransition } from "react";
+import { useTransition } from "react";
 import { useDebouncedCallback } from "use-debounce";
 import { useQueryState, parseAsString } from "nuqs";
 
