@@ -20,6 +20,7 @@ export const chrisWilliamsonPodcastList = [
   {
     title: "9 Ways People Destroy Their Own Relationships - Jillian Turecki",
     slug: "9-ways-people-destroy-relationships-jillian-turecki",
+    tags: ["Relationships", "Self-Awareness", "Emotional Intelligence"],
     image: "9-ways-people-destroy-relationships-jillian-turecki.jpg",
     podcastHost: "Chris Williamson",
     videoId: "_DPyc6D9-Xs",
@@ -38,6 +39,7 @@ export const chrisWilliamsonPodcastList = [
     title:
       "Fear Is Running Your Life. Here's How To Break Free - Erwin McManus",
     slug: "break-free-from-fear-erwin-mcmanus",
+    tags: ["Fear Management", "Personal Development", "Emotional Intelligence"],
     image: "break-free-from-fear-erwin-mcmanus.jpg",
     podcastHost: "Chris Williamson",
     videoId: "eBYC63aiqRU",
@@ -46,6 +48,7 @@ export const chrisWilliamsonPodcastList = [
   {
     title: "How To Build An Extraordinary Life - Tony Robbins",
     slug: "build-extraordinary-life-tony-robbins",
+    tags: ["Success Mindset", "Tony Robbins", "Life Transformation"],
     image: "build-extraordinary-life-tony-robbins.jpg",
     podcastHost: "Chris Williamson",
     videoId: "eeU1fNZ2pZA",
@@ -55,6 +58,7 @@ export const chrisWilliamsonPodcastList = [
     title:
       "The Science Of Childhood Bullying & Adult Mental Health - Dr Tracy Vaillancourt",
     slug: "childhood-bullying-adult-mental-health-tracy-vaillancourt",
+    tags: ["Bullying Prevention", "Mental Health", "Child Development"],
     image: "childhood-bullying-adult-mental-health-tracy-vaillancourt.jpg",
     podcastHost: "Chris Williamson",
     videoId: "RE4n29uEldA",
@@ -63,6 +67,7 @@ export const chrisWilliamsonPodcastList = [
   {
     title: "How To Defeat Your Social Media Addiction - Catherine Price",
     slug: "defeat-social-media-addiction-catherine-price",
+    tags: ["Digital Wellness", "Technology Addiction", "Mindfulness"],
     image: "defeat-social-media-addiction-catherine-price.jpg",
     podcastHost: "Chris Williamson",
     videoId: "JHjhw8Ek3Zk",
@@ -71,6 +76,7 @@ export const chrisWilliamsonPodcastList = [
   {
     title: "How To Design Your Life For Peak Creativity - Dan Koe",
     slug: "design-life-for-peak-creativity-dan-koe",
+    tags: ["Life Design", "Creativity", "Personal Development"],
     image: "design-life-for-peak-creativity-dan-koe.jpg",
     podcastHost: "Chris Williamson",
     videoId: "xfi2O6xjr_w",
@@ -79,6 +85,7 @@ export const chrisWilliamsonPodcastList = [
   {
     title: "Destroy Your Mental Limits & Unlock Your Best Self - Adam Grant",
     slug: "destroy-mental-limits-unlock-best-self-adam-grant",
+    tags: ["Growth Mindset", "Psychology", "Personal Development"],
     image: "destroy-mental-limits-unlock-best-self-adam-grant.jpg",
     podcastHost: "Chris Williamson",
     videoId: "DLfWv_Ey27s",
@@ -88,6 +95,7 @@ export const chrisWilliamsonPodcastList = [
     title:
       "The Art Of Effortless Confidence & Social Persuasion - Vanessa Van Edwards",
     slug: "effortless-confidence-social-persuasion-vanessa-van-edwards",
+    tags: ["Body Language", "Social Psychology", "Charisma Techniques"],
     image: "effortless-confidence-social-persuasion-vanessa-van-edwards.jpg",
     podcastHost: "Chris Williamson",
     videoId: "ITxbwgyGh6w",
@@ -97,6 +105,7 @@ export const chrisWilliamsonPodcastList = [
     title:
       "The Science Of Emotional Intelligence & Self-Understanding - Dr Julie Smith",
     slug: "emotional-intelligence-self-understanding-julie-smith",
+    tags: ["Emotional Intelligence", "Mental Health", "Self-Compassion"],
     image: "emotional-intelligence-self-understanding-julie-smith.jpg",
     podcastHost: "Chris Williamson",
     videoId: "-lDza7kSqvw",
@@ -105,6 +114,11 @@ export const chrisWilliamsonPodcastList = [
   {
     title: "How To Fix Your Negative Patterns - Alain de Botton",
     slug: "fix-negative-patterns-alain-de-botton",
+    tags: [
+      "Emotional Intelligence",
+      "Self-Awareness",
+      "Relationship Psychology",
+    ],
     image: "fix-negative-patterns-alain-de-botton.jpg",
     podcastHost: "Chris Williamson",
     videoId: "BQHo-z-pA8E",
@@ -113,6 +127,7 @@ export const chrisWilliamsonPodcastList = [
   {
     title: "How To Fix Your Sleep & Supercharge Your Life - Dr Matthew Walker",
     slug: "fix-sleep-supercharge-life-matthew-walker",
+    tags: ["Sleep Science", "Health", "Neuroscience"],
     image: "fix-sleep-supercharge-life-matthew-walker.jpg",
     podcastHost: "Chris Williamson",
     videoId: "Hf_NTmu2uvg",
@@ -121,6 +136,7 @@ export const chrisWilliamsonPodcastList = [
   {
     title: "Why Do We Date People That Need Fixing？- Dr John Delony",
     slug: "fixing-relationships-john-delony",
+    tags: ["Relationships", "Emotional Intelligence", "Self-Acceptance"],
     image: "fixing-relationships-john-delony.jpg",
     podcastHost: "Chris Williamson",
     videoId: "yscguH7dLbY",
@@ -129,6 +145,7 @@ export const chrisWilliamsonPodcastList = [
   {
     title: "How To Focus On What Matters Most - Greg McKeown",
     slug: "focus-on-what-matters-most-greg-mckeown",
+    tags: ["Essentialism", "Focus Strategies", "Success Management"],
     image: "focus-on-what-matters-most-greg-mckeown.jpg",
     podcastHost: "Chris Williamson",
     videoId: "ZDJiIFc3Mj8",
@@ -137,6 +154,7 @@ export const chrisWilliamsonPodcastList = [
   {
     title: "Has Modern Society Set Women Up For Failure? - Louise Perry",
     slug: "has-modern-society-set-women-up-for-failure-louise-perry",
+    tags: ["Fertility Decline", "Gender Dynamics", "Modern Parenting"],
     image: "has-modern-society-set-women-up-for-failure-louise-perry.jpg",
     podcastHost: "Chris Williamson",
     videoId: "NkSXtukw1VA",
@@ -145,6 +163,7 @@ export const chrisWilliamsonPodcastList = [
   {
     title: "The Hidden Truth About Our Collapsing Birth Rates - Mads Larsen",
     slug: "hidden-truth-about-collapsing-birth-rates-mads-larsen",
+    tags: ["Birth Rates", "Evolutionary Psychology", "Modern Dating"],
     image: "hidden-truth-about-collapsing-birth-rates-mads-larsen.jpg",
     podcastHost: "Chris Williamson",
     videoId: "7fL_xEBYTDs",
@@ -153,6 +172,7 @@ export const chrisWilliamsonPodcastList = [
   {
     title: "How Nervous People Can Perform Under Pressure - Steve Magness",
     slug: "how-nervous-people-can-perform-under-pressure-steve-magness",
+    tags: ["Performance Psychology", "Mental Toughness", "Stress Management"],
     image: "how-nervous-people-can-perform-under-pressure-steve-magness.jpg",
     podcastHost: "Chris Williamson",
     videoId: "s6bRXTvgVVw",
@@ -161,6 +181,11 @@ export const chrisWilliamsonPodcastList = [
   {
     title: "The Invisible Psychology Of Happiness & Meaning - Lionel Page",
     slug: "invisible-psychology-happiness-meaning-lionel-page",
+    tags: [
+      "Evolutionary Psychology",
+      "Happiness Research",
+      "Social Comparison",
+    ],
     image: "invisible-psychology-happiness-meaning-lionel-page.jpg",
     podcastHost: "Chris Williamson",
     videoId: "5bXDdrG4kw4",
@@ -169,6 +194,7 @@ export const chrisWilliamsonPodcastList = [
   {
     title: "Life Lessons From A Modern Cowboy - Dry Creek Dewayne",
     slug: "life-lessons-from-modern-cowboy-dry-creek-dewayne",
+    tags: ["Cowboy Wisdom", "Emotional Intelligence", "Personal Development"],
     image: "life-lessons-from-modern-cowboy-dry-creek-dewayne.jpg",
     podcastHost: "Chris Williamson",
     videoId: "YB8ma6fmb1A",
@@ -177,6 +203,7 @@ export const chrisWilliamsonPodcastList = [
   {
     title: "Exercise Scientist’s Masterclass On Longevity - Dr Mike Israetel",
     slug: "longevity-masterclass-from-exercise-scientist-mike-israetel",
+    tags: ["Longevity", "Fitness Science", "Anti-Aging"],
     image: "longevity-masterclass-from-exercise-scientist-mike-israetel.jpg",
     podcastHost: "Chris Williamson",
     videoId: "OUEaDmRQ_Ng",
@@ -185,6 +212,7 @@ export const chrisWilliamsonPodcastList = [
   {
     title: "A Man's Guide To Mastering Your Emotions - Connor Beaton",
     slug: "mastering-your-emotions-connor-beaton",
+    tags: ["Emotional Intelligence", "Men's Mental Health", "Self-Awareness"],
     image: "mastering-your-emotions-connor-beaton.jpg",
     podcastHost: "Chris Williamson",
     videoId: "YvDOLGoJrYQ",
@@ -193,6 +221,7 @@ export const chrisWilliamsonPodcastList = [
   {
     title: "Why Do Modern Movies Suck So Much? - Critical Drinker",
     slug: "modern-movies-analysis-critical-drinker",
+    tags: ["Film Industry", "Hollywood Trends", "Media Criticism"],
     image: "modern-movies-analysis-critical-drinker.jpg",
     podcastHost: "Chris Williamson",
     videoId: "PxIgDAc48qw",
@@ -202,6 +231,7 @@ export const chrisWilliamsonPodcastList = [
     title:
       "Motivation, Discipline & Getting Through Hard Times - Jesse James West",
     slug: "motivation-discipline-getting-through-hard-times-jesse-james-west",
+    tags: ["Mental Toughness", "Personal Development", "Authentic Living"],
     image:
       "motivation-discipline-getting-through-hard-times-jesse-james-west.jpg",
     podcastHost: "Chris Williamson",
@@ -211,6 +241,7 @@ export const chrisWilliamsonPodcastList = [
   {
     title: "How One Year Of Focus Can Change Everything - Sahil Bloom",
     slug: "one-year-of-focus-sahil-bloom-key-takeaways",
+    tags: ["Personal Development", "Life Philosophy", "Time Management"],
     image: "one-year-of-focus-sahil-bloom-key-takeaways.jpg",
     podcastHost: "Chris Williamson",
     videoId: "vR1BaN-7Yrk",
@@ -220,6 +251,7 @@ export const chrisWilliamsonPodcastList = [
     title:
       "The Psychological Secrets That Build Billion-Dollar Brands - Rory Sutherland (4K)",
     slug: "psychological-secrets-that-build-billion-dollar-brands-rory-sutherland",
+    tags: ["Business Psychology", "Decision Making", "Consumer Behavior"],
     image:
       "psychological-secrets-that-build-billion-dollar-brands-rory-sutherland.jpg",
     podcastHost: "Chris Williamson",
@@ -229,6 +261,7 @@ export const chrisWilliamsonPodcastList = [
   {
     title: "The Psychology Of Finding Meaning In Life - John Vervaeke",
     slug: "psychology-finding-meaning-life-john-vervaeke",
+    tags: ["Meaning of Life", "Psychology", "Philosophy"],
     image: "psychology-finding-meaning-life-john-vervaeke.jpg",
     podcastHost: "Chris Williamson",
     videoId: "bfAlC2Tn0bg",
@@ -237,6 +270,7 @@ export const chrisWilliamsonPodcastList = [
   {
     title: "Pushing The Boundaries Of Mental Toughness - Nedd Brockman",
     slug: "pushing-boundaries-mental-toughness-nedd-brockman",
+    tags: ["Mental Toughness", "Endurance Running", "Resilience"],
     image: "pushing-boundaries-mental-toughness-nedd-brockman.jpg",
     podcastHost: "Chris Williamson",
     videoId: "tGdpAipQpI0",
@@ -245,6 +279,7 @@ export const chrisWilliamsonPodcastList = [
   {
     title: "How To Put Yourself First Without Feeling Guilty - Nick Pollard",
     slug: "put-yourself-first-without-feeling-guilty-nick-pollard",
+    tags: ["Boundaries", "Self-Care", "Personal Development"],
     image: "put-yourself-first-without-feeling-guilty-nick-pollard.jpg",
     podcastHost: "Chris Williamson",
     videoId: "mqtdA2F-XxU",
@@ -254,6 +289,7 @@ export const chrisWilliamsonPodcastList = [
     title:
       "The Science Of Rewiring Your Brain To Be Less Miserable - Dr Rick Hanson",
     slug: "rewiring-brain-for-happiness-rick-hanson",
+    tags: ["Neuroscience", "Personal Development", "Brain Training"],
     image: "rewiring-brain-for-happiness-rick-hanson.jpg",
     podcastHost: "Chris Williamson",
     videoId: "IIcmtqHsD8g",
@@ -263,6 +299,7 @@ export const chrisWilliamsonPodcastList = [
     title:
       "How To Stop Betraying Yourself & Be More Authentic - David Sutcliffe",
     slug: "stop-betraying-yourself-be-more-authentic-david-sutcliffe",
+    tags: ["Authenticity", "Self-Awareness", "Relationships"],
     image: "stop-betraying-yourself-be-more-authentic-david-sutcliffe.jpg",
     podcastHost: "Chris Williamson",
     videoId: "tCcEgF2qRO0",
@@ -271,6 +308,11 @@ export const chrisWilliamsonPodcastList = [
   {
     title: "The Secret Habits Of Supercommunicators - Charles Duhigg",
     slug: "super-communicators-secret-habits-charles-duhigg",
+    tags: [
+      "Communication Skills",
+      "Emotional Intelligence",
+      "Relationship Psychology",
+    ],
     image: "super-communicators-secret-habits-charles-duhigg.jpg",
     podcastHost: "Chris Williamson",
     videoId: "ZOD-C67bUc4",
@@ -279,6 +321,7 @@ export const chrisWilliamsonPodcastList = [
   {
     title: "How To Take Control Of Your Own Destiny - George Mack",
     slug: "take-control-of-your-own-destiny-george-mack",
+    tags: ["High Agency", "Personal Development", "Decision Making"],
     image: "take-control-of-your-own-destiny-george-mack.jpg",
     podcastHost: "Chris Williamson",
     videoId: "iVl5FLRuGXI",
@@ -287,6 +330,7 @@ export const chrisWilliamsonPodcastList = [
   {
     title: "How To Think Like History’s Greatest Genius - Michael Gelb",
     slug: "think-like-historys-greatest-genius-michael-gelb",
+    tags: ["Leonardo da Vinci", "Creative Thinking", "Personal Development"],
     image: "think-like-historys-greatest-genius-michael-gelb.jpg",
     podcastHost: "Chris Williamson",
     videoId: "B2bHy6o7i1A",
@@ -295,6 +339,7 @@ export const chrisWilliamsonPodcastList = [
   {
     title: "The Art Of Unlocking Your Inner Peace - Yung Pueblo",
     slug: "unlocking-inner-peace-yung-pueblo",
+    tags: ["Mindfulness", "Mental Health", "Self-Awareness"],
     image: "unlocking-inner-peace-yung-pueblo.jpg",
     podcastHost: "Chris Williamson",
     videoId: "NAxDJzd_meg",
@@ -303,6 +348,7 @@ export const chrisWilliamsonPodcastList = [
   {
     title: "What Traits Should You Look For In A Partner? - Dr Shannon Curry",
     slug: "what-traits-to-look-for-in-partner-shannon-curry",
+    tags: ["Relationships", "Psychology", "Partner Selection"],
     image: "what-traits-to-look-for-in-partner-shannon-curry.jpg",
     podcastHost: "Chris Williamson",
     videoId: "hDD3ZNUmEiQ",
@@ -311,6 +357,7 @@ export const chrisWilliamsonPodcastList = [
   {
     title: "Why Does Mainstream Media Suck So Much? - Dave Smith",
     slug: "why-mainstream-media-sucks-dave-smith",
+    tags: ["Media Analysis", "Politics", "Independent Media"],
     image: "why-mainstream-media-sucks-dave-smith.jpg",
     podcastHost: "Chris Williamson",
     videoId: "u0Yv7rNj43o",
@@ -320,6 +367,7 @@ export const chrisWilliamsonPodcastList = [
     title:
       "Evolution Played A Dirty Trick On Us - Why Modern Life Feels So Empty - William von Hippel",
     slug: "why-modern-life-feels-empty-william-von-hippel",
+    tags: ["Evolution", "Social Connection", "Happiness"],
     image: "why-modern-life-feels-empty-william-von-hippel.jpg",
     podcastHost: "Chris Williamson",
     videoId: "B7An4jA2Wec",
@@ -328,6 +376,7 @@ export const chrisWilliamsonPodcastList = [
   {
     title: "Why Modern Women Feel More Lost Than Ever - Freya India",
     slug: "why-modern-women-feel-lost-freya-india",
+    tags: ["Therapy Culture", "Modern Femininity", "Relationship Psychology"],
     image: "why-modern-women-feel-lost-freya-india.jpg",
     podcastHost: "Chris Williamson",
     videoId: "wmU7VVxhERw",

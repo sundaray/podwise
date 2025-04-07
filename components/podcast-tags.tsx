@@ -21,7 +21,7 @@ export function PodcastTags() {
         {letters.map((letter) => (
           <div key={letter} className="tag-section" id={`section-${letter}`}>
             {/* Letter heading */}
-            <h2 className="mb-2 text-2xl font-semibold text-gray-900">
+            <h2 className="mb-2 text-2xl font-semibold text-gray-700">
               {letter}
             </h2>
 
@@ -38,7 +38,7 @@ export function PodcastTags() {
                   <Tag
                     key={item.id}
                     href={`/tags/${formatTagForUrl(item.name)}`}
-                    className="cursor-pointer rounded-full border border-sky-200 bg-sky-100 px-2 py-1 text-sm font-medium text-sky-700 transition hover:border-sky-700 hover:bg-sky-700 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-700 focus-visible:ring-offset-2 md:px-4 md:py-2"
+                    className="cursor-pointer rounded-full bg-sky-100 px-2 py-1 text-sm font-medium text-sky-700 transition hover:bg-sky-700 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-700 focus-visible:ring-offset-2 md:px-4 md:py-2"
                   >
                     <span className="mr-1">{item.name}</span>
                     <span className="inline-flex size-5 items-center justify-center rounded-full bg-sky-200 p-1 text-xs font-medium text-sky-500">

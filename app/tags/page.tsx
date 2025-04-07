@@ -1,8 +1,8 @@
-import {PodcastTags} from "@/components/podcast-tags";
+import { PodcastTags } from "@/components/podcast-tags";
 
 function TagsPage() {
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="mx-auto max-w-3xl px-4 md:px-8">
       <PodcastTags />
     </div>
   );
