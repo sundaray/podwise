@@ -26,8 +26,8 @@ export async function PodcastCard({ podcast, hostPath }: PodcastCardProps) {
   return (
     <div className="group/card relative">
       {isPremium && (
-        <div className="absolute top-0 right-0 z-10 flex size-8 items-center justify-center bg-purple-600">
-          <Icons.star className="size-4 text-white" />
+        <div className="absolute top-0 right-0 z-10 flex size-8 items-center justify-center bg-purple-700">
+          <Icons.star className="size-4 text-purple-100" />
         </div>
       )}
       <Image

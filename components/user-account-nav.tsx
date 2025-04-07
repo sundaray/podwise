@@ -1,18 +1,18 @@
 import React from "react";
 import Link from "next/link";
-import { getUserSession } from "@/lib/auth/session";
-
+import { FaUser } from "react-icons/fa6";
 import { UserAccountNavClient } from "@/components/user-account-nav-client";
 
 export async function UserAccountNav() {
-  const { user } = await getUserSession();
+  const user = null;
 
   if (!user) {
     return (
       <Link
         href="/signin"
-        className="rounded-md bg-blue-600 px-2 py-1 text-sm font-medium text-white transition-colors hover:bg-blue-500"
+        className="ml-auto inline-flex items-center rounded-full px-2 py-1 text-sm font-medium text-gray-700 transition-colors hover:text-gray-900"
       >
+        <FaUser className="mr-1 size-3 text-gray-500" />
         Sign in
       </Link>
     );
