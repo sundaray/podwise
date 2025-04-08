@@ -2,7 +2,6 @@ import React from "react";
 import Link from "next/link";
 import { FaUser } from "react-icons/fa6";
 import { Icons } from "@/components/icons";
-
 import { UserAccountNavClient } from "@/components/user-account-nav-client";
 
 export async function UserAccountNav() {
@@ -10,7 +9,7 @@ export async function UserAccountNav() {
 
   if (!user) {
     return (
-      <div className="ml-auto flex items-center gap-2">
+      <nav className="ml-auto flex hidden items-center gap-6 md:block">
         <Link
           href="/premium"
           className="inline-flex items-center rounded-full bg-purple-700 px-3 py-2 text-sm font-medium text-white transition-colors hover:bg-purple-900"
@@ -23,10 +22,10 @@ export async function UserAccountNav() {
           href="/signin"
           className="inline-flex items-center rounded-full px-3 py-2 text-sm font-medium text-gray-700 transition-colors hover:text-gray-900"
         >
-          <FaUser className="mr-1 size-3 text-gray-500" />
+          <FaUser className="mr-1 size-3 text-gray-400" />
           Sign in
         </Link>
-      </div>
+      </nav>
     );
   }
   return <UserAccountNavClient user={user} />;

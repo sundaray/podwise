@@ -1,7 +1,9 @@
 import React from "react";
-import Image from "next/image";
 
+import { FaUser } from "react-icons/fa6";
+import { Icons } from "@/components/icons";
 import { NavItem } from "@/components/nav-item";
+import { MobileNav } from "@/components/mobile-nav";
 import { UserAccountNav } from "@/components/user-account-nav";
 
 type NavItemType = {
@@ -15,7 +17,7 @@ type MainNavProps = {
 
 export function MainNav({ items }: MainNavProps) {
   return (
-    <div className="flex h-16 items-center bg-white px-4">
+    <div className="relative z-50 flex h-16 items-center bg-white px-4">
       <div className="mr-10 flex items-center space-x-2">
         <svg
           width="20"
@@ -31,9 +33,9 @@ export function MainNav({ items }: MainNavProps) {
             fill="currentColor"
           />
         </svg>
-        <p className="text-lg font-bold tracking-tight text-gray-900">Podwise</p>
+        <p className="text-lg font-bold tracking-wide text-gray-900">PODWISE</p>
       </div>
-      <nav>
+      <nav className="hidden md:block">
         <ul className="flex space-x-6">
           {items.map((item) => (
             <li key={item.title}>
@@ -42,6 +44,7 @@ export function MainNav({ items }: MainNavProps) {
           ))}
         </ul>
       </nav>
+      <MobileNav />
       <UserAccountNav />
     </div>
   );
