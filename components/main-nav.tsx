@@ -1,7 +1,5 @@
 import React from "react";
 
-import { FaUser } from "react-icons/fa6";
-import { Icons } from "@/components/icons";
 import { NavItem } from "@/components/nav-item";
 import { MobileNav } from "@/components/mobile-nav";
 import { UserAccountNav } from "@/components/user-account-nav";
@@ -17,7 +15,7 @@ type MainNavProps = {
 
 export function MainNav({ items }: MainNavProps) {
   return (
-    <div className="relative z-50 flex h-16 items-center bg-white px-4">
+    <div className="fixed mx-auto top-0 inset-x-0 z-50 flex h-16 items-center bg-white px-4 max-w-7xl">
       <div className="mr-10 flex items-center space-x-2">
         <svg
           width="20"

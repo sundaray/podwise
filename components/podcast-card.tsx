@@ -41,7 +41,7 @@ export async function PodcastCard({ podcast, hostPath }: PodcastCardProps) {
         className="h-auto w-full object-cover transition-all group-hover/card:brightness-80"
         placeholder={solidColorPlaceholder}
       />
-      <h2 className="text-md mt-2 font-bold tracking-tight text-gray-900 transition-colors group-hover/card:text-sky-700 md:text-lg">
+      <h2 className="text-md mt-2 font-bold tracking-tight text-pretty text-gray-900 transition-colors group-hover/card:text-sky-700 md:text-lg">
         {title}
       </h2>
 

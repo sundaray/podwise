@@ -76,11 +76,11 @@ export function MobileNav() {
         <MobileNavLink href="/about">About</MobileNavLink>
         <MobileNavLink href="/podcasts">Podcasts</MobileNavLink>
         <MobileNavLink href="/tags">Tags</MobileNavLink>
-        <hr className="m-2 border-gray-300/40" />
+        <hr className="mt-2 mb-4 border-gray-300/40" />
         <PopoverButton
           as={Link}
           href="/premium"
-          className="block flex w-fit items-center gap-2 rounded-full bg-purple-700 px-3 py-1 font-medium text-white"
+          className="block flex w-fit items-center gap-2 rounded-full bg-purple-700 py-2 px-4 font-medium text-white"
         >
           <Icons.star className="size-3.5 text-purple-200" />
           Go Premium
@@ -88,7 +88,7 @@ export function MobileNav() {
         <PopoverButton
           as={Link}
           href="/login"
-          className="block flex w-full items-center gap-1 p-2 font-medium text-gray-700"
+          className="block mt-2 flex w-full items-center gap-1 font-medium text-gray-700"
         >
           <FaUser className="size-3 text-gray-400" />
           Sign in

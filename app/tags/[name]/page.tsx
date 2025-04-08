@@ -137,7 +137,7 @@ export default async function TagPage({ params, searchParams }: TagPageProps) {
           Found {totalPodcasts} podcast{" "}
           {totalPodcasts === 1 ? "summary" : "summaries"} tagged with "{tagName}
           "
-        </p>
+        </p>..
       </div>
 
       <Suspense>

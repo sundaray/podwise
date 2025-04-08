@@ -11,7 +11,7 @@ export default function PodcastsLayout({ children }: PodcastsLayoutProps) {
       <header>
         <MainNav items={navbarLinks.main} />
       </header>
-      <main className="flex-1 py-16">{children}</main>
+      <main className="flex-1 py-32">{children}</main>
     </div>
   )
 }

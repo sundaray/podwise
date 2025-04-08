@@ -14,7 +14,7 @@ export async function UserAccountNav() {
           href="/premium"
           className="inline-flex items-center rounded-full bg-purple-700 px-3 py-2 text-sm font-medium text-white transition-colors hover:bg-purple-900"
         >
-          <Icons.star className="mr-2 size-4 text-purple-200" />
+          <Icons.star className="mr-2 size-3.5 text-purple-200" />
           Go Premium
         </Link>
 
