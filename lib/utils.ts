@@ -12,3 +12,10 @@ export function formatHostForUrl(host: string): string {
 export const formatTagForUrl = (tag: string): string => {
   return tag.trim().toLowerCase().replace(/\s+/g, "-");
 };
+
+export function formatTagForDisplay(urlTag: string): string {
+  return urlTag
+    .split('-')
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
+}
