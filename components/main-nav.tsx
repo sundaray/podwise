@@ -31,7 +31,7 @@ export function MainNav({ items }: MainNavProps) {
             fill="currentColor"
           />
         </svg>
-        <p className="text-lg font-bold tracking-wide text-gray-900">PODWISE</p>
+        <p className="text-lg font-bold tracking-tight text-gray-900">Podwise</p>
       </div>
       <nav>
         <ul className="flex space-x-6">
