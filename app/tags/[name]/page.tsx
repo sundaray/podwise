@@ -133,11 +133,11 @@ export default async function TagPage({ params, searchParams }: TagPageProps) {
         <h1 className="mb-2 text-4xl font-bold tracking-tight">
           Tag: <span className="text-sky-700">{tagName}</span>
         </h1>
-        <p className="text-gray-700 text-pretty">
+        <p className="text-pretty text-gray-700">
           Found {totalPodcasts} podcast{" "}
           {totalPodcasts === 1 ? "summary" : "summaries"} tagged with "{tagName}
           "
-        </p>..
+        </p>
       </div>
 
       <Suspense>

@@ -10,7 +10,7 @@ export function PodcastTags() {
 
   return (
     <div className="podcast-tags-container mx-auto max-w-4xl px-4 md:px-8">
-      <h1 className="mb-4 text-center text-4xl font-bold tracking-tight text-pretty">
+      <h1 className="mb-2 text-center text-4xl font-bold tracking-tight text-pretty">
         Podcast Summary Tags
       </h1>
       <p className="mb-8 text-center text-pretty text-gray-700">
