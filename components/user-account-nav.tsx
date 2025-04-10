@@ -12,7 +12,7 @@ export async function UserAccountNav() {
       <nav className="ml-auto flex hidden items-center gap-6 md:block">
         <Link
           href="/premium"
-          className="inline-flex items-center rounded-full bg-purple-700 px-3 py-2 text-sm font-medium text-white transition-colors hover:bg-purple-900"
+          className="inline-flex items-center rounded-full bg-purple-700 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-purple-900"
         >
           <Icons.star className="mr-2 size-3.5 text-purple-200" />
           Go Premium
