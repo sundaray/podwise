@@ -20,7 +20,7 @@ export async function UserAccountNav() {
 
         <Link
           href="/signin"
-          className="inline-flex items-center rounded-full px-3 py-2 text-sm font-medium text-gray-700 transition-colors hover:text-gray-900"
+          className="inline-flex items-center p-2 text-sm font-medium text-gray-700 transition-colors hover:text-gray-900"
         >
           <FaUser className="mr-1 size-3 text-gray-400" />
           Sign in

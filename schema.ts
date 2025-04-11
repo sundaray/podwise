@@ -21,7 +21,14 @@ export const FetchYouTubeThumbnailFormSchema = z.object({
   podcastSlug: z.string({ required_error: "Podcast slug is required" }),
 
   podcastHost: z.enum(
-    ["mel-robbins", "chris-williamson", "jay-shetty", "lewis-howes", "doac"],
+    [
+      "mel-robbins",
+      "chris-williamson",
+      "jay-shetty",
+      "lewis-howes",
+      "doac",
+      "jack-neel",
+    ],
     {
       required_error: "Podcast host is required",
     },
