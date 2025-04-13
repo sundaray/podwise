@@ -15,7 +15,7 @@ type MainNavProps = {
 
 export function MainNav({ items }: MainNavProps) {
   return (
-    <div className="fixed mx-auto top-0 inset-x-0 z-50 flex h-20 items-center bg-white px-4 max-w-7xl">
+    <div className="fixed inset-x-0 top-0 z-50 mx-auto flex h-20 max-w-7xl items-center bg-white px-4">
       <div className="mr-10 flex items-center space-x-2">
         <svg
           width="20"
@@ -31,7 +31,9 @@ export function MainNav({ items }: MainNavProps) {
             fill="currentColor"
           />
         </svg>
-        <p className="text-lg font-bold tracking-wide text-gray-900">PODWISE</p>
+        <p className="text-lg font-bold tracking-tight text-gray-900">
+          PODWISE
+        </p>
       </div>
       <nav className="hidden md:block">
         <ul className="flex space-x-6">
