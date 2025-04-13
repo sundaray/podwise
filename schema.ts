@@ -28,7 +28,8 @@ export const FetchYouTubeThumbnailFormSchema = z.object({
       "lewis-howes",
       "doac",
       "jack-neel",
-      "simon-sinek"
+      "simon-sinek",
+      "tim-ferriss",
     ],
     {
       required_error: "Podcast host is required",
