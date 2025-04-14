@@ -5,22 +5,24 @@ import { TagGroup, TagList, Tag } from "react-aria-components";
 import { getPodcastTags } from "@/lib/get-podcast-tags";
 import { formatTagForUrl } from "@/lib/utils";
 import { useQueryState, parseAsString } from "nuqs";
+import { cn } from "@/lib/utils";
 
-export function PodcastTags() {
+type PodcastTagsProps = {
+  className: string;
+};
+
+export function PodcastTags({ className }: PodcastTagsProps) {
   // Get the search query from URL
-  const [tagQuery] = useQueryState(
-    "tagQuery",
-    parseAsString.withDefault(""),
-  );
+  const [tagQuery] = useQueryState("tagQuery", parseAsString.withDefault(""));
 
   const { uniqueTagCount, tagsByLetter, letters } = getPodcastTags();
 
   // If no search query, render all tags by letter
   if (!tagQuery || tagQuery.trim() === "") {
     return (
-      <div className="tag-sections space-y-12">
+      <div className={cn("space-y-12", className)}>
         {letters.map((letter) => (
-          <div key={letter} className="tag-section" id={`section-${letter}`}>
+          <div key={letter} id={`section-${letter}`}>
             {/* Letter heading */}
             <h2 className="mb-2 text-2xl font-semibold text-gray-700">
               {letter}
@@ -54,17 +56,19 @@ export function PodcastTags() {
   }
 
   // If we have a search query, filter tags
-  const filteredTags = Array.from(tagsByLetter.entries())
-    .flatMap(([letter, tags]) => 
-      tags.filter(tag => 
-        tag.name.toLowerCase().includes(tagQuery.toLowerCase())
-      )
-    );
-  
+  const filteredTags = Array.from(tagsByLetter.entries()).flatMap(
+    ([letter, tags]) =>
+      tags.filter((tag) =>
+        tag.name.toLowerCase().includes(tagQuery.toLowerCase()),
+      ),
+  );
+
   if (filteredTags.length === 0) {
     return (
-      <div className="text-center py-8">
-        <p className="text-xl text-gray-500">No tags found matching "{tagQuery}"</p>
+      <div className="py-8 text-center">
+        <p className="text-xl text-gray-500">
+          No tags found matching "{tagQuery}"
+        </p>
       </div>
     );
   }
@@ -79,12 +83,9 @@ export function PodcastTags() {
           {searchFirstLetter}
         </h2>
         <hr className="mb-4 border-gray-200" aria-hidden="true" />
-        
+
         <TagGroup aria-label={`Search results for "${tagQuery}"`}>
-          <TagList
-            items={filteredTags}
-            className="flex flex-wrap gap-3"
-          >
+          <TagList items={filteredTags} className="flex flex-wrap gap-3">
             {(item) => (
               <Tag
                 key={item.id}
