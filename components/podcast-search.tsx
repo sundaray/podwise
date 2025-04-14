@@ -7,20 +7,18 @@ import { useQueryState, parseAsString } from "nuqs";
 import { Input } from "@/components/ui/input";
 import { Icons } from "@/components/icons";
 
-interface PodcastSearchProps {
-  placeholder?: string;
-  paramName?: string;
-}
+type PodcastSearchProps = {
+  placeholder: string;
+};
 
-export function PodcastSearch({ 
+export function PodcastSearch({
   placeholder = "Search podcasts by title",
-  paramName = "query"
 }: PodcastSearchProps) {
   const [isPending, startTransition] = useTransition();
 
   // Set up query parameter for search term
   const [query, setQuery] = useQueryState(
-    paramName,
+    "query",
     parseAsString.withDefault("").withOptions({
       startTransition,
       shallow: false,
@@ -41,9 +39,9 @@ export function PodcastSearch({
     setQuery(term);
 
     // Only reset page if we're using the podcast search
-    if (paramName === "query") {
-      setPage("1");
-    }
+    // if (paramName === "query") {
+    //   setPage("1");
+    // }
   }, 250);
 
   return (

@@ -5,8 +5,10 @@ import { getPodcastTags } from "@/lib/get-podcast-tags";
 import { loadTagsListSearchParams } from "@/lib/tags-list-search-params";
 import { formatTagForUrl } from "@/lib/utils";
 import { TagGroup, TagList, Tag } from "react-aria-components";
+import { FilteredTags } from "@/components/filtered-tags";
 import { cn } from "@/lib/utils";
 import type { SearchParams } from "nuqs/server";
+import type { TagItem } from "@/components/tag-card";
 
 type TagsPageProps = {
   searchParams: SearchParams;
@@ -20,7 +22,7 @@ export default async function TagsPage({ searchParams }: TagsPageProps) {
   const { uniqueTagCount, tagsByLetter, letters } = getPodcastTags();
 
   // Filter tags if we have a query
-  let filteredTags = [];
+  let filteredTags: TagItem[] = [];
 
   if (query && query.trim() !== "") {
     filteredTags = Array.from(tagsByLetter.entries()).flatMap(
@@ -52,7 +54,7 @@ export default async function TagsPage({ searchParams }: TagsPageProps) {
       </p>
 
       <Suspense>
-        <PodcastSearch placeholder="Search for tags" paramName="query" />
+        <PodcastSearch placeholder="Search for tags" />
       </Suspense>
 
       {isSearchMode && filteredTags.length > 0 && (
@@ -67,9 +69,11 @@ export default async function TagsPage({ searchParams }: TagsPageProps) {
         </p>
       ) : isSearchMode ? (
         // For search results, directly render tags without letter grouping
-        <div className={cn("filtered-tags", animationClass)}>
-          hello
-        </div>
+        <FilteredTags
+          tags={filteredTags}
+          query={query}
+          className={animationClass}
+        />
       ) : (
         // For regular view, render each letter with its tags
         <div className={cn("space-y-12", animationClass)}>
