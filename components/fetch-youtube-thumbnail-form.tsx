@@ -124,7 +124,8 @@ export function FetchYouTubeThumbnailForm() {
                 <SelectItem value="jack-neel">Jack Neel</SelectItem>
                 <SelectItem value="simon-sinek">Simon Sinek</SelectItem>
                 <SelectItem value="tim-ferriss">Tim Ferriss</SelectItem>
-                </SelectContent>
+                <SelectItem value="scott-d-clary">Scott D. Clary</SelectItem>
+              </SelectContent>
             </Select>
             <ErrorMessage
               id="podcastHost-error"

@@ -11,12 +11,20 @@ export function formatHostForUrl(host: string): string {
     return "doac";
   }
 
-  // Otherwise, use the original formatting logic
-  return host.trim().toLowerCase().replace(/\s+/g, "-");
+  return host
+    .trim()
+    .toLowerCase()
+    .replace(/[^\w\s-]/g, "") // Remove punctuation and special characters
+    .replace(/\s+/g, "-"); // Replace spaces with hyphens
 }
+
+
+
 export const formatTagForUrl = (tag: string): string => {
   return tag.trim().toLowerCase().replace(/\s+/g, "-");
 };
+
+
 
 export function formatTagForDisplay(urlTag: string): string {
   return urlTag
