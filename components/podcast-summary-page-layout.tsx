@@ -25,8 +25,6 @@ export function PodcastSummaryPageLayout({
 
   const imageUrl = `https://podcast-summaries-dev.s3.amazonaws.com/podcast-thumbnails/${formattedPodcastHost}/${image}`;
 
-  console.log("Image URL: ", imageUrl);
-
   const formattedDate = format(parseISO(publishedAt), "MMMM d, yyyy");
 
   return (
@@ -35,9 +33,12 @@ export function PodcastSummaryPageLayout({
       <article className="podcast-summary">
         <header>
           <h1 className="my-7">{title}</h1>
-          <div className="relative flex items-center pl-4 text-gray-700 before:absolute before:left-0 before:h-3 before:w-[1.5px] before:bg-sky-700">
-            Posted{" "}
-            <time dateTime={parseISO(publishedAt).toISOString()}>
+          <div className="relative font-medium flex items-center pl-4 text-gray-700 before:absolute before:left-0 before:h-3 before:w-[1.5px] before:bg-sky-700">
+            Posted
+            <time
+              dateTime={parseISO(publishedAt).toISOString()}
+              className="ml-2"
+            >
               {formattedDate}
             </time>
           </div>
