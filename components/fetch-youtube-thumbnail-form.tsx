@@ -125,6 +125,7 @@ export function FetchYouTubeThumbnailForm() {
                 <SelectItem value="simon-sinek">Simon Sinek</SelectItem>
                 <SelectItem value="tim-ferriss">Tim Ferriss</SelectItem>
                 <SelectItem value="scott-d-clary">Scott D. Clary</SelectItem>
+                <SelectItem value="daily-stoic">Daily Stoic</SelectItem>
               </SelectContent>
             </Select>
             <ErrorMessage
