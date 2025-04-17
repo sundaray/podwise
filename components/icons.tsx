@@ -12,6 +12,7 @@ import {
   Search,
   Star,
   Tags,
+  User,
   X,
 } from "lucide-react";
 
@@ -29,5 +30,6 @@ export const Icons = {
   search: Search,
   star: Star,
   tags: Tags,
+  user: User,
   x: X,
 };
