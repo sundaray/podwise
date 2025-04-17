@@ -26,9 +26,9 @@ export async function PodcastCard({ podcast, hostPath }: PodcastCardProps) {
   return (
     <div className="group/card relative">
       {isPremium && (
-        <div className="p-1 w-auto absolute top-0 right-0 z-10 flex items-center gap-1 justify-center bg-amber-400">
+        <div className="absolute top-0 right-0 z-10 flex w-auto items-center justify-center gap-1 bg-linear-to-b from-amber-400 to-amber-500 p-1">
           <Icons.lock className="size-3 text-gray-700" />
-          <p className="text-xs text-gray-700 font-medium">Premium</p>
+          <p className="text-xs font-medium text-gray-700">Premium</p>
         </div>
       )}
       <Image
