@@ -36,7 +36,7 @@ export function MainNav({ items }: MainNavProps) {
         </p>
       </div>
       <nav className="hidden md:block">
-        <ul className="flex space-x-6">
+        <ul className="flex space-x-3">
           {items.map((item) => (
             <li key={item.title}>
               <NavItem title={item.title} href={item.href} />
