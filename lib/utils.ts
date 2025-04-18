@@ -6,9 +6,12 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export function formatHostForUrl(host: string): string {
-  // Special case for "The Diary Of A CEO"
   if (host.trim().toLowerCase() === "the diary of a ceo") {
     return "doac";
+  }
+
+  if (host.trim().toLowerCase() === "dr rangan chatterjee") {
+    return "rangan-chatterjee";
   }
 
   return host
@@ -18,13 +21,9 @@ export function formatHostForUrl(host: string): string {
     .replace(/\s+/g, "-"); // Replace spaces with hyphens
 }
 
-
-
 export const formatTagForUrl = (tag: string): string => {
   return tag.trim().toLowerCase().replace(/\s+/g, "-");
 };
-
-
 
 export function formatTagForDisplay(urlTag: string): string {
   return urlTag
