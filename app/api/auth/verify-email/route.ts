@@ -1,0 +1,41 @@
+import { NextRequest, NextResponse } from "next/server";
+
+import {
+  deleteEmailVerificationSession,
+  doesEmailVerificationSessionExist,
+  getEmailVerificationSession,
+} from "@/lib/auth/session";
+import { assignUserRole, createUser } from "@/lib/auth/user";
+import { timingSafeCompare } from "@/lib/auth/utils";
+
+export async function GET(request: NextRequest) {
+  try {
+    const url = request.nextUrl;
+    const tokenFromUrl = url.searchParams.get("token");
+    const authErrorUrl = new URL("/verify-email-error", url);
+
+    const sessionExists = await doesEmailVerificationSessionExist();
+    const payload = await getEmailVerificationSession();
+
+    if (!tokenFromUrl || !sessionExists || !payload) {
+      return NextResponse.redirect(authErrorUrl);
+    }
+
+    const { email, hashedPassword, token: tokenFromSession } = payload;
+
+    if (!timingSafeCompare(tokenFromUrl, tokenFromSession)) {
+      return NextResponse.redirect(authErrorUrl);
+    }
+
+    const role = assignUserRole(email);
+
+    await createUser(email, hashedPassword, role);
+
+    await deleteEmailVerificationSession();
+
+    return NextResponse.redirect(new URL("/email-verified", url));
+  } catch (error) {
+    const authErrorUrl = new URL("/auth-error", request.nextUrl);
+    return NextResponse.redirect(authErrorUrl);
+  }
+}
