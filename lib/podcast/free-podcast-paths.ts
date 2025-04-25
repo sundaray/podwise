@@ -1,0 +1,17 @@
+export const freePodcastPaths = [
+  "/podcasts/chris-williamson/behavior-change-strategies-rangan-chatterjee",
+  "/podcasts/chris-williamson/15-harsh-truths-from-greatest-founders-david-senra",
+  "/podcasts/chris-williamson/destroy-mental-limits-unlock-best-self-adam-grant",
+  "/podcasts/chris-williamson/fix-sleep-supercharge-life-matthew-walker",
+  "/podcasts/chris-williamson/focus-on-what-matters-most-greg-mckeown",
+  "/podcasts/chris-williamson/hidden-truth-about-collapsing-birth-rates-mads-larsen",
+  "/podcasts/chris-williamson/invisible-psychology-happiness-meaning-lionel-page",
+  "/podcasts/chris-williamson/life-lessons-from-modern-cowboy-dry-creek-dewayne",
+  "/podcasts/chris-williamson/longevity-masterclass-from-exercise-scientist-mike-israetel",
+  "/podcasts/chris-williamson/motivation-discipline-getting-through-hard-times-jesse-james-west",
+  "/podcasts/chris-williamson/pushing-boundaries-mental-toughness-nedd-brockman",
+  "/podcasts/chris-williamson/put-yourself-first-without-feeling-guilty-nick-pollard",
+  "/podcasts/chris-williamson/stop-betraying-yourself-be-more-authentic-david-sutcliffe",
+  "/podcasts/chris-williamson/think-like-historys-greatest-genius-michael-gelb",
+  "/podcasts/chris-williamson/why-mainstream-media-sucks-dave-smith",
+];

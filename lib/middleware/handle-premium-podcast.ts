@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { freePostcastPaths } from "@/lib/podcast/free-podcast-paths";
+import { freePodcastPaths } from "@/lib/podcast/free-podcast-paths";
 import { isPodcastSummaryPage } from "@/lib/middleware/is-podcast-summary-page";
 
 export async function handlePremiumPodcast(
@@ -15,7 +15,7 @@ export async function handlePremiumPodcast(
   }
 
   // Check if it's a free podcast
-  const isFreePostcast = freePostcastPaths.includes(path);
+  const isFreePostcast = freePodcastPaths.includes(path);
 
   // If it's not a free podcast and user is not authenticated, redirect to signin
   if (!isFreePostcast && !isAuthenticated) {

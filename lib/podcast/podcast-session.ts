@@ -1,14 +1,13 @@
 import "server-only";
-import { cookies } from "next/headers";
-import { jwtVerify, SignJWT } from "jose";
 
-// Secret key for JWT
-const JWT_SECRET =
-  process.env.PODCAST_JWT_SECRET || "podcast-session-secret-key";
-const secret = new TextEncoder().encode(JWT_SECRET);
+import { cookies } from "next/headers";
+import { base64url, jwtVerify, SignJWT } from "jose";
+
+const key = process.env.JWT_ENCRYPTION_KEY!;
+const secret = base64url.decode(key);
 
 // Create a podcast summary session
-export async function createPodcastSummarySession(
+export async function createPodcastSession(
   clientIP: string,
   isAuthenticated: boolean,
 ) {
@@ -38,7 +37,7 @@ export async function createPodcastSummarySession(
 }
 
 // Get the podcast summary session
-export async function getPodcastSummarySession(cookieValue?: string) {
+export async function getPodcastSession(cookieValue?: string) {
   if (!cookieValue) {
     const cookieStore = await cookies();
     const sessionCookie = cookieStore.get("podcast");
@@ -67,7 +66,7 @@ export async function getPodcastSummarySession(cookieValue?: string) {
 }
 
 // Update the podcast summary session
-export async function updatePodcastSummarySession(
+export async function updatePodcastSession(
   clientIP: string,
   currentSession: any,
   isAuthenticated: boolean,
@@ -79,7 +78,7 @@ export async function updatePodcastSummarySession(
     currentSession.isAuthenticated !== isAuthenticated ||
     currentSession.ip !== clientIP
   ) {
-    return createPodcastSummarySession(clientIP, isAuthenticated);
+    return createPodcastSession(clientIP, isAuthenticated);
   }
 
   // Check if the session was created today
@@ -92,7 +91,7 @@ export async function updatePodcastSummarySession(
     sessionDate.getMonth() !== today.getMonth() ||
     sessionDate.getFullYear() !== today.getFullYear()
   ) {
-    return createPodcastSummarySession(clientIP, isAuthenticated);
+    return createPodcastSession(clientIP, isAuthenticated);
   }
 
   // Increment the count

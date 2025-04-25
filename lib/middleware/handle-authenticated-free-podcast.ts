@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { freePostcastPaths } from "@/lib/podcast/free-podcast-paths";
+import { freePodcastPaths } from "@/lib/podcast/free-podcast-paths";
 import { isPodcastSummaryPage } from "@/lib/middleware/is-podcast-summary-page";
 import {
   getPodcastSession,
@@ -17,7 +17,7 @@ export async function handleAuthenticatedFreePodcast(request: NextRequest) {
   }
 
   // Check if it's a free podcast
-  const isFreePostcast = freePostcastPaths.includes(path);
+  const isFreePostcast = freePodcastPaths.includes(path);
   if (!isFreePostcast) {
     return null;
   }
@@ -47,14 +47,14 @@ export async function handleAuthenticatedFreePodcast(request: NextRequest) {
   const podcastSession = await getPodcastSession();
 
   // Check if session needs reset (new day, different IP, or auth changed)
-  const sessionDate = new Date(podcastSession.createdAt);
+  const sessionDate = new Date(podcastSession!.createdAt);
   const today = new Date();
   const isSameDay =
     sessionDate.getDate() === today.getDate() &&
     sessionDate.getMonth() === today.getMonth() &&
     sessionDate.getFullYear() === today.getFullYear();
 
-  if (!isSameDay || podcastSession.ip !== clientIP) {
+  if (!isSameDay || podcastSession!.ip !== clientIP) {
     // Create session
     await createPodcastSession(clientIP, true);
 

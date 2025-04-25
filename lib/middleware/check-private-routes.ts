@@ -6,6 +6,8 @@ export async function checkPrivateRoutes(request: NextRequest) {
   const { nextUrl } = request;
   const path = nextUrl.pathname;
 
+  console.log("checkPrivateRoutes(), path: ", path);
+
   // Get user session
   const { user } = await getUserSession();
 
