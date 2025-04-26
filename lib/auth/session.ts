@@ -30,14 +30,9 @@ export async function encrypt(payload: any): Promise<string> {
  *
  ************************************************/
 
-export async function createUserSession(
-  id: string,
-  email: string,
-  role: string,
-) {
+export async function createUserSession(email: string, role: string) {
   try {
     const sessionData = await encrypt({
-      id,
       email,
       role,
     });

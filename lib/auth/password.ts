@@ -3,8 +3,9 @@ import "server-only";
 import { hash, verify } from "@node-rs/argon2";
 import chalk from "chalk";
 
-import { supabase } from "@/lib/supabase";
-
+import { db } from "@/db";
+import { usersTable } from "@/db/schema";
+import { eq } from "drizzle-orm";
 /************************************************
  *
  * Verify user password
@@ -16,23 +17,26 @@ export async function verifyPassword(
   password: string,
 ): Promise<boolean> {
   try {
-    const { data, error } = await supabase
-      .from("users")
-      .select("password")
-      .eq("email", email)
-      .single();
+    // Query using Drizzle ORM syntax
+    const users = await db
+      .select({ password: usersTable.password })
+      .from(usersTable)
+      .where(eq(usersTable.email, email))
+      .limit(1);
 
-    if (error) {
-      console.error(chalk.red("[verifyPassword] error: "), error);
-      throw new Error("Failed to verify password.");
+    // If no user found or password is null (e.g., Google auth user), return false
+    if (users.length === 0 || !users[0].password) {
+      return false;
     }
 
-    const hashedPassword = data.password;
+    // Verify the password using argon2
+    const hashedPassword = users[0].password;
     return await verify(hashedPassword, password);
   } catch (error) {
+    console.error(chalk.red("[verifyPassword] error: "), error);
     const message =
       error instanceof Error ? error.message : `Unknown error: ${error}`;
-    throw new Error(message);
+    throw new Error(`Failed to verify password: ${message}`);
   }
 }
 

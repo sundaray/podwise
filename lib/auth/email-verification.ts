@@ -1,7 +1,9 @@
 import "server-only";
 
 import chalk from "chalk";
-import { supabase } from "@/lib/supabase";
+import { db } from "@/db";
+import { usersTable } from "@/db/schema";
+import { eq } from "drizzle-orm";
 
 /************************************************
  *
@@ -11,24 +13,24 @@ import { supabase } from "@/lib/supabase";
 
 export async function isEmailVerified(email: string): Promise<boolean> {
   try {
-    const { data, error } = await supabase
-      .from("users")
-      .select("emailVerified")
-      .eq("email", email)
-      .maybeSingle();
+    const users = await db
+      .select({ credentialEmailVerified: usersTable.credentialEmailVerified })
+      .from(usersTable)
+      .where(eq(usersTable.email, email))
+      .limit(1);
 
-    if (error) {
-      console.error(chalk.red("[isEmailVerified] error: "), error);
-      throw new Error("Failed to verify email.");
+    // If no user found, return false
+    // Otherwise, return the verification status
+    if (users.length === 0) {
+      return false;
     }
 
-    // If data is null (no user found), return false
-    // Otherwise, return the value of emailVerified
-    return data ? data.emailVerified : false;
+    return users[0].credentialEmailVerified;
   } catch (error) {
+    console.error(chalk.red("[isEmailVerified] error: "), error);
     const message =
       error instanceof Error ? error.message : `Unknown error: ${error}`;
-    throw new Error(message);
+    throw new Error(`Failed to verify email: ${message}`);
   }
 }
 

@@ -45,18 +45,16 @@ export function UserAccountNavClient({ user }: UserAccountNavClientProps) {
   return (
     <DropdownMenu open={isOpen} onOpenChange={handleOpenChange}>
       <DropdownMenuTrigger className="flex items-center space-x-1">
-        <span className="text-gray-700 text-sm font-medium">
-          My Account
-        </span>
-        <Icons.chevronDown className="text-gray-500 size-4" />
+        <span className="text-sm font-medium text-gray-700">My Account</span>
+        <Icons.chevronDown className="size-4 text-gray-500" />
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
         <div className="flex items-center justify-start gap-2 p-2">
           <div className="flex flex-col space-y-1 leading-none">
             {user.email && (
               <>
-                <p className="text-gray-500 text-xs">signed in as</p>
-                <p className="text-gray-700 w-[200px] truncate text-sm">
+                <p className="text-xs text-gray-500">signed in as</p>
+                <p className="w-[200px] truncate text-sm text-gray-700">
                   {user.email}
                 </p>
               </>
@@ -69,11 +67,11 @@ export function UserAccountNavClient({ user }: UserAccountNavClientProps) {
             {isSigningOut ? (
               <>
                 <Icons.loader className="mr-2 size-3 animate-spin" />
-                <p className="text-secondary-foreground text-sm">Sign out</p>
+                <p className="text-sm text-gray-700">Sign out</p>
               </>
             ) : (
               <>
-                <Icons.logOut className="text-muted-foreground mr-2 size-3" />
+                <Icons.logOut className="mr-2 size-3 text-gray-500" />
                 <p className="text-sm">Sign out</p>
               </>
             )}

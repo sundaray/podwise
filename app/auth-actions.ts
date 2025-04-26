@@ -21,7 +21,7 @@ import {
   getPasswordResetSession,
   deleteUserSession,
 } from "@/lib/auth/session";
-import { getUserIdAndRole } from "@/lib/auth/user";
+import { getUserRole } from "@/lib/auth/get-user-role";
 
 /************************************************
  *
@@ -70,8 +70,8 @@ export async function signInWithEmailAndPassword(
       const passwordVerified = await verifyPassword(email, password);
 
       if (passwordVerified) {
-        const { id, role } = await getUserIdAndRole(email);
-        await createUserSession(id, email, role);
+        const { role } = await getUserRole(email);
+        await createUserSession(email, role);
       } else {
         errorOccurred = true;
         return submission.reply({
@@ -201,7 +201,7 @@ export async function forgotPassword(prevState: unknown, formData: FormData) {
  * Reset user password
  *
  ************************************************/
-import { updatePassword } from "@/lib/auth/user";
+import { updatePassword } from "@/lib/auth/update-password";
 import { ResetPasswordFormSchema } from "@/schema";
 import { deletePasswordResetSession } from "@/lib/auth/session";
 

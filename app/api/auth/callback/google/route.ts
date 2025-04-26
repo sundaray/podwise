@@ -1,12 +1,11 @@
 import { cookies } from "next/headers";
 import { NextRequest, NextResponse } from "next/server";
 import { decodeJwt, JWTPayload } from "jose";
-import { v4 as uuidv4 } from "uuid";
 
 import { assignUserRole } from "@/lib/assign-user-role";
 import { createUser } from "@/lib/create-user";
 import { google } from "@/lib/auth/oauth2/auth";
-import { createSession, decrypt } from "@/lib/auth/oauth2/session";
+import { createUserSession, decrypt } from "@/lib/auth/session";
 
 interface GoogleIdTokenClaims extends JWTPayload {
   name: string;
@@ -65,8 +64,7 @@ export async function GET(request: NextRequest) {
     // Decrypt the ID token to get user profile information
     const claims = decodeJwt(data.id_token) as GoogleIdTokenClaims;
 
-    const id = uuidv4();
-    const name = claims.name;
+    // const name = claims.name;
     const email = claims.email;
     const picture = claims.picture;
 
@@ -74,10 +72,10 @@ export async function GET(request: NextRequest) {
     const role = assignUserRole(email);
 
     // Create a user record in the database
-    await createUser(id, name, email, role, picture);
+    await createUser(email, role, "google", picture);
 
     // Create a user session
-    await createSession(id, name, email, role, picture);
+    await createUserSession(email, role);
 
     return NextResponse.redirect(new URL(oauthState.redirect, url));
   } catch (error) {
