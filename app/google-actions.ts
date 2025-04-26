@@ -14,6 +14,9 @@ import { storeOAuthState } from "@/lib/auth/oauth2/session";
 export type GoogleSignInState = { error?: string[] };
 
 export async function signInWithGoogle(next: string) {
+  let errorOccurred = false;
+  let redirectUrl = "";
+
   try {
     const state = generateState();
     const codeVerifier = generateCodeVerifier();
@@ -26,11 +29,16 @@ export async function signInWithGoogle(next: string) {
 
     await storeOAuthState(state, codeVerifier, next);
 
-    redirect(url.toString());
+    redirectUrl = url.toString();
   } catch (error) {
+    errorOccurred = true;
     return {
       errors: ["Failed to sign in with Google. Please try again."],
     };
+  } finally {
+    if (!errorOccurred && redirectUrl) {
+      redirect(redirectUrl);
+    }
   }
 }
 

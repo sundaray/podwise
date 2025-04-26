@@ -1,4 +1,3 @@
-// lib/middleware/check-auth-routes.ts
 import { NextRequest, NextResponse } from "next/server";
 import { getUserSession } from "@/lib/auth/session";
 

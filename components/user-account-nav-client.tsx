@@ -10,6 +10,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Icons } from "@/components/icons";
+import { signOut } from "@/app/google-actions";
 
 type UserAccountNavClientProps = {
   user: {
@@ -32,8 +33,8 @@ export function UserAccountNavClient({ user }: UserAccountNavClientProps) {
   // Handle the sign out process
   async function handleSignOut() {
     try {
-      // setIsSigningOut(true);
-      // await signOut();
+      setIsSigningOut(true);
+      await signOut();
     } catch (error) {
       console.error("Unable to sign out:", error);
     } finally {
@@ -44,7 +45,7 @@ export function UserAccountNavClient({ user }: UserAccountNavClientProps) {
 
   return (
     <DropdownMenu open={isOpen} onOpenChange={handleOpenChange}>
-      <DropdownMenuTrigger className="flex items-center space-x-1">
+      <DropdownMenuTrigger className="ml-auto flex items-center space-x-1">
         <span className="text-sm font-medium text-gray-700">My Account</span>
         <Icons.chevronDown className="size-4 text-gray-500" />
       </DropdownMenuTrigger>

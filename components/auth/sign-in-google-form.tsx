@@ -20,8 +20,12 @@ export function SignInGoogleForm() {
 
   return (
     <form action={formAction}>
-      {formState?.error && (
-        <ErrorMessage id="form-error" errors={formState?.error} />
+      {formState?.errors && (
+        <ErrorMessage
+          id="form-error"
+          errors={formState?.errors}
+          className="pb-4"
+        />
       )}
       <button
         type="submit"

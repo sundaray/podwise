@@ -112,8 +112,8 @@ export async function PodcastSummaryPageLayout({
                 </p>
                 <Link
                   href="/premium"
-                  className="rounded-full bg-amber-600 px-4 py-2 font-medium text-white transition hover:bg-amber-700"
-                >
+                  className="inline-flex items-center rounded-full bg-linear-to-b from-amber-400 to-amber-500 px-4 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-amber-400 hover:text-gray-900"
+                  >
                   Go Premium
                 </Link>
               </>

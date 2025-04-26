@@ -63,29 +63,3 @@ export async function storeOAuthState(
 
   cookieStore.set("google_oauth_state", encryptedOAuthState, cookieOptions);
 }
-
-/************************************************
- *
- * Create session
- *
- ************************************************/
-
-export async function createSession(
-  userId: string,
-  name: string,
-  email: string,
-  role: string,
-  picture: string,
-) {
-  const encryptedUser = await encrypt({ userId, name, email, role, picture });
-
-  const cookieStore = await cookies();
-
-  cookieStore.set("session", encryptedUser, {
-    httpOnly: true,
-    secure: process.env.NODE_ENV === "production",
-    maxAge: 60 * 60, // 1 hour in seconds
-    sameSite: "lax",
-    path: "/",
-  });
-}
