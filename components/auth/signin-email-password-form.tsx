@@ -49,88 +49,78 @@ export function SignInEmailPasswordForm() {
   }
 
   return (
-    <div className="px-4 sm:mx-auto sm:max-w-sm">
-      <h2 className="text-secondary-foreground text-2xl font-semibold tracking-tight">
-        Welcome back
-      </h2>
-      <p className="text-muted-foreground mb-8 text-sm">
-        Sign in to your account
-      </p>
-      <form
-        id={form.id}
-        onSubmit={form.onSubmit}
-        action={formAction}
-        noValidate
-        aria-describedby={form.errors ? "form-error" : undefined}
-      >
-        {form.errors && <ErrorMessage id="form-error" errors={form.errors} />}
-        <div className="mt-4 grid gap-2">
-          <div className="grid gap-2">
-            <Label htmlFor="email">Email</Label>
-            <Input
-              id="email"
-              type="email"
-              name="email"
-              placeholder="you@example.com"
-              defaultValue={lastResult?.initialValue?.email as string}
-              aria-invalid={fields.email.errors ? "true" : undefined}
-              aria-describedby={fields.email.errors ? "email-error" : undefined}
-            />
-            <ErrorMessage id="email-error" errors={fields.email.errors} />
-          </div>
-          <div className="grid gap-2">
-            <div className="flex items-center justify-between">
-              <Label htmlFor="password">Password</Label>
-              <div className="text-sm">
-                <Link
-                  href="/forgot-password"
-                  className="font-medium text-blue-600 hover:text-blue-500"
-                >
-                  Forgot password?
-                </Link>
-              </div>
-            </div>
-            <div className="relative">
-              <Input
-                id="password"
-                type={isPasswordVisible ? "text" : "password"}
-                name="password"
-                defaultValue={lastResult?.initialValue?.password as string}
-                aria-invalid={fields.password.errors ? "true" : undefined}
-                aria-describedby={
-                  fields.password.errors ? "password-error" : undefined
-                }
-              />
-              <button
-                type="button"
-                onClick={togglePasswordVisibility}
-                aria-label={
-                  isPasswordVisible ? "Hide password" : "Show password"
-                }
-                aria-pressed={isPasswordVisible}
-                className="text-muted-foreground hover:text-foreground absolute inset-y-0 end-0 flex h-full w-9 items-center justify-center rounded-e-lg outline-offset-0 transition-colors focus:z-10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-500 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50"
-              >
-                {isPasswordVisible ? (
-                  <Icons.eyeOff size={16} strokeWidth={2} aria-hidden="true" />
-                ) : (
-                  <Icons.eye size={16} strokeWidth={2} aria-hidden="true" />
-                )}
-              </button>
-            </div>
-            <ErrorMessage id="password-error" errors={fields.password.errors} />
-          </div>
-          <Button type="submit" disabled={isPending}>
-            {isPending ? (
-              <>
-                <Icons.loader className="size-3 animate-spin" />
-                Signing in...
-              </>
-            ) : (
-              "Sign in"
-            )}
-          </Button>
+    <form
+      id={form.id}
+      onSubmit={form.onSubmit}
+      action={formAction}
+      noValidate
+      aria-describedby={form.errors ? "form-error" : undefined}
+    >
+      {form.errors && <ErrorMessage id="form-error" errors={form.errors} />}
+      <div className="mt-4 grid gap-2">
+        <div className="grid gap-2">
+          <Label htmlFor="email">Email</Label>
+          <Input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="you@example.com"
+            defaultValue={lastResult?.initialValue?.email as string}
+            aria-invalid={fields.email.errors ? "true" : undefined}
+            aria-describedby={fields.email.errors ? "email-error" : undefined}
+          />
+          <ErrorMessage id="email-error" errors={fields.email.errors} />
         </div>
-      </form>
-    </div>
+        <div className="grid gap-2">
+          <div className="flex items-center justify-between">
+            <Label htmlFor="password">Password</Label>
+            <div className="text-sm">
+              <Link
+                href="/forgot-password"
+                className="font-medium text-sky-700 hover:text-sky-500"
+              >
+                Forgot password?
+              </Link>
+            </div>
+          </div>
+          <div className="relative">
+            <Input
+              id="password"
+              type={isPasswordVisible ? "text" : "password"}
+              name="password"
+              defaultValue={lastResult?.initialValue?.password as string}
+              aria-invalid={fields.password.errors ? "true" : undefined}
+              aria-describedby={
+                fields.password.errors ? "password-error" : undefined
+              }
+            />
+            <button
+              type="button"
+              onClick={togglePasswordVisibility}
+              aria-label={isPasswordVisible ? "Hide password" : "Show password"}
+              aria-pressed={isPasswordVisible}
+              className="text-muted-foreground hover:text-foreground absolute inset-y-0 end-0 flex h-full w-9 items-center justify-center rounded-e-lg outline-offset-0 transition-colors focus:z-10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-500 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50"
+            >
+              {isPasswordVisible ? (
+                <Icons.eyeOff size={16} strokeWidth={2} aria-hidden="true" />
+              ) : (
+                <Icons.eye size={16} strokeWidth={2} aria-hidden="true" />
+              )}
+            </button>
+          </div>
+          <ErrorMessage id="password-error" errors={fields.password.errors} />
+        </div>
+        <Button type="submit" disabled={isPending} className="h-10 rounded">
+          {isPending ? (
+            <>
+              <Icons.loader className="size-3 animate-spin" />
+              Signing in...
+            </>
+          ) : (
+            "Sign in"
+          )}
+        </Button>
+      </div>
+    </form>
   );
 }

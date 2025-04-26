@@ -18,7 +18,7 @@ export function SignInGoogleForm() {
   );
 
   return (
-    <form action={formAction} className="mx-auto grid max-w-[320px] gap-2">
+    <form action={formAction}>
       {formState !== undefined && formState.error && (
         <div className="py-4 text-sm text-pretty text-red-600">
           {formState.error}
@@ -27,7 +27,7 @@ export function SignInGoogleForm() {
       <button
         type="submit"
         disabled={isPending}
-        className="border-input text-secondary-foreground hover:bg-accent w-full rounded-md border py-2 text-sm font-medium shadow-sm transition-all active:scale-[0.98]"
+        className="item-center flex w-full justify-center rounded border border-2 border-gray-200 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-100"
       >
         <Icons.google className="mr-2 inline-block size-5" />
         Sign in with Google

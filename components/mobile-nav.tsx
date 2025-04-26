@@ -80,17 +80,15 @@ export function MobileNav() {
         <PopoverButton
           as={Link}
           href="/premium"
-          className="block flex w-fit items-center gap-2 rounded-full bg-purple-700 py-2 px-4 font-medium text-white"
+          className="w-fit inline-flex items-center rounded-full bg-linear-to-b from-amber-400 to-amber-500 px-4 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-amber-400 hover:text-gray-900"
         >
-          <Icons.star className="size-3.5 text-purple-200" />
           Go Premium
         </PopoverButton>
         <PopoverButton
           as={Link}
           href="/login"
-          className="block mt-2 flex w-full items-center gap-1 font-medium text-gray-700"
+          className="w-fit inline-flex mt-2 items-center rounded-full bg-gray-900 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-gray-900 hover:text-white"
         >
-          <FaUser className="size-3 text-gray-400" />
           Sign in
         </PopoverButton>
       </PopoverPanel>
