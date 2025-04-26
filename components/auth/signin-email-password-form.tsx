@@ -57,21 +57,26 @@ export function SignInEmailPasswordForm() {
       aria-describedby={form.errors ? "form-error" : undefined}
     >
       {form.errors && <ErrorMessage id="form-error" errors={form.errors} />}
-      <div className="mt-4 grid gap-2">
-        <div className="grid gap-2">
+      <div className="grid gap-2">
+        <div>
           <Label htmlFor="email">Email</Label>
           <Input
             id="email"
             type="email"
             name="email"
+            className="mt-2"
             placeholder="you@example.com"
             defaultValue={lastResult?.initialValue?.email as string}
             aria-invalid={fields.email.errors ? "true" : undefined}
             aria-describedby={fields.email.errors ? "email-error" : undefined}
           />
-          <ErrorMessage id="email-error" errors={fields.email.errors} />
+          <ErrorMessage
+            id="email-error"
+            errors={fields.email.errors}
+            className="mt-1"
+          />
         </div>
-        <div className="grid gap-2">
+        <div>
           <div className="flex items-center justify-between">
             <Label htmlFor="password">Password</Label>
             <div className="text-sm">
@@ -88,6 +93,7 @@ export function SignInEmailPasswordForm() {
               id="password"
               type={isPasswordVisible ? "text" : "password"}
               name="password"
+              className="mt-2"
               defaultValue={lastResult?.initialValue?.password as string}
               aria-invalid={fields.password.errors ? "true" : undefined}
               aria-describedby={
@@ -99,7 +105,7 @@ export function SignInEmailPasswordForm() {
               onClick={togglePasswordVisibility}
               aria-label={isPasswordVisible ? "Hide password" : "Show password"}
               aria-pressed={isPasswordVisible}
-              className="text-muted-foreground hover:text-foreground absolute inset-y-0 end-0 flex h-full w-9 items-center justify-center rounded-e-lg outline-offset-0 transition-colors focus:z-10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-500 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50"
+              className="absolute inset-y-0 end-0 flex h-full w-9 items-center justify-center rounded-e-lg text-gray-500 outline-offset-0 transition-colors hover:text-gray-700 focus:z-10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-sky-500 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50"
             >
               {isPasswordVisible ? (
                 <Icons.eyeOff size={16} strokeWidth={2} aria-hidden="true" />
@@ -108,7 +114,11 @@ export function SignInEmailPasswordForm() {
               )}
             </button>
           </div>
-          <ErrorMessage id="password-error" errors={fields.password.errors} />
+          <ErrorMessage
+            id="password-error"
+            errors={fields.password.errors}
+            className="mt-1"
+          />
         </div>
         <Button type="submit" disabled={isPending} className="h-10 rounded">
           {isPending ? (

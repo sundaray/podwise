@@ -27,7 +27,7 @@ export function SignInGoogleForm() {
       <button
         type="submit"
         disabled={isPending}
-        className="item-center flex w-full justify-center rounded border border-2 border-gray-200 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-100"
+        className="item-center flex w-full justify-center rounded border border-2 border-gray-200 py-2 text-sm font-medium text-gray-700 shadow-xs transition-colors hover:bg-gray-100"
       >
         <Icons.google className="mr-2 inline-block size-5" />
         Sign in with Google
