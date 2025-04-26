@@ -11,19 +11,27 @@ import { storeOAuthState } from "@/lib/auth/oauth2/session";
  * Sign in with Google
  **************** ********************************/
 
+export type GoogleSignInState = { error?: string[] };
+
 export async function signInWithGoogle(next: string) {
-  const state = generateState();
-  const codeVerifier = generateCodeVerifier();
+  try {
+    const state = generateState();
+    const codeVerifier = generateCodeVerifier();
 
-  const url = await google.createAuthorizationURLWithPKCE(state, codeVerifier, [
-    "openid",
-    "email",
-    "profile",
-  ]);
+    const url = await google.createAuthorizationURLWithPKCE(
+      state,
+      codeVerifier,
+      ["openid", "email", "profile"],
+    );
 
-  await storeOAuthState(state, codeVerifier, next);
+    await storeOAuthState(state, codeVerifier, next);
 
-  redirect(url.toString());
+    redirect(url.toString());
+  } catch (error) {
+    return {
+      errors: ["Failed to sign in with Google. Please try again."],
+    };
+  }
 }
 
 /************************************************
