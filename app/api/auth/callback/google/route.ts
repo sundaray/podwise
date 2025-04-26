@@ -6,6 +6,7 @@ import { assignUserRole } from "@/lib/assign-user-role";
 import { createUser } from "@/lib/create-user";
 import { google } from "@/lib/auth/oauth2/auth";
 import { createUserSession, decrypt } from "@/lib/auth/session";
+import { getAccessStatus } from "@/lib/get-access-status";
 
 interface GoogleIdTokenClaims extends JWTPayload {
   name: string;
@@ -74,8 +75,17 @@ export async function GET(request: NextRequest) {
     // Create a user record in the database
     await createUser(email, role, "google", picture);
 
+    // Get the user's access status
+    const { annualAccessStatus, lifetimeAccessStatus } =
+      await getAccessStatus(email);
+
     // Create a user session
-    await createUserSession(email, role);
+    await createUserSession(
+      email,
+      role,
+      annualAccessStatus,
+      lifetimeAccessStatus,
+    );
 
     return NextResponse.redirect(new URL(oauthState.redirect, url));
   } catch (error) {

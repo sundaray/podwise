@@ -30,11 +30,18 @@ export async function encrypt(payload: any): Promise<string> {
  *
  ************************************************/
 
-export async function createUserSession(email: string, role: string) {
+export async function createUserSession(
+  email: string,
+  role: string,
+  annualAccessStatus: boolean,
+  lifetimeAccessStatus: boolean,
+) {
   try {
     const sessionData = await encrypt({
       email,
       role,
+      annualAccessStatus,
+      lifetimeAccessStatus,
     });
 
     const cookieStore = await cookies();
@@ -166,9 +173,10 @@ export async function deleteEmailVerificationSession() {
  ************************************************/
 
 type User = {
-  id: string;
   email: string;
   role: string;
+  annualAccessStatus: boolean;
+  lifetimeAccessStatus: boolean;
 };
 
 export async function getUserSession(): Promise<{ user: User | null }> {
