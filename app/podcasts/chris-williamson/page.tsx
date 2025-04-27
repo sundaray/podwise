@@ -7,7 +7,6 @@ import { getVideoDetails } from "@/lib/get-video-details";
 import { filterPodcasts } from "@/lib/podcast-filters";
 import { loadPodcastListSearchParams } from "@/lib/podcast-list-search-params";
 import type { SearchParams } from "nuqs/server";
-import { Icons } from "@/components/icons";
 
 const ITEMS_PER_PAGE = 9;
 
@@ -27,20 +26,10 @@ export default async function ChrisWilliamsonPodcastPage({
     query,
   } = await loadPodcastListSearchParams(searchParams);
 
-  // Fetch and sort data (consider caching)
-  const podcastsWithDetails = await Promise.all(
-    chrisWilliamsonPodcastList.map(async (podcast) => {
-      const videoDetails = await getVideoDetails(podcast.videoId);
-      return {
-        ...podcast,
-        publishedAt: videoDetails?.publishedAt || null,
-      };
-    }),
-  );
-
-  const sortedPodcasts = [...podcastsWithDetails].sort((a, b) => {
-    const dateA = a.publishedAt ? new Date(a.publishedAt) : new Date(0);
-    const dateB = b.publishedAt ? new Date(b.publishedAt) : new Date(0);
+  // Sort podcasts by upload date without API calls
+  const sortedPodcasts = [...chrisWilliamsonPodcastList].sort((a, b) => {
+    const dateA = a.videoUploadedAt ? new Date(a.videoUploadedAt) : new Date(0);
+    const dateB = b.videoUploadedAt ? new Date(b.videoUploadedAt) : new Date(0);
     return dateB.getTime() - dateA.getTime();
   });
 

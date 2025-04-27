@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Icons } from "@/components/icons";
-import { getVideoDetails } from "@/lib/get-video-details";
+import { formatVideoUploadDate } from "@/lib/format-video-upload-date";
 
 type PodcastCardProps = {
   podcast: {
@@ -11,6 +11,7 @@ type PodcastCardProps = {
     podcastHost: string;
     videoId: string;
     isPremium: boolean;
+    videoUploadedAt: string;
   };
   hostPath: string;
 };
@@ -19,9 +20,10 @@ const solidColorPlaceholder =
   "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1' fill='%23F3F4F6'%3E%3Crect width='1' height='1'/%3E%3C/svg%3E";
 
 export async function PodcastCard({ podcast, hostPath }: PodcastCardProps) {
-  const { title, slug, image, videoId, isPremium } = podcast;
+  const { title, slug, image, videoUploadedAt, isPremium } = podcast;
 
-  const videoDetails = await getVideoDetails(videoId);
+  // Format the date without making API calls
+  const formattedDate = formatVideoUploadDate(videoUploadedAt);
 
   return (
     <div className="group/card relative">
@@ -46,10 +48,9 @@ export async function PodcastCard({ podcast, hostPath }: PodcastCardProps) {
         {title}
       </h2>
 
-      {videoDetails && (
+      {formattedDate && (
         <p className="mt-2 text-sm text-gray-700 transition-colors group-hover/card:text-gray-500">
-          {videoDetails.formattedViewCount} •{" "}
-          {videoDetails.formattedPublishedDate}
+          {formattedDate}
         </p>
       )}
 
