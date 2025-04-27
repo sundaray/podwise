@@ -8,7 +8,9 @@ import { generateState } from "@/lib/auth/oauth2/utils";
 import { storeOAuthState } from "@/lib/auth/oauth2/session";
 
 /************************************************
+ *
  * Sign in with Google
+ *
  **************** ********************************/
 
 export type GoogleSignInState = { error?: string[] };
@@ -43,11 +45,13 @@ export async function signInWithGoogle(next: string) {
 }
 
 /************************************************
+ *
  * Sign out
+ *
  ************************************************/
 
 export async function signOut() {
   const cookiesStore = await cookies();
-  cookiesStore.delete("session");
+  cookiesStore.delete("user-session");
   redirect("/");
 }

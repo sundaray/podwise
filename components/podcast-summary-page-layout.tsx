@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { redirect } from "next/navigation";
 import { headers } from "next/headers";
 import { Frontmatter } from "@/types";
 import { format, parseISO } from "date-fns";
@@ -22,7 +23,21 @@ export async function PodcastSummaryPageLayout({
   children,
   frontmatter,
 }: PodcastSummaryPageLayoutProps) {
-  const { title, publishedAt, tags, image, podcastHost } = frontmatter;
+  const { title, publishedAt, tags, image, podcastHost, isPremium } =
+    frontmatter;
+
+  // Get user session
+  const { user } = await getUserSession();
+  const isAuthenticated = !!user;
+
+  // Check if the user has premium access
+  const hasPremiumAccess =
+    user && (user.annualAccessStatus || user.lifetimeAccessStatus);
+
+  // If this is a premium podcast and the user is authenticated but doesn't have premium access, redirect to premium page
+  if (isPremium && isAuthenticated && !hasPremiumAccess) {
+    redirect("/premium");
+  }
 
   const formattedPodcastHost = formatHostForUrl(podcastHost);
 
@@ -35,9 +50,6 @@ export async function PodcastSummaryPageLayout({
   // Default to false if header is not present
   const limitReachedStr = headersList.get("x-limit-reached") || "false";
   const limitReached = limitReachedStr === "true";
-
-  const { user } = await getUserSession();
-  const isAuthenticated = !!user;
 
   return (
     <div className="mx-auto max-w-3xl px-4 md:px-8">
@@ -113,7 +125,7 @@ export async function PodcastSummaryPageLayout({
                 <Link
                   href="/premium"
                   className="inline-flex items-center rounded-full bg-linear-to-b from-amber-400 to-amber-500 px-4 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-amber-400 hover:text-gray-900"
-                  >
+                >
                   Go Premium
                 </Link>
               </>

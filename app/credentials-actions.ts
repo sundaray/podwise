@@ -12,16 +12,17 @@ import {
   createEmailVerificationURL,
   isEmailVerified,
   sendVerificationEmail,
-} from "@/lib/auth/email-verification";
-import { hashPassword, verifyPassword } from "@/lib/auth/password";
+} from "@/lib/auth/credentials/email-verification";
+import { hashPassword } from "@/lib/auth/credentials/hash-password";
+import { verifyPassword } from "@/lib/auth/credentials/verify-password";
 import {
   createEmailVerificationSession,
-  createUserSession,
   doesPasswordResetSessionExist,
   getPasswordResetSession,
-  deleteUserSession,
-} from "@/lib/auth/session";
+} from "@/lib/auth/credentials/session";
+import { createUserSession, deleteUserSession } from "@/lib/auth/session";
 import { getUserRole } from "@/lib/auth/get-user-role";
+import { getAccessStatus } from "@/lib/get-access-status";
 
 /************************************************
  *
@@ -71,7 +72,15 @@ export async function signInWithEmailAndPassword(
 
       if (passwordVerified) {
         const { role } = await getUserRole(email);
-        await createUserSession(email, role);
+        const { annualAccessStatus, lifetimeAccessStatus } =
+          await getAccessStatus(email);
+
+        await createUserSession(
+          email,
+          role,
+          annualAccessStatus,
+          lifetimeAccessStatus,
+        );
       } else {
         errorOccurred = true;
         return submission.reply({
@@ -139,8 +148,8 @@ import {
   createPasswordResetToken,
   createPasswordResetURL,
   sendPasswordResetEmail,
-} from "@/lib/auth/password-reset";
-import { createPasswordResetSession } from "@/lib/auth/session";
+} from "@/lib/auth/credentials/password-reset";
+import { createPasswordResetSession } from "@/lib/auth/credentials/session";
 
 export async function forgotPassword(prevState: unknown, formData: FormData) {
   const headersList = await headers();
@@ -201,9 +210,9 @@ export async function forgotPassword(prevState: unknown, formData: FormData) {
  * Reset user password
  *
  ************************************************/
-import { updatePassword } from "@/lib/auth/update-password";
+import { updatePassword } from "@/lib/auth/credentials/update-password";
 import { ResetPasswordFormSchema } from "@/schema";
-import { deletePasswordResetSession } from "@/lib/auth/session";
+import { deletePasswordResetSession } from "@/lib/auth/credentials/session";
 
 export async function resetPassword(prevState: unknown, formData: FormData) {
   const headersList = await headers();

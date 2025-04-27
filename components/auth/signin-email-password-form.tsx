@@ -12,7 +12,7 @@ import { Button } from "@/components/ui/button";
 import { Icons } from "@/components/icons";
 import { ErrorMessage } from "@/components/error-message";
 
-import { signInWithEmailAndPassword } from "@/app/auth-actions";
+import { signInWithEmailAndPassword } from "@/app/credentials-actions";
 import { SignInEmailPasswordFormSchema } from "@/schema";
 
 export function SignInEmailPasswordForm() {

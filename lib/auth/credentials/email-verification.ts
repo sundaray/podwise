@@ -67,24 +67,39 @@ export function createEmailVerificationURL(token: string): string {
  ************************************************/
 
 import { resend } from "@/lib/resend";
+import { render } from "@react-email/render";
+import { sesClient } from "@/lib/aws";
+import { SendEmailCommand } from "@aws-sdk/client-ses";
 import { EmailVerificationTemplate } from "@/components/email-verification-template";
 
 export async function sendVerificationEmail(email: string, url: string) {
-  try {
-    const { error } = await resend.emails.send({
-      from: process.env.EMAIL_FROM!,
-      to: email,
-      subject: "Verify your email address",
-      react: EmailVerificationTemplate({ url }),
-    });
+      // Convert the email to HTML
+      const emailHtml = await render(EmailVerificationTemplate({ url }))
 
-    if (error) {
-      console.error(chalk.red("[sendVerificationEmail] error: "), error);
-      throw new Error("Failed to send verification email.");
-    }
+      const sendEmailCommand = new SendEmailCommand({
+        Destination: {
+          ToAddresses: [email],
+        },
+        Message: {
+          Body: {
+            Html: {
+              Charset: "UTF-8",
+              Data: emailHtml,
+            },
+          },
+          Subject: {
+            Charset: "UTF-8",
+            Data: "Sign-in link for www.podwise.org",
+          },
+        },
+        Source: process.env.EMAIL_FROM,
+      })
+  
+  try {
+    await sesClient.send(sendEmailCommand)
   } catch (error) {
     const message =
       error instanceof Error ? error.message : `Unknown error: ${error}`;
-    throw new Error(message);
+    throw new Error(`Failed to send verification email: ${message}`);
   }
 }
