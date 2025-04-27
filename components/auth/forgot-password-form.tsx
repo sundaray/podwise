@@ -5,7 +5,7 @@ import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Icons } from "@/components/icons";
-import { ErrorMessage } from "@/components/error-message";
+import { ErrorMessage } from "@/components/auth/error-message";
 import { useForm } from "@conform-to/react";
 import { parseWithZod } from "@conform-to/zod";
 import { ForgotPasswordFormSchema } from "@/schema";
@@ -32,7 +32,9 @@ export function ForgotPasswordForm() {
 
   return (
     <form id={form.id} onSubmit={form.onSubmit} action={formAction} noValidate>
-      {form.errors && <ErrorMessage id="form-error" errors={form.errors} className="pb-4"/>}
+      {form.errors && (
+        <ErrorMessage id="form-error" errors={form.errors} className="pb-4" />
+      )}
       <div className="grid gap-2">
         <div className="grid">
           <Label htmlFor="email">Email</Label>

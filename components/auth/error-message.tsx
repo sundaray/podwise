@@ -9,24 +9,23 @@ type ErrorMessageProps = {
 export function ErrorMessage({ id, errors, className }: ErrorMessageProps) {
   // Define base classes that will always be applied
   const baseClasses =
-    "min-h-[20px] duration-400 text-sm text-red-600 ease-out animate-in fade-in-0 slide-in-from-left-1";
+    "min-h-[20px] duration-200 text-sm text-red-600 ease-out animate-in fade-in-0 slide-in-from-left-1";
 
   // If no errors, just render an empty container with the minimum height
   if (!errors) {
     return <div id={id} className={cn(baseClasses, className)}></div>;
   }
 
-  // Handle only one error message
-  if (errors.length === 1) {
-    return (
-      <p id={id} className={cn(baseClasses, className)}>
-        {errors[0]}
-      </p>
-    );
-  }
+  // Check if this is a password field by examining the id
+  const isPasswordField = id === "password-error";
+  const requiredMsg = "Password is required";
 
-  // For multiple error messages
-  if (errors.length > 0) {
+  const detailedErrors = isPasswordField
+    ? errors.filter((e) => e !== requiredMsg)
+    : errors;
+
+  // For single/multiple error messages under the password field
+  if (isPasswordField && detailedErrors.length > 0) {
     return (
       <div id={id} className={cn(baseClasses, className)}>
         <p>Password must:</p>
@@ -38,6 +37,11 @@ export function ErrorMessage({ id, errors, className }: ErrorMessageProps) {
       </div>
     );
   }
-  // If we have an empty array, render an empty container
-  return <div id={id} className={cn(baseClasses, className)}></div>;
+
+  // Non-password fields
+  return (
+    <p id={id} className={cn(baseClasses, className)}>
+      {errors[0]}
+    </p>
+  );
 }

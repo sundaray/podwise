@@ -9,18 +9,18 @@ export function EmailVerificationTemplate({ url }: { url: string }) {
   return (
     <Html>
       <Tailwind>
-        <Text className="text-base font-medium text-gray-900">Hi,</Text>
-        <Text className="text-base font-medium text-gray-900">
+        <Text className="text-base font-medium text-gray-700">Hi,</Text>
+        <Text className="text-base font-medium text-gray-700">
           Click the buttton below to verify your email:
         </Text>
         <Button
           href={url}
-          className="rounded bg-blue-600 px-4 py-2 text-base font-medium text-white"
+          className="rounded bg-sky-700 px-4 py-2 text-base font-medium text-white"
         >
           Verify Email
         </Button>
-        <Text className="text-base font-medium text-gray-900">
-          Note: The link will expire in 1 hour.
+        <Text className="text-base font-medium text-gray-700">
+          Note: This link will expire in 1 hour.
         </Text>
 
         <Text className="text-sm font-medium text-gray-500">

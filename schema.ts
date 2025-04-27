@@ -40,6 +40,10 @@ export const FetchYouTubeThumbnailFormSchema = z.object({
   ),
 });
 
+export const FetchYouTubeUploadDateFormSchema = z.object({
+  videoId: z.string({ required_error: "YouTube video ID is required" }),
+});
+
 export const SignInEmailPasswordFormSchema = z.object({
   email: z
     .string({ required_error: "Email is required" })

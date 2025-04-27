@@ -10,7 +10,7 @@ import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Icons } from "@/components/icons";
-import { ErrorMessage } from "@/components/error-message";
+import { ErrorMessage } from "@/components/auth/error-message";
 
 import { signInWithEmailAndPassword } from "@/app/credentials-actions";
 import { SignInEmailPasswordFormSchema } from "@/schema";
@@ -56,7 +56,9 @@ export function SignInEmailPasswordForm() {
       noValidate
       aria-describedby={form.errors ? "form-error" : undefined}
     >
-      {form.errors && <ErrorMessage id="form-error" errors={form.errors} className="pb-4"/>}
+      {form.errors && (
+        <ErrorMessage id="form-error" errors={form.errors} className="pb-4" />
+      )}
       <div className="grid gap-2">
         <div>
           <Label htmlFor="email">Email</Label>

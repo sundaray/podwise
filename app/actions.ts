@@ -128,3 +128,66 @@ export async function fetchYouTubeThumbnail(
     });
   }
 }
+
+import { FetchYouTubeUploadDateFormSchema } from "@/schema";
+
+// Type for the result of the fetchYouTubeUploadDate action
+type UploadDateResult = SubmissionResult & {
+  success?: boolean;
+  message?: string;
+  uploadDate?: string;
+};
+
+export async function fetchYouTubeUploadDate(
+  prevState: unknown,
+  formData: FormData,
+): Promise<UploadDateResult> {
+  // Parse and validate form data
+  const submission = parseWithZod(formData, {
+    schema: FetchYouTubeUploadDateFormSchema,
+  });
+
+  if (submission.status !== "success") {
+    return submission.reply();
+  }
+
+  const { videoId } = submission.value;
+
+  try {
+    const response = await fetch(
+      `${process.env.NEXT_PUBLIC_APP_URL}/api/video-upload-date`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ videoId }),
+      },
+    );
+
+    const result = await response.json();
+
+    if (!response.ok) {
+      throw new Error(result.error || "Failed to fetch YouTube upload date");
+    }
+
+    return {
+      ...submission.reply(),
+      success: true,
+      message: "Successfully fetched YouTube video upload date",
+      uploadDate: result.uploadDate,
+    };
+  } catch (error) {
+    if (error instanceof Error) {
+      console.error(
+        chalk.red("[fetchYouTubeUploadDate] error: "),
+        error.message,
+      );
+    } else {
+      console.error(chalk.red("[fetchYouTubeUploadDate] error: "), error);
+    }
+    return submission.reply({
+      formErrors: ["Something went wrong. Please try again."],
+    });
+  }
+}

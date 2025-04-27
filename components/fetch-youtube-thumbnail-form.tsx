@@ -15,7 +15,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Icons } from "@/components/icons";
-import { ErrorMessage } from "@/components/error-message";
+import { ErrorMessage } from "@/components/auth/error-message";
 import { SuccessMessage } from "@/components/success-message";
 
 import { fetchYouTubeThumbnail } from "@/app/actions";

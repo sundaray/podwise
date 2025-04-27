@@ -5,7 +5,7 @@ import { useSearchParams } from "next/navigation";
 
 import { Icons } from "@/components/icons";
 import { signInWithGoogle } from "@/app/google-actions";
-import { ErrorMessage } from "@/components/error-message";
+import { ErrorMessage } from "@/components/auth/error-message";
 
 export function SignInGoogleForm() {
   const searchParams = useSearchParams();

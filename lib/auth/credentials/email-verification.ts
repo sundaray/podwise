@@ -66,11 +66,10 @@ export function createEmailVerificationURL(token: string): string {
  *
  ************************************************/
 
-import { resend } from "@/lib/resend";
 import { render } from "@react-email/render";
 import { sesClient } from "@/lib/aws";
 import { SendEmailCommand } from "@aws-sdk/client-ses";
-import { EmailVerificationTemplate } from "@/components/email-verification-template";
+import { EmailVerificationTemplate } from "@/components/auth/email-verification-template";
 
 export async function sendVerificationEmail(email: string, url: string) {
       // Convert the email to HTML
