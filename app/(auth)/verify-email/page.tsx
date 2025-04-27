@@ -1,23 +1,23 @@
-import Link from "next/link"
- 
-import { Icons } from "@/components/icons"
- 
+import Link from "next/link";
+
+import { Icons } from "@/components/icons";
+
 export default function VerifyEmail() {
   return (
     <div className="mx-auto max-w-md px-4 text-center">
-      <h2 className="text-secondary-foreground mb-2 text-2xl font-semibold tracking-tight">
+      <h2 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900">
         Verify your email
       </h2>
-      <p className="text-muted-foreground mb-4 text-pretty text-sm">
-        We&apos;ve sent you a verification link.
+      <p className="mb-4 text-sm text-pretty text-gray-700">
+        We&apos;ve sent you a verification link
       </p>
       <Link
         href="/signin"
-        className="text-primary inline-flex items-center gap-1 p-2 text-sm font-semibold transition-colors hover:text-blue-500"
+        className="inline-flex items-center gap-1 rounded-full px-3 py-2 text-sm font-medium text-sky-700 transition-colors hover:bg-gray-100"
       >
         Back to sign in
-        <Icons.arrowRight className="size-4" />
+        <Icons.chevronRight className="size-4" />
       </Link>
     </div>
-  )
+  );
 }

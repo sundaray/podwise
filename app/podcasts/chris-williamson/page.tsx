@@ -1,4 +1,3 @@
-import { Suspense } from "react";
 import { chrisWilliamsonPodcastList } from "@/podcast-list/chris-williamson";
 import { PodcastCard } from "@/components/podcast-card";
 import { PodcastPagination } from "@/components/podcast-pagination";
@@ -6,8 +5,9 @@ import { PodcastSearch } from "@/components/podcast-search";
 import { PodcastTabs } from "@/components/podcast-tabs";
 import { getVideoDetails } from "@/lib/get-video-details";
 import { filterPodcasts } from "@/lib/podcast-filters";
-import { loadPodcastListSearchParams } from "@/lib/search-params";
+import { loadPodcastListSearchParams } from "@/lib/podcast-list-search-params";
 import type { SearchParams } from "nuqs/server";
+import { Icons } from "@/components/icons";
 
 const ITEMS_PER_PAGE = 9;
 
@@ -69,13 +69,12 @@ export default async function ChrisWilliamsonPodcastPage({
 
   return (
     <div className="group container mx-auto max-w-6xl px-4">
-      <Suspense>
-        <PodcastSearch />
-      </Suspense>
+      <PodcastSearch
+        placeholder="Search podcast summaries by title"
+        page="podcasts"
+      />
 
-      <Suspense>
-        <PodcastTabs />
-      </Suspense>
+      <PodcastTabs />
 
       {(tier !== "all" || query) && totalPodcasts > 0 && (
         <p className="mb-10 text-center text-sm font-medium text-pretty text-gray-500">
@@ -84,7 +83,7 @@ export default async function ChrisWilliamsonPodcastPage({
       )}
 
       {paginatedPodcasts.length > 0 ? (
-        <div className="group grid grid-cols-1 gap-6 border-b pb-10 group-has-[[data-pending]]:animate-pulse sm:grid-cols-2 md:grid-cols-3 md:gap-10">
+        <div className="grid grid-cols-1 gap-6 border-b pb-10 group-has-[[data-pending]]:animate-pulse sm:grid-cols-2 md:grid-cols-3 md:gap-10">
           {paginatedPodcasts.map((podcast) => (
             <PodcastCard key={podcast.slug} podcast={podcast} hostPath={host} />
           ))}
@@ -92,9 +91,7 @@ export default async function ChrisWilliamsonPodcastPage({
       ) : (
         <p className="text-center text-red-600">No podcasts found</p>
       )}
-      <Suspense>
-        <PodcastPagination totalPages={totalPages} />
-      </Suspense>
+      <PodcastPagination totalPages={totalPages} />
     </div>
   );
 }

@@ -9,11 +9,10 @@ import { Icons } from "@/components/icons";
 
 type PodcastSearchProps = {
   placeholder: string;
+  page: string;
 };
 
-export function PodcastSearch({
-  placeholder = "Search podcasts by title",
-}: PodcastSearchProps) {
+export function PodcastSearch({ placeholder, page }: PodcastSearchProps) {
   const [isPending, startTransition] = useTransition();
 
   // Set up query parameter for search term
@@ -39,9 +38,9 @@ export function PodcastSearch({
     setQuery(term);
 
     // Only reset page if we're using the podcast search
-    // if (paramName === "query") {
-    //   setPage("1");
-    // }
+    if (page === "podcasts") {
+      setPage("1");
+    }
   }, 250);
 
   return (

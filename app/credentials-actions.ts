@@ -35,11 +35,11 @@ export async function signInWithEmailAndPassword(
   prevState: unknown,
   formData: FormData,
 ) {
-  const headersList = await headers();
-  const clientIP = (await headersList).get("x-forwarded-for") ?? "127.0.0.1";
+  // const headersList = await headers();
+  // const clientIP = (await headersList).get("x-forwarded-for") ?? "127.0.0.1";
 
   // check rate limit
-  const rateLimitResult = await authRateLimit(clientIP);
+  // const rateLimitResult = await authRateLimit(clientIP);
 
   // Parse and validate form data using zod schema
   const submission = parseWithZod(formData, {
@@ -52,11 +52,11 @@ export async function signInWithEmailAndPassword(
   }
 
   // Return rate limit error if any
-  if (rateLimitResult.limited) {
-    return submission.reply({
-      formErrors: [rateLimitResult.message],
-    });
-  }
+  // if (rateLimitResult.limited) {
+  //   return submission.reply({
+  //     formErrors: [rateLimitResult.message],
+  //   });
+  // }
 
   // Extract email and password
   const { email, password } = submission.value;
@@ -101,6 +101,7 @@ export async function signInWithEmailAndPassword(
       await sendVerificationEmail(email, url);
     }
   } catch (error) {
+    console.log("Credentials action error: ", error)
     errorOccurred = true;
     if (error instanceof Error) {
       console.error(`[signInWithEmailAndPassword] error: `, error.message);

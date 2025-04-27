@@ -53,9 +53,7 @@ export default async function TagsPage({ searchParams }: TagsPageProps) {
         Click any tag to explore related podcast summaries.
       </p>
 
-      <Suspense>
-        <PodcastSearch placeholder="Search for tags" />
-      </Suspense>
+        <PodcastSearch placeholder="Search for tags" page="tags"/>
 
       {isSearchMode && filteredTags.length > 0 && (
         <p className="mb-10 text-center text-sm font-medium text-pretty text-gray-500">
