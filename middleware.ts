@@ -1,4 +1,3 @@
-// middleware.ts
 import { NextRequest, NextResponse } from "next/server";
 import { getUserSession } from "@/lib/auth/session";
 import { checkPrivateRoutes } from "@/lib/middleware/check-private-routes";
@@ -6,7 +5,7 @@ import { checkAuthRoutes } from "@/lib/middleware/check-auth-routes";
 import { handlePremiumPodcast } from "@/lib/middleware/handle-premium-podcast";
 import { handleUnauthenticatedFreePodcast } from "@/lib/middleware/handle-unauthenticated-free-podcast";
 import { handleAuthenticatedFreePodcast } from "@/lib/middleware/handle-authenticated-free-podcast";
-// import { updateAuthSession } from "@/lib/middleware/update-auth-session";
+import { updateAuthSession } from "@/lib/middleware/update-auth-session";
 
 export async function middleware(request: NextRequest) {
   // Get user session
@@ -40,8 +39,8 @@ export async function middleware(request: NextRequest) {
   }
 
   // Update auth session on GET requests
-  // const sessionUpdateResponse = await updateAuthSession(request);
-  // if (sessionUpdateResponse) return sessionUpdateResponse;
+  const sessionUpdateResponse = await updateAuthSession(request);
+  if (sessionUpdateResponse) return sessionUpdateResponse;
 
   // Default response
   return NextResponse.next();
