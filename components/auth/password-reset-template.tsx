@@ -9,22 +9,22 @@ export function PasswordResetTemplate({ url }: { url: string }) {
   return (
     <Html>
       <Tailwind>
-        <Text className="text-base font-medium text-gray-900">Hi,</Text>
-        <Text className="text-base font-medium text-gray-900">
+        <Text className="text-base font-medium text-gray-700">Hi,</Text>
+        <Text className="text-base font-medium text-gray-700">
           Click the buttton below reset your password:
         </Text>
         <Button
           href={url}
-          className="rounded bg-blue-600 px-4 py-2 text-base font-medium text-white"
+          className="rounded bg-sky-700 px-4 py-2 text-base font-medium text-white"
         >
           Reset Password
         </Button>
-        <Text className="text-base font-medium text-gray-900">
+        <Text className="text-base font-medium text-gray-700">
           Note: The link will expire in 1 hour.
         </Text>
 
         <Text className="text-sm font-medium text-gray-500">
-          If you did not try to reset your account, you can safely ignore this
+          If you did not try to reset your password, you can safely ignore this
           email.
         </Text>
       </Tailwind>

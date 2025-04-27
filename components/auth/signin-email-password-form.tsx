@@ -65,7 +65,6 @@ export function SignInEmailPasswordForm() {
             type="email"
             name="email"
             className="mt-2"
-            placeholder="you@example.com"
             defaultValue={lastResult?.initialValue?.email as string}
             aria-invalid={fields.email.errors ? "true" : undefined}
             aria-describedby={fields.email.errors ? "email-error" : undefined}

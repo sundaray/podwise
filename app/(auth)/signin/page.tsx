@@ -1,18 +1,16 @@
-import Link from "next/link";
 import { SignInGoogleForm } from "@/components/auth/sign-in-google-form";
 import { SignInEmailPasswordForm } from "@/components/auth/signin-email-password-form";
 import { libreBaskerville } from "@/app/layout";
-import { Icons } from "@/components/icons";
 
 export default function SignIn() {
   return (
       <div className="mx-auto max-w-[380px] px-4">
         <h2
-          className={`${libreBaskerville.className} mt-4 text-center text-2xl font-semibold tracking-tight text-gray-900`}
+          className={`${libreBaskerville.className} text-center text-2xl font-semibold tracking-tight text-gray-900`}
         >
           Welcome back
         </h2>
-        <p className="text-center text-sm text-gray-700">
+        <p className="text-center text-sm text-gray-700 mt-2">
           Sign in to your account
         </p>
         <div className="mt-8 grid gap-4">

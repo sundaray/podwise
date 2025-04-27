@@ -1,6 +1,6 @@
 "use server";
 
-import { cookies, headers } from "next/headers";
+import { headers } from "next/headers";
 import { redirect } from "next/navigation";
 import { parseWithZod } from "@conform-to/zod";
 import chalk from "chalk";
@@ -20,7 +20,7 @@ import {
   doesPasswordResetSessionExist,
   getPasswordResetSession,
 } from "@/lib/auth/credentials/session";
-import { createUserSession, deleteUserSession } from "@/lib/auth/session";
+import { createUserSession } from "@/lib/auth/session";
 import { getUserRole } from "@/lib/auth/get-user-role";
 import { getAccessStatus } from "@/lib/get-access-status";
 
@@ -121,22 +121,6 @@ export async function signInWithEmailAndPassword(
     }
   }
 }
-/************************************************
- *
- * Sign out
- *
- ************************************************/
-
-export async function signOut() {
-  try {
-    const cookiesStore = await cookies();
-    cookiesStore.delete("user-session");
-  } catch (error) {
-    if (error instanceof Error) {
-      console.error(chalk.red("[signOut] error:"), error.message);
-    }
-  }
-}
 
 /************************************************
  *
@@ -153,11 +137,11 @@ import {
 import { createPasswordResetSession } from "@/lib/auth/credentials/session";
 
 export async function forgotPassword(prevState: unknown, formData: FormData) {
-  const headersList = await headers();
-  const clientIP = (await headersList).get("x-forwarded-for") ?? "127.0.0.1";
+  // const headersList = await headers();
+  // const clientIP = (await headersList).get("x-forwarded-for") ?? "127.0.0.1";
 
   // check rate limit
-  const rateLimitResult = await authRateLimit(clientIP);
+  // const rateLimitResult = await authRateLimit(clientIP);
 
   // Parse and validate form data using zod schema
   const submission = parseWithZod(formData, {
@@ -170,11 +154,11 @@ export async function forgotPassword(prevState: unknown, formData: FormData) {
   }
 
   // Return rate limit error if any
-  if (rateLimitResult.limited) {
-    return submission.reply({
-      formErrors: [rateLimitResult.message],
-    });
-  }
+  // if (rateLimitResult.limited) {
+  //   return submission.reply({
+  //     formErrors: [rateLimitResult.message],
+  //   });
+  // }
 
   const { email } = submission.value;
 
@@ -216,11 +200,11 @@ import { ResetPasswordFormSchema } from "@/schema";
 import { deletePasswordResetSession } from "@/lib/auth/credentials/session";
 
 export async function resetPassword(prevState: unknown, formData: FormData) {
-  const headersList = await headers();
-  const clientIP = (await headersList).get("x-forwarded-for") ?? "127.0.0.1";
+  // const headersList = await headers();
+  // const clientIP = (await headersList).get("x-forwarded-for") ?? "127.0.0.1";
 
   // check rate limit
-  const rateLimitResult = await authRateLimit(clientIP);
+  // const rateLimitResult = await authRateLimit(clientIP);
 
   // Parse and validate form data using zod schema
   const submission = parseWithZod(formData, {
@@ -233,11 +217,11 @@ export async function resetPassword(prevState: unknown, formData: FormData) {
   }
 
   // Return rate limit error if any
-  if (rateLimitResult.limited) {
-    return submission.reply({
-      formErrors: [rateLimitResult.message],
-    });
-  }
+  // if (rateLimitResult.limited) {
+  //   return submission.reply({
+  //     formErrors: [rateLimitResult.message],
+  //   });
+  // }
 
   // Extract validated password
   const { newPassword } = submission.value;

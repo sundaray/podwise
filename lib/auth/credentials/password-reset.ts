@@ -32,25 +32,40 @@ export function createPasswordResetURL(token: string): string {
  * Send password reset verification email
  *
  ************************************************/
-import { resend } from "@/lib/resend";
-import { PasswordResetTemplate } from "@/components/password-reset-template";
+import { render } from "@react-email/render";
+import { sesClient } from "@/lib/aws";
+import { SendEmailCommand } from "@aws-sdk/client-ses";
+
+import { PasswordResetTemplate } from "@/components/auth/password-reset-template";
 
 export async function sendPasswordResetEmail(email: string, url: string) {
-  try {
-    const { data, error } = await resend.emails.send({
-      from: process.env.EMAIL_FROM!,
-      to: email,
-      subject: "Reset your password",
-      react: PasswordResetTemplate({ url }),
-    });
+  // Convert the email to HTML
+  const emailHtml = await render(PasswordResetTemplate({ url }));
 
-    if (error) {
-      console.error(chalk.red("[sendPasswordResetEmail] error: "), error);
-      throw new Error("Failed to send password reset email.");
-    }
+  const sendEmailCommand = new SendEmailCommand({
+    Destination: {
+      ToAddresses: [email],
+    },
+    Message: {
+      Body: {
+        Html: {
+          Charset: "UTF-8",
+          Data: emailHtml,
+        },
+      },
+      Subject: {
+        Charset: "UTF-8",
+        Data: "Reset your password for www.podwise.org",
+      },
+    },
+    Source: process.env.EMAIL_FROM,
+  });
+
+  try {
+    await sesClient.send(sendEmailCommand);
   } catch (error) {
     const message =
       error instanceof Error ? error.message : `Unknown error: ${error}`;
-    throw new Error(message);
+    throw new Error(`Failed to send password reset email: ${message}`);
   }
 }

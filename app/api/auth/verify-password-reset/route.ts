@@ -3,8 +3,8 @@ import { NextRequest, NextResponse } from "next/server";
 import {
   doesPasswordResetSessionExist,
   getPasswordResetSession,
-} from "@/lib/auth/session";
-import { timingSafeCompare } from "@/lib/auth/utils";
+} from "@/lib/auth/credentials/session";
+import { timingSafeCompare } from "@/lib/auth/credentials/timing-safe-compare";
 
 export async function GET(request: NextRequest) {
   try {

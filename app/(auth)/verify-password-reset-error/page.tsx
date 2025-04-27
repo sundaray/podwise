@@ -1,24 +1,26 @@
 import Link from "next/link";
- 
+import { libreBaskerville } from "@/app/layout";
 import { Icons } from "@/components/icons";
- 
+
 export default function VerifyPasswordResetError() {
- return (
-   <div className="mx-auto max-w-md px-4 text-center">
-     <h2 className="mb-2 text-xl font-semibold tracking-tight text-red-600">
-       Password reset verification failed
-     </h2>
-     <p className="mb-4 text-pretty text-sm text-muted-foreground">
-       Something went wrong while verifying your password reset request. Please
-       try again or request a new password reset link.
-     </p>
-     <Link
-       href="/signin"
-       className="inline-flex items-center gap-1 p-2 text-sm font-semibold text-primary transition-colors hover:text-blue-500"
-     >
-       Back to sign in
-       <Icons.arrowRight className="size-4" />
-     </Link>
-   </div>
- );
+  return (
+    <div className="mx-auto max-w-md px-4 text-center">
+      <h2
+        className={`${libreBaskerville.className} mb-2 text-2xl font-semibold tracking-tight text-red-700`}
+      >
+        Password reset verification failed
+      </h2>
+      <p className="mb-4 text-sm text-pretty text-gray-700">
+        Something went wrong while verifying your password reset request. Please
+        try again or request a new password reset link.
+      </p>
+      <Link
+        href="/signin"
+        className="inline-flex items-center gap-1 rounded-full px-3 py-2 text-sm font-medium text-sky-700 transition-colors hover:bg-gray-100"
+      >
+        Back to sign in
+        <Icons.chevronRight className="size-4" />
+      </Link>
+    </div>
+  );
 }
