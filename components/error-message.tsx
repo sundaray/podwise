@@ -16,17 +16,11 @@ export function ErrorMessage({ id, errors, className }: ErrorMessageProps) {
     return <div id={id} className={cn(baseClasses, className)}></div>;
   }
 
-  // Handle only one error message
-  if (errors.length === 1) {
-    return (
-      <p id={id} className={cn(baseClasses, className)}>
-        {errors[0]}
-      </p>
-    );
-  }
+  // Check if this is a password field by examining the id
+  const isPasswordField = id === "password-error";
 
-  // For multiple error messages
-  if (errors.length > 0) {
+  // For single/multiple error messages under the password field
+  if (isPasswordField && errors.length > 0) {
     return (
       <div id={id} className={cn(baseClasses, className)}>
         <p>Password must:</p>
@@ -38,6 +32,11 @@ export function ErrorMessage({ id, errors, className }: ErrorMessageProps) {
       </div>
     );
   }
-  // If we have an empty array, render an empty container
-  return <div id={id} className={cn(baseClasses, className)}></div>;
+
+  // Non-password fields
+  return (
+    <p id={id} className={cn(baseClasses, className)}>
+      {errors[0]}
+    </p>
+  );
 }

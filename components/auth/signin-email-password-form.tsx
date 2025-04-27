@@ -56,7 +56,7 @@ export function SignInEmailPasswordForm() {
       noValidate
       aria-describedby={form.errors ? "form-error" : undefined}
     >
-      {form.errors && <ErrorMessage id="form-error" errors={form.errors} />}
+      {form.errors && <ErrorMessage id="form-error" errors={form.errors} className="pb-4"/>}
       <div className="grid gap-2">
         <div>
           <Label htmlFor="email">Email</Label>

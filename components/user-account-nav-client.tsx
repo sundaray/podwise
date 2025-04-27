@@ -10,11 +10,10 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Icons } from "@/components/icons";
-import { signOut } from "@/app/google-actions";
+import { signOut } from "@/app/auth-actions";
 
 type UserAccountNavClientProps = {
   user: {
-    id: string;
     email: string;
     role: string;
   };

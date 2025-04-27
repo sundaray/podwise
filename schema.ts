@@ -51,7 +51,7 @@ export const SignInEmailPasswordFormSchema = z.object({
     .regex(/[a-zA-Z]/, { message: "contain at least one letter" })
     .regex(/[0-9]/, { message: "contain at least one number" })
     .regex(/[^a-zA-Z0-9]/, {
-      message: "contain at least one special character.",
+      message: "contain at least one special character",
     })
     .trim(),
 });

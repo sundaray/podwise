@@ -1,6 +1,6 @@
 "use server";
 
-import { headers } from "next/headers";
+import { cookies, headers } from "next/headers";
 import { redirect } from "next/navigation";
 import { parseWithZod } from "@conform-to/zod";
 import chalk from "chalk";
@@ -101,7 +101,7 @@ export async function signInWithEmailAndPassword(
       await sendVerificationEmail(email, url);
     }
   } catch (error) {
-    console.log("Credentials action error: ", error)
+    console.log("Credentials action error: ", error);
     errorOccurred = true;
     if (error instanceof Error) {
       console.error(`[signInWithEmailAndPassword] error: `, error.message);
@@ -129,8 +129,8 @@ export async function signInWithEmailAndPassword(
 
 export async function signOut() {
   try {
-    await deleteUserSession();
-    redirect("/");
+    const cookiesStore = await cookies();
+    cookiesStore.delete("user-session");
   } catch (error) {
     if (error instanceof Error) {
       console.error(chalk.red("[signOut] error:"), error.message);

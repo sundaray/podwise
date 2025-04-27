@@ -1,6 +1,5 @@
 "use server";
 
-import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 import { google } from "@/lib/auth/oauth2/auth";
 import { generateCodeVerifier } from "@/lib/auth/oauth2/pkce";
@@ -44,14 +43,3 @@ export async function signInWithGoogle(next: string) {
   }
 }
 
-/************************************************
- *
- * Sign out
- *
- ************************************************/
-
-export async function signOut() {
-  const cookiesStore = await cookies();
-  cookiesStore.delete("user-session");
-  redirect("/");
-}

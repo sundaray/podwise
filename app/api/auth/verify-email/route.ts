@@ -4,9 +4,10 @@ import {
   deleteEmailVerificationSession,
   doesEmailVerificationSessionExist,
   getEmailVerificationSession,
-} from "@/lib/auth/session";
-import { assignUserRole, createUser } from "@/lib/auth/user";
-import { timingSafeCompare } from "@/lib/auth/utils";
+} from "@/lib/auth/credentials/session";
+import { assignUserRole } from "@/lib/assign-user-role";
+import { createUser } from "@/lib/create-user";
+import { timingSafeCompare } from "@/lib/auth/credentials/timing-safe-compare";
 
 export async function GET(request: NextRequest) {
   try {
@@ -29,7 +30,7 @@ export async function GET(request: NextRequest) {
 
     const role = assignUserRole(email);
 
-    await createUser(email, hashedPassword, role);
+    await createUser(email, role, "credentials", undefined, hashedPassword);
 
     await deleteEmailVerificationSession();
 

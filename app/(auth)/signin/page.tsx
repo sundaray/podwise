@@ -10,7 +10,7 @@ export default function SignIn() {
         <h2
           className={`${libreBaskerville.className} mt-4 text-center text-2xl font-semibold tracking-tight text-gray-900`}
         >
-          WELCOME BACK
+          Welcome back
         </h2>
         <p className="text-center text-sm text-gray-700">
           Sign in to your account

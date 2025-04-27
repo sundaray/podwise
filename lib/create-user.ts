@@ -59,7 +59,7 @@ export async function createUser(
           ...(provider === "credentials" && password
             ? {
                 password,
-                credentialEmailVerified: false,
+                credentialEmailVerified: true,
               }
             : {}),
         })
@@ -80,7 +80,7 @@ export async function createUser(
         ...(provider === "credentials" && password
           ? {
               password,
-              credentialEmailVerified: false,
+              credentialEmailVerified: true,
             }
           : {}),
       };
