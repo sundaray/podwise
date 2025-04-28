@@ -47,7 +47,7 @@ const ITEMS_PER_PAGE = 9;
 export default async function JayShettyPodcastPage({
   searchParams,
 }: {
-  searchParams: SearchParams;
+  searchParams: SearchParams; 
 }) {
   const host = "chris-williamson";
 
