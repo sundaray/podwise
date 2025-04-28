@@ -1,4 +1,5 @@
 import "server-only";
+
 import chalk from "chalk";
 import { db } from "@/db";
 import { usersTable } from "@/db/schema";

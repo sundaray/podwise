@@ -5,7 +5,6 @@ import { Icons } from "@/components/icons";
 export default function VerifyEmail() {
   return (
     <div className="mx-auto max-w-md px-4 text-center">
-
       <h2 className={`${libreBaskerville.className} mb-2 text-2xl font-semibold tracking-tight text-gray-900`}>
         Verify your email
       </h2>

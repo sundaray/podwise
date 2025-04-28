@@ -1,23 +1,54 @@
+import type { Metadata } from "next";
 import { chrisWilliamsonPodcastList } from "@/podcast-list/chris-williamson";
 import { PodcastCard } from "@/components/podcast-card";
 import { PodcastPagination } from "@/components/podcast-pagination";
 import { PodcastSearch } from "@/components/podcast-search";
 import { PodcastTabs } from "@/components/podcast-tabs";
-import { getVideoDetails } from "@/lib/get-video-details";
 import { filterPodcasts } from "@/lib/podcast-filters";
 import { loadPodcastListSearchParams } from "@/lib/podcast-list-search-params";
 import type { SearchParams } from "nuqs/server";
+import { libreBaskerville } from "@/app/layout";
+
+export async function generateMetadata({
+  searchParams,
+}: {
+  searchParams: SearchParams;
+}): Promise<Metadata> {
+  const { page, tier, query } = await loadPodcastListSearchParams(searchParams);
+
+  // Base metadata
+  const metadata: Metadata = {
+    title: "Chris Williamson: Modern Wisdom Podcast Summaries",
+    description:
+      "Discover key insights and actionable takeaways from Chris Williamson's Modern Wisdom podcast episodes.",
+    alternates: {
+      canonical: `https://podwise.org/podcasts/chris-williamson${
+        page > 1 ? `?page=${page}` : ""
+      }`,
+    },
+  };
+
+  // Add noindex for filtered or searched pages
+  if (tier !== "all" || query) {
+    return {
+      ...metadata,
+      robots: {
+        index: false,
+        follow: true,
+      },
+    };
+  }
+
+  return metadata;
+}
 
 const ITEMS_PER_PAGE = 9;
 
-type ChrisWilliamsonPodcastPageProps = {
-  params: { host: string };
-  searchParams: SearchParams;
-};
-
 export default async function ChrisWilliamsonPodcastPage({
   searchParams,
-}: ChrisWilliamsonPodcastPageProps) {
+}: {
+  searchParams: SearchParams;
+}) {
   const host = "chris-williamson";
 
   const {
@@ -26,7 +57,7 @@ export default async function ChrisWilliamsonPodcastPage({
     query,
   } = await loadPodcastListSearchParams(searchParams);
 
-  // Sort podcasts by upload date without API calls
+  // Sort podcasts by video upload date
   const sortedPodcasts = [...chrisWilliamsonPodcastList].sort((a, b) => {
     const dateA = a.videoUploadedAt ? new Date(a.videoUploadedAt) : new Date(0);
     const dateB = b.videoUploadedAt ? new Date(b.videoUploadedAt) : new Date(0);
@@ -57,7 +88,21 @@ export default async function ChrisWilliamsonPodcastPage({
   );
 
   return (
-    <div className="group container mx-auto max-w-6xl px-4">
+    <div className="group mx-auto max-w-6xl px-4">
+      <h1
+        className={`${libreBaskerville.className} mb-8 text-center text-4xl font-semibold tracking-tight text-pretty text-gray-900`}
+      >
+        Chris Williamson: "Modern Wisdom" Podcast Summaries
+      </h1>
+      <p className="mx-auto mb-20 max-w-5xl text-center text-lg font-medium text-balance text-gray-700">
+        Chris Williamson is the host of the popular podcast "Modern Wisdom",
+        where he interviews world-class thinkers exploring how to live a better
+        life. With a tagline of "Life is hard. This podcast will help," the show
+        covers topics ranging from psychology, philosophy, and relationships to
+        performance, productivity, and modern culture. Browse our detailed
+        summaries below to discover the key insights and actionable takeaways
+        from the "Modern Wisdom" podcast episodes.
+      </p>
       <PodcastSearch
         placeholder="Search podcast summaries by title"
         page="podcasts"

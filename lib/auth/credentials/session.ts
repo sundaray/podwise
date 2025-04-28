@@ -26,42 +26,6 @@ export async function encrypt(payload: any): Promise<string> {
 
 /************************************************
  *
- * Create user session
- *
- ************************************************/
-
-export async function createUserSession(
-  email: string,
-  role: string,
-  annualAccessStatus: boolean,
-  lifetimeAccessStatus: boolean,
-) {
-  try {
-    const sessionData = await encrypt({
-      email,
-      role,
-      annualAccessStatus,
-      lifetimeAccessStatus,
-    });
-
-    const cookieStore = await cookies();
-
-    cookieStore.set({
-      name: "user-session",
-      value: sessionData,
-      httpOnly: true,
-      secure: process.env.NODE_ENV === "production",
-      maxAge: 60 * 60, // 1 hour in seconds
-      sameSite: "lax",
-      path: "/",
-    });
-  } catch (error) {
-    throw new Error("Failed to create user session.");
-  }
-}
-
-/************************************************
- *
  * Create email verification session
  *
  ************************************************/
@@ -163,68 +127,6 @@ export async function deleteEmailVerificationSession() {
     cookieStore.delete("email-verification-session");
   } catch (error) {
     throw Error("Failed to delete email verification session.");
-  }
-}
-
-/************************************************
- *
- * Get user session
- *
- ************************************************/
-
-type User = {
-  email: string;
-  role: string;
-  annualAccessStatus: boolean;
-  lifetimeAccessStatus: boolean;
-};
-
-export async function getUserSession(): Promise<{ user: User | null }> {
-  try {
-    const cookieStore = await cookies();
-    const sessionCookie = cookieStore.get("user-session");
-
-    if (!sessionCookie) {
-      return { user: null };
-    }
-
-    const user = await decrypt<User>(sessionCookie.value);
-    return { user };
-  } catch (error) {
-    return { user: null };
-  }
-}
-
-/************************************************
- *
- * Delete user session
- *
- ************************************************/
-
-export async function deleteUserSession() {
-  try {
-    const cookieStore = await cookies();
-    cookieStore.delete("user-session");
-  } catch (error) {
-    throw new Error("Failed to delete user session.");
-  }
-}
-
-/************************************************
- *
- * Update user session
- *
- ************************************************/
-
-export async function updateUserSession(token: string) {
-  try {
-    const paylod = await decrypt(token);
-
-    const updatedToken = await encrypt(paylod);
-
-    return { updatedToken };
-  } catch (error) {
-    return null;
   }
 }
 

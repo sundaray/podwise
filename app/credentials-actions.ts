@@ -1,10 +1,8 @@
 "use server";
 
-import { headers } from "next/headers";
 import { redirect } from "next/navigation";
 import { parseWithZod } from "@conform-to/zod";
 import chalk from "chalk";
-import { authRateLimit } from "@/lib/rate-limit";
 import { SignInEmailPasswordFormSchema } from "@/schema";
 
 import {

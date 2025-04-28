@@ -121,18 +121,3 @@ export async function updateUserSession(token: string) {
     return null;
   }
 }
-
-/************************************************
- *
- * Delete user session
- *
- ************************************************/
-
-export async function deleteUserSession() {
-  try {
-    const cookieStore = await cookies();
-    cookieStore.delete("user-session");
-  } catch (error) {
-    throw new Error("Failed to delete user session.");
-  }
-}
