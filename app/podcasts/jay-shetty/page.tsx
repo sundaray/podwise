@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { chrisWilliamsonPodcastList } from "@/podcast-list/chris-williamson";
+import { jayShettyPodcastList } from "@/podcast-list/jay-shetty";
 import { PodcastCard } from "@/components/podcast-card";
 import { PodcastPagination } from "@/components/podcast-pagination";
 import { PodcastSearch } from "@/components/podcast-search";
@@ -18,11 +18,11 @@ export async function generateMetadata({
 
   // Base metadata
   const metadata: Metadata = {
-    title: "Chris Williamson: Modern Wisdom Podcast Summaries",
+    title: "On Purpose with Jay Shetty Podcast Summaries",
     description:
-      "Discover key insights and actionable takeaways from Chris Williamson's Modern Wisdom podcast episodes.",
+      "Discover key insights and actionable takeaways from the On Purpose with Jay Shetty podcast episodes.",
     alternates: {
-      canonical: `https://podwise.org/podcasts/chris-williamson${
+      canonical: `https://podwise.org/podcasts/jay-shetty${
         page > 1 ? `?page=${page}` : ""
       }`,
     },
@@ -47,9 +47,9 @@ const ITEMS_PER_PAGE = 9;
 export default async function JayShettyPodcastPage({
   searchParams,
 }: {
-  searchParams: SearchParams; 
+  searchParams: SearchParams;
 }) {
-  const host = "chris-williamson";
+  const host = "jay-shetty";
 
   const {
     page: currentPage,
@@ -58,7 +58,7 @@ export default async function JayShettyPodcastPage({
   } = await loadPodcastListSearchParams(searchParams);
 
   // Sort podcasts by video upload date
-  const sortedPodcasts = [...chrisWilliamsonPodcastList].sort((a, b) => {
+  const sortedPodcasts = [...jayShettyPodcastList].sort((a, b) => {
     const dateA = a.videoUploadedAt ? new Date(a.videoUploadedAt) : new Date(0);
     const dateB = b.videoUploadedAt ? new Date(b.videoUploadedAt) : new Date(0);
     return dateB.getTime() - dateA.getTime();
@@ -92,16 +92,19 @@ export default async function JayShettyPodcastPage({
       <h1
         className={`${libreBaskerville.className} mb-8 text-center text-4xl font-semibold tracking-tight text-pretty text-gray-900`}
       >
-        Chris Williamson: "Modern Wisdom" Podcast Summaries
+        "On Purpose with Jay Shetty" Podcast Summaries
       </h1>
       <p className="mx-auto mb-20 max-w-5xl text-center text-lg leading-7 font-medium text-balance text-gray-700">
-        Chris Williamson is the host of the popular podcast "Modern Wisdom",
-        where he interviews world-class thinkers exploring how to live a better
-        life. With a tagline of "Life is hard. This podcast will help," the show
-        covers topics ranging from psychology, philosophy, and relationships to
-        performance, productivity, and modern culture. Browse our detailed
-        summaries below to discover the key insights and actionable takeaways
-        from the "Modern Wisdom" podcast episodes.
+        On Purpose with Jay Shetty, hosted by former
+        monk Jay Shetty, is a transformative podcast dedicated to personal
+        growth, mental health, and meaningful living. Each episode features
+        inspiring conversations with influential figures, including celebrities,
+        authors, and experts, covering topics like relationships, self-care,
+        purpose-driven careers, and mindfulness practices. With a focus on
+        practical wisdom and actionable insights, Jay blends storytelling,
+        spirituality, and modern science to empower listeners to live with
+        intention and create a life of purpose. Perfect for anyone seeking
+        motivation and tools to navigate life’s challenges.
       </p>
       <PodcastSearch
         placeholder="Search podcast summaries by title"
