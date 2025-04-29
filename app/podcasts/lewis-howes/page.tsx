@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { melRobbinsPodcastList } from "@/podcast-list/mel-robbins";
+import { lewisHowesPodcastList } from "@/podcast-list/lewis-howes";
 import { PodcastCard } from "@/components/podcast-card";
 import { PodcastPagination } from "@/components/podcast-pagination";
 import { PodcastSearch } from "@/components/podcast-search";
@@ -18,11 +18,11 @@ export async function generateMetadata({
 
   // Base metadata
   const metadata: Metadata = {
-    title: "The Mel Robbins Podcast Summaries",
+    title: "Lewis Howes: The School of Greatness Podcast Summaries",
     description:
-      "Discover key insights and actionable takeaways from The Mel Robbins Podcast episodes.",
+      "Discover key insights and actionable takeaways from The School of Greatness podcast episodes.",
     alternates: {
-      canonical: `https://podwise.org/podcasts/mel-robbins${
+      canonical: `https://podwise.org/podcasts/lewis-howes${
         page > 1 ? `?page=${page}` : ""
       }`,
     },
@@ -44,12 +44,12 @@ export async function generateMetadata({
 
 const ITEMS_PER_PAGE = 9;
 
-export default async function MelRobbinsPodcastPage({
+export default async function LewisHowesPodcastPage({
   searchParams,
 }: {
   searchParams: SearchParams;
 }) {
-  const host = "mel-robbins";
+  const host = "lewis-howes";
 
   const {
     page: currentPage,
@@ -58,7 +58,7 @@ export default async function MelRobbinsPodcastPage({
   } = await loadPodcastListSearchParams(searchParams);
 
   // Sort podcasts by video upload date
-  const sortedPodcasts = [...melRobbinsPodcastList].sort((a, b) => {
+  const sortedPodcasts = [...lewisHowesPodcastList].sort((a, b) => {
     const dateA = a.videoUploadedAt ? new Date(a.videoUploadedAt) : new Date(0);
     const dateB = b.videoUploadedAt ? new Date(b.videoUploadedAt) : new Date(0);
     return dateB.getTime() - dateA.getTime();
@@ -92,7 +92,7 @@ export default async function MelRobbinsPodcastPage({
       <h1
         className={`${libreBaskerville.className} mb-8 text-center text-4xl font-semibold tracking-tight text-pretty text-gray-900`}
       >
-        The Mel Robbins Podcast Summaries
+        Lewis Howes: "The School of Greatness" Podcast Summaries
       </h1>
       <p className="mx-auto mb-20 max-w-5xl text-center text-lg leading-7 font-medium text-balance text-gray-700">
         The School of Greatness, hosted by Lewis Howes, a New York Times

@@ -1,5 +1,5 @@
 // Auto-generated podcast list - DO NOT EDIT MANUALLY
-// Generated on 2025-04-29T15:59:32.167Z
+// Generated on 2025-04-29T17:06:18.129Z
 
 export const jayShettyPodcastList = [
   {
@@ -84,7 +84,7 @@ export const jayShettyPodcastList = [
     image: "brain-expert-5-hacks-beat-stress.jpg",
     podcastHost: "Jay Shetty",
     videoId: "tSIvHLnRi6A",
-    isPremium: true,
+    isPremium: false,
     videoUploadedAt: "2025-03-17T12:00:00Z",
   },
   {
@@ -289,7 +289,7 @@ export const jayShettyPodcastList = [
       "world-leading-therapist-lori-gottlieb-answers-relationship-questions.jpg",
     podcastHost: "Jay Shetty",
     videoId: "CQ6lqkeQVQ4",
-    isPremium: true,
+    isPremium: false,
     videoUploadedAt: "2024-11-18T12:00:00Z",
   },
   {
