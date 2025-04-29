@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { doacPodcastList } from "@/podcast-list/doac";
+import { jackNeelPodcastList } from "@/podcast-list/jack-neel";
 import { PodcastCard } from "@/components/podcast-card";
 import { PodcastPagination } from "@/components/podcast-pagination";
 import { PodcastSearch } from "@/components/podcast-search";
@@ -18,11 +18,11 @@ export async function generateMetadata({
 
   // Base metadata
   const metadata: Metadata = {
-    title: "The Diary Of A CEO Podcast Summaries",
+    title: "Jack Neel Podcast Summaries",
     description:
-      "Discover key insights and actionable takeaways from The Diary Of A CEO podcast episodes.",
+      "Discover key insights and actionable takeaways from Jack Neel's podcast episodes.",
     alternates: {
-      canonical: `https://podwise.org/podcasts/doac${
+      canonical: `https://podwise.org/podcasts/jack-neel${
         page > 1 ? `?page=${page}` : ""
       }`,
     },
@@ -44,12 +44,12 @@ export async function generateMetadata({
 
 const ITEMS_PER_PAGE = 9;
 
-export default async function DoacPodcastPage({
+export default async function JackNeelPodcastPage({
   searchParams,
 }: {
   searchParams: SearchParams;
 }) {
-  const host = "doac";
+  const host = "jack-neel";
 
   const {
     page: currentPage,
@@ -58,7 +58,7 @@ export default async function DoacPodcastPage({
   } = await loadPodcastListSearchParams(searchParams);
 
   // Sort podcasts by video upload date
-  const sortedPodcasts = [...doacPodcastList].sort((a, b) => {
+  const sortedPodcasts = [...jackNeelPodcastList].sort((a, b) => {
     const dateA = a.videoUploadedAt ? new Date(a.videoUploadedAt) : new Date(0);
     const dateB = b.videoUploadedAt ? new Date(b.videoUploadedAt) : new Date(0);
     return dateB.getTime() - dateA.getTime();
@@ -92,10 +92,19 @@ export default async function DoacPodcastPage({
       <h1
         className={`${libreBaskerville.className} mb-8 text-center text-4xl font-semibold tracking-tight text-pretty text-gray-900`}
       >
-        "The Diary Of a CEO" Podcast Summaries
+        Jack Neel Podcast Summaries
       </h1>
       <p className="mx-auto mb-20 max-w-5xl text-center text-lg leading-7 font-medium text-balance text-gray-700">
-      The Diary Of A CEO is a globally renowned podcast hosted by Steven Bartlett, a British entrepreneur, investor, and former CEO. Launched in 2017, the podcast offers raw, honest, and unfiltered conversations with some of the world’s most influential people, including CEOs, entrepreneurs, athletes, scientists, and thought leaders. Each episode dives deep into the personal and professional journeys of its guests, exploring topics such as business strategies, mental health, leadership, financial success, relationships, and societal issues. With a mission to uncover untold stories and actionable insights, The Diary Of A CEO combines compelling storytelling with practical wisdom, making it a must-listen for anyone seeking inspiration and growth.
+        The Jack Neel Podcast dives into the fascinating worlds of crime,
+        business, and psychology through in-depth interviews with a diverse
+        range of guests, from entrepreneurs and influencers to controversial
+        figures. Each episode explores compelling stories and insights, covering
+        topics like high-stakes entrepreneurship, personal transformation,
+        societal issues, and the psychological underpinnings of success and
+        controversy. With a focus on raw, thought-provoking discussions, the
+        podcast offers listeners a unique blend of entertainment and education,
+        perfect for those intrigued by the intersections of human behavior,
+        ambition, and real-world challenges.
       </p>
       <PodcastSearch
         placeholder="Search podcast summaries by title"
