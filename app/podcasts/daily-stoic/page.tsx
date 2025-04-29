@@ -95,21 +95,22 @@ export default async function DailyStoicPodcastPage({
         "Daily Stoic" Podcast Summaries
       </h1>
       <p className="mx-auto mb-20 max-w-5xl text-center text-lg leading-7 font-medium text-balance text-gray-700">
-        Chris Williamson is the host of the popular podcast "Modern Wisdom",
-        where he interviews world-class thinkers exploring how to live a better
-        life. With a tagline of "Life is hard. This podcast will help," the show
-        covers topics ranging from psychology, philosophy, and relationships to
-        performance, productivity, and modern culture. Browse our detailed
-        summaries below to discover the key insights and actionable takeaways
-        from the "Modern Wisdom" podcast episodes.
+        The Daily Stoic podcast, hosted by Ryan Holiday, bestselling author and
+        modern Stoic, delivers Stoicism for everyday life. Designed to make
+        listeners more resilient, virtuous, and wise, the podcast offers
+        practical wisdom drawn from ancient Stoic philosophers like Marcus
+        Aurelius, Seneca, and Epictetus. The show features in-depth interviews
+        with high-profile guests—from athletes and actors to authors and
+        entrepreneurs—exploring how Stoic principles shape their success and
+        personal growth. With over 150 million downloads, the Daily Stoic
+        podcast is a go-to resource for those seeking to apply timeless
+        philosophy to modern challenges.
       </p>
       <PodcastSearch
         placeholder="Search podcast summaries by title"
         page="podcasts"
       />
-
       <PodcastTabs />
-
       {(tier !== "all" || query) && totalPodcasts > 0 && (
         <p className="mb-10 text-center text-sm font-medium text-pretty text-gray-500">
           {statusMessage}
