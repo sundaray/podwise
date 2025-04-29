@@ -1,0 +1,411 @@
+// Auto-generated podcast list - DO NOT EDIT MANUALLY
+// Generated on 2025-04-29T18:21:43.848Z
+
+export const timFerrissPodcastList = [
+  {
+    "title": "Exploring Consciousness and Non-Ordinary Religion, Panpsychism, and Heretical Ideas — Philip Goff",
+    "slug": "exploring-consciousness-non-ordinary-religion-panpsychism-heretical-ideas-philip-goff",
+    "tags": [
+      "Consciousness Studies",
+      "Panpsychism",
+      "Philosophy of Mind"
+    ],
+    "image": "exploring-consciousness-non-ordinary-religion-panpsychism-heretical-ideas-philip-goff.jpg",
+    "podcastHost": "Tim Ferriss",
+    "videoId": "Rn0IT25cRhs",
+    "isPremium": false,
+    "videoUploadedAt": "2025-04-10T12:00:00Z"
+  },
+  {
+    "title": "How to Overcome Self-Doubt — Filmmaker Robert Rodriguez",
+    "slug": "how-to-overcome-self-doubt-filmmaker-robert-rodriguez",
+    "tags": [
+      "Creative Process",
+      "Personal Development",
+      "Productivity Tips"
+    ],
+    "image": "how-to-overcome-self-doubt-filmmaker-robert-rodriguez.jpg",
+    "podcastHost": "Tim Ferriss",
+    "videoId": "fbPEvPERqpE",
+    "isPremium": false,
+    "videoUploadedAt": "2025-04-02T12:00:00Z"
+  },
+  {
+    "title": "Craig Mod Returns — Epic Walks, The Art of Slowness, and More",
+    "slug": "craig-mod-epic-walks-art-of-slowness",
+    "tags": [
+      "Walking Meditation",
+      "Japanese Culture",
+      "Slow Living"
+    ],
+    "image": "craig-mod-epic-walks-art-of-slowness.jpg",
+    "podcastHost": "Tim Ferriss",
+    "videoId": "d3dPRkyNbj8",
+    "isPremium": false,
+    "videoUploadedAt": "2025-03-28T12:00:00Z"
+  },
+  {
+    "title": "Co-Founder of Blogger, Twitter, Medium, and Mozi — The Art of Pivoting, Strategic Quitting, and More",
+    "slug": "co-founder-blogger-twitter-medium-mozi-art-of-pivoting-strategic-quitting",
+    "tags": [
+      "Strategic Thinking",
+      "Entrepreneurship",
+      "Personal Development"
+    ],
+    "image": "co-founder-blogger-twitter-medium-mozi-art-of-pivoting-strategic-quitting.jpg",
+    "podcastHost": "Tim Ferriss",
+    "videoId": "VV1Y9GSFZNk",
+    "isPremium": false,
+    "videoUploadedAt": "2025-03-20T12:00:00Z"
+  },
+  {
+    "title": "Wētā Workshop — Stories from The Lord of the Rings, Four Tenets to Live By, and Untapping Creativity",
+    "slug": "weta-workshop-stories-from-the-lord-of-the-rings-four-tenets-to-live-by-untapping-creativity",
+    "tags": [
+      "Creativity",
+      "Film Production",
+      "Entrepreneurship"
+    ],
+    "image": "weta-workshop-stories-from-the-lord-of-the-rings-four-tenets-to-live-by-untapping-creativity.jpg",
+    "podcastHost": "Tim Ferriss",
+    "videoId": "J8uYTxJtTGY",
+    "isPremium": false,
+    "videoUploadedAt": "2025-03-13T12:00:00Z"
+  },
+  {
+    "title": "Simple Exercises That Can Repair Tendons, Isometrics vs. Eccentrics, and More — Dr. Keith Baar",
+    "slug": "simple-exercises-repair-tendons-isometrics-vs-eccentrics-keith-baar",
+    "tags": [
+      "Tendon Health",
+      "Injury Recovery",
+      "Exercise Science"
+    ],
+    "image": "simple-exercises-repair-tendons-isometrics-vs-eccentrics-keith-baar.jpg",
+    "podcastHost": "Tim Ferriss",
+    "videoId": "BnFzjcPTSsc",
+    "isPremium": false,
+    "videoUploadedAt": "2025-02-27T12:00:00Z"
+  },
+  {
+    "title": "Whether or Not to Have Kids, Transformative Experiences, and More — L.A. Paul",
+    "slug": "whether-or-not-to-have-kids-transformative-experiences-la-paul",
+    "tags": [
+      "Philosophy",
+      "Transformative Experiences",
+      "Decision Making"
+    ],
+    "image": "whether-or-not-to-have-kids-transformative-experiences-la-paul.jpg",
+    "podcastHost": "Tim Ferriss",
+    "videoId": "iyRAAMnaJqk",
+    "isPremium": false,
+    "videoUploadedAt": "2025-02-21T12:00:00Z"
+  },
+  {
+    "title": "Brandon Sanderson — Building a Fiction Empire, $40M+ Kickstarter Campaigns, and Unbreakable Habits",
+    "slug": "brandon-sanderson-building-fiction-empire-kickstarter-campaigns-unbreakable-habits",
+    "tags": [
+      "Creative Entrepreneurship",
+      "Fantasy Fiction",
+      "Writing Process"
+    ],
+    "image": "brandon-sanderson-building-fiction-empire-kickstarter-campaigns-unbreakable-habits.jpg",
+    "podcastHost": "Tim Ferriss",
+    "videoId": "wIgI_DiwZh4",
+    "isPremium": false,
+    "videoUploadedAt": "2025-02-12T12:00:00Z"
+  },
+  {
+    "title": "Seth Godin on Playing the Right Game and Strategy as a Superpower",
+    "slug": "seth-godin-playing-the-right-game-strategy-as-superpower",
+    "tags": [
+      "Strategic Thinking",
+      "Business Strategy",
+      "Leadership"
+    ],
+    "image": "seth-godin-playing-the-right-game-strategy-as-superpower.jpg",
+    "podcastHost": "Tim Ferriss",
+    "videoId": "yhc1sM2NnQY",
+    "isPremium": false,
+    "videoUploadedAt": "2025-01-30T12:00:00Z"
+  },
+  {
+    "title": "Chris Sacca — How to Succeed by Living on Your Own Terms",
+    "slug": "chris-sacca-how-to-succeed-by-living-on-your-own-terms",
+    "tags": [
+      "Personal Development",
+      "Technology Trends",
+      "Career Advice"
+    ],
+    "image": "chris-sacca-how-to-succeed-by-living-on-your-own-terms.jpg",
+    "podcastHost": "Tim Ferriss",
+    "videoId": "jIBo69EsAzw",
+    "isPremium": false,
+    "videoUploadedAt": "2025-01-24T12:00:00Z"
+  },
+  {
+    "title": "Naval Ravikant and Aaron Stupple — How to Raise a Sovereign Child",
+    "slug": "naval-ravikant-aaron-stupple-raise-sovereign-child",
+    "tags": [
+      "Parenting",
+      "Education Alternatives",
+      "Personal Growth"
+    ],
+    "image": "naval-ravikant-aaron-stupple-raise-sovereign-child.jpg",
+    "podcastHost": "Tim Ferriss",
+    "videoId": "2bZSzObqAjE",
+    "isPremium": false,
+    "videoUploadedAt": "2025-01-19T12:00:00Z"
+  },
+  {
+    "title": "Tactics and Strategies for a 2025 Reboot — Essentialism and Greg McKeown",
+    "slug": "tactics-strategies-for-2025-reboot-essentialism-greg-mckeown",
+    "tags": [
+      "Personal Development",
+      "Productivity",
+      "Goal Setting"
+    ],
+    "image": "tactics-strategies-for-2025-reboot-essentialism-greg-mckeown.jpg",
+    "podcastHost": "Tim Ferriss",
+    "videoId": "AjsN9BQRtxE",
+    "isPremium": false,
+    "videoUploadedAt": "2025-01-09T12:00:00Z"
+  },
+  {
+    "title": "Dr. Becky Kennedy — Parenting Strategies for Raising Resilient Kids",
+    "slug": "becky-kennedy-parenting-strategies-for-raising-resilient-kids",
+    "tags": [
+      "Parenting Strategies",
+      "Emotional Intelligence",
+      "Resilience Building"
+    ],
+    "image": "becky-kennedy-parenting-strategies-for-raising-resilient-kids.jpg",
+    "podcastHost": "Tim Ferriss",
+    "videoId": "8ixRrg7qNKY",
+    "isPremium": false,
+    "videoUploadedAt": "2024-12-27T12:00:00Z"
+  },
+  {
+    "title": "Legendary Inventor Danny Hillis — Solving the Impossible (Plus Kevin Kelly)",
+    "slug": "legendary-inventor-danny-hillis-solving-the-impossible",
+    "tags": [
+      "Innovation",
+      "Systems Thinking",
+      "Long-term Thinking"
+    ],
+    "image": "legendary-inventor-danny-hillis-solving-the-impossible.jpg",
+    "podcastHost": "Tim Ferriss",
+    "videoId": "OjEdoOFWYQQ",
+    "isPremium": false,
+    "videoUploadedAt": "2024-12-12T12:00:00Z"
+  },
+  {
+    "title": "From Homeless and Broke to Top Angel Investor (Uber, SpaceX, and 100+ More) — Cyan Banister",
+    "slug": "from-homeless-broke-to-top-angel-investor-cyan-banister",
+    "tags": [
+      "Angel Investing",
+      "Life Lessons",
+      "Personal Development"
+    ],
+    "image": "from-homeless-broke-to-top-angel-investor-cyan-banister.jpg",
+    "podcastHost": "Tim Ferriss",
+    "videoId": "_SQ_myzmV_Q",
+    "isPremium": false,
+    "videoUploadedAt": "2024-11-28T12:00:00Z"
+  },
+  {
+    "title": "Derek Sivers, Philosopher-Entrepreneur — The Greatest Year of His Life",
+    "slug": "derek-sivers-philosopher-entrepreneur-the-greatest-year-of-his-life",
+    "tags": [
+      "Mindset Shifts",
+      "Personal Growth",
+      "Lifestyle Design"
+    ],
+    "image": "derek-sivers-philosopher-entrepreneur-the-greatest-year-of-his-life.jpg",
+    "podcastHost": "Tim Ferriss",
+    "videoId": "EGnDhd--BiM",
+    "isPremium": false,
+    "videoUploadedAt": "2024-11-14T12:00:00Z"
+  },
+  {
+    "title": "Derren Brown — A Master Mentalist on Magic, Mind Reading, Ambition, Stoicism, Religion, and More",
+    "slug": "derren-brown-master-mentalist-on-magic-mind-reading-ambition-stoicism-religion",
+    "tags": [
+      "Mentalism",
+      "Stoicism",
+      "Personal Development"
+    ],
+    "image": "derren-brown-master-mentalist-on-magic-mind-reading-ambition-stoicism-religion.jpg",
+    "podcastHost": "Tim Ferriss",
+    "videoId": "I7AJA3o0jkY",
+    "isPremium": false,
+    "videoUploadedAt": "2024-11-07T12:00:00Z"
+  },
+  {
+    "title": "Jon Batiste — The Quest for Originality and How to Get Unstuck",
+    "slug": "jon-batiste-quest-for-originality-get-unstuck",
+    "tags": [
+      "Creative Process",
+      "Overcoming Challenges",
+      "Personal Development"
+    ],
+    "image": "jon-batiste-quest-for-originality-get-unstuck.jpg",
+    "podcastHost": "Tim Ferriss",
+    "videoId": "dy6nRYTsKH4",
+    "isPremium": false,
+    "videoUploadedAt": "2024-10-30T12:00:00Z"
+  },
+  {
+    "title": "Learnings from 1,000+ Near-Death Experiences — Dr. Bruce Greyson, University of Virginia",
+    "slug": "learnings-from-near-death-experiences-bruce-greyson",
+    "tags": [
+      "Near-Death Experiences",
+      "Consciousness Research",
+      "Medical Mysteries"
+    ],
+    "image": "learnings-from-near-death-experiences-bruce-greyson.jpg",
+    "podcastHost": "Tim Ferriss",
+    "videoId": "o96LNLaiDsc",
+    "isPremium": false,
+    "videoUploadedAt": "2024-10-24T12:00:00Z"
+  },
+  {
+    "title": "Habits of Churchill, Lessons from Napoleon, & The Holy Fire Inside Great Leaders — Andrew Roberts",
+    "slug": "habits-of-churchill-lessons-from-napoleon-holy-fire-inside-great-leaders-andrew-roberts",
+    "tags": [
+      "Leadership Lessons",
+      "Historical Figures",
+      "Military Strategy"
+    ],
+    "image": "habits-of-churchill-lessons-from-napoleon-holy-fire-inside-great-leaders-andrew-roberts.jpg",
+    "podcastHost": "Tim Ferriss",
+    "videoId": "h0aGN_rdnMQ",
+    "isPremium": false,
+    "videoUploadedAt": "2024-10-18T12:00:00Z"
+  },
+  {
+    "title": "Elizabeth Gilbert — How to Set Strong Boundaries, Overcome Purpose Anxiety, & Find Your Inner Voice",
+    "slug": "elizabeth-gilbert-set-boundaries-overcome-purpose-anxiety-find-inner-voice",
+    "tags": [
+      "Personal Development",
+      "Self-Compassion",
+      "Boundaries"
+    ],
+    "image": "elizabeth-gilbert-set-boundaries-overcome-purpose-anxiety-find-inner-voice.jpg",
+    "podcastHost": "Tim Ferriss",
+    "videoId": "afTSoaIKwNs",
+    "isPremium": false,
+    "videoUploadedAt": "2024-09-26T12:00:00Z"
+  },
+  {
+    "title": "Matthew McConaughey and Aisha Tyler — The Tim Ferriss Show",
+    "slug": "matthew-mcconaughey-aisha-tyler-tim-ferriss-show",
+    "tags": [
+      "Personal Growth",
+      "Authentic Success",
+      "Career Reinvention"
+    ],
+    "image": "matthew-mcconaughey-aisha-tyler-tim-ferriss-show.jpg",
+    "podcastHost": "Tim Ferriss",
+    "videoId": "H_3Bfj99xYU",
+    "isPremium": false,
+    "videoUploadedAt": "2024-07-30T12:00:00Z"
+  },
+  {
+    "title": "Anne Lamott and Josh Waitzkin — The Tim Ferriss Show",
+    "slug": "anne-lamott-josh-waitzkin-tim-ferriss-show",
+    "tags": [
+      "Personal Development",
+      "Learning Strategies",
+      "Mindfulness"
+    ],
+    "image": "anne-lamott-josh-waitzkin-tim-ferriss-show.jpg",
+    "podcastHost": "Tim Ferriss",
+    "videoId": "E1xZq5Qh-lk",
+    "isPremium": false,
+    "videoUploadedAt": "2024-07-19T12:00:00Z"
+  },
+  {
+    "title": "Hugh Jackman and Esther Perel — The Tim Ferriss Show",
+    "slug": "hugh-jackman-esther-perel-tim-ferriss-show",
+    "tags": [
+      "Relationships",
+      "Human Psychology",
+      "Intimacy & Desire"
+    ],
+    "image": "hugh-jackman-esther-perel-tim-ferriss-show.jpg",
+    "podcastHost": "Tim Ferriss",
+    "videoId": "rUEPE05VYwA",
+    "isPremium": false,
+    "videoUploadedAt": "2024-07-17T12:00:00Z"
+  },
+  {
+    "title": "Arnold Schwarzenegger and Ann Miura-Ko — The Tim Ferriss Show",
+    "slug": "arnold-schwarzenegger-ann-miura-ko-tim-ferriss-show",
+    "tags": [
+      "Success Strategies",
+      "Mental Fortitude",
+      "Entrepreneurship Insights"
+    ],
+    "image": "arnold-schwarzenegger-ann-miura-ko-tim-ferriss-show.jpg",
+    "podcastHost": "Tim Ferriss",
+    "videoId": "OobjdM0mHcM",
+    "isPremium": false,
+    "videoUploadedAt": "2024-07-13T12:00:00Z"
+  },
+  {
+    "title": "Derek Sivers and Kevin Kelly — The Tim Ferriss Show",
+    "slug": "derek-sivers-kevin-kelly-tim-ferriss-show",
+    "tags": [
+      "Life Philosophy",
+      "Career Advice",
+      "Personal Development"
+    ],
+    "image": "derek-sivers-kevin-kelly-tim-ferriss-show.jpg",
+    "podcastHost": "Tim Ferriss",
+    "videoId": "EX_iBWj5EPo",
+    "isPremium": false,
+    "videoUploadedAt": "2024-07-11T12:00:00Z"
+  },
+  {
+    "title": "Terry Crews and Richard Koch | The Tim Ferriss Show",
+    "slug": "terry-crews-richard-koch-tim-ferriss-show",
+    "tags": [
+      "Success Principles",
+      "Personal Development",
+      "Life Optimization"
+    ],
+    "image": "terry-crews-richard-koch-tim-ferriss-show.jpg",
+    "podcastHost": "Tim Ferriss",
+    "videoId": "K9slJnQqN90",
+    "isPremium": false,
+    "videoUploadedAt": "2024-07-05T12:00:00Z"
+  },
+  {
+    "title": "Elizabeth Gilbert and Jack Kornfield",
+    "slug": "elizabeth-gilbert-jack-kornfield",
+    "tags": [
+      "Personal Development",
+      "Mindfulness",
+      "Spiritual Growth"
+    ],
+    "image": "elizabeth-gilbert-jack-kornfield.jpg",
+    "podcastHost": "Tim Ferriss",
+    "videoId": "9Pstpq3a4uM",
+    "isPremium": false,
+    "videoUploadedAt": "2024-07-04T12:00:00Z"
+  },
+  {
+    "title": "Neil Gaiman and Debbie Millman - The Tim Ferriss Show",
+    "slug": "neil-gaiman-debbie-millman-tim-ferriss-show",
+    "tags": [
+      "Creative Process",
+      "Personal Development",
+      "Overcoming Rejection"
+    ],
+    "image": "neil-gaiman-debbie-millman-tim-ferriss-show.jpg",
+    "podcastHost": "Tim Ferriss",
+    "videoId": "U6XNzpWzzNM",
+    "isPremium": false,
+    "videoUploadedAt": "2024-06-27T12:00:00Z"
+  }
+];

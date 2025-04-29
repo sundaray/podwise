@@ -1,0 +1,565 @@
+// Auto-generated podcast list - DO NOT EDIT MANUALLY
+// Generated on 2025-04-29T18:16:29.064Z
+
+export const scottDClaryPodcastList = [
+  {
+    "title": "How Taking Calculated Chances Built a Business Empire | Michael S. Liebowitz - Serial Entrepreneur",
+    "slug": "how-taking-calculated-chances-built-business-empire-michael-liebowitz-serial-entrepreneur",
+    "tags": [
+      "Entrepreneurship",
+      "Business Leadership",
+      "Success Strategies"
+    ],
+    "image": "how-taking-calculated-chances-built-business-empire-michael-liebowitz-serial-entrepreneur.jpg",
+    "podcastHost": "Scott D. Clary",
+    "videoId": "80Mt8i68dD4",
+    "isPremium": false,
+    "videoUploadedAt": "2025-04-12T12:00:00Z"
+  },
+  {
+    "title": "How Unresolved Trauma Creates Unhappy Entrepreneurs | Danny Morel - Transformation Guide",
+    "slug": "how-unresolved-trauma-creates-unhappy-entrepreneurs-danny-morel-transformation-guide",
+    "tags": [
+      "Entrepreneurship",
+      "Personal Development",
+      "Success Psychology"
+    ],
+    "image": "how-unresolved-trauma-creates-unhappy-entrepreneurs-danny-morel-transformation-guide.jpg",
+    "podcastHost": "Scott D. Clary",
+    "videoId": "Km4Vdzk6w3o",
+    "isPremium": false,
+    "videoUploadedAt": "2025-04-11T12:00:00Z"
+  },
+  {
+    "title": "How Extreme Specialization Created an 8-Figure Growth Machine | Chris Dreyer - SEO Strategist",
+    "slug": "how-extreme-specialization-created-8-figure-growth-machine-chris-dreyer-seo-strategist",
+    "tags": [
+      "Entrepreneurship",
+      "Niche Marketing",
+      "SEO Strategy"
+    ],
+    "image": "how-extreme-specialization-created-8-figure-growth-machine-chris-dreyer-seo-strategist.jpg",
+    "podcastHost": "Scott D. Clary",
+    "videoId": "SCF1KLTtbgU",
+    "isPremium": false,
+    "videoUploadedAt": "2025-04-06T12:00:00Z"
+  },
+  {
+    "title": "How Hidden Gut Triggers Are Sabotaging Your Health | Dr. Steven Gundry - Renowned Heart Surgeon",
+    "slug": "hidden-gut-triggers-sabotaging-health-steven-gundry-heart-surgeon",
+    "tags": [
+      "Gut Health",
+      "Brain Function",
+      "Chronic Inflammation"
+    ],
+    "image": "hidden-gut-triggers-sabotaging-health-steven-gundry-heart-surgeon.jpg",
+    "podcastHost": "Scott D. Clary",
+    "videoId": "wte8HZBKAb8",
+    "isPremium": false,
+    "videoUploadedAt": "2025-04-04T12:00:00Z"
+  },
+  {
+    "title": "The Hidden Skills Gap That's Holding Men Back | Michael Sartain - Lifestyle Strategist",
+    "slug": "hidden-skills-gap-holding-men-back-michael-sartain-lifestyle-strategist",
+    "tags": [
+      "Personal Development",
+      "Social Dynamics",
+      "Dating Advice"
+    ],
+    "image": "hidden-skills-gap-holding-men-back-michael-sartain-lifestyle-strategist.jpg",
+    "podcastHost": "Scott D. Clary",
+    "videoId": "kothCZNOHVA",
+    "isPremium": false,
+    "videoUploadedAt": "2025-04-01T12:00:00Z"
+  },
+  {
+    "title": "The Dark Side of Building a Family Empire | Billy Busch - Anheuser-Busch Heir",
+    "slug": "dark-side-building-family-empire-billy-busch-anheuser-busch-heir",
+    "tags": [
+      "Family Business",
+      "Succession Planning",
+      "Leadership Legacy"
+    ],
+    "image": "dark-side-building-family-empire-billy-busch-anheuser-busch-heir.jpg",
+    "podcastHost": "Scott D. Clary",
+    "videoId": "d95Pz-vrslA",
+    "isPremium": false,
+    "videoUploadedAt": "2025-03-27T12:00:00Z"
+  },
+  {
+    "title": "The $1.2B Flower Empire That Almost Failed | Jim McCann - 1-800-Flowers Founder",
+    "slug": "flower-empire-that-almost-failed-jim-mccann",
+    "tags": [
+      "Entrepreneurship",
+      "Business Strategy",
+      "Leadership Development"
+    ],
+    "image": "flower-empire-that-almost-failed-jim-mccann.jpg",
+    "podcastHost": "Scott D. Clary",
+    "videoId": "5ySASR4Sysk",
+    "isPremium": false,
+    "videoUploadedAt": "2025-03-24T12:00:00Z"
+  },
+  {
+    "title": "Building Billion-Dollar Tech Companies | Tim Guleri - Legendary VC & Tech Founder",
+    "slug": "building-billion-dollar-tech-companies-tim-guleri-legendary-vc-tech-founder",
+    "tags": [
+      "Entrepreneurship",
+      "Venture Capital",
+      "Tech Startups"
+    ],
+    "image": "building-billion-dollar-tech-companies-tim-guleri-legendary-vc-tech-founder.jpg",
+    "podcastHost": "Scott D. Clary",
+    "videoId": "Po7Iizv6AA0",
+    "isPremium": false,
+    "videoUploadedAt": "2025-03-21T12:00:00Z"
+  },
+  {
+    "title": "Turning $26K In Saving Into $70 Million | Justin Brock - Founder of Bobby Brock Insurance",
+    "slug": "turning-26-thousand-dollars-in-saving-into-70-million-dollars-justin-brock-founder-bobby-brock-insurance",
+    "tags": [
+      "Entrepreneurship",
+      "Financial Freedom",
+      "Marketing Strategy"
+    ],
+    "image": "turning-26-thousand-dollars-in-saving-into-70-million-dollars-justin-brock-founder-bobby-brock-insurance.jpg",
+    "podcastHost": "Scott D. Clary",
+    "videoId": "8W5TjHJGotE",
+    "isPremium": false,
+    "videoUploadedAt": "2025-03-19T12:00:00Z"
+  },
+  {
+    "title": "The Secret To Going Viral | Brendan Kane - Social Media Expert",
+    "slug": "secret-going-viral-brendan-kane-social-media-expert",
+    "tags": [
+      "Content Creation",
+      "Viral Content",
+      "Social Media Strategy"
+    ],
+    "image": "secret-going-viral-brendan-kane-social-media-expert.jpg",
+    "podcastHost": "Scott D. Clary",
+    "videoId": "PUROxU-8m-0",
+    "isPremium": false,
+    "videoUploadedAt": "2025-03-15T12:00:00Z"
+  },
+  {
+    "title": "Ideas Mean Nothing Without Execution | Leo Pareja - CEO of eXp Realty (EXPI)",
+    "slug": "ideas-mean-nothing-without-execution-leo-pareja-ceo-exp-realty",
+    "tags": [
+      "Entrepreneurship",
+      "Real Estate",
+      "Business Strategy"
+    ],
+    "image": "ideas-mean-nothing-without-execution-leo-pareja-ceo-exp-realty.jpg",
+    "podcastHost": "Scott D. Clary",
+    "videoId": "m7KIzgNmduA",
+    "isPremium": false,
+    "videoUploadedAt": "2025-03-12T12:00:00Z"
+  },
+  {
+    "title": "How One Idea Transformed Global Trade & Ended Poverty Cycles | Paul Rice - Fairtrade Pioneer",
+    "slug": "one-idea-transformed-global-trade-ended-poverty-cycles-paul-rice-fairtrade-pioneer",
+    "tags": [
+      "air Trade",
+      "Conscious Capitalism",
+      "Global Poverty"
+    ],
+    "image": "one-idea-transformed-global-trade-ended-poverty-cycles-paul-rice-fairtrade-pioneer.jpg",
+    "podcastHost": "Scott D. Clary",
+    "videoId": "orzbIcIxHYw",
+    "isPremium": false,
+    "videoUploadedAt": "2025-03-08T12:00:00Z"
+  },
+  {
+    "title": "Break Free from Trauma Cycles & Reclaim Your Power | Dr. Thema Bryant - Renowned Psychologist",
+    "slug": "break-free-from-trauma-cycles-reclaim-your-power-thema-bryant-renowned-psychologist",
+    "tags": [
+      "Trauma Recovery",
+      "Personal Development",
+      "Healthy Relationships"
+    ],
+    "image": "break-free-from-trauma-cycles-reclaim-your-power-thema-bryant-renowned-psychologist.jpg",
+    "podcastHost": "Scott D. Clary",
+    "videoId": "50pvNCrPJMc",
+    "isPremium": false,
+    "videoUploadedAt": "2025-03-05T12:00:00Z"
+  },
+  {
+    "title": "Building An Empire Against All Odds | Yuri Elkaim - Founder of Healthpreneur",
+    "slug": "building-empire-against-all-odds-yuri-elkaim-founder-healthpreneur",
+    "tags": [
+      "Entrepreneurship",
+      "Business Strategy",
+      "Online Marketing"
+    ],
+    "image": "building-empire-against-all-odds-yuri-elkaim-founder-healthpreneur.jpg",
+    "podcastHost": "Scott D. Clary",
+    "videoId": "2DYSijzPgkw",
+    "isPremium": false,
+    "videoUploadedAt": "2025-02-28T12:00:00Z"
+  },
+  {
+    "title": "Building A $100,000,000 Marketing Agency | Neil Patel - Entrepreneur & Digital Marketing Expert",
+    "slug": "building-100-million-dollar-marketing-agency-neil-patel-entrepreneur-digital-marketing-expert",
+    "tags": [
+      "Entrepreneurship",
+      "Business Growth",
+      "Digital Marketing"
+    ],
+    "image": "building-100-million-dollar-marketing-agency-neil-patel-entrepreneur-digital-marketing-expert.jpg",
+    "podcastHost": "Scott D. Clary",
+    "videoId": "bRT0kLobMEI",
+    "isPremium": false,
+    "videoUploadedAt": "2025-02-24T12:00:00Z"
+  },
+  {
+    "title": "Building a $200M Fitness Empire | Peter Taunton - Founder of Snap Fitness",
+    "slug": "building-200-million-dollar-fitness-empire-peter-taunton-founder-snap-fitness",
+    "tags": [
+      "Entrepreneurship",
+      "Business Growth",
+      "Leadership"
+    ],
+    "image": "building-200-million-dollar-fitness-empire-peter-taunton-founder-snap-fitness.jpg",
+    "podcastHost": "Scott D. Clary",
+    "videoId": "uHl_vFZcULc",
+    "isPremium": false,
+    "videoUploadedAt": "2025-02-21T12:00:00Z"
+  },
+  {
+    "title": "From Rock Bottom To Over $1 Billion In Sales | Mara Dorne - Sales Expert",
+    "slug": "from-rock-bottom-to-over-1-billion-dollar-in-sales-mara-dorne-sales-expert",
+    "tags": [
+      "Sales Leadership",
+      "Women in Business",
+      "Mental Health"
+    ],
+    "image": "from-rock-bottom-to-over-1-billion-dollar-in-sales-mara-dorne-sales-expert.jpg",
+    "podcastHost": "Scott D. Clary",
+    "videoId": "SgT6ahSO-74",
+    "isPremium": false,
+    "videoUploadedAt": "2025-02-19T12:00:00Z"
+  },
+  {
+    "title": "Everything in Life Is A Negotiation | Chris Voss - FBI Hostage Negotiator",
+    "slug": "everything-in-life-is-a-negotiation-chris-voss-fbi-hostage-negotiator",
+    "tags": [
+      "Negotiation Skills",
+      "Emotional Intelligence",
+      "Communication Techniques"
+    ],
+    "image": "everything-in-life-is-a-negotiation-chris-voss-fbi-hostage-negotiator.jpg",
+    "podcastHost": "Scott D. Clary",
+    "videoId": "Tvg26AnyYBg",
+    "isPremium": false,
+    "videoUploadedAt": "2025-02-16T12:00:00Z"
+  },
+  {
+    "title": "Master the Art of Influence + Communication | Charles Duhigg - Pulitzer Prize-Winning Journalist",
+    "slug": "master-the-art-of-influence-communication-charles-duhigg-pulitzer-prize-winning-journalist",
+    "tags": [
+      "Communication Skills",
+      "Relationship Building",
+      "Emotional Intelligence"
+    ],
+    "image": "master-the-art-of-influence-communication-charles-duhigg-pulitzer-prize-winning-journalist.jpg",
+    "podcastHost": "Scott D. Clary",
+    "videoId": "9TwoujMbTHs",
+    "isPremium": false,
+    "videoUploadedAt": "2025-02-14T12:00:00Z"
+  },
+  {
+    "title": "The Transformative Truth About Money & Happiness | Sahil Bloom - Author",
+    "slug": "transformative-truth-about-money-happiness-sahil-bloom",
+    "tags": [
+      "Wealth Mindset",
+      "Life Purpose",
+      "Time Management"
+    ],
+    "image": "transformative-truth-about-money-happiness-sahil-bloom.jpg",
+    "podcastHost": "Scott D. Clary",
+    "videoId": "k68ypVTbJ_I",
+    "isPremium": false,
+    "videoUploadedAt": "2025-02-11T12:00:00Z"
+  },
+  {
+    "title": "How To Live A Truly Meaningful Life | Shais Taub - Rabbi and Author",
+    "slug": "live-truly-meaningful-life-shais-taub-rabbi-author",
+    "tags": [
+      "Meaning",
+      "Purpose",
+      "Spirituality"
+    ],
+    "image": "live-truly-meaningful-life-shais-taub-rabbi-author.jpg",
+    "podcastHost": "Scott D. Clary",
+    "videoId": "6Ls-czj1U6g",
+    "isPremium": false,
+    "videoUploadedAt": "2025-02-08T12:00:00Z"
+  },
+  {
+    "title": "Fortune 500 CEO Reveals Why Most Leaders Fail | Klaus Kleinfeld - CEO of Siemens",
+    "slug": "fortune-500-ceo-reveals-why-most-leaders-fail-klaus-kleinfeld-ceo-siemens",
+    "tags": [
+      "Leadership Development",
+      "Energy Management",
+      "Corporate Transformation"
+    ],
+    "image": "fortune-500-ceo-reveals-why-most-leaders-fail-klaus-kleinfeld-ceo-siemens.jpg",
+    "podcastHost": "Scott D. Clary",
+    "videoId": "7jDCQWtsoiI",
+    "isPremium": false,
+    "videoUploadedAt": "2025-02-05T12:00:00Z"
+  },
+  {
+    "title": "How To Email Influencers, Grow A Podcast, Sell, And Be Happy (Authentic AF)",
+    "slug": "email-influencers-grow-podcast-sell-be-happy",
+    "tags": [
+      "Podcast Growth",
+      "Sales Strategy",
+      "Career Fulfillment"
+    ],
+    "image": "email-influencers-grow-podcast-sell-be-happy.jpg",
+    "podcastHost": "Scott D. Clary",
+    "videoId": "cTfKN7Dcj1Y",
+    "isPremium": false,
+    "videoUploadedAt": "2025-02-04T12:00:00Z"
+  },
+  {
+    "title": "From Zero to 22M Podcast Downloads (Rise)",
+    "slug": "from-zero-to-22m-podcast-downloads",
+    "tags": [
+      "Content Creation",
+      "Entrepreneurship",
+      "Podcast Growth"
+    ],
+    "image": "from-zero-to-22m-podcast-downloads.jpg",
+    "podcastHost": "Scott D. Clary",
+    "videoId": "P3loZ2LKaKU",
+    "isPremium": false,
+    "videoUploadedAt": "2025-02-04T12:00:00Z"
+  },
+  {
+    "title": "How to Sell Anything to Anyone (The Wealthy Way)",
+    "slug": "how-to-sell-anything-to-anyone",
+    "tags": [
+      "Sales Strategy",
+      "Entrepreneurship",
+      "Business Development"
+    ],
+    "image": "how-to-sell-anything-to-anyone.jpg",
+    "podcastHost": "Scott D. Clary",
+    "videoId": "fqhR-FVOkEo",
+    "isPremium": false,
+    "videoUploadedAt": "2025-02-04T12:00:00Z"
+  },
+  {
+    "title": "How to Build and Monetize an Audience | Gary Lipovetsky - Creator Economy & Influencer Expert",
+    "slug": "build-monetize-audience-gary-lipovetsky-creator-economy-influencer-expert",
+    "tags": [
+      "Creator Economy",
+      "Audience Building",
+      "Personal Branding"
+    ],
+    "image": "build-monetize-audience-gary-lipovetsky-creator-economy-influencer-expert.jpg",
+    "podcastHost": "Scott D. Clary",
+    "videoId": "ZJRYFJ_0kKQ",
+    "isPremium": false,
+    "videoUploadedAt": "2025-02-01T12:00:00Z"
+  },
+  {
+    "title": "Why You're Failing To Achieve Your Goals | Rob Dial - Mindset & Motivation Expert",
+    "slug": "why-you-are-failing-to-achieve-your-goals-rob-dial-mindset-motivation-expert",
+    "tags": [
+      "Personal Development",
+      "Mindset Transformation",
+      "Fear Management"
+    ],
+    "image": "why-you-are-failing-to-achieve-your-goals-rob-dial-mindset-motivation-expert.jpg",
+    "podcastHost": "Scott D. Clary",
+    "videoId": "OQLe3SEwIvQ",
+    "isPremium": false,
+    "videoUploadedAt": "2025-01-29T12:00:00Z"
+  },
+  {
+    "title": "Hack Your Genetics To Look (And Feel) 10 Years Younger | Kashif Khan - Founder of The DNA Company",
+    "slug": "hack-genetics-look-feel-10-years-younger-kashif-khan-founder-the-dna-company",
+    "tags": [
+      "Genetic Testing",
+      "Preventative Health",
+      "Longevity Science"
+    ],
+    "image": "hack-genetics-look-feel-10-years-younger-kashif-khan-founder-the-dna-company.jpg",
+    "podcastHost": "Scott D. Clary",
+    "videoId": "rXWMFjXK8Sg",
+    "isPremium": false,
+    "videoUploadedAt": "2025-01-24T12:00:00Z"
+  },
+  {
+    "title": "The Art of Storytelling | Stephen Riggio - CEO of Barnes & Noble",
+    "slug": "art-of-storytelling-stephen-riggio-ceo-barnes-noble",
+    "tags": [
+      "Leadership Lessons",
+      "Personal Development",
+      "Literary Translation"
+    ],
+    "image": "art-of-storytelling-stephen-riggio-ceo-barnes-noble.jpg",
+    "podcastHost": "Scott D. Clary",
+    "videoId": "pqO05fnDy2I",
+    "isPremium": false,
+    "videoUploadedAt": "2025-01-22T12:00:00Z"
+  },
+  {
+    "title": "Reclaiming Your Time and Emotional Energy | Israa Nasir - Psychotherapist, Speaker & Entrepreneur",
+    "slug": "reclaiming-time-emotional-energy-israa-nasir",
+    "tags": [
+      "Emotional Intelligence",
+      "Productivity",
+      "Mental Health"
+    ],
+    "image": "reclaiming-time-emotional-energy-israa-nasir.jpg",
+    "podcastHost": "Scott D. Clary",
+    "videoId": "jfaionrhaOY",
+    "isPremium": false,
+    "videoUploadedAt": "2025-01-19T12:00:00Z"
+  },
+  {
+    "title": "What Keeps 99% of People Broke | George Kamel - Money Expert & Top Ramsey Podcast Host",
+    "slug": "what-keeps-people-broke-george-kamel-money-expert-top-ramsey-podcast-host",
+    "tags": [
+      "Debt Freedom",
+      "Personal Finance",
+      "Financial Literacy"
+    ],
+    "image": "what-keeps-people-broke-george-kamel-money-expert-top-ramsey-podcast-host.jpg",
+    "podcastHost": "Scott D. Clary",
+    "videoId": "0cbDRnesGY4",
+    "isPremium": false,
+    "videoUploadedAt": "2025-01-14T12:00:00Z"
+  },
+  {
+    "title": "Simple Steps To Remove Your Negative Thoughts | Marisa Peer - World Renowned Therapist",
+    "slug": "remove-negative-thoughts-marisa-peer",
+    "tags": [
+      "Self-Improvement",
+      "Positive Psychology",
+      "Mental Health"
+    ],
+    "image": "remove-negative-thoughts-marisa-peer.jpg",
+    "podcastHost": "Scott D. Clary",
+    "videoId": "lBZbY_YlLbc",
+    "isPremium": false,
+    "videoUploadedAt": "2025-01-11T12:00:00Z"
+  },
+  {
+    "title": "The Anti-Aging Diet | Dr. Michael Greger - Founder of NutritionFacts.org",
+    "slug": "anti-aging-diet-michael-greger-founder-nutritionfacts-org",
+    "tags": [
+      "Nutrition",
+      "Longevity",
+      "Plant-Based Diet"
+    ],
+    "image": "anti-aging-diet-michael-greger-founder-nutritionfacts-org.jpg",
+    "podcastHost": "Scott D. Clary",
+    "videoId": "Qh9OzacKHOo",
+    "isPremium": false,
+    "videoUploadedAt": "2025-01-08T12:00:00Z"
+  },
+  {
+    "title": "The Secret To Mental Strength | Amy Morin - Renowned Psychotherapist & Mental Resilience Expert",
+    "slug": "secret-to-mental-strength-amy-morin-psychotherapist-mental-resilience-expert",
+    "tags": [
+      "Mental Strength",
+      "Resilience",
+      "Self-Awareness"
+    ],
+    "image": "secret-to-mental-strength-amy-morin-psychotherapist-mental-resilience-expert.jpg",
+    "podcastHost": "Scott D. Clary",
+    "videoId": "J5-FcdYlOT8",
+    "isPremium": false,
+    "videoUploadedAt": "2025-01-04T12:00:00Z"
+  },
+  {
+    "title": "How to Reverse Aging | Dave Asprey - The Father of Biohacking",
+    "slug": "reverse-aging-dave-asprey-father-biohacking",
+    "tags": [
+      "Biohacking",
+      "Health Optimization",
+      "Cognitive Performance"
+    ],
+    "image": "reverse-aging-dave-asprey-father-biohacking.jpg",
+    "podcastHost": "Scott D. Clary",
+    "videoId": "WwFl3mIcq_Y",
+    "isPremium": false,
+    "videoUploadedAt": "2024-12-31T12:00:00Z"
+  },
+  {
+    "title": "How to Become \"Work Optional\" | Chris Miles - The “Anti-Financial” Advisor",
+    "slug": "become-work-optional-chris-miles-anti-financial-adviser",
+    "tags": [
+      "Financial Freedom",
+      "Passive Income",
+      "Retirement Planning"
+    ],
+    "image": "become-work-optional-chris-miles-anti-financial-adviser.jpg",
+    "podcastHost": "Scott D. Clary",
+    "videoId": "aAC8fn3fMwQ",
+    "isPremium": false,
+    "videoUploadedAt": "2024-12-28T12:00:00Z"
+  },
+  {
+    "title": "How to Stay Focused and Become Indistractable | Nir Eyal - Habit & Procrastination Expert",
+    "slug": "stay-focused-become-indistractable-nir-eyal-habit-procrastination-expert",
+    "tags": [
+      "Focus",
+      "Time Management",
+      "Personal Development"
+    ],
+    "image": "stay-focused-become-indistractable-nir-eyal-habit-procrastination-expert.jpg",
+    "podcastHost": "Scott D. Clary",
+    "videoId": "u5R-IxjC2yA",
+    "isPremium": false,
+    "videoUploadedAt": "2024-12-27T12:00:00Z"
+  },
+  {
+    "title": "The Four Pillars of Investing | Andy Tanner - Educator, Investor & Author",
+    "slug": "four-pillars-of-investing-andy-tanner",
+    "tags": [
+      "Financial Education",
+      "Investment Strategy",
+      "Cash Flow Investing"
+    ],
+    "image": "four-pillars-of-investing-andy-tanner.jpg",
+    "podcastHost": "Scott D. Clary",
+    "videoId": "R1z59pKMSu8",
+    "isPremium": false,
+    "videoUploadedAt": "2024-12-21T12:00:00Z"
+  },
+  {
+    "title": "Don't Go Broke Trying To Get Rich | Ryan Pineda - Entrepreneur & Real Estate Investor",
+    "slug": "dont-go-broke-trying-to-get-rich-ryan-pineda-entrepreneur-real-estate-investor",
+    "tags": [
+      "Faith-Based Business",
+      "Work-Life Balance",
+      "Sustainable Wealth"
+    ],
+    "image": "dont-go-broke-trying-to-get-rich-ryan-pineda-entrepreneur-real-estate-investor.jpg",
+    "podcastHost": "Scott D. Clary",
+    "videoId": "NA2559iYObE",
+    "isPremium": false,
+    "videoUploadedAt": "2024-12-19T12:00:00Z"
+  },
+  {
+    "title": "Mastering Content Creation (Escaping The Drift)",
+    "slug": "mastering-content-creation",
+    "tags": [
+      "Content Creation",
+      "Personal Branding",
+      "Entrepreneurship"
+    ],
+    "image": "mastering-content-creation.jpg",
+    "podcastHost": "Scott D. Clary",
+    "videoId": "YzjzJfp9x0M",
+    "isPremium": false,
+    "videoUploadedAt": "2024-12-18T12:00:00Z"
+  }
+];

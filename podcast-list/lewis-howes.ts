@@ -1,7 +1,7 @@
 // Auto-generated podcast list - DO NOT EDIT MANUALLY
 // Generated on 2025-04-29T17:07:46.859Z
 
-export const lewsiHowesPodcastList = [
+export const lewisHowesPodcastList = [
   {
     title:
       "The American Dream is Just a Dream! What Dubai Knows About Wealth That Americans Totally Miss!",

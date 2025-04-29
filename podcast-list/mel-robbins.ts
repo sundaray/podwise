@@ -1,0 +1,565 @@
+// Auto-generated podcast list - DO NOT EDIT MANUALLY
+// Generated on 2025-04-29T18:09:10.231Z
+
+export const melRobbinsPodcastList = [
+  {
+    "title": "Your Guide to Better Sex, Intimacy, & Love From a World-Leading Sex Therapist",
+    "slug": "better-sex-intimacy-love-guide-from-world-leading-sex-therapist",
+    "tags": [
+      "Intimacy",
+      "Sexual Wellness",
+      "Couples Therapy"
+    ],
+    "image": "better-sex-intimacy-love-guide-from-world-leading-sex-therapist.jpg",
+    "podcastHost": "Mel Robbins",
+    "videoId": "LoPJEzhtypc",
+    "isPremium": true,
+    "videoUploadedAt": "2025-03-20T12:00:00Z"
+  },
+  {
+    "title": "6 Sneaky Ways People are Disrespecting You & What to Do About It",
+    "slug": "6-subtle-ways-people-disrespect-you-and-how-to-respond",
+    "tags": [
+      "Personal Development",
+      "Emotional Intelligence",
+      "Assertive Communication"
+    ],
+    "image": "6-subtle-ways-people-disrespect-you-and-how-to-respond.jpg",
+    "podcastHost": "Mel Robbins",
+    "videoId": "FrXsUHP-v9s",
+    "isPremium": true,
+    "videoUploadedAt": "2025-03-17T12:00:00Z"
+  },
+  {
+    "title": "If You’re Feeling Uncertain & Anxious, You Need to Hear This ｜ Dr. Julie on The Mel Robbins Podcast",
+    "slug": "anxiety-uncertainty-management-tips-julie-smith",
+    "tags": [
+      "Mental Health",
+      "Emotional Intelligence",
+      "Personal Development"
+    ],
+    "image": "anxiety-uncertainty-management-tips-julie-smith.jpg",
+    "podcastHost": "Mel Robbins",
+    "videoId": "bjvPbfxE3CI",
+    "isPremium": true,
+    "videoUploadedAt": "2025-03-13T12:00:00Z"
+  },
+  {
+    "title": "Get Back on Track：5 Evening Habits to Wake Up Focused, Recharged, and in Control",
+    "slug": "5-evening-habits-wake-up-focused-recharged-in-control",
+    "tags": [
+      "Evening Routine",
+      "Sleep Habits",
+      "Decision Fatigue"
+    ],
+    "image": "5-evening-habits-wake-up-focused-recharged-in-control.jpg",
+    "podcastHost": "Mel Robbins",
+    "videoId": "85vnQT6TI_4",
+    "isPremium": true,
+    "videoUploadedAt": "2025-03-10T12:00:00Z"
+  },
+  {
+    "title": "Look, Feel, & Stay Young Forever： #1 Orthopedic Surgeon’s Proven Protocol ｜ The Mel Robbins Podcast",
+    "slug": "look-feel-stay-young-forever",
+    "tags": [
+      "Health & Wellness",
+      "Healthy Aging",
+      "Longevity Science"
+    ],
+    "image": "look-feel-stay-young-forever.jpg",
+    "podcastHost": "Mel Robbins",
+    "videoId": "gO_x3gnXBzg",
+    "isPremium": true,
+    "videoUploadedAt": "2025-03-06T12:00:00Z"
+  },
+  {
+    "title": "How to Stop Screwing Yourself Over ｜ The Mel Robbins Podcast",
+    "slug": "stop-screwing-yourself-over",
+    "tags": [
+      "Personal Development",
+      "Digital Wellbeing",
+      "Productivity Habits"
+    ],
+    "image": "stop-screwing-yourself-over.jpg",
+    "podcastHost": "Mel Robbins",
+    "videoId": "SO9FHaF4EJw",
+    "isPremium": true,
+    "videoUploadedAt": "2025-03-03T12:00:00Z"
+  },
+  {
+    "title": "How To Handle Difficult People & Take Back Your Peace and Power",
+    "slug": "handle-difficult-people-take-back-peace-power",
+    "tags": [
+      "Personal Development",
+      "Conflict Resolution",
+      "Communication Skills"
+    ],
+    "image": "handle-difficult-people-take-back-peace-power.jpg",
+    "podcastHost": "Mel Robbins",
+    "videoId": "XhBp6GZzH6k",
+    "isPremium": true,
+    "videoUploadedAt": "2025-02-27T12:00:00Z"
+  },
+  {
+    "title": "The 7-Day Reset for More Time, Energy, & Happiness (Backed by Science)",
+    "slug": "7-day-reset-for-more-time-energy-happiness",
+    "tags": [
+      "Personal Development",
+      "Weekly Planning",
+      "Mental Health"
+    ],
+    "image": "7-day-reset-for-more-time-energy-happiness.jpg",
+    "podcastHost": "Mel Robbins",
+    "videoId": "mSaI8Rluel8",
+    "isPremium": true,
+    "videoUploadedAt": "2025-02-24T12:00:00Z"
+  },
+  {
+    "title": "Change Your Body & Your Life in 1 Month：4 Small Habits That Actually Work",
+    "slug": "4-small-habits-change-body-life-one-month",
+    "tags": [
+      "Health and Wellness",
+      "Daily Habits",
+      "Stress Management"
+    ],
+    "image": "4-small-habits-change-body-life-one-month.jpg",
+    "podcastHost": "Mel Robbins",
+    "videoId": "mMHNvy9pFj0",
+    "isPremium": true,
+    "videoUploadedAt": "2025-02-20T12:00:00Z"
+  },
+  {
+    "title": "How to Control Your Mind & Redirect Your Energy to Self Transformation",
+    "slug": "control-mind-redirect-energy-self-transformation",
+    "tags": [
+      "Brain Science",
+      "Personal Development",
+      "Self-Improvement"
+    ],
+    "image": "control-mind-redirect-energy-self-transformation.jpg",
+    "podcastHost": "Mel Robbins",
+    "videoId": "Cp6Kd-JAMRo",
+    "isPremium": true,
+    "videoUploadedAt": "2025-02-17T12:00:00Z"
+  },
+  {
+    "title": "The Best Relationship Advice No One Ever Told You",
+    "slug": "best-relationship-advice-no-one-ever-told-you",
+    "tags": [
+      "Personal Growth",
+      "Relationship Advice",
+      "Communication Skills"
+    ],
+    "image": "best-relationship-advice-no-one-ever-told-you.jpg",
+    "podcastHost": "Mel Robbins",
+    "videoId": "6Kycn43KNOE",
+    "isPremium": true,
+    "videoUploadedAt": "2025-02-13T12:00:00Z"
+  },
+  {
+    "title": "Why Making Friends as an Adult Feels Impossible & What to Do About It",
+    "slug": "why-making-friends-as-adults-is-difficult-and-solutions",
+    "tags": [
+      "Friendship",
+      "Personal Growth",
+      "Social Connection"
+    ],
+    "image": "why-making-friends-as-adults-is-difficult-and-solutions.jpg",
+    "podcastHost": "Mel Robbins",
+    "videoId": "f26GCEUCNXk",
+    "isPremium": true,
+    "videoUploadedAt": "2025-02-10T12:00:00Z"
+  },
+  {
+    "title": "How to Create the Life You Want：Lessons From the #1 Happiness Researcher",
+    "slug": "create-life-you-want-lessons-from-happiness-researcher",
+    "tags": [
+      "Personal Development",
+      "Happiness Research",
+      "Mental Health"
+    ],
+    "image": "create-life-you-want-lessons-from-happiness-researcher.jpg",
+    "podcastHost": "Mel Robbins",
+    "videoId": "R8UpO9mMu5M",
+    "isPremium": true,
+    "videoUploadedAt": "2025-02-06T12:00:00Z"
+  },
+  {
+    "title": "Why 80% of Autoimmune Diseases Happen to Women & Solutions From a Renowned MD",
+    "slug": "women-autoimmune-disease-solutions-from-renowned-md",
+    "tags": [
+      "Women's Health",
+      "Autoimmune Disease",
+      "Stress Management"
+    ],
+    "image": "women-autoimmune-disease-solutions-from-renowned-md.jpg",
+    "podcastHost": "Mel Robbins",
+    "videoId": "a7PqRTeaxOk",
+    "isPremium": true,
+    "videoUploadedAt": "2025-02-03T12:00:00Z"
+  },
+  {
+    "title": "When Nothing Seems to Be Going Your Way, Here’s Exactly What To Do",
+    "slug": "when-nothing-going-your-way-what-to-do",
+    "tags": [
+      "Personal Development",
+      "Emotional Intelligence",
+      "Mental Health"
+    ],
+    "image": "when-nothing-going-your-way-what-to-do.jpg",
+    "podcastHost": "Mel Robbins",
+    "videoId": "ADrkJSpG3V8",
+    "isPremium": true,
+    "videoUploadedAt": "2025-01-30T12:00:00Z"
+  },
+  {
+    "title": "3 Questions That Determine Who You Really Are",
+    "slug": "3-questions-that-determine-who-you-really-are",
+    "tags": [
+      "Personal Development",
+      "Self-Improvement",
+      "Mindset Shift"
+    ],
+    "image": "3-questions-that-determine-who-you-really-are.jpg",
+    "podcastHost": "Mel Robbins",
+    "videoId": "GsAK7h73cdo",
+    "isPremium": true,
+    "videoUploadedAt": "2025-01-25T12:00:00Z"
+  },
+  {
+    "title": "How to Find Your Purpose & Design the Life You Want",
+    "slug": "find-your-purpose-design-life-you-want",
+    "tags": [
+      "Personal Development",
+      "Life Purpose",
+      "Self-Discovery"
+    ],
+    "image": "find-your-purpose-design-life-you-want.jpg",
+    "podcastHost": "Mel Robbins",
+    "videoId": "yZt4ZOy6Z8c",
+    "isPremium": true,
+    "videoUploadedAt": "2025-01-23T12:00:00Z"
+  },
+  {
+    "title": "If You Struggle With Stress & Anxiety, This Will Change Your Life",
+    "slug": "struggle-with-stress-anxiety-change-your-life",
+    "tags": [
+      "Stress Management",
+      "Mental Health",
+      "Self-Care"
+    ],
+    "image": "struggle-with-stress-anxiety-change-your-life.jpg",
+    "podcastHost": "Mel Robbins",
+    "videoId": "6TiJuzF0iD0",
+    "isPremium": true,
+    "videoUploadedAt": "2025-01-20T12:00:00Z"
+  },
+  {
+    "title": "5 Ways to Actually Make Your Habits Stick (Evidence-Based)",
+    "slug": "5-ways-make-your-habits-stick",
+    "tags": [
+      "Habit Formation",
+      "Personal Development",
+      "Behavior Change"
+    ],
+    "image": "5-ways-make-your-habits-stick.jpg",
+    "podcastHost": "Mel Robbins",
+    "videoId": "DPRnrZH6weU",
+    "isPremium": true,
+    "videoUploadedAt": "2025-01-16T12:00:00Z"
+  },
+  {
+    "title": "Try It For 1 Day：Do This Every Morning to Boost Motivation & Focus",
+    "slug": "morning-routine-boost-motivation-focus",
+    "tags": [
+      "Morning Routine",
+      "Personal Development",
+      "Productivity Habits"
+    ],
+    "image": "morning-routine-boost-motivation-focus.jpg",
+    "podcastHost": "Mel Robbins",
+    "videoId": "5juT-Oh4zWI",
+    "isPremium": true,
+    "videoUploadedAt": "2025-01-13T12:00:00Z"
+  },
+  {
+    "title": "How to Stop Caring What People Think of You",
+    "slug": "stop-caring-what-people-think-of-you",
+    "tags": [
+      "Personal Development",
+      "Self-Worth",
+      "Mindset Shift"
+    ],
+    "image": "stop-caring-what-people-think-of-you.jpg",
+    "podcastHost": "Mel Robbins",
+    "videoId": "BR-1OeY8BOA",
+    "isPremium": true,
+    "videoUploadedAt": "2025-01-09T12:00:00Z"
+  },
+  {
+    "title": "How to Achieve Any Goal You Have in 6 Simple Steps",
+    "slug": "achieve-any-goal-in-6-simple-steps",
+    "tags": [
+      "Persoanl Development",
+      "Goal Setting",
+      "Productivity"
+    ],
+    "image": "achieve-any-goal-in-6-simple-steps.jpg",
+    "podcastHost": "Mel Robbins",
+    "videoId": "fxJjAuG3qkQ",
+    "isPremium": true,
+    "videoUploadedAt": "2025-01-06T12:00:00Z"
+  },
+  {
+    "title": "8 Habits That Will Change Your Life：The Expert Advice You Need This Year",
+    "slug": "8-habits-that-will-change-your-life",
+    "tags": [
+      "Persoanl Development",
+      "Stress Management",
+      "Mental Health"
+    ],
+    "image": "8-habits-that-will-change-your-life.jpg",
+    "podcastHost": "Mel Robbins",
+    "videoId": "_5mrZVCEmSE",
+    "isPremium": true,
+    "videoUploadedAt": "2024-12-30T12:00:00Z"
+  },
+  {
+    "title": "Harvard Psychologist Shares 6 Words That Will Change Your Family",
+    "slug": "harvard-psychologist-six-words-change-family",
+    "tags": [
+      "Family Dynamics",
+      "Parenting",
+      "Mental Health"
+    ],
+    "image": "harvard-psychologist-six-words-change-family.jpg",
+    "podcastHost": "Mel Robbins",
+    "videoId": "j6sSGT30WEg",
+    "isPremium": true,
+    "videoUploadedAt": "2024-12-16T12:00:00Z"
+  },
+  {
+    "title": "The Science of Well-Being：Powerful Happiness Hacks That 5 Million People Are Using",
+    "slug": "science-of-wellbeing-powerful-happiness-hacks",
+    "tags": [
+      "Personal Development",
+      "Mental Health",
+      "Positive Psychology"
+    ],
+    "image": "science-of-wellbeing-powerful-happiness-hacks.jpg",
+    "podcastHost": "Mel Robbins",
+    "videoId": "14-DJFPm1_4",
+    "isPremium": true,
+    "videoUploadedAt": "2024-12-12T12:00:00Z"
+  },
+  {
+    "title": "The Only Dating Advice You'll Ever Need",
+    "slug": "essential-dating-advice",
+    "tags": [
+      "Modern Dating",
+      "Relationship Advice",
+      "Self-Improvement"
+    ],
+    "image": "essential-dating-advice.jpg",
+    "podcastHost": "Mel Robbins",
+    "videoId": "166lDfHQtZA",
+    "isPremium": true,
+    "videoUploadedAt": "2024-12-09T12:00:00Z"
+  },
+  {
+    "title": "To Anyone Going Through a Breakup：How to Heal a Broken Heart & Move On",
+    "slug": "heal-broken-heart-move-on",
+    "tags": [
+      "Heartbreak Recovery",
+      "Emotional Wellness",
+      "Relationship Advice"
+    ],
+    "image": "heal-broken-heart-move-on.jpg",
+    "podcastHost": "Mel Robbins",
+    "videoId": "GcJVygChaxA",
+    "isPremium": true,
+    "videoUploadedAt": "2024-12-05T12:00:00Z"
+  },
+  {
+    "title": "5 Signs Of An Incompatible Relationship & 3 Signs You’ve Found \"The One\"",
+    "slug": "5-signs-incompatible-relationship-3-signs-found-the-one",
+    "tags": [
+      "Relationship Advice",
+      "Personal Growth",
+      "Emotional Intelligence"
+    ],
+    "image": "5-signs-incompatible-relationship-3-signs-found-the-one.jpg",
+    "podcastHost": "Mel Robbins",
+    "videoId": "qtQg09GLXVc",
+    "isPremium": true,
+    "videoUploadedAt": "2024-12-02T12:00:00Z"
+  },
+  {
+    "title": "Unlock Your Brain’s Hidden Power：6 Tools to Boost Focus, Confidence, and Creativity",
+    "slug": "6-tools-boost-focus-confidence-creativity",
+    "tags": [
+      "Personal Development",
+      "Brain Science",
+      "Creativity"
+    ],
+    "image": "6-tools-boost-focus-confidence-creativity.jpg",
+    "podcastHost": "Mel Robbins",
+    "videoId": "jH1L2pXtPaw",
+    "isPremium": true,
+    "videoUploadedAt": "2024-11-28T12:00:00Z"
+  },
+  {
+    "title": "The Simple Tool That Will Transform Your Family Dynamic",
+    "slug": "simple-tool-transform-family-dynamic",
+    "tags": [
+      "Family Relationships",
+      "Emotional Intelligence",
+      "Personal Growth"
+    ],
+    "image": "simple-tool-transform-family-dynamic.jpg",
+    "podcastHost": "Mel Robbins",
+    "videoId": "Pw1ohFfCPsg",
+    "isPremium": true,
+    "videoUploadedAt": "2024-11-25T12:00:00Z"
+  },
+  {
+    "title": "Dr Gabor Mate: The Shocking Link Between ADHD, Addiction, Autoimmune Diseases, & Trauma",
+    "slug": "link-between-adhd-addiction-autoimmune-diseases-trauma-gabor-mate",
+    "tags": [
+      "Mental Health",
+      "Trauma Recovery",
+      "Childhood Development"
+    ],
+    "image": "link-between-adhd-addiction-autoimmune-diseases-trauma-gabor-mate.jpg",
+    "podcastHost": "Mel Robbins",
+    "videoId": "PLvCXIvgrGQ",
+    "isPremium": true,
+    "videoUploadedAt": "2024-11-21T12:00:00Z"
+  },
+  {
+    "title": "The Science Of Spiritual Experiences： How To Rewire Your Brain For More Happiness & Purpose",
+    "slug": "rewire-brain-for-happiness-purpose",
+    "tags": [
+      "Personal Development",
+      "Spirituality",
+      "Neuroscience"
+    ],
+    "image": "rewire-brain-for-happiness-purpose.jpg",
+    "podcastHost": "Mel Robbins",
+    "videoId": "zVXOyp0q9pA",
+    "isPremium": true,
+    "videoUploadedAt": "2024-11-07T12:00:00Z"
+  },
+  {
+    "title": "Don’t Learn This Too Late：Make An Authentic Life Now, By Getting Real About The End",
+    "slug": "authentic-living-through-death-awareness",
+    "tags": [
+      "Authentic Living",
+      "Death Awareness",
+      "End of Life Planning"
+    ],
+    "image": "authentic-living-through-death-awareness.jpg",
+    "podcastHost": "Mel Robbins",
+    "videoId": "BDjgt8xRs48",
+    "isPremium": true,
+    "videoUploadedAt": "2024-10-31T12:00:00Z"
+  },
+  {
+    "title": "The Best Way to Deal With Narcissists Without Arguing | The Mel Robbins Podcast",
+    "slug": "best-way-deal-with-narcissists-without-arguing",
+    "tags": [
+      "Mental Health",
+      "Relationship Advice",
+      "Psychological Wellness"
+    ],
+    "image": "best-way-deal-with-narcissists-without-arguing.jpg",
+    "podcastHost": "Mel Robbins",
+    "videoId": "C57vhohpnPA",
+    "isPremium": true,
+    "videoUploadedAt": "2024-10-10T12:00:00Z"
+  },
+  {
+    "title": "Communicate with Confidence: The Blueprint for Mastering Every Conversation",
+    "slug": "blueprint-for-mastering-every-conversation",
+    "tags": [
+      "Communication Skills",
+      "Conflict Resolution",
+      "Personal Development"
+    ],
+    "image": "blueprint-for-mastering-every-conversation.jpg",
+    "podcastHost": "Mel Robbins",
+    "videoId": "ZUCB3M_1Qp4",
+    "isPremium": true,
+    "videoUploadedAt": "ZUCB3M_1Qp4"
+  },
+  {
+    "title": "Eat This to Lose Fat, Prevent Disease, & Feel Better Now With Dr. William Li",
+    "slug": "eat-this-lose-fat-prevent-disease-feel-better-william-li",
+    "tags": [
+      "Weight Management",
+      "Nutrition Science",
+      "Metabolic Health"
+    ],
+    "image": "eat-this-lose-fat-prevent-disease-feel-better-william-li.jpg",
+    "podcastHost": "Mel Robbins",
+    "videoId": "WSBVq3Wj7Lg",
+    "isPremium": true,
+    "videoUploadedAt": "WSBVq3Wj7Lg"
+  },
+  {
+    "title": "3 Truths You Need to Hear: The Best Expert Advice to Unlock Your Potential",
+    "slug": "expert-advice-unlock-your-potential",
+    "tags": [
+      "Personal Development",
+      "Self-Improvement",
+      "Mindset-Shift"
+    ],
+    "image": "expert-advice-unlock-your-potential.jpg",
+    "podcastHost": "Mel Robbins",
+    "videoId": "vic1wX8_h34",
+    "isPremium": true,
+    "videoUploadedAt": "vic1wX8_h34"
+  },
+  {
+    "title": "The Body Reset: How Women Should Eat & Exercise for Health, Fat Loss, & Energy | Dr. Stacy Sims",
+    "slug": "how-women-should-eat-exercise-for-health-fat-loss-energy-stacy-sims",
+    "tags": [
+      "Women's Fitness",
+      "Exercise Physiology",
+      "Strength Training"
+    ],
+    "image": "how-women-should-eat-exercise-for-health-fat-loss-energy-stacy-sims.jpg",
+    "podcastHost": "Mel Robbins",
+    "videoId": "cEVAjm_ETtY",
+    "isPremium": true,
+    "videoUploadedAt": "cEVAjm_ETtY"
+  },
+  {
+    "title": "The #1 Money Rule to Live By：Understand The Psychology of Money",
+    "slug": "understand-psychology-of-money",
+    "tags": [
+      "Money Psychology",
+      "Personal Finance",
+      "Financial Freedom"
+    ],
+    "image": "understand-psychology-of-money.jpg",
+    "podcastHost": "Mel Robbins",
+    "videoId": "eMuS6u7k3Lk",
+    "isPremium": true,
+    "videoUploadedAt": "2024-11-14T12:00:00Z"
+  },
+  {
+    "title": "Change Your Brain: #1 Neuroscientist’s Exercise Protocol for Peak Energy and Focus",
+    "slug": "neuroscientist-exercise-protocol-for-peak-energy-focus",
+    "tags": [
+      "Neuroscience",
+      "Brain Health",
+      "Cognitive Performance"
+    ],
+    "image": "neuroscientist-exercise-protocol-for-peak-energy-focus.jpg",
+    "podcastHost": "Mel Robbins",
+    "videoId": "izWRm4-52l4",
+    "isPremium": true,
+    "videoUploadedAt": "2024-10-03T12:00:00Z"
+  }
+];
