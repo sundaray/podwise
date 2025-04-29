@@ -3,12 +3,12 @@ function generatePodcastList(): void {
   const path = require("path");
   const matter = require("gray-matter");
 
-  const podcastsDir = path.join(process.cwd(), "app/podcasts/chris-williamson");
+  const podcastsDir = path.join(process.cwd(), "app/podcasts/daily-stoic");
 
   // Define the output file path - adjust this to your project structure
   const outputFilePath = path.join(
     process.cwd(),
-    "podcast-list/chris-williamson.ts",
+    "podcast-list/daily-stoic.ts",
   );
 
   // Get all subdirectories (episode folders)
@@ -65,7 +65,7 @@ function generatePodcastList(): void {
   const fileContent = `// Auto-generated podcast list - DO NOT EDIT MANUALLY
 // Generated on ${new Date().toISOString()}
 
-export const chrisWilliamsonPodcastList = ${JSON.stringify(podcasts, null, 2)};
+export const dailyStoicPodcastList = ${JSON.stringify(podcasts, null, 2)};
 `;
 
   // Ensure the directory exists
