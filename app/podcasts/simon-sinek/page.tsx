@@ -18,9 +18,9 @@ export async function generateMetadata({
 
   // Base metadata
   const metadata: Metadata = {
-    title: "Lewis Howes: The School of Greatness Podcast Summaries",
+    title: "Simon Sinek: A Bit of Optimism Podcast Summaries",
     description:
-      "Discover key insights and actionable takeaways from The School of Greatness podcast episodes.",
+      "Discover key insights and actionable takeaways from the A Bit of Optimism podcast episodes.",
     alternates: {
       canonical: `https://podwise.org/podcasts/simon-sinek${
         page > 1 ? `?page=${page}` : ""
@@ -44,7 +44,7 @@ export async function generateMetadata({
 
 const ITEMS_PER_PAGE = 9;
 
-export default async function LewisHowesPodcastPage({
+export default async function SimonSinekPodcastPage({
   searchParams,
 }: {
   searchParams: SearchParams;
@@ -92,16 +92,18 @@ export default async function LewisHowesPodcastPage({
       <h1
         className={`${libreBaskerville.className} mb-8 text-center text-4xl font-semibold tracking-tight text-pretty text-gray-900`}
       >
-        Lewis Howes: "The School of Greatness" Podcast Summaries
+        Simon Sinek: "A Bit of Optimism" Podcast Summaries
       </h1>
       <p className="mx-auto mb-20 max-w-5xl text-center text-lg leading-7 font-medium text-balance text-gray-700">
-        The School of Greatness, hosted by Lewis Howes, a New York Times
-        best-selling author and former professional athlete, is one of the
-        top-ranked Business and Self-Development podcast inspiring listeners to
-        unlock their inner potential. Featuring in-depth interviews with
-        world-class leaders in entertainment, health, mindset, and relations,
-        the show delivers practical strategies to overcome limiting beliefs,
-        manifest dreams, and live a fulfilling life.
+        A Bit of Optimism, hosted by bestselling author and inspirational
+        speaker Simon Sinek, offers thoughtful conversations that inspire hope
+        and possibility during challenging times. Each episode features Simon
+        engaging with diverse thought leaders, from business executives and
+        authors to activists and artists, exploring topics like leadership,
+        innovation, mental health, and creating meaningful change. With Simon's
+        characteristic warmth and insight, the podcast provides practical wisdom
+        and fresh perspectives that help listeners navigate uncertainty while
+        fostering optimism and purpose in their lives and work.
       </p>
       <PodcastSearch
         placeholder="Search podcast summaries by title"

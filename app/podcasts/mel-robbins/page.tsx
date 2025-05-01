@@ -95,13 +95,13 @@ export default async function MelRobbinsPodcastPage({
         The Mel Robbins Podcast Summaries
       </h1>
       <p className="mx-auto mb-20 max-w-5xl text-center text-lg leading-7 font-medium text-balance text-gray-700">
-        The School of Greatness, hosted by Lewis Howes, a New York Times
-        best-selling author and former professional athlete, is one of the
-        top-ranked Business and Self-Development podcast inspiring listeners to
-        unlock their inner potential. Featuring in-depth interviews with
-        world-class leaders in entertainment, health, mindset, and relations,
-        the show delivers practical strategies to overcome limiting beliefs,
-        manifest dreams, and live a fulfilling life.
+        The Mel Robbins Podcast, hosted by #1 New York Times bestselling author
+        Mel Robbins, empowers listeners with practical tools to take control of
+        their lives. Each episode delivers science-backed strategies and candid
+        insights on topics like confidence, productivity, relationships, and
+        mental resilience. Featuring Mel’s no-nonsense approach and
+        conversations with experts, the podcast inspires action and personal
+        growth.
       </p>
       <PodcastSearch
         placeholder="Search podcast summaries by title"

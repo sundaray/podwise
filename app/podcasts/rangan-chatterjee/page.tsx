@@ -18,9 +18,9 @@ export async function generateMetadata({
 
   // Base metadata
   const metadata: Metadata = {
-    title: "Rangan Chatterjee: The School of Greatness Podcast Summaries",
+    title: "Rangan Chatterjee: Feel Better Live More Podcast Summaries",
     description:
-      "Discover key insights and actionable takeaways from The School of Greatness podcast episodes.",
+      "Discover key insights and actionable takeaways from the Feel Better Live More podcast episodes.",
     alternates: {
       canonical: `https://podwise.org/podcasts/rangan-chatterjee${
         page > 1 ? `?page=${page}` : ""
@@ -92,16 +92,16 @@ export default async function RanganChatterjeePodcastPage({
       <h1
         className={`${libreBaskerville.className} mb-8 text-center text-4xl font-semibold tracking-tight text-pretty text-gray-900`}
       >
-        Rangan Chatterjee: "The School of Greatness" Podcast Summaries
+        Dr. Rangan Chatterjee: "Feel Better, Live More" Podcast Summaries
       </h1>
       <p className="mx-auto mb-20 max-w-5xl text-center text-lg leading-7 font-medium text-balance text-gray-700">
-        The School of Greatness, hosted by Lewis Howes, a New York Times
-        best-selling author and former professional athlete, is one of the
-        top-ranked Business and Self-Development podcast inspiring listeners to
-        unlock their inner potential. Featuring in-depth interviews with
-        world-class leaders in entertainment, health, mindset, and relations,
-        the show delivers practical strategies to overcome limiting beliefs,
-        manifest dreams, and live a fulfilling life.
+        Feel Better, Live More, hosted by Dr. Rangan Chatterjee, a medical
+        doctor with over 21 years of experience and author of six bestselling
+        books, is the UK and Europe's #1 health podcast. Each episode offers
+        practical, science-backed insights on nutrition, movement, sleep, and
+        mental health, featuring interviews with leading experts and inspiring
+        personalities. The podcast aims to empower listeners with simple yet
+        effective strategies to improve their health and wellbeing.
       </p>
       <PodcastSearch
         placeholder="Search podcast summaries by title"

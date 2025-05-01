@@ -97,8 +97,8 @@ export default async function LewisHowesPodcastPage({
       <p className="mx-auto mb-20 max-w-5xl text-center text-lg leading-7 font-medium text-balance text-gray-700">
         The School of Greatness, hosted by Lewis Howes, a New York Times
         best-selling author and former professional athlete, is one of the
-        top-ranked Business and Self-Development podcast inspiring listeners to
-        unlock their inner potential. Featuring in-depth interviews with
+        top-ranked Business and Self-Development podcasts, inspiring listeners
+        to unlock their inner potential. Featuring in-depth interviews with
         world-class leaders in entertainment, health, mindset, and relations,
         the show delivers practical strategies to overcome limiting beliefs,
         manifest dreams, and live a fulfilling life.

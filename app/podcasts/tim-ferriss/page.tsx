@@ -18,9 +18,9 @@ export async function generateMetadata({
 
   // Base metadata
   const metadata: Metadata = {
-    title: "Lewis Howes: The School of Greatness Podcast Summaries",
+    title: "The Tim Ferriss Show Podcast Summaries",
     description:
-      "Discover key insights and actionable takeaways from The School of Greatness podcast episodes.",
+      "Discover key insights and actionable takeaways from The Tim Ferriss Show podcast episodes.",
     alternates: {
       canonical: `https://podwise.org/podcasts/tim-ferriss${
         page > 1 ? `?page=${page}` : ""
@@ -92,16 +92,17 @@ export default async function LewisHowesPodcastPage({
       <h1
         className={`${libreBaskerville.className} mb-8 text-center text-4xl font-semibold tracking-tight text-pretty text-gray-900`}
       >
-        Lewis Howes: "The School of Greatness" Podcast Summaries
+        "The Tim Ferriss Show" Podcast Summaries
       </h1>
       <p className="mx-auto mb-20 max-w-5xl text-center text-lg leading-7 font-medium text-balance text-gray-700">
-        The School of Greatness, hosted by Lewis Howes, a New York Times
-        best-selling author and former professional athlete, is one of the
-        top-ranked Business and Self-Development podcast inspiring listeners to
-        unlock their inner potential. Featuring in-depth interviews with
-        world-class leaders in entertainment, health, mindset, and relations,
-        the show delivers practical strategies to overcome limiting beliefs,
-        manifest dreams, and live a fulfilling life.
+        The Tim Ferriss Show, hosted by five-time #1 New York Times bestselling
+        author Tim Ferriss, is the first podcast to exceed 900 million
+        downloads. Often called "the Oprah of audio," Tim deconstructs
+        world-class performers from diverse fields—including business, sports,
+        art, and academia—to extract the tactics, tools, and routines listeners
+        can apply to their own lives. Each episode features deep-diving
+        conversations that uncover the guests' favorite books, morning routines,
+        exercise habits, time-management tricks, and much more.
       </p>
       <PodcastSearch
         placeholder="Search podcast summaries by title"

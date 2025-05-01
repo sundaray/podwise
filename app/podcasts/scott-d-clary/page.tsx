@@ -18,9 +18,9 @@ export async function generateMetadata({
 
   // Base metadata
   const metadata: Metadata = {
-    title: "Lewis Howes: The School of Greatness Podcast Summaries",
+    title: "Scott D. Clary: Success Story Podcast Summaries",
     description:
-      "Discover key insights and actionable takeaways from The School of Greatness podcast episodes.",
+      "Discover key insights and actionable takeaways from the Success Story podcast episodes.",
     alternates: {
       canonical: `https://podwise.org/podcasts/scott-d-clary${
         page > 1 ? `?page=${page}` : ""
@@ -92,16 +92,16 @@ export default async function ScottDClaryPodcastPage({
       <h1
         className={`${libreBaskerville.className} mb-8 text-center text-4xl font-semibold tracking-tight text-pretty text-gray-900`}
       >
-        Lewis Howes: "The School of Greatness" Podcast Summaries
+        Scott D. Clary: "Success Story" Podcast Summaries
       </h1>
       <p className="mx-auto mb-20 max-w-5xl text-center text-lg leading-7 font-medium text-balance text-gray-700">
-        The School of Greatness, hosted by Lewis Howes, a New York Times
-        best-selling author and former professional athlete, is one of the
-        top-ranked Business and Self-Development podcast inspiring listeners to
-        unlock their inner potential. Featuring in-depth interviews with
-        world-class leaders in entertainment, health, mindset, and relations,
-        the show delivers practical strategies to overcome limiting beliefs,
-        manifest dreams, and live a fulfilling life.
+        Success Story, hosted by Scott D. Clary, is a top-ranked business and
+        self-development podcast delivering candid conversations with
+        world-class business leaders, entrepreneurs, and thought leaders. Each
+        episode explores strategies for success, personal growth, and overcoming
+        challenges, offering actionable insights to inspire listeners. Perfect
+        for those seeking practical wisdom and motivation to elevate their
+        professional and personal lives.
       </p>
       <PodcastSearch
         placeholder="Search podcast summaries by title"
