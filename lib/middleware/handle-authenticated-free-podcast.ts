@@ -44,7 +44,7 @@ export async function handleAuthenticatedFreePodcast(request: NextRequest) {
   }
 
   // Subsequent visit (has existing session)
-  const podcastSession = await getPodcastSession();
+  const podcastSession = await getPodcastSession(sessionCookie.value);
 
   // Check if session needs reset (new day, different IP, or auth changed)
   const sessionDate = new Date(podcastSession!.createdAt);

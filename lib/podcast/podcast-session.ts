@@ -94,8 +94,19 @@ export async function updatePodcastSession(
     return createPodcastSession(clientIP, isAuthenticated);
   }
 
-  // Increment the count
-  const newCount = currentSession.count + 1;
+  // If IP changed, create a new session (treat as a new user)
+  if (currentSession.ip !== clientIP) {
+    return createPodcastSession(clientIP, isAuthenticated);
+  }
+
+  // Calculate the new count
+  let newCount = currentSession.count;
+
+  // If authentication status is changing from unauthenticated to authenticated,
+  // don't increment the count (preserve current count)
+  if (!(currentSession.isAuthenticated === false && isAuthenticated === true)) {
+    newCount += 1;
+  }
 
   const sessionData = await new SignJWT({
     ip: clientIP,

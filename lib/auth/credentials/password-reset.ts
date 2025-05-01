@@ -62,8 +62,10 @@ export async function sendPasswordResetEmail(email: string, url: string) {
   });
 
   try {
-    await sesClient.send(sendEmailCommand);
+    const response = await sesClient.send(sendEmailCommand);
+    console.log("send password reset email response: ", response);
   } catch (error) {
+    console.log("[sendPasswordResetEmail] error: ", error);
     const message =
       error instanceof Error ? error.message : `Unknown error: ${error}`;
     throw new Error(`Failed to send password reset email: ${message}`);

@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "generate-podcasts": "ts-node scripts/generate-podcast-list.ts"
+    "generate-podcasts": "ts-node scripts/generate-podcast-list.ts",
+    "generate-free-podcast-paths": "ts-node scripts/generate-free-podcast-paths.ts"
   },
   "dependencies": {
     "@aws-sdk/client-ecs": "^3.775.0",
