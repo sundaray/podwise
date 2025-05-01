@@ -73,49 +73,39 @@ export async function updatePodcastSession(
 ) {
   const cookieStore = await cookies();
 
-  // If authentication status changed or IP changed, create a new session
-  if (
-    currentSession.isAuthenticated !== isAuthenticated ||
-    currentSession.ip !== clientIP
-  ) {
-    return createPodcastSession(clientIP, isAuthenticated);
-  }
-
-  // Check if the session was created today
+  // Check if it's a new day or a new IP (only reset for these reasons)
   const sessionDate = new Date(currentSession.createdAt);
   const today = new Date();
 
-  // If the session was created on a different day, create a new session
-  if (
-    sessionDate.getDate() !== today.getDate() ||
-    sessionDate.getMonth() !== today.getMonth() ||
-    sessionDate.getFullYear() !== today.getFullYear()
-  ) {
+  const isSameDay =
+    sessionDate.getDate() === today.getDate() &&
+    sessionDate.getMonth() === today.getMonth() &&
+    sessionDate.getFullYear() === today.getFullYear();
+
+  // If it's a new day or new IP, create a new session
+  if (!isSameDay || currentSession.ip !== clientIP) {
     return createPodcastSession(clientIP, isAuthenticated);
   }
 
-  // If IP changed, create a new session (treat as a new user)
-  if (currentSession.ip !== clientIP) {
-    return createPodcastSession(clientIP, isAuthenticated);
-  }
-
-  // Calculate the new count
+  // It's the same day and IP, update the existing session
   let newCount = currentSession.count;
 
-  // If authentication status is changing from unauthenticated to authenticated,
-  // don't increment the count (preserve current count)
-  if (!(currentSession.isAuthenticated === false && isAuthenticated === true)) {
-    newCount += 1;
+  // Only increment count if not changing authentication status
+  // This preserves the count during login/logout transitions
+  if (currentSession.isAuthenticated === isAuthenticated) {
+    newCount += 1; // Increment for a podcast view when auth status is stable
   }
+  // If auth status is changing (either logging in or out), preserve the count
 
+  // Create updated session with preserved count
   const sessionData = await new SignJWT({
     ip: clientIP,
     count: newCount,
-    createdAt: currentSession.createdAt,
-    isAuthenticated: isAuthenticated,
+    createdAt: currentSession.createdAt, // Keep original creation time
+    isAuthenticated: isAuthenticated, // Update authentication status
   })
     .setProtectedHeader({ alg: "HS256" })
-    .setExpirationTime("1d") // Expires in 1 day
+    .setExpirationTime("1d")
     .sign(secret);
 
   cookieStore.set({
@@ -123,7 +113,7 @@ export async function updatePodcastSession(
     value: sessionData,
     httpOnly: true,
     secure: process.env.NODE_ENV === "production",
-    maxAge: 24 * 60 * 60, // 24 hours in seconds
+    maxAge: 24 * 60 * 60,
     sameSite: "lax",
     path: "/",
   });

@@ -1,10 +1,16 @@
-import { parseAsInteger, parseAsString, createLoader } from "nuqs/server";
+import {
+  parseAsInteger,
+  parseAsString,
+  parseAsArrayOf,
+  createLoader,
+} from "nuqs/server";
 
 // Define all the search parameters for podcast listings
 export const podcastListSearchParams = {
   page: parseAsInteger.withDefault(1),
   tier: parseAsString.withDefault("all"),
   query: parseAsString.withDefault(""),
+  shows: parseAsArrayOf(parseAsString).withDefault([]),
 };
 
 // Create a loader function that handles parsing all parameters
