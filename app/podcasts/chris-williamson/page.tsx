@@ -55,6 +55,7 @@ export default async function ChrisWilliamsonPodcastPage({
     page: currentPage,
     tier,
     query,
+    shows,
   } = await loadPodcastListSearchParams(searchParams);
 
   // Sort podcasts by video upload date
@@ -69,6 +70,7 @@ export default async function ChrisWilliamsonPodcastPage({
     sortedPodcasts,
     tier as "all" | "free" | "premium",
     query,
+    shows,
   );
 
   // Pagination calculations

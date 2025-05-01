@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { useState } from "react";
+import { useState, useTransition } from "react";
 import { useQueryState } from "nuqs";
 import {
   Button,
@@ -18,11 +18,17 @@ import {
 import { podcastHosts } from "@/podcast-list/podcast-hosts";
 
 export function PodcastFilter() {
+  // Add useTransition hook
+  const [isLoading, startTransition] = useTransition();
+
   // Local state for search within the dialog
   const [searchText, setSearchText] = useState("");
 
-  // Get the current selected shows from URL
-  const [selectedShows, setSelectedShows] = useQueryState("shows");
+  // Get the current selected shows from URL with startTransition
+  const [selectedShows, setSelectedShows] = useQueryState("shows", {
+    startTransition,
+    shallow: false,
+  });
 
   // Parse the selected shows into an array
   const selectedShowsArray = selectedShows
@@ -46,7 +52,10 @@ export function PodcastFilter() {
 
   return (
     <DialogTrigger>
-      <Button className="z-50 flex items-center gap-2 rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 focus:outline-none">
+      <Button
+        className="z-50 flex items-center gap-2 rounded-md border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 focus:outline-none"
+        data-pending={isLoading ? "" : undefined}
+      >
         {showFilterCount && (
           <span className="flex h-5 min-w-5 items-center justify-center rounded-full bg-sky-700 px-1.5 text-xs font-bold text-white">
             {selectedShowsArray.length}
