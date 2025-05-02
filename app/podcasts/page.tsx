@@ -28,7 +28,8 @@ export async function generateMetadata({
 }: {
   searchParams: SearchParams;
 }): Promise<Metadata> {
-  const { page, tier, query, shows } = await loadPodcastListSearchParams(searchParams);
+  const { page, tier, query, shows } =
+    await loadPodcastListSearchParams(searchParams);
 
   // Base metadata
   const metadata: Metadata = {
@@ -79,17 +80,27 @@ function getAllPodcasts() {
 function getHostPathForPodcast(podcast: any) {
   // Map podcast to its host path based on which array it belongs to
   // This assumes each podcast has a unique slug across all hosts
-  if (chrisWilliamsonPodcastList.some(p => p.slug === podcast.slug)) return "chris-williamson";
-  if (dailyStoicPodcastList.some(p => p.slug === podcast.slug)) return "daily-stoic";
-  if (doacPodcastList.some(p => p.slug === podcast.slug)) return "doac";
-  if (jackNeelPodcastList.some(p => p.slug === podcast.slug)) return "jack-neel";
-  if (jayShettyPodcastList.some(p => p.slug === podcast.slug)) return "jay-shetty";
-  if (lewisHowesPodcastList.some(p => p.slug === podcast.slug)) return "lewis-howes";
-  if (melRobbinsPodcastList.some(p => p.slug === podcast.slug)) return "mel-robbins";
-  if (ranganChatterjeePodcastList.some(p => p.slug === podcast.slug)) return "rangan-chatterjee";
-  if (scottDClaryPodcastList.some(p => p.slug === podcast.slug)) return "scott-d-clary";
-  if (simonSinekPodcastList.some(p => p.slug === podcast.slug)) return "simon-sinek";
-  if (timFerrissPodcastList.some(p => p.slug === podcast.slug)) return "tim-ferriss";
+  if (chrisWilliamsonPodcastList.some((p) => p.slug === podcast.slug))
+    return "chris-williamson";
+  if (dailyStoicPodcastList.some((p) => p.slug === podcast.slug))
+    return "daily-stoic";
+  if (doacPodcastList.some((p) => p.slug === podcast.slug)) return "doac";
+  if (jackNeelPodcastList.some((p) => p.slug === podcast.slug))
+    return "jack-neel";
+  if (jayShettyPodcastList.some((p) => p.slug === podcast.slug))
+    return "jay-shetty";
+  if (lewisHowesPodcastList.some((p) => p.slug === podcast.slug))
+    return "lewis-howes";
+  if (melRobbinsPodcastList.some((p) => p.slug === podcast.slug))
+    return "mel-robbins";
+  if (ranganChatterjeePodcastList.some((p) => p.slug === podcast.slug))
+    return "rangan-chatterjee";
+  if (scottDClaryPodcastList.some((p) => p.slug === podcast.slug))
+    return "scott-d-clary";
+  if (simonSinekPodcastList.some((p) => p.slug === podcast.slug))
+    return "simon-sinek";
+  if (timFerrissPodcastList.some((p) => p.slug === podcast.slug))
+    return "tim-ferriss";
   return ""; // Default fallback
 }
 
@@ -136,7 +147,9 @@ export default async function AllPodcastsPage({
       Showing {paginatedPodcasts.length} of {totalPodcasts}{" "}
       {tier !== "all" && <em>{tier}</em>} podcast summaries
       {query ? ` matching "${query}"` : ""}
-      {shows && shows.length > 0 ? ` from ${shows.length} selected podcast${shows.length > 1 ? 's' : ''}` : ""}
+      {shows && shows.length > 0
+        ? ` from ${shows.length} selected podcast${shows.length > 1 ? "s" : ""}`
+        : ""}
     </>
   );
 
@@ -148,32 +161,38 @@ export default async function AllPodcastsPage({
         All Podcast Summaries
       </h1>
       <p className="mx-auto mb-20 max-w-5xl text-center text-lg leading-7 font-medium text-balance text-gray-700">
-        Podwise offers detailed summaries of top podcasts to help you extract key insights without spending hours listening. Browse our collection of thoughtfully crafted summaries from popular podcasts covering topics such as personal development, business, health, psychology, and more. These summaries capture the essential points, actionable advice, and profound ideas from each episode.
+        Podwise offers detailed summaries of top podcasts to help you extract
+        key insights without spending hours listening. Browse our collection of
+        thoughtfully crafted summaries from popular podcasts covering topics
+        such as personal development, business, health, psychology, and more.
+        These summaries capture the essential points, actionable advice, and
+        profound ideas from each episode.
       </p>
-      
+
       <PodcastSearch
         placeholder="Search podcast summaries by title"
         page="podcasts"
       />
 
-      <div className="flex items-center justify-between mb-6">
+      <div className="mb-6 flex items-center justify-between border">
         <PodcastTabs />
         <PodcastFilter />
       </div>
 
-      {(tier !== "all" || query || (shows && shows.length > 0)) && totalPodcasts > 0 && (
-        <p className="mb-10 text-center text-sm font-medium text-pretty text-gray-500">
-          {statusMessage}
-        </p>
-      )}
+      {(tier !== "all" || query || (shows && shows.length > 0)) &&
+        totalPodcasts > 0 && (
+          <p className="mb-10 text-center text-sm font-medium text-pretty text-gray-500">
+            {statusMessage}
+          </p>
+        )}
 
       {paginatedPodcasts.length > 0 ? (
         <div className="grid grid-cols-1 gap-6 border-b pb-10 group-has-[[data-pending]]:animate-pulse sm:grid-cols-2 md:grid-cols-3 md:gap-10">
           {paginatedPodcasts.map((podcast) => (
-            <PodcastCard 
-              key={podcast.slug} 
-              podcast={podcast} 
-              hostPath={getHostPathForPodcast(podcast)} 
+            <PodcastCard
+              key={podcast.slug}
+              podcast={podcast}
+              hostPath={getHostPathForPodcast(podcast)}
             />
           ))}
         </div>
