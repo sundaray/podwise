@@ -35,7 +35,7 @@ export function PodcastTabs() {
     <Tabs
       value={tier}
       onValueChange={handleTypeChange}
-      className="mb-10 h-10"
+      className="h-10"
       data-pending={isLoading ? "" : undefined}
     >
       <TabsList className="grid h-10 max-w-md grid-cols-3 rounded-full">

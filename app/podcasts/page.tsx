@@ -156,25 +156,25 @@ export default async function AllPodcastsPage({
   return (
     <div className="group mx-auto max-w-6xl px-4">
       <h1
-        className={`${libreBaskerville.className} mb-8 text-center text-4xl font-semibold tracking-tight text-pretty text-gray-900`}
+        className={`${libreBaskerville.className} mb-20 text-center text-4xl font-semibold tracking-tight text-pretty text-gray-900`}
       >
         All Podcast Summaries
       </h1>
-      <p className="mx-auto mb-20 max-w-5xl text-center text-lg leading-7 font-medium text-balance text-gray-700">
+      {/* <p className="mx-auto mb-20 max-w-5xl text-center text-lg leading-7 font-medium text-balance text-gray-700">
         Podwise offers detailed summaries of top podcasts to help you extract
         key insights without spending hours listening. Browse our collection of
         thoughtfully crafted summaries from popular podcasts covering topics
         such as personal development, business, health, psychology, and more.
         These summaries capture the essential points, actionable advice, and
         profound ideas from each episode.
-      </p>
+      </p> */}
 
       <PodcastSearch
         placeholder="Search podcast summaries by title"
         page="podcasts"
       />
 
-      <div className="mb-6 flex items-center justify-between border">
+      <div className="mb-6 flex items-center justify-between">
         <PodcastTabs />
         <PodcastFilter />
       </div>

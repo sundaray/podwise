@@ -1,11 +1,9 @@
 "use client";
 
-import * as React from "react";
 import { useState, useTransition } from "react";
-import { useQueryState } from "nuqs";
+import { useQueryState, parseAsString } from "nuqs";
 import {
   Button,
-  Checkbox,
   Dialog,
   DialogTrigger,
   Modal,
@@ -18,64 +16,96 @@ import {
 } from "react-aria-components";
 import { podcastHosts } from "@/podcast-list/podcast-hosts";
 import { ReactAriaCheckbox } from "@/components/ui/react-aria-checkbox";
+import { Icons } from "@/components/icons";
 
 export function PodcastFilter() {
-  // Add useTransition hook
   const [isLoading, startTransition] = useTransition();
-
-  // Local state for search within the dialog
   const [searchText, setSearchText] = useState("");
 
-  // Get the current selected shows from URL with startTransition
+  /* ------------------------------------------------------------
+   * query-param hooks
+   * ---------------------------------------------------------- */
   const [selectedShows, setSelectedShows] = useQueryState("shows", {
     startTransition,
     shallow: false,
   });
 
-  // Parse the selected shows into an array
+  const [, setPage] = useQueryState(
+    "page",
+    parseAsString
+      .withDefault("1")
+      .withOptions({ startTransition, shallow: false }),
+  );
+  const [, setQuery] = useQueryState(
+    "query",
+    parseAsString.withOptions({ startTransition, shallow: false }),
+  );
+  const [, setTier] = useQueryState(
+    "tier",
+    parseAsString
+      .withDefault("all")
+      .withOptions({ startTransition, shallow: false }),
+  );
+
+  /* ------------------------------------------------------------
+   * helpers
+   * ---------------------------------------------------------- */
+  function resetOtherParams() {
+    setPage(null);
+    setQuery(null);
+    setTier(null);
+  }
+
+  function clearFilters() {
+    setSelectedShows(null);
+    resetOtherParams();
+  }
+
+  /* ------------------------------------------------------------
+   * derived data
+   * ---------------------------------------------------------- */
   const selectedShowsArray = selectedShows
     ? Array.isArray(selectedShows)
       ? selectedShows
       : [selectedShows]
     : [];
 
-  // Filter podcast hosts based on search text
   const filteredHosts = podcastHosts.filter((host) =>
     host.name.toLowerCase().includes(searchText.toLowerCase()),
   );
 
-  // Clear all filters
-  const clearFilters = () => {
-    setSelectedShows(null);
-  };
-
-  // Determine if we should show the filter count badge
   const showFilterCount = selectedShowsArray.length > 0;
 
+  /* ------------------------------------------------------------ */
   return (
     <DialogTrigger>
+      {/* ───────── trigger button ───────── */}
       <Button
-        className="flex items-center gap-2 rounded-md border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 focus:outline-none"
+        className="flex h-10 items-center gap-2 rounded-full bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700 focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 focus:outline-none"
         data-pending={isLoading ? "" : undefined}
       >
         {showFilterCount && (
-          <span className="flex h-5 min-w-5 items-center justify-center rounded-full bg-sky-700 px-1.5 text-xs font-bold text-white">
+          <span className="flex h-5 min-w-5 items-center justify-center rounded-full bg-sky-700 px-1.5 text-xs text-white">
             {selectedShowsArray.length}
           </span>
         )}
+        <Icons.listFilter className="size-4" strokeWidth={3} />
         Filter by podcast
       </Button>
+
+      {/* ───────── dialog ───────── */}
       <ModalOverlay
-        isDismissable /* click outside or Esc closes */
+        isDismissable
         className="fixed inset-0 z-50 flex items-center justify-center bg-black/30 p-4"
       >
         <Modal className="w-full max-w-md">
           <Dialog
             aria-label="Filter podcasts"
-            className="flex max-h-[600px] w-full max-w-md flex-col rounded-lg bg-white shadow-xl"
+            className="flex max-h-[600px] w-full flex-col rounded-lg bg-white shadow-xl"
           >
             {({ close }) => (
               <>
+                {/* search box */}
                 <SearchField
                   className="border-b p-6"
                   value={searchText}
@@ -88,25 +118,25 @@ export function PodcastFilter() {
                   />
                 </SearchField>
 
-                <div className="flex-1 overflow-y-auto p-2">
+                {/* list of shows */}
+                <div className="flex-1 overflow-y-auto p-3">
                   <GridList
                     aria-label="Podcasts"
                     selectionMode="multiple"
                     selectedKeys={selectedShowsArray}
                     onSelectionChange={(keys) => {
-                      const selectedKeys = [...keys];
-                      setSelectedShows(
-                        selectedKeys.length > 0 ? selectedKeys : null,
-                      );
+                      const arr = [...keys];
+                      setSelectedShows(arr.length ? arr : null);
+                      resetOtherParams(); // ← clear page / query / tier
                     }}
-                    className="flex flex-col gap-1"
+                    className="flex flex-col gap-2"
                   >
                     {filteredHosts.map((host) => (
                       <GridListItem
                         key={host.id}
                         id={host.id}
                         textValue={host.name}
-                        className="data-[selected]:bg-sky-700 flex cursor-pointer items-center gap-2 rounded-md p-2 text-sm outline-none data-[focused]:bg-gray-100 data-[selected]:text-white"
+                        className="flex cursor-pointer items-center gap-2 rounded-md p-2 text-sm outline-none data-[focused]:bg-gray-100 data-[selected]:bg-sky-700 data-[selected]:text-white"
                       >
                         <ReactAriaCheckbox />
                         {host.name}
@@ -115,6 +145,7 @@ export function PodcastFilter() {
                   </GridList>
                 </div>
 
+                {/* action buttons */}
                 <div className="flex justify-between border-t p-4">
                   <Button
                     className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-gray-900 focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 focus:outline-none"
@@ -124,7 +155,7 @@ export function PodcastFilter() {
                   </Button>
                   <Button
                     className="rounded-full bg-sky-700 px-3 py-1.5 text-sm font-medium text-white hover:bg-sky-500 focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 focus:outline-none"
-                    onPress={close}
+                    onPress={close} /* resetting already done */
                   >
                     Apply filter
                   </Button>
