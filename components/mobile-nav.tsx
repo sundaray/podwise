@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import {
   Popover,
   PopoverButton,
@@ -8,8 +9,7 @@ import {
   PopoverPanel,
 } from "@headlessui/react";
 import clsx from "clsx";
-import { FaUser } from "react-icons/fa6";
-import { Icons } from "@/components/icons";
+import { cn } from "@/lib/utils";
 
 function MobileNavLink({
   href,
@@ -18,11 +18,17 @@ function MobileNavLink({
   href: string;
   children: React.ReactNode;
 }) {
+  const pathname = usePathname();
+  const isActive = pathname === href;
   return (
     <PopoverButton
       as={Link}
       href={href}
-      className="block flex w-full items-center p-2 font-medium transition-colors hover:text-gray-900"
+      className={cn(
+        "flex w-fit items-center text-gray-700 rounded-full px-4 py-2 font-medium transition-colors",
+        "hover:text-gray-900",
+        isActive && "bg-gray-100 text-gray-900",
+      )}
     >
       {children}
     </PopoverButton>
@@ -71,23 +77,23 @@ export function MobileNav() {
       />
       <PopoverPanel
         transition
-        className="text-md absolute inset-x-0 top-16 mx-4 flex origin-top flex-col rounded-xl bg-white p-4 tracking-tight text-gray-700 shadow-xl ring-1 ring-gray-900/5 data-closed:scale-95 data-closed:opacity-0 data-enter:duration-150 data-enter:ease-out data-leave:duration-100 data-leave:ease-in"
+        className="text-md absolute inset-x-0 top-16 mx-4 flex origin-top flex-col gap-3 rounded-xl bg-white p-4 tracking-tight text-gray-700 shadow-xl ring-1 ring-gray-900/5 data-closed:scale-95 data-closed:opacity-0 data-enter:duration-150 data-enter:ease-out data-leave:duration-100 data-leave:ease-in"
       >
         <MobileNavLink href="/about">About</MobileNavLink>
         <MobileNavLink href="/podcasts">Podcasts</MobileNavLink>
         <MobileNavLink href="/tags">Tags</MobileNavLink>
-        <hr className="mt-2 mb-4 border-gray-300/40" />
+        <hr className="border-gray-200" />
         <PopoverButton
-          as={Link}
+          as={Link} 
           href="/premium"
-          className="w-fit inline-flex items-center rounded-full bg-linear-to-b from-amber-400 to-amber-500 px-4 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-amber-400 hover:text-gray-900"
+          className="inline-flex w-full items-center justify-center rounded-full bg-linear-to-b from-amber-400 to-amber-500 px-4 py-2 text-sm font-medium text-gray-700 transition-colors hover:bg-amber-400 hover:text-gray-900"
         >
           Go Premium
         </PopoverButton>
         <PopoverButton
           as={Link}
           href="/login"
-          className="w-fit inline-flex mt-2 items-center rounded-full bg-gray-900 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-gray-900 hover:text-white"
+          className="inline-flex w-full items-center justify-center rounded-full bg-gray-900 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-gray-900/90 hover:text-white"
         >
           Sign in
         </PopoverButton>

@@ -44,9 +44,9 @@ export function UserAccountNavClient({ user }: UserAccountNavClientProps) {
 
   return (
     <DropdownMenu open={isOpen} onOpenChange={handleOpenChange}>
-      <DropdownMenuTrigger className="ml-auto flex items-center space-x-1">
+      <DropdownMenuTrigger className="ml-auto flex hidden items-center space-x-1 md:block rounded-full p-2">
         <span className="text-sm font-medium text-gray-700">My Account</span>
-        <Icons.chevronDown className="size-4 text-gray-500" />
+        <Icons.chevronDown className="inline-block size-4 text-gray-500" />
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
         <div className="flex items-center justify-start gap-2 p-2">
@@ -71,7 +71,7 @@ export function UserAccountNavClient({ user }: UserAccountNavClientProps) {
               </>
             ) : (
               <>
-                <Icons.logOut className="mr-2 size-3 text-gray-500" />
+                <Icons.logOut className="mr-2 size-3 text-gray-500" strokeWidth={3}/>
                 <p className="text-sm">Sign out</p>
               </>
             )}

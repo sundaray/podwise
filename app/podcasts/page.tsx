@@ -157,11 +157,11 @@ export default async function AllPodcastsPage({
   return (
     <div className="group mx-auto max-w-6xl px-4">
       <h1
-        className={`${libreBaskerville.className} mb-4 text-center text-4xl font-semibold tracking-tight text-pretty text-gray-900`}
+        className={`${libreBaskerville.className} text-3xl mb-4 text-center md:text-4xl font-semibold tracking-tight text-pretty text-gray-900`}
       >
         All Podcast Summaries
       </h1>
-      <p className="mx-auto mb-20 max-w-5xl text-center text-lg leading-7 font-medium text-balance text-gray-700">
+      <p className="mx-auto mb-20 max-w-5xl text-center text-pretty text-gray-700">
         Browse <span>{totalSummaries.toLocaleString()}</span>{" "}
         {totalSummaries === 1 ? "summary" : "summaries"} of the world’s best
         podcasts.

@@ -18,7 +18,7 @@ export function NavItem({ href, title }: NavItemProps) {
     <Link
       className={cn(
         "relative px-4 py-2 text-sm font-medium hover:bg-gray-100 rounded-full text-gray-700 transition-colors hover:text-gray-900",
-        isActive && "text-primary",
+        isActive && "text-gray-900 bg-gray-100",
       )}
       href={href}
     >
