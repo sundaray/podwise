@@ -72,6 +72,8 @@ export function PodcastFilter() {
       : [selectedShows]
     : [];
 
+  const nothingSelected = selectedShowsArray.length === 0;
+
   const filteredHosts = podcastHosts.filter((host) =>
     host.name.toLowerCase().includes(searchText.toLowerCase()),
   );
@@ -157,14 +159,16 @@ export function PodcastFilter() {
                 {/* action buttons */}
                 <div className="flex justify-between border-t p-4">
                   <Button
-                    className="rounded-full px-4 py-2 text-sm font-medium text-gray-700 hover:text-gray-900 focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 focus:outline-none"
+                    isDisabled={nothingSelected}
+                    className="rounded-full px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 focus:outline-none data-[disabled]:cursor-not-allowed data-[disabled]:opacity-50"
                     onPress={clearFilters}
                   >
                     Clear filters
                   </Button>
                   <Button
-                    className="rounded-full bg-gray-900 px-4 py-2 text-sm font-medium text-white focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 focus:outline-none"
-                    onPress={close} /* resetting already done */
+                    isDisabled={nothingSelected}
+                    className="rounded-full bg-gray-900 px-4 py-2 text-sm font-medium text-white hover:bg-gray-900/90 focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 focus:outline-none data-[disabled]:cursor-not-allowed data-[disabled]:opacity-50"
+                    onPress={close}
                   >
                     Apply filter
                   </Button>
