@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useTransition } from "react";
-import { useQueryState, parseAsString } from "nuqs";
+import { useQueryState, parseAsString, parseAsArrayOf } from "nuqs";
 import {
   Button,
   Dialog,
@@ -25,10 +25,12 @@ export function PodcastFilter() {
   /* ------------------------------------------------------------
    * query-param hooks
    * ---------------------------------------------------------- */
-  const [selectedShows, setSelectedShows] = useQueryState("shows", {
-    startTransition,
-    shallow: false,
-  });
+  const [selectedShows, setSelectedShows] = useQueryState(
+    "shows",
+    parseAsArrayOf(parseAsString)
+      .withDefault([])
+      .withOptions({ startTransition, shallow: false }),
+  );
 
   const [, setPage] = useQueryState(
     "page",
@@ -113,48 +115,54 @@ export function PodcastFilter() {
                 >
                   <Label className="sr-only">Search podcasts</Label>
                   <Input
-                    className="w-full rounded-full border border-gray-300 px-4 py-2"
+                    className="h-12 w-full rounded-full border-0 bg-gray-100 py-2 pl-5 text-sm placeholder-gray-500 ring-[2px] ring-gray-100 transition-[color,box-shadow] outline-none ring-inset focus-visible:ring-[2px] focus-visible:ring-sky-700 focus-visible:ring-offset-0"
                     placeholder="Search podcasts..."
                   />
                 </SearchField>
 
-                {/* list of shows */}
                 <div className="flex-1 overflow-y-auto p-3">
-                  <GridList
-                    aria-label="Podcasts"
-                    selectionMode="multiple"
-                    selectedKeys={selectedShowsArray}
-                    onSelectionChange={(keys) => {
-                      const arr = [...keys];
-                      setSelectedShows(arr.length ? arr : null);
-                      resetOtherParams(); // ← clear page / query / tier
-                    }}
-                    className="flex flex-col gap-2"
-                  >
-                    {filteredHosts.map((host) => (
-                      <GridListItem
-                        key={host.id}
-                        id={host.id}
-                        textValue={host.name}
-                        className="flex cursor-pointer items-center gap-2 rounded-md p-2 text-sm outline-none data-[focused]:bg-gray-100 data-[selected]:bg-sky-700 data-[selected]:text-white"
-                      >
-                        <ReactAriaCheckbox />
-                        {host.name}
-                      </GridListItem>
-                    ))}
-                  </GridList>
+                  {filteredHosts.length > 0 ? (
+                    <GridList
+                      aria-label="Podcasts"
+                      selectionMode="multiple"
+                      selectedKeys={selectedShowsArray}
+                      onSelectionChange={(keys) => {
+                        const arr = [...keys].map(String);
+                        setSelectedShows(arr.length ? arr : null);
+                        resetOtherParams();
+                      }}
+                      className="flex flex-col gap-2"
+                    >
+                      {filteredHosts.map((host) => (
+                        <GridListItem
+                          key={host.id}
+                          id={host.id}
+                          textValue={host.name}
+                          className="flex cursor-pointer items-center gap-2 rounded-md p-2 text-sm outline-none data-[focused]:bg-gray-100 data-[hovered]:bg-gray-100 data-[selected]:bg-sky-700 data-[selected]:text-white"
+                        >
+                          <ReactAriaCheckbox />
+                          {host.name}
+                        </GridListItem>
+                      ))}
+                    </GridList>
+                  ) : (
+                    /* no matches – show a friendly message */
+                    <p className="text-center text-sm text-red-600">
+                      No podcasts found
+                    </p>
+                  )}
                 </div>
 
                 {/* action buttons */}
                 <div className="flex justify-between border-t p-4">
                   <Button
-                    className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-gray-900 focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 focus:outline-none"
+                    className="rounded-full px-4 py-2 text-sm font-medium text-gray-700 hover:text-gray-900 focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 focus:outline-none"
                     onPress={clearFilters}
                   >
                     Clear filters
                   </Button>
                   <Button
-                    className="rounded-full bg-sky-700 px-3 py-1.5 text-sm font-medium text-white hover:bg-sky-500 focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 focus:outline-none"
+                    className="rounded-full bg-gray-900 px-4 py-2 text-sm font-medium text-white focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 focus:outline-none"
                     onPress={close} /* resetting already done */
                   >
                     Apply filter
