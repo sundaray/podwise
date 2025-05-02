@@ -161,9 +161,9 @@ export default async function AllPodcastsPage({
       >
         All Podcast Summaries
       </h1>
-      <p className="mx-auto mb-20 max-w-5xl text-center text-lg leading-7 font-medium text-balance text-gray-500">
+      <p className="mx-auto mb-20 max-w-5xl text-center text-lg leading-7 font-medium text-balance text-gray-700">
         Browse <span>{totalSummaries.toLocaleString()}</span>{" "}
-        {totalSummaries === 1 ? "summary" : "summaries"} from the world’s best
+        {totalSummaries === 1 ? "summary" : "summaries"} of the world’s best
         podcasts.
       </p>
       <PodcastSearch

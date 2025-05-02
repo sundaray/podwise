@@ -55,6 +55,7 @@ export default async function DailyStoicPodcastPage({
     page: currentPage,
     tier,
     query,
+    shows,
   } = await loadPodcastListSearchParams(searchParams);
 
   // Sort podcasts by video upload date
@@ -69,6 +70,7 @@ export default async function DailyStoicPodcastPage({
     sortedPodcasts,
     tier as "all" | "free" | "premium",
     query,
+    shows,
   );
 
   // Pagination calculations
@@ -110,7 +112,8 @@ export default async function DailyStoicPodcastPage({
         placeholder="Search podcast summaries by title"
         page="podcasts"
       />
-      <PodcastTabs />
+      <PodcastTabs className="mb-20" />
+
       {(tier !== "all" || query) && totalPodcasts > 0 && (
         <p className="mb-10 text-center text-sm font-medium text-pretty text-gray-500">
           {statusMessage}

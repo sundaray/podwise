@@ -110,7 +110,7 @@ export default async function ChrisWilliamsonPodcastPage({
         page="podcasts"
       />
 
-      <PodcastTabs />
+      <PodcastTabs className="mb-20"/>
 
       {(tier !== "all" || query) && totalPodcasts > 0 && (
         <p className="mb-10 text-center text-sm font-medium text-pretty text-gray-500">

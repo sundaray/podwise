@@ -14,7 +14,7 @@ export async function generateMetadata({
 }: {
   searchParams: SearchParams;
 }): Promise<Metadata> {
-  const { page, tier, query } = await loadPodcastListSearchParams(searchParams);
+  const { page, tier, query, } = await loadPodcastListSearchParams(searchParams);
 
   // Base metadata
   const metadata: Metadata = {
@@ -55,6 +55,7 @@ export default async function JackNeelPodcastPage({
     page: currentPage,
     tier,
     query,
+    shows
   } = await loadPodcastListSearchParams(searchParams);
 
   // Sort podcasts by video upload date
@@ -69,6 +70,7 @@ export default async function JackNeelPodcastPage({
     sortedPodcasts,
     tier as "all" | "free" | "premium",
     query,
+    shows
   );
 
   // Pagination calculations
@@ -111,7 +113,7 @@ export default async function JackNeelPodcastPage({
         page="podcasts"
       />
 
-      <PodcastTabs />
+      <PodcastTabs className="mb-20"/>
 
       {(tier !== "all" || query) && totalPodcasts > 0 && (
         <p className="mb-10 text-center text-sm font-medium text-pretty text-gray-500">

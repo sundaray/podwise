@@ -55,6 +55,7 @@ export default async function DoacPodcastPage({
     page: currentPage,
     tier,
     query,
+    shows,
   } = await loadPodcastListSearchParams(searchParams);
 
   // Sort podcasts by video upload date
@@ -69,6 +70,7 @@ export default async function DoacPodcastPage({
     sortedPodcasts,
     tier as "all" | "free" | "premium",
     query,
+    shows,
   );
 
   // Pagination calculations
@@ -95,14 +97,24 @@ export default async function DoacPodcastPage({
         "The Diary Of a CEO" Podcast Summaries
       </h1>
       <p className="mx-auto mb-20 max-w-5xl text-center text-lg leading-7 font-medium text-balance text-gray-700">
-      The Diary Of A CEO is a globally renowned podcast hosted by Steven Bartlett, a British entrepreneur, investor, and former CEO. Launched in 2017, the podcast offers raw, honest, and unfiltered conversations with some of the world’s most influential people, including CEOs, entrepreneurs, athletes, scientists, and thought leaders. Each episode dives deep into the personal and professional journeys of its guests, exploring topics such as business strategies, mental health, leadership, financial success, relationships, and societal issues. With a mission to uncover untold stories and actionable insights, The Diary Of A CEO combines compelling storytelling with practical wisdom, making it a must-listen for anyone seeking inspiration and growth.
+        The Diary Of A CEO is a globally renowned podcast hosted by Steven
+        Bartlett, a British entrepreneur, investor, and former CEO. Launched in
+        2017, the podcast offers raw, honest, and unfiltered conversations with
+        some of the world’s most influential people, including CEOs,
+        entrepreneurs, athletes, scientists, and thought leaders. Each episode
+        dives deep into the personal and professional journeys of its guests,
+        exploring topics such as business strategies, mental health, leadership,
+        financial success, relationships, and societal issues. With a mission to
+        uncover untold stories and actionable insights, The Diary Of A CEO
+        combines compelling storytelling with practical wisdom, making it a
+        must-listen for anyone seeking inspiration and growth.
       </p>
       <PodcastSearch
         placeholder="Search podcast summaries by title"
         page="podcasts"
       />
 
-      <PodcastTabs />
+      <PodcastTabs className="mb-20" />
 
       {(tier !== "all" || query) && totalPodcasts > 0 && (
         <p className="mb-10 text-center text-sm font-medium text-pretty text-gray-500">

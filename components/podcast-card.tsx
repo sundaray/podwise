@@ -20,7 +20,8 @@ const solidColorPlaceholder =
   "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1' fill='%23F3F4F6'%3E%3Crect width='1' height='1'/%3E%3C/svg%3E";
 
 export async function PodcastCard({ podcast, hostPath }: PodcastCardProps) {
-  const { title, slug, image, videoUploadedAt, isPremium } = podcast;
+  const { title, slug, image, podcastHost, videoUploadedAt, isPremium } =
+    podcast;
 
   // Format the date without making API calls
   const formattedDate = formatVideoUploadDate(videoUploadedAt);
@@ -49,8 +50,12 @@ export async function PodcastCard({ podcast, hostPath }: PodcastCardProps) {
       </h2>
 
       {formattedDate && (
-        <p className="mt-2 text-sm text-gray-700 transition-colors group-hover/card:text-gray-500">
-          {formattedDate}
+        <p className="mt-2 flex items-center text-sm text-gray-700 font-medium transition-colors group-hover/card:text-gray-500">
+          <span>{podcastHost}</span>
+
+          <span className="mx-1.5 text-gray-500">•</span>
+
+          <span>{formattedDate}</span>
         </p>
       )}
 

@@ -15,7 +15,7 @@ type MainNavProps = {
 
 export function MainNav({ items }: MainNavProps) {
   return (
-    <div className="fixed inset-x-0 top-0 z-50 mx-auto flex h-20 max-w-7xl items-center bg-white px-4">
+    <div className="fixed inset-x-0 top-0 z-50 mx-auto flex h-20 max-w-7xl items-center bg-white/50 px-4 backdrop-blur-xl">
       <div className="mr-10 flex items-center space-x-2">
         <svg
           width="20"

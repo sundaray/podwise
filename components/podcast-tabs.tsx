@@ -1,10 +1,15 @@
 "use client";
 
 import { useTransition } from "react";
+import { cn } from "@/lib/utils";
 import { useQueryState, parseAsString, parseAsInteger } from "nuqs";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
-export function PodcastTabs() {
+type PodcastTabsProps = React.ComponentPropsWithoutRef<typeof Tabs> & {
+  className?: string;
+};
+
+export function PodcastTabs({ className, ...rest }: PodcastTabsProps) {
   const [isLoading, startTransition] = useTransition();
 
   // Set up query parameter for podcast tier
@@ -35,8 +40,9 @@ export function PodcastTabs() {
     <Tabs
       value={tier}
       onValueChange={handleTypeChange}
-      className="h-10"
+      className={cn("h-10", className)}
       data-pending={isLoading ? "" : undefined}
+      {...rest}
     >
       <TabsList className="grid h-10 max-w-md grid-cols-3 rounded-full">
         <TabsTrigger value="all" className="rounded-full text-gray-700">
