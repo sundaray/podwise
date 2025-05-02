@@ -92,7 +92,8 @@ export function PodcastFilter() {
           </span>
         )}
         <Icons.listFilter className="size-4" strokeWidth={3} />
-        Filter by podcast
+        <span className="sm:hidden">Filter</span>
+        <span className="hidden sm:inline-block">Filter by podcast</span>
       </Button>
 
       {/* ───────── dialog ───────── */}
