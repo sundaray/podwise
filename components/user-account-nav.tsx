@@ -25,5 +25,5 @@ export async function UserAccountNav() {
       </nav>
     );
   }
-  return <UserAccountNavClient user={user} />;
+  return <UserAccountNavClient user={user} className="ml-auto hidden md:flex"/>;
 }

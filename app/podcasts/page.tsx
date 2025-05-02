@@ -171,7 +171,7 @@ export default async function AllPodcastsPage({
         page="podcasts"
       />
 
-      <div className="my-20 flex items-center justify-between">
+      <div className="mt-20 mb-10 flex items-center justify-between">
         <PodcastTabs />
         <PodcastFilter />
       </div>
