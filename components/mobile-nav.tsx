@@ -90,13 +90,13 @@ export function MobileNav() {
       {/* backdrop */}
       <PopoverBackdrop
         transition
-        className="fixed inset-0 bg-gray-300/50 duration-150 data-closed:opacity-0 data-enter:ease-out data-leave:ease-in"
+        className="fixed inset-0 bg-gray-950/30 duration-150 data-closed:opacity-0 data-enter:ease-out data-leave:ease-in"
       />
 
       {/* panel */}
       <PopoverPanel
         transition
-        className="text-md absolute inset-x-0 top-16 mx-4 flex origin-top flex-col gap-3 rounded-xl bg-white p-4 tracking-tight text-gray-700 shadow-xl ring-1 ring-gray-900/5 data-closed:scale-95 data-closed:opacity-0 data-enter:duration-150 data-enter:ease-out data-leave:duration-100 data-leave:ease-in"
+        className="text-md absolute inset-x-0 top-16 mx-4 flex origin-top flex-col gap-3 rounded-xl bg-white p-4 tracking-tight text-gray-900 shadow-xl ring-1 ring-gray-900/5 data-closed:scale-95 data-closed:opacity-0 data-enter:duration-150 data-enter:ease-out data-leave:duration-100 data-leave:ease-in"
       >
         <MobileNavLink href="/about">About</MobileNavLink>
         <MobileNavLink href="/podcasts">Podcasts</MobileNavLink>

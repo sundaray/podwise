@@ -63,7 +63,7 @@ export function PodcastPagination({
             aria-disabled={isFirstPage}
             tabIndex={isFirstPage ? -1 : undefined}
             className={cn(
-              "text-sky-700 hover:text-sky-700",
+              "text-sky-600 hover:text-sky-700",
               isFirstPage && "pointer-events-none opacity-50",
             )}
             onClick={() => setPage(page - 1)}
@@ -92,7 +92,7 @@ export function PodcastPagination({
               <PaginationLink
                 href="#"
                 isActive={isActive}
-                className={cn("text-gray-700", isActive && "text-white")}
+                className={cn("text-gray-900", isActive && "text-white")}
                 onClick={() => setPage(pageNumber)}
               >
                 {pageNumber}
@@ -108,7 +108,7 @@ export function PodcastPagination({
             aria-disabled={isLastPage}
             tabIndex={isLastPage ? -1 : undefined}
             className={cn(
-              "text-sky-700 hover:text-sky-700",
+              "text-sky-600 hover:text-sky-700",
               isLastPage && "pointer-events-none opacity-50",
             )}
             onClick={() => setPage(page + 1)}

@@ -5,12 +5,10 @@ import { libreBaskerville } from "@/app/layout";
 export default function SignIn() {
   return (
     <div className="mx-auto max-w-[380px] px-4">
-      <h2
-        className={`${libreBaskerville.className} text-center text-3xl font-medium tracking-tight text-gray-900`}
-      >
+      <h2 className="text-center text-3xl font-bold tracking-tight text-gray-900">
         Welcome
       </h2>
-      <p className="mt-1 text-center text-sm text-gray-600">
+      <p className="mt-2 text-center text-sm text-gray-600">
         Sign in to your account
       </p>
       <div className="mt-10 grid gap-4">

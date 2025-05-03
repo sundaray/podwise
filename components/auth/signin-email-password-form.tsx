@@ -83,7 +83,7 @@ export function SignInEmailPasswordForm() {
             <div className="text-sm">
               <Link
                 href="/forgot-password"
-                className="font-medium text-sky-700 hover:text-sky-500"
+                className="font-medium text-sky-600 hover:text-sky-700"
               >
                 Forgot password?
               </Link>
@@ -106,7 +106,7 @@ export function SignInEmailPasswordForm() {
               onClick={togglePasswordVisibility}
               aria-label={isPasswordVisible ? "Hide password" : "Show password"}
               aria-pressed={isPasswordVisible}
-              className="absolute inset-y-0 end-0 flex h-full w-9 items-center justify-center rounded-e-lg text-gray-500 outline-offset-0 transition-colors hover:text-gray-700 focus:z-10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-sky-500 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50"
+              className="absolute inset-y-0 end-0 flex h-full w-9 items-center justify-center rounded-e-lg text-gray-500 outline-offset-0 transition-colors hover:text-gray-600 focus:z-10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-sky-600 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50"
             >
               {isPasswordVisible ? (
                 <Icons.eyeOff size={16} strokeWidth={2} aria-hidden="true" />

@@ -85,15 +85,15 @@ export function PodcastFilter() {
     <DialogTrigger>
       {/* ───────── trigger button ───────── */}
       <Button
-        className="flex h-10 items-center gap-2 rounded-full bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700 focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 focus:outline-none"
+        className="flex h-10 items-center gap-2 rounded-full bg-gray-100 px-4 py-2 text-sm font-medium text-gray-900 transition-colors hover:bg-gray-200 focus:ring-2 focus:ring-sky-600 focus:ring-offset-2 focus:outline-none"
         data-pending={isLoading ? "" : undefined}
       >
         {showFilterCount && (
-          <span className="flex h-5 min-w-5 items-center justify-center rounded-full bg-sky-700 px-1.5 text-xs text-white">
+          <span className="flex h-5 min-w-5 items-center justify-center rounded-full bg-sky-600 px-1.5 text-xs text-white">
             {selectedShowsArray.length}
           </span>
         )}
-        <Icons.listFilter className="size-4" strokeWidth={3} />
+        <Icons.listFilter className="size-4 text-gray-500" strokeWidth={3} />
         <span className="sm:hidden">Filter</span>
         <span className="hidden sm:inline-block">Filter by podcast</span>
       </Button>
@@ -101,12 +101,12 @@ export function PodcastFilter() {
       {/* ───────── dialog ───────── */}
       <ModalOverlay
         isDismissable
-        className="fixed inset-0 z-50 flex items-center justify-center bg-black/30 p-4"
+        className="fixed inset-0 z-50 flex items-center justify-center bg-gray-950/30 p-4"
       >
         <Modal className="w-full max-w-md">
           <Dialog
             aria-label="Filter podcasts"
-            className="flex max-h-[600px] w-full flex-col rounded-lg bg-white shadow-xl"
+            className="flex max-h-[600px] w-full flex-col rounded-xl bg-white shadow-xl"
           >
             {({ close }) => (
               <>
@@ -117,10 +117,13 @@ export function PodcastFilter() {
                   onChange={setSearchText}
                 >
                   <Label className="sr-only">Search podcasts</Label>
-                  <Input
-                    className="h-12 w-full rounded-full border-0 bg-gray-100 py-2 pl-5 text-sm placeholder-gray-500 ring-[2px] ring-gray-100 transition-[color,box-shadow] outline-none ring-inset focus-visible:ring-[2px] focus-visible:ring-sky-700 focus-visible:ring-offset-0"
-                    placeholder="Search podcasts..."
-                  />
+                  <div className="relative">
+                    <Input
+                      className="h-12 w-full rounded-full border-0 bg-gray-100 py-2 pl-10 text-sm placeholder-gray-500 ring-[2px] ring-gray-100 transition-[color,box-shadow] outline-none ring-inset focus-visible:ring-[2px] focus-visible:ring-sky-600 focus-visible:ring-offset-0"
+                      placeholder="Search podcasts..."
+                    />
+                    <Icons.search className="absolute top-1/2 left-4 size-4 -translate-y-1/2 text-gray-500" />
+                  </div>
                 </SearchField>
 
                 <div className="flex-1 overflow-y-auto p-3">
@@ -141,7 +144,7 @@ export function PodcastFilter() {
                           key={host.id}
                           id={host.id}
                           textValue={host.name}
-                          className="flex cursor-pointer items-center gap-2 rounded-md p-2 text-sm outline-none data-[focused]:bg-gray-100 data-[hovered]:bg-gray-100 data-[selected]:bg-sky-700 data-[selected]:text-white"
+                          className="flex cursor-pointer items-center gap-2 rounded-md p-2 text-sm text-gray-900 outline-none data-[focused]:bg-gray-100 data-[hovered]:bg-gray-100 data-[selected]:bg-sky-600 data-[selected]:text-white"
                         >
                           <ReactAriaCheckbox />
                           {host.name}
@@ -160,14 +163,14 @@ export function PodcastFilter() {
                 <div className="flex justify-between border-t p-4">
                   <Button
                     isDisabled={nothingSelected}
-                    className="rounded-full px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 focus:outline-none data-[disabled]:cursor-not-allowed data-[disabled]:opacity-50"
+                    className="rounded-full px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:ring-2 focus:ring-sky-600 focus:ring-offset-2 focus:outline-none data-[disabled]:cursor-not-allowed data-[disabled]:opacity-50"
                     onPress={clearFilters}
                   >
                     Clear filters
                   </Button>
                   <Button
                     isDisabled={nothingSelected}
-                    className="rounded-full bg-gray-900 px-4 py-2 text-sm font-medium text-white hover:bg-gray-900/90 focus:ring-2 focus:ring-sky-500 focus:ring-offset-2 focus:outline-none data-[disabled]:cursor-not-allowed data-[disabled]:opacity-50"
+                    className="rounded-full bg-gray-900 px-4 py-2 text-sm font-medium text-white hover:bg-gray-900/90 focus:ring-2 focus:ring-sky-600 focus:ring-offset-2 focus:outline-none data-[disabled]:cursor-not-allowed data-[disabled]:opacity-50"
                     onPress={close}
                   >
                     Apply filter
