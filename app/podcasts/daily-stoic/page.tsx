@@ -96,7 +96,7 @@ export default async function DailyStoicPodcastPage({
       >
         "Daily Stoic" Podcast Summaries
       </h1>
-      <p className="mx-auto mb-20 max-w-5xl text-center text-lg leading-7 font-medium text-balance text-gray-700">
+      <p className="mx-auto mb-20 max-w-5xl text-center text-lg/7 leading-7 font-medium text-balance text-gray-700">
         The Daily Stoic podcast, hosted by Ryan Holiday, bestselling author and
         modern Stoic, delivers Stoicism for everyday life. Designed to make
         listeners more resilient, virtuous, and wise, the podcast offers
@@ -112,7 +112,7 @@ export default async function DailyStoicPodcastPage({
         placeholder="Search podcast summaries by title"
         page="podcasts"
       />
-      <PodcastTabs className="mb-20" />
+      <PodcastTabs className="mb-10" />
 
       {(tier !== "all" || query) && totalPodcasts > 0 && (
         <p className="mb-10 text-center text-sm font-medium text-pretty text-gray-500">

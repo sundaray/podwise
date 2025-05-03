@@ -121,7 +121,11 @@ export function SignInEmailPasswordForm() {
             className="mt-1"
           />
         </div>
-        <Button type="submit" disabled={isPending} className="h-10 rounded">
+        <Button
+          type="submit"
+          disabled={isPending}
+          className="h-10 rounded-full"
+        >
           {isPending ? (
             <>
               <Icons.loader className="size-3 animate-spin" />

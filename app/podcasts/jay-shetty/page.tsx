@@ -55,7 +55,7 @@ export default async function JayShettyPodcastPage({
     page: currentPage,
     tier,
     query,
-    shows
+    shows,
   } = await loadPodcastListSearchParams(searchParams);
 
   // Sort podcasts by video upload date
@@ -70,7 +70,7 @@ export default async function JayShettyPodcastPage({
     sortedPodcasts,
     tier as "all" | "free" | "premium",
     query,
-    shows
+    shows,
   );
 
   // Pagination calculations
@@ -96,24 +96,24 @@ export default async function JayShettyPodcastPage({
       >
         "On Purpose with Jay Shetty" Podcast Summaries
       </h1>
-      <p className="mx-auto mb-20 max-w-5xl text-center text-lg leading-7 font-medium text-balance text-gray-700">
-        On Purpose with Jay Shetty, hosted by former
-        monk Jay Shetty, is a transformative podcast dedicated to personal
-        growth, mental health, and meaningful living. Each episode features
-        inspiring conversations with influential figures, including celebrities,
-        authors, and experts, covering topics like relationships, self-care,
-        purpose-driven careers, and mindfulness practices. With a focus on
-        practical wisdom and actionable insights, Jay blends storytelling,
-        spirituality, and modern science to empower listeners to live with
-        intention and create a life of purpose. Perfect for anyone seeking
-        motivation and tools to navigate life’s challenges.
+      <p className="mx-auto mb-20 max-w-5xl text-center text-lg/7 leading-7 font-medium text-balance text-gray-700">
+        On Purpose with Jay Shetty, hosted by former monk Jay Shetty, is a
+        transformative podcast dedicated to personal growth, mental health, and
+        meaningful living. Each episode features inspiring conversations with
+        influential figures, including celebrities, authors, and experts,
+        covering topics like relationships, self-care, purpose-driven careers,
+        and mindfulness practices. With a focus on practical wisdom and
+        actionable insights, Jay blends storytelling, spirituality, and modern
+        science to empower listeners to live with intention and create a life of
+        purpose. Perfect for anyone seeking motivation and tools to navigate
+        life’s challenges.
       </p>
       <PodcastSearch
         placeholder="Search podcast summaries by title"
         page="podcasts"
       />
 
-      <PodcastTabs className="mb-20"/>
+      <PodcastTabs className="mb-10" />
 
       {(tier !== "all" || query) && totalPodcasts > 0 && (
         <p className="mb-10 text-center text-sm font-medium text-pretty text-gray-500">

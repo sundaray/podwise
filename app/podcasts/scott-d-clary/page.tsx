@@ -55,7 +55,7 @@ export default async function ScottDClaryPodcastPage({
     page: currentPage,
     tier,
     query,
-    shows
+    shows,
   } = await loadPodcastListSearchParams(searchParams);
 
   // Sort podcasts by video upload date
@@ -70,7 +70,7 @@ export default async function ScottDClaryPodcastPage({
     sortedPodcasts,
     tier as "all" | "free" | "premium",
     query,
-    shows
+    shows,
   );
 
   // Pagination calculations
@@ -96,7 +96,7 @@ export default async function ScottDClaryPodcastPage({
       >
         Scott D. Clary: "Success Story" Podcast Summaries
       </h1>
-      <p className="mx-auto mb-20 max-w-5xl text-center text-lg leading-7 font-medium text-balance text-gray-700">
+      <p className="mx-auto mb-20 max-w-5xl text-center text-lg/7 leading-7 font-medium text-balance text-gray-700">
         Success Story, hosted by Scott D. Clary, is a top-ranked business and
         self-development podcast delivering candid conversations with
         world-class business leaders, entrepreneurs, and thought leaders. Each
@@ -110,7 +110,7 @@ export default async function ScottDClaryPodcastPage({
         page="podcasts"
       />
 
-      <PodcastTabs className="mb-20"/>
+      <PodcastTabs className="mb-10" />
 
       {(tier !== "all" || query) && totalPodcasts > 0 && (
         <p className="mb-10 text-center text-sm font-medium text-pretty text-gray-500">

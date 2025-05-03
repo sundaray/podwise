@@ -92,11 +92,11 @@ export default async function ChrisWilliamsonPodcastPage({
   return (
     <div className="group mx-auto max-w-6xl px-4">
       <h1
-        className={`${libreBaskerville.className} mb-8 text-center text-4xl font-semibold tracking-tight text-pretty text-gray-900`}
+        className={`${libreBaskerville.className} mb-8 text-center text-4xl font-medium tracking-tight text-pretty text-gray-900`}
       >
         Chris Williamson: "Modern Wisdom" Podcast Summaries
       </h1>
-      <p className="mx-auto mb-20 max-w-5xl text-center text-lg leading-7 font-medium text-balance text-gray-700">
+      <p className="mx-auto mb-20 max-w-5xl text-center text-lg/7 leading-7 font-medium text-balance text-gray-600">
         Chris Williamson is the host of the popular podcast "Modern Wisdom",
         where he interviews world-class thinkers exploring how to live a better
         life. With a tagline of "Life is hard. This podcast will help," the show
@@ -110,7 +110,7 @@ export default async function ChrisWilliamsonPodcastPage({
         page="podcasts"
       />
 
-      <PodcastTabs className="mb-20"/>
+      <PodcastTabs className="mb-10" />
 
       {(tier !== "all" || query) && totalPodcasts > 0 && (
         <p className="mb-10 text-center text-sm font-medium text-pretty text-gray-500">

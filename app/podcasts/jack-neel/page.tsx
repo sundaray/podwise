@@ -14,7 +14,7 @@ export async function generateMetadata({
 }: {
   searchParams: SearchParams;
 }): Promise<Metadata> {
-  const { page, tier, query, } = await loadPodcastListSearchParams(searchParams);
+  const { page, tier, query } = await loadPodcastListSearchParams(searchParams);
 
   // Base metadata
   const metadata: Metadata = {
@@ -55,7 +55,7 @@ export default async function JackNeelPodcastPage({
     page: currentPage,
     tier,
     query,
-    shows
+    shows,
   } = await loadPodcastListSearchParams(searchParams);
 
   // Sort podcasts by video upload date
@@ -70,7 +70,7 @@ export default async function JackNeelPodcastPage({
     sortedPodcasts,
     tier as "all" | "free" | "premium",
     query,
-    shows
+    shows,
   );
 
   // Pagination calculations
@@ -96,7 +96,7 @@ export default async function JackNeelPodcastPage({
       >
         Jack Neel Podcast Summaries
       </h1>
-      <p className="mx-auto mb-20 max-w-5xl text-center text-lg leading-7 font-medium text-balance text-gray-700">
+      <p className="mx-auto mb-20 max-w-5xl text-center text-lg/7 leading-7 font-medium text-balance text-gray-700">
         The Jack Neel Podcast dives into the fascinating worlds of crime,
         business, and psychology through in-depth interviews with a diverse
         range of guests, from entrepreneurs and influencers to controversial
@@ -113,7 +113,7 @@ export default async function JackNeelPodcastPage({
         page="podcasts"
       />
 
-      <PodcastTabs className="mb-20"/>
+      <PodcastTabs className="mb-10" />
 
       {(tier !== "all" || query) && totalPodcasts > 0 && (
         <p className="mb-10 text-center text-sm font-medium text-pretty text-gray-500">

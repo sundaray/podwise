@@ -96,7 +96,7 @@ export default async function DoacPodcastPage({
       >
         "The Diary Of a CEO" Podcast Summaries
       </h1>
-      <p className="mx-auto mb-20 max-w-5xl text-center text-lg leading-7 font-medium text-balance text-gray-700">
+      <p className="mx-auto mb-20 max-w-5xl text-center text-lg/7 leading-7 font-medium text-balance text-gray-700">
         The Diary Of A CEO is a globally renowned podcast hosted by Steven
         Bartlett, a British entrepreneur, investor, and former CEO. Launched in
         2017, the podcast offers raw, honest, and unfiltered conversations with
@@ -114,7 +114,7 @@ export default async function DoacPodcastPage({
         page="podcasts"
       />
 
-      <PodcastTabs className="mb-20" />
+      <PodcastTabs className="mb-10" />
 
       {(tier !== "all" || query) && totalPodcasts > 0 && (
         <p className="mb-10 text-center text-sm font-medium text-pretty text-gray-500">

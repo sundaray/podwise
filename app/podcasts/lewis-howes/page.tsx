@@ -55,7 +55,7 @@ export default async function LewisHowesPodcastPage({
     page: currentPage,
     tier,
     query,
-    shows
+    shows,
   } = await loadPodcastListSearchParams(searchParams);
 
   // Sort podcasts by video upload date
@@ -70,7 +70,7 @@ export default async function LewisHowesPodcastPage({
     sortedPodcasts,
     tier as "all" | "free" | "premium",
     query,
-    shows
+    shows,
   );
 
   // Pagination calculations
@@ -96,7 +96,7 @@ export default async function LewisHowesPodcastPage({
       >
         Lewis Howes: "The School of Greatness" Podcast Summaries
       </h1>
-      <p className="mx-auto mb-20 max-w-5xl text-center text-lg leading-7 font-medium text-balance text-gray-700">
+      <p className="mx-auto mb-20 max-w-5xl text-center text-lg/7 leading-7 font-medium text-balance text-gray-700">
         The School of Greatness, hosted by Lewis Howes, a New York Times
         best-selling author and former professional athlete, is one of the
         top-ranked Business and Self-Development podcasts, inspiring listeners
@@ -110,7 +110,7 @@ export default async function LewisHowesPodcastPage({
         page="podcasts"
       />
 
-      <PodcastTabs className="mb-20" />
+      <PodcastTabs className="mb-10" />
 
       {(tier !== "all" || query) && totalPodcasts > 0 && (
         <p className="mb-10 text-center text-sm font-medium text-pretty text-gray-500">
