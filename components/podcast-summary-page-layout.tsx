@@ -120,7 +120,7 @@ export async function PodcastSummaryPageLayout({
       <article className="podcast-summary relative">
         <header>
           <h1 className="my-7">{title}</h1>
-          <div className="relative flex items-center pl-4 font-medium text-gray-700 before:absolute before:left-0 before:h-3 before:w-[1.5px] before:bg-sky-700">
+          <div className="relative flex items-center pl-4 font-medium text-gray-600 before:absolute before:left-0 before:h-3 before:w-[1.5px] before:bg-sky-600">
             Posted
             <time
               dateTime={parseISO(publishedAt).toISOString()}
@@ -146,14 +146,14 @@ export async function PodcastSummaryPageLayout({
         {/* Conditional paywall overlay based on authentication status */}
         {limitReached && (
           <div className="absolute inset-0 z-10 flex flex-col items-center bg-white/70 p-6 text-center backdrop-blur-sm">
-            <h2 className="mb-2 text-2xl font-semibold">
+            <h2 className="mb-2 text-2xl font-bold">
               Daily Free Reading Limit Reached
             </h2>
 
             {!isAuthenticated ? (
               /* Unauthenticated User Message */
               <>
-                <p className="mb-2 text-pretty text-gray-700">
+                <p className="mb-2 text-pretty text-gray-600">
                   Unauthenticated users can read only 1 free summary per day.
                 </p>
                 <p className="mb-6 text-pretty text-gray-700">

@@ -124,11 +124,11 @@
 
 @layer components {
   .podcast-summary h1 {
-    @apply font-serif text-4xl font-bold tracking-tight text-pretty text-gray-900;
+    @apply text-4xl font-bold tracking-tight text-pretty text-gray-900;
   }
 
   .podcast-summary h2 {
-    @apply mt-7 mb-2 font-serif text-2xl font-semibold tracking-tight text-pretty text-gray-900;
+    @apply mt-7 mb-2 text-2xl font-semibold tracking-tight text-pretty text-gray-900;
   }
 
   .podcast-summary p {

@@ -22,7 +22,7 @@ export function PodcastBreadcrumbs({ podcastHost }: PodcastBreadcrumbsProps) {
         <BreadcrumbItem>
           <BreadcrumbLink
             href="/"
-            className="font-medium text-sky-700 transition-colors hover:text-sky-500"
+            className="font-medium text-sky-600 transition-colors hover:text-sky-700"
           >
             Home
           </BreadcrumbLink>
@@ -31,7 +31,7 @@ export function PodcastBreadcrumbs({ podcastHost }: PodcastBreadcrumbsProps) {
         <BreadcrumbItem>
           <BreadcrumbLink
             href="/podcasts"
-            className="font-medium text-sky-700 transition-colors hover:text-sky-500"
+            className="font-medium text-sky-600 transition-colors hover:text-sky-700"
           >
             Podcasts
           </BreadcrumbLink>
@@ -40,7 +40,7 @@ export function PodcastBreadcrumbs({ podcastHost }: PodcastBreadcrumbsProps) {
         <BreadcrumbItem>
           <BreadcrumbLink
             href={`/podcasts/${formattedPodcastHost}`}
-            className="font-medium text-sky-700 transition-colors hover:text-sky-500"
+            className="font-medium text-sky-600 transition-colors hover:text-sky-700"
           >
             {podcastHost}
           </BreadcrumbLink>

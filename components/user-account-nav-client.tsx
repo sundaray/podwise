@@ -12,6 +12,8 @@ import {
 import { Icons } from "@/components/icons";
 import { signOut } from "@/app/auth-actions";
 import {cn} from "@/lib/utils"
+import { Button } from "@/components/ui/button";
+
 
 type UserAccountNavClientProps = {
   user: {
@@ -61,7 +63,7 @@ export function UserAccountNavClient({ user, className }: UserAccountNavClientPr
             {user.email && (
               <>
                 <p className="text-xs text-gray-500">signed in as</p>
-                <p className="w-[200px] truncate text-sm text-gray-700">
+                <p className="w-[200px] truncate text-sm text-gray-600 font-medium">
                   {user.email}
                 </p>
               </>
@@ -70,22 +72,22 @@ export function UserAccountNavClient({ user, className }: UserAccountNavClientPr
         </div>
         <DropdownMenuSeparator />
         <DropdownMenuItem className="cursor-pointer">
-          <button onClick={handleSignOut} className="flex w-full items-center">
+          <Button onClick={handleSignOut} className="w-full rounded-full">
             {isSigningOut ? (
               <>
-                <Icons.loader className="mr-2 size-3 animate-spin" />
-                <p className="text-sm text-gray-700">Sign out</p>
+                <Icons.loader className="mr-2 size-3 animate-spin text-gray-400 strokeWidth={3}" />
+                <p className="text-sm">Sign out</p>
               </>
             ) : (
               <>
                 <Icons.logOut
-                  className="mr-2 size-3 text-gray-500"
+                  className="mr-2 size-3 text-gray-400"
                   strokeWidth={3}
                 />
                 <p className="text-sm">Sign out</p>
               </>
             )}
-          </button>
+          </Button>
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
