@@ -8,10 +8,7 @@ type HomeLayoutProps = {
 export default function HomeLayout({ children }: HomeLayoutProps) {
   return (
     <div className="flex min-h-screen flex-col">
-      <header>
-        <MainNav items={navbarLinks.main} />
-      </header>
-      <main className="flex-1 border py-16">{children}</main>
+      <main className="flex-1">{children}</main>
     </div>
   )
-}
+} 

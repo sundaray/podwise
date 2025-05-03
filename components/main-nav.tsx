@@ -1,5 +1,5 @@
 import React from "react";
-
+import Link from "next/link"
 import { NavItem } from "@/components/nav-item";
 import { MobileNav } from "@/components/mobile-nav";
 import { UserAccountNav } from "@/components/user-account-nav";
@@ -16,7 +16,11 @@ type MainNavProps = {
 export function MainNav({ items }: MainNavProps) {
   return (
     <div className="fixed inset-x-0 top-0 z-50 mx-auto flex h-20 max-w-7xl items-center bg-white/50 px-4 backdrop-blur-xl">
-      <div className="mr-10 flex items-center space-x-2">
+      <Link
+        href="/"
+        aria-label="Go to homepage"
+        className="mr-10 flex items-center space-x-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-600"
+      >
         <svg
           width="20"
           height="20"
@@ -24,6 +28,7 @@ export function MainNav({ items }: MainNavProps) {
           xmlns="http://www.w3.org/2000/svg"
           className="text-sky-600"
         >
+          {/* …icon path… */}
           <path
             fillRule="evenodd"
             clipRule="evenodd"
@@ -31,10 +36,10 @@ export function MainNav({ items }: MainNavProps) {
             fill="currentColor"
           />
         </svg>
-        <p className="text-lg font-bold tracking-tight text-gray-900">
+        <span className="text-lg font-bold tracking-tight text-gray-900">
           PODWISE
-        </p>
-      </div>
+        </span>
+      </Link>
       <nav className="hidden md:block">
         <ul className="flex space-x-3">
           {items.map((item) => (

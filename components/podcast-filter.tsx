@@ -173,7 +173,7 @@ export function PodcastFilter() {
                     className="rounded-full bg-gray-900 px-4 py-2 text-sm font-medium text-white hover:bg-gray-900/90 focus:ring-2 focus:ring-sky-600 focus:ring-offset-2 focus:outline-none data-[disabled]:cursor-not-allowed data-[disabled]:opacity-50"
                     onPress={close}
                   >
-                    Apply filter
+                    Apply filters
                   </Button>
                 </div>
               </>
