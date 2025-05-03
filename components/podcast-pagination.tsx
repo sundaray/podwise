@@ -52,7 +52,7 @@ export function PodcastPagination({
 
   return (
     <Pagination
-      className={cn("py-20", className)}
+      className={cn("py-32", className)}
       data-pending={isLoading ? "" : undefined}
     >
       <PaginationContent>

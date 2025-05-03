@@ -50,7 +50,7 @@ export async function PodcastCard({ podcast, hostPath }: PodcastCardProps) {
       </h2>
 
       {formattedDate && (
-        <p className="mt-2 flex items-center text-sm text-gray-700 font-medium transition-colors group-hover/card:text-gray-500">
+        <p className="mt-2 flex items-center text-sm font-medium text-gray-600 transition-colors group-hover/card:text-gray-500">
           <span>{podcastHost}</span>
 
           <span className="mx-1.5 text-gray-500">•</span>

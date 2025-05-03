@@ -28,9 +28,8 @@ export function Footer() {
               src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
               className="h-9"
             />
-            <p className="text-sm/6 text-balance text-gray-600">
-              Making the world a better place through constructing elegant
-              hierarchies.
+            <p className="text-sm/6 text-balance text-gray-400">
+              AI-generated podcast summaries
             </p>
           </div>
           <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
@@ -72,13 +71,13 @@ export function Footer() {
                 </ul>
               </div>
               <div className="mt-10 md:mt-0">
-                <h3 className="text-sm/6 font-semibold text-gray-900">Legal</h3>
+                <h3 className="text-sm/6 font-semibold text-white">Legal</h3>
                 <ul role="list" className="mt-6 space-y-4">
                   {navigation.legal.map((item) => (
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-sm/6 text-gray-600 hover:text-gray-900"
+                        className="text-sm/6 text-gray-400 hover:text-gray-300"
                       >
                         {item.name}
                       </a>

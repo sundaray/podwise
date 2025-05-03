@@ -92,7 +92,7 @@ export default async function ChrisWilliamsonPodcastPage({
   return (
     <div className="group mx-auto max-w-6xl px-4">
       <h1
-        className={`${libreBaskerville.className} mb-8 text-center text-4xl font-medium tracking-tight text-pretty text-gray-900`}
+        className={`mb-8 text-center text-4xl font-bold tracking-tight text-pretty text-gray-900`}
       >
         Chris Williamson: "Modern Wisdom" Podcast Summaries
       </h1>
@@ -101,9 +101,7 @@ export default async function ChrisWilliamsonPodcastPage({
         where he interviews world-class thinkers exploring how to live a better
         life. With a tagline of "Life is hard. This podcast will help," the show
         covers topics ranging from psychology, philosophy, and relationships to
-        performance, productivity, and modern culture. Browse our detailed
-        summaries below to discover the key insights and actionable takeaways
-        from the "Modern Wisdom" podcast episodes.
+        performance, productivity, and modern culture.
       </p>
       <PodcastSearch
         placeholder="Search podcast summaries by title"

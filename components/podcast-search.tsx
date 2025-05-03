@@ -48,9 +48,9 @@ export function PodcastSearch({ placeholder, page }: PodcastSearchProps) {
       className="group/search relative mx-auto mb-20 max-w-2xl"
       data-pending={isPending ? "" : undefined}
     >
-      <Icons.search className="absolute top-1/2 left-4 size-5 -translate-y-1/2 text-gray-500 transition-colors group-has-[:focus]/search:text-gray-700 group-has-[:hover]/search:text-gray-700" />
+      <Icons.search className="absolute top-1/2 left-4 size-5 -translate-y-1/2 text-gray-500 transition-colors group-has-[:focus]/search:text-gray-500 group-has-[:hover]/search:text-gray-700" />
       <Input
-        className="h-12 rounded-full px-10 ring-gray-200"
+        className="h-14 rounded-full px-10 shadow-xs ring-gray-950/10"
         type="search"
         placeholder={placeholder}
         defaultValue={query || ""}

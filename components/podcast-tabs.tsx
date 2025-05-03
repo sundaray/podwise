@@ -45,13 +45,13 @@ export function PodcastTabs({ className, ...rest }: PodcastTabsProps) {
       {...rest}
     >
       <TabsList className="grid h-10 max-w-md grid-cols-3 rounded-full">
-        <TabsTrigger value="all" className="rounded-full text-gray-700">
+        <TabsTrigger value="all" className="rounded-full text-gray-900">
           All
         </TabsTrigger>
-        <TabsTrigger value="free" className="rounded-full text-gray-700">
+        <TabsTrigger value="free" className="rounded-full text-gray-900">
           Free
         </TabsTrigger>
-        <TabsTrigger value="premium" className="rounded-full text-gray-700">
+        <TabsTrigger value="premium" className="rounded-full text-gray-900">
           Premium
         </TabsTrigger>
       </TabsList>

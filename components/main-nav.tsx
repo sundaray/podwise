@@ -22,7 +22,7 @@ export function MainNav({ items }: MainNavProps) {
           height="20"
           viewBox="40 60 55 85"
           xmlns="http://www.w3.org/2000/svg"
-          className="text-sky-700"
+          className="text-sky-600"
         >
           <path
             fillRule="evenodd"
@@ -31,7 +31,7 @@ export function MainNav({ items }: MainNavProps) {
             fill="currentColor"
           />
         </svg>
-        <p className="font-serif text-lg font-bold tracking-tight text-gray-900">
+        <p className="text-lg font-bold tracking-tight text-gray-900">
           PODWISE
         </p>
       </div>
