@@ -12,7 +12,7 @@ export default function LegalLayout({ children }: LegalLayoutProps) {
       <header>
         <MainNav items={navbarLinks.main} />
       </header>
-      <main className="flex-1 pt-32">{children}</main>
+      <main className="flex-1 py-32">{children}</main>
       <Footer />
     </div>
   );
