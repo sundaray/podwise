@@ -1,6 +1,6 @@
 "use client";
 
-import { useRouter } from "next/navigation";
+import { useRouter } from "nextjs-toploader/app";
 import { RouterProvider } from "react-aria-components";
 
 declare module "react-aria-components" {
