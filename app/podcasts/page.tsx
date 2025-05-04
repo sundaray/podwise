@@ -159,7 +159,7 @@ export default async function AllPodcastsPage({
       <h1 className="mb-4 text-center text-4xl font-bold tracking-tight text-pretty text-gray-900 md:text-4xl">
         All Podcast Summaries
       </h1>
-      <p className="mx-auto mb-20 max-w-5xl text-center text-lg/7 font-medium text-pretty text-gray-600">
+      <p className="mx-auto mb-20 max-w-5xl text-center text-pretty text-gray-600">
         Browse <span>{totalSummaries.toLocaleString()}</span>{" "}
         {totalSummaries === 1 ? "summary" : "summaries"} of the world’s best
         podcasts.
