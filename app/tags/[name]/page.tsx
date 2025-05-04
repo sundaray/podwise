@@ -1,20 +1,27 @@
-import { Suspense } from "react";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import { PodcastCard } from "@/components/podcast-card";
 import { PodcastPagination } from "@/components/podcast-pagination";
 import { PodcastSearch } from "@/components/podcast-search";
 import { PodcastTabs } from "@/components/podcast-tabs";
-import { getVideoDetails } from "@/lib/get-video-details";
 import { filterPodcasts } from "@/lib/podcast-filters";
-import { loadPodcastListSearchParams } from "@/lib/search-params";
-import { formatTagForUrl, formatTagForDisplay } from "@/lib/utils";
+import { loadPodcastListSearchParams } from "@/lib/podcast-list-search-params";
+import { formatTagForDisplay } from "@/lib/utils";
 import type { SearchParams } from "nuqs/server";
+import {Icons} from "@/components/icons"
 
 // Import all podcast lists
 import { chrisWilliamsonPodcastList } from "@/podcast-list/chris-williamson";
-// Import other podcast lists as you add them
-// import { melRobbinsPodcastList } from "@/podcast-list/mel-robbins";
-// import { jayShettyPodcastList } from "@/podcast-list/jay-shetty";
+import { dailyStoicPodcastList } from "@/podcast-list/daily-stoic";
+import { doacPodcastList } from "@/podcast-list/doac";
+import { jackNeelPodcastList } from "@/podcast-list/jack-neel";
+import { jayShettyPodcastList } from "@/podcast-list/jay-shetty";
+import { lewisHowesPodcastList } from "@/podcast-list/lewis-howes";
+import { melRobbinsPodcastList } from "@/podcast-list/mel-robbins";
+import { ranganChatterjeePodcastList } from "@/podcast-list/rangan-chatterjee";
+import { scottDClaryPodcastList } from "@/podcast-list/scott-d-clary";
+import { simonSinekPodcastList } from "@/podcast-list/simon-sinek";
+import { timFerrissPodcastList } from "@/podcast-list/tim-ferriss";
 
 const ITEMS_PER_PAGE = 9;
 
@@ -25,11 +32,46 @@ function getAllPodcasts() {
       ...podcast,
       hostPath: "chris-williamson",
     })),
-    // Add other podcast lists as you create them
-    // ...melRobbinsPodcastList.map(podcast => ({
-    //   ...podcast,
-    //   hostPath: "mel-robbins"
-    // })),
+    ...dailyStoicPodcastList.map((podcast) => ({
+      ...podcast,
+      hostPath: "daily-stoic",
+    })),
+    ...doacPodcastList.map((podcast) => ({
+      ...podcast,
+      hostPath: "doac",
+    })),
+    ...jackNeelPodcastList.map((podcast) => ({
+      ...podcast,
+      hostPath: "jack-neel",
+    })),
+    ...jayShettyPodcastList.map((podcast) => ({
+      ...podcast,
+      hostPath: "jay-shetty",
+    })),
+    ...lewisHowesPodcastList.map((podcast) => ({
+      ...podcast,
+      hostPath: "lewis-howes",
+    })),
+    ...melRobbinsPodcastList.map((podcast) => ({
+      ...podcast,
+      hostPath: "mel-robbins",
+    })),
+    ...ranganChatterjeePodcastList.map((podcast) => ({
+      ...podcast,
+      hostPath: "rangan-chatterjee",
+    })),
+    ...scottDClaryPodcastList.map((podcast) => ({
+      ...podcast,
+      hostPath: "scott-d-clary",
+    })),
+    ...simonSinekPodcastList.map((podcast) => ({
+      ...podcast,
+      hostPath: "simon-sinek",
+    })),
+    ...timFerrissPodcastList.map((podcast) => ({
+      ...podcast,
+      hostPath: "tim-ferriss",
+    })),
   ];
 }
 
@@ -43,15 +85,6 @@ function getAllUniqueTags() {
   });
 
   return Array.from(tagSet);
-}
-
-// Generate static params for all tags
-export async function generateStaticParams() {
-  const tags = getAllUniqueTags();
-
-  return tags.map((tag) => ({
-    name: formatTagForUrl(tag),
-  }));
 }
 
 type TagPageProps = {
@@ -78,29 +111,20 @@ export default async function TagPage({ params, searchParams }: TagPageProps) {
     page: currentPage,
     tier,
     query,
+    shows,
   } = await loadPodcastListSearchParams(searchParams);
 
   // Get all podcasts and filter by the current tag
   const allPodcasts = getAllPodcasts();
+
   const podcastsWithTag = allPodcasts.filter((podcast) =>
     podcast.tags.some((tag) => tag.toLowerCase() === normalizedTagName),
   );
 
-  // Fetch video details for each podcast
-  const podcastsWithDetails = await Promise.all(
-    podcastsWithTag.map(async (podcast) => {
-      const videoDetails = await getVideoDetails(podcast.videoId);
-      return {
-        ...podcast,
-        publishedAt: videoDetails?.publishedAt || null,
-      };
-    }),
-  );
-
-  // Sort podcasts by publish date
-  const sortedPodcasts = [...podcastsWithDetails].sort((a, b) => {
-    const dateA = a.publishedAt ? new Date(a.publishedAt) : new Date(0);
-    const dateB = b.publishedAt ? new Date(b.publishedAt) : new Date(0);
+  // Sort podcasts by video upload date
+  const sortedPodcasts = [...podcastsWithTag].sort((a, b) => {
+    const dateA = a.videoUploadedAt ? new Date(a.videoUploadedAt) : new Date(0);
+    const dateB = b.videoUploadedAt ? new Date(b.videoUploadedAt) : new Date(0);
     return dateB.getTime() - dateA.getTime();
   });
 
@@ -109,6 +133,7 @@ export default async function TagPage({ params, searchParams }: TagPageProps) {
     sortedPodcasts,
     tier as "all" | "free" | "premium",
     query,
+    shows,
   );
 
   // Pagination calculations
@@ -129,24 +154,30 @@ export default async function TagPage({ params, searchParams }: TagPageProps) {
 
   return (
     <div className="group container mx-auto max-w-6xl px-4">
-      <div className="mb-8 text-center">
-        <h1 className="mb-2 text-4xl font-bold tracking-tight">
-          Tag: <span className="text-sky-700">{tagName}</span>
+      <div className="mb-12 text-center">
+        <Link
+          href="/tags"
+          className="inline-flex items-center gap-1 rounded-full px-3 py-2 text-sm font-medium text-sky-600 transition-colors hover:bg-gray-100 hover:text-sky-700"
+        >
+          <Icons.chevronLeft className="size-4" />
+          All Tags
+        </Link>
+        <h1 className="mt-6 mb-4 text-4xl font-bold tracking-tight text-gray-900">
+          Tag: <span className="text-sky-600">{tagName}</span>
         </h1>
-        <p className="text-pretty text-gray-700">
+        <p className="text-pretty text-gray-600">
           Found {totalPodcasts} podcast{" "}
           {totalPodcasts === 1 ? "summary" : "summaries"} tagged with "{tagName}
           "
         </p>
       </div>
 
-      <Suspense>
-        <PodcastSearch />
-      </Suspense>
+      <PodcastSearch
+        placeholder="Search podcast summaries by tag"
+        page="tags"
+      />
 
-      <Suspense>
-        <PodcastTabs />
-      </Suspense>
+      <PodcastTabs className="mb-10" />
 
       {(tier !== "all" || query) && totalPodcasts > 0 && (
         <p className="mb-10 text-center text-sm font-medium text-pretty text-gray-500">
@@ -168,9 +199,7 @@ export default async function TagPage({ params, searchParams }: TagPageProps) {
         <p className="text-center text-red-600">No podcasts found</p>
       )}
 
-      <Suspense>
-        <PodcastPagination totalPages={totalPages} />
-      </Suspense>
+      <PodcastPagination totalPages={totalPages} />
     </div>
   );
 }

@@ -69,7 +69,7 @@ export function ResetPasswordForm() {
                 isNewPasswordVisible ? "Hide password" : "Show password"
               }
               aria-pressed={isNewPasswordVisible}
-              className="absolute inset-y-0 end-0 flex h-full w-9 items-center justify-center rounded-e-lg text-gray-500 outline-offset-0 transition-colors hover:text-gray-700 focus:z-10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-500 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50"
+              className="absolute inset-y-0 end-0 flex h-full w-9 items-center justify-center rounded-e-lg text-gray-500 outline-offset-0 transition-colors hover:text-gray-600 focus:z-10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-blue-500 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50"
             >
               {isNewPasswordVisible ? (
                 <Icons.eyeOff size={16} strokeWidth={2} aria-hidden="true" />
@@ -111,7 +111,7 @@ export function ResetPasswordForm() {
                 isConfirmPasswordVisible ? "Hide password" : "Show password"
               }
               aria-pressed={isConfirmPasswordVisible}
-              className="absolute inset-y-0 end-0 flex h-full w-9 items-center justify-center rounded-e-lg text-gray-500 outline-offset-0 transition-colors hover:text-gray-700 focus:z-10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-sky-700 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50"
+              className="absolute inset-y-0 end-0 flex h-full w-9 items-center justify-center rounded-e-lg text-gray-500 outline-offset-0 transition-colors hover:text-gray-600 focus:z-10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-sky-700 disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50"
             >
               {isConfirmPasswordVisible ? (
                 <Icons.eyeOff size={16} strokeWidth={2} aria-hidden="true" />
@@ -126,7 +126,7 @@ export function ResetPasswordForm() {
             className="mt-1"
           />
         </div>
-        <Button type="submit" disabled={isPending} className="rounded">
+        <Button type="submit" disabled={isPending} className="rounded-full">
           {isPending ? (
             <>
               <Icons.loader className="size-3 animate-spin" />

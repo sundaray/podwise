@@ -1,15 +1,11 @@
-import { Suspense } from "react";
 import { PodcastSearch } from "@/components/podcast-search";
 import { TagCard } from "@/components/tag-card";
 import { getPodcastTags } from "@/lib/get-podcast-tags";
 import { loadTagsListSearchParams } from "@/lib/tags-list-search-params";
-import { formatTagForUrl } from "@/lib/utils";
-import { TagGroup, TagList, Tag } from "react-aria-components";
 import { FilteredTags } from "@/components/filtered-tags";
 import { cn } from "@/lib/utils";
 import type { SearchParams } from "nuqs/server";
 import type { TagItem } from "@/components/tag-card";
-import { libreBaskerville } from "@/app/layout";
 
 type TagsPageProps = {
   searchParams: SearchParams;
@@ -47,23 +43,23 @@ export default async function TagsPage({ searchParams }: TagsPageProps) {
 
   return (
     <div className="group mx-auto max-w-3xl px-4 md:px-8">
-      <h1 className={`${libreBaskerville.className} mb-2 text-center text-4xl font-bold tracking-tight text-pretty text-gray-900`}>
+      <h1 className="mb-2 text-center text-4xl font-bold tracking-tight text-pretty text-gray-900">
         Podcast Summary Tags
       </h1>
-      <p className="mb-8 text-center text-pretty text-gray-700">
+      <p className="mb-12 text-center text-pretty text-gray-600">
         Click any tag to explore related podcast summaries.
       </p>
 
-        <PodcastSearch placeholder="Search for tags" page="tags"/>
+      <PodcastSearch placeholder="Search for tags" page="tags" />
 
       {isSearchMode && filteredTags.length > 0 && (
-        <p className="mb-10 text-center text-sm font-medium text-pretty text-gray-500">
+        <p className="mb-12 text-center text-sm font-medium text-pretty text-gray-500">
           {statusMessage}
         </p>
       )}
 
       {isSearchMode && filteredTags.length === 0 ? (
-        <p className="py-8 text-center text-xl text-gray-500">
+        <p className="text-center text-sm font-medium text-red-600">
           No tags found matching "{query}"
         </p>
       ) : isSearchMode ? (

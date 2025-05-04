@@ -1,12 +1,28 @@
-// lib/get-podcast-tags.ts
 import { chrisWilliamsonPodcastList } from "@/podcast-list/chris-williamson";
-// Import other podcast lists as needed
+import { dailyStoicPodcastList } from "@/podcast-list/daily-stoic";
+import { doacPodcastList } from "@/podcast-list/doac";
+import { jackNeelPodcastList } from "@/podcast-list/jack-neel";
+import { jayShettyPodcastList } from "@/podcast-list/jay-shetty";
+import { lewisHowesPodcastList } from "@/podcast-list/lewis-howes";
+import { melRobbinsPodcastList } from "@/podcast-list/mel-robbins";
+import { ranganChatterjeePodcastList } from "@/podcast-list/rangan-chatterjee";
+import { scottDClaryPodcastList } from "@/podcast-list/scott-d-clary";
+import { simonSinekPodcastList } from "@/podcast-list/simon-sinek";
+import { timFerrissPodcastList } from "@/podcast-list/tim-ferriss";
 
 export function getPodcastTags() {
-  // Combine all podcast lists
   const allPodcasts = [
     ...chrisWilliamsonPodcastList,
-    // Add other podcast lists as needed
+    ...dailyStoicPodcastList,
+    ...doacPodcastList,
+    ...jackNeelPodcastList,
+    ...jayShettyPodcastList,
+    ...lewisHowesPodcastList,
+    ...melRobbinsPodcastList,
+    ...ranganChatterjeePodcastList,
+    ...scottDClaryPodcastList,
+    ...simonSinekPodcastList,
+    ...timFerrissPodcastList,
   ];
 
   // Create a Map to track tag counts

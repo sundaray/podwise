@@ -54,7 +54,7 @@ export function ForgotPasswordForm() {
             className="mt-1"
           />
         </div>
-        <Button type="submit" disabled={isPending} className="rounded">
+        <Button type="submit" disabled={isPending} className="rounded-full">
           {isPending ? (
             <>
               <Icons.loader className="size-3 animate-spin" />

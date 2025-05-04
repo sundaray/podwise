@@ -32,7 +32,7 @@ export function TagCard({ letter, tags, className }: TagCardProps) {
             <Tag
               key={item.id}
               href={`/tags/${formatTagForUrl(item.name)}`}
-              className="cursor-pointer rounded-full bg-sky-100 px-2 py-1 text-sm font-medium text-sky-700 transition hover:bg-sky-700 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-700 focus-visible:ring-offset-2 md:px-4 md:py-2"
+              className="cursor-pointer rounded-full bg-sky-100 px-2 py-1 text-sm font-medium text-sky-900 transition hover:bg-sky-900 hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-600 focus-visible:ring-offset-2 md:px-4 md:py-2"
             >
               <span className="mr-2">{item.name}</span>
               <span className="text-xs">{item.count}</span>
