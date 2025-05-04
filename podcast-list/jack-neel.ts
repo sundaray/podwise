@@ -3,6 +3,32 @@
 
 export const jackNeelPodcastList = [
   {
+    title: "I Thought I Was Broken — I Just Had the Wrong Words | Alex Hormozi",
+    slug: "i-thought-i-was-broken-i-just-had-the-wrong-words-alex-hormozi",
+    tags: [
+      "Personal Development",
+      "Business Strategy",
+      "Behavioral Psychology",
+    ],
+    image: "i-thought-i-was-broken-i-just-had-the-wrong-words-alex-hormozi.jpg",
+    podcastHost: "Jack Neel",
+    isPremium: true,
+    videoId: "5f_UL-z1xgI",
+    videoUploadedAt: "2025-05-01T12:00:00Z",
+  },
+  {
+    title:
+      "App Expert: How to Build Viral Apps in 30 Days, Make Millions at 17, and Retire Before College",
+    slug: "app-expert-build-viral-apps-make-millions-retire-before-college",
+    tags: ["Entrepreneurship", "App Development", "Business Strategy"],
+    image:
+      "app-expert-build-viral-apps-make-millions-retire-before-college.jpg",
+    podcastHost: "Jack Neel",
+    isPremium: true,
+    videoId: "qDuzzrQKP_M",
+    videoUploadedAt: "2025-04-20T12:00:00Z",
+  },
+  {
     title: "Why I Struggled With Money, Focus, and Fame | Iman Gadzhi",
     slug: "why-i-struggled-with-money-focus-fame-iman-gadzhi",
     tags: ["Entrepreneurship", "Success Mindset", "Personal Development"],

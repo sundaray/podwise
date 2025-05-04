@@ -55,6 +55,16 @@ export const chrisWilliamsonPodcastList = [
     videoUploadedAt: "2025-04-24T12:00:00Z",
   },
   {
+    title: "Harvard Professor Reveals The Secret To Lasting Love & Happiness - Arthur Brooks",
+    slug: "harvard-professor-reveals-the-secret-to-lasting-love-and-happiness-arthur-brooks",
+    tags: ["Love Psychology", "Relationship Science", "Happiness Research"],
+    image: "harvard-professor-reveals-the-secret-to-lasting-love-and-happiness-arthur-brooks.jpg",
+    podcastHost: "Chris Williamson",
+    videoId: "jY1gwywkmvc",
+    isPremium: true,
+    videoUploadedAt: "2025-04-21T12:00:00Z"
+    },    
+  {
     title: "Why Women Say They Want One Thing But Date Another - Rob Henderson",
     slug: "why-women-say-they-want-one-thing-but-date-another-rob-henderson",
     tags: ["Dating Psychology", "Gender Dynamics", "Mate Selection"],

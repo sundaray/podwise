@@ -3,6 +3,7 @@
 
 export const freePodcastPaths = [
   "/podcasts/chris-williamson/15-harsh-truths-from-greatest-founders-david-senra",
+  "/podcasts/chris-williamson/how-to-win-the-war-of-the-future-joe-lonsdale",
   "/podcasts/chris-williamson/9-ways-people-destroy-relationships-jillian-turecki",
   "/podcasts/chris-williamson/behavior-change-strategies-rangan-chatterjee",
   "/podcasts/chris-williamson/destroy-mental-limits-unlock-best-self-adam-grant",
