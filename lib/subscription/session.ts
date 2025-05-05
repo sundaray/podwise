@@ -20,7 +20,7 @@ export async function encrypt(payload: any): Promise<string> {
       .setExpirationTime("1hr")
       .encrypt(secret);
   } catch (error) {
-    throw new Error("Failed to encrypt payload.")();
+    throw new Error("Failed to encrypt payload.");
   }
 }
 

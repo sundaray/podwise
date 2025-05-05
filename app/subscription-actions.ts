@@ -10,7 +10,7 @@ import {
   isSubscriptionEmailVerified,
   sendSubscriptionVerificationEmail,
 } from "@/lib/subscription/subscription-email-verification";
-import { createSubscriptionEmailVerificationSession } from "@/lib/subscriptions/session";
+import { createSubscriptionEmailVerificationSession } from "@/lib/subscription/session";
 
 /************************************************
  *
@@ -18,10 +18,7 @@ import { createSubscriptionEmailVerificationSession } from "@/lib/subscriptions/
  *
  ************************************************/
 
-export async function subscribe(
-  prevState: unknown,
-  formData: FormData,
-) {
+export async function subscribe(prevState: unknown, formData: FormData) {
   // Parse and validate form data using zod schema
   const submission = parseWithZod(formData, {
     schema: SubscriptionFormSchema,
@@ -31,7 +28,6 @@ export async function subscribe(
   if (submission.status !== "success") {
     return submission.reply();
   }
-
 
   // Extract email
   const { email } = submission.value;
@@ -44,7 +40,7 @@ export async function subscribe(
 
     if (subscriptionEmailVerified) {
       // Subscriber already exists with verified email
-      errorOccurred = true
+      errorOccurred = true;
       return submission.reply({
         formErrors: ["User already subscribed."],
       });

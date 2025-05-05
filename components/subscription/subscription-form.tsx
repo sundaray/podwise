@@ -9,12 +9,12 @@ import { Button } from "@/components/ui/button";
 import { Icons } from "@/components/icons";
 import { ErrorMessage } from "@/components/auth/error-message";
 
-import { subscribeToNewsletter } from "@/app/subscription-actions";
+import { subscribe } from "@/app/subscription-actions";
 import { SubscriptionFormSchema } from "@/schema";
 
 export function SubscriptionForm() {
   const [lastResult, formAction, isPending] = useActionState(
-    subscribeToNewsletter,
+    subscribe,
     undefined,
   );
 
@@ -34,7 +34,7 @@ export function SubscriptionForm() {
       <h2 className="mb-2 text-center text-2xl font-bold text-gray-900">
         5-idea Friday
       </h2>
-      <p className="text-md mb-6 text-center font-medium text-gray-600">
+      <p className="text-md mb-8 text-center font-medium text-gray-600">
         5 ideas from the world's best thinkers delivered to your inbox every
         Friday.
       </p>
@@ -46,7 +46,11 @@ export function SubscriptionForm() {
         className="grid"
       >
         {form.errors && (
-          <ErrorMessage id="form-error" errors={form.errors} className="pb-4" />
+          <ErrorMessage
+            id="form-error"
+            errors={form.errors}
+            className="pb-4 pl-5"
+          />
         )}
 
         <div className="relative flex-grow">
@@ -84,7 +88,10 @@ export function SubscriptionForm() {
             className="absolute top-1.5 right-2 rounded-full"
           >
             {isPending ? (
-              <Icons.loader className="size-4 animate-spin" />
+              <>
+                <Icons.loader className="size-3 animate-spin" />
+                Subscribing...
+              </>
             ) : (
               "Subscribe"
             )}
