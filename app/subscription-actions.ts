@@ -1,18 +1,24 @@
 "use server";
 
+import { redirect } from "next/navigation";
 import { parseWithZod } from "@conform-to/zod";
-import { eq } from "drizzle-orm";
 import { SubscriptionFormSchema } from "@/schema";
-import { db } from "@/db";
-import { subscribersTable } from "@/db/schema";
+
+import {
+  createSubscriptionEmailVerificationToken,
+  createSubscriptionEmailVerificationURL,
+  isSubscriptionEmailVerified,
+  sendSubscriptionVerificationEmail,
+} from "@/lib/subscription/subscription-email-verification";
+import { createSubscriptionEmailVerificationSession } from "@/lib/subscriptions/session";
 
 /************************************************
  *
- * Subscribe to Newsletter
+ * Subscribe to 5-idea friday
  *
  ************************************************/
 
-export async function subscribeToNewsletter(
+export async function subscribe(
   prevState: unknown,
   formData: FormData,
 ) {
@@ -26,41 +32,52 @@ export async function subscribeToNewsletter(
     return submission.reply();
   }
 
+
   // Extract email
   const { email } = submission.value;
 
+  let errorOccurred = false;
+  let needsSubscriptionEmailVerification = false;
+
   try {
-    // Check if email already exists
-    const existingSubscriber = await db
-      .select()
-      .from(subscribersTable)
-      .where(eq(subscribersTable.email, email))
-      .limit(1);
+    const subscriptionEmailVerified = await isSubscriptionEmailVerified(email);
 
-    if (existingSubscriber.length > 0) {
+    if (subscriptionEmailVerified) {
+      // Subscriber already exists with verified email
+      errorOccurred = true
       return submission.reply({
-        formErrors: ["This email is already subscribed."],
+        formErrors: ["User already subscribed."],
       });
+    } else {
+      // Account either doesn't exist OR exists but email not verified
+      // In both cases, we'll proceed with creating/updating and sending verification
+
+      needsSubscriptionEmailVerification = true;
+
+      const token = createSubscriptionEmailVerificationToken();
+
+      const url = createSubscriptionEmailVerificationURL(token);
+
+      await createSubscriptionEmailVerificationSession(email, token);
+
+      await sendSubscriptionVerificationEmail(email, url);
     }
-
-    // Insert new subscriber
-    await db.insert(subscribersTable).values({
-      email,
-    });
-
-    // Return success response
-    return submission.reply({
-      resetForm: true,
-    });
   } catch (error) {
-    console.error("[subscribeToNewsletter] error: ", error);
-
+    console.log("Subscribe action error: ", error);
+    errorOccurred = true;
     if (error instanceof Error) {
-      console.error(`[subscribeToNewsletter] error message: `, error.message);
+      console.error(`[subscribe] error: `, error.message);
+    } else {
+      console.error(`[subscribe] error: `, error);
     }
-
     return submission.reply({
       formErrors: ["Something went wrong. Please try again."],
     });
+  } finally {
+    if (!errorOccurred) {
+      if (needsSubscriptionEmailVerification) {
+        redirect("/subscribe/verify-email");
+      }
+    }
   }
 }

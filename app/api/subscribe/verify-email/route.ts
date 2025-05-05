@@ -1,42 +1,39 @@
 import { NextRequest, NextResponse } from "next/server";
 
 import {
-  deleteEmailVerificationSession,
-  doesEmailVerificationSessionExist,
-  getEmailVerificationSession,
-} from "@/lib/auth/credentials/session";
-import { assignUserRole } from "@/lib/assign-user-role";
-import { createUser } from "@/lib/create-user";
+  deleteSubscriptionEmailVerificationSession,
+  doesSubscriptionEmailVerificationSessionExist,
+  getSubscriptionEmailVerificationSession,
+} from "@/lib/subscription/session";
+import { createSubscriber } from "@/lib/subscription/create-subscriber";
 import { timingSafeCompare } from "@/lib/auth/credentials/timing-safe-compare";
 
 export async function GET(request: NextRequest) {
   try {
     const url = request.nextUrl;
     const tokenFromUrl = url.searchParams.get("token");
-    const authErrorUrl = new URL("/signup/verify-email/error", url);
+    const subscribeErrorUrl = new URL("/subscribe/verify-email/error", url);
 
-    const sessionExists = await doesEmailVerificationSessionExist();
-    const payload = await getEmailVerificationSession();
+    const sessionExists = await doesSubscriptionEmailVerificationSessionExist();
+    const payload = await getSubscriptionEmailVerificationSession();
 
     if (!tokenFromUrl || !sessionExists || !payload) {
-      return NextResponse.redirect(authErrorUrl);
+      return NextResponse.redirect(subscribeErrorUrl);
     }
 
-    const { email, hashedPassword, token: tokenFromSession } = payload;
+    const { email, token: tokenFromSession } = payload;
 
     if (!timingSafeCompare(tokenFromUrl, tokenFromSession)) {
-      return NextResponse.redirect(authErrorUrl);
+      return NextResponse.redirect(subscribeErrorUrl);
     }
 
-    const role = assignUserRole(email);
+    await createSubscriber(email);
 
-    await createUser(email, role, "credentials", undefined, hashedPassword);
+    await deleteSubscriptionEmailVerificationSession();
 
-    await deleteEmailVerificationSession();
-
-    return NextResponse.redirect(new URL("/signup/email-verified", url));
+    return NextResponse.redirect(new URL("/subscribe/success", url));
   } catch (error) {
-    const authErrorUrl = new URL("/signup/verify-email/error", request.nextUrl);
+    const authErrorUrl = new URL("/subscribe/verify-email/error", request.nextUrl);
     return NextResponse.redirect(authErrorUrl);
   }
 }

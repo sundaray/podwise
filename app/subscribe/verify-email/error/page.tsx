@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Icons } from "@/components/icons";
 
-export default function VerifyEmailError() {
+export default function VerifySubscriptionEmailError() {
   return (
     <div className="mx-auto max-w-md px-4 text-center">
       <h2

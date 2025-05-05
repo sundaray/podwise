@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Icons } from "@/components/icons";
 
-export default function VerifyEmail() {
+export default function VerifySubscriptionEmail() {
   return (
     <div className="mx-auto max-w-md px-4 text-center">
       <h2 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900">
@@ -11,10 +11,10 @@ export default function VerifyEmail() {
         We&apos;ve sent you a verification link
       </p>
       <Link
-        href="/signin"
+        href="/podcasts"
         className="inline-flex items-center gap-1 rounded-full px-3 py-2 text-sm font-medium text-sky-600 transition-colors hover:bg-gray-100 hover:text-sky-700"
       >
-        Back to sign in
+        Back to podcasts
         <Icons.chevronRight className="size-4" />
       </Link>
     </div>
