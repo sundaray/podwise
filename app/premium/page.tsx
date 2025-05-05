@@ -25,7 +25,7 @@ export default function Premium() {
           <h1 className="text-4xl font-bold tracking-tight text-gray-900">
             Go Premium
           </h1>
-          <p className="mt-6 text-lg/7 text-gray-600">
+          <p className="mt-4 text-lg text-gray-600">
             Unlock access to our complete library of podcast summaries
           </p>
         </div>
@@ -54,7 +54,7 @@ export default function Premium() {
               <div className="mt-1 text-sm text-amber-700">
                 <p>
                   Prices will double on June 1st, 2025. We're adding 400+ new
-                  summaries in the next month, bringing our total to 800+
+                  summaries in this month, bringing our total to 800+
                   summaries.
                 </p>
               </div>

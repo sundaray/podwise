@@ -7,7 +7,7 @@ export default function PasswordReset() {
       <h2 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900">
         Password reset
       </h2>
-      <p className="mb-4 text-pretty text-gray-600">
+      <p className="mb-4 text-pretty text-sm text-gray-600">
         Your password has been successfully reset. You can now sign in with your
         updated password.
       </p>
