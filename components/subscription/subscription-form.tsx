@@ -30,11 +30,11 @@ export function SubscriptionForm() {
   });
 
   return (
-    <div className="rounded-xl border border-gray-200 bg-gray-100 p-8">
+    <div className="rounded-xl border border-gray-200 bg-gray-100 p-4 md:p-8">
       <h2 className="mb-2 text-center text-2xl font-bold text-gray-900">
         5-idea Friday
       </h2>
-      <p className="text-md mb-6 text-center text-gray-600">
+      <p className="text-md mb-6 text-center font-medium text-gray-600">
         5 ideas from the world's best thinkers delivered to your inbox every
         Friday.
       </p>
@@ -43,7 +43,7 @@ export function SubscriptionForm() {
         onSubmit={form.onSubmit}
         action={formAction}
         noValidate
-        className="flex flex-row gap-x-4"
+        className="grid"
       >
         {form.errors && (
           <ErrorMessage id="form-error" errors={form.errors} className="pb-4" />
@@ -57,7 +57,7 @@ export function SubscriptionForm() {
             name="email"
             placeholder="Email"
             defaultValue={lastResult?.initialValue?.email as string}
-            className="peer h-12 w-full rounded-full pl-5 placeholder:opacity-0"
+            className="peer h-12 w-full rounded-full bg-gray-100 pl-5 placeholder:opacity-0"
             aria-invalid={fields.email.errors ? "true" : undefined}
             aria-describedby={fields.email.errors ? "email-error" : undefined}
           />

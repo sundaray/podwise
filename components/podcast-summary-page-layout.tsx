@@ -10,6 +10,7 @@ import { PodcastSummaryTags } from "@/components/podcast-summary-tags";
 import { ScrollToTop } from "@/components/scroll-to-top";
 import { getUserSession } from "@/lib/auth/session";
 import type { Metadata } from "next";
+import { SubscriptionForm } from "@/components/subscription/subscription-form";
 
 type PodcastSummaryPageLayoutProps = {
   children: React.ReactNode;
@@ -20,60 +21,68 @@ type PodcastSummaryPageLayoutProps = {
 const solidColorPlaceholder =
   "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1' fill='%23F3F4F6'%3E%3Crect width='1' height='1'/%3E%3C/svg%3E";
 
-  
-  export async function generateMetadata({
-    frontmatter,
-  }: {
-    frontmatter: Frontmatter;
-  }): Promise<Metadata> {
-    const { title, description, publishedAt, tags, image, podcastHost, isPremium } = frontmatter;
-    
-    // Format the podcast host for the URL
-    const formattedPodcastHost = formatHostForUrl(podcastHost);
-    
-    // Build image URL for social sharing
-    const imageUrl = `https://podcast-summaries-dev.s3.amazonaws.com/podcast-thumbnails/${formattedPodcastHost}/${image}`;
-    
-    // Create base metadata
-    const metadata: Metadata = {
-      title: `${title} | ${podcastHost} Podcast Summary`,
-      description: description, // Using the description directly from frontmatter
-      keywords: tags,
-      
-      // Open Graph metadata (for Facebook, LinkedIn, etc.)
-      openGraph: {
-        title: title,
-        description: description,
-        type: 'article',
-        publishedTime: publishedAt,
-        images: [{
+export async function generateMetadata({
+  frontmatter,
+}: {
+  frontmatter: Frontmatter;
+}): Promise<Metadata> {
+  const {
+    title,
+    description,
+    publishedAt,
+    tags,
+    image,
+    podcastHost,
+    isPremium,
+  } = frontmatter;
+
+  // Format the podcast host for the URL
+  const formattedPodcastHost = formatHostForUrl(podcastHost);
+
+  // Build image URL for social sharing
+  const imageUrl = `https://podcast-summaries-dev.s3.amazonaws.com/podcast-thumbnails/${formattedPodcastHost}/${image}`;
+
+  // Create base metadata
+  const metadata: Metadata = {
+    title: `${title} | ${podcastHost} Podcast Summary`,
+    description: description, // Using the description directly from frontmatter
+    keywords: tags,
+
+    // Open Graph metadata (for Facebook, LinkedIn, etc.)
+    openGraph: {
+      title: title,
+      description: description,
+      type: "article",
+      publishedTime: publishedAt,
+      images: [
+        {
           url: imageUrl,
           width: 1280,
           height: 720,
           alt: `Thumbnail for ${title}`,
-        }],
-      },
-      
-      // Twitter metadata
-      twitter: {
-        card: 'summary_large_image',
-        title: title,
-        description: description,
-        images: [imageUrl],
-      },
+        },
+      ],
+    },
+
+    // Twitter metadata
+    twitter: {
+      card: "summary_large_image",
+      title: title,
+      description: description,
+      images: [imageUrl],
+    },
+  };
+
+  // Add noindex directive for premium content
+  if (isPremium) {
+    metadata.robots = {
+      index: false,
+      follow: true,
     };
-    
-    // Add noindex directive for premium content
-    if (isPremium) {
-      metadata.robots = {
-        index: false,
-        follow: true,
-      };
-    }
-    
-    return metadata;
   }
 
+  return metadata;
+}
 
 export async function PodcastSummaryPageLayout({
   children,
@@ -197,6 +206,7 @@ export async function PodcastSummaryPageLayout({
         )}
       </article>
       <PodcastSummaryTags tags={tags} />
+      <SubscriptionForm />
       <ScrollToTop />
     </div>
   );
