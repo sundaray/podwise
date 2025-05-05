@@ -3,17 +3,12 @@ import { Icons } from "@/components/icons";
 const annualFeatures = [
   "Access to all current podcast summaries",
   "Everything published in the next 12 months",
-  "Detailed transcripts and key takeaways",
-  "Mobile-friendly access on all devices",
 ];
 
 const lifetimeFeatures = [
   "Access to all current podcast summaries",
   "Everything we publish forever",
-  "Detailed transcripts and key takeaways",
-  "Mobile-friendly access on all devices",
-  "Priority access to new content",
-  "Exclusive bonus materials",
+  "Request summaries for 5 podcast episodes of your choosing each month",
 ];
 
 export default function Premium() {
@@ -54,8 +49,7 @@ export default function Premium() {
               <div className="mt-1 text-sm text-amber-700">
                 <p>
                   Prices will double on June 1st, 2025. We're adding 400+ new
-                  summaries in this month, bringing our total to 800+
-                  summaries.
+                  summaries in this month, bringing our total to 800+ summaries.
                 </p>
               </div>
             </div>
