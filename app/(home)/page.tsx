@@ -1,4 +1,11 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Podwise",
+  description: "Discover key insights from the world's best podcasts without spending hours listening."
+};
+
 
 export default function Home() {
   return (
@@ -38,7 +45,7 @@ export default function Home() {
           PODCAST SUMMARIES
         </h1>
         <p className="max-w-xl text-lg leading-7 font-medium text-balance text-gray-600">
-          Discover key insights of the world's best podcasts without spending
+          Discover key insights from the world's best podcasts without spending
           hours listening.
         </p>
         <Link

@@ -6,6 +6,11 @@ import { FilteredTags } from "@/components/filtered-tags";
 import { cn } from "@/lib/utils";
 import type { SearchParams } from "nuqs/server";
 import type { TagItem } from "@/components/tag-card";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Tags | Podwise",
+};
 
 type TagsPageProps = {
   searchParams: SearchParams;

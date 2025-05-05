@@ -1,4 +1,9 @@
+import type { Metadata } from "next";
 import { SubscriptionForm } from "@/components/subscription/subscription-form";
+
+export const metadata: Metadata = {
+  title: "About | podwise.org",
+};
 
 export default function Podwise() {
   return (

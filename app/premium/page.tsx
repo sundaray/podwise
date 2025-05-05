@@ -1,5 +1,12 @@
 import { Icons } from "@/components/icons";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Go Premium | Podwise",
+};
+
+
 const annualFeatures = [
   "Access to all current podcast summaries",
   "Everything published in the next 12 months",

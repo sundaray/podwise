@@ -1,3 +1,10 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy | Podwise",
+};
+
+
 export default function PrivacyPolicy() {
   return (
     <section className="mx-auto max-w-7xl px-4 lg:px-8">

@@ -45,7 +45,7 @@ export async function generateMetadata({
   // Create base metadata
   const metadata: Metadata = {
     title: `${title} | ${podcastHost} Podcast Summary`,
-    description: description, // Using the description directly from frontmatter
+    description: description, 
     keywords: tags,
 
     // Open Graph metadata (for Facebook, LinkedIn, etc.)
