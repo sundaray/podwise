@@ -156,7 +156,7 @@ export default async function AllPodcastsPage({
 
   return (
     <div className="group mx-auto max-w-6xl px-4">
-      <h1 className="mb-4 text-center text-4xl font-bold tracking-tight text-pretty text-gray-900 md:text-4xl">
+      <h1 className="mb-4 text-center text-2xl font-bold tracking-tight text-pretty text-gray-900 md:text-4xl">
         All Podcast Summaries
       </h1>
       <p className="mx-auto mb-20 max-w-5xl text-center text-pretty text-gray-600">

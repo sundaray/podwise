@@ -120,7 +120,7 @@ export async function PodcastSummaryPageLayout({
       <article className="podcast-summary relative">
         <header>
           <h1 className="my-7">{title}</h1>
-          <div className="relative flex items-center pl-4 font-medium text-gray-600 before:absolute before:left-0 before:h-3 before:w-[1.5px] before:bg-sky-600">
+          <div className="relative flex items-center pl-4 text-gray-600 before:absolute before:left-0 before:h-3 before:w-[1.5px] before:bg-sky-600">
             Posted
             <time
               dateTime={parseISO(publishedAt).toISOString()}
