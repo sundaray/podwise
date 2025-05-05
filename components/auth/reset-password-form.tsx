@@ -9,7 +9,7 @@ import { ErrorMessage } from "@/components/auth/error-message";
 import { useForm } from "@conform-to/react";
 import { parseWithZod } from "@conform-to/zod";
 import { ResetPasswordFormSchema } from "@/schema";
-import { resetPassword } from "@/app/credentials-actions";
+import { resetPassword } from "@/app/password-reset-actions";
 
 export function ResetPasswordForm() {
   const [lastResult, formAction, isPending] = useActionState(

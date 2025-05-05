@@ -7,7 +7,7 @@ export default function VerifyEmail() {
       <h2 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900">
         Verify your email
       </h2>
-      <p className="mb-4 text-pretty text-gray-600">
+      <p className="mb-4 text-sm text-pretty text-gray-600">
         We&apos;ve sent you a verification link
       </p>
       <Link

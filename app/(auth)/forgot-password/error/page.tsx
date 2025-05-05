@@ -1,16 +1,15 @@
 import Link from "next/link";
-import { libreBaskerville } from "@/app/layout";
 import { Icons } from "@/components/icons";
 
 export default function VerifyPasswordResetError() {
   return (
     <div className="mx-auto max-w-md px-4 text-center">
       <h2
-        className={`${libreBaskerville.className} mb-2 text-2xl font-semibold tracking-tight text-red-700`}
+        className="mb-2 text-2xl font-semibold tracking-tight text-red-600"
       >
         Password reset verification failed
       </h2>
-      <p className="mb-4 text-sm text-pretty text-gray-700">
+      <p className="mb-4 text-sm text-pretty text-gray-600">
         Something went wrong while verifying your password reset request. Please
         try again or request a new password reset link.
       </p>

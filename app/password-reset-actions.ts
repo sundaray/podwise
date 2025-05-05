@@ -73,7 +73,7 @@ export async function forgotPassword(prevState: unknown, formData: FormData) {
   } finally {
     if (!errorOccurred) {
       // Redirect to success page if no errors occurred
-      redirect("/verify-password-reset");
+      redirect("/forgot-password/check-email");
     }
   }
 }
@@ -151,7 +151,7 @@ export async function resetPassword(prevState: unknown, formData: FormData) {
   } finally {
     if (!errorOccurred) {
       // Redirect to success page if no errors occurred
-      redirect("/password-reset");
+      redirect("/reset-password/success");
     }
   }
 }

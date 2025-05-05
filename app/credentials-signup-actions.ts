@@ -58,6 +58,7 @@ export async function signUpWithEmailAndPassword(
 
     if (emailVerified) {
       // Account already exists with verified email
+      errorOccurred = true
       return submission.reply({
         formErrors: ["Account already exists. Please sign in."],
       });

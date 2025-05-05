@@ -9,7 +9,7 @@ import { ErrorMessage } from "@/components/auth/error-message";
 import { useForm } from "@conform-to/react";
 import { parseWithZod } from "@conform-to/zod";
 import { ForgotPasswordFormSchema } from "@/schema";
-import { forgotPassword } from "@/app/credentials-actions";
+import { forgotPassword } from "@/app/password-reset-actions";
 
 export function ForgotPasswordForm() {
   const [lastResult, formAction, isPending] = useActionState(
