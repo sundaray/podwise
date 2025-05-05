@@ -18,7 +18,7 @@ export function ReactAriaCheckbox(props: CheckboxProps) {
           isSelected ? "border-sky-600 bg-white" : "border-gray-300",
           isFocusVisible ? "ring-2 ring-sky-600 ring-offset-2" : "",
         ].join(" ")
-      }
+      } 
     >
       {({ isSelected }) =>
         isSelected && <Check className="size-3 text-sky-600" strokeWidth={3} />

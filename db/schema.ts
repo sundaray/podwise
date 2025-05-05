@@ -53,3 +53,15 @@ export const usersTable = pgTable("users", {
 // Define types for TypeScript
 export type User = typeof usersTable.$inferSelect;
 export type InsertUser = typeof usersTable.$inferInsert;
+
+export const subscribersTable = pgTable("subscribers", {
+  id: uuid("id").defaultRandom().primaryKey(),
+  email: text("email").notNull().unique(),
+  subscribedAt: timestamp("subscribed_at", { withTimezone: true })
+    .notNull()
+    .defaultNow(),
+});
+
+// Define types for TypeScript
+export type Subscriber = typeof subscribersTable.$inferSelect;
+export type InsertSubscriber = typeof subscribersTable.$inferInsert;

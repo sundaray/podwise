@@ -2,11 +2,11 @@ import { navbarLinks } from "@/config/navbar";
 import { MainNav } from "@/components/main-nav";
 import { Footer } from "@/components/footer";
 
-type TagsLayoutProps = {
+type AboutLayoutProps = {
   children: React.ReactNode;
 };
 
-export default function TagsLayout({ children }: TagsLayoutProps) {
+export default function AboutLayout({ children }: AboutLayoutProps) {
   return (
     <div className="flex min-h-screen flex-col">
       <header>

@@ -60,6 +60,13 @@ export const SignUpEmailPasswordFormSchema = z.object({
     .trim(),
 });
 
+export const SubscriptionFormSchema = z.object({
+  email: z
+    .string({ required_error: "Email is required" })
+    .email({ message: "Invalid email" })
+    .trim(),
+});
+
 export const SignInEmailPasswordFormSchema = z.object({
   email: z
     .string({ required_error: "Email is required" })
