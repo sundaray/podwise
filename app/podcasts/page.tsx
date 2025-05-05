@@ -156,10 +156,10 @@ export default async function AllPodcastsPage({
 
   return (
     <div className="group mx-auto max-w-6xl px-4">
-      <h1 className="mb-4 text-center text-2xl font-bold tracking-tight text-pretty text-gray-900 md:text-4xl">
+      <h1 className="mb-6 text-center text-2xl font-bold tracking-tight text-pretty text-gray-900 md:text-4xl">
         All Podcast Summaries
       </h1>
-      <p className="mx-auto mb-20 max-w-5xl text-center text-pretty text-gray-600">
+      <p className="mx-auto mb-20 max-w-5xl text-center text-lg text-pretty text-gray-600">
         Browse <span>{totalSummaries.toLocaleString()}</span>{" "}
         {totalSummaries === 1 ? "summary" : "summaries"} of the world’s best
         podcasts.
@@ -176,7 +176,7 @@ export default async function AllPodcastsPage({
 
       {(tier !== "all" || query || (shows && shows.length > 0)) &&
         totalPodcasts > 0 && (
-          <p className="mb-10 text-center text-sm text-pretty text-gray-600">
+          <p className="mb-10 text-center text-sm font-medium text-pretty text-gray-600">
             {statusMessage}
           </p>
         )}
@@ -192,7 +192,9 @@ export default async function AllPodcastsPage({
           ))}
         </div>
       ) : (
-        <p className="text-center text-red-600">No podcasts found</p>
+        <p className="text-center text-sm font-medium text-red-600">
+          No podcasts found
+        </p>
       )}
       <PodcastPagination totalPages={totalPages} />
     </div>

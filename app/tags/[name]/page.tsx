@@ -8,7 +8,7 @@ import { filterPodcasts } from "@/lib/podcast-filters";
 import { loadPodcastListSearchParams } from "@/lib/podcast-list-search-params";
 import { formatTagForDisplay } from "@/lib/utils";
 import type { SearchParams } from "nuqs/server";
-import {Icons} from "@/components/icons"
+import { Icons } from "@/components/icons";
 
 // Import all podcast lists
 import { chrisWilliamsonPodcastList } from "@/podcast-list/chris-williamson";
@@ -159,13 +159,13 @@ export default async function TagPage({ params, searchParams }: TagPageProps) {
           href="/tags"
           className="inline-flex items-center gap-1 rounded-full px-3 py-2 text-sm font-medium text-sky-600 transition-colors hover:bg-gray-100 hover:text-sky-700"
         >
-          <Icons.chevronLeft className="size-4" />
+          <Icons.chevronLeft className="size-4 text-gray-500" />
           All Tags
         </Link>
         <h1 className="mt-6 mb-4 text-4xl font-bold tracking-tight text-gray-900">
           Tag: <span className="text-sky-600">{tagName}</span>
         </h1>
-        <p className="text-pretty text-gray-600">
+        <p className="text-pretty text-lg text-gray-600">
           Found {totalPodcasts} podcast{" "}
           {totalPodcasts === 1 ? "summary" : "summaries"} tagged with "{tagName}
           "

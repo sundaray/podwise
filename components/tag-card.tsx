@@ -23,7 +23,7 @@ export function TagCard({ letter, tags, className }: TagCardProps) {
       <h2 className="mb-2 text-2xl font-semibold text-gray-700">{letter}</h2>
 
       {/* Semantic divider */}
-      <hr className="mb-4 border-gray-200" aria-hidden="true" />
+      <hr className="mb-6 border-gray-200" aria-hidden="true" />
 
       {/* Tags starting with this letter */}
       <TagGroup aria-label={`Tags starting with ${letter}`}>

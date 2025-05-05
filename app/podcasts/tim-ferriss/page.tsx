@@ -18,7 +18,7 @@ export async function generateMetadata({
 
   // Base metadata
   const metadata: Metadata = {
-    title: "The Tim Ferriss Show Podcast Summaries",
+    title: "The Tim Ferriss Show",
     description:
       "Discover key insights and actionable takeaways from The Tim Ferriss Show podcast episodes.",
     alternates: {
@@ -44,7 +44,7 @@ export async function generateMetadata({
 
 const ITEMS_PER_PAGE = 9;
 
-export default async function LewisHowesPodcastPage({
+export default async function TimFerrissPodcastPage({
   searchParams,
 }: {
   searchParams: SearchParams;
@@ -84,7 +84,7 @@ export default async function LewisHowesPodcastPage({
   const statusMessage = (
     <>
       Showing {paginatedPodcasts.length} of {totalPodcasts}{" "}
-      {tier !== "all" && <em>{tier}</em>} podcast summaries
+      {tier !== "all" && tier} podcast summaries
       {query ? ` matching "${query}"` : ""}
     </>
   );
@@ -92,9 +92,9 @@ export default async function LewisHowesPodcastPage({
   return (
     <div className="group mx-auto max-w-6xl px-4">
       <h1
-        className={`${libreBaskerville.className} mb-8 text-center text-4xl font-semibold tracking-tight text-pretty text-gray-900`}
+        className="mb-6 text-center text-4xl font-semibold tracking-tight text-pretty text-gray-900"
       >
-        "The Tim Ferriss Show" Podcast Summaries
+        The Tim Ferriss Show
       </h1>
       <p className="mx-auto mb-20 max-w-5xl text-center text-lg/7 leading-7 font-medium text-balance text-gray-700">
         The Tim Ferriss Show, hosted by five-time #1 New York Times bestselling
@@ -126,7 +126,7 @@ export default async function LewisHowesPodcastPage({
           ))}
         </div>
       ) : (
-        <p className="text-center text-red-600">No podcasts found</p>
+        <p className="text-center text-sm font-medium text-red-600">No podcasts found</p>
       )}
       <PodcastPagination totalPages={totalPages} />
     </div>

@@ -7,7 +7,6 @@ import { PodcastTabs } from "@/components/podcast-tabs";
 import { filterPodcasts } from "@/lib/podcast-filters";
 import { loadPodcastListSearchParams } from "@/lib/podcast-list-search-params";
 import type { SearchParams } from "nuqs/server";
-import { libreBaskerville } from "@/app/layout";
 
 export async function generateMetadata({
   searchParams,
@@ -18,7 +17,7 @@ export async function generateMetadata({
 
   // Base metadata
   const metadata: Metadata = {
-    title: "Chris Williamson: Modern Wisdom Podcast Summaries",
+    title: "Modern Wisdom by Chris Williamson",
     description:
       "Discover key insights and actionable takeaways from Chris Williamson's Modern Wisdom podcast episodes.",
     alternates: {
@@ -80,11 +79,10 @@ export default async function ChrisWilliamsonPodcastPage({
   const endIndex = startIndex + ITEMS_PER_PAGE;
   const paginatedPodcasts = filteredPodcasts.slice(startIndex, endIndex);
 
-  // Create user-friendly status message
   const statusMessage = (
     <>
       Showing {paginatedPodcasts.length} of {totalPodcasts}{" "}
-      {tier !== "all" && <em>{tier}</em>} podcast summaries
+      {tier !== "all" && tier} podcast summaries
       {query ? ` matching "${query}"` : ""}
     </>
   );
@@ -94,7 +92,7 @@ export default async function ChrisWilliamsonPodcastPage({
       <h1
         className={`mb-6 text-center text-4xl font-bold tracking-tight text-pretty text-gray-900`}
       >
-        Chris Williamson: "Modern Wisdom" Podcast Summaries
+        Modern Wisdom by Chris Williamson
       </h1>
       <p className="mx-auto mb-20 max-w-5xl text-center text-lg/7 text-balance text-gray-600">
         Chris Williamson is the host of the popular podcast "Modern Wisdom",
@@ -111,7 +109,7 @@ export default async function ChrisWilliamsonPodcastPage({
       <PodcastTabs className="mb-10" />
 
       {(tier !== "all" || query) && totalPodcasts > 0 && (
-        <p className="mb-10 text-center text-sm font-medium text-pretty text-gray-500">
+        <p className="mb-10 text-center text-sm font-medium text-pretty text-gray-600">
           {statusMessage}
         </p>
       )}
@@ -123,7 +121,9 @@ export default async function ChrisWilliamsonPodcastPage({
           ))}
         </div>
       ) : (
-        <p className="text-center text-red-600">No podcasts found</p>
+        <p className="text-center text-sm font-medium text-red-600">
+          No podcasts found
+        </p>
       )}
       <PodcastPagination totalPages={totalPages} />
     </div>

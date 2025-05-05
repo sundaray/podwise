@@ -153,7 +153,7 @@ export function PodcastFilter() {
                     </GridList>
                   ) : (
                     /* no matches – show a friendly message */
-                    <p className="text-center text-sm text-red-600">
+                    <p className="text-center text-sm font-medium text-red-600">
                       No podcasts found
                     </p>
                   )}

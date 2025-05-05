@@ -18,7 +18,7 @@ export async function generateMetadata({
 
   // Base metadata
   const metadata: Metadata = {
-    title: "Simon Sinek: A Bit of Optimism Podcast Summaries",
+    title: "A Bit of Optimism by Simon Sinek",
     description:
       "Discover key insights and actionable takeaways from the A Bit of Optimism podcast episodes.",
     alternates: {
@@ -84,7 +84,7 @@ export default async function SimonSinekPodcastPage({
   const statusMessage = (
     <>
       Showing {paginatedPodcasts.length} of {totalPodcasts}{" "}
-      {tier !== "all" && <em>{tier}</em>} podcast summaries
+      {tier !== "all" && tier} podcast summaries
       {query ? ` matching "${query}"` : ""}
     </>
   );
@@ -92,9 +92,9 @@ export default async function SimonSinekPodcastPage({
   return (
     <div className="group mx-auto max-w-6xl px-4">
       <h1
-        className={`${libreBaskerville.className} mb-8 text-center text-4xl font-semibold tracking-tight text-pretty text-gray-900`}
+        className={`${libreBaskerville.className} mb-6 text-center text-4xl font-semibold tracking-tight text-pretty text-gray-900`}
       >
-        Simon Sinek: "A Bit of Optimism" Podcast Summaries
+        A Bit of Optimism by Simon Sinek
       </h1>
       <p className="mx-auto mb-20 max-w-5xl text-center text-lg/7 leading-7 font-medium text-balance text-gray-700">
         A Bit of Optimism, hosted by bestselling author and inspirational
@@ -127,7 +127,7 @@ export default async function SimonSinekPodcastPage({
           ))}
         </div>
       ) : (
-        <p className="text-center text-red-600">No podcasts found</p>
+        <p className="text-center text-sm font-medium text-red-600">No podcasts found</p>
       )}
       <PodcastPagination totalPages={totalPages} />
     </div>

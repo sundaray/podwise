@@ -43,10 +43,10 @@ export default async function TagsPage({ searchParams }: TagsPageProps) {
 
   return (
     <div className="group mx-auto max-w-3xl px-4 md:px-8">
-      <h1 className="mb-2 text-center text-4xl font-bold tracking-tight text-pretty text-gray-900">
+      <h1 className="mb-4 text-center text-4xl font-bold tracking-tight text-pretty text-gray-900">
         Podcast Summary Tags
       </h1>
-      <p className="mb-12 text-center text-pretty text-gray-600">
+      <p className="mb-12 text-center text-lg text-pretty text-gray-600">
         Click any tag to explore related podcast summaries.
       </p>
 

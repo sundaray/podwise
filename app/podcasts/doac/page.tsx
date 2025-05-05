@@ -7,7 +7,6 @@ import { PodcastTabs } from "@/components/podcast-tabs";
 import { filterPodcasts } from "@/lib/podcast-filters";
 import { loadPodcastListSearchParams } from "@/lib/podcast-list-search-params";
 import type { SearchParams } from "nuqs/server";
-import { libreBaskerville } from "@/app/layout";
 
 export async function generateMetadata({
   searchParams,
@@ -18,7 +17,7 @@ export async function generateMetadata({
 
   // Base metadata
   const metadata: Metadata = {
-    title: "The Diary Of A CEO Podcast Summaries",
+    title: "The Diary Of A CEO by Steven Bartlett",
     description:
       "Discover key insights and actionable takeaways from The Diary Of A CEO podcast episodes.",
     alternates: {
@@ -84,7 +83,7 @@ export default async function DoacPodcastPage({
   const statusMessage = (
     <>
       Showing {paginatedPodcasts.length} of {totalPodcasts}{" "}
-      {tier !== "all" && <em>{tier}</em>} podcast summaries
+      {tier !== "all" && tier} podcast summaries
       {query ? ` matching "${query}"` : ""}
     </>
   );
@@ -92,9 +91,9 @@ export default async function DoacPodcastPage({
   return (
     <div className="group mx-auto max-w-6xl px-4">
       <h1
-        className={`${libreBaskerville.className} mb-8 text-center text-4xl font-semibold tracking-tight text-pretty text-gray-900`}
+        className="mb-6 text-center text-4xl font-semibold tracking-tight text-pretty text-gray-900"
       >
-        "The Diary Of a CEO" Podcast Summaries
+        The Diary Of a CEO by Steven Bartlett
       </h1>
       <p className="mx-auto mb-20 max-w-5xl text-center text-lg/7 leading-7 font-medium text-balance text-gray-700">
         The Diary Of A CEO is a globally renowned podcast hosted by Steven
@@ -104,10 +103,7 @@ export default async function DoacPodcastPage({
         entrepreneurs, athletes, scientists, and thought leaders. Each episode
         dives deep into the personal and professional journeys of its guests,
         exploring topics such as business strategies, mental health, leadership,
-        financial success, relationships, and societal issues. With a mission to
-        uncover untold stories and actionable insights, The Diary Of A CEO
-        combines compelling storytelling with practical wisdom, making it a
-        must-listen for anyone seeking inspiration and growth.
+        financial success, relationships, and societal issues. 
       </p>
       <PodcastSearch
         placeholder="Search podcast summaries by title"
@@ -129,7 +125,7 @@ export default async function DoacPodcastPage({
           ))}
         </div>
       ) : (
-        <p className="text-center text-red-600">No podcasts found</p>
+        <p className="text-center text-sm font-medium text-red-600">No podcasts found</p>
       )}
       <PodcastPagination totalPages={totalPages} />
     </div>

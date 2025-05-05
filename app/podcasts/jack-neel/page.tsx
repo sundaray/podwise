@@ -18,9 +18,9 @@ export async function generateMetadata({
 
   // Base metadata
   const metadata: Metadata = {
-    title: "Jack Neel Podcast Summaries",
+    title: "The Jack Neel Podcast",
     description:
-      "Discover key insights and actionable takeaways from Jack Neel's podcast episodes.",
+      "Discover key insights and actionable takeaways from the Jack Neel podcast episodes.",
     alternates: {
       canonical: `https://podwise.org/podcasts/jack-neel${
         page > 1 ? `?page=${page}` : ""
@@ -84,7 +84,7 @@ export default async function JackNeelPodcastPage({
   const statusMessage = (
     <>
       Showing {paginatedPodcasts.length} of {totalPodcasts}{" "}
-      {tier !== "all" && <em>{tier}</em>} podcast summaries
+      {tier !== "all" && tier} podcast summaries
       {query ? ` matching "${query}"` : ""}
     </>
   );
@@ -92,9 +92,9 @@ export default async function JackNeelPodcastPage({
   return (
     <div className="group mx-auto max-w-6xl px-4">
       <h1
-        className={`${libreBaskerville.className} mb-8 text-center text-4xl font-semibold tracking-tight text-pretty text-gray-900`}
+        className={`${libreBaskerville.className} mb-6 text-center text-4xl font-semibold tracking-tight text-pretty text-gray-900`}
       >
-        Jack Neel Podcast Summaries
+        The Jack Neel Podcast
       </h1>
       <p className="mx-auto mb-20 max-w-5xl text-center text-lg/7 leading-7 font-medium text-balance text-gray-700">
         The Jack Neel Podcast dives into the fascinating worlds of crime,
@@ -128,7 +128,7 @@ export default async function JackNeelPodcastPage({
           ))}
         </div>
       ) : (
-        <p className="text-center text-red-600">No podcasts found</p>
+        <p className="text-center text-sm font-medium text-red-600">No podcasts found</p>
       )}
       <PodcastPagination totalPages={totalPages} />
     </div>

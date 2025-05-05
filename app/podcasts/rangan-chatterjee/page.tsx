@@ -18,9 +18,9 @@ export async function generateMetadata({
 
   // Base metadata
   const metadata: Metadata = {
-    title: "Rangan Chatterjee: Feel Better Live More Podcast Summaries",
+    title: "Feel Better, Live More by Rangan Chatterjee",
     description:
-      "Discover key insights and actionable takeaways from the Feel Better Live More podcast episodes.",
+      "Discover key insights and actionable takeaways from the Feel Better, Live More podcast episodes.",
     alternates: {
       canonical: `https://podwise.org/podcasts/rangan-chatterjee${
         page > 1 ? `?page=${page}` : ""
@@ -84,7 +84,7 @@ export default async function RanganChatterjeePodcastPage({
   const statusMessage = (
     <>
       Showing {paginatedPodcasts.length} of {totalPodcasts}{" "}
-      {tier !== "all" && <em>{tier}</em>} podcast summaries
+      {tier !== "all" && tier} podcast summaries
       {query ? ` matching "${query}"` : ""}
     </>
   );
@@ -92,9 +92,9 @@ export default async function RanganChatterjeePodcastPage({
   return (
     <div className="group mx-auto max-w-6xl px-4">
       <h1
-        className={`${libreBaskerville.className} mb-8 text-center text-4xl font-semibold tracking-tight text-pretty text-gray-900`}
+        className={`${libreBaskerville.className} mb-6 text-center text-4xl font-semibold tracking-tight text-pretty text-gray-900`}
       >
-        Dr. Rangan Chatterjee: "Feel Better, Live More" Podcast Summaries
+        Feel Better, Live More by Dr. Rangan Chatterjee
       </h1>
       <p className="mx-auto mb-20 max-w-5xl text-center text-lg/7 leading-7 font-medium text-balance text-gray-700">
         Feel Better, Live More, hosted by Dr. Rangan Chatterjee, a medical
@@ -125,7 +125,7 @@ export default async function RanganChatterjeePodcastPage({
           ))}
         </div>
       ) : (
-        <p className="text-center text-red-600">No podcasts found</p>
+        <p className="text-center text-sm font-medium text-red-600">No podcasts found</p>
       )}
       <PodcastPagination totalPages={totalPages} />
     </div>

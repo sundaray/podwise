@@ -18,7 +18,7 @@ export async function generateMetadata({
 
   // Base metadata
   const metadata: Metadata = {
-    title: "Scott D. Clary: Success Story Podcast Summaries",
+    title: "Success Story by Scott D. Clary",
     description:
       "Discover key insights and actionable takeaways from the Success Story podcast episodes.",
     alternates: {
@@ -84,7 +84,7 @@ export default async function ScottDClaryPodcastPage({
   const statusMessage = (
     <>
       Showing {paginatedPodcasts.length} of {totalPodcasts}{" "}
-      {tier !== "all" && <em>{tier}</em>} podcast summaries
+      {tier !== "all" && tier} podcast summaries
       {query ? ` matching "${query}"` : ""}
     </>
   );
@@ -92,9 +92,9 @@ export default async function ScottDClaryPodcastPage({
   return (
     <div className="group mx-auto max-w-6xl px-4">
       <h1
-        className={`${libreBaskerville.className} mb-8 text-center text-4xl font-semibold tracking-tight text-pretty text-gray-900`}
+        className={`${libreBaskerville.className} mb-6 text-center text-4xl font-semibold tracking-tight text-pretty text-gray-900`}
       >
-        Scott D. Clary: "Success Story" Podcast Summaries
+        Success Story by Scott D. Clary
       </h1>
       <p className="mx-auto mb-20 max-w-5xl text-center text-lg/7 leading-7 font-medium text-balance text-gray-700">
         Success Story, hosted by Scott D. Clary, is a top-ranked business and
@@ -125,7 +125,7 @@ export default async function ScottDClaryPodcastPage({
           ))}
         </div>
       ) : (
-        <p className="text-center text-red-600">No podcasts found</p>
+        <p className="text-center text-sm font-medium text-red-600">No podcasts found</p>
       )}
       <PodcastPagination totalPages={totalPages} />
     </div>

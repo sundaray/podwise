@@ -11,27 +11,27 @@ export default function Podwise() {
         <p className="mt-12 mb-7 text-gray-700">Hello! Welcome to Podwise!</p>
 
         <p className="mb-7 text-gray-700">
-          My name is Hemanta Sundaray. I am a software engineer based out of
-          Odisha, India.
+          My name is Hemanta Sundaray, a software engineer based in Odisha,
+          India.
         </p>
 
         <p className="mb-7 text-gray-700">
-          I love listening to podcasts, but they are a big time sink. So I
-          thought why not use AI to extract the key takeaways. And this is how
-          the idea for Podwise was born.
+          I'm an avid podcast listener, but let's face it, they can be a major
+          time sink. That's why I created Podwise: to use AI to extract the key
+          takeaways so you can get the insights without spending hours
+          listening.
         </p>
 
         <p className="mb-7 text-gray-700">
-          Podwise contains summaries of worlds best podcasts, so that you can
-          get the key insights without spending hours listening to them.
-          Currently there are 400+ summaries. I will keep adding new summaries
-          as and when new podcast episodes are released. I will also keep on
-          adding new podcast shows that I find interesting.
+          Podwise contains summaries of the world's best podcasts, with
+          currently 400+ summaries and growing. I keep adding new summaries as
+          episodes release and continually expand my collection with interesting
+          new shows.
         </p>
 
         <p className="mb-7 text-gray-700">
-          Every Friday, I send an email with 5 best ideas I found for that week.
-          If you want to get notified, subscribe below:
+          Every Friday, I send an email with the 5 best ideas I discovered that
+          week. Want to stay updated? Subscribe below:
         </p>
 
         <SubscriptionForm />

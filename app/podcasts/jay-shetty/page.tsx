@@ -18,7 +18,7 @@ export async function generateMetadata({
 
   // Base metadata
   const metadata: Metadata = {
-    title: "On Purpose with Jay Shetty Podcast Summaries",
+    title: "On Purpose with Jay Shetty",
     description:
       "Discover key insights and actionable takeaways from the On Purpose with Jay Shetty podcast episodes.",
     alternates: {
@@ -84,7 +84,7 @@ export default async function JayShettyPodcastPage({
   const statusMessage = (
     <>
       Showing {paginatedPodcasts.length} of {totalPodcasts}{" "}
-      {tier !== "all" && <em>{tier}</em>} podcast summaries
+      {tier !== "all" && tier} podcast summaries
       {query ? ` matching "${query}"` : ""}
     </>
   );
@@ -92,9 +92,9 @@ export default async function JayShettyPodcastPage({
   return (
     <div className="group mx-auto max-w-6xl px-4">
       <h1
-        className={`${libreBaskerville.className} mb-8 text-center text-4xl font-semibold tracking-tight text-pretty text-gray-900`}
+        className={`${libreBaskerville.className} mb-6 text-center text-4xl font-semibold tracking-tight text-pretty text-gray-900`}
       >
-        "On Purpose with Jay Shetty" Podcast Summaries
+        On Purpose with Jay Shetty
       </h1>
       <p className="mx-auto mb-20 max-w-5xl text-center text-lg/7 leading-7 font-medium text-balance text-gray-700">
         On Purpose with Jay Shetty, hosted by former monk Jay Shetty, is a
@@ -105,8 +105,7 @@ export default async function JayShettyPodcastPage({
         and mindfulness practices. With a focus on practical wisdom and
         actionable insights, Jay blends storytelling, spirituality, and modern
         science to empower listeners to live with intention and create a life of
-        purpose. Perfect for anyone seeking motivation and tools to navigate
-        life’s challenges.
+        purpose. 
       </p>
       <PodcastSearch
         placeholder="Search podcast summaries by title"
@@ -128,7 +127,7 @@ export default async function JayShettyPodcastPage({
           ))}
         </div>
       ) : (
-        <p className="text-center text-red-600">No podcasts found</p>
+        <p className="text-center text-sm font-medium text-red-600">No podcasts found</p>
       )}
       <PodcastPagination totalPages={totalPages} />
     </div>

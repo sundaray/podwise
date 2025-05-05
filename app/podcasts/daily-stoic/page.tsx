@@ -7,7 +7,6 @@ import { PodcastTabs } from "@/components/podcast-tabs";
 import { filterPodcasts } from "@/lib/podcast-filters";
 import { loadPodcastListSearchParams } from "@/lib/podcast-list-search-params";
 import type { SearchParams } from "nuqs/server";
-import { libreBaskerville } from "@/app/layout";
 
 export async function generateMetadata({
   searchParams,
@@ -18,7 +17,7 @@ export async function generateMetadata({
 
   // Base metadata
   const metadata: Metadata = {
-    title: "Daily Stoic Podcast Summaries",
+    title: "Daily Stoic by Ryan Holiday",
     description:
       "Discover key insights and actionable takeaways from the Daily Stoic podcast episodes.",
     alternates: {
@@ -84,7 +83,7 @@ export default async function DailyStoicPodcastPage({
   const statusMessage = (
     <>
       Showing {paginatedPodcasts.length} of {totalPodcasts}{" "}
-      {tier !== "all" && <em>{tier}</em>} podcast summaries
+      {tier !== "all" && tier} podcast summaries
       {query ? ` matching "${query}"` : ""}
     </>
   );
@@ -92,9 +91,9 @@ export default async function DailyStoicPodcastPage({
   return (
     <div className="group mx-auto max-w-6xl px-4">
       <h1
-        className={`${libreBaskerville.className} mb-8 text-center text-4xl font-semibold tracking-tight text-pretty text-gray-900`}
+        className="mb-6 text-center text-4xl font-semibold tracking-tight text-pretty text-gray-900"
       >
-        "Daily Stoic" Podcast Summaries
+        Daily Stoic by Ryan Holiday
       </h1>
       <p className="mx-auto mb-20 max-w-5xl text-center text-lg/7 leading-7 font-medium text-balance text-gray-700">
         The Daily Stoic podcast, hosted by Ryan Holiday, bestselling author and
@@ -127,7 +126,7 @@ export default async function DailyStoicPodcastPage({
           ))}
         </div>
       ) : (
-        <p className="text-center text-red-600">No podcasts found</p>
+        <p className="text-center text-sm font-medium text-red-600">No podcasts found</p>
       )}
       <PodcastPagination totalPages={totalPages} />
     </div>
