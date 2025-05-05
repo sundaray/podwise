@@ -14,10 +14,10 @@ export default function VerifySubscriptionEmailError() {
         request a new verification link.
       </p>
       <Link
-        href="/signin"
+        href="/podcasts"
         className="inline-flex items-center gap-1 rounded-full px-3 py-2 text-sm font-medium text-sky-700 transition-colors hover:bg-gray-100"
       >
-        Back to sign in
+        Back to podcasts
         <Icons.chevronRight className="size-4" />
       </Link>
     </div>

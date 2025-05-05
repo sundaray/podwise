@@ -11,7 +11,9 @@ import { eq } from "drizzle-orm";
  *
  ************************************************/
 
-export async function isSubscriptionEmailVerified(email: string): Promise<boolean> {
+export async function isSubscriptionEmailVerified(
+  email: string,
+): Promise<boolean> {
   try {
     const users = await db
       .select({ emailVerified: subscribersTable.emailVerified })
@@ -71,34 +73,41 @@ import { sesClient } from "@/lib/aws";
 import { SendEmailCommand } from "@aws-sdk/client-ses";
 import { SubscriptionEmailVerificationTemplate } from "@/components/subscription/subscription-email-verification-template";
 
-export async function sendSubscriptionVerificationEmail(email: string, url: string) {
-      // Convert the email to HTML
-      const emailHtml = await render(SubscriptionEmailVerificationTemplate({ url }))
+export async function sendSubscriptionVerificationEmail(
+  email: string,
+  url: string,
+) {
+  // Convert the email to HTML
+  const emailHtml = await render(
+    SubscriptionEmailVerificationTemplate({ url }),
+  );
 
-      const sendEmailCommand = new SendEmailCommand({
-        Destination: {
-          ToAddresses: [email],
+  const sendEmailCommand = new SendEmailCommand({
+    Destination: {
+      ToAddresses: [email],
+    },
+    Message: {
+      Body: {
+        Html: {
+          Charset: "UTF-8",
+          Data: emailHtml,
         },
-        Message: {
-          Body: {
-            Html: {
-              Charset: "UTF-8",
-              Data: emailHtml,
-            },
-          },
-          Subject: {
-            Charset: "UTF-8",
-            Data: "Subscription link for 5-idea friday newsletter",
-          },
-        },
-        Source: process.env.EMAIL_FROM,
-      })
-  
+      },
+      Subject: {
+        Charset: "UTF-8",
+        Data: "Subscription link for 5-idea friday newsletter",
+      },
+    },
+    Source: process.env.EMAIL_FROM,
+  });
+
   try {
-    await sesClient.send(sendEmailCommand)
+    await sesClient.send(sendEmailCommand);
   } catch (error) {
     const message =
       error instanceof Error ? error.message : `Unknown error: ${error}`;
-    throw new Error(`Failed to send subscription verification email: ${message}`);
+    throw new Error(
+      `Failed to send subscription verification email: ${message}`,
+    );
   }
 }
