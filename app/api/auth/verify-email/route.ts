@@ -13,7 +13,7 @@ export async function GET(request: NextRequest) {
   try {
     const url = request.nextUrl;
     const tokenFromUrl = url.searchParams.get("token");
-    const authErrorUrl = new URL("/verify-email-error", url);
+    const authErrorUrl = new URL("/signup/verify-email/error", url);
 
     const sessionExists = await doesEmailVerificationSessionExist();
     const payload = await getEmailVerificationSession();
@@ -34,9 +34,9 @@ export async function GET(request: NextRequest) {
 
     await deleteEmailVerificationSession();
 
-    return NextResponse.redirect(new URL("/email-verified", url));
+    return NextResponse.redirect(new URL("/signup/email-verified", url));
   } catch (error) {
-    const authErrorUrl = new URL("/auth-error", request.nextUrl);
+    const authErrorUrl = new URL("/signup/verify-email/error", request.nextUrl);
     return NextResponse.redirect(authErrorUrl);
   }
 }

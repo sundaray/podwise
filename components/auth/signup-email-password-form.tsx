@@ -12,20 +12,20 @@ import { Button } from "@/components/ui/button";
 import { Icons } from "@/components/icons";
 import { ErrorMessage } from "@/components/auth/error-message";
 
-import { signInWithEmailAndPassword } from "@/app/credentials-signin-actions";
-import { SignInEmailPasswordFormSchema } from "@/schema";
+import { signUpWithEmailAndPassword } from "@/app/credentials-signup-actions";
+import { SignUpEmailPasswordFormSchema } from "@/schema";
 
-export function SignInEmailPasswordForm() {
+export function SignUpEmailPasswordForm() {
   const searchParams = useSearchParams();
   const next = searchParams.get("next") || "/";
 
-  const boundSignInWithEmailAndPassword = signInWithEmailAndPassword.bind(
+  const boundSignUpWithEmailAndPassword = signUpWithEmailAndPassword.bind(
     null,
     next,
   );
 
   const [lastResult, formAction, isPending] = useActionState(
-    boundSignInWithEmailAndPassword,
+    boundSignUpWithEmailAndPassword,
     undefined,
   );
 
@@ -37,7 +37,7 @@ export function SignInEmailPasswordForm() {
     shouldRevalidate: "onInput",
     onValidate({ formData }) {
       return parseWithZod(formData, {
-        schema: SignInEmailPasswordFormSchema,
+        schema: SignUpEmailPasswordFormSchema,
       });
     },
   });
@@ -78,17 +78,7 @@ export function SignInEmailPasswordForm() {
           />
         </div>
         <div>
-          <div className="flex items-center justify-between">
-            <Label htmlFor="password">Password</Label>
-            <div className="text-sm">
-              <Link
-                href="/forgot-password"
-                className="font-medium text-sky-600 hover:text-sky-700"
-              >
-                Forgot password?
-              </Link>
-            </div>
-          </div>
+          <Label htmlFor="password">Password</Label>
           <div className="relative">
             <Input
               id="password"
@@ -129,19 +119,19 @@ export function SignInEmailPasswordForm() {
           {isPending ? (
             <>
               <Icons.loader className="size-3 animate-spin" />
-              Signing in...
+              Signing up...
             </>
           ) : (
-            "Sign in"
+            "Sign up"
           )}
         </Button>
         <div className="mt-6 text-center text-sm">
-          <span className="text-gray-500">Don't have an account? </span>
+          <span className="text-gray-500">Already have an account? </span>
           <Link
-            href="/signup"
+            href="/signin"
             className="text-sky-600 transition-colors hover:text-sky-700"
           >
-            Sign up
+            Sign in
           </Link>
         </div>
       </div>

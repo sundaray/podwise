@@ -176,7 +176,7 @@ export default async function AllPodcastsPage({
 
       {(tier !== "all" || query || (shows && shows.length > 0)) &&
         totalPodcasts > 0 && (
-          <p className="mb-10 text-center text-sm text-pretty text-gray-500">
+          <p className="mb-10 text-center text-sm text-pretty text-gray-600">
             {statusMessage}
           </p>
         )}

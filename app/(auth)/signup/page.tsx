@@ -1,15 +1,15 @@
-import { SignInGoogleForm } from "@/components/auth/sign-in-google-form";
-import { SignInEmailPasswordForm } from "@/components/auth/signin-email-password-form";
+import { SignUpGoogleForm } from "@/components/auth/sign-up-google-form";
+import { SignUpEmailPasswordForm } from "@/components/auth/signup-email-password-form";
 
-export default function SignIn() {
+export default function SignUp() {
   return (
     <div className="mx-auto max-w-[380px] px-4">
       <h2 className="text-center text-2xl font-semibold tracking-tight text-gray-900">
         Welcome
       </h2>
-      <p className="mt-2 text-center text-sm text-gray-600">Sign in to your account</p>
+      <p className="mt-2 text-center text-sm text-gray-600">Create a new account</p>
       <div className="mt-12 grid gap-4">
-        <SignInGoogleForm />
+        <SignUpGoogleForm />
         <div className="relative">
           <div className="absolute inset-0 flex items-center">
             <span className="w-full border-t" />
@@ -18,7 +18,7 @@ export default function SignIn() {
             <span className="bg-background px-2">Or continue with</span>
           </div>
         </div>
-        <SignInEmailPasswordForm />
+        <SignUpEmailPasswordForm />
       </div>
     </div>
   );

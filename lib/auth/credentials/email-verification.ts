@@ -88,7 +88,7 @@ export async function sendVerificationEmail(email: string, url: string) {
           },
           Subject: {
             Charset: "UTF-8",
-            Data: "Sign-in link for www.podwise.org",
+            Data: "Sign-up link for www.podwise.org",
           },
         },
         Source: process.env.EMAIL_FROM,

@@ -25,7 +25,7 @@ export default function Premium() {
           <h1 className="text-5xl font-bold tracking-tight text-gray-900">
             Go Premium
           </h1>
-          <p className="mt-4 text-lg leading-8 text-gray-600">
+          <p className="mt-6 text-lg/7 text-gray-600">
             Unlock access to our complete library of podcast summaries
           </p>
         </div>
@@ -68,7 +68,7 @@ export default function Premium() {
             <h3 className="text-3xl font-semibold tracking-tight text-gray-900">
               Annual Membership
             </h3>
-            <p className="mt-6 text-sm/6 text-gray-600">
+            <p className="mt-6 text-gray-600">
               Get access to all current summaries and everything we publish for
               the next 12 months.
             </p>
@@ -126,7 +126,7 @@ export default function Premium() {
             <h3 className="text-3xl font-semibold tracking-tight text-gray-900">
               Lifetime Membership
             </h3>
-            <p className="mt-6 text-base/7 text-gray-600">
+            <p className="mt-6 text-gray-600">
               Get unlimited access to all current and future podcast summaries
               forever.
             </p>

@@ -15,7 +15,7 @@ export function EmailVerificationTemplate({ url }: { url: string }) {
         </Text>
         <Button
           href={url}
-          className="rounded bg-sky-700 px-4 py-2 text-base font-medium text-white"
+          className="rounded-full bg-sky-600 px-4 py-2 text-sm font-medium text-white"
         >
           Verify Email
         </Button>
