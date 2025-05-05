@@ -57,6 +57,7 @@ export type InsertUser = typeof usersTable.$inferInsert;
 export const subscribersTable = pgTable("subscribers", {
   id: uuid("id").defaultRandom().primaryKey(),
   email: text("email").notNull().unique(),
+  emailVerified: boolean("email_verified").notNull().default(false),
   subscribedAt: timestamp("subscribed_at", { withTimezone: true })
     .notNull()
     .defaultNow(),

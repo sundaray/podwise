@@ -1,27 +1,24 @@
 import { db } from "@/db";
 import { subscribersTable } from "@/db/schema";
 import type { Subscriber, InsertSubscriber } from "@/db/schema";
-import { eq } from "drizzle-orm";
 
-
-export async function createSubscriber(email: string): Promise<{ data: Subscriber }> {
+export async function createSubscriber(
+  email: string,
+): Promise<{ data: Subscriber }> {
   try {
-      const userData: InsertSubscriber = {
-        email,
-      };
+    const userData: InsertSubscriber = {
+      email,
+      emailVerified: true,
+    };
 
-      // Create the user and return the result
-      const [newUser] = await db
-        .insert(usersTable)
-        .values(userData)
-        .returning();
+    const [subscriber] = await db
+      .insert(subscribersTable)
+      .values(userData)
+      .returning();
 
-      return { data: newUser };
-
-    // This should never happen but TypeScript wants a return
-    throw new Error("Unexpected state in createSubscriber function");
+    return { data: subscriber };
   } catch (error) {
-    console.log("Create subscriber error: ", error);
+    console.error("Create subscriber error: ", error);
     throw error;
   }
 }

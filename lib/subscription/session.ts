@@ -20,17 +20,17 @@ export async function encrypt(payload: any): Promise<string> {
       .setExpirationTime("1hr")
       .encrypt(secret);
   } catch (error) {
-    throw new Error("Failed to encrypt payload.");
+    throw new Error("Failed to encrypt payload.")();
   }
 }
 
 /************************************************
  *
- * Create email verification session
+ * Create subscription email verification session
  *
  ************************************************/
 
-export async function createSubscriptionEmaiVerificationSession(
+export async function createSubscriptionEmailVerificationSession(
   email: string,
   token: string,
 ) {
@@ -52,7 +52,9 @@ export async function createSubscriptionEmaiVerificationSession(
       path: "/",
     });
   } catch (error) {
-    throw new Error("Failed to create subscription email verification session.");
+    throw new Error(
+      "Failed to create subscription email verification session.",
+    );
   }
 }
 
@@ -65,10 +67,12 @@ export async function createSubscriptionEmaiVerificationSession(
 export async function doesSubscriptionEmailVerificationSessionExist(): Promise<boolean> {
   try {
     const cookieStore = await cookies();
-    const hasCookie = cookieStore.has("subscription-email-verification-session");
+    const hasCookie = cookieStore.has(
+      "subscription-email-verification-session",
+    );
     return hasCookie;
   } catch (error) {
-    throw Error("Failed to check subscription email verification session");
+    throw new Error("Failed to check subscription email verification session");
   }
 }
 
@@ -100,15 +104,21 @@ type SubscriptionEmailVerificationSession = {
 export async function getSubscriptionEmailVerificationSession(): Promise<SubscriptionEmailVerificationSession> {
   try {
     const cookieStore = await cookies();
-    const sessionCookie = cookieStore.get("subscription-email-verification-session");
+    const sessionCookie = cookieStore.get(
+      "subscription-email-verification-session",
+    );
 
     if (!sessionCookie) {
       throw new Error("Failed to get subscription email verification session");
     }
 
-    return await decrypt<SubscriptionEmailVerificationSession>(sessionCookie.value);
+    return await decrypt<SubscriptionEmailVerificationSession>(
+      sessionCookie.value,
+    );
   } catch (error) {
-    throw Error("Failed to get subscription email verification session payload");
+    throw new Error(
+      "Failed to get subscription email verification session payload",
+    );
   }
 }
 
@@ -123,90 +133,8 @@ export async function deleteSubscriptionEmailVerificationSession() {
     const cookieStore = await cookies();
     cookieStore.delete("subscription-email-verification-session");
   } catch (error) {
-    throw Error("Failed to delete subscription email verification session.");
-  }
-}
-
-/************************************************
- *
- * Create password reset session
- *
- ************************************************/
-export async function createPasswordResetSession(email: string, token: string) {
-  try {
-    const sessionData = await encrypt({
-      email,
-      token,
-    });
-
-    const cookieStore = await cookies();
-
-    cookieStore.set({
-      name: "password-reset-session",
-      value: sessionData,
-      httpOnly: true,
-      secure: process.env.NODE_ENV === "production",
-      maxAge: 60 * 60, // 1 hour in seconds
-      sameSite: "lax",
-      path: "/",
-    });
-  } catch (error) {
-    throw new Error("Failed to create password reset session.");
-  }
-}
-
-/************************************************
- *
- * Check if password reset session exists
- *
- ************************************************/
-
-export async function doesPasswordResetSessionExist(): Promise<boolean> {
-  try {
-    const cookieStore = await cookies();
-    const hasCookie = cookieStore.has("password-reset-session");
-    return hasCookie;
-  } catch (error) {
-    throw Error("Failed to check password reset session");
-  }
-}
-
-/************************************************
- *
- * Get password reset session
- *
- ************************************************/
-type PasswordResetSession = {
-  email: string;
-  token: string;
-};
-
-export async function getPasswordResetSession(): Promise<PasswordResetSession> {
-  try {
-    const cookieStore = await cookies();
-    const sessionCookie = cookieStore.get("password-reset-session");
-
-    if (!sessionCookie) {
-      throw new Error("Failed to get password reset session");
-    }
-
-    return await decrypt<PasswordResetSession>(sessionCookie.value);
-  } catch (error) {
-    throw Error("Failed to get password reset session");
-  }
-}
-
-/************************************************
- *
- * Delete password reset session
- *
- ************************************************/
-
-export async function deletePasswordResetSession() {
-  try {
-    const cookieStore = await cookies();
-    cookieStore.delete("password-reset-session");
-  } catch (error) {
-    throw Error("Failed to delete password reset session.");
+    throw new Error(
+      "Failed to delete subscription email verification session.",
+    );
   }
 }

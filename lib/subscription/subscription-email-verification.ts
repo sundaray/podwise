@@ -2,7 +2,7 @@ import "server-only";
 
 import chalk from "chalk";
 import { db } from "@/db";
-import { usersTable } from "@/db/schema";
+import { subscribersTable } from "@/db/schema";
 import { eq } from "drizzle-orm";
 
 /************************************************
