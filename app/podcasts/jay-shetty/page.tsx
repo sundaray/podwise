@@ -7,7 +7,6 @@ import { PodcastTabs } from "@/components/podcast-tabs";
 import { filterPodcasts } from "@/lib/podcast-filters";
 import { loadPodcastListSearchParams } from "@/lib/podcast-list-search-params";
 import type { SearchParams } from "nuqs/server";
-import { libreBaskerville } from "@/app/layout";
 
 export async function generateMetadata({
   searchParams,
@@ -91,9 +90,7 @@ export default async function JayShettyPodcastPage({
 
   return (
     <div className="group mx-auto max-w-6xl px-4">
-      <h1
-        className={`${libreBaskerville.className} mb-6 text-center text-4xl font-semibold tracking-tight text-pretty text-gray-900`}
-      >
+      <h1 className="mb-6 text-center text-4xl font-semibold tracking-tight text-pretty text-gray-900">
         On Purpose with Jay Shetty
       </h1>
       <p className="mx-auto mb-20 max-w-5xl text-center text-lg/7 leading-7 font-medium text-balance text-gray-700">
@@ -105,7 +102,7 @@ export default async function JayShettyPodcastPage({
         and mindfulness practices. With a focus on practical wisdom and
         actionable insights, Jay blends storytelling, spirituality, and modern
         science to empower listeners to live with intention and create a life of
-        purpose. 
+        purpose.
       </p>
       <PodcastSearch
         placeholder="Search podcast summaries by title"
@@ -127,7 +124,9 @@ export default async function JayShettyPodcastPage({
           ))}
         </div>
       ) : (
-        <p className="text-center text-sm font-medium text-red-600">No podcasts found</p>
+        <p className="text-center text-sm font-medium text-red-600">
+          No podcasts found
+        </p>
       )}
       <PodcastPagination totalPages={totalPages} />
     </div>
