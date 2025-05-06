@@ -136,7 +136,7 @@ export function SignInEmailPasswordForm() {
           )}
         </Button>
         <div className="mt-6 text-center text-sm">
-          <span className="text-gray-500">Don't have an account? </span>
+          <span className="text-gray-500">Don&apos;t have an account? </span>
           <Link
             href="/signup"
             className="text-sky-600 transition-colors hover:text-sky-700"

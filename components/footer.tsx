@@ -44,7 +44,7 @@ export function Footer() {
               />
             </svg>
             <p className="text-sm/6 text-balance text-gray-400">
-              Discover insights from the world's best podcasts.
+              Discover insights from the world&apos;s best podcasts.
             </p>
           </div>
           <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">

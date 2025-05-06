@@ -33,20 +33,21 @@ export default function TermsOfService() {
           The following terminology applies to these Terms and Conditions,
           Privacy Statement and Disclaimer Notice and all Agreements:
           &quot;Client&quot;, &quot;You&quot; and &quot;Your&quot; refers to
-          you, the person logging on this website and compliant to the Company's
-          terms and conditions. &quot;The Company&quot;, &quot;Ourselves&quot;,
-          &quot;We&quot;, &quot;Our&quot; and &quot;Us&quot;, refers to Podwise.
-          &quot;Party&quot;, &quot;Parties&quot;, or &quot;Us&quot;, refers to
-          both the Client and ourselves.
+          you, the person logging on this website and compliant to the
+          Company7apos;s terms and conditions. &quot;The Company&quot;,
+          &quot;Ourselves&quot;, &quot;We&quot;, &quot;Our&quot; and
+          &quot;Us&quot;, refers to Podwise. &quot;Party&quot;,
+          &quot;Parties&quot;, or &quot;Us&quot;, refers to both the Client and
+          ourselves.
         </p>
 
         <p className="mb-7 leading-7 text-gray-700">
           All terms refer to the offer, acceptance and consideration of payment
           necessary to undertake the process of our assistance to the Client in
           the most appropriate manner for the express purpose of meeting the
-          Client's needs in respect of the provision of the Company's stated
-          services, in accordance with and subject to, prevailing law of our
-          jurisdiction.
+          Client&apos;s needs in respect of the provision of the Company&apos;s
+          stated services, in accordance with and subject to, prevailing law of
+          our jurisdiction.
         </p>
 
         <h2 className="mt-7 mb-2 text-2xl font-semibold tracking-tight text-pretty text-gray-900">
@@ -146,7 +147,7 @@ export default function TermsOfService() {
           other website information so long as the link: (a) is not in any way
           deceptive; (b) does not falsely imply sponsorship, endorsement, or
           approval of the linking party and its products and/or services; and
-          (c) fits within the context of the linking party's site.
+          (c) fits within the context of the linking party&apos;s site.
         </p>
 
         <p className="mb-4 leading-7 text-gray-700">

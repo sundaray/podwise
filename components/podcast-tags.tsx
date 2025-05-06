@@ -67,7 +67,7 @@ export function PodcastTags({ className }: PodcastTagsProps) {
     return (
       <div className="py-8 text-center">
         <p className="text-xl text-gray-500">
-          No tags found matching "{tagQuery}"
+          No tags found matching &quot;{tagQuery}&quot;
         </p>
       </div>
     );
