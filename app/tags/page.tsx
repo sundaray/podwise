@@ -13,12 +13,13 @@ export const metadata: Metadata = {
 };
 
 type TagsPageProps = {
-  searchParams: SearchParams;
+  searchParams: Promise<SearchParams>;
 };
 
 export default async function TagsPage({ searchParams }: TagsPageProps) {
   // Load query from search parameters
-  const { query } = await loadTagsListSearchParams(searchParams);
+  const awaitedSearchParams = await searchParams;
+  const { query } = await loadTagsListSearchParams(awaitedSearchParams);
 
   // Get all tags data
   const { tagsByLetter, letters } = getPodcastTags();
