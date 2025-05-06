@@ -106,14 +106,16 @@ function getHostPathForPodcast(podcast: any) {
 export default async function AllPodcastsPage({
   searchParams,
 }: {
-  searchParams: SearchParams;
+  searchParams: Promise<SearchParams>;
 }) {
+  const awaitedSearchParams = await searchParams;
+
   const {
     page: currentPage,
     tier,
     query,
     shows,
-  } = await loadPodcastListSearchParams(searchParams);
+  } = await loadPodcastListSearchParams(awaitedSearchParams);
 
   // Get all podcasts
   const allPodcasts = getAllPodcasts();
