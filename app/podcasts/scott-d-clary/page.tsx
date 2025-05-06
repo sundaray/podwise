@@ -92,10 +92,10 @@ export default async function ScottDClaryPodcastPage({
 
   return (
     <div className="group mx-auto max-w-6xl px-4">
-      <h1 className="mb-6 text-center text-4xl font-semibold tracking-tight text-pretty text-gray-900">
+      <h1 className="mb-6 text-center text-4xl font-bold tracking-tight text-pretty text-gray-900">
         Success Story by Scott D. Clary
       </h1>
-      <p className="mx-auto mb-20 max-w-5xl text-center text-lg/7 leading-7 font-medium text-balance text-gray-700">
+      <p className="mx-auto mb-20 max-w-5xl text-center text-lg/7 text-balance text-gray-700">
         Success Story, hosted by Scott D. Clary, is a top-ranked business and
         self-development podcast delivering candid conversations with
         world-class business leaders, entrepreneurs, and thought leaders. Each

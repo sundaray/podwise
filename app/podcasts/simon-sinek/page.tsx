@@ -92,10 +92,10 @@ export default async function SimonSinekPodcastPage({
 
   return (
     <div className="group mx-auto max-w-6xl px-4">
-      <h1 className="mb-6 text-center text-4xl font-semibold tracking-tight text-pretty text-gray-900">
+      <h1 className="mb-6 text-center text-4xl font-bold tracking-tight text-pretty text-gray-900">
         A Bit of Optimism by Simon Sinek
       </h1>
-      <p className="mx-auto mb-20 max-w-5xl text-center text-lg/7 leading-7 font-medium text-balance text-gray-700">
+      <p className="mx-auto mb-20 max-w-5xl text-center text-lg/7 text-balance text-gray-700">
         A Bit of Optimism, hosted by bestselling author and inspirational
         speaker Simon Sinek, offers thoughtful conversations that inspire hope
         and possibility during challenging times. Each episode features Simon

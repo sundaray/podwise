@@ -92,10 +92,10 @@ export default async function DailyStoicPodcastPage({
 
   return (
     <div className="group mx-auto max-w-6xl px-4">
-      <h1 className="mb-6 text-center text-4xl font-semibold tracking-tight text-pretty text-gray-900">
+      <h1 className="mb-6 text-center text-4xl font-bold tracking-tight text-pretty text-gray-900">
         Daily Stoic by Ryan Holiday
       </h1>
-      <p className="mx-auto mb-20 max-w-5xl text-center text-lg/7 leading-7 font-medium text-balance text-gray-700">
+      <p className="mx-auto mb-20 max-w-5xl text-center text-lg/7 leading-7 text-balance text-gray-700">
         The Daily Stoic podcast, hosted by Ryan Holiday, bestselling author and
         modern Stoic, delivers Stoicism for everyday life. Designed to make
         listeners more resilient, virtuous, and wise, the podcast offers

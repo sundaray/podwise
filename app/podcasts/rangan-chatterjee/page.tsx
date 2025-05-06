@@ -92,10 +92,10 @@ export default async function RanganChatterjeePodcastPage({
 
   return (
     <div className="group mx-auto max-w-6xl px-4">
-      <h1 className="mb-6 text-center text-4xl font-semibold tracking-tight text-pretty text-gray-900">
+      <h1 className="mb-6 text-center text-4xl font-bold tracking-tight text-pretty text-gray-900">
         Feel Better, Live More by Dr. Rangan Chatterjee
       </h1>
-      <p className="mx-auto mb-20 max-w-5xl text-center text-lg/7 leading-7 font-medium text-balance text-gray-700">
+      <p className="mx-auto mb-20 max-w-5xl text-center text-lg/7 text-balance text-gray-700">
         Feel Better, Live More, hosted by Dr. Rangan Chatterjee, a medical
         doctor with over 21 years of experience and author of six bestselling
         books, is the UK and Europe&apos;s #1 health podcast. Each episode

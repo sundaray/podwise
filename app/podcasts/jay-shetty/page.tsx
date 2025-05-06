@@ -92,10 +92,10 @@ export default async function JayShettyPodcastPage({
 
   return (
     <div className="group mx-auto max-w-6xl px-4">
-      <h1 className="mb-6 text-center text-4xl font-semibold tracking-tight text-pretty text-gray-900">
+      <h1 className="mb-6 text-center text-4xl font-bold tracking-tight text-pretty text-gray-900">
         On Purpose with Jay Shetty
       </h1>
-      <p className="mx-auto mb-20 max-w-5xl text-center text-lg/7 leading-7 font-medium text-balance text-gray-700">
+      <p className="mx-auto mb-20 max-w-5xl text-center text-lg/7 text-balance text-gray-700">
         On Purpose with Jay Shetty, hosted by former monk Jay Shetty, is a
         transformative podcast dedicated to personal growth, mental health, and
         meaningful living. Each episode features inspiring conversations with
