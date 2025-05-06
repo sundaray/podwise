@@ -1,5 +1,10 @@
 import { SignInGoogleForm } from "@/components/auth/sign-in-google-form";
 import { SignInEmailPasswordForm } from "@/components/auth/signin-email-password-form";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Sign in | Podwise",
+};
 
 export default function SignIn() {
   return (
@@ -7,7 +12,9 @@ export default function SignIn() {
       <h2 className="text-center text-2xl font-semibold tracking-tight text-gray-900">
         Welcome
       </h2>
-      <p className="mt-2 text-center text-sm text-gray-600">Sign in to your account</p>
+      <p className="mt-2 text-center text-sm text-gray-600">
+        Sign in to your account
+      </p>
       <div className="mt-12 grid gap-4">
         <SignInGoogleForm />
         <div className="relative">

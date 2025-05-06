@@ -34,7 +34,7 @@ export function SubscriptionForm() {
       <h2 className="mb-2 text-center text-2xl font-bold text-gray-900">
         5-idea Friday
       </h2>
-      <p className="text-md mb-8 text-center font-medium text-gray-600">
+      <p className="text-md mb-2 text-center font-medium text-gray-600">
         5 ideas from the world's best thinkers delivered to your inbox every
         Friday.
       </p>
@@ -45,13 +45,11 @@ export function SubscriptionForm() {
         noValidate
         className="grid"
       >
-        {form.errors && (
-          <ErrorMessage
-            id="form-error"
-            errors={form.errors}
-            className="pb-4 pl-5"
-          />
-        )}
+        <ErrorMessage
+          id="form-error"
+          errors={form.errors}
+          className="min-h-7 pb-1 text-center"
+        />
 
         <div className="relative flex-grow">
           {/* INPUT --------------------------------------------------------- */}

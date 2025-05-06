@@ -6,7 +6,6 @@ export const metadata: Metadata = {
   description: "Discover key insights from the world's best podcasts without spending hours listening."
 };
 
-
 export default function Home() {
   return (
     <div className="relative grid h-dvh place-items-center px-4">
