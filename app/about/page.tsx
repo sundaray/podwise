@@ -21,14 +21,14 @@ export default function Podwise() {
         </p>
 
         <p className="mb-7 text-gray-700">
-          I'm an avid podcast listener, but let's face it, they can be a major
-          time sink. That's why I created Podwise: to use AI to extract the key
-          takeaways so you can get the insights without spending hours
-          listening.
+          I&apos;m an avid podcast listener, but let&apos;s face it, they can be
+          a major time sink. That&apos;s why I created Podwise: to use AI to
+          extract the key takeaways so you can get the insights without spending
+          hours listening.
         </p>
 
         <p className="mb-7 text-gray-700">
-          Podwise contains summaries of the world's best podcasts, with
+          Podwise contains summaries of the world&apos;s best podcasts, with
           currently 400+ summaries and growing. I keep adding new summaries as
           episodes release and continually expand my collection with interesting
           new shows.

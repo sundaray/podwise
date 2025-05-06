@@ -3,7 +3,8 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Podwise",
-  description: "Discover key insights from the world's best podcasts without spending hours listening."
+  description:
+    "Discover key insights from the world's best podcasts without spending hours listening.",
 };
 
 export default function Home() {
@@ -44,12 +45,12 @@ export default function Home() {
           PODCAST SUMMARIES
         </h1>
         <p className="max-w-xl text-lg leading-7 font-medium text-balance text-gray-600">
-          Discover key insights from the world's best podcasts without spending
-          hours listening.
+          Discover key insights from the world&apos;s best podcasts without
+          spending hours listening.
         </p>
         <Link
           href="/podcasts"
-          className="mt-4 rounded-full bg-gray-900 font-medium text-white transition-colors hover:bg-gray-900/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-600 px-6 py-3"
+          className="mt-4 rounded-full bg-gray-900 px-6 py-3 font-medium text-white transition-colors hover:bg-gray-900/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-600"
         >
           Explore Now
         </Link>

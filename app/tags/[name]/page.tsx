@@ -147,8 +147,8 @@ export default async function TagPage({ params, searchParams }: TagPageProps) {
   const statusMessage = (
     <>
       Showing {paginatedPodcasts.length} of {totalPodcasts}{" "}
-      {tier !== "all" && <em>{tier}</em>} podcast summaries tagged with "
-      {tagName}"{query ? ` matching "${query}"` : ""}
+      {tier !== "all" && tier} podcast summaries tagged with &quot;
+      {tagName}&quot;{query ? ` matching "${query}"` : ""}
     </>
   );
 
@@ -165,13 +165,12 @@ export default async function TagPage({ params, searchParams }: TagPageProps) {
         <h1 className="mt-6 mb-4 text-4xl font-bold tracking-tight text-gray-900">
           Tag: <span className="text-sky-600">{tagName}</span>
         </h1>
-        <p className="text-pretty text-lg text-gray-600">
+        <p className="text-lg text-pretty text-gray-600">
           Found {totalPodcasts} podcast{" "}
-          {totalPodcasts === 1 ? "summary" : "summaries"} tagged with "{tagName}
-          "
-        </p>
+          {totalPodcasts === 1 ? "summary" : "summaries"} tagged with &quot;
+          {tagName}&quot;
+        </p>{" "}
       </div>
-
       <PodcastSearch
         placeholder="Search podcast summaries by tag"
         page="tags"

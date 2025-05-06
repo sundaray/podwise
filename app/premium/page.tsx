@@ -6,7 +6,6 @@ export const metadata: Metadata = {
   title: "Go Premium | Podwise",
 };
 
-
 const annualFeatures = [
   "Access to all current podcast summaries",
   "Everything published in the next 12 months",
@@ -55,8 +54,9 @@ export default function Premium() {
               </h3>
               <div className="mt-1 text-sm text-amber-700">
                 <p>
-                  Prices will double on June 1st, 2025. We're adding 400+ new
-                  summaries in this month, bringing our total to 800+ summaries.
+                  Prices will double on June 1st, 2025. We&apos;re adding 400+
+                  new summaries in this month, bringing our total to 800+
+                  summaries.
                 </p>
               </div>
             </div>
@@ -75,7 +75,7 @@ export default function Premium() {
             </p>
             <div className="mt-10 flex items-center gap-x-4">
               <h4 className="flex-none text-sm/6 font-semibold text-sky-600">
-                What's included
+                What&apos;s included
               </h4>
               <div className="h-px flex-auto bg-gray-100" />
             </div>
@@ -133,7 +133,7 @@ export default function Premium() {
             </p>
             <div className="mt-10 flex items-center gap-x-4">
               <h4 className="flex-none text-sm/6 font-semibold text-sky-600">
-                What's included
+                What&apos;s included
               </h4>
               <div className="h-px flex-auto bg-gray-100" />
             </div>

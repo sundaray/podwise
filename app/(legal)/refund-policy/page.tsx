@@ -5,7 +5,6 @@ export const metadata: Metadata = {
   title: "Refund Policy | Podwise",
 };
 
-
 export default function RefundPolicy() {
   return (
     <section className="mx-auto max-w-7xl px-4 lg:px-8">
@@ -101,9 +100,9 @@ export default function RefundPolicy() {
         </p>
 
         <p className="mb-7 leading-7 text-gray-700">
-          We are committed to ensuring that you receive the service you've paid
-          for. Technical support is available to assist with any access problems
-          you may encounter.
+          We are committed to ensuring that you receive the service you&apos;ve
+          paid for. Technical support is available to assist with any access
+          problems you may encounter.
         </p>
 
         <h2 className="mt-7 mb-2 text-2xl font-semibold tracking-tight text-pretty text-gray-900">

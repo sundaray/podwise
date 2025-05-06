@@ -1,6 +1,5 @@
 import "server-only";
 
-import chalk from "chalk";
 import { base64url } from "jose";
 import { getRandomValues } from "uncrypto";
 

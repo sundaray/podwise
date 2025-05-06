@@ -21,24 +21,23 @@ export default async function TagsPage({ searchParams }: TagsPageProps) {
   const { query } = await loadTagsListSearchParams(searchParams);
 
   // Get all tags data
-  const { uniqueTagCount, tagsByLetter, letters } = getPodcastTags();
+  const { tagsByLetter, letters } = getPodcastTags();
 
   // Filter tags if we have a query
   let filteredTags: TagItem[] = [];
 
   if (query && query.trim() !== "") {
-    filteredTags = Array.from(tagsByLetter.entries()).flatMap(
-      ([letter, tags]) =>
-        tags.filter((tag) =>
-          tag.name.toLowerCase().includes(query.toLowerCase()),
-        ),
+    filteredTags = Array.from(tagsByLetter.entries()).flatMap(([_, tags]) =>
+      tags.filter((tag) =>
+        tag.name.toLowerCase().includes(query.toLowerCase()),
+      ),
     );
   }
 
   // Status message for searches
   const statusMessage = query ? (
     <>
-      Showing {filteredTags.length} tags matching "{query}"
+      Showing {filteredTags.length} tags matching &quot;{query}&quot;
     </>
   ) : null;
 
@@ -65,7 +64,7 @@ export default async function TagsPage({ searchParams }: TagsPageProps) {
 
       {isSearchMode && filteredTags.length === 0 ? (
         <p className="text-center text-sm font-medium text-red-600">
-          No tags found matching "{query}"
+          No tags found matching &quot;{query}&quot;
         </p>
       ) : isSearchMode ? (
         // For search results, directly render tags without letter grouping

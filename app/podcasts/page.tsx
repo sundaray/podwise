@@ -1,4 +1,3 @@
-// app/podcasts/page.tsx
 import type { Metadata } from "next";
 import { PodcastCard } from "@/components/podcast-card";
 import { PodcastPagination } from "@/components/podcast-pagination";
@@ -8,7 +7,6 @@ import { PodcastFilter } from "@/components/podcast-filter";
 import { filterPodcasts } from "@/lib/podcast-filters";
 import { loadPodcastListSearchParams } from "@/lib/podcast-list-search-params";
 import type { SearchParams } from "nuqs/server";
-import { libreBaskerville } from "@/app/layout";
 
 // Import all podcast lists
 import { chrisWilliamsonPodcastList } from "@/podcast-list/chris-williamson";

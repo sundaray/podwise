@@ -5,7 +5,11 @@ import { Html } from "@react-email/html";
 import { Tailwind } from "@react-email/tailwind";
 import { Text } from "@react-email/text";
 
-export function SubscriptionEmailVerificationTemplate({ url }: { url: string }) {
+export function SubscriptionEmailVerificationTemplate({
+  url,
+}: {
+  url: string;
+}) {
   return (
     <Html>
       <Tailwind>
@@ -24,8 +28,8 @@ export function SubscriptionEmailVerificationTemplate({ url }: { url: string }) 
         </Text>
 
         <Text className="text-sm font-medium text-gray-500">
-          If you did not try to subscribe to the "5-idea Friday" newsletter, you can safely ignore
-          this email.
+          If you did not try to subscribe to the &quot;5-idea Friday&quot;
+          newsletter, you can safely ignore this email.
         </Text>
       </Tailwind>
     </Html>

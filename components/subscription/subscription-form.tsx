@@ -35,8 +35,8 @@ export function SubscriptionForm() {
         5-idea Friday
       </h2>
       <p className="text-md mb-2 text-center font-medium text-gray-600">
-        5 ideas from the world's best thinkers delivered to your inbox every
-        Friday.
+        5 ideas from the world&apos;s best thinkers delivered to your inbox
+        every Friday.
       </p>
       <form
         id={form.id}

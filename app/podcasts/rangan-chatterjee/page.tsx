@@ -99,11 +99,11 @@ export default async function RanganChatterjeePodcastPage({
       <p className="mx-auto mb-20 max-w-5xl text-center text-lg/7 leading-7 font-medium text-balance text-gray-700">
         Feel Better, Live More, hosted by Dr. Rangan Chatterjee, a medical
         doctor with over 21 years of experience and author of six bestselling
-        books, is the UK and Europe's #1 health podcast. Each episode offers
-        practical, science-backed insights on nutrition, movement, sleep, and
-        mental health, featuring interviews with leading experts and inspiring
-        personalities. The podcast aims to empower listeners with simple yet
-        effective strategies to improve their health and wellbeing.
+        books, is the UK and Europe&apos;s #1 health podcast. Each episode
+        offers practical, science-backed insights on nutrition, movement, sleep,
+        and mental health, featuring interviews with leading experts and
+        inspiring personalities. The podcast aims to empower listeners with
+        simple yet effective strategies to improve their health and wellbeing.
       </p>
       <PodcastSearch
         placeholder="Search podcast summaries by title"
@@ -125,7 +125,9 @@ export default async function RanganChatterjeePodcastPage({
           ))}
         </div>
       ) : (
-        <p className="text-center text-sm font-medium text-red-600">No podcasts found</p>
+        <p className="text-center text-sm font-medium text-red-600">
+          No podcasts found
+        </p>
       )}
       <PodcastPagination totalPages={totalPages} />
     </div>

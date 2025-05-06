@@ -4,7 +4,6 @@ export const metadata: Metadata = {
   title: "Terms of Service | Podwise",
 };
 
-
 export default function TermsOfService() {
   return (
     <section className="mx-auto max-w-7xl px-4 lg:px-8">
@@ -32,11 +31,13 @@ export default function TermsOfService() {
 
         <p className="mb-7 leading-7 text-gray-700">
           The following terminology applies to these Terms and Conditions,
-          Privacy Statement and Disclaimer Notice and all Agreements: "Client",
-          "You" and "Your" refers to you, the person logging on this website and
-          compliant to the Company's terms and conditions. "The Company",
-          "Ourselves", "We", "Our" and "Us", refers to Podwise. "Party",
-          "Parties", or "Us", refers to both the Client and ourselves.
+          Privacy Statement and Disclaimer Notice and all Agreements:
+          &quot;Client&quot;, &quot;You&quot; and &quot;Your&quot; refers to
+          you, the person logging on this website and compliant to the Company's
+          terms and conditions. &quot;The Company&quot;, &quot;Ourselves&quot;,
+          &quot;We&quot;, &quot;Our&quot; and &quot;Us&quot;, refers to Podwise.
+          &quot;Party&quot;, &quot;Parties&quot;, or &quot;Us&quot;, refers to
+          both the Client and ourselves.
         </p>
 
         <p className="mb-7 leading-7 text-gray-700">

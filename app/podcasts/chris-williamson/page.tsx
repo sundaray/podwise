@@ -95,11 +95,12 @@ export default async function ChrisWilliamsonPodcastPage({
         Modern Wisdom by Chris Williamson
       </h1>
       <p className="mx-auto mb-20 max-w-5xl text-center text-lg/7 text-balance text-gray-600">
-        Chris Williamson is the host of the popular podcast "Modern Wisdom",
-        where he interviews world-class thinkers exploring how to live a better
-        life. With a tagline of "Life is hard. This podcast will help," the show
-        covers topics ranging from psychology, philosophy, and relationships to
-        performance, productivity, and modern culture.
+        Chris Williamson is the host of the popular podcast &quot;Modern
+        Wisdom&quot;, where he interviews world-class thinkers exploring how to
+        live a better life. With a tagline of &quot;Life is hard. This podcast
+        will help,&quot; the show covers topics ranging from psychology,
+        philosophy, and relationships to performance, productivity, and modern
+        culture.
       </p>
       <PodcastSearch
         placeholder="Search podcast summaries by title"

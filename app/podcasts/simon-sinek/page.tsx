@@ -102,10 +102,11 @@ export default async function SimonSinekPodcastPage({
         and possibility during challenging times. Each episode features Simon
         engaging with diverse thought leaders, from business executives and
         authors to activists and artists, exploring topics like leadership,
-        innovation, mental health, and creating meaningful change. With Simon's
-        characteristic warmth and insight, the podcast provides practical wisdom
-        and fresh perspectives that help listeners navigate uncertainty while
-        fostering optimism and purpose in their lives and work.
+        innovation, mental health, and creating meaningful change. With
+        Simon&apos;s characteristic warmth and insight, the podcast provides
+        practical wisdom and fresh perspectives that help listeners navigate
+        uncertainty while fostering optimism and purpose in their lives and
+        work.
       </p>
       <PodcastSearch
         placeholder="Search podcast summaries by title"
@@ -127,7 +128,9 @@ export default async function SimonSinekPodcastPage({
           ))}
         </div>
       ) : (
-        <p className="text-center text-sm font-medium text-red-600">No podcasts found</p>
+        <p className="text-center text-sm font-medium text-red-600">
+          No podcasts found
+        </p>
       )}
       <PodcastPagination totalPages={totalPages} />
     </div>

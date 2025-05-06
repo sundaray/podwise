@@ -8,8 +8,8 @@ export default function SubscriptionSuccessful() {
         Subscription successful
       </h2>
       <p className="mb-4 text-sm text-pretty text-gray-600">
-        You have successfully subscribed to the "5-idea Friday" newsletter. Your
-        first email will arrive this Friday.
+        You have successfully subscribed to the &quot;5-idea Friday&quot;
+        newsletter. Your first email will arrive this Friday.
       </p>
       <Link
         href="/podcasts"

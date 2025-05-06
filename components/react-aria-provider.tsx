@@ -16,7 +16,7 @@ type ClientProvidersProps = {
 };
 
 export function ClientProviders({ children }: ClientProvidersProps) {
-  let router = useRouter();
+  const router = useRouter();
 
   return <RouterProvider navigate={router.push}>{children}</RouterProvider>;
 }
