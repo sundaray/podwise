@@ -11,9 +11,11 @@ import type { SearchParams } from "nuqs/server";
 export async function generateMetadata({
   searchParams,
 }: {
-  searchParams: SearchParams;
+  searchParams: Promise<SearchParams>;
 }): Promise<Metadata> {
-  const { page, tier, query } = await loadPodcastListSearchParams(searchParams);
+  const awaitedSearchParams = await searchParams;
+  const { page, tier, query } =
+    await loadPodcastListSearchParams(awaitedSearchParams);
 
   // Base metadata
   const metadata: Metadata = {
@@ -46,16 +48,16 @@ const ITEMS_PER_PAGE = 9;
 export default async function DoacPodcastPage({
   searchParams,
 }: {
-  searchParams: SearchParams;
+  searchParams: Promise<SearchParams>;
 }) {
   const host = "doac";
-
+  const awaitedSearchParams = await searchParams;
   const {
     page: currentPage,
     tier,
     query,
     shows,
-  } = await loadPodcastListSearchParams(searchParams);
+  } = await loadPodcastListSearchParams(awaitedSearchParams);
 
   // Sort podcasts by video upload date
   const sortedPodcasts = [...doacPodcastList].sort((a, b) => {
@@ -90,9 +92,7 @@ export default async function DoacPodcastPage({
 
   return (
     <div className="group mx-auto max-w-6xl px-4">
-      <h1
-        className="mb-6 text-center text-4xl font-semibold tracking-tight text-pretty text-gray-900"
-      >
+      <h1 className="mb-6 text-center text-4xl font-semibold tracking-tight text-pretty text-gray-900">
         The Diary Of a CEO by Steven Bartlett
       </h1>
       <p className="mx-auto mb-20 max-w-5xl text-center text-lg/7 leading-7 font-medium text-balance text-gray-700">
@@ -103,7 +103,7 @@ export default async function DoacPodcastPage({
         entrepreneurs, athletes, scientists, and thought leaders. Each episode
         dives deep into the personal and professional journeys of its guests,
         exploring topics such as business strategies, mental health, leadership,
-        financial success, relationships, and societal issues. 
+        financial success, relationships, and societal issues.
       </p>
       <PodcastSearch
         placeholder="Search podcast summaries by title"
@@ -125,7 +125,9 @@ export default async function DoacPodcastPage({
           ))}
         </div>
       ) : (
-        <p className="text-center text-sm font-medium text-red-600">No podcasts found</p>
+        <p className="text-center text-sm font-medium text-red-600">
+          No podcasts found
+        </p>
       )}
       <PodcastPagination totalPages={totalPages} />
     </div>

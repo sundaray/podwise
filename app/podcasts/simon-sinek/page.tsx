@@ -11,9 +11,11 @@ import type { SearchParams } from "nuqs/server";
 export async function generateMetadata({
   searchParams,
 }: {
-  searchParams: SearchParams;
+  searchParams: Promise<SearchParams>;
 }): Promise<Metadata> {
-  const { page, tier, query } = await loadPodcastListSearchParams(searchParams);
+  const awaitedSearchParams = await searchParams;
+  const { page, tier, query } =
+    await loadPodcastListSearchParams(awaitedSearchParams);
 
   // Base metadata
   const metadata: Metadata = {
@@ -46,16 +48,16 @@ const ITEMS_PER_PAGE = 9;
 export default async function SimonSinekPodcastPage({
   searchParams,
 }: {
-  searchParams: SearchParams;
+  searchParams: Promise<SearchParams>;
 }) {
   const host = "simon-sinek";
-
+  const awaitedSearchParams = await searchParams;
   const {
     page: currentPage,
     tier,
     query,
     shows,
-  } = await loadPodcastListSearchParams(searchParams);
+  } = await loadPodcastListSearchParams(awaitedSearchParams);
 
   // Sort podcasts by video upload date
   const sortedPodcasts = [...simonSinekPodcastList].sort((a, b) => {

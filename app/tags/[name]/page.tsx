@@ -89,11 +89,11 @@ function getAllUniqueTags() {
 
 type TagPageProps = {
   params: { name: string };
-  searchParams: SearchParams;
+  searchParams: Promise<SearchParams>;
 };
 
 export default async function TagPage({ params, searchParams }: TagPageProps) {
-  const { name } = params;
+  const { name } = await params;
   const tagName = formatTagForDisplay(name);
 
   // Check if tag exists, if not return 404
@@ -106,13 +106,13 @@ export default async function TagPage({ params, searchParams }: TagPageProps) {
   if (!tagExists) {
     notFound();
   }
-
+  const awaitedSearchParams = await searchParams;
   const {
     page: currentPage,
     tier,
     query,
     shows,
-  } = await loadPodcastListSearchParams(searchParams);
+  } = await loadPodcastListSearchParams(awaitedSearchParams);
 
   // Get all podcasts and filter by the current tag
   const allPodcasts = getAllPodcasts();
