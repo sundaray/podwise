@@ -88,14 +88,7 @@ export async function updatePodcastSession(
   }
 
   // It's the same day and IP, update the existing session
-  let newCount = currentSession.count;
-
-  // Only increment count if not changing authentication status
-  // This preserves the count during login/logout transitions
-  if (currentSession.isAuthenticated === isAuthenticated) {
-    newCount += 1; // Increment for a podcast view when auth status is stable
-  }
-  // If auth status is changing (either logging in or out), preserve the count
+  const newCount = currentSession.count + 1;
 
   // Create updated session with preserved count
   const sessionData = await new SignJWT({
