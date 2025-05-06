@@ -1,3 +1,5 @@
+import Link from "next/link";
+import { Icons } from "@/components/icons";
 import type { Metadata } from "next";
 import { dailyStoicPodcastList } from "@/podcast-list/daily-stoic";
 import { PodcastCard } from "@/components/podcast-card";
@@ -92,7 +94,15 @@ export default async function DailyStoicPodcastPage({
 
   return (
     <div className="group mx-auto max-w-6xl px-4">
-      <h1 className="mb-6 text-center text-4xl font-bold tracking-tight text-pretty text-gray-900">
+      <Link
+        href="/podcasts"
+        className="mx-auto flex w-fit items-center justify-center gap-1 rounded-full px-3 py-2 text-sm font-medium text-sky-600 transition-colors hover:bg-gray-100 hover:text-sky-700"
+      >
+        <Icons.chevronLeft className="size-4 text-gray-500" />
+        All podcasts
+      </Link>
+
+      <h1 className="my-6 text-center text-4xl font-bold tracking-tight text-pretty text-gray-900">
         Daily Stoic by Ryan Holiday
       </h1>
       <p className="mx-auto mb-20 max-w-5xl text-center text-lg/7 leading-7 text-balance text-gray-700">

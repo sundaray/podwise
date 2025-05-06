@@ -23,10 +23,10 @@ export default function Premium() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* Header Section */}
         <div className="mx-auto max-w-4xl sm:text-center">
-          <h1 className="text-4xl font-bold tracking-tight text-gray-900">
+          <h1 className="text-center text-4xl font-bold tracking-tight text-gray-900">
             Go Premium
           </h1>
-          <p className="mt-4 text-lg text-gray-600">
+          <p className="mt-4 text-center text-lg text-pretty text-gray-600">
             Unlock access to our complete library of podcast summaries
           </p>
         </div>
