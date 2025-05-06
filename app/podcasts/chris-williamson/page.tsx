@@ -98,7 +98,7 @@ export default async function ChrisWilliamsonPodcastPage({
         className="mx-auto flex w-fit items-center justify-center gap-1 rounded-full px-3 py-2 text-sm font-medium text-sky-600 transition-colors hover:bg-gray-100 hover:text-sky-700"
       >
         <Icons.chevronLeft className="size-4 text-gray-500" />
-        All podcast summaries
+        All Podcast Summaries
       </Link>
 
       <h1
