@@ -24,10 +24,11 @@ import { timFerrissPodcastList } from "@/podcast-list/tim-ferriss";
 export async function generateMetadata({
   searchParams,
 }: {
-  searchParams: SearchParams;
+  searchParams: Promise<SearchParams>;
 }): Promise<Metadata> {
+  const awaitedSearchParams = await searchParams;
   const { page, tier, query, shows } =
-    await loadPodcastListSearchParams(searchParams);
+    await loadPodcastListSearchParams(awaitedSearchParams);
 
   // Base metadata
   const metadata: Metadata = {

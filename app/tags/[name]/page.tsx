@@ -88,7 +88,7 @@ function getAllUniqueTags() {
 }
 
 type TagPageProps = {
-  params: { name: string };
+  params: Promise<{ name: string }>;
   searchParams: Promise<SearchParams>;
 };
 
