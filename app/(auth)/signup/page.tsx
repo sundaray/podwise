@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { SignUpGoogleForm } from "@/components/auth/sign-up-google-form";
 import { SignUpEmailPasswordForm } from "@/components/auth/signup-email-password-form";
 import type { Metadata } from "next";
@@ -16,7 +17,9 @@ export default function SignUp() {
         Create a new account
       </p>
       <div className="mt-12 grid gap-4">
-        <SignUpGoogleForm />
+        <Suspense>
+          <SignUpGoogleForm />
+        </Suspense>
         <div className="relative">
           <div className="absolute inset-0 flex items-center">
             <span className="w-full border-t" />
@@ -25,7 +28,9 @@ export default function SignUp() {
             <span className="bg-background px-2">Or continue with</span>
           </div>
         </div>
-        <SignUpEmailPasswordForm />
+        <Suspense>
+          <SignUpEmailPasswordForm />
+        </Suspense>
       </div>
     </div>
   );

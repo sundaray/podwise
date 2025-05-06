@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { SignInGoogleForm } from "@/components/auth/sign-in-google-form";
 import { SignInEmailPasswordForm } from "@/components/auth/signin-email-password-form";
 import type { Metadata } from "next";
@@ -16,7 +17,9 @@ export default function SignIn() {
         Sign in to your account
       </p>
       <div className="mt-12 grid gap-4">
-        <SignInGoogleForm />
+        <Suspense>
+          <SignInGoogleForm />
+        </Suspense>
         <div className="relative">
           <div className="absolute inset-0 flex items-center">
             <span className="w-full border-t" />
@@ -25,7 +28,9 @@ export default function SignIn() {
             <span className="bg-background px-2">Or continue with</span>
           </div>
         </div>
-        <SignInEmailPasswordForm />
+        <Suspense>
+          <SignInEmailPasswordForm />
+        </Suspense>
       </div>
     </div>
   );
