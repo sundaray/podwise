@@ -1,7 +1,18 @@
 // Auto-generated podcast list - DO NOT EDIT MANUALLY
 // Generated on 2025-04-27T16:47:14.341Z
 
+
 export const chrisWilliamsonPodcastList = [
+  {
+    title: "How To Overcome The Worst Pain Of Your Life - Jeremy Renner",
+    slug: "how-to-overcome-the-worst-pain-of-your-life-jeremy-renner",
+    tags: ["Mental Resilience", "Recovery Journey", "Pain Management"],
+    image: "how-to-overcome-the-worst-pain-of-your-life-jeremy-renner.jpg",
+    podcastHost: "Chris Williamson",
+    isPremium: false,
+    videoId: "ZajzamaQJAA",
+    videoUploadedAt: "2025-05-05T12:00:00Z"
+    },    
   {
     title: "How To Rewire Your Brain To Take More Risks - Alex Hutchinson",
     slug: "how-to-rewire-your-brain-to-take-more-risks-alex-hutchinson",
