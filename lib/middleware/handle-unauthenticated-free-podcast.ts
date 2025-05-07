@@ -1,7 +1,5 @@
-// lib/middleware/handle-unauthenticated-free-podcast.ts
 import { NextRequest, NextResponse } from "next/server";
 import { freePodcastPaths } from "@/lib/podcast/free-podcast-paths";
-import { isPodcastSummaryPage } from "@/lib/middleware/is-podcast-summary-page";
 import {
   getPodcastSession,
   createPodcastSession,
@@ -12,12 +10,7 @@ export async function handleUnauthenticatedFreePodcast(request: NextRequest) {
   const { nextUrl } = request;
   const path = nextUrl.pathname;
 
-  // Only proceed if this is a podcast summary page
-  if (!isPodcastSummaryPage(path)) {
-    return null;
-  }
-
-  // Check if it's a free podcast
+  // Check if it's a free podcast summary
   const isFreePostcast = freePodcastPaths.includes(path);
   if (!isFreePostcast) {
     return null;

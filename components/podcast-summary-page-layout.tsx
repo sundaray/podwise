@@ -155,7 +155,7 @@ export async function PodcastSummaryPageLayout({
         {/* Conditional paywall overlay based on authentication status */}
         {limitReached && (
           <div className="absolute inset-0 z-10 flex flex-col items-center bg-white/70 p-6 text-center backdrop-blur-sm">
-            <h2 className="mb-2 text-2xl font-bold">
+            <h2 className="mb-2 text-2xl font-bold text-pretty">
               Daily Free Reading Limit Reached
             </h2>
 
@@ -165,7 +165,7 @@ export async function PodcastSummaryPageLayout({
                 <p className="mb-2 text-pretty text-gray-600">
                   Unauthenticated users can read only 1 free summary per day.
                 </p>
-                <p className="mb-6 text-pretty text-gray-700">
+                <p className="mb-6 text-pretty text-gray-600">
                   Sign in to read 2 free summaries per day, or go premium for
                   unlimited access to all summaries.
                 </p>

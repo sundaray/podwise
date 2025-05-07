@@ -39,7 +39,7 @@ export function ScrollToTop() {
     <AnimatePresence>
       {isVisible && (
         <motion.button
-          className="fixed right-4 bottom-4 flex items-center gap-1 rounded-full border-0 p-1 shadow-xs transition-colors bg-gray-100 md:right-8 md:bottom-8 hover:bg-gray-200"
+          className="fixed right-4 bottom-4 flex items-center gap-1 rounded-full border p-1 shadow-xs md:right-8 md:bottom-8"
           onClick={scrollToTop}
           variants={scrollVariants}
           initial="initial"

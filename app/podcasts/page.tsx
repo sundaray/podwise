@@ -147,7 +147,7 @@ export default async function AllPodcastsPage({
   const statusMessage = (
     <>
       Showing {paginatedPodcasts.length} of {totalPodcasts}{" "}
-      {tier !== "all" && <em>{tier}</em>} podcast summaries
+      {tier !== "all" && tier} podcast summaries
       {query ? ` matching "${query}"` : ""}
       {shows && shows.length > 0
         ? ` from ${shows.length} selected podcast${shows.length > 1 ? "s" : ""}`

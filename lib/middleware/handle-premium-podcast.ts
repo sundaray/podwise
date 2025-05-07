@@ -1,6 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { freePodcastPaths } from "@/lib/podcast/free-podcast-paths";
-import { isPodcastSummaryPage } from "@/lib/middleware/is-podcast-summary-page";
+import { premiumPodcastPaths } from "@/lib/podcast/premium-podcast-paths";
 import { getUserSession } from "@/lib/auth/session";
 
 export async function handlePremiumPodcast(
@@ -10,16 +9,9 @@ export async function handlePremiumPodcast(
   const { nextUrl } = request;
   const path = nextUrl.pathname;
 
-  // Only proceed if this is a podcast summary page
-  if (!isPodcastSummaryPage(path)) {
-    return null;
-  }
-
-  // Check if it's a free podcast
-  const isFreePostcast = freePodcastPaths.includes(path);
-
-  // If it's a free podcast, let the other handlers take care of it
-  if (isFreePostcast) {
+  // Check if it's a premium podcast
+  const isPremiumPodcast = premiumPodcastPaths.includes(path);
+  if (!isPremiumPodcast) {
     return null;
   }
 
@@ -43,8 +35,6 @@ export async function handlePremiumPodcast(
       const premiumUrl = new URL("/premium", nextUrl);
       return NextResponse.redirect(premiumUrl);
     }
-
-    // If they have premium access, allow access (return null to continue)
   }
 
   return null;
