@@ -1,0 +1,51 @@
+import { headers } from "next/headers"
+import { NextRequest, NextResponse } from "next/server"
+import { FieldValue } from "firebase-admin/firestore"
+import Stripe from "stripe"
+
+import { db } from "@/lib/firestore"
+
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY_USD!, {
+  // @ts-ignore
+  apiVersion: "2023-10-16",
+})
+
+export async function POST(request: NextRequest) {
+  const body = await request.text()
+  const headersList = await headers()
+  const signature = headersList.get("Stripe-Signature") as string
+
+  let event: Stripe.Event
+
+  try {
+    event = stripe.webhooks.constructEvent(
+      body,
+      signature,
+      process.env.STRIPE_WEBHOOK_SECRET!
+    )
+  } catch (error: any) {
+    return NextResponse.json({ error: error.message }, { status: 400 })
+  }
+
+  if (event.type === "checkout.session.completed") {
+    const session = event.data.object as Stripe.Checkout.Session
+    const userEmail = session?.metadata?.userEmail
+    const amountPaid = session?.amount_total
+
+    if (userEmail && amountPaid) {
+      // convert amount in cents to dollars
+      const creditsToAdd = amountPaid / 100
+
+      console.log("Credits to add: ", creditsToAdd)
+
+      // Update user credits in the database
+      const userRef = db.collection("users").doc(userEmail)
+
+      await userRef.update({
+        credits: FieldValue.increment(creditsToAdd),
+      })
+    }
+  }
+
+  return NextResponse.json(null, { status: 200 })
+}
