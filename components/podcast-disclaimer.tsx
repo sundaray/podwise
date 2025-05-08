@@ -7,10 +7,10 @@ export function PodcastDisclaimer({ youTubeLink }: { youTubeLink: string }) {
         points or even make minor errors. Therefore, I recommend listening to
         the{" "}
         <a
-          href={youTubeLink}  
+          href={youTubeLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="cursor-pointer text-sky-700 hover:text-sky-500"
+          className="cursor-pointer text-sky-600 hover:text-sky-700"
         >
           original podcast episode
         </a>{" "}
