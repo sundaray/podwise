@@ -43,7 +43,7 @@ export default async function SuccessPage({
   }
 
   // Fetch the checkout session from Stripe to verify
-  const { success, session, error } = await getCheckoutSession(sessionId);
+  const { success, session } = await getCheckoutSession(sessionId);
 
   // If failed to retrieve the session, show error
   if (!success || !session) {

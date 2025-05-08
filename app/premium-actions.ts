@@ -5,7 +5,7 @@ import Stripe from "stripe";
 import { getUserSession } from "@/lib/auth/session";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-  // @ts-expect-error
+  // @ts-ignore
   apiVersion: "2023-10-16",
 });
 
