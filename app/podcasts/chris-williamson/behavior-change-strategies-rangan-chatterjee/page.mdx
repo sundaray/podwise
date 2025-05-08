@@ -12,6 +12,7 @@ videoUploadedAt: "2025-01-09T12:00:00Z"
 ---
 
 import { PodcastSummaryPageLayout } from "@/components/podcast-summary-page-layout";
+import { PodcastDisclaimer } from "@/components/podcast-disclaimer";
 
 <PodcastSummaryPageLayout frontmatter={frontmatter}>
 
@@ -76,5 +77,9 @@ Finding contentment requires clarifying what "enough" means in your own life. Th
 While we can't control all of life's events, we can control the stories we tell about them. Holocaust survivor Edith Eger demonstrated this by reframing her horrific experiences in Auschwitz through her mental perspective, stating: "The greatest prison you will ever live inside is the prison you create inside your own mind."
 
 This principle applies to everyday situations too. Our interpretation of events generates emotional stress that we then seek to neutralize through various behaviors. By choosing different interpretations, we can avoid creating unnecessary internal stress in the first place. This skill of reframing situations can be practiced and eventually becomes second nature, significantly improving quality of life.
+
+<PodcastDisclaimer
+  youTubeLink={`https://www.youtube.com/watch?v=${frontmatter.videoId}`}
+/>
 
 </PodcastSummaryPageLayout>

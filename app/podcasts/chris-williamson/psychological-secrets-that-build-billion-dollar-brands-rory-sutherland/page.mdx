@@ -12,6 +12,7 @@ videoUploadedAt: "2025-02-17T12:00:00Z"
 ---
 
 import { PodcastSummaryPageLayout } from "@/components/podcast-summary-page-layout";
+import { PodcastDisclaimer } from "@/components/podcast-disclaimer";
 
 <PodcastSummaryPageLayout frontmatter={frontmatter}>
 
@@ -96,5 +97,9 @@ For situations where we want to allocate resources based on willingness to pay w
 This approach could work for various scenarios like airport queues, premium parking spaces, or express lanes on highways. By directing the premium to charity, you remove the suspicion that the service provider is deliberately creating scarcity to maximize revenue. The urgent need gets satisfied, resources are allocated efficiently, and social good is created simultaneously.
 
 The concept recognizes that "to economists price is a number, but to consumers price is a feeling." When people feel the pricing system is fair and beneficial rather than exploitative, they're more willing to accept differential treatment. This psychological insight could solve many allocation problems in ways that traditional market mechanisms cannot because it addresses both rational and emotional aspects of transactions.
+
+<PodcastDisclaimer
+  youTubeLink={`https://www.youtube.com/watch?v=${frontmatter.videoId}`}
+/>
 
 </PodcastSummaryPageLayout>

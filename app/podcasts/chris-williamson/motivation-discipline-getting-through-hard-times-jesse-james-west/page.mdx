@@ -12,6 +12,7 @@ videoUploadedAt: "2024-11-18T12:00:00Z"
 ---
 
 import { PodcastSummaryPageLayout } from "@/components/podcast-summary-page-layout";
+import { PodcastDisclaimer } from "@/components/podcast-disclaimer";
 
 <PodcastSummaryPageLayout frontmatter={frontmatter}>
 
@@ -76,5 +77,9 @@ The process also triggered body dysmorphia, where despite being extremely lean a
 Jesse discusses the importance of physical challenges while acknowledging their potential downsides. His experiences with back injuries and seeing Ronnie Coleman's physical decline have taught him about balancing ambition with sustainability. He mentions using SSRIs since age 15 to help manage anxiety, showing his practical approach to mental health.
 
 The conversation highlights the difference between productive discomfort that leads to growth and harmful stress that causes damage. Jesse values pushing limits but has become more mindful of long-term consequences. This nuanced perspective stands in contrast to the "no pain, no gain" mentality often promoted in fitness circles.
+
+<PodcastDisclaimer
+  youTubeLink={`https://www.youtube.com/watch?v=${frontmatter.videoId}`}
+/>
 
 </PodcastSummaryPageLayout>

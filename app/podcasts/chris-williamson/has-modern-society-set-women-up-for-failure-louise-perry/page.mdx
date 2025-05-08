@@ -12,6 +12,7 @@ videoUploadedAt: "2025-03-06T12:00:00Z"
 ---
 
 import { PodcastSummaryPageLayout } from "@/components/podcast-summary-page-layout";
+import { PodcastDisclaimer } from "@/components/podcast-disclaimer";
 
 <PodcastSummaryPageLayout frontmatter={frontmatter}>
 
@@ -76,5 +77,9 @@ Many women in sex work demonstrate patterns similar to those in abusive relation
 A surprising concern about declining birth rates involves the potential loss of medical technology. The demographic groups currently maintaining high fertility (like the Amish) may not prioritize or be capable of preserving advanced medical infrastructure.
 
 Perry values modern medical interventions that saved her life and her child's during childbirth. This creates tension between celebrating fertility-maintaining groups while worrying whether future societies dominated by these groups will preserve the medical advances making childbirth safer. This represents an overlooked aspect of demographic transitions beyond economic concerns.
+
+<PodcastDisclaimer
+  youTubeLink={`https://www.youtube.com/watch?v=${frontmatter.videoId}`}
+/>
 
 </PodcastSummaryPageLayout>

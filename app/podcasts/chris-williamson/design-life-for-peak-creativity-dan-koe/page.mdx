@@ -12,6 +12,7 @@ videoUploadedAt: "2025-01-25T12:00:00Z"
 ---
 
 import { PodcastSummaryPageLayout } from "@/components/podcast-summary-page-layout";
+import { PodcastDisclaimer } from "@/components/podcast-disclaimer";
 
 <PodcastSummaryPageLayout frontmatter={frontmatter}>
 
@@ -76,5 +77,9 @@ Then develop the positive side - what you do want to experience. This frame orie
 When pursuing meaningful goals, certain areas of life must temporarily take a backseat. Oliver Burkman's advice to "decide in advance what you're going to suck at" acknowledges this reality. Focused attention on one area yields disproportionately better results than divided attention across many areas. The compounding effect of obsession creates momentum that drives exceptional progress.
 
 Many people abandon goals not because of insufficient progress but because of discomfort with the necessary trade-offs. By acknowledging in advance what you're willing to sacrifice - whether social time, leisure activities, or other pursuits - you make these trade-offs conscious choices rather than painful surprises. This foresight helps sustain motivation through challenging periods by framing sacrifices as strategic decisions aligned with your priorities rather than unexpected losses.
+
+<PodcastDisclaimer
+  youTubeLink={`https://www.youtube.com/watch?v=${frontmatter.videoId}`}
+/>
 
 </PodcastSummaryPageLayout>

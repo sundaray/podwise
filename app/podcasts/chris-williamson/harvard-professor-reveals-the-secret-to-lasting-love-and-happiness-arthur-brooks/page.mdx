@@ -13,6 +13,7 @@ videoUploadedAt: "2025-04-21T12:00:00Z"
 ---
 
 import { PodcastSummaryPageLayout } from "@/components/podcast-summary-page-layout";
+import { PodcastDisclaimer } from "@/components/podcast-disclaimer";
 
 <PodcastSummaryPageLayout frontmatter={frontmatter}>
 
@@ -79,5 +80,9 @@ Career achievement becomes a shield against these fears. Partners seeking love t
 Young, unpartnered males historically created social instability when their numbers increased. Modern society has inadvertently discovered a pacification mechanism through digital entertainment. Video games, pornography, and virtual worlds provide enough stimulation to prevent violent outlets while simultaneously blocking healthy relationship formation.
 
 This creates an unfortunate choice between dangerous antisocial behavior and passive digital addiction. Neither option promotes genuine human flourishing. The solution requires redirecting masculine energy toward productive goals: education, fitness, business development, and real-world social connections. This redirection builds genuine attractiveness while avoiding destructive extremes.
+
+<PodcastDisclaimer
+  youTubeLink={`https://www.youtube.com/watch?v=${frontmatter.videoId}`}
+/>
 
 </PodcastSummaryPageLayout>

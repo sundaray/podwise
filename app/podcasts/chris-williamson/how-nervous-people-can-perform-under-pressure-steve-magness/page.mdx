@@ -12,6 +12,7 @@ videoUploadedAt: "2025-02-01T12:00:00Z"
 ---
 
 import { PodcastSummaryPageLayout } from "@/components/podcast-summary-page-layout";
+import { PodcastDisclaimer } from "@/components/podcast-disclaimer";
 
 <PodcastSummaryPageLayout frontmatter={frontmatter}>
 
@@ -94,5 +95,9 @@ Having a multi-dimensional identity protects against choking under pressure. Res
 This "self-complexity" works like diversifying an investment portfolio. If your entire identity is wrapped up in one area, failure there becomes catastrophic to your sense of self. When you have multiple sources of identity and meaning, failure in one domain hurts but doesn't threaten your entire self-concept.
 
 Moving from a protection mindset to an exploration mindset is key to developing self-complexity. This means being open to novelty, being willing to fail, and creating space for play in adult life. Activities that shift perspective, like spending time in nature or trying challenging new experiences, help expand identity beyond a single domain. The goal isn't to work less hard but to create a more resilient psychological foundation from which to work.
+
+<PodcastDisclaimer
+  youTubeLink={`https://www.youtube.com/watch?v=${frontmatter.videoId}`}
+/>
 
 </PodcastSummaryPageLayout>

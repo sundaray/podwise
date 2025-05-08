@@ -12,6 +12,7 @@ videoUploadedAt: "2024-11-30T12:00:00Z"
 ---
 
 import { PodcastSummaryPageLayout } from "@/components/podcast-summary-page-layout";
+import { PodcastDisclaimer } from "@/components/podcast-disclaimer";
 
 <PodcastSummaryPageLayout frontmatter={frontmatter}>
 
@@ -76,5 +77,9 @@ This insight aligns with contemporary research on high performance psychology. L
 The conversation contrasts Leonardo's creative drive with Michelangelo's. While Michelangelo appeared driven by internal conflict and self-criticism (depicted in his self-portrait as flayed skin hanging in purgatory), Leonardo seemed motivated by genuine wonder and curiosity about the world. This illustrates different paths to creative genius.
 
 Some people, like Michelangelo, create from a place of guilt, shame, or the need for validation. Others, like Leonardo, are propelled by love and passionate curiosity. Both approaches can produce extraordinary work, but they reflect fundamentally different relationships with creativity and achievement. Leonardo's way suggests that we might accomplish great things not through self-flagellation or constant dissatisfaction, but through deep appreciation of the world's mysteries and beauty. This represents a more sustainable and joyful approach to creative expression and personal development.
+
+<PodcastDisclaimer
+  youTubeLink={`https://www.youtube.com/watch?v=${frontmatter.videoId}`}
+/>
 
 </PodcastSummaryPageLayout>

@@ -12,6 +12,7 @@ videoUploadedAt: "2025-02-13T12:00:00Z"
 ---
 
 import { PodcastSummaryPageLayout } from "@/components/podcast-summary-page-layout";
+import { PodcastDisclaimer } from "@/components/podcast-disclaimer";
 
 <PodcastSummaryPageLayout frontmatter={frontmatter}>
 
@@ -76,5 +77,9 @@ This paradox presents an ethical dilemma for intervention programs. While reduci
 At its core, bullying exploits the fundamental human need to belong. Social exclusion is a powerful tool because humans evolved as social creatures dependent on group acceptance for survival. The peer rejection inherent in bullying triggers profound distress precisely because it threatens this basic need.
 
 Dr. Vaillancourt noted that while interventions may successfully reduce active aggression, they struggle to promote genuine inclusion. Even when overt bullying stops, victims often remain socially isolated. This highlights the limitation of anti-bullying approaches that focus solely on stopping negative behaviors without fostering positive social connections. True prevention requires not just reducing harmful actions but actively promoting a culture of belonging and inclusion to address the deeper social dynamics at play.
+
+<PodcastDisclaimer
+  youTubeLink={`https://www.youtube.com/watch?v=${frontmatter.videoId}`}
+/>
 
 </PodcastSummaryPageLayout>

@@ -12,6 +12,7 @@ videoUploadedAt: "2025-01-18T12:00:00Z"
 ---
 
 import { PodcastSummaryPageLayout } from "@/components/podcast-summary-page-layout";
+import { PodcastDisclaimer } from "@/components/podcast-disclaimer";
 
 <PodcastSummaryPageLayout frontmatter={frontmatter}>
 
@@ -94,5 +95,9 @@ Vervaeke recommends cultivating practices across four dimensions he calls "DIME"
 Dialogical practices involve mutual "midwifery" where people help each other give deeper birth to themselves. Imaginal practices engage imagination in "serious play" to explore transformation. Mindfulness includes both meditation (attending to mental framing) and contemplation (looking outward to see more clearly).
 
 Physical practices include both seated and moving exercises that carry awareness into bodily experience. Through this ecology of practices, we can develop deeper connections to reality, ourselves, and others - addressing multiple dimensions of meaning simultaneously.
+
+<PodcastDisclaimer
+  youTubeLink={`https://www.youtube.com/watch?v=${frontmatter.videoId}`}
+/>
 
 </PodcastSummaryPageLayout>

@@ -12,6 +12,7 @@ videoUploadedAt: "2024-11-23T12:00:00Z"
 ---
 
 import { PodcastSummaryPageLayout } from "@/components/podcast-summary-page-layout";
+import { PodcastDisclaimer } from "@/components/podcast-disclaimer";
 
 <PodcastSummaryPageLayout frontmatter={frontmatter}>
 
@@ -78,5 +79,9 @@ Addressing the fertility crisis will require cultural experimentation and new ap
 Larsen argues that any solutions must preserve women's freedoms and equality while finding new ways to increase birth rates. This requires honest national conversations about the existential threat of population collapse and a willingness to question even deeply held modern values about individualism and personal choice.
 
 The challenge is unprecedented in human history. Unlike external threats that naturally unite populations, demographic collapse through low fertility doesn't trigger instinctive defensive responses. Solutions will need to be created through deliberate analysis and experimentation.
+
+<PodcastDisclaimer
+  youTubeLink={`https://www.youtube.com/watch?v=${frontmatter.videoId}`}
+/>
 
 </PodcastSummaryPageLayout>

@@ -12,6 +12,7 @@ videoUploadedAt: "2025-03-22T12:00:00Z"
 ---
 
 import { PodcastSummaryPageLayout } from "@/components/podcast-summary-page-layout";
+import { PodcastDisclaimer } from "@/components/podcast-disclaimer";
 
 <PodcastSummaryPageLayout frontmatter={frontmatter}>
 
@@ -76,5 +77,9 @@ The actual profit margins are smaller than box office figures suggest. Distribut
 There are indications that Hollywood's focus on social messaging is waning. Films commissioned in the current environment show greater awareness of audience preferences for entertainment over political content. This shift comes after years of diminishing returns for message-focused projects.
 
 The podcast suggests society has reached a saturation point with performative activism. People are increasingly immune to virtue signaling and politically charged entertainment. Future projects will likely focus more on storytelling and engagement rather than using entertainment as a vehicle for social commentary.
+
+<PodcastDisclaimer
+  youTubeLink={`https://www.youtube.com/watch?v=${frontmatter.videoId}`}
+/>
 
 </PodcastSummaryPageLayout>

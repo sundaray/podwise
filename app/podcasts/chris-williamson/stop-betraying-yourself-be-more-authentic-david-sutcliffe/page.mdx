@@ -12,6 +12,7 @@ videoUploadedAt: "2025-01-11T12:00:00Z"
 ---
 
 import { PodcastSummaryPageLayout } from "@/components/podcast-summary-page-layout";
+import { PodcastDisclaimer } from "@/components/podcast-disclaimer";
 
 <PodcastSummaryPageLayout frontmatter={frontmatter}>
 
@@ -76,5 +77,9 @@ David encourages people to list instances where they followed their intuition an
 Real maturity, particularly for men, means understanding that fulfillment comes from being of service rather than focusing on yourself. David found his most satisfying experiences came when he focused on how he could be useful rather than on his individual achievement. This shift from self-focus to service orientation represents a significant developmental milestone.
 
 When we're not thinking about ourselves, we experience less anxiety and neurosis. This doesn't mean betraying yourself - discernment and self-care remain important - but orientation toward giving leads to greater satisfaction. Many people eventually realize their motivations weren't what they thought, often discovering they were seeking external validation to heal childhood wounds.
+
+<PodcastDisclaimer
+  youTubeLink={`https://www.youtube.com/watch?v=${frontmatter.videoId}`}
+/>
 
 </PodcastSummaryPageLayout>

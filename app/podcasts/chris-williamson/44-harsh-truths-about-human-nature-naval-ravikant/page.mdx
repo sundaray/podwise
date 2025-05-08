@@ -12,6 +12,7 @@ videoUploadedAt: "2025-03-31T12:00:00Z"
 ---
 
 import { PodcastSummaryPageLayout } from "@/components/podcast-summary-page-layout";
+import { PodcastDisclaimer } from "@/components/podcast-disclaimer";
 
 <PodcastSummaryPageLayout frontmatter={frontmatter}>
 
@@ -136,5 +137,9 @@ What truly matters is what you choose to pay attention to and what you do with t
 The only true test of intelligence is getting what you want out of life, which involves two components: knowing how to get what you want and knowing what to want in the first place. People often fail by either wanting things they can't attain or successfully attaining things that don't actually bring fulfillment.
 
 Naval suggests defining success concretely, focusing on it, and letting go of distractions. Additionally, he emphasizes that people end up wherever is acceptable to them - your standards determine your outcomes. By refusing to accept second-best outcomes in areas that truly matter, while being flexible about less important areas, you create space for meaningful achievement.
+
+<PodcastDisclaimer
+  youTubeLink={`https://www.youtube.com/watch?v=${frontmatter.videoId}`}
+/>
 
 </PodcastSummaryPageLayout>

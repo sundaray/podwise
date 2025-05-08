@@ -12,12 +12,14 @@ videoUploadedAt: "2025-02-22T12:00:00Z"
 ---
 
 import { PodcastSummaryPageLayout } from "@/components/podcast-summary-page-layout";
+import { PodcastDisclaimer } from "@/components/podcast-disclaimer";
 
 <PodcastSummaryPageLayout frontmatter={frontmatter}>
 
 Here are the top 10 key takeaways from Erwin McManus' conversation with Chris Williamson about breaking free from fear and living a more courageous life.
 
-#3 1. Fear permeates beyond categories
+## 1. Fear permeates beyond categories
+
 Fear doesn't stay contained within specific areas of life. It spreads throughout your entire psychological wellbeing. McManus describes how his early fears (of dogs after being attacked, of roller coasters after a safety incident) began accumulating and eventually defined him more than any other emotion.
 
 This "contagious" nature of fear explains why addressing isolated fears often isn't enough. When fear becomes your dominant emotional state, it colors your perception of everything. McManus recognized this pattern in himself and realized he needed a comprehensive strategy to address fear rather than treating each fear individually.
@@ -75,5 +77,9 @@ McManus emphasizes that psychological health depends on the pull factors eventua
 McManus describes humans as "factory defects" because negative emotions stick with us while positive ones quickly dissipate. This design flaw means we must deliberately work to maintain positive states while negative states persist naturally. Without intentional effort, we drift toward our worst selves rather than our best.
 
 This explains why therapy typically addresses issues like holding onto bitterness or struggling to forgive, rather than problems with excessive optimism or forgiveness. Negative emotions create instantaneous reactions that expand and deepen, creating lasting impacts. Positive emotions, while powerful in the moment, require conscious cultivation to maintain their influence on our thoughts and behaviors.
+
+<PodcastDisclaimer
+  youTubeLink={`https://www.youtube.com/watch?v=${frontmatter.videoId}`}
+/>
 
 </PodcastSummaryPageLayout>

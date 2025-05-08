@@ -12,6 +12,7 @@ videoUploadedAt: "2025-01-13T12:00:00Z"
 ---
 
 import { PodcastSummaryPageLayout } from "@/components/podcast-summary-page-layout";
+import { PodcastDisclaimer } from "@/components/podcast-disclaimer";
 
 <PodcastSummaryPageLayout frontmatter={frontmatter}>
 
@@ -76,5 +77,9 @@ Tony describes his own journey from anger-driven achievement to purpose-driven a
 Giving to others isn't sacrifice - it's "intelligent selfishness." Scientific studies show that buying coffee for strangers creates more lasting biochemical changes than purchases for yourself. Tony explains that you cannot possibly do good and not feel good; the reflective glow of helping others builds self-esteem naturally.
 
 Tony's commitment to feeding people grew from feeding two people to feeding billions. Each achievement opened the door to greater impact. The pattern of setting seemingly impossible philanthropic goals and then achieving them creates a cycle of increasing ambition and fulfillment that isn't possible through self-focused achievement alone.
+
+<PodcastDisclaimer
+  youTubeLink={`https://www.youtube.com/watch?v=${frontmatter.videoId}`}
+/>
 
 </PodcastSummaryPageLayout>

@@ -12,6 +12,7 @@ videoUploadedAt: "2025-03-15T12:00:00Z"
 ---
 
 import { PodcastSummaryPageLayout } from "@/components/podcast-summary-page-layout";
+import { PodcastDisclaimer } from "@/components/podcast-disclaimer";
 
 <PodcastSummaryPageLayout frontmatter={frontmatter}>
 
@@ -94,5 +95,9 @@ Yung Pueblo describes meditation as mental training that focuses on developing t
 Developing these qualities through regular practice improves decision-making, productivity, and overall life satisfaction. The investment in meditation pays dividends in every aspect of life, making even ordinary experiences more vivid and meaningful.
 
 The speakers emphasize that meditation is practical rather than esoteric. It's comparable to going to a "mental gym" to build specific capabilities that enhance daily life, rather than being primarily spiritual or religious in nature.
+
+<PodcastDisclaimer
+  youTubeLink={`https://www.youtube.com/watch?v=${frontmatter.videoId}`}
+/>
 
 </PodcastSummaryPageLayout>

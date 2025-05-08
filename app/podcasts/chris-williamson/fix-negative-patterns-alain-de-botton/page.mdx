@@ -12,6 +12,7 @@ videoUploadedAt: "2025-02-03T12:00:00Z"
 ---
 
 import { PodcastSummaryPageLayout } from "@/components/podcast-summary-page-layout";
+import { PodcastDisclaimer } from "@/components/podcast-disclaimer";
 
 <PodcastSummaryPageLayout frontmatter={frontmatter}>
 
@@ -76,5 +77,9 @@ Rather than shaming ourselves for these patterns, de Botton suggests honoring th
 Many adult behaviors that seem counterproductive made perfect sense in childhood contexts. The key question to ask is: "When did this behavior, which now seems problematic, once make sense?" Understanding the original purpose of our coping mechanisms allows us to appreciate their role in our survival.
 
 De Botton suggests a ritual of gratitude toward our younger selves for these protective strategies before we attempt to move beyond them. Shaming never creates change. Instead, recognizing the intelligence behind the adaptation creates a foundation for growth. This approach dissolves shame and creates space for new, more adaptive responses.
+
+<PodcastDisclaimer
+  youTubeLink={`https://www.youtube.com/watch?v=${frontmatter.videoId}`}
+/>
 
 </PodcastSummaryPageLayout>

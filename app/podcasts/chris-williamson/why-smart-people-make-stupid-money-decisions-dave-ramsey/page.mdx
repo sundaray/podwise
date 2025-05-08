@@ -13,6 +13,7 @@ videoUploadedAt: "2025-04-24T12:00:00Z"
 ---
 
 import { PodcastSummaryPageLayout } from "@/components/podcast-summary-page-layout";
+import { PodcastDisclaimer } from "@/components/podcast-disclaimer";
 
 <PodcastSummaryPageLayout frontmatter={frontmatter}>
 
@@ -77,5 +78,9 @@ Each stage requires different skills and mindsets. Solopreneurs need delegation 
 Success creates its greatest danger through complacency and hubris. At peak performance, businesses risk losing innovative edge by believing past success guarantees future results. Leaders must intentionally "shock the monkey" through regular disruption, emergency meetings, and fresh challenges to maintain hunger.
 
 Hubris causes mighty organizations to fall when they stop iterating and adapting. The solution involves staying humble despite positive momentum, remembering that today's success reflects yesterday's efforts rather than current brilliance. Constant self-examination and willingness to change prevent the stagnation that destroys otherwise successful enterprises.
+
+<PodcastDisclaimer
+  youTubeLink={`https://www.youtube.com/watch?v=${frontmatter.videoId}`}
+/>
 
 </PodcastSummaryPageLayout>

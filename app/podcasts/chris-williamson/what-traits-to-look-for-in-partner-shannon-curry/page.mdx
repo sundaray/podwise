@@ -12,6 +12,7 @@ videoUploadedAt: "2025-02-27T12:00:00Z"
 ---
 
 import { PodcastSummaryPageLayout } from "@/components/podcast-summary-page-layout";
+import { PodcastDisclaimer } from "@/components/podcast-disclaimer";
 
 <PodcastSummaryPageLayout frontmatter={frontmatter}>
 
@@ -76,5 +77,9 @@ When partners can share the personal histories and values behind their positions
 Breakups trigger a physiological response similar to drug withdrawal. People experience cravings for the oxytocin and dopamine their relationship provided, leading them to idealize their ex and forget the problems that led to the breakup.
 
 Effective strategies for handling breakups include: reminding yourself of the real problems in the relationship to counter idealization, filling empty time pockets with positive activities, and recognizing that willpower decreases with fatigue (explaining why people often contact exes at night). The neuroscience of breakups resembles grief, but with the added complexity that the person is still accessible.
+
+<PodcastDisclaimer
+  youTubeLink={`https://www.youtube.com/watch?v=${frontmatter.videoId}`}
+/>
 
 </PodcastSummaryPageLayout>

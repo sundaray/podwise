@@ -12,6 +12,7 @@ videoUploadedAt: "2024-12-21T12:00:00Z"
 ---
 
 import { PodcastSummaryPageLayout } from "@/components/podcast-summary-page-layout";
+import { PodcastDisclaimer } from "@/components/podcast-disclaimer";
 
 <PodcastSummaryPageLayout frontmatter={frontmatter}>
 
@@ -76,5 +77,9 @@ You need "reverse habituation" - the ability to say no to increasingly attractiv
 Even the most successful organizations and individuals deal with confusion and chaos daily. The difference isn't that successful people eliminate confusion but that they have processes to move from confusion to clarity to creation.
 
 Executives at top companies like Apple and Google are "just dealing constantly with the unknown of that next level of success." The outward appearance of seamless operation masks the reality that everyone faces uncertainty. Success requires continuously upgrading your skills and mindset to handle the complexity of your current level.
+
+<PodcastDisclaimer
+  youTubeLink={`https://www.youtube.com/watch?v=${frontmatter.videoId}`}
+/>
 
 </PodcastSummaryPageLayout>

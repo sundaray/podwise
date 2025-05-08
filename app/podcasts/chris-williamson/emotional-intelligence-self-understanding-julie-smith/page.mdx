@@ -12,6 +12,7 @@ videoUploadedAt: "2025-03-03T12:00:00Z"
 ---
 
 import { PodcastSummaryPageLayout } from "@/components/podcast-summary-page-layout";
+import { PodcastDisclaimer } from "@/components/podcast-disclaimer";
 
 <PodcastSummaryPageLayout frontmatter={frontmatter}>
 
@@ -76,5 +77,9 @@ For some people, sitting with difficult emotions feels dangerous, making profess
 Relationships between anxiously attached and avoidant people can work if both partners develop awareness of their patterns. The anxiously attached person typically seeks constant reassurance of love, while the avoidant person struggles with intimacy despite needing connection. Without understanding, this dynamic often leads to relationship breakdown as the anxious partner eventually gives up after repeated rejection.
 
 Successful navigation of these attachment differences requires both partners to move toward a more secure middle ground. The avoidant partner needs to build tolerance for intimacy and closeness, while the anxious partner develops resilience to uncertainty and reduces reassurance-seeking behaviors. With this mutual adjustment and compromise, couples with different attachment styles can develop strong, healthy relationships.
+
+<PodcastDisclaimer
+  youTubeLink={`https://www.youtube.com/watch?v=${frontmatter.videoId}`}
+/>
 
 </PodcastSummaryPageLayout>

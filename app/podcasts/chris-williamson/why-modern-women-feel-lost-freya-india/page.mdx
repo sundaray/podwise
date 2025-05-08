@@ -12,6 +12,7 @@ videoUploadedAt: "2025-03-17T12:00:00Z"
 ---
 
 import { PodcastSummaryPageLayout } from "@/components/podcast-summary-page-layout";
+import { PodcastDisclaimer } from "@/components/podcast-disclaimer";
 
 <PodcastSummaryPageLayout frontmatter={frontmatter}>
 
@@ -76,5 +77,9 @@ The overcorrection against dependency creates a situation where young women thin
 The cultural push for equality has inadvertently eliminated healthy forms of protection. In rejecting patriarchal control, society has also lost positive forms of authority and guardianship. This has left young women vulnerable while simultaneously being told they don't need protection.
 
 The podcast mentions concerning statistics about children's online safety: kids as young as nine becoming addicted to pornography and teenagers using fake IDs to post explicit content. Parents are often overprotective regarding physical dangers but underprotective with online risks. The feminist message that girls are vulnerable has been misinterpreted to mean they don't need protection, creating a dangerous situation where good authority figures have stepped back.
+
+<PodcastDisclaimer
+  youTubeLink={`https://www.youtube.com/watch?v=${frontmatter.videoId}`}
+/>
 
 </PodcastSummaryPageLayout>

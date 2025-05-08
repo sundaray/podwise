@@ -13,6 +13,7 @@ videoUploadedAt: "2025-05-01T12:00:00Z"
 ---
 
 import { PodcastSummaryPageLayout } from "@/components/podcast-summary-page-layout";
+import { PodcastDisclaimer } from "@/components/podcast-disclaimer";
 
 <PodcastSummaryPageLayout frontmatter={frontmatter}>
 
@@ -77,5 +78,9 @@ The digital age enables sustained contact without real intimacy, feeding the add
 Recovery ultimately demands radical acceptance of what cannot be changed - that childhood wounds won't heal through romantic obsession and that unavailable love cannot fill emotional voids. Sufferers must develop the courage to face their authentic needs and seek real connections in the present moment. This process involves grieving past losses while building capacity for genuine intimacy.
 
 The journey toward health requires learning to value reality over fantasy, developing skills for authentic connection, and building a life worth living independent of romantic validation. Rather than seeking divine meaning in another person, sufferers need to cultivate spiritual practices and genuine friendships. Recovery brings the recognition that real love exists only in present-moment reality, not in the dreamworld of limerent fantasies.
+
+<PodcastDisclaimer
+  youTubeLink={`https://www.youtube.com/watch?v=${frontmatter.videoId}`}
+/>
 
 </PodcastSummaryPageLayout>

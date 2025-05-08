@@ -12,6 +12,7 @@ videoUploadedAt: "2025-01-23T12:00:00Z"
 ---
 
 import { PodcastSummaryPageLayout } from "@/components/podcast-summary-page-layout";
+import { PodcastDisclaimer } from "@/components/podcast-disclaimer";
 
 <PodcastSummaryPageLayout frontmatter={frontmatter}>
 
@@ -75,5 +76,9 @@ Fulfillment can only come from within. A healthy relationship adds to your life 
 Women prioritize feeling safe in relationships - both physically and emotionally. This need for safety is deeply rooted and often not fully understood by men. Women want partners whose presence makes them feel protected and secure.
 
 Women want emotional safety too - the ability to express their emotions without their partner becoming defensive or distant. Many women report wishing their emotions didn't scare their partners away. Men often feel responsible for women's happiness and become uncomfortable when women aren't happy, but women need the freedom to experience their full range of emotions without judgment.
+
+<PodcastDisclaimer
+  youTubeLink={`https://www.youtube.com/watch?v=${frontmatter.videoId}`}
+/>
 
 </PodcastSummaryPageLayout>

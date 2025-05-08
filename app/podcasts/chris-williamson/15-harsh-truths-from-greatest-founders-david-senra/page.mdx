@@ -12,6 +12,7 @@ videoUploadedAt: "2024-12-16T12:00:00Z"
 ---
 
 import { PodcastSummaryPageLayout } from "@/components/podcast-summary-page-layout";
+import { PodcastDisclaimer } from "@/components/podcast-disclaimer";
 
 <PodcastSummaryPageLayout frontmatter={frontmatter}>
 
@@ -106,5 +107,9 @@ Many wealthy people make the mistake of "trading freedom for slightly nicer vers
 The most successful entrepreneurs focus intensely on a small number of critical priorities rather than trying to optimize everything. Larry Ellison, founder of Oracle, insisted there were only three truly important things to focus on among the hundreds of tasks competing for his attention. Elon Musk similarly concentrated all his resources on Pennsylvania during the 2024 election, recognizing it as the decisive battleground.
 
 This selective focus allows entrepreneurs to apply maximum effort to the factors that genuinely determine success. Rather than dispersing energy across many initiatives, they identify the few critical levers that will move their business forward and relentlessly pursue excellence in those areas. Everything else becomes secondary or is deliberately deprioritized.
+
+<PodcastDisclaimer
+  youTubeLink={`https://www.youtube.com/watch?v=${frontmatter.videoId}`}
+/>
 
 </PodcastSummaryPageLayout>

@@ -12,6 +12,7 @@ videoUploadedAt: "2025-02-20T12:00:00Z"
 ---
 
 import { PodcastSummaryPageLayout } from "@/components/podcast-summary-page-layout";
+import { PodcastDisclaimer } from "@/components/podcast-disclaimer";
 
 <PodcastSummaryPageLayout frontmatter={frontmatter}>
 
@@ -76,5 +77,9 @@ The data shows that people have been steadily migrating to cities over human his
 Restoring balance between autonomy and connection requires creating sustainable habits. One-time heroic efforts to reconnect with old friends typically fail because they require too much effort to maintain. Instead, we should find ways to add connection to activities we're already doing.
 
 The key is identifying activities we do alone that could easily include others. For example, doing crossword puzzles together over the phone or exercising with a friend rather than solo. These connections need to become habitual, triggered by environmental cues rather than requiring a decision each time. This approach acknowledges our tendency toward laziness while still meeting our connection needs.
+
+<PodcastDisclaimer
+  youTubeLink={`https://www.youtube.com/watch?v=${frontmatter.videoId}`}
+/>
 
 </PodcastSummaryPageLayout>

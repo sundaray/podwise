@@ -12,6 +12,7 @@ videoUploadedAt: "2025-02-06T12:00:00Z"
 ---
 
 import { PodcastSummaryPageLayout } from "@/components/podcast-summary-page-layout";
+import { PodcastDisclaimer } from "@/components/podcast-disclaimer";
 
 <PodcastSummaryPageLayout frontmatter={frontmatter}>
 
@@ -76,5 +77,9 @@ Relationships should be viewed as investments that compound over time. They pay 
 Having children fundamentally transforms priorities and provides clarity about what truly matters. Sahil describes the moment of holding his newborn son as revealing the meaning and purpose he had spent years seeking. For the first time, he felt content rather than chasing "more" of something.
 
 The first decade of a child's life represents a unique window when you are their favorite person, which coincides with career-building years. This creates tension between professional ambition and family presence. Showing children that you work hard on meaningful things while including them in understanding why can be powerful, as they learn more from observing your actions than from your words.
+
+<PodcastDisclaimer
+  youTubeLink={`https://www.youtube.com/watch?v=${frontmatter.videoId}`}
+/>
 
 </PodcastSummaryPageLayout>

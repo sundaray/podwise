@@ -12,6 +12,7 @@ videoUploadedAt: "2025-02-15T12:00:00Z"
 ---
 
 import { PodcastSummaryPageLayout } from "@/components/podcast-summary-page-layout";
+import { PodcastDisclaimer } from "@/components/podcast-disclaimer";
 
 <PodcastSummaryPageLayout frontmatter={frontmatter}>
 
@@ -76,5 +77,9 @@ For example, a child who was bullied experiences wounds, but might also suffer f
 The optional "L" step in the HEAL framework involves deliberately connecting positive experiences with negative material to transform it. This works as a kind of "cognitive superposition" where you hold both positive and negative experiences in mind simultaneously, allowing the positive to gradually transform the negative through neural association.
 
 This process works best when the positive experience specifically matches the negative material. For example, if you experience anxiety about speaking up, you might deliberately link feelings of calm or personal strength with memories of anxiety. This creates new neural connections where previously only anxiety existed. This technique isn't appropriate for severe trauma that might overwhelm you, but for manageable negative patterns, it's considered among the most effective mental health methods for its far-reaching impact.
+
+<PodcastDisclaimer
+  youTubeLink={`https://www.youtube.com/watch?v=${frontmatter.videoId}`}
+/>
 
 </PodcastSummaryPageLayout>

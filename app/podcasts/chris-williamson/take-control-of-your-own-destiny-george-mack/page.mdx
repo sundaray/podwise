@@ -12,6 +12,7 @@ videoUploadedAt: "2025-03-24T12:00:00Z"
 ---
 
 import { PodcastSummaryPageLayout } from "@/components/podcast-summary-page-layout";
+import { PodcastDisclaimer } from "@/components/podcast-disclaimer";
 
 <PodcastSummaryPageLayout frontmatter={frontmatter}>
 
@@ -106,5 +107,9 @@ This approach counteracts hindsight bias (the tendency to believe past events we
 Intentionality is a crucial complement to agency. While high agency is about effectively achieving outcomes, intentionality determines which outcomes to pursue. Without intentionality, someone might display all the characteristics of high agency but direct their efforts toward pointless or harmful goals.
 
 The hosts discuss people who possess all the pillars of agency (clear thinking, resourcefulness, bias to action, disagreeability) yet lack purpose direction. This creates a "version of hell" where capability is wasted on misguided pursuits. True high agency requires both the ability to make things happen and the wisdom to choose meaningful objectives.
+
+<PodcastDisclaimer
+  youTubeLink={`https://www.youtube.com/watch?v=${frontmatter.videoId}`}
+/>
 
 </PodcastSummaryPageLayout>

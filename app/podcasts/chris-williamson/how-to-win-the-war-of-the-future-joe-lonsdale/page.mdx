@@ -13,6 +13,7 @@ videoUploadedAt: "2025-04-28T12:00:00Z"
 ---
 
 import { PodcastSummaryPageLayout } from "@/components/podcast-summary-page-layout";
+import { PodcastDisclaimer } from "@/components/podcast-disclaimer";
 
 <PodcastSummaryPageLayout frontmatter={frontmatter}>
 
@@ -77,5 +78,9 @@ The conversation emphasizes how understanding what adversaries don't know become
 The discussion explores how modern safety nets reduce existential risks compared to evolutionary conditions, yet many people still hesitate to take necessary career and life risks. Lonsdale emphasizes that perfectionism often masks procrastination, and the solution lies in setting tight deadlines that force action while maintaining high standards.
 
 Leadership requires bearing burdens others cannot share, including uncertainty and fear that must be hidden from teams to maintain morale. Success demands sustained focus on singular priorities rather than diversifying to hedge against failure. This approach applies equally to building companies, pursuing educational excellence, or implementing policy reforms where incremental change rarely suffices.
+
+<PodcastDisclaimer
+  youTubeLink={`https://www.youtube.com/watch?v=${frontmatter.videoId}`}
+/>
 
 </PodcastSummaryPageLayout>

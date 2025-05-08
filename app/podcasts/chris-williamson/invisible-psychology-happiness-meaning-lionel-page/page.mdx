@@ -12,6 +12,7 @@ videoUploadedAt: "2024-12-05T12:00:00Z"
 ---
 
 import { PodcastSummaryPageLayout } from "@/components/podcast-summary-page-layout";
+import { PodcastDisclaimer } from "@/components/podcast-disclaimer";
 
 <PodcastSummaryPageLayout frontmatter={frontmatter}>
 
@@ -76,5 +77,9 @@ This explains why people can experience pleasure yet feel their life lacks meani
 Despite the challenges of hedonic adaptation, there's a positive aspect: we don't adapt to a neutral state but to a mildly positive one. When asked to rate happiness on a scale of 1-10, most people report around 7 rather than 5.
 
 This positivity bias serves an evolutionary purpose. A slightly positive baseline encourages continued engagement with life and potential opportunities. It provides enough satisfaction to prevent despair while maintaining enough drive to pursue improvement. This explains why people across various circumstances—from modest means to wealth—tend to report similar baseline happiness levels when basic needs are met.
+
+<PodcastDisclaimer
+  youTubeLink={`https://www.youtube.com/watch?v=${frontmatter.videoId}`}
+/>
 
 </PodcastSummaryPageLayout>

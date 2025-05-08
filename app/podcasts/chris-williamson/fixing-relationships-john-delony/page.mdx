@@ -12,6 +12,7 @@ videoUploadedAt: "2025-03-27T12:00:00Z"
 ---
 
 import { PodcastSummaryPageLayout } from "@/components/podcast-summary-page-layout";
+import { PodcastDisclaimer } from "@/components/podcast-disclaimer";
 
 <PodcastSummaryPageLayout frontmatter={frontmatter}>
 
@@ -76,5 +77,9 @@ Dr. Delony agrees, sharing a story about his wife surprising him at an event and
 There's a tension between wanting to achieve more and accepting yourself as you are. Chris shares an observation that "men want to aim high without feeling insufficient if they fall short" and "want to be loved for who they are, not what they do." This captures the universal struggle between ambition and self-acceptance.
 
 Dr. Delony notes that contrary to intuition, knowing you're loved regardless of performance actually enables greater achievement. When you're securely anchored, you can take bigger risks. The key insight is that drive doesn't need to come from insecurity or fear. Instead, as Chris puts it, "I'll push myself more if I know that I don't need to."
+
+<PodcastDisclaimer
+  youTubeLink={`https://www.youtube.com/watch?v=${frontmatter.videoId}`}
+/>
 
 </PodcastSummaryPageLayout>

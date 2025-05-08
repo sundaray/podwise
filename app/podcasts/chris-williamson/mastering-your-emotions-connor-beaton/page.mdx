@@ -12,6 +12,7 @@ videoUploadedAt: "2025-01-16T12:00:00Z"
 ---
 
 import { PodcastSummaryPageLayout } from "@/components/podcast-summary-page-layout";
+import { PodcastDisclaimer } from "@/components/podcast-disclaimer";
 
 <PodcastSummaryPageLayout frontmatter={frontmatter}>
 
@@ -86,5 +87,9 @@ Most men have very little unstructured cognitive time in their daily lives. Cons
 Connor recommends dedicating 30-60 minutes daily to unstructured cognitive activities like stream-of-consciousness journaling or walking without audio input. These practices create space for emotional awareness to develop naturally rather than being constantly suppressed.
 
 Finding supportive communities, especially other men working on emotional awareness, accelerates growth. While the tendency for men is to "lone wolf" emotional development, having others who can provide feedback and accountability makes the process more effective and sustainable.
+
+<PodcastDisclaimer
+  youTubeLink={`https://www.youtube.com/watch?v=${frontmatter.videoId}`}
+/>
 
 </PodcastSummaryPageLayout>

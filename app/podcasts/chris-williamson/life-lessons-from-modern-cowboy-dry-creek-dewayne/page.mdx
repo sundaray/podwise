@@ -12,6 +12,7 @@ videoUploadedAt: "2024-11-25T12:00:00Z"
 ---
 
 import { PodcastSummaryPageLayout } from "@/components/podcast-summary-page-layout";
+import { PodcastDisclaimer } from "@/components/podcast-disclaimer";
 
 <PodcastSummaryPageLayout frontmatter={frontmatter}>
 
@@ -76,5 +77,9 @@ Dwayne points out the irony that truly wealthy people often live modestly and dr
 When asked about his ideal day, Dwayne couldn't give a specific answer because he believes good days aren't about external circumstances. The quality of his days is "internalized" rather than dependent on particular activities or experiences. He can make a good day out of whatever situation he finds himself in.
 
 Dwayne described a recent day that included coffee, visiting a cigar lounge, conversations about poetry, and dinner with a friend. The day wasn't remarkable for what he accomplished, but it was "a really, really good day" because of his attitude. This represents a mature perspective that doesn't require perfect circumstances to find contentment.
+
+<PodcastDisclaimer
+  youTubeLink={`https://www.youtube.com/watch?v=${frontmatter.videoId}`}
+/>
 
 </PodcastSummaryPageLayout>

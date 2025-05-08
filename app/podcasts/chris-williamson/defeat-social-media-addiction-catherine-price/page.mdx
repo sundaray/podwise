@@ -12,6 +12,7 @@ videoUploadedAt: "2025-03-29T12:00:00Z"
 ---
 
 import { PodcastSummaryPageLayout } from "@/components/podcast-summary-page-layout";
+import { PodcastDisclaimer } from "@/components/podcast-disclaimer";
 
 <PodcastSummaryPageLayout frontmatter={frontmatter}>
 
@@ -76,5 +77,9 @@ This difference in time perception relates to the quality of experiences. Screen
 Simply removing phones without replacing them with meaningful alternatives leads to an emotional void that can trigger existential distress. People need to identify what they truly want to pay attention to in life before attempting to reduce phone use.
 
 The more someone develops fulfilling alternatives - what Price calls "true fun" - the less they'll be drawn to their phones. When people experience the richness of genuine engagement in real-world activities, phone use often naturally decreases. This approach avoids the pitfall of creating a vacuum when removing the phone "crutch" that many use to distract themselves from uncomfortable emotions or existential questions.
+
+<PodcastDisclaimer
+  youTubeLink={`https://www.youtube.com/watch?v=${frontmatter.videoId}`}
+/>
 
 </PodcastSummaryPageLayout>

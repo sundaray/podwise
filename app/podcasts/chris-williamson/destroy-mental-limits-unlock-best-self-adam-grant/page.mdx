@@ -12,6 +12,7 @@ videoUploadedAt: "2025-01-04T12:00:00Z"
 ---
 
 import { PodcastSummaryPageLayout } from "@/components/podcast-summary-page-layout";
+import { PodcastDisclaimer } from "@/components/podcast-disclaimer";
 
 <PodcastSummaryPageLayout frontmatter={frontmatter}>
 
@@ -76,5 +77,9 @@ Adam mentions research on "critical ignoring" - the skill of discerning what doe
 Quantified metrics can obscure the human impact that creates meaning. Adam notes that in follow-up experiments to his fundraising caller study, bringing in multiple scholarship students didn't improve results because "they were no longer stories, they were statistics." Raw numbers don't generate the same emotional connection as individual stories.
 
 Chris shares how reading printed emails from podcast listeners was significantly more impactful than seeing audience metrics increase. Adam suggests this practice should be adopted periodically rather than daily - research on gratitude lists and random acts of kindness indicates weekly practice is more effective than daily. Weekly reflection allows for accumulation of meaningful experiences rather than turning appreciation into a mundane routine. This approach preserves the emotional resonance that creates true motivation.
+
+<PodcastDisclaimer
+  youTubeLink={`https://www.youtube.com/watch?v=${frontmatter.videoId}`}
+/>
 
 </PodcastSummaryPageLayout>

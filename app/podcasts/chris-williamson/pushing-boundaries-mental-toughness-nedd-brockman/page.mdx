@@ -12,6 +12,7 @@ videoUploadedAt: "2024-12-09T12:00:00Z"
 ---
 
 import { PodcastSummaryPageLayout } from "@/components/podcast-summary-page-layout";
+import { PodcastDisclaimer } from "@/components/podcast-disclaimer";
 
 <PodcastSummaryPageLayout frontmatter={frontmatter}>
 
@@ -76,5 +77,9 @@ Nedd's experience demonstrates this principle. During his run, he questioned why
 Nedd places tremendous emphasis on finishing what he begins, regardless of whether he achieves his original goal. When it became clear he wouldn't break the record during his 1,000-mile run, he still committed to completing the full distance. He states, "I think what you learn about yourself in continuing to finish what you set out to do is 10 times more important than a flag in the ground to say I got it."
 
 This philosophy values process over outcome and emphasizes that commitment transcends achievement. It suggests that identity formation happens through consistently honoring our word to ourselves. Throughout the conversation, Nedd returns to this theme—that seeing things through to completion, especially when difficult, forms character in ways that quick successes cannot.
+
+<PodcastDisclaimer
+  youTubeLink={`https://www.youtube.com/watch?v=${frontmatter.videoId}`}
+/>
 
 </PodcastSummaryPageLayout>

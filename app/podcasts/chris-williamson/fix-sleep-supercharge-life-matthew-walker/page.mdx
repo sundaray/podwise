@@ -12,6 +12,7 @@ videoUploadedAt: "2024-12-30T12:00:00Z"
 ---
 
 import { PodcastSummaryPageLayout } from "@/components/podcast-summary-page-layout";
+import { PodcastDisclaimer } from "@/components/podcast-disclaimer";
 
 <PodcastSummaryPageLayout frontmatter={frontmatter}>
 
@@ -76,5 +77,9 @@ Dr. Walker describes this as the difference between knowledge (remembering facts
 Several promising technologies are being developed to enhance sleep quality. These include electrical brain stimulation devices that can increase the power of slow brain waves during deep sleep. Dr. Walker's lab has developed a transcranial direct current stimulation tool that provides a 10-minute pre-sleep session to "electrically fertilize" the brain for better deep sleep.
 
 Other emerging approaches include kinesthetic stimulation (gentle rocking or vibration at specific frequencies), acoustic interventions that play tones matching slow-wave frequencies, and vestibular system stimulation. These technologies aim to enhance natural sleep processes rather than replacing them, potentially offering solutions for those struggling with sleep disorders or age-related sleep changes that are more effective than pharmaceutical approaches.
+
+<PodcastDisclaimer
+  youTubeLink={`https://www.youtube.com/watch?v=${frontmatter.videoId}`}
+/>
 
 </PodcastSummaryPageLayout>

@@ -13,6 +13,7 @@ videoUploadedAt: "2025-03-01T12:00:00Z"
 ---
 
 import { PodcastSummaryPageLayout } from "@/components/podcast-summary-page-layout";
+import { PodcastDisclaimer } from "@/components/podcast-disclaimer";
 
 <PodcastSummaryPageLayout frontmatter={frontmatter}>
 
@@ -91,5 +92,9 @@ Just as people initially struggled with telephone communication before developin
 Online interactions often highlight singular aspects of identity (like political affiliation) while ignoring the multidimensional nature of real people. This flattening effect leads to assumption-making and stereotyping that wouldn't occur in face-to-face interactions where we see people's complexity.
 
 There's reason for optimism, however. Younger generations are already developing sophisticated emotional communication through text and emojis. Our brains naturally push us toward effective communication, suggesting that with time and practice, we'll develop the skills needed for meaningful digital exchanges, just as previous generations mastered telephone conversation.
+
+<PodcastDisclaimer
+  youTubeLink={`https://www.youtube.com/watch?v=${frontmatter.videoId}`}
+/>
 
 </PodcastSummaryPageLayout>

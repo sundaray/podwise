@@ -12,6 +12,7 @@ videoUploadedAt: "2025-03-20T12:00:00Z"
 ---
 
 import { PodcastSummaryPageLayout } from "@/components/podcast-summary-page-layout";
+import { PodcastDisclaimer } from "@/components/podcast-disclaimer";
 
 <PodcastSummaryPageLayout frontmatter={frontmatter}>
 
@@ -92,5 +93,9 @@ Physical attraction depends less on appearance and more on signaling non-verbal 
 Studies in bar settings found that women who were approached most frequently weren't necessarily the most conventionally attractive but those who displayed the most availability cues. Effective signals include darting glances (quick looks followed by looking away) and lingering gazes. Research suggests it takes approximately 17 such signals before someone typically approaches in heterosexual dating scenarios.
 
 Low-pressure verbal cues like a simple "hey" with lowered voice tone and lingering gaze can quickly test potential interest without risking significant rejection. The fear of rejection prevents many people from signaling availability, but social exposure therapy—repeatedly facing mild rejection situations—gradually reduces anxiety. The potential reward of connection outweighs the minimal consequences of subtle rejection.
+
+<PodcastDisclaimer
+  youTubeLink={`https://www.youtube.com/watch?v=${frontmatter.videoId}`}
+/>
 
 </PodcastSummaryPageLayout>

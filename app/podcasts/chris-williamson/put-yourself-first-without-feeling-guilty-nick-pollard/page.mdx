@@ -12,6 +12,7 @@ videoUploadedAt: "2025-01-02T12:00:00Z"
 ---
 
 import { PodcastSummaryPageLayout } from "@/components/podcast-summary-page-layout";
+import { PodcastDisclaimer } from "@/components/podcast-disclaimer";
 
 <PodcastSummaryPageLayout frontmatter={frontmatter}>
 
@@ -76,5 +77,9 @@ The lack of same-sex friendships stems from shame and difficulty opening up auth
 When first establishing boundaries after a lifetime of people pleasing, life temporarily becomes more uncomfortable before improving. The discomfort comes from breaking established patterns and facing potential rejection or conflict that was previously avoided at all costs. This initial difficulty causes many to abandon their boundary-setting efforts.
 
 The key insight is that if life will be difficult whether you set boundaries or not, you might as well choose the path that leads to eventual improvement. Initial discomfort gradually gives way to increased self-confidence as you honor commitments to yourself. The long-term benefits include deeper authentic relationships, reduced anxiety, improved health, and a stronger sense of identity. Making this transition requires courage to face short-term distress for long-term well-being.
+
+<PodcastDisclaimer
+  youTubeLink={`https://www.youtube.com/watch?v=${frontmatter.videoId}`}
+/>
 
 </PodcastSummaryPageLayout>
