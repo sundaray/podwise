@@ -14,7 +14,7 @@ export default async function SuccessPage({
   // If no session ID is provided, show error message
   if (!sessionId) {
     return (
-      <div className="flex min-h-[70vh] items-center justify-center">
+      <div className="flex items-center justify-center">
         <div className="mx-auto max-w-md px-4 text-center">
           <h2 className="mb-2 text-2xl font-semibold tracking-tight text-red-600">
             Invalid purchase verification
@@ -24,7 +24,7 @@ export default async function SuccessPage({
             just completed a purchase, please contact{" "}
             <Link
               href="/support"
-              className="text-sky-600 underline hover:text-sky-700"
+              className="text-sky-600 hover:text-sky-700"
             >
               support
             </Link>
@@ -48,7 +48,7 @@ export default async function SuccessPage({
   // If failed to retrieve the session, show error
   if (!success || !session) {
     return (
-      <div className="flex min-h-[70vh] items-center justify-center">
+      <div className="flex items-center justify-center">
         <div className="mx-auto max-w-md px-4 text-center">
           <h2 className="mb-2 text-2xl font-semibold tracking-tight text-red-600">
             Verification failed
@@ -58,7 +58,7 @@ export default async function SuccessPage({
             error, please contact{" "}
             <Link
               href="/support"
-              className="text-sky-600 underline hover:text-sky-700"
+              className="text-sky-600 hover:text-sky-700"
             >
               support
             </Link>
@@ -81,9 +81,9 @@ export default async function SuccessPage({
   const isLifetime = planType === "lifetime";
 
   return (
-    <div className="flex min-h-[70vh] items-center justify-center">
+    <div className="flex items-center justify-center">
       <div className="mx-auto max-w-md px-4 text-center">
-        <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-green-100">
+        <div className="mx-auto mb-6 flex size-16 items-center justify-center rounded-full bg-green-100">
           <Icons.check className="size-8 text-green-600" />
         </div>
 
