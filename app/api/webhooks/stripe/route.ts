@@ -42,7 +42,7 @@ export async function POST(request: NextRequest) {
 
     return NextResponse.json({ received: true }, { status: 200 });
   } catch (error) {
-    console.error("Error processing webhook:", error);
+    console.error("Error processing stripe webhook:", error);
     return NextResponse.json(
       { error: "Internal server error" },
       { status: 500 },
