@@ -11,8 +11,8 @@ export async function handleAuthenticatedFreePodcast(request: NextRequest) {
   const path = nextUrl.pathname;
 
   // Check if it's a free podcast
-  const isFreePostcast = freePodcastPaths.includes(path);
-  if (!isFreePostcast) {
+  const isFreePodcast = freePodcastPaths.includes(path);
+  if (!isFreePodcast) {
     return null;
   }
 

@@ -11,10 +11,16 @@ export async function handleUnauthenticatedFreePodcast(request: NextRequest) {
   const path = nextUrl.pathname;
 
   // Check if it's a free podcast summary
-  const isFreePostcast = freePodcastPaths.includes(path);
-  if (!isFreePostcast) {
+  const isFreePodcast = freePodcastPaths.includes(path);
+  if (!isFreePodcast) {
     return null;
   }
+
+  console.log("handleUnauthenticatedFreePodcast: request path", path);
+  console.log(
+    "handleUnauthenticatedFreePodcast: is it a free podcast",
+    isFreePodcast,
+  );
 
   // Get client IP address
   const clientIP = request.headers.get("x-forwarded-for") || "127.0.0.1";
