@@ -37,10 +37,10 @@ export function LifetimeAccessForm() {
         disabled={isPending}
       >
         {isPending ? (
-          <>
-            <Icons.loader className="mr-2 size-4 animate-spin" />
+          <div className="flex items-center justify-center">
+          <Icons.loader className="mr-2 size-4 animate-spin" />
             Processing...
-          </>
+          </div>
         ) : (
           "Purchase Lifetime"
         )}
