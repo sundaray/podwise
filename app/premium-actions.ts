@@ -5,7 +5,7 @@ import Stripe from "stripe";
 import { getUserSession } from "@/lib/auth/session";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-  // @ts-ignore
+  // @ts-expect-error
   apiVersion: "2023-10-16",
 });
 
@@ -59,7 +59,7 @@ export async function createAnnualCheckoutSession(
 
     if (session) {
       shouldRedirect = true;
-      checkoutUrl = session.url;
+      checkoutUrl = session.url!;
     }
   } catch (error) {
     errorOccurred = true;
@@ -125,7 +125,7 @@ export async function createLifetimeCheckoutSession(
 
     if (session) {
       shouldRedirect = true;
-      checkoutUrl = session.url;
+      checkoutUrl = session.url!;
     }
   } catch (error) {
     errorOccurred = true;

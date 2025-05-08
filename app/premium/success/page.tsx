@@ -20,8 +20,8 @@ export default async function SuccessPage({
             Invalid purchase verification
           </h2>
           <p className="mb-4 text-sm text-pretty text-gray-600">
-            No purchase verification information was provided. If you've just
-            completed a purchase, please contact{" "}
+            No purchase verification information was provided. If you&apos;ve
+            just completed a purchase, please contact{" "}
             <Link
               href="/support"
               className="text-sky-600 underline hover:text-sky-700"
@@ -54,8 +54,8 @@ export default async function SuccessPage({
             Verification failed
           </h2>
           <p className="mb-4 text-sm text-pretty text-gray-600">
-            We couldn't verify your purchase. If you believe this is an error,
-            please contact{" "}
+            We couldn&apos;t verify your purchase. If you believe this is an
+            error, please contact{" "}
             <Link
               href="/support"
               className="text-sky-600 underline hover:text-sky-700"
@@ -84,7 +84,7 @@ export default async function SuccessPage({
     <div className="flex min-h-[70vh] items-center justify-center">
       <div className="mx-auto max-w-md px-4 text-center">
         <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-green-100">
-          <Icons.check className="h-8 w-8 text-green-600" />
+          <Icons.check className="size-8 text-green-600" />
         </div>
 
         <h2 className="mb-2 text-2xl font-semibold tracking-tight text-gray-900">
