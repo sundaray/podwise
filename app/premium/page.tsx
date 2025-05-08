@@ -1,6 +1,8 @@
 import { Icons } from "@/components/icons";
 
 import type { Metadata } from "next";
+import { AnnualAccessForm } from "@/components/annual-access-form";
+import { LifetimeAccessForm } from "@/components/lifetime-access-form";
 
 export const metadata: Metadata = {
   title: "Go Premium | Podwise",
@@ -108,12 +110,7 @@ export default function Premium() {
                     USD
                   </span>
                 </p>
-                <a
-                  href="#"
-                  className="mt-10 block w-full rounded-md bg-sky-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-xs hover:bg-sky-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600"
-                >
-                  Purchase Annual
-                </a>
+                <AnnualAccessForm />
                 <p className="mt-6 text-xs/5 text-gray-600">
                   Access expires after one year
                 </p>
@@ -166,12 +163,7 @@ export default function Premium() {
                     USD
                   </span>
                 </p>
-                <a
-                  href="#"
-                  className="mt-10 block w-full rounded-md bg-sky-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-xs hover:bg-sky-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-700"
-                >
-                  Purchase Lifetime
-                </a>
+                <LifetimeAccessForm />
                 <p className="mt-6 text-xs/5 text-gray-600">Never expires</p>
               </div>
             </div>

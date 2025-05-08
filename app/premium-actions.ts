@@ -1,7 +1,9 @@
 "use server";
 
 import { redirect } from "next/navigation";
+import { parseWithZod } from "@conform-to/zod";
 import Stripe from "stripe";
+import { z } from "zod";
 import { getUserSession } from "@/lib/auth/session";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
@@ -13,6 +15,12 @@ export async function createAnnualCheckoutSession(
   prevState: unknown,
   formData: FormData,
 ) {
+  // Create a schema for validation
+  const schema = z.object({});
+
+  // Parse with zod to get a submission result
+  const submission = parseWithZod(formData, { schema });
+
   // Get user from session
   const { user } = await getUserSession();
 
@@ -64,9 +72,9 @@ export async function createAnnualCheckoutSession(
   } catch (error) {
     errorOccurred = true;
     console.error("[createAnnualCheckoutSession] error:", error);
-    return {
+    return submission.reply({
       formErrors: ["Error. Please try again."],
-    };
+    });
   } finally {
     if (shouldRedirect && checkoutUrl && !errorOccurred) {
       redirect(checkoutUrl);
@@ -78,6 +86,12 @@ export async function createLifetimeCheckoutSession(
   prevState: unknown,
   formData: FormData,
 ) {
+  // Create a schema for validation
+  const schema = z.object({});
+
+  // Parse with zod to get a submission result
+  const submission = parseWithZod(formData, { schema });
+
   // Get user from session
   const { user } = await getUserSession();
 
@@ -130,9 +144,9 @@ export async function createLifetimeCheckoutSession(
   } catch (error) {
     errorOccurred = true;
     console.error("[createLifetimeCheckoutSession] error:", error);
-    return {
+    return submission.reply({
       formErrors: ["Error. Please try again."],
-    };
+    });
   } finally {
     if (shouldRedirect && checkoutUrl && !errorOccurred) {
       redirect(checkoutUrl);
