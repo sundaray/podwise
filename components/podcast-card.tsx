@@ -61,6 +61,7 @@ export async function PodcastCard({ podcast, hostPath }: PodcastCardProps) {
 
       <Link
         href={`/podcasts/${hostPath}/${slug}`}
+        prefetch={false}
         className="absolute inset-0"
         aria-label={`Read summary of ${title}`}
       />
