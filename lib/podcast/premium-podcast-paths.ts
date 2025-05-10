@@ -1,6 +1,6 @@
-
 export const premiumPodcastPaths = [
   // Chris Williamson premium podcasts
+  "/podcasts/chris-williamson/how-modern-parenting-got-it-all-wrong-dr-paul-turke",
   "/podcasts/chris-williamson/how-to-rewire-your-brain-to-take-more-risks-alex-hutchinson",
   "/podcasts/chris-williamson/limerence-explained-why-do-we-get-addicted-to-people-crappy-childhood-fairy",
   "/podcasts/chris-williamson/why-are-liberal-women-becoming-unhappy-brad-wilcox",
