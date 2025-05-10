@@ -1,8 +1,14 @@
-// Auto-generated podcast list - DO NOT EDIT MANUALLY
-// Generated on 2025-04-27T16:47:14.341Z
-
-
 export const chrisWilliamsonPodcastList = [
+  {
+    title: "How Modern Parenting Got It All Wrong - Dr Paul Turke",
+    slug: "how-modern-parenting-got-it-all-wrong-dr-paul-turke",
+    tags: ["Evolutionary Parenting", "Child Development", "Anthropology"],
+    image: "how-modern-parenting-got-it-all-wrong-dr-paul-turke.jpg",
+    podcastHost: "Chris Williamson",
+    isPremium: true,
+    videoId: "iOkLAsNmlJ0",
+    videoUploadedAt: "2025-05-08T12:00:00Z",
+  },
   {
     title: "How To Overcome The Worst Pain Of Your Life - Jeremy Renner",
     slug: "how-to-overcome-the-worst-pain-of-your-life-jeremy-renner",
@@ -11,8 +17,8 @@ export const chrisWilliamsonPodcastList = [
     podcastHost: "Chris Williamson",
     isPremium: false,
     videoId: "ZajzamaQJAA",
-    videoUploadedAt: "2025-05-05T12:00:00Z"
-    },    
+    videoUploadedAt: "2025-05-05T12:00:00Z",
+  },
   {
     title: "How To Rewire Your Brain To Take More Risks - Alex Hutchinson",
     slug: "how-to-rewire-your-brain-to-take-more-risks-alex-hutchinson",
@@ -66,15 +72,17 @@ export const chrisWilliamsonPodcastList = [
     videoUploadedAt: "2025-04-24T12:00:00Z",
   },
   {
-    title: "Harvard Professor Reveals The Secret To Lasting Love & Happiness - Arthur Brooks",
+    title:
+      "Harvard Professor Reveals The Secret To Lasting Love & Happiness - Arthur Brooks",
     slug: "harvard-professor-reveals-the-secret-to-lasting-love-and-happiness-arthur-brooks",
     tags: ["Love Psychology", "Relationship Science", "Happiness Research"],
-    image: "harvard-professor-reveals-the-secret-to-lasting-love-and-happiness-arthur-brooks.jpg",
+    image:
+      "harvard-professor-reveals-the-secret-to-lasting-love-and-happiness-arthur-brooks.jpg",
     podcastHost: "Chris Williamson",
     videoId: "jY1gwywkmvc",
     isPremium: true,
-    videoUploadedAt: "2025-04-21T12:00:00Z"
-    },    
+    videoUploadedAt: "2025-04-21T12:00:00Z",
+  },
   {
     title: "Why Women Say They Want One Thing But Date Another - Rob Henderson",
     slug: "why-women-say-they-want-one-thing-but-date-another-rob-henderson",
