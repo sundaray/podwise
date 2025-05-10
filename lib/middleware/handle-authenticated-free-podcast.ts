@@ -5,6 +5,7 @@ import {
   createPodcastSession,
   updatePodcastSession,
 } from "@/lib/podcast/podcast-session";
+import { getUserSession } from "@/lib/auth/session";
 
 export async function handleAuthenticatedFreePodcast(request: NextRequest) {
   const { nextUrl } = request;
@@ -15,6 +16,14 @@ export async function handleAuthenticatedFreePodcast(request: NextRequest) {
   if (!isFreePodcast) {
     return null;
   }
+
+  // Get premium status
+  const { user } = await getUserSession();
+  const hasPremiumAccess =
+    user && (user.annualAccessStatus || user.lifetimeAccessStatus);
+
+  // Skip all limiting logic for premium users
+  if (hasPremiumAccess) return null;
 
   // Get client IP address
   const clientIP = request.headers.get("x-forwarded-for") || "127.0.0.1";
