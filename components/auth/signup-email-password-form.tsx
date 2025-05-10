@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useActionState } from "react";
-import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { useForm } from "@conform-to/react";
 import { parseWithZod } from "@conform-to/zod";
@@ -15,9 +14,7 @@ import { ErrorMessage } from "@/components/auth/error-message";
 import { signUpWithEmailAndPassword } from "@/app/credentials-signup-actions";
 import { SignUpEmailPasswordFormSchema } from "@/schema";
 
-export function SignUpEmailPasswordForm() {
-  const searchParams = useSearchParams();
-  const next = searchParams.get("next") || "/";
+export function SignUpEmailPasswordForm({ next }: { next?: string }) {
 
   const boundSignUpWithEmailAndPassword = signUpWithEmailAndPassword.bind(
     null,

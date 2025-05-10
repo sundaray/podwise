@@ -1,15 +1,12 @@
 "use client";
 
 import { useActionState } from "react";
-import { useSearchParams } from "next/navigation";
 
 import { Icons } from "@/components/icons";
 import { signInWithGoogle } from "@/app/google-actions";
 import { ErrorMessage } from "@/components/auth/error-message";
 
-export function SignUpGoogleForm() {
-  const searchParams = useSearchParams();
-  const next = searchParams.get("next") || "/";
+export function SignUpGoogleForm({ next }: { next: string }) {
 
   const boundGoogleSignIn = signInWithGoogle.bind(null, next);
 

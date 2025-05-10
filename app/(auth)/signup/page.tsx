@@ -1,4 +1,3 @@
-import { Suspense } from "react";
 import { SignUpGoogleForm } from "@/components/auth/sign-up-google-form";
 import { SignUpEmailPasswordForm } from "@/components/auth/signup-email-password-form";
 import type { Metadata } from "next";
@@ -7,7 +6,15 @@ export const metadata: Metadata = {
   title: "Sign up | Podwise",
 };
 
-export default function SignUp() {
+export default async function SignUp({
+  searchParams,
+}: {
+  searchParams: Promise<{ next?: string }>;
+}) {
+  const resolvedParams = await searchParams;
+
+  const next = resolvedParams.next || "/";
+
   return (
     <div className="mx-auto max-w-[380px] px-4">
       <h2 className="text-center text-2xl font-semibold tracking-tight text-gray-900">
@@ -17,9 +24,7 @@ export default function SignUp() {
         Create a new account
       </p>
       <div className="mt-12 grid gap-4">
-        <Suspense>
-          <SignUpGoogleForm />
-        </Suspense>
+        <SignUpGoogleForm next={next} />
         <div className="relative">
           <div className="absolute inset-0 flex items-center">
             <span className="w-full border-t" />
@@ -28,9 +33,7 @@ export default function SignUp() {
             <span className="bg-background px-2">Or continue with</span>
           </div>
         </div>
-        <Suspense>
-          <SignUpEmailPasswordForm />
-        </Suspense>
+        <SignUpEmailPasswordForm next={next} />
       </div>
     </div>
   );
