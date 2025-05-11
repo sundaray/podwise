@@ -1,5 +1,15 @@
 export const chrisWilliamsonPodcastList = [
   {
+    title: "Why Has The World Gone Insane? - Douglas Murray",
+    slug: "why-has-the-world-gone-insane-douglas-murray",
+    tags: ["Western Values", "Cultural Commentary", "Geopolitics"],
+    image: "why-has-the-world-gone-insane-douglas-murray.jpg",
+    podcastHost: "Chris Williamson",
+    isPremium: false,
+    videoId: "uY4obrVWsRM",
+    videoUploadedAt: "2025-04-14T12:00:00Z",
+  },
+  {
     title:
       "The Neuroscience Of How To Improve Your Memory & Focus - Dr Charan Ranganath",
     slug: "improve-memory-focus-charan-ranganath",
