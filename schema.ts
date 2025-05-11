@@ -22,6 +22,7 @@ export const FetchYouTubeThumbnailFormSchema = z.object({
 
   podcastHost: z.enum(
     [
+      "andrew-huberman",
       "mel-robbins",
       "chris-williamson",
       "jay-shetty",

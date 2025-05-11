@@ -1,3 +1,4 @@
+import { andrewHubermanPodcastList } from "@/podcast-list/andrew-huberman";
 import { chrisWilliamsonPodcastList } from "@/podcast-list/chris-williamson";
 import { dailyStoicPodcastList } from "@/podcast-list/daily-stoic";
 import { doacPodcastList } from "@/podcast-list/doac";
@@ -12,6 +13,7 @@ import { timFerrissPodcastList } from "@/podcast-list/tim-ferriss";
 
 export function getPodcastTags() {
   const allPodcasts = [
+    ...andrewHubermanPodcastList,
     ...chrisWilliamsonPodcastList,
     ...dailyStoicPodcastList,
     ...doacPodcastList,

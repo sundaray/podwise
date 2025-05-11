@@ -9,6 +9,7 @@ import { loadPodcastListSearchParams } from "@/lib/podcast-list-search-params";
 import type { SearchParams } from "nuqs/server";
 
 // Import all podcast lists
+import { andrewHubermanPodcastList } from "@/podcast-list/andrew-huberman";
 import { chrisWilliamsonPodcastList } from "@/podcast-list/chris-williamson";
 import { dailyStoicPodcastList } from "@/podcast-list/daily-stoic";
 import { doacPodcastList } from "@/podcast-list/doac";
@@ -61,6 +62,7 @@ const ITEMS_PER_PAGE = 9;
 // Helper function to get all podcasts
 function getAllPodcasts() {
   return [
+    ...andrewHubermanPodcastList,
     ...chrisWilliamsonPodcastList,
     ...dailyStoicPodcastList,
     ...doacPodcastList,
@@ -79,6 +81,8 @@ function getAllPodcasts() {
 function getHostPathForPodcast(podcast: any) {
   // Map podcast to its host path based on which array it belongs to
   // This assumes each podcast has a unique slug across all hosts
+  if (andrewHubermanPodcastList.some((p) => p.slug === podcast.slug))
+    return "andrew-huberman";
   if (chrisWilliamsonPodcastList.some((p) => p.slug === podcast.slug))
     return "chris-williamson";
   if (dailyStoicPodcastList.some((p) => p.slug === podcast.slug))

@@ -1,4 +1,6 @@
 export const premiumPodcastPaths = [
+  // Andrew huberman premium podcasts
+  "/podcasts/andrew-huberman/what-pets-want-need-karolina-westlund",
   // Chris Williamson premium podcasts
   "/podcasts/chris-williamson/improve-memory-focus-charan-ranganath",
   "/podcasts/chris-williamson/23-lessons-for-being-kinder-to-yourself-joe-hudson",
