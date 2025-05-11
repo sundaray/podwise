@@ -37,6 +37,7 @@ function filterPodcastsByShows<T extends { podcastHost: string }>(
 
   // Direct mapping from show ID to actual podcastHost field value
   const showToHostMap: Record<string, string> = {
+    "andrew-huberman": "Andrew Huberman",
     "chris-williamson": "Chris Williamson",
     "daily-stoic": "Daily Stoic",
     doac: "The Diary Of A CEO",
