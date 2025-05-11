@@ -1,5 +1,17 @@
 export const chrisWilliamsonPodcastList = [
   {
+    title:
+      "The Neuroscience Of How To Improve Your Memory & Focus - Dr Charan Ranganath",
+    slug: "improve-memory-focus-charan-ranganath",
+    tags: ["Memory Science", "Neuroscience", "Personal Development"],
+    published: false,
+    image: "improve-memory-focus-charan-ranganath.jpg",
+    podcastHost: "Chris Williamson",
+    isPremium: true,
+    videoId: "8ubgcxod8Kc",
+    videoUploadedAt: "2025-05-10T12:00:00Z",
+  },
+  {
     title: "23 Lessons For Being Kinder To Yourself - Joe Hudson",
     slug: "23-lessons-for-being-kinder-to-yourself-joe-hudson",
     tags: [

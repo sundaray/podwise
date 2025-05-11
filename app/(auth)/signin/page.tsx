@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 export default async function SignIn({
   searchParams,
 }: {
-  searchParams: Promise<{ next?: string }>;
+  searchParams: Promise<{ next: string }>;
 }) {
   const resolvedParams = await searchParams;
 

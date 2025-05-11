@@ -14,8 +14,7 @@ import { ErrorMessage } from "@/components/auth/error-message";
 import { signUpWithEmailAndPassword } from "@/app/credentials-signup-actions";
 import { SignUpEmailPasswordFormSchema } from "@/schema";
 
-export function SignUpEmailPasswordForm({ next }: { next?: string }) {
-
+export function SignUpEmailPasswordForm({ next }: { next: string }) {
   const boundSignUpWithEmailAndPassword = signUpWithEmailAndPassword.bind(
     null,
     next,

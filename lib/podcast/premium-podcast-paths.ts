@@ -1,5 +1,6 @@
 export const premiumPodcastPaths = [
   // Chris Williamson premium podcasts
+  "/podcasts/chris-williamson/improve-memory-focus-charan-ranganath",
   "/podcasts/chris-williamson/23-lessons-for-being-kinder-to-yourself-joe-hudson",
   "/podcasts/chris-williamson/why-evolution-favours-beauty-over-survival-matt-ridley",
   "/podcasts/chris-williamson/what-science-now-says-about-consciousness-annaka-harris",
