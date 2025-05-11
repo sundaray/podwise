@@ -1,5 +1,6 @@
 export const premiumPodcastPaths = [
   // Andrew huberman premium podcasts
+  "/podcasts/andrew-huberman/contracts-of-love-and-money-that-make-or-break-relationships-james-sexton",
   "/podcasts/andrew-huberman/what-pets-want-need-karolina-westlund",
   // Chris Williamson premium podcasts
   "/podcasts/chris-williamson/improve-memory-focus-charan-ranganath",

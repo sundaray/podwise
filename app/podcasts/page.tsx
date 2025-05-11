@@ -7,6 +7,7 @@ import { PodcastFilter } from "@/components/podcast-filter";
 import { filterPodcasts } from "@/lib/podcast-filters";
 import { loadPodcastListSearchParams } from "@/lib/podcast-list-search-params";
 import type { SearchParams } from "nuqs/server";
+import { Icons } from "@/components/icons";
 
 // Import all podcast lists
 import { andrewHubermanPodcastList } from "@/podcast-list/andrew-huberman";
@@ -181,21 +182,30 @@ export default async function AllPodcastsPage({
 
       {(tier !== "all" || query || (shows && shows.length > 0)) &&
         totalPodcasts > 0 && (
-          <p className="mb-10 text-center text-sm font-medium text-pretty text-gray-600">
+          <p className="mb-10 text-center text-sm font-medium text-pretty text-gray-600 group-has-[[data-pending]]:hidden">
             {statusMessage}
           </p>
         )}
 
       {paginatedPodcasts.length > 0 ? (
-        <div className="grid grid-cols-1 gap-6 border-b pb-10 group-has-[[data-pending]]:animate-pulse sm:grid-cols-2 md:grid-cols-3 md:gap-10">
-          {paginatedPodcasts.map((podcast) => (
-            <PodcastCard
-              key={podcast.slug}
-              podcast={podcast}
-              hostPath={getHostPathForPodcast(podcast)}
-            />
-          ))}
-        </div>
+        <>
+          <div
+            role="status"
+            className="mb-10 flex hidden justify-center group-has-[[data-pending]]:flex"
+          >
+            <Icons.loader className="size-5 animate-spin text-gray-500" />
+            <span className="sr-only">Loading&hellip;</span>
+          </div>
+          <div className="grid grid-cols-1 gap-6 border-b pb-10 group-has-[[data-pending]]:animate-pulse sm:grid-cols-2 md:grid-cols-3 md:gap-10">
+            {paginatedPodcasts.map((podcast) => (
+              <PodcastCard
+                key={podcast.slug}
+                podcast={podcast}
+                hostPath={getHostPathForPodcast(podcast)}
+              />
+            ))}
+          </div>
+        </>
       ) : (
         <p className="text-center text-sm font-medium text-red-600">
           No podcasts found
