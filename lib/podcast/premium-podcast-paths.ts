@@ -1,5 +1,9 @@
 export const premiumPodcastPaths = [
   // Chris Williamson premium podcasts
+  "/podcasts/chris-williamson/23-lessons-for-being-kinder-to-yourself-joe-hudson",
+  "/podcasts/chris-williamson/why-evolution-favours-beauty-over-survival-matt-ridley",
+  "/podcasts/chris-williamson/what-science-now-says-about-consciousness-annaka-harris",
+  "/podcasts/chris-williamson/the-most-misleading-story-about-young-men-william-costello",
   "/podcasts/chris-williamson/how-modern-parenting-got-it-all-wrong-dr-paul-turke",
   "/podcasts/chris-williamson/how-to-rewire-your-brain-to-take-more-risks-alex-hutchinson",
   "/podcasts/chris-williamson/limerence-explained-why-do-we-get-addicted-to-people-crappy-childhood-fairy",
