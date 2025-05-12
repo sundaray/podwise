@@ -1,17 +1,20 @@
-// Auto-generated podcast list - DO NOT EDIT MANUALLY
-// Generated on 2025-04-29T17:06:18.129Z
-
 export const jayShettyPodcastList = [
-{
-title: "Deepak Chopra: THIS Formula Will Instantly Calm Your Mind & Stop Overthinking",
-slug: "deepak-chopra-this-formula-will-instantly-calm-your-mind-and-stop-overthinking",
-tags: ["Consciousness Studies", "Artificial Intelligence", "Eastern Philosophy"],
-image: "deepak-chopra-this-formula-will-instantly-calm-your-mind-and-stop-overthinking.jpg",
-podcastHost: "Jay Shetty",
-isPremium: true,
-videoId: "alL6EYL9bm0",
-videoUploadedAt: "2025-04-21T12:00:00Z"
-},
+  {
+    title:
+      "Deepak Chopra: THIS Formula Will Instantly Calm Your Mind & Stop Overthinking",
+    slug: "deepak-chopra-this-formula-will-instantly-calm-your-mind-and-stop-overthinking",
+    tags: [
+      "Consciousness Studies",
+      "Artificial Intelligence",
+      "Eastern Philosophy",
+    ],
+    image:
+      "deepak-chopra-this-formula-will-instantly-calm-your-mind-and-stop-overthinking.jpg",
+    podcastHost: "Jay Shetty",
+    isPremium: true,
+    videoId: "alL6EYL9bm0",
+    videoUploadedAt: "2025-04-21T12:00:00Z",
+  },
   {
     title:
       "LIZZO Opens Up About Her Weight Loss Journey & Letting Go of Toxic Relationships (EXCLUSIVE)",

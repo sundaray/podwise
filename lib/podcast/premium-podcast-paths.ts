@@ -1,5 +1,6 @@
 export const premiumPodcastPaths = [
   // Andrew huberman premium podcasts
+  "/podcasts/andrew-huberman/how-to-achieve-inner-peace-and-healing-richard-schwartz",
   "/podcasts/andrew-huberman/how-to-find-and-be-a-great-romantic-partner-lori-gottlieb",
   "/podcasts/andrew-huberman/tools-for-overcoming-substance-and-behavioral-addictions-ryan-soave",
   "/podcasts/andrew-huberman/improve-vitality-heal-from-disease-mark-hyman",
@@ -108,6 +109,7 @@ export const premiumPodcastPaths = [
   "/podcasts/doac/women-health-expert-birth-control-changes-who-you-are-how-you-feel-about-your-partner",
 
   // Jack Neel premium podcasts
+  "/podcasts/jack-neel/your-mind-has-been-hijacked-crypto-cavities-corruption-luke-belmar",
   "/podcasts/jack-neel/i-thought-i-was-broken-i-just-had-the-wrong-words-alex-hormozi",
   "/podcasts/jack-neel/app-expert-build-viral-apps-make-millions-retire-before-college",
   "/podcasts/jack-neel/why-i-struggled-with-money-focus-fame-iman-gadzhi",

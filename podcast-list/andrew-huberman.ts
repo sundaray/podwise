@@ -1,5 +1,15 @@
 export const andrewHubermanPodcastList = [
   {
+title: "How to Achieve Inner Peace & Healing | Dr. Richard Schwartz",
+slug: "how-to-achieve-inner-peace-and-healing-richard-schwartz",
+tags: ["Internal Family Systems", "Self-Healing", "Trauma Recovery"],
+image: "how-to-achieve-inner-peace-and-healing-richard-schwartz.jpg",
+podcastHost: "Andrew Huberman",
+isPremium: true,
+videoId: "KuuoLT-fq4s",
+videoUploadedAt: "2025-03-03T12:00:00Z"
+},
+  {
     title: "How to Find & Be a Great Romantic Partner | Lori Gottlieb",
     slug: "how-to-find-and-be-a-great-romantic-partner-lori-gottlieb",
     tags: ["Relationships", "Emotional Intelligence", "Psychology"],

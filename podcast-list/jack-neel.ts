@@ -3,6 +3,16 @@
 
 export const jackNeelPodcastList = [
   {
+title: "Your Mind Has Been Hijacked — Crypto, Cavities & Corruption | Luke Belmar",
+slug: "your-mind-has-been-hijacked-crypto-cavities-corruption-luke-belmar",
+tags: ["Success Mindset", "Cryptocurrency", "Personal Development"],
+image: "your-mind-has-been-hijacked-crypto-cavities-corruption-luke-belmar.jpg",
+podcastHost: "Jack Neel",
+isPremium: true,
+videoId: "yHr6BZOI8GY",
+videoUploadedAt: "2025-05-09T12:00:00Z"
+},
+  {
     title: "I Thought I Was Broken — I Just Had the Wrong Words | Alex Hormozi",
     slug: "i-thought-i-was-broken-i-just-had-the-wrong-words-alex-hormozi",
     tags: [
