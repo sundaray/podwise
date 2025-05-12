@@ -1,5 +1,16 @@
 export const andrewHubermanPodcastList = [
   {
+title: "How to Increase Your Speed, Mobility & Longevity with Plyometrics & Sprinting | Stuart McMillan",
+slug: "how-to-increase-your-speed-mobility-and-longevity-with-plyometrics-and-sprinting-stuart-mcmillan", 
+tags: ["Movement Science", "Plyometric Training", "Fitness Longevity"],
+published: false,
+image: "how-to-increase-your-speed-mobility-and-longevity-with-plyometrics-and-sprinting-stuart-mcmillan.jpg",
+podcastHost: "Andrew Huberman",
+isPremium: true,
+videoId: "U3cSnzdyyXU",
+videoUploadedAt: "2025-03-17T12:00:00Z"
+},
+  {
     title:
       "How to Improve Your Teeth & Oral Microbiome for Brain & Body Health | Dr. Staci Whitman",
     slug: "how-to-improve-your-teeth-and-oral-microbiome-for-brain-and-body-health-staci-whitman",
