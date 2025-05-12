@@ -1,5 +1,6 @@
 export const premiumPodcastPaths = [
   // Andrew huberman premium podcasts
+  "/podcasts/andrew-huberman/how-to-improve-your-teeth-and-oral-microbiome-for-brain-and-body-health-staci-whitman",
   "/podcasts/andrew-huberman/transform-your-mental-health-with-diet-and-lifestyle-chris-palmer",
   "/podcasts/andrew-huberman/how-to-achieve-inner-peace-and-healing-richard-schwartz",
   "/podcasts/andrew-huberman/tools-for-overcoming-substance-and-behavioral-addictions-ryan-soave",
