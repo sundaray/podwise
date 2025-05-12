@@ -1,5 +1,16 @@
 export const andrewHubermanPodcastList = [
   {
+title: "Transform Your Mental Health With Diet & Lifestyle | Dr. Chris Palmer",
+slug: "transform-your-mental-health-with-diet-and-lifestyle-chris-palmer",
+tags: ["Mental Health", "Mitochondria", "Metabolism"],
+published: false,
+image: "transform-your-mental-health-with-diet-and-lifestyle-chris-palmer.jpg",
+podcastHost: "Andrew Huberman",
+isPremium: true,
+videoId: "hCyvqRq5YmM",
+videoUploadedAt: "2025-03-31T12:00:00Z"
+},
+  {
 title: "How to Achieve Inner Peace & Healing | Dr. Richard Schwartz",
 slug: "how-to-achieve-inner-peace-and-healing-richard-schwartz",
 tags: ["Internal Family Systems", "Self-Healing", "Trauma Recovery"],
