@@ -3,6 +3,16 @@
 
 export const timFerrissPodcastList = [
   {
+    title: "Terry Real — The Therapist Who Breaks All The Rules",
+    slug: "terry-real-the-therapist-who-breaks-all-the-rules",
+    tags: ["Relationship Therapy", "Emotional Intelligence", "Family Dynamics"],
+    image: "terry-real-the-therapist-who-breaks-all-the-rules.jpg",
+    podcastHost: "Tim Ferriss",
+    isPremium: true,
+    videoId: "zCGeeYLh_kw",
+    videoUploadedAt: "2025-05-10T12:00:00Z",
+  },
+  {
     title:
       "Exploring Consciousness and Non-Ordinary Religion, Panpsychism, and Heretical Ideas — Philip Goff",
     slug: "exploring-consciousness-non-ordinary-religion-panpsychism-heretical-ideas-philip-goff",

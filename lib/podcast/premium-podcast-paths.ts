@@ -1,5 +1,8 @@
 export const premiumPodcastPaths = [
   // Andrew huberman premium podcasts
+  "/podcasts/andrew-huberman/how-to-find-and-be-a-great-romantic-partner-lori-gottlieb",
+  "/podcasts/andrew-huberman/tools-for-overcoming-substance-and-behavioral-addictions-ryan-soave",
+  "/podcasts/andrew-huberman/improve-vitality-heal-from-disease-mark-hyman",
   "/podcasts/andrew-huberman/contracts-of-love-and-money-that-make-or-break-relationships-james-sexton",
   "/podcasts/andrew-huberman/what-pets-want-need-karolina-westlund",
   // Chris Williamson premium podcasts
@@ -302,6 +305,7 @@ export const premiumPodcastPaths = [
   "/podcasts/simon-sinek/be-necessary-with-war-journalist-sebastian-junger",
 
   // Tim Ferriss premium podcasts
+  "/podcasts/tim-ferriss/terry-real-the-therapist-who-breaks-all-the-rules",
   "/podcasts/tim-ferriss/exploring-consciousness-non-ordinary-religion-panpsychism-heretical-ideas-philip-goff",
   "/podcasts/tim-ferriss/how-to-overcome-self-doubt-filmmaker-robert-rodriguez",
   "/podcasts/tim-ferriss/craig-mod-epic-walks-art-of-slowness",
