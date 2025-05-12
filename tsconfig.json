@@ -30,6 +30,6 @@
     "next.config.mjs",
     "components/success-message.tsxx",
     "app/podcasts/mel-robbins/brain-hidden-power-boost-focus-confidence-creativity/page.mdx"
-, "podcast-list/chris-williamson.js"  ],
+, "podcast-list/chris-williamson.js", "app/podcasts/doac/ai-agents-emergency-debate-these-jobs-wont-exist-in-24-months/page.mdx"  ],
   "exclude": ["node_modules"]
 }

@@ -1,7 +1,16 @@
-// Auto-generated podcast list - DO NOT EDIT MANUALLY
-// Generated on 2025-04-29T08:35:10.590Z
-
 export const doacPodcastList = [
+  {
+    title:
+      "AI AGENTS EMERGENCY DEBATE: These Jobs Won't Exist In 24 Months! We Must Prepare For What's Coming!",
+    slug: "ai-agents-emergency-debate-these-jobs-wont-exist-in-24-months",
+    tags: ["Artificial Intelligence", "Future of Work", "Automation"],
+    published: false,
+    image: "ai-agents-emergency-debate-these-jobs-wont-exist-in-24-months.jpg",
+    podcastHost: "The Diary Of A CEO",
+    isPremium: false,
+    videoId: "JMYQmGfTltY",
+    videoUploadedAt: "2025-05-12T12:00:00Z",
+  },
   {
     title:
       "Peter Attia: Anti-aging Cure No One Talks About! 50% Chance You’ll Die In A Year If This Happens!",

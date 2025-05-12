@@ -18,6 +18,8 @@ export const freePodcastPaths = [
   "/podcasts/chris-williamson/stop-betraying-yourself-be-more-authentic-david-sutcliffe",
   "/podcasts/chris-williamson/think-like-historys-greatest-genius-michael-gelb",
   "/podcasts/chris-williamson/why-mainstream-media-sucks-dave-smith",
+  
+  "/podcasts/doac/ai-agents-emergency-debate-these-jobs-wont-exist-in-24-months",
   "/podcasts/doac/anti-obesity-doctor-gabrielle-lyon-if-you-dont-exercise-this-is-what-is-happening-to-you",
   "/podcasts/doac/cancer-expert-this-common-food-making-cancer-worse",
   "/podcasts/doac/ex-google-ceo-ai-can-create-deadly-viruses-if-we-see-this-we-must-turn-off-ai",
