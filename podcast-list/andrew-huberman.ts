@@ -1,14 +1,30 @@
 export const andrewHubermanPodcastList = [
   {
-title: "How to Achieve True Happiness Using Science-Based Protocols | Dr. Laurie Santos",
-slug: "how-to-achieve-true-happiness-using-science-based-protocols-laurie-santos",
-tags: ["Science-Based Happiness", "Positive Psychology", "Mental Wellbeing"],
-image: "how-to-achieve-true-happiness-using-science-based-protocols-laurie-santos.jpg",
-podcastHost: "Andrew Huberman",
-isPremium: true,
-videoId: "Phm-Alz1Zjo",
-videoUploadedAt: "2024-12-23T12:00:00Z"
-},
+    title: "The Art of Learning & Living Life | Josh Waitzkin",
+    slug: "the-art-of-learning-and-living-life-josh-waitzkin",
+    tags: ["Performance Psychology", "Learning Mastery", "Mental Training"],
+    image: "the-art-of-learning-and-living-life-josh-waitzkin.jpg",
+    podcastHost: "Andrew Huberman",
+    isPremium: true,
+    videoId: "wAnDWfEIwoE",
+    videoUploadedAt: "2025-01-27T12:00:00Z",
+  },
+  {
+    title:
+      "How to Achieve True Happiness Using Science-Based Protocols | Dr. Laurie Santos",
+    slug: "how-to-achieve-true-happiness-using-science-based-protocols-laurie-santos",
+    tags: [
+      "Science-Based Happiness",
+      "Positive Psychology",
+      "Mental Wellbeing",
+    ],
+    image:
+      "how-to-achieve-true-happiness-using-science-based-protocols-laurie-santos.jpg",
+    podcastHost: "Andrew Huberman",
+    isPremium: true,
+    videoId: "Phm-Alz1Zjo",
+    videoUploadedAt: "2024-12-23T12:00:00Z",
+  },
   {
     title: "How to Best Guide Your Life Decisions & Path | Dr. Jordan Peterson",
     slug: "how-to-best-guide-your-life-decisions-and-path-jordan-peterson",
