@@ -1,5 +1,15 @@
 export const andrewHubermanPodcastList = [
   {
+title: "How to Make Better Decisions | Dr. Michael Platt",
+tags: "how-to-make-better-decisions-michael-platt",
+tags: ["Decision Making", "Neuroscience", "Social Psychology"],
+image: "how-to-make-better-decisions-michael-platt.jpg",
+podcastHost: "Andrew Huberman",
+isPremium: true,
+videoId: "bAWUYuygS_U",
+videoUploadedAt: "2025-02-17T12:00:00Z"
+},
+  {
 title: "How to Enhance Your Immune System | Dr. Roger Seheult",
 slug: "how-to-enhance-your-immune-system-roger-seheult",
 tags: ["Immune Health", "Light Therapy", "Mitochondrial Health"],
