@@ -1,5 +1,15 @@
 export const andrewHubermanPodcastList = [
   {
+  title: "How Different Diets Impact Your Health | Dr. Christopher Gardner",
+  slug: "how-different-diets-impact-your-health-christopher-gardner",
+  tags: ["Nutrition Science", "Diet Research", "Personalized Nutrition"],
+  image: "how-different-diets-impact-your-health-christopher-gardner.jpg",
+  podcastHost: "Andrew Huberman",
+  isPremium: false,
+  videoId: "9vQZT2igXN4",
+  videoUploadedAt: "2025-05-12T12:00:00Z"
+},
+  {
 title: "How to Increase Your Speed, Mobility & Longevity with Plyometrics & Sprinting | Stuart McMillan",
 slug: "how-to-increase-your-speed-mobility-and-longevity-with-plyometrics-and-sprinting-stuart-mcmillan", 
 tags: ["Movement Science", "Plyometric Training", "Fitness Longevity"],

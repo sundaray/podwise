@@ -1,4 +1,6 @@
 export const freePodcastPaths = [
+  "/podcasts/andrew-huberman/how-different-diets-impact-your-health-christopher-gardner",
+
   "/podcasts/chris-williamson/why-has-the-world-gone-insane-douglas-murray",
   "/podcasts/chris-williamson/how-to-win-the-war-of-the-future-joe-lonsdale",
   "/podcasts/chris-williamson/how-to-overcome-the-worst-pain-of-your-life-jeremy-renner",
@@ -18,7 +20,7 @@ export const freePodcastPaths = [
   "/podcasts/chris-williamson/stop-betraying-yourself-be-more-authentic-david-sutcliffe",
   "/podcasts/chris-williamson/think-like-historys-greatest-genius-michael-gelb",
   "/podcasts/chris-williamson/why-mainstream-media-sucks-dave-smith",
-  
+
   "/podcasts/doac/ai-agents-emergency-debate-these-jobs-wont-exist-in-24-months",
   "/podcasts/doac/anti-obesity-doctor-gabrielle-lyon-if-you-dont-exercise-this-is-what-is-happening-to-you",
   "/podcasts/doac/cancer-expert-this-common-food-making-cancer-worse",
