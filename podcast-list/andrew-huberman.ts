@@ -1,7 +1,7 @@
 export const andrewHubermanPodcastList = [
   {
 title: "How to Make Better Decisions | Dr. Michael Platt",
-tags: "how-to-make-better-decisions-michael-platt",
+slug: "how-to-make-better-decisions-michael-platt",
 tags: ["Decision Making", "Neuroscience", "Social Psychology"],
 image: "how-to-make-better-decisions-michael-platt.jpg",
 podcastHost: "Andrew Huberman",
