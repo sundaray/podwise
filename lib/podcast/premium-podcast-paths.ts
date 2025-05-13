@@ -6,7 +6,6 @@ export const premiumPodcastPaths = [
   "/podcasts/andrew-huberman/how-to-achieve-inner-peace-and-healing-richard-schwartz",
   "/podcasts/andrew-huberman/tools-for-overcoming-substance-and-behavioral-addictions-ryan-soave",
   "/podcasts/andrew-huberman/improve-vitality-heal-from-disease-mark-hyman",
-  "/podcasts/andrew-huberman/contracts-of-love-and-money-that-make-or-break-relationships-james-sexton",
   "/podcasts/andrew-huberman/what-pets-want-need-karolina-westlund",
   // Chris Williamson premium podcasts
   "/podcasts/chris-williamson/improve-memory-focus-charan-ranganath",
