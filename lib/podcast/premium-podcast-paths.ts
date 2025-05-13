@@ -1,6 +1,8 @@
 export const premiumPodcastPaths = [
   // Andrew huberman premium podcasts
+  "/podcasts/andrew-huberman/how-to-best-guide-your-life-decisions-and-path-jordan-peterson",
   "/podcasts/andrew-huberman/how-to-make-better-decisions-michael-platt",
+  "/podcasts/andrew-huberman/how-to-build-strength-endurance-and-flexibility-at-any-age-pavel-tsatsouline",
   "/podcasts/andrew-huberman/how-to-enhance-your-immune-system-roger-seheult",
   "/podcasts/andrew-huberman/how-to-increase-your-speed-mobility-and-longevity-with-plyometrics-and-sprinting-stuart-mcmillan",
   "/podcasts/andrew-huberman/how-to-improve-your-teeth-and-oral-microbiome-for-brain-and-body-health-staci-whitman",
