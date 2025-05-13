@@ -1,5 +1,15 @@
 export const andrewHubermanPodcastList = [
   {
+title: "How to Enhance Your Immune System | Dr. Roger Seheult",
+slug: "how-to-enhance-your-immune-system-roger-seheult",
+tags: ["Immune Health", "Light Therapy", "Mitochondrial Health"],
+image: "how-to-enhance-your-immune-system-roger-seheult.jpg",
+podcastHost: "Andrew Huberman",
+isPremium: true,
+videoId: "N5DAW8mkJ6Y",
+videoUploadedAt: "2025-02-24T12:00:00Z"
+},
+  {
     title: "How Different Diets Impact Your Health | Dr. Christopher Gardner",
     slug: "how-different-diets-impact-your-health-christopher-gardner",
     tags: ["Nutrition Science", "Diet Research", "Personalized Nutrition"],
