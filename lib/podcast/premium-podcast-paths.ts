@@ -1,5 +1,6 @@
 export const premiumPodcastPaths = [
   // Andrew huberman premium podcasts
+  "/podcasts/andrew-huberman/how-to-achieve-true-happiness-using-science-based-protocols-laurie-santos",
   "/podcasts/andrew-huberman/how-to-best-guide-your-life-decisions-and-path-jordan-peterson",
   "/podcasts/andrew-huberman/how-to-make-better-decisions-michael-platt",
   "/podcasts/andrew-huberman/how-to-build-strength-endurance-and-flexibility-at-any-age-pavel-tsatsouline",

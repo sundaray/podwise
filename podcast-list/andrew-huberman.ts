@@ -1,5 +1,15 @@
 export const andrewHubermanPodcastList = [
   {
+title: "How to Achieve True Happiness Using Science-Based Protocols | Dr. Laurie Santos",
+slug: "how-to-achieve-true-happiness-using-science-based-protocols-laurie-santos",
+tags: ["Science-Based Happiness", "Positive Psychology", "Mental Wellbeing"],
+image: "how-to-achieve-true-happiness-using-science-based-protocols-laurie-santos.jpg",
+podcastHost: "Andrew Huberman",
+isPremium: true,
+videoId: "Phm-Alz1Zjo",
+videoUploadedAt: "2024-12-23T12:00:00Z"
+},
+  {
     title: "How to Best Guide Your Life Decisions & Path | Dr. Jordan Peterson",
     slug: "how-to-best-guide-your-life-decisions-and-path-jordan-peterson",
     tags: ["Psychology", "Self-Improvement", "Neuroscience"],
