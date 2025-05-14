@@ -1,5 +1,19 @@
 export const andrewHubermanPodcastList = [
   {
+    title: "How to Deal With High Conflict People | Bill Eddy",
+    slug: "how-to-deal-with-high-conflict-people-bill-eddy",
+    tags: [
+      "Conflict Resolution",
+      "Relationship Advice",
+      "Emotional Intelligence",
+    ],
+    image: "how-to-deal-with-high-conflict-people-bill-eddy.jpg",
+    podcastHost: "Andrew Huberman",
+    isPremium: true,
+    videoId: "SuR0DaYoe0Y",
+    videoUploadedAt: "2024-10-28T12:00:00Z",
+  },
+  {
     title: "How to Safeguard Your Hormone Health & Fertility | Dr. Shanna Swan",
     slug: "how-to-safeguard-your-hormone-health-and-fertility-shanna-swan",
     tags: ["Endocrine Disruptors", "Fertility", "Hormone Health"],
