@@ -1,6 +1,18 @@
 export const andrewHubermanPodcastList = [
   {
     title:
+      "Using Your Mind to Control Your Physical Health & Longevity | Dr. Ellen Langer",
+    slug: "using-your-mind-to-control-your-physical-health-and-longevity-ellen-langer",
+    tags: ["Mindfulness", "Health Psychology", "Longevity"],
+    image:
+      "using-your-mind-to-control-your-physical-health-and-longevity-ellen-langer.jpg",
+    podcastHost: "Andrew Huberman",
+    isPremium: true,
+    videoId: "QYAgf_lfio4",
+    videoUploadedAt: "2025-02-03T12:00:00Z",
+  },
+  {
+    title:
       "Charting the Architecture of the Universe & Human Life | Dr. Brian Keating",
     slug: "charting-the-architecture-of-the-universe-and-human-life-brian-keating",
     tags: ["Cosmology", "Astronomy", "Human Perception"],
