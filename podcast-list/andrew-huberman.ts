@@ -1,6 +1,18 @@
 export const andrewHubermanPodcastList = [
   {
     title:
+      "How to Control Your Inner Voice & Increase Your Resilience | Dr. Ethan Kross",
+    slug: "how-to-control-your-inner-voice-and-increase-your-resilience-ethan-kross",
+    tags: ["Self-Talk", "Emotional Intelligence", "Mental Health"],
+    image:
+      "how-to-control-your-inner-voice-and-increase-your-resilience-ethan-kross.jpg",
+    podcastHost: "Andrew Huberman",
+    isPremium: true,
+    videoId: "Og56hmAspV8",
+    videoUploadedAt: "2024-11-25T12:00:00Z",
+  },
+  {
+    title:
       "Using Your Mind to Control Your Physical Health & Longevity | Dr. Ellen Langer",
     slug: "using-your-mind-to-control-your-physical-health-and-longevity-ellen-langer",
     tags: ["Mindfulness", "Health Psychology", "Longevity"],

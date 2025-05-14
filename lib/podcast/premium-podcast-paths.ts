@@ -1,7 +1,8 @@
 export const premiumPodcastPaths = [
   // Andrew huberman premium podcasts
-  "/podcasts/andrew-huberman/using-your-mind-to-control-your-physical-health-and-longevity-ellen-langer",
+  "/podcasts/andrew-huberman/how-to-control-your-inner-voice-and-increase-your-resilience-ethan-kross",
   "/podcasts/andrew-huberman/how-to-use-curiosity-and-focus-to-create-a-joyful-and-meaningful-life-bernardo-huberman",
+  "/podcasts/andrew-huberman/using-your-mind-to-control-your-physical-health-and-longevity-ellen-langer",
   "/podcasts/andrew-huberman/overcoming-guilt-and-building-tenacity-in-kids-and-adults-becky-kennedy",
   "/podcasts/andrew-huberman/the-art-of-learning-and-living-life-josh-waitzkin",
   "/podcasts/andrew-huberman/how-to-achieve-true-happiness-using-science-based-protocols-laurie-santos",
