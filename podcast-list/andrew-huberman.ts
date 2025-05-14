@@ -1,6 +1,30 @@
 export const andrewHubermanPodcastList = [
   {
     title:
+      "Understand & Apply the Psychology of Money to Gain Greater Happiness | Morgan Housel",
+    slug: "understand-and-apply-the-psychology-of-money-to-gain-greater-happiness-morgan-housel",
+    tags: ["Money Psychology", "Financial Wellness", "Wealth Mindset"],
+    image:
+      "understand-and-apply-the-psychology-of-money-to-gain-greater-happiness-morgan-housel.jpg",
+    podcastHost: "Andrew Huberman",
+    isPremium: true,
+    videoId: "z5W74QC3v2I",
+    videoUploadedAt: "2024-12-02T12:00:00Z",
+  },
+  {
+    title:
+      "How to Improve Your Mobility, Posture & Flexibility | Dr. Kelly Starrett",
+    slug: "how-to-improve-your-mobility-posture-and-flexibility-kelly-starrett",
+    tags: ["Mobility Training", "Movement Patterns", "Fitness Fundamentals"],
+    image:
+      "how-to-improve-your-mobility-posture-and-flexibility-kelly-starrett.jpg",
+    podcastHost: "Andrew Huberman",
+    isPremium: true,
+    videoId: "8N7mdkrXgbc",
+    videoUploadedAt: "2024-12-09T12:00:00Z",
+  },
+  {
+    title:
       "Create Your Ideal Future Using Science-Based Protocols | Ari Wallach",
     slug: "create-your-ideal-future-using-science-based-protocols-ari-wallach",
     tags: [
@@ -8,7 +32,6 @@ export const andrewHubermanPodcastList = [
       "Personal Development",
       "Transgenerational Empathy",
     ],
-    published: false,
     image:
       "create-your-ideal-future-using-science-based-protocols-ari-wallach.jpg",
     podcastHost: "Andrew Huberman",

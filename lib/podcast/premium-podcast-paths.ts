@@ -1,5 +1,7 @@
 export const premiumPodcastPaths = [
   // Andrew huberman premium podcasts
+  "/podcasts/andrew-huberman/understand-and-apply-the-psychology-of-money-to-gain-greater-happiness-morgan-housel",
+  "/podcasts/andrew-huberman/how-to-improve-your-mobility-posture-and-flexibility-kelly-starrett",
   "/podcasts/andrew-huberman/create-your-ideal-future-using-science-based-protocols-ari-wallach",
   "/podcasts/andrew-huberman/how-to-deal-with-high-conflict-people-bill-eddy",
   "/podcasts/andrew-huberman/how-to-control-your-inner-voice-and-increase-your-resilience-ethan-kross",
