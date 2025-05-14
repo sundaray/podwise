@@ -1,5 +1,6 @@
 export const premiumPodcastPaths = [
   // Andrew huberman premium podcasts
+  "/podcasts/andrew-huberman/create-your-ideal-future-using-science-based-protocols-ari-wallach",
   "/podcasts/andrew-huberman/how-to-deal-with-high-conflict-people-bill-eddy",
   "/podcasts/andrew-huberman/how-to-control-your-inner-voice-and-increase-your-resilience-ethan-kross",
   "/podcasts/andrew-huberman/how-to-use-curiosity-and-focus-to-create-a-joyful-and-meaningful-life-bernardo-huberman",

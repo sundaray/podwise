@@ -1,5 +1,22 @@
 export const andrewHubermanPodcastList = [
   {
+    title:
+      "Create Your Ideal Future Using Science-Based Protocols | Ari Wallach",
+    slug: "create-your-ideal-future-using-science-based-protocols-ari-wallach",
+    tags: [
+      "Future Thinking",
+      "Personal Development",
+      "Transgenerational Empathy",
+    ],
+    published: false,
+    image:
+      "create-your-ideal-future-using-science-based-protocols-ari-wallach.jpg",
+    podcastHost: "Andrew Huberman",
+    isPremium: true,
+    videoId: "kgr22uMsJ5o",
+    videoUploadedAt: "2024-10-14T12:00:00Z",
+  },
+  {
     title: "How to Deal With High Conflict People | Bill Eddy",
     slug: "how-to-deal-with-high-conflict-people-bill-eddy",
     tags: [
