@@ -1,5 +1,15 @@
 export const andrewHubermanPodcastList = [
   {
+    title: "How to Safeguard Your Hormone Health & Fertility | Dr. Shanna Swan",
+    slug: "how-to-safeguard-your-hormone-health-and-fertility-shanna-swan",
+    tags: ["Endocrine Disruptors", "Fertility", "Hormone Health"],
+    image: "how-to-safeguard-your-hormone-health-and-fertility-shanna-swan.jpg",
+    podcastHost: "Andrew Huberman",
+    isPremium: false,
+    videoId: "i5611OvTFGM",
+    videoUploadedAt: "2024-11-04T12:00:00Z",
+  },
+  {
     title:
       "How to Control Your Inner Voice & Increase Your Resilience | Dr. Ethan Kross",
     slug: "how-to-control-your-inner-voice-and-increase-your-resilience-ethan-kross",
