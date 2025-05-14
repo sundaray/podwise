@@ -1,5 +1,7 @@
 export const premiumPodcastPaths = [
   // Andrew huberman premium podcasts
+  "/podcasts/andrew-huberman/overcoming-guilt-and-building-tenacity-in-kids-and-adults-becky-kennedy",
+  "/podcasts/andrew-huberman/how-to-use-curiosity-and-focus-to-create-a-joyful-and-meaningful-life-bernardo-huberman",
   "/podcasts/andrew-huberman/the-art-of-learning-and-living-life-josh-waitzkin",
   "/podcasts/andrew-huberman/how-to-achieve-true-happiness-using-science-based-protocols-laurie-santos",
   "/podcasts/andrew-huberman/how-to-best-guide-your-life-decisions-and-path-jordan-peterson",

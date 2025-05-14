@@ -1,5 +1,41 @@
 export const andrewHubermanPodcastList = [
   {
+    title:
+      "Charting the Architecture of the Universe & Human Life | Dr. Brian Keating",
+    slug: "charting-the-architecture-of-the-universe-and-human-life-brian-keating",
+    tags: ["Cosmology", "Astronomy", "Human Perception"],
+    image:
+      "charting-the-architecture-of-the-universe-and-human-life-brian-keating.jpg",
+    podcastHost: "Andrew Huberman",
+    isPremium: false,
+    videoId: "3-ukCGQJk2c",
+    videoUploadedAt: "2025-01-20T12:00:00Z",
+  },
+  {
+    title:
+      "Overcoming Guilt & Building Tenacity in Kids & Adults | Dr. Becky Kennedy",
+    slug: "overcoming-guilt-and-building-tenacity-in-kids-and-adults-becky-kennedy",
+    tags: ["Parenting", "Emotional Intelligence", "Child Development"],
+    image:
+      "overcoming-guilt-and-building-tenacity-in-kids-and-adults-becky-kennedy.jpg",
+    podcastHost: "Andrew Huberman",
+    isPremium: true,
+    videoId: "qi4VwpEs3LE",
+    videoUploadedAt: "2025-01-13T12:00:00Z",
+  },
+  {
+    title:
+      "How to Use Curiosity & Focus to Create a Joyful & Meaningful Life | Dr. Bernardo Huberman",
+    slug: "how-to-use-curiosity-and-focus-to-create-a-joyful-and-meaningful-life-bernardo-huberman",
+    tags: ["Scientific Curiosity", "Work-Life Balance", "Physics"],
+    image:
+      "how-to-use-curiosity-and-focus-to-create-a-joyful-and-meaningful-life-bernardo-huberman.jpg",
+    podcastHost: "Andrew Huberman",
+    isPremium: true,
+    videoId: "tR73Ny4Dt9s",
+    videoUploadedAt: "2024-12-16T12:00:00Z",
+  },
+  {
     title: "The Art of Learning & Living Life | Josh Waitzkin",
     slug: "the-art-of-learning-and-living-life-josh-waitzkin",
     tags: ["Performance Psychology", "Learning Mastery", "Mental Training"],

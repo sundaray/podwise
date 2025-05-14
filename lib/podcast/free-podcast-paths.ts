@@ -1,6 +1,7 @@
 export const freePodcastPaths = [
-  "/podcasts/andrew-huberman/contracts-of-love-and-money-that-make-or-break-relationships-james-sextonpp",
+  "/podcasts/andrew-huberman/charting-the-architecture-of-the-universe-and-human-life-brian-keating",
   "/podcasts/andrew-huberman/how-different-diets-impact-your-health-christopher-gardner",
+  "/podcasts/andrew-huberman/contracts-of-love-and-money-that-make-or-break-relationships-james-sextonp",
   
   "/podcasts/chris-williamson/why-has-the-world-gone-insane-douglas-murray",
   "/podcasts/chris-williamson/how-to-win-the-war-of-the-future-joe-lonsdale",
