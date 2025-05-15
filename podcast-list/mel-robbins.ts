@@ -1,5 +1,15 @@
 export const melRobbinsPodcastList = [
   {
+title: "A Process for Finding Purpose: Do THIS to Build the Life You Want | Jay Shetty",
+slug: "process-for-finding-purpose-build-life-you-want-jay-shetty",
+tags: ["Finding Purpose", "Self-Discovery", "Mindset Shifts"],
+image: "process-for-finding-purpose-build-life-you-want-jay-shetty.jpg",
+podcastHost: "Mel Robbins",
+isPremium: true,
+videoId: "MOVQponoBmI",
+videoUploadedAt: "2025-04-21T12:00:00Z"
+},
+  {
     title:
       "The Truth About Anxiety & ADHD: Life-Changing Tools From Renowned Psychiatrist Dr. Tracey Marks",
     slug: "truth-about-anxiety-adhd-life-changing-tools-from-renowned-psychiatrist-tracey-marks",
