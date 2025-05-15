@@ -133,6 +133,11 @@ export default async function AllPodcastsPage({
     return dateB.getTime() - dateA.getTime();
   });
 
+  console.log("First 5 sorted podcasts:", sortedPodcasts.slice(0,5).map(p => ({
+    title: p.title,
+    videoUploadedAt: p.videoUploadedAt,
+  })));
+
   // Filter podcasts based on type, query, and selected shows
   const filteredPodcasts = filterPodcasts(
     sortedPodcasts,
