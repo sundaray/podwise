@@ -269,6 +269,7 @@ export const premiumPodcastPaths = [
   "/podcasts/rangan-chatterjee/top-food-hacks-regenerate-stem-cells-boost-brain-health-improve-circulation-william-li",
 
   // Scott D. Clary premium podcasts
+  "/podcasts/scott-d-clary/from-homeless-teen-to-serial-entrepreneur-simon-squibb-founder-investor",
   "/podcasts/scott-d-clary/how-taking-calculated-chances-built-business-empire-michael-liebowitz-serial-entrepreneur",
   "/podcasts/scott-d-clary/how-unresolved-trauma-creates-unhappy-entrepreneurs-danny-morel-transformation-guide",
   "/podcasts/scott-d-clary/how-extreme-specialization-created-8-figure-growth-machine-chris-dreyer-seo-strategist",

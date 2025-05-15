@@ -1,7 +1,16 @@
-// Auto-generated podcast list - DO NOT EDIT MANUALLY
-// Generated on 2025-04-29T18:16:29.064Z
-
 export const scottDClaryPodcastList = [
+  {
+    title:
+      "From Homeless Teen to Serial Entrepreneur | Simon Squibb - Founder & Investor",
+    slug: "from-homeless-teen-to-serial-entrepreneur-simon-squibb-founder-investor",
+    tags: ["Entrepreneurship", "Success Mindset", "Business Philosophy"],
+    image:
+      "from-homeless-teen-to-serial-entrepreneur-simon-squibb-founder-investor.jpg",
+    podcastHost: "Scott D. Clary",
+    isPremium: true,
+    videoId: "MkDY0LeA_FA",
+    videoUploadedAt: "2025-05-14T12:00:00Z",
+  },
   {
     title:
       "How Taking Calculated Chances Built a Business Empire | Michael S. Liebowitz - Serial Entrepreneur",
