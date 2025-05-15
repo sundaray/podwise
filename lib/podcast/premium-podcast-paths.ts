@@ -196,7 +196,9 @@ export const premiumPodcastPaths = [
   "/podcasts/lewis-howes/neurologist-alzheimers-prevention-metabolic-health",
 
   // Mel Robbins premium podcasts
+  "/podcasts/mel-robbins/weight-loss-doctor-truth-about-obesity-ozempic-dieting",
   "/podcasts/mel-robbins/advice-from-longevity-doctor-add-10-years-to-your-life-with-3-simple-habits",
+  "/podcasts/mel-robbins/most-important-career-advice-harvard-business-school-professor",
   "/podcasts/mel-robbins/better-sex-intimacy-love-guide-from-world-leading-sex-therapist",
   "/podcasts/mel-robbins/6-subtle-ways-people-disrespect-you-and-how-to-respond",
   "/podcasts/mel-robbins/anxiety-uncertainty-management-tips-julie-smith",

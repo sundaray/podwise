@@ -4,6 +4,32 @@
 export const melRobbinsPodcastList = [
   {
     title:
+      "#1 Weight Loss Doctor: The Truth About Obesity, Ozempic, Dieting, & How to Feel Better Now",
+    slug: "weight-loss-doctor-truth-about-obesity-ozempic-dieting",
+    tags: ["Obesity Medicine", "GLP-1 Medications", "Metabolic Health"],
+    image: "weight-loss-doctor-truth-about-obesity-ozempic-dieting.jpg",
+    podcastHost: "Mel Robbins",
+    isPremium: true,
+    videoId: "57OyIDnHZAk",
+    videoUploadedAt: "2025-04-17T12:00:00Z",
+  },
+  {
+    title:
+      "The Most Important Career Advice You’ll Ever Hear With Harvard Business School’s #1 Professor",
+    slug: "most-important-career-advice-harvard-business-school-professor",
+    tags: [
+      "Career Development",
+      "Negotiation Skills",
+      "Workplace Communication",
+    ],
+    image: "most-important-career-advice-harvard-business-school-professor.jpg",
+    podcastHost: "Mel Robbins",
+    isPremium: true,
+    videoId: "KmRPqrM9SWM",
+    videoUploadedAt: "2025-04-03T12:00:00Z",
+  },
+  {
+    title:
       "Advice From the #1 Longevity Doctor: Add 10 Years to Your Life With 3 Simple Habits",
     slug: "dvice-from-longevity-doctor-add-10-years-to-your-life-with-3-simple-habits",
     tags: ["Longevity Science", "Healthy Aging", "Preventive Medicine"],
