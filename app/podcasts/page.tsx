@@ -130,13 +130,21 @@ export default async function AllPodcastsPage({
   const sortedPodcasts = [...allPodcasts].sort((a, b) => {
     const dateA = a.videoUploadedAt ? new Date(a.videoUploadedAt) : new Date(0);
     const dateB = b.videoUploadedAt ? new Date(b.videoUploadedAt) : new Date(0);
-    return dateB.getTime() - dateA.getTime();
+
+    const diff = dateB.getTime() - dateA.getTime();
+    if (diff !== 0) return diff; // date decides
+
+    // same date → fall back to alphabetical title
+    return a.title.localeCompare(b.title);
   });
 
-  console.log("First 5 sorted podcasts:", sortedPodcasts.slice(0,5).map(p => ({
-    title: p.title,
-    videoUploadedAt: p.videoUploadedAt,
-  })));
+  console.log(
+    "First 5 sorted podcasts:",
+    sortedPodcasts.slice(0, 5).map((p) => ({
+      title: p.title,
+      videoUploadedAt: p.videoUploadedAt,
+    })),
+  );
 
   // Filter podcasts based on type, query, and selected shows
   const filteredPodcasts = filterPodcasts(

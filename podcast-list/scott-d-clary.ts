@@ -2,6 +2,7 @@ export const scottDClaryPodcastList = [
   {
     title:
       "How Life's Struggles Prepare You for Your Calling | Keion Henderson - Faith Leader & Visionary",
+    slug: "how-life-struggles-prepare-you-for-your-calling-keion-henderson-faith-leader-visionary",
     tags: ["Life Transitions", "Resilience", "Faith Journey"],
     image:
       "how-life-struggles-prepare-you-for-your-calling-keion-henderson-faith-leader-visionary.jpg",
