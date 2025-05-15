@@ -489,7 +489,7 @@ export const melRobbinsPodcastList = [
     podcastHost: "Mel Robbins",
     videoId: "ZUCB3M_1Qp4",
     isPremium: false,
-    videoUploadedAt: "ZUCB3M_1Qp4",
+    videoUploadedAt: "2024-09-26T12:00:00Z",
   },
   {
     title:
@@ -500,7 +500,7 @@ export const melRobbinsPodcastList = [
     podcastHost: "Mel Robbins",
     videoId: "WSBVq3Wj7Lg",
     isPremium: false,
-    videoUploadedAt: "WSBVq3Wj7Lg",
+    videoUploadedAt: "2025-01-02T12:00:00Z",
   },
   {
     title:
@@ -511,7 +511,7 @@ export const melRobbinsPodcastList = [
     podcastHost: "Mel Robbins",
     videoId: "vic1wX8_h34",
     isPremium: false,
-    videoUploadedAt: "vic1wX8_h34",
+    videoUploadedAt: "2024-11-11T12:00:00Z",
   },
   {
     title:
@@ -523,7 +523,7 @@ export const melRobbinsPodcastList = [
     podcastHost: "Mel Robbins",
     videoId: "cEVAjm_ETtY",
     isPremium: false,
-    videoUploadedAt: "cEVAjm_ETtY",
+    videoUploadedAt: "2025-03-27T12:00:00Z",
   },
   {
     title: "The #1 Money Rule to Live By：Understand The Psychology of Money",

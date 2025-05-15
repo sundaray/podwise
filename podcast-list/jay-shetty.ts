@@ -478,7 +478,7 @@ export const jayShettyPodcastList = [
     podcastHost: "Jay Shetty",
     videoId: "Pa7y7YDKd2A",
     isPremium: false,
-    videoUploadedAt: "Pa7y7YDKd2A",
+    videoUploadedAt: "2024-09-09T12:00:00Z",
   },
   {
     title:
