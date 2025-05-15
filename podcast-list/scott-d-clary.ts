@@ -1,6 +1,18 @@
 export const scottDClaryPodcastList = [
   {
     title:
+      "The Science Behind Peak Mental Performance | David Eagleman - Brain Expert & Entrepreneur",
+    slug: "the-science-behind-peak-mental-performance-david-eagleman-brain-expert-entrepreneur",
+    tags: ["Neuroscience", "Mental Performance", "Brain Health"],
+    image:
+      "the-science-behind-peak-mental-performance-david-eagleman-brain-expert-entrepreneur.jpg",
+    podcastHost: "Scott D. Clary",
+    isPremium: true,
+    videoId: "SgxxAd-hhHA",
+    videoUploadedAt: "2025-04-24T02:35:44Z",
+  },
+  {
+    title:
       "How Life's Struggles Prepare You for Your Calling | Keion Henderson - Faith Leader & Visionary",
     slug: "how-life-struggles-prepare-you-for-your-calling-keion-henderson-faith-leader-visionary",
     tags: ["Life Transitions", "Resilience", "Faith Journey"],
