@@ -196,6 +196,10 @@ export const premiumPodcastPaths = [
   "/podcasts/lewis-howes/neurologist-alzheimers-prevention-metabolic-health",
 
   // Mel Robbins premium podcasts
+  "/podcasts/mel-robbins/truth-about-anxiety-adhd-life-changing-tools-from-renowned-psychiatrist-tracey-marks",
+  "/podcasts/mel-robbins/if-you-feel-overwhelmed-and-uncertain-about-money-watch-this",
+  "/podcasts/mel-robbins/how-to-stop-negative-thoughts-and-reset-your-mind-for-positive-thinking",
+  "/podcasts/mel-robbins/real-reason-adult-friendship-is-hard-and-3-ways-to-make-it-easier",
   "/podcasts/mel-robbins/weight-loss-doctor-truth-about-obesity-ozempic-dieting",
   "/podcasts/mel-robbins/advice-from-longevity-doctor-add-10-years-to-your-life-with-3-simple-habits",
   "/podcasts/mel-robbins/most-important-career-advice-harvard-business-school-professor",

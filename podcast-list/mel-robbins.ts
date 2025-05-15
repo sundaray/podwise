@@ -1,7 +1,50 @@
-// Auto-generated podcast list - DO NOT EDIT MANUALLY
-// Generated on 2025-04-29T18:09:10.231Z
-
 export const melRobbinsPodcastList = [
+  {
+    title:
+      "The Truth About Anxiety & ADHD: Life-Changing Tools From Renowned Psychiatrist Dr. Tracey Marks",
+    slug: "truth-about-anxiety-adhd-life-changing-tools-from-renowned-psychiatrist-tracey-marks",
+    tags: ["Anxiety Management", "ADHD", "Mental Health"],
+    image:
+      "truth-about-anxiety-adhd-life-changing-tools-from-renowned-psychiatrist-tracey-marks.jpg",
+    podcastHost: "Mel Robbins",
+    isPremium: true,
+    videoId: "LOkEvGV-L4U",
+    videoUploadedAt: "2025-04-10T12:00:00Z",
+  },
+  {
+    title: "If You Feel Overwhelmed & Uncertain About Money, Watch This",
+    slug: "if-you-feel-overwhelmed-and-uncertain-about-money-watch-this",
+    tags: ["Money Mindset", "Financial Wellness", "Personal Development"],
+    image: "if-you-feel-overwhelmed-and-uncertain-about-money-watch-this.jpg",
+    podcastHost: "Mel Robbins",
+    isPremium: true,
+    videoId: "Vq904k_-blE",
+    videoUploadedAt: "2025-05-12T12:00:00Z",
+  },
+  {
+    title:
+      "How to Stop Negative Thoughts & Reset Your Mind for Positive Thinking",
+    slug: "how-to-stop-negative-thoughts-and-reset-your-mind-for-positive-thinking",
+    tags: ["Self-Improvement", "Mental Health", "Emotional Intelligence"],
+    image:
+      "how-to-stop-negative-thoughts-and-reset-your-mind-for-positive-thinking.jpg",
+    podcastHost: "Mel Robbins",
+    isPremium: true,
+    videoId: "jqArVJXZXaE",
+    videoUploadedAt: "2025-05-08T12:00:00Z",
+  },
+  {
+    title:
+      "It’s Not You: The Real Reason Adult Friendship Is So Hard & 3 Ways to Make It Easier",
+    slug: "real-reason-adult-friendship-is-hard-and-3-ways-to-make-it-easier",
+    tags: ["Female Friendship", "Relationship Advice", "Social Psychology"],
+    image:
+      "real-reason-adult-friendship-is-hard-and-3-ways-to-make-it-easier.jpg",
+    podcastHost: "Mel Robbins",
+    isPremium: true,
+    videoId: "kIiGtwPLSvI",
+    videoUploadedAt: "2025-04-24T12:00:00Z",
+  },
   {
     title:
       "#1 Weight Loss Doctor: The Truth About Obesity, Ozempic, Dieting, & How to Feel Better Now",
