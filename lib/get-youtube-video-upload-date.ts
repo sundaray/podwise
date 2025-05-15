@@ -34,18 +34,7 @@ export async function getYouTubeVideoUploadDate(
     // Get the publishedAt field from the snippet
     const publishedAt = data.items[0].snippet.publishedAt;
 
-    // Format the date in a user-friendly way
-    const date = new Date(publishedAt);
-    const formattedDate = new Intl.DateTimeFormat("en-US", {
-      year: "numeric",
-      month: "long",
-      day: "numeric",
-      hour: "2-digit",
-      minute: "2-digit",
-      timeZoneName: "short",
-    }).format(date);
-
-    return formattedDate;
+    return publishedAt;
   } catch (error) {
     console.error("Error fetching YouTube video upload date:", error);
     throw error;

@@ -131,11 +131,7 @@ export default async function AllPodcastsPage({
     const dateA = a.videoUploadedAt ? new Date(a.videoUploadedAt) : new Date(0);
     const dateB = b.videoUploadedAt ? new Date(b.videoUploadedAt) : new Date(0);
 
-    const diff = dateB.getTime() - dateA.getTime();
-    if (diff !== 0) return diff; // date decides
-
-    // same date → fall back to alphabetical title
-    return a.title.localeCompare(b.title);
+    return dateB.getTime() - dateA.getTime();
   });
 
   // Filter podcasts based on type, query, and selected shows

@@ -13,8 +13,6 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    console.log(`Getting upload date for video ID: ${videoId}`);
-
     // Get upload date from YouTube
     const uploadDate = await getYouTubeVideoUploadDate(videoId);
 

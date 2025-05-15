@@ -434,6 +434,6 @@ export const lewisHowesPodcastList = [
     podcastHost: "Lewis Howes",
     videoId: "rqfhJdx14mM",
     isPremium: false,
-    videoUploadedAt: "rqfhJdx14mM",
+    videoUploadedAt: "2025-01-06T12:00:00Z",
   },
 ];
