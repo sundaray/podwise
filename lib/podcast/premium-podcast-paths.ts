@@ -1,5 +1,6 @@
 export const premiumPodcastPaths = [
   // Andrew huberman premium podcasts
+  "/podcasts/andrew-huberman/how-to-improve-memory-and-focus-using-science-protocols-charan-ranganath",
   "/podcasts/andrew-huberman/understand-and-apply-the-psychology-of-money-to-gain-greater-happiness-morgan-housel",
   "/podcasts/andrew-huberman/how-to-improve-your-mobility-posture-and-flexibility-kelly-starrett",
   "/podcasts/andrew-huberman/create-your-ideal-future-using-science-based-protocols-ari-wallach",
@@ -195,6 +196,7 @@ export const premiumPodcastPaths = [
   "/podcasts/lewis-howes/neurologist-alzheimers-prevention-metabolic-health",
 
   // Mel Robbins premium podcasts
+  "/podcasts/mel-robbins/advice-from-longevity-doctor-add-10-years-to-your-life-with-3-simple-habits",
   "/podcasts/mel-robbins/better-sex-intimacy-love-guide-from-world-leading-sex-therapist",
   "/podcasts/mel-robbins/6-subtle-ways-people-disrespect-you-and-how-to-respond",
   "/podcasts/mel-robbins/anxiety-uncertainty-management-tips-julie-smith",

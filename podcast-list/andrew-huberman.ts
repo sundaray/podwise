@@ -1,6 +1,18 @@
 export const andrewHubermanPodcastList = [
   {
     title:
+      "How to Improve Memory & Focus Using Science Protocols | Dr. Charan Ranganath",
+    slug: "how-to-improve-memory-and-focus-using-science-protocols-charan-ranganath",
+    tags: ["Memory Improvement", "Brain Health", "Neuroscience"],
+    image:
+      "how-to-improve-memory-and-focus-using-science-protocols-charan-ranganath.jpg",
+    podcastHost: "Andrew Huberman",
+    isPremium: true,
+    videoId: "jC8Pu9HBd48",
+    videoUploadedAt: "2024-09-30T12:00:00Z",
+  },
+  {
+    title:
       "Understand & Apply the Psychology of Money to Gain Greater Happiness | Morgan Housel",
     slug: "understand-and-apply-the-psychology-of-money-to-gain-greater-happiness-morgan-housel",
     tags: ["Money Psychology", "Financial Wellness", "Wealth Mindset"],
