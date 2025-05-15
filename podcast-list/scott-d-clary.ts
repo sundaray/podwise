@@ -1,5 +1,15 @@
 export const scottDClaryPodcastList = [
   {
+title: "The Brain Hack That Will Transform Your Life in 30 Days | Jim Kwik - Memory & Focus Expert",
+slug: "the-brain-hack-that-will-transform-your-life-in-30-days-jim-kwik-memory-and-focus-expert",
+tags: ["Brain Performance", "Memory Improvement", "Learning Techniques"],
+image: "the-brain-hack-that-will-transform-your-life-in-30-days-jim-kwik-memory-and-focus-expert.jpg",
+podcastHost: "Scott D. Clary",
+isPremium: true,
+videoId: "tuaWrSr8fPA",
+videoUploadedAt: "2025-05-01T12:00:00Z",
+},
+  {
     title:
       "From Homeless Teen to Serial Entrepreneur | Simon Squibb - Founder & Investor",
     slug: "from-homeless-teen-to-serial-entrepreneur-simon-squibb-founder-investor",
