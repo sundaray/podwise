@@ -23,7 +23,6 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({
       success: true,
       uploadDate,
-      uploadDateISO,
     });
   } catch (error) {
     console.error("Error fetching upload date:", error);

@@ -3,7 +3,7 @@
 import { useForm } from "@conform-to/react";
 import { parseWithZod } from "@conform-to/zod";
 import { useActionState } from "react";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
@@ -14,7 +14,6 @@ import { SuccessMessage } from "@/components/success-message";
 
 import { fetchYouTubeUploadDate } from "@/app/actions";
 import { FetchYouTubeUploadDateFormSchema } from "@/schema";
-import { convertYouTubeDateToISO } from "@/lib/convert-youtube-date";
 
 export function VideoUploadDateForm() {
   const [lastResult, formAction, isPending] = useActionState(
@@ -22,6 +21,7 @@ export function VideoUploadDateForm() {
     undefined,
   );
 
+  const [copied, setCopied] = useState(false);
   const isoDateRef = useRef<HTMLInputElement>(null);
 
   const [form, fields] = useForm({
@@ -38,14 +38,14 @@ export function VideoUploadDateForm() {
   const successMessage = lastResult?.success ? lastResult.message : null;
   const uploadDate = lastResult?.uploadDate ? lastResult.uploadDate : null;
 
-  // Convert the human-readable date to ISO format
-  const isoDate = uploadDate ? convertYouTubeDateToISO(uploadDate) : null;
-
   // Function to copy ISO date to clipboard
   const copyISODate = () => {
-    if (isoDateRef.current) {
-      isoDateRef.current.select();
-      document.execCommand("copy");
+    if (uploadDate) {
+      navigator.clipboard.writeText(uploadDate).then(() => {
+        setCopied(true);
+        // Reset the copied state after 2 seconds
+        setTimeout(() => setCopied(false), 2000);
+      });
     }
   };
 
@@ -105,33 +105,29 @@ export function VideoUploadDateForm() {
       {uploadDate && (
         <div className="mt-4 space-y-4">
           <div className="bg-muted rounded-md p-4">
-            <h3 className="text-lg font-medium">Human-Readable Format</h3>
-            <p className="mt-1">{uploadDate}</p>
-          </div>
-
-          <div className="bg-muted rounded-md p-4">
-            <h3 className="text-lg font-medium">
-              ISO 8601 Format (for storage)
-            </h3>
-            <div className="mt-1 flex items-center space-x-2">
+            <h3 className="text-lg font-medium">ISO 8601 Format</h3>
+            <div className="mt-1 flex items-center gap-2">
               <Input
-                ref={isoDateRef}
+                type="text"
+                value={uploadDate}
                 readOnly
-                value={isoDate || ""}
-                className="font-mono text-sm"
+                ref={isoDateRef}
+                className="font-mono"
               />
               <Button
-                type="button"
-                variant="outline"
-                size="sm"
+                size="icon"
+                variant="ghost"
                 onClick={copyISODate}
+                className="flex-shrink-0"
+                title="Copy to clipboard"
               >
-                <Icons.copy className="size-4" />
+                {copied ? (
+                  <Icons.check className="size-4" />
+                ) : (
+                  <Icons.copy className="size-4" />
+                )}
               </Button>
             </div>
-            <p className="text-muted-foreground mt-2 text-xs">
-              Use this format in your podcast list for the videoUploadedAt field
-            </p>
           </div>
         </div>
       )}
