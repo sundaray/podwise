@@ -196,6 +196,7 @@ export const premiumPodcastPaths = [
   "/podcasts/lewis-howes/neurologist-alzheimers-prevention-metabolic-health",
 
   // Mel Robbins premium podcasts
+  "/podcasts/mel-robbins/reinvent-yourself-let-go-of-past-mistakes-create-new-version-of-you-with-charlamagne-tha-god",
   "/podcasts/mel-robbins/process-for-finding-purpose-build-life-you-want-jay-shetty",
   "/podcasts/mel-robbins/truth-about-anxiety-adhd-life-changing-tools-from-renowned-psychiatrist-tracey-marks",
   "/podcasts/mel-robbins/if-you-feel-overwhelmed-and-uncertain-about-money-watch-this",

@@ -1,14 +1,27 @@
 export const melRobbinsPodcastList = [
   {
-title: "A Process for Finding Purpose: Do THIS to Build the Life You Want | Jay Shetty",
-slug: "process-for-finding-purpose-build-life-you-want-jay-shetty",
-tags: ["Finding Purpose", "Self-Discovery", "Mindset Shifts"],
-image: "process-for-finding-purpose-build-life-you-want-jay-shetty.jpg",
-podcastHost: "Mel Robbins",
-isPremium: true,
-videoId: "MOVQponoBmI",
-videoUploadedAt: "2025-04-21T12:00:00Z"
-},
+    title:
+      "Reinvent Yourself: Let Go of Past Mistakes & Create a New Version of You With Charlamagne tha God",
+    slug: "reinvent-yourself-let-go-of-past-mistakes-create-new-version-of-you-with-charlamagne-tha-god",
+    tags: ["Personal Development", "Mental Health", "Growth Mindset"],
+    image:
+      "reinvent-yourself-let-go-of-past-mistakes-create-new-version-of-you-with-charlamagne-tha-god.jpg",
+    podcastHost: "Mel Robbins",
+    isPremium: true,
+    videoId: "0CMKkM84vOk",
+    videoUploadedAt: "2025-04-07T12:00:00Z",
+  },
+  {
+    title:
+      "A Process for Finding Purpose: Do THIS to Build the Life You Want | Jay Shetty",
+    slug: "process-for-finding-purpose-build-life-you-want-jay-shetty",
+    tags: ["Finding Purpose", "Self-Discovery", "Mindset Shifts"],
+    image: "process-for-finding-purpose-build-life-you-want-jay-shetty.jpg",
+    podcastHost: "Mel Robbins",
+    isPremium: true,
+    videoId: "MOVQponoBmI",
+    videoUploadedAt: "2025-04-21T12:00:00Z",
+  },
   {
     title:
       "The Truth About Anxiety & ADHD: Life-Changing Tools From Renowned Psychiatrist Dr. Tracey Marks",
