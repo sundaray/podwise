@@ -1,6 +1,18 @@
 export const scottDClaryPodcastList = [
   {
     title:
+      "What It Really Takes to Build an Empire | Robert Croak - Silly Bandz Creator",
+    slug: "what-it-really-takes-to-build-an-empire-robert-croak-silly-bandz-creator",
+    tags: ["Entrepreneurship", "Business Growth", "Success Mindset"],
+    image:
+      "what-it-really-takes-to-build-an-empire-robert-croak-silly-bandz-creator.jpg",
+    podcastHost: "Scott D. Clary",
+    isPremium: true,
+    videoId: "Ap_hhlnLEIs",
+    videoUploadedAt: "2025-04-27T01:09:43Z",
+  },
+  {
+    title:
       "The Brain Hack That Will Transform Your Life in 30 Days | Jim Kwik - Memory & Focus Expert",
     slug: "the-brain-hack-that-will-transform-your-life-in-30-days-jim-kwik-memory-and-focus-expert",
     tags: ["Brain Performance", "Memory Improvement", "Learning Techniques"],
