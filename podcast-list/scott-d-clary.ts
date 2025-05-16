@@ -1,6 +1,30 @@
 export const scottDClaryPodcastList = [
   {
     title:
+      "How a Dentist Built a $1B Brand By Seeing What Others Missed | Dr. Jon Marashi - Celebrity Dentist",
+    slug: "how-a-dentist-built-a-one-billion-dollar-brand-by-seeing-what-others-missed-jon-marashi-celebrity-dentist",
+    tags: ["Entrepreneurship", "Success Stories", "Dental Industry"],
+    image:
+      "how-a-dentist-built-a-one-billion-dollar-brand-by-seeing-what-others-missed-jon-marashi-celebrity-dentist.jpg",
+    podcastHost: "Scott D. Clary",
+    isPremium: true,
+    videoId: "uQTGpecu1GE",
+    videoUploadedAt: "2025-05-04T15:28:15Z",
+  },
+  {
+    title:
+      "Building an AI Media Business from $1K to Multi-Million Exit | Adam Biddlecombe - Mindstream Founder",
+    slug: "building-an-ai-media-business-from-one-thousand-dollar-to-multi-million-exit-adam-biddlecombe-mindstream-founder",
+    tags: ["AI Media", "Newsletter Business", "Startup Success"],
+    image:
+      "building-an-ai-media-business-from-one-thousand-dollar-to-multi-million-exit-adam-biddlecombe-mindstream-founder.jpg",
+    podcastHost: "Scott D. Clary",
+    isPremium: true,
+    videoId: "uhEyv-wk4hs",
+    videoUploadedAt: "2025-05-07T22:51:40Z",
+  },
+  {
+    title:
       "What It Really Takes to Build an Empire | Robert Croak - Silly Bandz Creator",
     slug: "what-it-really-takes-to-build-an-empire-robert-croak-silly-bandz-creator",
     tags: ["Entrepreneurship", "Business Growth", "Success Mindset"],
