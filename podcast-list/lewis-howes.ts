@@ -1,7 +1,14 @@
-// Auto-generated podcast list - DO NOT EDIT MANUALLY
-// Generated on 2025-04-29T17:07:46.859Z
-
 export const lewisHowesPodcastList = [
+  {
+    title: "The Dating Rules You Were Taught Are DESTROYING Your Love Life!",
+    slug: "the-dating-rules-you-were-taught-are-destroying-your-love-life",
+    tags: ["Relationship Advice", "Dating Tips", "Marriage Wisdom"],
+    image: "the-dating-rules-you-were-taught-are-destroying-your-love-life.jpg",
+    podcastHost: "Lewis Howes",
+    isPremium: true,
+    videoId: "U__N7dzGhMg",
+    videoUploadedAt: "2025-04-09T14:00:07Z",
+  },
   {
     title:
       "The American Dream is Just a Dream! What Dubai Knows About Wealth That Americans Totally Miss!",

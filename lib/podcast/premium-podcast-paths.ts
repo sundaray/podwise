@@ -166,6 +166,7 @@ export const premiumPodcastPaths = [
   "/podcasts/jay-shetty/andrew-huberman-hack-to-increase-dopamine-levels-boost-motivation",
 
   // Lewis Howes premium podcasts
+  "/podcasts/lewis-howes/the-dating-rules-you-were-taught-are-destroying-your-love-life",
   "/podcasts/lewis-howes/what-dubai-knows-about-wealth-that-americans-totally-miss",
   "/podcasts/lewis-howes/spirituality-expert-cant-manifest-full-trauma-shadow-work",
   "/podcasts/lewis-howes/subtle-art-of-being-authentic-mark-manson",
