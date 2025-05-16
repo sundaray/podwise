@@ -1,5 +1,17 @@
 export const lewisHowesPodcastList = [
   {
+    title:
+      "The Money Expert: How To Become RECESSION-PROOF in Today’s Chaotic Economy!",
+    slug: "the-money-expert-how-to-become-recession-proof-in-todays-chaotic-economy",
+    tags: ["Money Mindset", "Recession Proofing", "Success Strategies"],
+    image:
+      "the-money-expert-how-to-become-recession-proof-in-todays-chaotic-economy.jpg",
+    podcastHost: "Lewis Howes",
+    isPremium: true,
+    videoId: "xvod9vBeKFk",
+    videoUploadedAt: "2025-05-02T14:00:06Z",
+  },
+  {
     title: "The Dating Rules You Were Taught Are DESTROYING Your Love Life!",
     slug: "the-dating-rules-you-were-taught-are-destroying-your-love-life",
     tags: ["Relationship Advice", "Dating Tips", "Marriage Wisdom"],
