@@ -1,6 +1,30 @@
 export const scottDClaryPodcastList = [
   {
     title:
+      "The Brain Hack That Will Transform Your Life in 30 Days | Jim Kwik - Memory & Focus Expert",
+    slug: "the-brain-hack-that-will-transform-your-life-in-30-days-jim-kwik-memory-and-focus-expert",
+    tags: ["Brain Performance", "Memory Improvement", "Learning Techniques"],
+    image:
+      "the-brain-hack-that-will-transform-your-life-in-30-days-jim-kwik-memory-and-focus-expert.jpg",
+    podcastHost: "Scott D. Clary",
+    isPremium: true,
+    videoId: "tuaWrSr8fPA",
+    videoUploadedAt: "2025-05-01T12:00:00Z",
+  },
+  {
+    title:
+      "Revolutionary Skin Science from Nature | Kyle Landry - President at Delavie Sciences",
+    slug: "revolutionary-skin-science-from-nature-kyle-landry-president-delavie-sciences",
+    tags: ["Science Innovation", "Entrepreneurship", "Biotech"],
+    image:
+      "revolutionary-skin-science-from-nature-kyle-landry-president-delavie-sciences.jpg",
+    podcastHost: "Scott D. Clary",
+    isPremium: true,
+    videoId: "ytDHKlF8fYM",
+    videoUploadedAt: "2025-04-21T19:51:19Z",
+  },
+  {
+    title:
       "The Science Behind Peak Mental Performance | David Eagleman - Brain Expert & Entrepreneur",
     slug: "the-science-behind-peak-mental-performance-david-eagleman-brain-expert-entrepreneur",
     tags: ["Neuroscience", "Mental Performance", "Brain Health"],

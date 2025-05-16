@@ -269,7 +269,9 @@ export const premiumPodcastPaths = [
   "/podcasts/rangan-chatterjee/top-food-hacks-regenerate-stem-cells-boost-brain-health-improve-circulation-william-li",
 
   // Scott D. Clary premium podcasts
+  "/podcasts/scott-d-clary/the-brain-hack-that-will-transform-your-life-in-30-days-jim-kwik-memory-and-focus-expert",
   "/podcasts/scott-d-clary/the-science-behind-peak-mental-performance-david-eagleman-brain-expert-entrepreneur",
+  "/podcasts/scott-d-clary/revolutionary-skin-science-from-nature-kyle-landry-president-delavie-sciences",
   "/podcasts/scott-d-clary/how-life-struggles-prepare-you-for-your-calling-keion-henderson-faith-leader-visionary",
   "/podcasts/scott-d-clary/the-brain-hack-that-will-transform-your-life-in-30-days-jim-kwik-memory-and-focus-expert",
   "/podcasts/scott-d-clary/from-homeless-teen-to-serial-entrepreneur-simon-squibb-founder-investor",
