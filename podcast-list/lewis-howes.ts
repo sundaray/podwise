@@ -1,6 +1,87 @@
 export const lewisHowesPodcastList = [
   {
     title:
+      "Lucy Hale Opens Up on Getting Sober & How to MANIFEST the Life of Your Dreams!",
+    slug: "lucy-hale-opens-up-on-getting-sober-and-how-to-manifest-the-life-of-your-dreams",
+    tags: ["Sobriety Journey", "Personal Growth", "Manifestation"],
+    image:
+      "lucy-hale-opens-up-on-getting-sober-and-how-to-manifest-the-life-of-your-dreams.jpg",
+    podcastHost: "Lewis Howes",
+    isPremium: false,
+    videoId: "9bXtnuX-VOM",
+    videoUploadedAt: "2025-04-30T14:00:07Z",
+  },
+  {
+    title:
+      "Kerry Washington: “They Lied About Who My Parents Were”! How I Turned Betrayal into New Purpose!",
+    slug: "kerry-washington-they-lied-about-who-my-parents-were-how-i-turned-betrayal-into-new-purpose",
+    tags: ["Family Dynamics", "Self-Worth", "Mental Health"],
+    image:
+      "kerry-washington-they-lied-about-who-my-parents-were-how-i-turned-betrayal-into-new-purpose.jpg",
+    podcastHost: "Lewis Howes",
+    isPremium: false,
+    videoId: "AoaEaMjs83M",
+    videoUploadedAt: "2025-05-07T14:00:07Z",
+  },
+  {
+    title:
+      "Michelle Obama: “Am I Good Enough?” Mental Health Struggles in the White House & Beyond",
+    slug: "michelle-obama-am-i-good-enough-mental-health-struggles-in-the-white-house-and-beyond",
+    tags: ["Mental Health", "Family Values", "Leadership Lessons"],
+    image:
+      "michelle-obama-am-i-good-enough-mental-health-struggles-in-the-white-house-and-beyond.jpg",
+    podcastHost: "Lewis Howes",
+    isPremium: false,
+    videoId: "ABkltbOYLUc",
+    videoUploadedAt: "2025-05-05T14:00:07Z",
+  },
+  {
+    title:
+      "Mel Robbins: The 'Let Them Theory' (Transform Your Life by Creating Boundaries + Unlocking Peace)",
+    slug: "mel-robbins-let-them-theory-transform-life",
+    tags: [" Boundaries", " Personal Development", " Emotional Intelligence"],
+    image: "mel-robbins-let-them-theory-transform-life.jpg",
+    podcastHost: "Lewis Howes",
+    isPremium: true,
+    videoId: "9OsNWnZJXrs",
+    videoUploadedAt: "2024-12-23T12:00:00Z",
+  },
+  {
+    title: "Master Hypnotist: If You Feel Stuck in Life, Watch This!",
+    slug: "master-hypnotist-if-you-feel-stuck-in-life-watch-this",
+    tags: ["Mindset Mastery", "Hypnotherapy", "Mind-Body Connection"],
+    image: "master-hypnotist-if-you-feel-stuck-in-life-watch-this.jpg",
+    podcastHost: "Lewis Howes",
+    isPremium: true,
+    videoId: "y3mALQ7eyjI",
+    videoUploadedAt: "2025-04-07T14:00:07Z",
+  },
+  {
+    title:
+      "Former Secret Service Agent Reveals How To Read ANYONE To Know Who You Can Really Trust!",
+    slug: "former-secret-service-agent-reveals-how-to-read-anyone-to-know-who-you-can-really-trust",
+    tags: ["Human Psychology", "Trust Building", "Personal Development"],
+    image:
+      "former-secret-service-agent-reveals-how-to-read-anyone-to-know-who-you-can-really-trust.jpg",
+    podcastHost: "Lewis Howes",
+    isPremium: true,
+    videoId: "yeVo0i3NlfE",
+    videoUploadedAt: "2025-04-28T14:00:07Z",
+  },
+  {
+    title:
+      "Billionaire Coach: Trying To Pay The Bills is BLOCKING Your Abundance! Shift Your Mindset to THIS!",
+    slug: "billionaire-coach-trying-to-pay-the-bills-is-blocking-your-abundance-shift-your-mindset-to-this",
+    tags: ["Mindset Shift", "Abundance Thinking", "Personal Development"],
+    image:
+      "billionaire-coach-trying-to-pay-the-bills-is-blocking-your-abundance-shift-your-mindset-to-this.jpg",
+    podcastHost: "Lewis Howes",
+    isPremium: true,
+    videoId: "wwlinG-dj5Q",
+    videoUploadedAt: "2025-05-12T14:00:07Z",
+  },
+  {
+    title:
       "The Success Expert: STOP Moving the Goalposts & Finally Say “I’ve Won”! | Simon Sinek",
     slug: "the-success-expert-stop-moving-the-goalposts-and-finally-say-i-have-won-simon-sinek",
     tags: ["Success Mindset", "Personal Development", "Leadership Insights"],

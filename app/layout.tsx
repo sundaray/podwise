@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import NextTopLoader from "nextjs-toploader";
 import { NuqsAdapter } from "nuqs/adapters/next/app";
 import { ClientProviders } from "@/components/react-aria-provider";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 import "@/app/globals.css";
 
@@ -30,6 +31,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
         <ClientProviders>
           <NuqsAdapter>{children}</NuqsAdapter>
         </ClientProviders>
+        <GoogleAnalytics gaId="G-6YN4WHFMT1" />
       </body>
     </html>
   );

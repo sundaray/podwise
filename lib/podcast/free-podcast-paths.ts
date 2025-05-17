@@ -53,6 +53,10 @@ export const freePodcastPaths = [
   "/podcasts/jay-shetty/the-secret-formula-fbi-negotiators-use-to-always-get-what-they-want",
   "/podcasts/jay-shetty/wiz-khalifa-how-i-built-long-term-success",
   "/podcasts/jay-shetty/world-leading-therapist-lori-gottlieb-answers-relationship-questions",
+
+  "/podcasts/lewis-howes/lucy-hale-opens-up-on-getting-sober-and-how-to-manifest-the-life-of-your-dreams",
+  "/podcasts/lewis-howes/kerry-washington-they-lied-about-who-my-parents-were-how-i-turned-betrayal-into-new-purpose",
+  "/podcasts/lewis-howes/michelle-obama-am-i-good-enough-mental-health-struggles-in-the-white-house-and-beyond",
   "/podcasts/lewis-howes/america-toxic-food-crisis-mark-hyman",
   "/podcasts/lewis-howes/avoid-manifesting-toxic-love-find-inner-peace-liz-gilbert",
   "/podcasts/lewis-howes/dating-experts-expose-habits-that-end-relationships",
