@@ -1,6 +1,42 @@
 export const lewisHowesPodcastList = [
   {
     title:
+      "The Success Expert: STOP Moving the Goalposts & Finally Say “I’ve Won”! | Simon Sinek",
+    slug: "the-success-expert-stop-moving-the-goalposts-and-finally-say-i-have-won-simon-sinek",
+    tags: ["Success Mindset", "Personal Development", "Leadership Insights"],
+    image:
+      "the-success-expert-stop-moving-the-goalposts-and-finally-say-i-have-won-simon-sinek.jpg",
+    podcastHost: "Lewis Howes",
+    isPremium: true,
+    videoId: "GFOYq-EgCLA",
+    videoUploadedAt: "2025-04-23T14:00:07Z",
+  },
+  {
+    title:
+      "The Spiritual Guide: ATTRACT Your Ideal Relationship & Create Healthy, Lasting Love!",
+    slug: "the-spiritual-guide-attract-your-ideal-relationship-and-create-healthy-lasting-love",
+    tags: ["Relationships", "Self-Healing", "Spiritual Growth"],
+    image:
+      "the-spiritual-guide-attract-your-ideal-relationship-and-create-healthy-lasting-love.jpg",
+    podcastHost: "Lewis Howes",
+    isPremium: true,
+    videoId: "_TeJLi3V_ho",
+    videoUploadedAt: "2025-04-16T14:00:07Z",
+  },
+  {
+    title:
+      "Dave Ramsey: If You're Planning Your FIRST Business, You Need to Know This!",
+    slug: "dave-ramsey-if-you-are-planning-your-first-business-you-need-to-know-this",
+    tags: ["Entrepreneurship", "Financial Wisdom", "Business Growth"],
+    image:
+      "dave-ramsey-if-you-are-planning-your-first-business-you-need-to-know-this.jpg",
+    podcastHost: "Lewis Howes",
+    isPremium: true,
+    videoId: "gr-oG4YysyI",
+    videoUploadedAt: "2025-04-14T14:00:07Z",
+  },
+  {
+    title:
       "The Money Expert: How To Become RECESSION-PROOF in Today’s Chaotic Economy!",
     slug: "the-money-expert-how-to-become-recession-proof-in-todays-chaotic-economy",
     tags: ["Money Mindset", "Recession Proofing", "Success Strategies"],
