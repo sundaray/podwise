@@ -247,6 +247,12 @@ export const premiumPodcastPaths = [
   "/podcasts/mel-robbins/simple-tool-transform-family-dynamic",
 
   // Dr. Rangan Chatterjee premium podcasts
+  "/podcasts/rangan-chatterjee/fix-your-negative-thought-patterns-once-you-learn-this-you-will-never-be-the-same-bruce-lipton",
+  "/podcasts/rangan-chatterjee/stop-sleepwalking-through-life-say-these-3-words-to-create-your-dream-life-deepak-chopra",
+  "/podcasts/rangan-chatterjee/50-days-alone-in-antarctica-how-solitude-revealed-lifes-true-meaning-and-purpose-erling-kagge",
+  "/podcasts/rangan-chatterjee/uncomfortable-truth-about-life-we-learn-too-late-stop-feeling-empty-and-find-purpose-robert-greene",
+  "/podcasts/rangan-chatterjee/doctor-speaks-out-they-are-quietly-labeling-you-sick-even-when-you-are-not-suzanne-osullivan",
+  "/podcasts/rangan-chatterjee/brain-expert-these-common-habits-shrink-your-brain-alzheimers-fatigue-lost-joy-daniel-amen",
   "/podcasts/rangan-chatterjee/brain-surgeon-regain-energy-focus-drive-in-24-hours-rahul-jandial",
   "/podcasts/rangan-chatterjee/why-you-cant-relax-sleep-focus-5-minute-habit-feel-alive-again-brian-mckenzie",
   "/podcasts/rangan-chatterjee/10-day-anti-inflammatory-diet-stop-feeling-tired-bloated-achy-mark-hyman",
