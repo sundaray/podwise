@@ -1,44 +1,51 @@
 export const ranganChatterjeePodcastList = [
   {
-title: "Fix Your Negative Thought Patterns - Once You Learn This, You'll Never Be The Same | Bruce Lipton",
-slug: "fix-your-negative-thought-patterns-once-you-learn-this-you-will-never-be-the-same-bruce-lipton",
-tags: ["Subconscious Programming", "Epigenetics", "Personal Development"],
-image: "fix-your-negative-thought-patterns-once-you-learn-this-you-will-never-be-the-same-bruce-lipton.jpg",
-podcastHost: "Dr Rangan Chatterjee",
-isPremium: true,
-videoId: "AECirQoOuTc",
-videoUploadedAt: "2025-04-23T17:51:37Z"
-},
+    title:
+      "Fix Your Negative Thought Patterns - Once You Learn This, You'll Never Be The Same | Bruce Lipton",
+    slug: "fix-your-negative-thought-patterns-once-you-learn-this-you-will-never-be-the-same-bruce-lipton",
+    tags: ["Subconscious Programming", "Epigenetics", "Personal Development"],
+    image:
+      "fix-your-negative-thought-patterns-once-you-learn-this-you-will-never-be-the-same-bruce-lipton.jpg",
+    podcastHost: "Dr Rangan Chatterjee",
+    isPremium: true,
+    videoId: "AECirQoOuTc",
+    videoUploadedAt: "2025-04-23T17:51:37Z",
+  },
   {
-title: "50 Days Alone In Antarctica: How Solitude Revealed Life’s True Meaning & Purpose | Erling Kagge",
-slug: "50-days-alone-in-antarctica-how-solitude-revealed-lifes-true-meaning-and-purpose-erling-kagge",
-tags: ["Solitude", "Self-Discovery", "Mindfulness"],
-image: "50-days-alone-in-antarctica-how-solitude-revealed-lifes-true-meaning-and-purpose-erling-kagge.jpg",
-podcastHost: "Dr Rangan Chatterjee",
-isPremium: true,
-videoId: "rdRhevdO69o",
-videoUploadedAt: "2025-04-30T12:01:36Z"
-},
+    title:
+      "50 Days Alone In Antarctica: How Solitude Revealed Life’s True Meaning & Purpose | Erling Kagge",
+    slug: "50-days-alone-in-antarctica-how-solitude-revealed-lifes-true-meaning-and-purpose-erling-kagge",
+    tags: ["Solitude", "Self-Discovery", "Mindfulness"],
+    image:
+      "50-days-alone-in-antarctica-how-solitude-revealed-lifes-true-meaning-and-purpose-erling-kagge.jpg",
+    podcastHost: "Dr Rangan Chatterjee",
+    isPremium: true,
+    videoId: "rdRhevdO69o",
+    videoUploadedAt: "2025-04-30T12:01:36Z",
+  },
   {
-    title: "Uncomfortable Truth About Life We Learn Too Late - Stop Feeling Empty & Find Purpose | Robert Greene",
-slug: "uncomfortable-truth-about-life-we-learn-too-late-stop-feeling-empty-and-find-purpose-robert-greene",
+    title:
+      "Uncomfortable Truth About Life We Learn Too Late - Stop Feeling Empty & Find Purpose | Robert Greene",
+    slug: "uncomfortable-truth-about-life-we-learn-too-late-stop-feeling-empty-and-find-purpose-robert-greene",
     tags: ["Self-Awareness", "Human Nature", "Personal Development"],
-image: "uncomfortable-truth-about-life-we-learn-too-late-stop-feeling-empty-and-find-purpose-robert-greene.jpg",
-podcastHost: "Dr Rangan Chatterjee",
-isPremium: true,
-videoId: "fhi45R70Emc",
-videoUploadedAt: "2025-05-02T12:44:53Z"
-},
+    image:
+      "uncomfortable-truth-about-life-we-learn-too-late-stop-feeling-empty-and-find-purpose-robert-greene.jpg",
+    podcastHost: "Dr Rangan Chatterjee",
+    isPremium: true,
+    videoId: "fhi45R70Emc",
+    videoUploadedAt: "2025-05-02T12:44:53Z",
+  },
   {
-    title: "Doctor SPEAKS OUT: "They're Quietly Labeling You Sick—Even When You're Not" | Suzanne O'Sullivan",
-slug: "doctor-speaks-out-they-are-quietly-labeling-you-sick-even-when-you-are-not-suzanne-osullivan",
+    title: `Doctor SPEAKS OUT: "They're Quietly Labeling You Sick—Even When You're Not" | Suzanne O'Sullivan`,
+    slug: "doctor-speaks-out-they-are-quietly-labeling-you-sick-even-when-you-are-not-suzanne-osullivan",
     tags: ["Medical Ethics", "Health Awareness", "Diagnostic Medicine"],
-image: "doctor-speaks-out-they-are-quietly-labeling-you-sick-even-when-you-are-not-suzanne-osullivan.jpg",
-podcastHost: "Dr Rangan Chatterjee",
-isPremium: true,
-videoId: "lVYDzeuhde4",
-videoUploadedAt: "2025-05-07T12:01:21Z"
-},
+    image:
+      "doctor-speaks-out-they-are-quietly-labeling-you-sick-even-when-you-are-not-suzanne-osullivan.jpg",
+    podcastHost: "Dr Rangan Chatterjee",
+    isPremium: true,
+    videoId: "lVYDzeuhde4",
+    videoUploadedAt: "2025-05-07T12:01:21Z",
+  },
   {
     title:
       "Brain Expert: These Common Habits SHRINK Your Brain – Alzheimer’s, Fatigue & Lost Joy | Daniel Amen",
