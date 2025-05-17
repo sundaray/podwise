@@ -352,6 +352,7 @@ export const premiumPodcastPaths = [
   "/podcasts/simon-sinek/be-necessary-with-war-journalist-sebastian-junger",
 
   // Tim Ferriss premium podcasts
+  "/podcasts/tim-ferriss/2x-olympic-archery-medalist-jake-kaminski-coaching-tim-and-excellence-under-pressure",
   "/podcasts/tim-ferriss/terry-real-the-therapist-who-breaks-all-the-rules",
   "/podcasts/tim-ferriss/exploring-consciousness-non-ordinary-religion-panpsychism-heretical-ideas-philip-goff",
   "/podcasts/tim-ferriss/how-to-overcome-self-doubt-filmmaker-robert-rodriguez",

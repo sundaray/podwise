@@ -1,7 +1,16 @@
-// Auto-generated podcast list - DO NOT EDIT MANUALLY
-// Generated on 2025-04-29T18:21:43.848Z
-
 export const timFerrissPodcastList = [
+  {
+    title:
+      "2x Olympic Archery Medalist Jake Kaminski — Coaching Tim and Excellence Under Pressure",
+    slug: "2x-olympic-archery-medalist-jake-kaminski-coaching-tim-and-excellence-under-pressure",
+    tags: ["Archery", "Mental Training", "Performance Psychology"],
+    image:
+      "2x-olympic-archery-medalist-jake-kaminski-coaching-tim-and-excellence-under-pressure.jpg",
+    podcastHost: "Tim Ferriss",
+    isPremium: true,
+    videoId: "frOb3N0Y8Yg",
+    videoUploadedAt: "2025-05-15T00:11:14Z",
+  },
   {
     title: "Terry Real — The Therapist Who Breaks All The Rules",
     slug: "terry-real-the-therapist-who-breaks-all-the-rules",
