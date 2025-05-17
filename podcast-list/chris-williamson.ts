@@ -1,5 +1,25 @@
 export const chrisWilliamsonPodcastList = [
   {
+    title: "The Harsh Price Of Extreme Performance - Cameron Hanes",
+    slug: "the-harsh-price-of-extreme-performance-cameron-hanes",
+    tags: ["Mental Toughness", "Consistency Training", "Extreme Achievement"],
+    image: "the-harsh-price-of-extreme-performance-cameron-hanes.jpg",
+    podcastHost: "Chris Williamson",
+    isPremium: true,
+    videoId: "acbb2cTtlK4",
+    videoUploadedAt: "2025-05-12T15:00:06Z",
+  },
+  {
+    title: "How to Break Free From Chronic Anxiety - Martha Beck",
+    slug: "how-to-break-free-from-chronic-anxiety-martha-beck",
+    tags: ["Anxiety Management", "Brain Science", "Mental Health"],
+    image: "how-to-break-free-from-chronic-anxiety-martha-beck.jpg",
+    podcastHost: "Chris Williamson",
+    isPremium: true,
+    videoId: "za3m3QygLSU",
+    videoUploadedAt: "2025-05-15T15:01:45Z",
+  },
+  {
     title: "Why Has The World Gone Insane? - Douglas Murray",
     slug: "why-has-the-world-gone-insane-douglas-murray",
     tags: ["Western Values", "Cultural Commentary", "Geopolitics"],
