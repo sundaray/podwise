@@ -2,6 +2,7 @@ export const jayShettyPodcastList = [
   {
     title:
       "KHLOE KARDASHIAN: My Side that NOBODY Knows (Truth Behind Headlines, Divorce, Co-Parenting)",
+    slug: "khloe-kardashian-my-side-that-nobody-knows-truth-behind-headlines-divorce-co-parenting",
     tags: ["Personal Development", "Resilience", "Emotional Intelligence"],
     image:
       "khloe-kardashian-my-side-that-nobody-knows-truth-behind-headlines-divorce-co-parenting.jpg",
@@ -33,6 +34,7 @@ export const jayShettyPodcastList = [
   {
     title:
       "Want to Learn How to Use Your Intrusive Thoughts and Anxiety as Your SUPERPOWER? DO THIS!",
+    slug: "want-to-learn-how-to-use-your-intrusive-thoughts-and-anxiety-as-your-superpower-do-this",
     tags: ["Anxiety Management", "Personal Growth", "Celebrity Insights"],
     image:
       "want-to-learn-how-to-use-your-intrusive-thoughts-and-anxiety-as-your-superpower-do-this.jpg",
