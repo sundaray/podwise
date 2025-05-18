@@ -1,5 +1,15 @@
 export const chrisWilliamsonPodcastList = [
   {
+    title: "How To Actually Build Discipline - Gen. Stanley McChrystal",
+    slug: "how-to-actually-build-discipline-stanley-mcchrystal",
+    tags: ["Military Leadership", "Discipline", "Character Building"],
+    image: "how-to-actually-build-discipline-stanley-mcchrystal.jpg",
+    podcastHost: "Chris Williamson",
+    isPremium: true,
+    videoId: "Y-DmG-vdU5s",
+    videoUploadedAt: "2025-05-17T15:00:54Z",
+  },
+  {
     title: "The Harsh Price Of Extreme Performance - Cameron Hanes",
     slug: "the-harsh-price-of-extreme-performance-cameron-hanes",
     tags: ["Mental Toughness", "Consistency Training", "Extreme Achievement"],
