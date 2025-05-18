@@ -115,4 +115,6 @@ export const freePodcastPaths = [
   "/podcasts/tim-ferriss/elizabeth-gilbert-jack-kornfield",
   "/podcasts/tim-ferriss/neil-gaiman-debbie-millman-tim-ferriss-show",
   "/podcasts/tim-ferriss/terry-crews-richard-koch-tim-ferriss-show",
+
+  "/podcasts/daily-stoic/you-can-create-lasting-change-in-america-sharon-mcmahon-ryan-holiday",
 ];

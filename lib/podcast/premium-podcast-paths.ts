@@ -64,6 +64,10 @@ export const premiumPodcastPaths = [
   "/podcasts/chris-williamson/build-extraordinary-life-tony-robbins",
 
   // Daily Stoic premium podcasts
+  "/podcasts/daily-stoic/stoic-strategies-that-built-a-self-made-billionaire-robert-rosenkranz",
+  "/podcasts/daily-stoic/ed-helms-on-his-secret-passion-history-acting-storytelling",
+  "/podcasts/daily-stoic/why-we-treat-the-body-rigorously-swimmer-bonnie-tsui-ryan-holiday",
+  "/podcasts/daily-stoic/the-stoic-formula-you-need-for-a-wealthy-life-sahil-bloom-ryan-holiday",
   "/podcasts/daily-stoic/power-of-regret-daniel-pink-on-how-to-move-forward",
   "/podcasts/daily-stoic/creative-discipline-good-bones-maggie-smith-ryan-holiday",
   "/podcasts/daily-stoic/josh-jung-texas-rangers-self-doubt-comparison-routine",

@@ -1,565 +1,487 @@
-// Auto-generated podcast list - DO NOT EDIT MANUALLY
-// Generated on 2025-04-29T07:06:51.973Z
-
 export const dailyStoicPodcastList = [
   {
-    "title": "Power of Regret Daniel Pink On How To Move FORWARD",
-    "slug": "power-of-regret-daniel-pink-on-how-to-move-forward",
-    "tags": [
-      "Regret Management",
-      "Decision Making",
-      "Personal Growth"
-    ],
-    "image": "power-of-regret-daniel-pink-on-how-to-move-forward.jpg",
-    "podcastHost": "Daily Stoic",
-    "videoId": "DUdNi9HT1Tk",
-    "isPremium": true,
-    "videoUploadedAt": "2025-04-13T12:00:00Z"
+    title:
+      "Stoic Strategies That Built A Self-Made Billionaire | Robert Rosenkranz",
+    slug: "stoic-strategies-that-built-a-self-made-billionaire-robert-rosenkranz",
+    tags: ["Stoicism", "Wealth Building", "Time Management"],
+    image:
+      "stoic-strategies-that-built-a-self-made-billionaire-robert-rosenkranz.jpg",
+    podcastHost: "Daily Stoic",
+    isPremium: true,
+    videoId: "IvzsEopZ94Q",
+    videoUploadedAt: "2025-05-14T18:22:12Z",
   },
   {
-    "title": "CREATIVE DISCIPLINE: Good Bones Maggie Smith & Ryan Holiday",
-    "slug": "creative-discipline-good-bones-maggie-smith-ryan-holiday",
-    "tags": [
-      "Creative Writing",
-      "Artistic Discipline",
-      "Writing Process"
-    ],
-    "image": "creative-discipline-good-bones-maggie-smith-ryan-holiday.jpg",
-    "podcastHost": "Daily Stoic",
-    "videoId": "nJezoj0mZeg",
-    "isPremium": true,
-    "videoUploadedAt": "2025-04-06T12:00:00Z"
+    title:
+      "The Office's Ed Helms On His Secret Passion (History, Acting, Storytelling & MORE)",
+    slug: "ed-helms-on-his-secret-passion-history-acting-storytelling",
+    tags: ["Historical Insights", "Storytelling", "Resilience"],
+    image: "ed-helms-on-his-secret-passion-history-acting-storytelling.jpg",
+    podcastHost: "Daily Stoic",
+    isPremium: true,
+    videoId: "Wa_fNsn02ow",
+    videoUploadedAt: "2025-05-01T14:52:32Z",
   },
   {
-    "title": "Josh Jung (Texas Rangers): SELF-DOUBT, COMPARISON, ROUTINE",
-    "slug": "josh-jung-texas-rangers-self-doubt-comparison-routine",
-    "tags": [
-      "Mental Clarity",
-      "Peak Performance",
-      "Stoicism"
-    ],
-    "image": "josh-jung-texas-rangers-self-doubt-comparison-routine.jpg",
-    "podcastHost": "Daily Stoic",
-    "videoId": "auXUMCLhLyQ",
-    "isPremium": true,
-    "videoUploadedAt": "2025-04-01T12:00:00Z"
+    title:
+      "Why We Treat The Body Rigorously: Swimmer Bonnie Tsui & RYAN HOLIDAY",
+    slug: "why-we-treat-the-body-rigorously-swimmer-bonnie-tsui-ryan-holiday",
+    tags: ["Stoicism", "Mind-Body Connection", "Exercise Philosophy"],
+    image:
+      "why-we-treat-the-body-rigorously-swimmer-bonnie-tsui-ryan-holiday.jpg",
+    podcastHost: "Daily Stoic",
+    isPremium: true,
+    videoId: "W2CetyOAu3A",
+    videoUploadedAt: "2025-04-26T14:00:48Z",
   },
   {
-    "title": "Comfort Is The Enemy | Michael Easter On Why You NEED To Struggle",
-    "slug": "comfort-is-the-enemy-michael-easter-on-why-you-need-to-struggle",
-    "tags": [
-      "Stoicism",
-      "Comfort Crisis",
-      "Personal Development"
-    ],
-    "image": "comfort-is-the-enemy-michael-easter-on-why-you-need-to-struggle.jpg",
-    "podcastHost": "Daily Stoic",
-    "videoId": "teFEemEpT58",
-    "isPremium": true,
-    "videoUploadedAt": "2025-03-26T12:00:00Z"
+    title:
+      "The Stoic Formula You Need for a Wealthy Life | Sahil Bloom & Ryan Holiday",
+    slug: "the-stoic-formula-you-need-for-a-wealthy-life-sahil-bloom-ryan-holiday",
+    tags: ["Stoicism", "Mind-Body Connection", "Exercise Philosophy"],
+    image:
+      "the-stoic-formula-you-need-for-a-wealthy-life-sahil-bloom-ryan-holiday.jpg",
+    podcastHost: "Daily Stoic",
+    isPremium: true,
+    videoId: "BKCA2ymdQtc",
+    videoUploadedAt: "2025-05-07T18:48:52Z",
   },
   {
-    "title": "STOICISM, BUDDHISM, & PERSONAL GROWTH: Poet Yung Pueblo & Ryan Holiday",
-    "slug": "stoicism-buddhism-personal-growth-poet-yung-pueblo-ryan-holiday",
-    "tags": [
-      "Stoicism",
-      "Buddhism",
-      "Personal Growth"
-    ],
-    "image": "stoicism-buddhism-personal-growth-poet-yung-pueblo-ryan-holiday.jpg",
-    "podcastHost": "Daily Stoic",
-    "videoId": "g8Gon5Unnmg",
-    "isPremium": true,
-    "videoUploadedAt": "2025-03-21T12:00:00Z"
+    title:
+      "You Can Create LASTING Change In America: Sharon McMahon & Ryan Holiday",
+    slug: "you-can-create-lasting-change-in-america-sharon-mcmahon-ryan-holiday",
+    tags: ["Social Change", "American History", "Personal Development"],
+    image:
+      "you-can-create-lasting-change-in-america-sharon-mcmahon-ryan-holiday.jpg",
+    podcastHost: "Daily Stoic",
+    isPremium: false,
+    videoId: "R35VKQrzjAc",
+    videoUploadedAt: "2025-05-05T15:25:07Z",
   },
   {
-    "title": "ART, AMBITION, CREATIVITY: How To Steal Like An Artist's Austin Kleon",
-    "slug": "art-ambition-creativity-how-to-steal-like-an-artist-austin-kleon",
-    "tags": [
-      "Creativity",
-      "Stoicism",
-      "Personal Development"
-    ],
-    "image": "art-ambition-creativity-how-to-steal-like-an-artist-austin-kleon.jpg",
-    "podcastHost": "Daily Stoic",
-    "videoId": "UEYhYi27QqY",
-    "isPremium": true,
-    "videoUploadedAt": "2025-03-05T12:00:00Z"
+    title: "Power of Regret Daniel Pink On How To Move FORWARD",
+    slug: "power-of-regret-daniel-pink-on-how-to-move-forward",
+    tags: ["Regret Management", "Decision Making", "Personal Growth"],
+    image: "power-of-regret-daniel-pink-on-how-to-move-forward.jpg",
+    podcastHost: "Daily Stoic",
+    videoId: "DUdNi9HT1Tk",
+    isPremium: true,
+    videoUploadedAt: "2025-04-13T12:00:00Z",
   },
   {
-    "title": "EGO, DEATH, FAME: Lamb Of God's Randy Blythe",
-    "slug": "ego-death-fame-lamb-of-gods-randy-blythe",
-    "tags": [
-      "Stoicism",
-      "Self Reflection",
-      "Personal Growth"
-    ],
-    "image": "ego-death-fame-lamb-of-gods-randy-blythe.jpg",
-    "podcastHost": "Daily Stoic",
-    "videoId": "M_JNtgzPTLE",
-    "isPremium": true,
-    "videoUploadedAt": "2025-02-24T12:00:00Z"
+    title: "CREATIVE DISCIPLINE: Good Bones Maggie Smith & Ryan Holiday",
+    slug: "creative-discipline-good-bones-maggie-smith-ryan-holiday",
+    tags: ["Creative Writing", "Artistic Discipline", "Writing Process"],
+    image: "creative-discipline-good-bones-maggie-smith-ryan-holiday.jpg",
+    podcastHost: "Daily Stoic",
+    videoId: "nJezoj0mZeg",
+    isPremium: true,
+    videoUploadedAt: "2025-04-06T12:00:00Z",
   },
   {
-    "title": "The Self-Discipline Of Running | Matt Choi",
-    "slug": "self-discipline-of-running-matt-choi",
-    "tags": [
-      "Self-Discipline",
-      "Mental Resilience",
-      "Stoicism"
-    ],
-    "image": "self-discipline-of-running-matt-choi.jpg",
-    "podcastHost": "Daily Stoic",
-    "videoId": "cw0EN6A-dsY",
-    "isPremium": true,
-    "videoUploadedAt": "2025-02-20T12:00:00Z"
+    title: "Josh Jung (Texas Rangers): SELF-DOUBT, COMPARISON, ROUTINE",
+    slug: "josh-jung-texas-rangers-self-doubt-comparison-routine",
+    tags: ["Mental Clarity", "Peak Performance", "Stoicism"],
+    image: "josh-jung-texas-rangers-self-doubt-comparison-routine.jpg",
+    podcastHost: "Daily Stoic",
+    videoId: "auXUMCLhLyQ",
+    isPremium: true,
+    videoUploadedAt: "2025-04-01T12:00:00Z",
   },
   {
-    "title": "How Stoicism Shaped Josh Brolin: Navigating Adversity And Building Resilience",
-    "slug": "how-stoicism-shaped-josh-brolin-navigating-adversity-building-resilience",
-    "tags": [
-      "Stoicism",
-      "Resilience",
-      "Personal Growth"
-    ],
-    "image": "how-stoicism-shaped-josh-brolin-navigating-adversity-building-resilience.jpg",
-    "podcastHost": "Daily Stoic",
-    "videoId": "CQ-6PW-CsdE",
-    "isPremium": true,
-    "videoUploadedAt": "2025-02-15T12:00:00Z"
+    title: "Comfort Is The Enemy | Michael Easter On Why You NEED To Struggle",
+    slug: "comfort-is-the-enemy-michael-easter-on-why-you-need-to-struggle",
+    tags: ["Stoicism", "Comfort Crisis", "Personal Development"],
+    image:
+      "comfort-is-the-enemy-michael-easter-on-why-you-need-to-struggle.jpg",
+    podcastHost: "Daily Stoic",
+    videoId: "teFEemEpT58",
+    isPremium: true,
+    videoUploadedAt: "2025-03-26T12:00:00Z",
   },
   {
-    "title": "Think Like An ELITE Athlete: Performance Expert Steve Magness",
-    "slug": "think-like-elite-athlete-performance-expert-steve-magness",
-    "tags": [
+    title:
+      "STOICISM, BUDDHISM, & PERSONAL GROWTH: Poet Yung Pueblo & Ryan Holiday",
+    slug: "stoicism-buddhism-personal-growth-poet-yung-pueblo-ryan-holiday",
+    tags: ["Stoicism", "Buddhism", "Personal Growth"],
+    image:
+      "stoicism-buddhism-personal-growth-poet-yung-pueblo-ryan-holiday.jpg",
+    podcastHost: "Daily Stoic",
+    videoId: "g8Gon5Unnmg",
+    isPremium: true,
+    videoUploadedAt: "2025-03-21T12:00:00Z",
+  },
+  {
+    title:
+      "ART, AMBITION, CREATIVITY: How To Steal Like An Artist's Austin Kleon",
+    slug: "art-ambition-creativity-how-to-steal-like-an-artist-austin-kleon",
+    tags: ["Creativity", "Stoicism", "Personal Development"],
+    image:
+      "art-ambition-creativity-how-to-steal-like-an-artist-austin-kleon.jpg",
+    podcastHost: "Daily Stoic",
+    videoId: "UEYhYi27QqY",
+    isPremium: true,
+    videoUploadedAt: "2025-03-05T12:00:00Z",
+  },
+  {
+    title: "EGO, DEATH, FAME: Lamb Of God's Randy Blythe",
+    slug: "ego-death-fame-lamb-of-gods-randy-blythe",
+    tags: ["Stoicism", "Self Reflection", "Personal Growth"],
+    image: "ego-death-fame-lamb-of-gods-randy-blythe.jpg",
+    podcastHost: "Daily Stoic",
+    videoId: "M_JNtgzPTLE",
+    isPremium: true,
+    videoUploadedAt: "2025-02-24T12:00:00Z",
+  },
+  {
+    title: "The Self-Discipline Of Running | Matt Choi",
+    slug: "self-discipline-of-running-matt-choi",
+    tags: ["Self-Discipline", "Mental Resilience", "Stoicism"],
+    image: "self-discipline-of-running-matt-choi.jpg",
+    podcastHost: "Daily Stoic",
+    videoId: "cw0EN6A-dsY",
+    isPremium: true,
+    videoUploadedAt: "2025-02-20T12:00:00Z",
+  },
+  {
+    title:
+      "How Stoicism Shaped Josh Brolin: Navigating Adversity And Building Resilience",
+    slug: "how-stoicism-shaped-josh-brolin-navigating-adversity-building-resilience",
+    tags: ["Stoicism", "Resilience", "Personal Growth"],
+    image:
+      "how-stoicism-shaped-josh-brolin-navigating-adversity-building-resilience.jpg",
+    podcastHost: "Daily Stoic",
+    videoId: "CQ-6PW-CsdE",
+    isPremium: true,
+    videoUploadedAt: "2025-02-15T12:00:00Z",
+  },
+  {
+    title: "Think Like An ELITE Athlete: Performance Expert Steve Magness",
+    slug: "think-like-elite-athlete-performance-expert-steve-magness",
+    tags: [
       "Performance Psychology",
       "Elite Performance",
-      "Intrinsic Motivation"
+      "Intrinsic Motivation",
     ],
-    "image": "think-like-elite-athlete-performance-expert-steve-magness.jpg",
-    "podcastHost": "Daily Stoic",
-    "videoId": "rKhlm3aLREI",
-    "isPremium": true,
-    "videoUploadedAt": "2025-02-13T12:00:00Z"
+    image: "think-like-elite-athlete-performance-expert-steve-magness.jpg",
+    podcastHost: "Daily Stoic",
+    videoId: "rKhlm3aLREI",
+    isPremium: true,
+    videoUploadedAt: "2025-02-13T12:00:00Z",
   },
   {
-    "title": "STOP Setting Goals | Olympian Alexi Pappas & Ryan Holiday",
-    "slug": "stop-setting-goals-olympian-alexi-pappas-ryan-holiday",
-    "tags": [
-      "Stoicism",
-      "Personal Development",
-      "Goal Setting"
-    ],
-    "image": "stop-setting-goals-olympian-alexi-pappas-ryan-holiday.jpg",
-    "podcastHost": "Daily Stoic",
-    "videoId": "7ftqaxcNCzw",
-    "isPremium": true,
-    "videoUploadedAt": "2025-02-07T12:00:00Z"
+    title: "STOP Setting Goals | Olympian Alexi Pappas & Ryan Holiday",
+    slug: "stop-setting-goals-olympian-alexi-pappas-ryan-holiday",
+    tags: ["Stoicism", "Personal Development", "Goal Setting"],
+    image: "stop-setting-goals-olympian-alexi-pappas-ryan-holiday.jpg",
+    podcastHost: "Daily Stoic",
+    videoId: "7ftqaxcNCzw",
+    isPremium: true,
+    videoUploadedAt: "2025-02-07T12:00:00Z",
   },
   {
-    "title": "Live Authentically With Matthew McConaughey",
-    "slug": "live-authentically-with-matthew-mcconaughey",
-    "tags": [
-      "Stoicism",
-      "Authentic Living",
-      "Personal Development"
-    ],
-    "image": "live-authentically-with-matthew-mcconaughey.jpg",
-    "podcastHost": "Daily Stoic",
-    "videoId": "sVoKa14N1QQ",
-    "isPremium": true,
-    "videoUploadedAt": "2025-01-30T12:00:00Z"
+    title: "Live Authentically With Matthew McConaughey",
+    slug: "live-authentically-with-matthew-mcconaughey",
+    tags: ["Stoicism", "Authentic Living", "Personal Development"],
+    image: "live-authentically-with-matthew-mcconaughey.jpg",
+    podcastHost: "Daily Stoic",
+    videoId: "sVoKa14N1QQ",
+    isPremium: true,
+    videoUploadedAt: "2025-01-30T12:00:00Z",
   },
   {
-    "title": "How To Coach CHAMPIONS | Bob Bowman On Michael Phelps Discipline, and Self Mastery",
-    "slug": "coach-champions-bob-bowman-michael-phelps-discipline-self-mastery",
-    "tags": [
-      "Stoic Philosophy",
-      "Coaching Excellence",
-      "Personal Mastery"
-    ],
-    "image": "coach-champions-bob-bowman-michael-phelps-discipline-self-mastery.jpg",
-    "podcastHost": "Daily Stoic",
-    "videoId": "UGfYTIC4L2M",
-    "isPremium": true,
-    "videoUploadedAt": "2025-01-24T12:00:00Z"
+    title:
+      "How To Coach CHAMPIONS | Bob Bowman On Michael Phelps Discipline, and Self Mastery",
+    slug: "coach-champions-bob-bowman-michael-phelps-discipline-self-mastery",
+    tags: ["Stoic Philosophy", "Coaching Excellence", "Personal Mastery"],
+    image:
+      "coach-champions-bob-bowman-michael-phelps-discipline-self-mastery.jpg",
+    podcastHost: "Daily Stoic",
+    videoId: "UGfYTIC4L2M",
+    isPremium: true,
+    videoUploadedAt: "2025-01-24T12:00:00Z",
   },
   {
-    "title": "Lacrosse LEGEND Paul Rabil's Path To GREATNESS",
-    "slug": "lacrosse-legend-paul-rabil-path-to-greatness",
-    "tags": [
-      "Peak Performance",
-      "Stoicism",
-      "Personal Development"
-    ],
-    "image": "lacrosse-legend-paul-rabil-path-to-greatness.jpg",
-    "podcastHost": "Daily Stoic",
-    "videoId": "EHfoebE5lYk",
-    "isPremium": true,
-    "videoUploadedAt": "2025-01-18T12:00:00Z"
+    title: "Lacrosse LEGEND Paul Rabil's Path To GREATNESS",
+    slug: "lacrosse-legend-paul-rabil-path-to-greatness",
+    tags: ["Peak Performance", "Stoicism", "Personal Development"],
+    image: "lacrosse-legend-paul-rabil-path-to-greatness.jpg",
+    podcastHost: "Daily Stoic",
+    videoId: "EHfoebE5lYk",
+    isPremium: true,
+    videoUploadedAt: "2025-01-18T12:00:00Z",
   },
   {
-    "title": "How Ancient Myths Teach The Human Experience | Kenny Curtis",
-    "slug": "how-ancient-myths-teach-human-experience-kenny-curtis",
-    "tags": [
-      "Greek Mythology",
-      "Ancient Wisdom",
-      "Personal Development"
-    ],
-    "image": "how-ancient-myths-teach-human-experience-kenny-curtis.jpg",
-    "podcastHost": "Daily Stoic",
-    "videoId": "qAu5_O-KZNg",
-    "isPremium": true,
-    "videoUploadedAt": "2025-01-12T12:00:00Z"
+    title: "How Ancient Myths Teach The Human Experience | Kenny Curtis",
+    slug: "how-ancient-myths-teach-human-experience-kenny-curtis",
+    tags: ["Greek Mythology", "Ancient Wisdom", "Personal Development"],
+    image: "how-ancient-myths-teach-human-experience-kenny-curtis.jpg",
+    podcastHost: "Daily Stoic",
+    videoId: "qAu5_O-KZNg",
+    isPremium: true,
+    videoUploadedAt: "2025-01-12T12:00:00Z",
   },
   {
-    "title": "How To Overcome Imposter Syndrome | Rupi Kaur",
-    "slug": "overcome-imposter-syndrome-rupi-kaur",
-    "tags": [
-      "Creative Process",
-      "Success Mindset",
-      "Artistic Growth"
-    ],
-    "image": "overcome-imposter-syndrome-rupi-kaur.jpg",
-    "podcastHost": "Daily Stoic",
-    "videoId": "5SkjF4ZWoCA",
-    "isPremium": true,
-    "videoUploadedAt": "2025-01-09T12:00:00Z"
+    title: "How To Overcome Imposter Syndrome | Rupi Kaur",
+    slug: "overcome-imposter-syndrome-rupi-kaur",
+    tags: ["Creative Process", "Success Mindset", "Artistic Growth"],
+    image: "overcome-imposter-syndrome-rupi-kaur.jpg",
+    podcastHost: "Daily Stoic",
+    videoId: "5SkjF4ZWoCA",
+    isPremium: true,
+    videoUploadedAt: "2025-01-09T12:00:00Z",
   },
   {
-    "title": "Daily Practices For A Healthier, Happier Life | Dr. Rangan Chatterjee",
-    "slug": "daily-practices-for-healthier-happier-life-rangan-chatterjee",
-    "tags": [
-      "Stoicism",
-      "Daily Habits",
-      "Mental Health"
-    ],
-    "image": "daily-practices-for-healthier-happier-life-rangan-chatterjee.jpg",
-    "podcastHost": "Daily Stoic",
-    "videoId": "mMg8KgzD8DM",
-    "isPremium": true,
-    "videoUploadedAt": "2024-12-28T12:00:00Z"
+    title:
+      "Daily Practices For A Healthier, Happier Life | Dr. Rangan Chatterjee",
+    slug: "daily-practices-for-healthier-happier-life-rangan-chatterjee",
+    tags: ["Stoicism", "Daily Habits", "Mental Health"],
+    image: "daily-practices-for-healthier-happier-life-rangan-chatterjee.jpg",
+    podcastHost: "Daily Stoic",
+    videoId: "mMg8KgzD8DM",
+    isPremium: true,
+    videoUploadedAt: "2024-12-28T12:00:00Z",
   },
   {
-    "title": "How James Clear Turns New Year's Resolutions Into Lasting Habits",
-    "slug": "how-james-clear-turns-new-years-resolutions-into-lasting-habits",
-    "tags": [
-      "Habit Formation",
-      "Stoicism",
-      "Personal Development"
-    ],
-    "image": "how-james-clear-turns-new-years-resolutions-into-lasting-habits.jpg",
-    "podcastHost": "Daily Stoic",
-    "videoId": "ZphegqSOHNY",
-    "isPremium": true,
-    "videoUploadedAt": "2024-12-23T12:00:00Z"
+    title: "How James Clear Turns New Year's Resolutions Into Lasting Habits",
+    slug: "how-james-clear-turns-new-years-resolutions-into-lasting-habits",
+    tags: ["Habit Formation", "Stoicism", "Personal Development"],
+    image:
+      "how-james-clear-turns-new-years-resolutions-into-lasting-habits.jpg",
+    podcastHost: "Daily Stoic",
+    videoId: "ZphegqSOHNY",
+    isPremium: true,
+    videoUploadedAt: "2024-12-23T12:00:00Z",
   },
   {
-    "title": "Why Men Are Being Set Up To Fail | Richard Reeves",
-    "slug": "why-men-are-being-set-up-to-fail-richard-reeves",
-    "tags": [
-      "Masculinity",
-      "Mental Health",
-      "Stoicism"
-    ],
-    "image": "why-men-are-being-set-up-to-fail-richard-reeves.jpg",
-    "podcastHost": "Daily Stoic",
-    "videoId": "ioJPNNLKKV8",
-    "isPremium": true,
-    "videoUploadedAt": "2024-12-12T12:00:00Z"
+    title: "Why Men Are Being Set Up To Fail | Richard Reeves",
+    slug: "why-men-are-being-set-up-to-fail-richard-reeves",
+    tags: ["Masculinity", "Mental Health", "Stoicism"],
+    image: "why-men-are-being-set-up-to-fail-richard-reeves.jpg",
+    podcastHost: "Daily Stoic",
+    videoId: "ioJPNNLKKV8",
+    isPremium: true,
+    videoUploadedAt: "2024-12-12T12:00:00Z",
   },
   {
-    "title": "Rich Roll's Secret To Momentum",
-    "slug": "rich-roll-secret-to-momentum",
-    "tags": [
-      "Productivity",
-      "Spiritual Growth",
-      "Personal Development"
-    ],
-    "image": "rich-roll-secret-to-momentum.jpg",
-    "podcastHost": "Daily Stoic",
-    "videoId": "1AjGTIs-PBs",
-    "isPremium": true,
-    "videoUploadedAt": "2024-12-10T12:00:00Z"
+    title: "Rich Roll's Secret To Momentum",
+    slug: "rich-roll-secret-to-momentum",
+    tags: ["Productivity", "Spiritual Growth", "Personal Development"],
+    image: "rich-roll-secret-to-momentum.jpg",
+    podcastHost: "Daily Stoic",
+    videoId: "1AjGTIs-PBs",
+    isPremium: true,
+    videoUploadedAt: "2024-12-10T12:00:00Z",
   },
   {
-    "title": "Socrates and His Impact on Stoicism | Donald Robertson",
-    "slug": "socrates-and-his-impact-on-stoicism-donald-robertson",
-    "tags": [
-      "Stoicism",
-      "Socrates",
-      "Ancient Wisdom"
-    ],
-    "image": "socrates-and-his-impact-on-stoicism-donald-robertson.jpg",
-    "podcastHost": "Daily Stoic",
-    "videoId": "Axnl-E1zc5U",
-    "isPremium": true,
-    "videoUploadedAt": "2024-11-26T12:00:00Z"
+    title: "Socrates and His Impact on Stoicism | Donald Robertson",
+    slug: "socrates-and-his-impact-on-stoicism-donald-robertson",
+    tags: ["Stoicism", "Socrates", "Ancient Wisdom"],
+    image: "socrates-and-his-impact-on-stoicism-donald-robertson.jpg",
+    podcastHost: "Daily Stoic",
+    videoId: "Axnl-E1zc5U",
+    isPremium: true,
+    videoUploadedAt: "2024-11-26T12:00:00Z",
   },
   {
-    "title": "Iconic Filmmaker Ken Burns on Bringing History’s Greatest Stories Back to Life",
-    "slug": "iconic-filmmaker-ken-burns-on-bringing-historys-greatest-stories-back-to-life",
-    "tags": [
-      "History",
-      "American Identity",
-      "Ken Burns"
-    ],
-    "image": "iconic-filmmaker-ken-burns-on-bringing-historys-greatest-stories-back-to-life.jpg",
-    "podcastHost": "Daily Stoic",
-    "videoId": "8R1jQy8O_mo",
-    "isPremium": true,
-    "videoUploadedAt": "2024-11-18T12:00:00Z"
+    title:
+      "Iconic Filmmaker Ken Burns on Bringing History’s Greatest Stories Back to Life",
+    slug: "iconic-filmmaker-ken-burns-on-bringing-historys-greatest-stories-back-to-life",
+    tags: ["History", "American Identity", "Ken Burns"],
+    image:
+      "iconic-filmmaker-ken-burns-on-bringing-historys-greatest-stories-back-to-life.jpg",
+    podcastHost: "Daily Stoic",
+    videoId: "8R1jQy8O_mo",
+    isPremium: true,
+    videoUploadedAt: "2024-11-18T12:00:00Z",
   },
   {
-    "title": "How To Teach Stoicism To Gen Z | Dr. Jennifer Baker",
-    "slug": "teach-stoicism-to-gen-z-jennifer-baker",
-    "tags": [
-      "Stoicism",
-      "Philosophy",
-      "Personal Development"
-    ],
-    "image": "teach-stoicism-to-gen-z-jennifer-baker.jpg",
-    "podcastHost": "Daily Stoic",
-    "videoId": "OJmfeH5XsOI",
-    "isPremium": true,
-    "videoUploadedAt": "2024-11-14T12:00:00Z"
+    title: "How To Teach Stoicism To Gen Z | Dr. Jennifer Baker",
+    slug: "teach-stoicism-to-gen-z-jennifer-baker",
+    tags: ["Stoicism", "Philosophy", "Personal Development"],
+    image: "teach-stoicism-to-gen-z-jennifer-baker.jpg",
+    podcastHost: "Daily Stoic",
+    videoId: "OJmfeH5XsOI",
+    isPremium: true,
+    videoUploadedAt: "2024-11-14T12:00:00Z",
   },
   {
-    "title": "Mt. Joy’s Matt Quinn on Consistent Growth Vs. Overnight Success (And Which Is Sweeter)",
-    "slug": "matt-quinn-consistent-growth-vs-overnight-success",
-    "tags": [
-      "Artistic Growth",
-      "Success Mindset",
-      "Creative Process"
-    ],
-    "image": "matt-quinn-consistent-growth-vs-overnight-success.jpg",
-    "podcastHost": "Daily Stoic",
-    "videoId": "v6TTv2ui4CE",
-    "isPremium": true,
-    "videoUploadedAt": "2024-11-10T12:00:00Z"
+    title:
+      "Mt. Joy’s Matt Quinn on Consistent Growth Vs. Overnight Success (And Which Is Sweeter)",
+    slug: "matt-quinn-consistent-growth-vs-overnight-success",
+    tags: ["Artistic Growth", "Success Mindset", "Creative Process"],
+    image: "matt-quinn-consistent-growth-vs-overnight-success.jpg",
+    podcastHost: "Daily Stoic",
+    videoId: "v6TTv2ui4CE",
+    isPremium: true,
+    videoUploadedAt: "2024-11-10T12:00:00Z",
   },
   {
-    "title": "Adam Kinzinger On Standing Up For The Truth",
-    "slug": "adam-kinzinger-on-standing-up-for-truth",
-    "tags": [
-      "Stoicism",
-      "Political Courage",
-      "Leadership"
-    ],
-    "image": "adam-kinzinger-on-standing-up-for-truth.jpg",
-    "podcastHost": "Daily Stoic",
-    "videoId": "rTRemmk0hi0",
-    "isPremium": true,
-    "videoUploadedAt": "2024-11-05T12:00:00Z"
+    title: "Adam Kinzinger On Standing Up For The Truth",
+    slug: "adam-kinzinger-on-standing-up-for-truth",
+    tags: ["Stoicism", "Political Courage", "Leadership"],
+    image: "adam-kinzinger-on-standing-up-for-truth.jpg",
+    podcastHost: "Daily Stoic",
+    videoId: "rTRemmk0hi0",
+    isPremium: true,
+    videoUploadedAt: "2024-11-05T12:00:00Z",
   },
   {
-    "title": "Julia Baird On Building Resilience And The Strength Of Forgiveness",
-    "slug": "julia-baird-building-resilience-strength-of-forgiveness",
-    "tags": [
-      "Stoicism",
-      "Forgiveness",
-      "Resilience"
-    ],
-    "image": "julia-baird-building-resilience-strength-of-forgiveness.jpg",
-    "podcastHost": "Daily Stoic",
-    "videoId": "J9ZMEom1SAU",
-    "isPremium": true,
-    "videoUploadedAt": "2024-10-30T12:00:00Z"
+    title: "Julia Baird On Building Resilience And The Strength Of Forgiveness",
+    slug: "julia-baird-building-resilience-strength-of-forgiveness",
+    tags: ["Stoicism", "Forgiveness", "Resilience"],
+    image: "julia-baird-building-resilience-strength-of-forgiveness.jpg",
+    podcastHost: "Daily Stoic",
+    videoId: "J9ZMEom1SAU",
+    isPremium: true,
+    videoUploadedAt: "2024-10-30T12:00:00Z",
   },
   {
-    "title": "The Uncomfortable Truth About Success | Chase Jarvis",
-    "slug": "uncomfortable-truth-about-success-chase-jarvis",
-    "tags": [
-      "Personal Development",
-      "Creative Success",
-      "Risk Taking"
-    ],
-    "image": "uncomfortable-truth-about-success-chase-jarvis.jpg",
-    "podcastHost": "Daily Stoic",
-    "videoId": "6NQMu-dFVww",
-    "isPremium": true,
-    "videoUploadedAt": "2024-10-22T12:00:00Z"
+    title: "The Uncomfortable Truth About Success | Chase Jarvis",
+    slug: "uncomfortable-truth-about-success-chase-jarvis",
+    tags: ["Personal Development", "Creative Success", "Risk Taking"],
+    image: "uncomfortable-truth-about-success-chase-jarvis.jpg",
+    podcastHost: "Daily Stoic",
+    videoId: "6NQMu-dFVww",
+    isPremium: true,
+    videoUploadedAt: "2024-10-22T12:00:00Z",
   },
   {
-    "title": "Brigid Delaney’s Life Changing Year of Living Like a Stoic",
-    "slug": "brigid-delaney-life-changing-year-living-like-stoic",
-    "tags": [
-      "Stoicism",
-      "Mental Health",
-      "Personal Development"
-    ],
-    "image": "brigid-delaney-life-changing-year-living-like-stoic.jpg",
-    "podcastHost": "Daily Stoic",
-    "videoId": "jYGij35sCHw",
-    "isPremium": true,
-    "videoUploadedAt": "2024-10-09T12:00:00Z"
+    title: "Brigid Delaney’s Life Changing Year of Living Like a Stoic",
+    slug: "brigid-delaney-life-changing-year-living-like-stoic",
+    tags: ["Stoicism", "Mental Health", "Personal Development"],
+    image: "brigid-delaney-life-changing-year-living-like-stoic.jpg",
+    podcastHost: "Daily Stoic",
+    videoId: "jYGij35sCHw",
+    isPremium: true,
+    videoUploadedAt: "2024-10-09T12:00:00Z",
   },
   {
-    "title": "How High Risk-Takers Are Shaping Our World | Nate Silver",
-    "slug": "how-high-risk-takers-are-shaping-our-world-nate-silver",
-    "tags": [
-      "Decision Making",
-      "Risk Taking",
-      "Career Strategy"
-    ],
-    "image": "how-high-risk-takers-are-shaping-our-world-nate-silver.jpg",
-    "podcastHost": "Daily Stoic",
-    "videoId": "az0VvuCjP_A",
-    "isPremium": true,
-    "videoUploadedAt": "2024-10-03T12:00:00Z"
+    title: "How High Risk-Takers Are Shaping Our World | Nate Silver",
+    slug: "how-high-risk-takers-are-shaping-our-world-nate-silver",
+    tags: ["Decision Making", "Risk Taking", "Career Strategy"],
+    image: "how-high-risk-takers-are-shaping-our-world-nate-silver.jpg",
+    podcastHost: "Daily Stoic",
+    videoId: "az0VvuCjP_A",
+    isPremium: true,
+    videoUploadedAt: "2024-10-03T12:00:00Z",
   },
   {
-    "title": "How to Stop Feeling Lost in Your Career | Timm Chiusano",
-    "slug": "stop-feeling-lost-in-career-timm-chiusano",
-    "tags": [
-      "Career Transition",
-      "Stoicism",
-      "Professional Growth"
-    ],
-    "image": "stop-feeling-lost-in-career-timm-chiusano.jpg",
-    "podcastHost": "Daily Stoic",
-    "videoId": "2BjVBS_9ytk",
-    "isPremium": true,
-    "videoUploadedAt": "2024-09-18T12:00:00Z"
+    title: "How to Stop Feeling Lost in Your Career | Timm Chiusano",
+    slug: "stop-feeling-lost-in-career-timm-chiusano",
+    tags: ["Career Transition", "Stoicism", "Professional Growth"],
+    image: "stop-feeling-lost-in-career-timm-chiusano.jpg",
+    podcastHost: "Daily Stoic",
+    videoId: "2BjVBS_9ytk",
+    isPremium: true,
+    videoUploadedAt: "2024-09-18T12:00:00Z",
   },
   {
-    "title": "Coach Buzz Williams’ Playbook for Mentorship and Motivation",
-    "slug": "coach-buzz-william-playbook-for-mentorship-motivation",
-    "tags": [
-      "Stoicism",
-      "Leadership",
-      "Personal Development"
-    ],
-    "image": "coach-buzz-william-playbook-for-mentorship-motivation.jpg",
-    "podcastHost": "Daily Stoic",
-    "videoId": "-gbO6R0C5sw",
-    "isPremium": false,
-    "videoUploadedAt": "2024-08-22T12:00:00Z"
+    title: "Coach Buzz Williams’ Playbook for Mentorship and Motivation",
+    slug: "coach-buzz-william-playbook-for-mentorship-motivation",
+    tags: ["Stoicism", "Leadership", "Personal Development"],
+    image: "coach-buzz-william-playbook-for-mentorship-motivation.jpg",
+    podcastHost: "Daily Stoic",
+    videoId: "-gbO6R0C5sw",
+    isPremium: false,
+    videoUploadedAt: "2024-08-22T12:00:00Z",
   },
   {
-    "title": "How To Succeed | Robert Greene And Ryan Holiday",
-    "slug": "how-to-succeed-robert-greene-ryan-holiday",
-    "tags": [
-      "Stoicism",
-      "Personal Development",
-      "Success Principles"
-    ],
-    "image": "how-to-succeed-robert-greene-ryan-holiday.jpg",
-    "podcastHost": "Daily Stoic",
-    "videoId": "UfNp4Y9CZv0",
-    "isPremium": false,
-    "videoUploadedAt": "2024-08-17T12:00:00Z"
+    title: "How To Succeed | Robert Greene And Ryan Holiday",
+    slug: "how-to-succeed-robert-greene-ryan-holiday",
+    tags: ["Stoicism", "Personal Development", "Success Principles"],
+    image: "how-to-succeed-robert-greene-ryan-holiday.jpg",
+    podcastHost: "Daily Stoic",
+    videoId: "UfNp4Y9CZv0",
+    isPremium: false,
+    videoUploadedAt: "2024-08-17T12:00:00Z",
   },
   {
-    "title": "The Power Of Authentic Self-Expression | Gary Vee",
-    "slug": "power-of-authentic-self-expression-gary-vee",
-    "tags": [
+    title: "The Power Of Authentic Self-Expression | Gary Vee",
+    slug: "power-of-authentic-self-expression-gary-vee",
+    tags: [
       "Authentic Communication",
       "Content Creation",
-      "Personal Development"
+      "Personal Development",
     ],
-    "image": "power-of-authentic-self-expression-gary-vee.jpg",
-    "podcastHost": "Daily Stoic",
-    "videoId": "mBGyS4XijUc",
-    "isPremium": false,
-    "videoUploadedAt": "2024-08-07T12:00:00Z"
+    image: "power-of-authentic-self-expression-gary-vee.jpg",
+    podcastHost: "Daily Stoic",
+    videoId: "mBGyS4XijUc",
+    isPremium: false,
+    videoUploadedAt: "2024-08-07T12:00:00Z",
   },
   {
-    "title": "Patrick Dempsey's Stoic Secrets To Success (in Hollywood and Racing)",
-    "slug": "patrick-dempsey-stoic-secrets-to-success",
-    "tags": [
-      "Stoicism",
-      "Performance Psychology",
-      "Emotional Intelligence"
-    ],
-    "image": "patrick-dempsey-stoic-secrets-to-success.jpg",
-    "podcastHost": "Daily Stoic",
-    "videoId": "bN2WVGQcmqE",
-    "isPremium": false,
-    "videoUploadedAt": "2024-07-24T12:00:00Z"
+    title:
+      "Patrick Dempsey's Stoic Secrets To Success (in Hollywood and Racing)",
+    slug: "patrick-dempsey-stoic-secrets-to-success",
+    tags: ["Stoicism", "Performance Psychology", "Emotional Intelligence"],
+    image: "patrick-dempsey-stoic-secrets-to-success.jpg",
+    podcastHost: "Daily Stoic",
+    videoId: "bN2WVGQcmqE",
+    isPremium: false,
+    videoUploadedAt: "2024-07-24T12:00:00Z",
   },
   {
-    "title": "The Cost Of Chasing Success (Stoicism's Solution) | Chris Distefano",
-    "slug": "cost-of-chasing-success-chris-distefano",
-    "tags": [
-      "Stoicism",
-      "Success Mindset",
-      "Work-Life Balance"
-    ],
-    "image": "cost-of-chasing-success-chris-distefano.jpg",
-    "podcastHost": "Daily Stoic",
-    "videoId": "iYsXThpK_Lc",
-    "isPremium": false,
-    "videoUploadedAt": "2024-07-17T12:00:00Z"
+    title:
+      "The Cost Of Chasing Success (Stoicism's Solution) | Chris Distefano",
+    slug: "cost-of-chasing-success-chris-distefano",
+    tags: ["Stoicism", "Success Mindset", "Work-Life Balance"],
+    image: "cost-of-chasing-success-chris-distefano.jpg",
+    podcastHost: "Daily Stoic",
+    videoId: "iYsXThpK_Lc",
+    isPremium: false,
+    videoUploadedAt: "2024-07-17T12:00:00Z",
   },
   {
-    "title": "Build The Life You Want | Arthur Brooks",
-    "slug": "build-life-you-want-arthur-brooks",
-    "tags": [
-      "Stoicism",
-      "Happiness Research",
-      "Personal Development"
-    ],
-    "image": "build-life-you-want-arthur-brooks.jpg",
-    "podcastHost": "Daily Stoic",
-    "videoId": "G9IXNNwk7x4",
-    "isPremium": false,
-    "videoUploadedAt": "2024-07-10T12:00:00Z"
+    title: "Build The Life You Want | Arthur Brooks",
+    slug: "build-life-you-want-arthur-brooks",
+    tags: ["Stoicism", "Happiness Research", "Personal Development"],
+    image: "build-life-you-want-arthur-brooks.jpg",
+    podcastHost: "Daily Stoic",
+    videoId: "G9IXNNwk7x4",
+    isPremium: false,
+    videoUploadedAt: "2024-07-10T12:00:00Z",
   },
   {
-    "title": "How Marcus Aurelius Dealt With Anxiety | Donald Robertson",
-    "slug": "how-marcus-aurelius-dealt-with-anxiety-donald-robertson",
-    "tags": [
-      "Stoicism",
-      "Marcus Aurelius",
-      "Mental Health"
-    ],
-    "image": "how-marcus-aurelius-dealt-with-anxiety-donald-robertson.jpg",
-    "podcastHost": "Daily Stoic",
-    "videoId": "aTUXex1F-Jc",
-    "isPremium": false,
-    "videoUploadedAt": "2024-05-29T12:00:00Z"
+    title: "How Marcus Aurelius Dealt With Anxiety | Donald Robertson",
+    slug: "how-marcus-aurelius-dealt-with-anxiety-donald-robertson",
+    tags: ["Stoicism", "Marcus Aurelius", "Mental Health"],
+    image: "how-marcus-aurelius-dealt-with-anxiety-donald-robertson.jpg",
+    podcastHost: "Daily Stoic",
+    videoId: "aTUXex1F-Jc",
+    isPremium: false,
+    videoUploadedAt: "2024-05-29T12:00:00Z",
   },
   {
-    "title": "Why everything is F*cked | Mark Manson",
-    "slug": "why-everything-is-fucked-mark-manson",
-    "tags": [
-      "Stoicism",
-      "Moral Ethics",
-      "Existentialism"
-    ],
-    "image": "why-everything-is-fucked-mark-manson.jpg",
-    "podcastHost": "Daily Stoic",
-    "videoId": "Cv0UdtE9wpE",
-    "isPremium": false,
-    "videoUploadedAt": "2024-05-01T12:00:00Z"
+    title: "Why everything is F*cked | Mark Manson",
+    slug: "why-everything-is-fucked-mark-manson",
+    tags: ["Stoicism", "Moral Ethics", "Existentialism"],
+    image: "why-everything-is-fucked-mark-manson.jpg",
+    podcastHost: "Daily Stoic",
+    videoId: "Cv0UdtE9wpE",
+    isPremium: false,
+    videoUploadedAt: "2024-05-01T12:00:00Z",
   },
   {
-    "title": "How Stoicism Can Beat Your Social Media Addiction | Jonathan Haidt",
-    "slug": "how-stoicism-can-beat-your-social-addiction-jonathan-haidt",
-    "tags": [
-      "Stoicism",
-      "Social Media",
-      "Mental Health"
-    ],
-    "image": "how-stoicism-can-beat-your-social-addiction-jonathan-haidt.jpg",
-    "podcastHost": "Daily Stoic",
-    "videoId": "uPHO1bvBSGQ",
-    "isPremium": false,
-    "videoUploadedAt": "2024-04-22T12:00:00Z"
+    title: "How Stoicism Can Beat Your Social Media Addiction | Jonathan Haidt",
+    slug: "how-stoicism-can-beat-your-social-addiction-jonathan-haidt",
+    tags: ["Stoicism", "Social Media", "Mental Health"],
+    image: "how-stoicism-can-beat-your-social-addiction-jonathan-haidt.jpg",
+    podcastHost: "Daily Stoic",
+    videoId: "uPHO1bvBSGQ",
+    isPremium: false,
+    videoUploadedAt: "2024-04-22T12:00:00Z",
   },
   {
-    "title": "Finding Enough, Getting Sober, and Improving Your Life | Sam Parr (My First Million)",
-    "slug": "finding-enough-getting-sober-improving-your-life-sam-parr-my-first-million",
-    "tags": [
-      "Personal Growth",
-      "Minimalism",
-      "Life Philosophy"
-    ],
-    "image": "finding-enough-getting-sober-improving-your-life-sam-parr-my-first-million.jpg",
-    "podcastHost": "Daily Stoic",
-    "videoId": "aWQ-RqLPFLs",
-    "isPremium": false,
-    "videoUploadedAt": "2024-04-11T12:00:00Z"
-  }
+    title:
+      "Finding Enough, Getting Sober, and Improving Your Life | Sam Parr (My First Million)",
+    slug: "finding-enough-getting-sober-improving-your-life-sam-parr-my-first-million",
+    tags: ["Personal Growth", "Minimalism", "Life Philosophy"],
+    image:
+      "finding-enough-getting-sober-improving-your-life-sam-parr-my-first-million.jpg",
+    podcastHost: "Daily Stoic",
+    videoId: "aWQ-RqLPFLs",
+    isPremium: false,
+    videoUploadedAt: "2024-04-11T12:00:00Z",
+  },
 ];
