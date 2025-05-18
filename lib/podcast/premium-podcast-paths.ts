@@ -137,6 +137,8 @@ export const premiumPodcastPaths = [
   "/podcasts/jack-neel/manipulation-expert-control-any-conversation-read-mind-instantly",
 
   // Jay Shetty premium podcasts
+  "/podcasts/jay-shetty/body-language-expert-the-secret-to-attracting-anyone-instantly",
+  "/podcasts/jay-shetty/want-to-learn-how-to-use-your-intrusive-thoughts-and-anxiety-as-your-superpower-do-this",
   "/podcasts/jay-shetty/deepak-chopra-this-formula-will-instantly-calm-your-mind-and-stop-overthinking",
   "/podcasts/jay-shetty/lizzo-opens-up-about-weight-loss-journey-letting-go-of-toxic-relationships",
   "/podcasts/jay-shetty/raising-emotionally-intelligent-children-expert-advice",

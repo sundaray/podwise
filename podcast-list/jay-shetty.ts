@@ -1,6 +1,48 @@
 export const jayShettyPodcastList = [
   {
     title:
+      "KHLOE KARDASHIAN: My Side that NOBODY Knows (Truth Behind Headlines, Divorce, Co-Parenting)",
+    tags: ["Personal Development", "Resilience", "Emotional Intelligence"],
+    image:
+      "khloe-kardashian-my-side-that-nobody-knows-truth-behind-headlines-divorce-co-parenting.jpg",
+    podcastHost: "Jay Shetty",
+    isPremium: false,
+    videoId: "wbAvU6f-p9A",
+    videoUploadedAt: "2025-05-05T14:01:30Z",
+  },
+  {
+    title: "MICHELLE OBAMA: This Is What Scares Me Most In Today's America!",
+    slug: "michelle-obama-this-is-what-scares-me-most-in-todays-america",
+    tags: ["Parenting Wisdom", "Family Values", "Racial Justice"],
+    image: "michelle-obama-this-is-what-scares-me-most-in-todays-america.jpg",
+    podcastHost: "Jay Shetty",
+    isPremium: false,
+    videoId: "f8NT_PVXzR8",
+    videoUploadedAt: "2025-04-28T14:00:57Z",
+  },
+  {
+    title: "#1 BODY LANGUAGE EXPERT: The SECRET to Attracting Anyone INSTANTLY",
+    slug: "body-language-expert-the-secret-to-attracting-anyone-instantly",
+    tags: ["Body Language", "Charisma", "Communication Skills"],
+    image: "body-language-expert-the-secret-to-attracting-anyone-instantly.jpg",
+    podcastHost: "Jay Shetty",
+    isPremium: true,
+    videoId: "d3fkpYlR7fU",
+    videoUploadedAt: "2025-05-12T14:00:51Z",
+  },
+  {
+    title:
+      "Want to Learn How to Use Your Intrusive Thoughts and Anxiety as Your SUPERPOWER? DO THIS!",
+    tags: ["Anxiety Management", "Personal Growth", "Celebrity Insights"],
+    image:
+      "want-to-learn-how-to-use-your-intrusive-thoughts-and-anxiety-as-your-superpower-do-this.jpg",
+    podcastHost: "Jay Shetty",
+    isPremium: true,
+    videoId: "bNNjv_qRDS4",
+    videoUploadedAt: "2025-05-14T14:00:52Z",
+  },
+  {
+    title:
       "Deepak Chopra: THIS Formula Will Instantly Calm Your Mind & Stop Overthinking",
     slug: "deepak-chopra-this-formula-will-instantly-calm-your-mind-and-stop-overthinking",
     tags: [

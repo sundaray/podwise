@@ -41,6 +41,9 @@ export const freePodcastPaths = [
   "/podcasts/jack-neel/leila-hormozi-controlling-emotions-rewiring-discipline-attracting-elite-teams",
   "/podcasts/jack-neel/luke-belmar-attracting-influence-digital-arbitrage-mastering-wealth",
   "/podcasts/jack-neel/this-19-year-old-broke-youtube-shorts-jenny-hoyos",
+
+  "/podcasts/jay-shetty/khloe-kardashian-my-side-that-nobody-knows-truth-behind-headlines-divorce-co-parenting",
+  "/podcasts/jay-shetty/michelle-obama-this-is-what-scares-me-most-in-todays-america",
   "/podcasts/jay-shetty/alexis-ren-you-dont-need-permission-to-break-free-and-achieve-full-potential",
   "/podcasts/jay-shetty/brain-expert-5-hacks-beat-stress",
   "/podcasts/jay-shetty/detox-expert-drink-this-first-thing-in-the-morning-on-an-empty-stomach",
