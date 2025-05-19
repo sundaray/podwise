@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { Icons } from "@/components/icons";
 import { formatVideoUploadDate } from "@/lib/format-video-upload-date";
 
@@ -16,8 +15,8 @@ type PodcastCardProps = {
   hostPath: string;
 };
 
-const solidColorPlaceholder =
-  "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1' fill='%23F3F4F6'%3E%3Crect width='1' height='1'/%3E%3C/svg%3E";
+// const solidColorPlaceholder =
+//   "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1' fill='%23F3F4F6'%3E%3Crect width='1' height='1'/%3E%3C/svg%3E";
 
 export async function PodcastCard({ podcast, hostPath }: PodcastCardProps) {
   const { title, slug, image, podcastHost, videoUploadedAt, isPremium } =
@@ -34,17 +33,16 @@ export async function PodcastCard({ podcast, hostPath }: PodcastCardProps) {
           <p className="text-xs font-medium text-gray-700">Premium</p>
         </div>
       )}
-      <Image
-        src={`https://podcast-summaries-dev.s3.amazonaws.com/podcast-thumbnails/${hostPath}/${image}`}
-        alt={`Thumbnail for ${title}`}
-        width={1280}
-        height={720}
-        sizes="(min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw"
-        quality={100}
-        priority
-        className="h-auto w-full object-cover transition-all group-hover/card:brightness-80"
-        placeholder={solidColorPlaceholder}
-      />
+      <div className="relative aspect-[16/9] w-full bg-gray-100">
+        <img
+          src={`https://podcast-summaries-dev.s3.amazonaws.com/podcast-thumbnails/${hostPath}/${image}`}
+          alt={`Thumbnail of podcast titled ${title}`}
+          width="1280"
+          height="720"
+          loading="eager"
+          className="absolute inset-0 h-full w-full object-cover transition-all group-hover/card:brightness-80"
+        />
+      </div>
       <h2 className="text-md mt-2 font-bold tracking-tight text-pretty text-gray-900 transition-colors group-hover/card:text-sky-700 md:text-lg">
         {title}
       </h2>

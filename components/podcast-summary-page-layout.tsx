@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 import { redirect } from "next/navigation";
 import { headers } from "next/headers";
 import { Frontmatter } from "@/types";
@@ -45,7 +44,7 @@ export async function generateMetadata({
   // Create base metadata
   const metadata: Metadata = {
     title: `${title} | ${podcastHost} Podcast Summary`,
-    description: description, 
+    description: description,
     keywords: tags,
 
     // Open Graph metadata (for Facebook, LinkedIn, etc.)
@@ -138,17 +137,16 @@ export async function PodcastSummaryPageLayout({
               {formattedDate}
             </time>
           </div>
-          <Image
-            src={imageUrl}
-            alt={`Thumbnail for ${title}`}
-            width={1280}
-            height={720}
-            sizes="(min-width: 768px) 50vw, 100vw"
-            quality={100}
-            priority
-            className="my-7 h-auto w-full shadow-md"
-            placeholder={solidColorPlaceholder}
-          />
+          <div className="relative aspect-[16/9] w-full bg-gray-100 my-7">
+            <img
+              src={imageUrl}
+              alt={`Thumbnail of podcast titled ${title}`}
+              width="1280"
+              height="720"
+              loading="eager"
+              className="absolute inset-0 h-full w-full object-cover transition-all group-hover/card:brightness-80"
+            />
+          </div>
         </header>
         {children}
 
