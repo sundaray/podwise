@@ -294,6 +294,7 @@ export const premiumPodcastPaths = [
   "/podcasts/rangan-chatterjee/top-food-hacks-regenerate-stem-cells-boost-brain-health-improve-circulation-william-li",
 
   // Scott D. Clary premium podcasts
+  "/podcasts/scott-d-clary/how-biohacking-your-mind-transforms-entrepreneurial-success-dave-asprey-biohacking-pioneer",
   "/podcasts/scott-d-clary/how-a-dentist-built-a-one-billion-dollar-brand-by-seeing-what-others-missed-jon-marashi-celebrity-dentist",
   "/podcasts/scott-d-clary/building-an-ai-media-business-from-one-thousand-dollar-to-multi-million-exit-adam-biddlecombe-mindstream-founder",
   "/podcasts/scott-d-clary/what-it-really-takes-to-build-an-empire-robert-croak-silly-bandz-creator",

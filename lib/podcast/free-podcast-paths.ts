@@ -4,6 +4,7 @@ export const freePodcastPaths = [
   "/podcasts/andrew-huberman/charting-the-architecture-of-the-universe-and-human-life-brian-keating",
   "/podcasts/andrew-huberman/contracts-of-love-and-money-that-make-or-break-relationships-james-sexton",
 
+  "/podcasts/chris-williamson/the-downfall-of-crossfit-and-the-future-of-fitness-will-ahmed",
   "/podcasts/chris-williamson/why-has-the-world-gone-insane-douglas-murray",
   "/podcasts/chris-williamson/how-to-win-the-war-of-the-future-joe-lonsdale",
   "/podcasts/chris-williamson/how-to-overcome-the-worst-pain-of-your-life-jeremy-renner",
@@ -90,6 +91,8 @@ export const freePodcastPaths = [
   "/podcasts/rangan-chatterjee/spot-toxic-patterns-if-you-hear-this-that-is-a-narcissist-trying-to-trap-you-ramani",
   "/podcasts/rangan-chatterjee/stop-decline-top-foods-lifestyle-habits-to-balance-hormones-mindy-pelz",
   "/podcasts/rangan-chatterjee/what-walking-every-day-does-to-your-body-life-heal-pain-posture-longevity-helen-hall",
+
+  "/podcasts/scott-d-clary/a-doctors-prescription-for-joy-and-fulfillment-tiffany-moon-anesthesiologist-and-author",
   "/podcasts/scott-d-clary/anti-aging-diet-michael-greger-founder-nutritionfacts-org",
   "/podcasts/scott-d-clary/become-work-optional-chris-miles-anti-financial-adviser",
   "/podcasts/scott-d-clary/dont-go-broke-trying-to-get-rich-ryan-pineda-entrepreneur-real-estate-investor",

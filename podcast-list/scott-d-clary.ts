@@ -1,6 +1,30 @@
 export const scottDClaryPodcastList = [
   {
     title:
+      "How Biohacking Your Mind Transforms Entrepreneurial Success | Dave Asprey - Biohacking Pioneer",
+    slug: "how-biohacking-your-mind-transforms-entrepreneurial-success-dave-asprey-biohacking-pioneer",
+    tags: ["Biohacking", "Entrepreneurship", "Mental Performance"],
+    image:
+      "how-biohacking-your-mind-transforms-entrepreneurial-success-dave-asprey-biohacking-pioneer.jpg",
+    podcastHost: "Scott D. Clary",
+    isPremium: true,
+    videoId: "LsVUcAC9OMs",
+    videoUploadedAt: "2025-05-17T22:22:43Z",
+  },
+  {
+    title:
+      "A Doctor's Prescription for Joy & Fulfillment | Tiffany Moon - Anesthesiologist & Author",
+    slug: "a-doctors-prescription-for-joy-and-fulfillment-tiffany-moon-anesthesiologist-and-author",
+    tags: ["Personal Development", "Joy and Fulfillment", "Work-Life Balance"],
+    image:
+      "a-doctors-prescription-for-joy-and-fulfillment-tiffany-moon-anesthesiologist-and-author.jpg",
+    podcastHost: "Scott D. Clary",
+    isPremium: false,
+    videoId: "ZBYmQAbvey4",
+    videoUploadedAt: "2025-05-15T22:37:43Z",
+  },
+  {
+    title:
       "How a Dentist Built a $1B Brand By Seeing What Others Missed | Dr. Jon Marashi - Celebrity Dentist",
     slug: "how-a-dentist-built-a-one-billion-dollar-brand-by-seeing-what-others-missed-jon-marashi-celebrity-dentist",
     tags: ["Entrepreneurship", "Success Stories", "Dental Industry"],
