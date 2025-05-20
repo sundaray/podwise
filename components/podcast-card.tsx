@@ -33,7 +33,7 @@ export async function PodcastCard({ podcast, hostPath }: PodcastCardProps) {
           <p className="text-xs font-medium text-gray-700">Premium</p>
         </div>
       )}
-      <div className="relative aspect-[16/9] w-full bg-gray-100">
+      {/* <div className="relative aspect-[16/9] w-full bg-gray-100">
         <img
           src={`https://podcast-summaries-dev.s3.amazonaws.com/podcast-thumbnails/${hostPath}/${image}`}
           alt={`Thumbnail of podcast titled ${title}`}
@@ -42,6 +42,38 @@ export async function PodcastCard({ podcast, hostPath }: PodcastCardProps) {
           loading="eager"
           className="absolute inset-0 h-full w-full object-cover transition-all group-hover/card:brightness-80"
         />
+      </div> */}
+      <div className="relative aspect-[16/9] w-full bg-gray-100">
+        <picture className="absolute inset-0 h-full w-full">
+          <source
+            type="image/webp"
+            srcSet={`
+        https://podcast-summaries-dev.s3.amazonaws.com/podcast-thumbnails/${hostPath}/${image.replace(".jpg", "-sm.webp")} 400w,
+        https://podcast-summaries-dev.s3.amazonaws.com/podcast-thumbnails/${hostPath}/${image.replace(".jpg", "-md.webp")} 640w,
+        https://podcast-summaries-dev.s3.amazonaws.com/podcast-thumbnails/${hostPath}/${image.replace(".jpg", "-lg.webp")} 800w,
+        https://podcast-summaries-dev.s3.amazonaws.com/podcast-thumbnails/${hostPath}/${image.replace(".jpg", ".webp")} 1280w
+      `}
+            sizes="(min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw"
+          />
+          <source
+            type="image/jpeg"
+            srcSet={`
+        https://podcast-summaries-dev.s3.amazonaws.com/podcast-thumbnails/${hostPath}/${image.replace(".jpg", "-sm.jpg")} 400w,
+        https://podcast-summaries-dev.s3.amazonaws.com/podcast-thumbnails/${hostPath}/${image.replace(".jpg", "-md.jpg")} 640w,
+        https://podcast-summaries-dev.s3.amazonaws.com/podcast-thumbnails/${hostPath}/${image.replace(".jpg", "-lg.jpg")} 800w,
+        https://podcast-summaries-dev.s3.amazonaws.com/podcast-thumbnails/${hostPath}/${image} 1280w
+      `}
+            sizes="(min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw"
+          />
+          <img
+            src={`https://podcast-summaries-dev.s3.amazonaws.com/podcast-thumbnails/${hostPath}/${image}`}
+            alt={`Thumbnail of podcast titled ${title}`}
+            width="1280"
+            height="720"
+            loading="eager"
+            className="h-full w-full object-cover transition-all group-hover/card:brightness-80"
+          />
+        </picture>
       </div>
       <h2 className="text-md mt-2 font-bold tracking-tight text-pretty text-gray-900 transition-colors group-hover/card:text-sky-700 md:text-lg">
         {title}

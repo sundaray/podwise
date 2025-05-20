@@ -325,7 +325,7 @@ export const lewisHowesPodcastList = [
     podcastHost: "Lewis Howes",
     videoId: "YSStPJ1-DuE",
     isPremium: true,
-    videoUploadedAt: "2025-01-29T12:00:00Z",
+    videoUploadedAt: "2025-01-29T15:00:07Z",
   },
   {
     title: "The Most Vulnerable Things Men Have NEVER Told You",
@@ -492,7 +492,7 @@ export const lewisHowesPodcastList = [
     podcastHost: "Lewis Howes",
     videoId: "1m99-eCgKyc",
     isPremium: false,
-    videoUploadedAt: "2024-11-11T12:00:00Z",
+    videoUploadedAt: "2024-11-11T15:00:07Z",
   },
   {
     title:
@@ -503,7 +503,7 @@ export const lewisHowesPodcastList = [
     podcastHost: "Lewis Howes",
     videoId: "Pb8fzhWfuIY",
     isPremium: false,
-    videoUploadedAt: "2024-11-06T12:00:00Z",
+    videoUploadedAt: "2024-11-06T15:00:08Z",
   },
   {
     title:

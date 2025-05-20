@@ -89,7 +89,6 @@ export async function PodcastSummaryPageLayout({
 }: PodcastSummaryPageLayoutProps) {
   const {
     title,
-    description,
     publishedAt,
     tags,
     image,
@@ -111,8 +110,6 @@ export async function PodcastSummaryPageLayout({
   }
 
   const formattedPodcastHost = formatHostForUrl(podcastHost);
-
-  const imageUrl = `https://podcast-summaries-dev.s3.amazonaws.com/podcast-thumbnails/${formattedPodcastHost}/${image}`;
 
   const formattedDate = format(parseISO(publishedAt), "MMMM d, yyyy");
 
@@ -137,15 +134,37 @@ export async function PodcastSummaryPageLayout({
               {formattedDate}
             </time>
           </div>
-          <div className="relative aspect-[16/9] w-full bg-gray-100 my-7">
-            <img
-              src={imageUrl}
-              alt={`Thumbnail of podcast titled ${title}`}
-              width="1280"
-              height="720"
-              loading="eager"
-              className="absolute inset-0 h-full w-full object-cover transition-all group-hover/card:brightness-80"
-            />
+          <div className="relative my-7 aspect-[16/9] w-full bg-gray-100">
+            <picture className="absolute inset-0 h-full w-full">
+              <source
+                type="image/webp"
+                srcSet={`
+        https://podcast-summaries-dev.s3.amazonaws.com/podcast-thumbnails/${formattedPodcastHost}/${image.replace(".jpg", "-sm.webp")} 400w,
+        https://podcast-summaries-dev.s3.amazonaws.com/podcast-thumbnails/${formattedPodcastHost}/${image.replace(".jpg", "-md.webp")} 640w,
+        https://podcast-summaries-dev.s3.amazonaws.com/podcast-thumbnails/${formattedPodcastHost}/${image.replace(".jpg", "-lg.webp")} 800w,
+        https://podcast-summaries-dev.s3.amazonaws.com/podcast-thumbnails/${formattedPodcastHost}/${image.replace(".jpg", ".webp")} 1280w
+      `}
+                sizes="(min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw"
+              />
+              <source
+                type="image/jpeg"
+                srcSet={`
+        https://podcast-summaries-dev.s3.amazonaws.com/podcast-thumbnails/${formattedPodcastHost}/${image.replace(".jpg", "-sm.jpg")} 400w,
+        https://podcast-summaries-dev.s3.amazonaws.com/podcast-thumbnails/${formattedPodcastHost}/${image.replace(".jpg", "-md.jpg")} 640w,
+        https://podcast-summaries-dev.s3.amazonaws.com/podcast-thumbnails/${formattedPodcastHost}/${image.replace(".jpg", "-lg.jpg")} 800w,
+        https://podcast-summaries-dev.s3.amazonaws.com/podcast-thumbnails/${formattedPodcastHost}/${image} 1280w
+      `}
+                sizes="(min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw"
+              />
+              <img
+                src={`https://podcast-summaries-dev.s3.amazonaws.com/podcast-thumbnails/${formattedPodcastHost}/${image}`}
+                alt={`Thumbnail of podcast titled ${title}`}
+                width="1280"
+                height="720"
+                loading="eager"
+                className="h-full w-full object-cover"
+              />
+            </picture>
           </div>
         </header>
         {children}
