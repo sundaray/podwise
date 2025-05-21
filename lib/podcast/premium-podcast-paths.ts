@@ -260,8 +260,9 @@ export const premiumPodcastPaths = [
   "/podcasts/mel-robbins/simple-tool-transform-family-dynamic",
 
   // Nathan Barry premium podcasts
-  "/podcasts/nathan-barry/from-brain-surgery-to-1-6-million-how-i-built-my-dream-business",
+  "/podcasts/nathan-barry/7-step-framework-build-30k-per-month-coaching-business",
   "/podcasts/nathan-barry/build-25k-per-month-software-business–full-strategy",
+  "/podcasts/nathan-barry/from-brain-surgery-to-1-6-million-how-i-built-my-dream-business",
   "/podcasts/nathan-barry/how-this-musician-makes-500k-per-year-working-2-hours-a-week",
   "/podcasts/nathan-barry/success-story-scale-coaching-business-1-million-plus",
   "/podcasts/nathan-barry/live-coaching-how-to-grow-an-agency-to-2-million-dollars",

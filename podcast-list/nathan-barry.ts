@@ -1,5 +1,15 @@
 export const nathanBarryPodcastList = [
   {
+    title: "The 7-Step Framework To Build a $30K/Month Coaching Business",
+    slug: "7-step-framework-build-30k-per-month-coaching-business",
+    tags: ["Group Coaching", "Premium Pricing", "Business Coaching"],
+    image: "7-step-framework-build-30k-per-month-coaching-business.jpg",
+    podcastHost: "Nathan Barry",
+    isPremium: true,
+    videoId: "jjuhWvqkUPk",
+    videoUploadedAt: "2025-05-01T16:01:13Z",
+  },
+  {
     title: "From Brain Surgery to $1.6M: How I Built My Dream Business",
     slug: "from-brain-surgery-to-1-6-million-how-i-built-my-dream-business",
     tags: ["Creator Economy", "Email Marketing", "Resilience"],
