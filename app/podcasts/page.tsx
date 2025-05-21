@@ -18,6 +18,7 @@ import { jackNeelPodcastList } from "@/podcast-list/jack-neel";
 import { jayShettyPodcastList } from "@/podcast-list/jay-shetty";
 import { lewisHowesPodcastList } from "@/podcast-list/lewis-howes";
 import { melRobbinsPodcastList } from "@/podcast-list/mel-robbins";
+import { nathanBarryPodcastList } from "@/podcast-list/nathan-barry";
 import { ranganChatterjeePodcastList } from "@/podcast-list/rangan-chatterjee";
 import { scottDClaryPodcastList } from "@/podcast-list/scott-d-clary";
 import { simonSinekPodcastList } from "@/podcast-list/simon-sinek";
@@ -71,6 +72,7 @@ function getAllPodcasts() {
     ...jayShettyPodcastList,
     ...lewisHowesPodcastList,
     ...melRobbinsPodcastList,
+    ...nathanBarryPodcastList,
     ...ranganChatterjeePodcastList,
     ...scottDClaryPodcastList,
     ...simonSinekPodcastList,
@@ -97,6 +99,8 @@ function getHostPathForPodcast(podcast: any) {
     return "lewis-howes";
   if (melRobbinsPodcastList.some((p) => p.slug === podcast.slug))
     return "mel-robbins";
+  if (nathanBarryPodcastList.some((p) => p.slug === podcast.slug))
+    return "nathan-barry";
   if (ranganChatterjeePodcastList.some((p) => p.slug === podcast.slug))
     return "rangan-chatterjee";
   if (scottDClaryPodcastList.some((p) => p.slug === podcast.slug))

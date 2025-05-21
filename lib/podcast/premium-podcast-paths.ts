@@ -259,6 +259,16 @@ export const premiumPodcastPaths = [
   "/podcasts/mel-robbins/6-tools-boost-focus-confidence-creativity",
   "/podcasts/mel-robbins/simple-tool-transform-family-dynamic",
 
+  // Nathan Barry premium podcasts
+  "/podcasts/nathan-barry/build-25k-per-month-software-business–full-strategy",
+  "/podcasts/nathan-barry/how-this-musician-makes-500k-per-year-working-2-hours-a-week",
+  "/podcasts/nathan-barry/success-story-scale-coaching-business-1-million-plus",
+  "/podcasts/nathan-barry/live-coaching-how-to-grow-an-agency-to-2-million-dollars",
+  "/podcasts/nathan-barry/our-risky-branding-strategy-changed-everything",
+  "/podcasts/nathan-barry/how-i-get-paid-to-travel-in-2025-and-how-you-can-too",
+  "/podcasts/nathan-barry/how-ai-can-grow-your-business-in-2025-expert-advice",
+  "/podcasts/nathan-barry/how-to-turn-your-podcast-into-a-full-time-business",
+
   // Dr. Rangan Chatterjee premium podcasts
   "/podcasts/rangan-chatterjee/fix-your-negative-thought-patterns-once-you-learn-this-you-will-never-be-the-same-bruce-lipton",
   "/podcasts/rangan-chatterjee/stop-sleepwalking-through-life-say-these-3-words-to-create-your-dream-life-deepak-chopra",
