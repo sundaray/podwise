@@ -177,6 +177,8 @@ export const premiumPodcastPaths = [
   "/podcasts/jay-shetty/andrew-huberman-hack-to-increase-dopamine-levels-boost-motivation",
 
   // Lewis Howes premium podcasts
+  "/podcasts/lewis-howes/the-spiritual-teacher-the-universe-is-love-awaken-to-the-new-consciousness-to-manifest-anything",
+  "/podcasts/lewis-howes/the-investing-expert-why-investing-is-the-biggest-life-hack-and-everyone-should-start-today",
   "/podcasts/lewis-howes/mel-robbins-let-them-theory-transform-life",
   "/podcasts/lewis-howes/former-secret-service-agent-reveals-how-to-read-anyone-to-know-who-you-can-really-trust",
   "/podcasts/lewis-howes/master-hypnotist-if-you-feel-stuck-in-life-watch-this",

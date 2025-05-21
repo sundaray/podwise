@@ -1,6 +1,30 @@
 export const lewisHowesPodcastList = [
   {
     title:
+      "The Spiritual Teacher: The Universe is Love! Awaken To The New Consciousness To Manifest Anything!",
+    slug: "the-spiritual-teacher-the-universe-is-love-awaken-to-the-new-consciousness-to-manifest-anything",
+    tags: ["Authentic Power", "Consciousness", "Spiritual Growth"],
+    image:
+      "the-spiritual-teacher-the-universe-is-love-awaken-to-the-new-consciousness-to-manifest-anything.jpg",
+    podcastHost: "Lewis Howes",
+    isPremium: true,
+    videoId: "boFg8BrJVkM",
+    videoUploadedAt: "2025-05-19T14:00:07Z",
+  },
+  {
+    title:
+      "The Investing Expert: Why Investing Is the BIGGEST Life Hack & Everyone Should Start Today!",
+    slug: "the-investing-expert-why-investing-is-the-biggest-life-hack-and-everyone-should-start-today",
+    tags: ["Investing Strategy", "Wealth Building", "Financial Freedom"],
+    image:
+      "the-investing-expert-why-investing-is-the-biggest-life-hack-and-everyone-should-start-today.jpg",
+    podcastHost: "Lewis Howes",
+    isPremium: true,
+    videoId: "8kjP7_BfGk0",
+    videoUploadedAt: "2025-05-14T14:00:07Z",
+  },
+  {
+    title:
       "Lucy Hale Opens Up on Getting Sober & How to MANIFEST the Life of Your Dreams!",
     slug: "lucy-hale-opens-up-on-getting-sober-and-how-to-manifest-the-life-of-your-dreams",
     tags: ["Sobriety Journey", "Personal Growth", "Manifestation"],
