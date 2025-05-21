@@ -108,15 +108,15 @@ export default async function NathanBarryPodcastPage({
       <p className="mx-auto mb-20 max-w-5xl text-center text-lg/7 text-balance text-gray-700">
         The Nathan Barry Show features insightful interviews and live coaching
         sessions with successful creators, giving you a behind-the-scenes look
-        at what's working in today's creator economy. As the CEO of Kit, Nathan
-        leverages his unique perspective to help you build Creator Flywheels
-        that create leverage in your business, allowing you to focus on revenue
-        instead of busywork. Each episode delivers actionable strategies for
-        growing your audience, monetizing your content, and building sustainable
-        systems that scale your creator business. Whether you're just starting
-        out or looking to optimize an established brand, Nathan's practical
-        advice and conversations with industry leaders provide the blueprint for
-        earning a living as a modern creator.
+        at what&apos;s working in today&apos;s creator economy. As the CEO of
+        Kit, Nathan leverages his unique perspective to help you build Creator
+        Flywheels that create leverage in your business, allowing you to focus
+        on revenue instead of busywork. Each episode delivers actionable
+        strategies for growing your audience, monetizing your content, and
+        building sustainable systems that scale your creator business. Whether
+        you&apos;re just starting out or looking to optimize an established
+        brand, Nathan&apos;s practical advice and conversations with industry
+        leaders provide the blueprint for earning a living as a modern creator.
       </p>
       <PodcastSearch
         placeholder="Search podcast summaries by title"

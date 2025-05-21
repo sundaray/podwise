@@ -1,14 +1,25 @@
 export const nathanBarryPodcastList = [
   {
-title: "Build a $25K/Month Software Business (Full Strategy)",
-slug: "build-25k-per-month-software-business–full-strategy",
-tags: ["SaaS Growth", "Direct Sales", "Creator Economy"],
-image: "build-25k-per-month-software-business–full-strategy.jpg",
-podcastHost: "Nathan Barry",
-isPremium: true,
-videoId: "Aa_FgXxd2Oc",
-videoUploadedAt: "2025-03-06T17:00:10Z"
-},
+    title: "From Brain Surgery to $1.6M: How I Built My Dream Business",
+    slug: "from-brain-surgery-to-1-6-million-how-i-built-my-dream-business",
+    tags: ["Creator Economy", "Email Marketing", "Resilience"],
+    image:
+      "from-brain-surgery-to-1-6-million-how-i-built-my-dream-business.jpg",
+    podcastHost: "Nathan Barry",
+    isPremium: true,
+    videoId: "Nqy1C6_VAYg",
+    videoUploadedAt: "2025-04-24T16:00:39Z",
+  },
+  {
+    title: "Build a $25K/Month Software Business (Full Strategy)",
+    slug: "build-25k-per-month-software-business–full-strategy",
+    tags: ["SaaS Growth", "Direct Sales", "Creator Economy"],
+    image: "build-25k-per-month-software-business–full-strategy.jpg",
+    podcastHost: "Nathan Barry",
+    isPremium: true,
+    videoId: "Aa_FgXxd2Oc",
+    videoUploadedAt: "2025-03-06T17:00:10Z",
+  },
   {
     title: "How This Musician Makes $500K/year Working 2 Hours A Week",
     slug: "how-this-musician-makes-500k-per-year-working-2-hours-a-week",
