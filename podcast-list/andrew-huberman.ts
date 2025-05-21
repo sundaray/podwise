@@ -1,5 +1,15 @@
 export const andrewHubermanPodcastList = [
   {
+    title: "The Science & Art of Comedy & Creativity | Tom Segura",
+    slug: "the-science-and-art-of-comedy-and-creativity-tom-segura",
+    tags: ["Comedy", "Neuroscience", "Creativity"],
+    image: "the-science-and-art-of-comedy-and-creativity-tom-segura.jpg",
+    podcastHost: "Andrew Huberman",
+    isPremium: true,
+    videoId: "HTJ8lDtJOg4",
+    videoUploadedAt: "2025-05-19T12:00:37Z",
+  },
+  {
     title:
       "How to Improve Memory & Focus Using Science Protocols | Dr. Charan Ranganath",
     slug: "how-to-improve-memory-and-focus-using-science-protocols-charan-ranganath",

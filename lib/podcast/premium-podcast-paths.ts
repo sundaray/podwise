@@ -1,5 +1,6 @@
 export const premiumPodcastPaths = [
   // Andrew huberman premium podcasts
+  "/podcasts/andrew-huberman/the-science-and-art-of-comedy-and-creativity-tom-segura",
   "/podcasts/andrew-huberman/how-to-improve-memory-and-focus-using-science-protocols-charan-ranganath",
   "/podcasts/andrew-huberman/understand-and-apply-the-psychology-of-money-to-gain-greater-happiness-morgan-housel",
   "/podcasts/andrew-huberman/how-to-improve-your-mobility-posture-and-flexibility-kelly-starrett",
@@ -65,6 +66,7 @@ export const premiumPodcastPaths = [
   "/podcasts/chris-williamson/build-extraordinary-life-tony-robbins",
 
   // Daily Stoic premium podcasts
+  "/podcasts/daily-stoic/why-you-dont-want-to-win-the-argument-jefferson-fisher-and-ryan-holiday",
   "/podcasts/daily-stoic/stoic-strategies-that-built-a-self-made-billionaire-robert-rosenkranz",
   "/podcasts/daily-stoic/ed-helms-on-his-secret-passion-history-acting-storytelling",
   "/podcasts/daily-stoic/why-we-treat-the-body-rigorously-swimmer-bonnie-tsui-ryan-holiday",

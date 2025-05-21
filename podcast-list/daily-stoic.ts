@@ -1,6 +1,18 @@
 export const dailyStoicPodcastList = [
   {
     title:
+      "Why You Don't Want To Win The Argument: Jefferson Fisher & Ryan Holiday",
+    slug: "why-you-dont-want-to-win-the-argument-jefferson-fisher-and-ryan-holiday",
+    tags: ["Stoicism", "Conflict Resolution", "Relationship Wisdom"],
+    image:
+      "why-you-dont-want-to-win-the-argument-jefferson-fisher-and-ryan-holiday.jpg",
+    podcastHost: "Daily Stoic",
+    isPremium: true,
+    videoId: "cs6rPU1lH3Q",
+    videoUploadedAt: "2025-05-18T17:33:53Z",
+  },
+  {
+    title:
       "Stoic Strategies That Built A Self-Made Billionaire | Robert Rosenkranz",
     slug: "stoic-strategies-that-built-a-self-made-billionaire-robert-rosenkranz",
     tags: ["Stoicism", "Wealth Building", "Time Management"],

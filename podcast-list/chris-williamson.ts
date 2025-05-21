@@ -1,5 +1,15 @@
 export const chrisWilliamsonPodcastList = [
   {
+    title: "The Downfall Of CrossFit & The Future Of Fitness - Will Ahmed",
+    slug: "the-downfall-of-crossfit-and-the-future-of-fitness-will-ahmed",
+    tags: ["Fitness Industry", "Sleep Optimization", "Performance Psychology"],
+    image: "the-downfall-of-crossfit-and-the-future-of-fitness-will-ahmed.jpg",
+    podcastHost: "Chris Williamson",
+    isPremium: false,
+    videoId: "TIBrAdgohso",
+    videoUploadedAt: "2025-05-19T15:00:58Z",
+  },
+  {
     title: "How To Actually Build Discipline - Gen. Stanley McChrystal",
     slug: "how-to-actually-build-discipline-stanley-mcchrystal",
     tags: ["Military Leadership", "Discipline", "Character Building"],
