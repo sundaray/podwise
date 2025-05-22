@@ -260,8 +260,13 @@ export const premiumPodcastPaths = [
   "/podcasts/mel-robbins/simple-tool-transform-family-dynamic",
 
   // Nathan Barry premium podcasts
-  "/podcasts/nathan-barry/7-principles-eliminated-90-percent-competition-jay-papasan",
+  "/podcasts/nathan-barry/turn-writing-into-1-7-million-business-in-2025",
+  "/podcasts/nathan-barry/turn-passion-into-creator-business-1m-plus",
+  "/podcasts/nathan-barry/built-375k-business-working-15-hours-per-week-full-guide",
+  "/podcasts/nathan-barry/inside-mark-manson-2-5-million-creator-business-full-breakdown",
+  "/podcasts/nathan-barry/3-step-formula-for-introductions-that-sell-clay-hebert",
   "/podcasts/nathan-barry/launch-5k-course-full-guide",
+  "/podcasts/nathan-barry/7-principles-eliminated-90-percent-competition-jay-papasan",
   "/podcasts/nathan-barry/make-100k-plus-with-0-employees-full-guidemake-100k-plus-with-0-employees-full-guide",
   "/podcasts/nathan-barry/turn-youtube-channel-into-100k-plus-business-jo-franco",
   "/podcasts/nathan-barry/subtle-art-of-building-100k-1m-creator-business-mark-manson",
