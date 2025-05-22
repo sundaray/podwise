@@ -82,10 +82,14 @@ export const freePodcastPaths = [
   "/podcasts/mel-robbins/rewire-brain-for-happiness-purpose",
   "/podcasts/mel-robbins/understand-psychology-of-money",
 
+  "/podcasts/nathan-barry/building-creator-agencies-10m-per-year-sahil-bloom",
+  "/podcasts/nathan-barry/personal-branding-expert-bad-habits-costing-millions-dollars",
+  "/podcasts/nathan-barry/write-great-books-make-money-for-decades-tim-grahl",
+  "/podcasts/nathan-barry/3-tips-make-100k-writing-books-2024",
   "/podcasts/nathan-barry/make-2-million-from-courses-quit-9-to-5",
   "/podcasts/nathan-barry/7-proven-methods-scale-500k-creator-business-90-days",
   "/podcasts/nathan-barry/5-best-strategies-scale-creator-products-fast-startup-investor-reveals",
-  
+
   "/podcasts/rangan-chatterjee/cause-chronic-pain-decreased-lifespan-heal-pain-without-medication-peter-osullivan",
   "/podcasts/rangan-chatterjee/does-anyone-feel-like-everything-has-changed-gabor-mate",
   "/podcasts/rangan-chatterjee/dont-argue-fight-with-narcissist-ramani",
