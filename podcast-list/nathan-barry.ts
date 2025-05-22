@@ -1,5 +1,60 @@
 export const nathanBarryPodcastList = [
   {
+    title:
+      "7 Principles That Eliminated 90% of My Competition | 0 to $1M (Jay Papasan)",
+    slug: "7-principles-eliminated-90-percent-competition-jay-papasan",
+    tags: ["Business Strategy", "Book Writing", "Entrepreneurship"],
+    image: "7-principles-eliminated-90-percent-competition-jay-papasan.jpg",
+    podcastHost: "Nathan Barry",
+    isPremium: true,
+    videoId: "ivoJhT98PZs",
+    videoUploadedAt: "2024-10-18T16:00:57Z",
+  },
+  {
+    title: "How To Make $100,000+ With 0 Employees (Full Guide)",
+    slug: "make-100k-plus-with-0-employees-full-guide",
+    tags: ["Solo Entrepreneurship", "Creator Business", "Business Strategy"],
+    image: "make-100k-plus-with-0-employees-full-guide.jpg",
+    podcastHost: "Nathan Barry",
+    isPremium: true,
+    videoId: "atY6pYYv3gw",
+    videoUploadedAt: "2024-11-07T17:00:06Z",
+  },
+  {
+    title:
+      "Every Single Thing I’m Doing to Launch My $5,000 Course | Full Guide",
+    slug: "launch-5k-course-full-guide",
+    tags: ["Course Launch", "Product Positioning", "Creator Business"],
+    published: false,
+    image: "launch-5k-course-full-guide.jpg",
+    podcastHost: "Nathan Barry",
+    isPremium: true,
+    videoId: "LOg2LhISE_A",
+    videoUploadedAt: "2024-10-31T17:00:18Z",
+  },
+  {
+    title:
+      "The Subtle Art of Building a $100k - $1M Creator Business | Mark Manson",
+    slug: "subtle-art-of-building-100k-1m-creator-business-mark-manson",
+    tags: ["Creator Economy", "Business Strategy", "Content Creation"],
+    image: "subtle-art-of-building-100k-1m-creator-business-mark-manson.jpg",
+    podcastHost: "Nathan Barry",
+    isPremium: true,
+    videoId: "t3ANEzd_XvI",
+    videoUploadedAt: "2024-10-10T16:00:53Z",
+  },
+  {
+    title:
+      "How to Turn Your YouTube Channel Into a $100,000+ Business (2024) | Jo Franco",
+    slug: "turn-youtube-channel-into-100k-plus-business-jo-franco",
+    tags: ["Creator Economy", "YouTube Strategy", "Business Growth"],
+    image: "turn-youtube-channel-into-100k-plus-business-jo-franco.jpg",
+    podcastHost: "Nathan Barry",
+    isPremium: true,
+    videoId: "2sSN9i4qRfE",
+    videoUploadedAt: "2024-10-25T16:00:03Z",
+  },
+  {
     title: "The 7-Step Framework To Build a $30K/Month Coaching Business",
     slug: "7-step-framework-build-30k-per-month-coaching-business",
     tags: ["Group Coaching", "Premium Pricing", "Business Coaching"],
