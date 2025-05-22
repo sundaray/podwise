@@ -115,6 +115,7 @@ export function FetchYouTubeThumbnailForm() {
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value="andrew-huberman">Andrew Huberman</SelectItem>
+                <SelectItem value="ed-mylett">Ed Mylett</SelectItem>
                 <SelectItem value="nathan-barry">Nathan Barry</SelectItem>
                 <SelectItem value="mel-robbins">Mel Robbins</SelectItem>
                 <SelectItem value="chris-williamson">

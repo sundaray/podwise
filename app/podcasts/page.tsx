@@ -14,6 +14,7 @@ import { andrewHubermanPodcastList } from "@/podcast-list/andrew-huberman";
 import { chrisWilliamsonPodcastList } from "@/podcast-list/chris-williamson";
 import { dailyStoicPodcastList } from "@/podcast-list/daily-stoic";
 import { doacPodcastList } from "@/podcast-list/doac";
+import { edMylettPodcastList } from "@/podcast-list/ed-mylett";
 import { jackNeelPodcastList } from "@/podcast-list/jack-neel";
 import { jayShettyPodcastList } from "@/podcast-list/jay-shetty";
 import { lewisHowesPodcastList } from "@/podcast-list/lewis-howes";
@@ -68,6 +69,7 @@ function getAllPodcasts() {
     ...chrisWilliamsonPodcastList,
     ...dailyStoicPodcastList,
     ...doacPodcastList,
+    ...edMylettPodcastList,
     ...jackNeelPodcastList,
     ...jayShettyPodcastList,
     ...lewisHowesPodcastList,
@@ -91,6 +93,7 @@ function getHostPathForPodcast(podcast: any) {
   if (dailyStoicPodcastList.some((p) => p.slug === podcast.slug))
     return "daily-stoic";
   if (doacPodcastList.some((p) => p.slug === podcast.slug)) return "doac";
+  if (edMylettPodcastList.some((p) => p.slug === podcast.slug)) return "ed-mylett";
   if (jackNeelPodcastList.some((p) => p.slug === podcast.slug))
     return "jack-neel";
   if (jayShettyPodcastList.some((p) => p.slug === podcast.slug))

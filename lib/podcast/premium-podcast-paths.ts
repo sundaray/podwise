@@ -133,6 +133,10 @@ export const premiumPodcastPaths = [
   "/podcasts/doac/brian-keating-how-god-fits-into-science-explained",
   "/podcasts/doac/women-health-expert-birth-control-changes-who-you-are-how-you-feel-about-your-partner",
 
+  // Ed Mylett premium podcasts
+  "/podcasts/ed-mylett/if-you-want-to-live-as-long-as-possible-focus-on-this",
+  "/podcasts/ed-mylett/if-you-are-on-mission-you-need-team-that-has-this-jon-gordon",
+
   // Jack Neel premium podcasts
   "/podcasts/jack-neel/your-mind-has-been-hijacked-crypto-cavities-corruption-luke-belmar",
   "/podcasts/jack-neel/i-thought-i-was-broken-i-just-had-the-wrong-words-alex-hormozi",
