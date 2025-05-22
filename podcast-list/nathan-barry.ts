@@ -1,6 +1,29 @@
 export const nathanBarryPodcastList = [
   {
     title:
+      "5 Best Strategies to Scale Creator Products FAST | Startup Investor Reveals",
+    slug: "5-best-strategies-scale-creator-products-fast-startup-investor-reveals",
+    tags: ["Creator Economy", "Business Strategy", "Product Development"],
+    image:
+      "5-best-strategies-scale-creator-products-fast-startup-investor-reveals.jpg",
+    podcastHost: "Nathan Barry",
+    isPremium: false,
+    videoId: "huV3hCVAwdI",
+    videoUploadedAt: "2024-08-15T16:00:45Z",
+  },
+  {
+    title:
+      "7 Proven Methods to Scale Your $500,000 Creator Business in 90 Days",
+    slug: "7-proven-methods-scale-500k-creator-business-90-days",
+    tags: ["Creator Economy", "Business Scaling", "Revenue Growth"],
+    image: "7-proven-methods-scale-500k-creator-business-90-days.jpg",
+    podcastHost: "Nathan Barry",
+    isPremium: false,
+    videoId: "83X4Vr_5sXU",
+    videoUploadedAt: "2024-05-23T16:00:06Z",
+  },
+  {
+    title:
       "How Your Business Can Make $1,000,000 From Partnerships (in 60 Days)",
     slug: "how-your-business-can-make-1-million-from-partnerships-in-60-days",
     tags: ["Affiliate Marketing", "Business Growth", "Partnership Strategy"],
