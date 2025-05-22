@@ -260,7 +260,14 @@ export const premiumPodcastPaths = [
   "/podcasts/mel-robbins/simple-tool-transform-family-dynamic",
 
   // Nathan Barry premium podcasts
+  "/podcasts/nathan-barry/how-your-business-can-make-1-million-from-partnerships-in-60-days",
+  "/podcasts/nathan-barry/build-100k-personal-brand-in-90-days",
+  "/podcasts/nathan-barry/new-way-become-full-time-creator-12-months",
+  "/podcasts/nathan-barry/how-to-pick-a-business-you-actually-enjoy-in-64-minutes",
+  "/podcasts/nathan-barry/building-2m-business-plan-creator-62-minutes",
+  "/podcasts/nathan-barry/made-7m-from-instagram-18-months",
   "/podcasts/nathan-barry/turn-writing-into-1-7-million-business-in-2025",
+  "/podcasts/nathan-barry/build-100k-online-community-3-easy-steps-mighty-networks-founder",
   "/podcasts/nathan-barry/turn-passion-into-creator-business-1m-plus",
   "/podcasts/nathan-barry/built-375k-business-working-15-hours-per-week-full-guide",
   "/podcasts/nathan-barry/inside-mark-manson-2-5-million-creator-business-full-breakdown",
