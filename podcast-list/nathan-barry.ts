@@ -1,5 +1,15 @@
 export const nathanBarryPodcastList = [
   {
+    title: "How to Make $2,000,000 From Courses and Quit Your 9-To-5",
+    slug: "make-2-million-from-courses-quit-9-to-5",
+    tags: ["Course Creation", "Online Business", "Content Marketing"],
+    image: "make-2-million-from-courses-quit-9-to-5.jpg",
+    podcastHost: "Nathan Barry",
+    isPremium: false,
+    videoId: "ixhcKz3covQ",
+    videoUploadedAt: "2024-09-05T16:00:42Z",
+  },
+  {
     title:
       "5 Best Strategies to Scale Creator Products FAST | Startup Investor Reveals",
     slug: "5-best-strategies-scale-creator-products-fast-startup-investor-reveals",
