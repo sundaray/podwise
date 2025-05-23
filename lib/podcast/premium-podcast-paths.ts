@@ -135,6 +135,7 @@ export const premiumPodcastPaths = [
   "/podcasts/doac/women-health-expert-birth-control-changes-who-you-are-how-you-feel-about-your-partner",
 
   // Ed Mylett premium podcasts
+  "/podcasts/ed-mylett/unleash-story-of-greatness-that-lives-within-you",
   "/podcasts/ed-mylett/leadership-ai-age-adapt-or-get-left-behind-brendon-burchard",
   "/podcasts/ed-mylett/why-most-people-fail-after-success-molly-fletcher",
   "/podcasts/ed-mylett/tired-being-broke-morgan-housel",

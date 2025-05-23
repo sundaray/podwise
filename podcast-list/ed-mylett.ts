@@ -1,5 +1,15 @@
 export const edMylettPodcastList = [
   {
+    title: "How To Unleash The Story of Greatness That Lives Within YOU",
+    slug: "unleash-story-of-greatness-that-lives-within-you",
+    tags: ["Personal Development", "Motivation", "Self-Improvement"],
+    image: "unleash-story-of-greatness-that-lives-within-you.jpg",
+    podcastHost: "Ed Mylett",
+    isPremium: true,
+    videoId: "HRnPYP2J1Tk",
+    videoUploadedAt: "2025-03-15T08:00:23Z",
+  },
+  {
     title:
       "Leadership in the AI Age: You Need To Adapt or Get Left Behind! Feat. Brendon Burchard",
     slug: "leadership-ai-age-adapt-or-get-left-behind-brendon-burchard",
