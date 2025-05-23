@@ -1,5 +1,19 @@
 export const edMylettPodcastList = [
   {
+    title: "Dangers of AI and Humanity's Future (Are You Ready?)",
+    slug: "dangers-ai-humanity-future-are-you-ready",
+    tags: [
+      "Artificial Intelligence",
+      "Future Technology",
+      "Economic Disruption",
+    ],
+    image: "dangers-ai-humanity-future-are-you-ready.jpg",
+    podcastHost: "Ed Mylett",
+    isPremium: true,
+    videoId: "onSn0PRfy5Y",
+    videoUploadedAt: "2025-05-03T08:01:01Z",
+  },
+  {
     title:
       "#1 Researcher: You May Have High Functioning Depression But Don't Know It Yet! Ft. Dr. Judith Joseph",
     slug: "high-functioning-depression-judith-joseph",
