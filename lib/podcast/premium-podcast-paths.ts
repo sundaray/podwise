@@ -135,6 +135,7 @@ export const premiumPodcastPaths = [
   "/podcasts/doac/women-health-expert-birth-control-changes-who-you-are-how-you-feel-about-your-partner",
 
   // Ed Mylett premium podcasts
+  "/podcasts/ed-mylett/powerful-strategies-deal-with-narcissism-addiction",
   "/podcasts/ed-mylett/make-time-for-things-that-matter-most-brendon-burchard",
   "/podcasts/ed-mylett/dangers-ai-humanity-future-are-you-ready",
   "/podcasts/ed-mylett/attachment-styles-explained-thais-gibson",

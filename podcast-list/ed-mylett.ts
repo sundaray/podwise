@@ -1,5 +1,16 @@
 export const edMylettPodcastList = [
   {
+    title: "Powerful Strategies To Deal with Narcissism and Addiction",
+    slug: "powerful-strategies-deal-with-narcissism-addiction",
+    tags: ["Narcissism", "Relationship Advice", "Mental Health"],
+
+    image: "powerful-strategies-deal-with-narcissism-addiction.jpg",
+    podcastHost: "Ed Mylett",
+    isPremium: true,
+    videoId: "1MH9V2bMjzM",
+    videoUploadedAt: "2025-03-22T08:00:04Z",
+  },
+  {
     title:
       "How To Make Time For The Things That Matter MOST Feat. Brendon Burchard",
     slug: "make-time-for-things-that-matter-most-brendon-burchard",
