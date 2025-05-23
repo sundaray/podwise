@@ -1,5 +1,26 @@
 export const edMylettPodcastList = [
   {
+    title:
+      "How To Make Time For The Things That Matter MOST Feat. Brendon Burchard",
+    slug: "make-time-for-things-that-matter-most-brendon-burchard",
+    tags: ["Time Management", "High Performance", "Productivity Hacks"],
+    image: "make-time-for-things-that-matter-most-brendon-burchard.jpg",
+    podcastHost: "Ed Mylett",
+    isPremium: true,
+    videoId: "D7lBVZMRif8",
+    videoUploadedAt: "2025-04-05T08:00:19Z",
+  },
+  {
+    title: "Attachment Styles EXPLAINED: Which One Are You? Feat. Thais Gibson",
+    slug: "attachment-styles-explained-thais-gibson",
+    tags: ["Attachment Theory", "Relationships", "Emotional Health"],
+    image: "attachment-styles-explained-thais-gibson.jpg",
+    podcastHost: "Ed Mylett",
+    isPremium: true,
+    videoId: "V0GPXg8Eqjk",
+    videoUploadedAt: "2025-04-12T08:00:27Z",
+  },
+  {
     title: "Dangers of AI and Humanity's Future (Are You Ready?)",
     slug: "dangers-ai-humanity-future-are-you-ready",
     tags: [

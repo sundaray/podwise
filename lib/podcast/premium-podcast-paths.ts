@@ -135,7 +135,9 @@ export const premiumPodcastPaths = [
   "/podcasts/doac/women-health-expert-birth-control-changes-who-you-are-how-you-feel-about-your-partner",
 
   // Ed Mylett premium podcasts
+  "/podcasts/ed-mylett/make-time-for-things-that-matter-most-brendon-burchard",
   "/podcasts/ed-mylett/dangers-ai-humanity-future-are-you-ready",
+  "/podcasts/ed-mylett/attachment-styles-explained-thais-gibson",
   "/podcasts/ed-mylett/high-functioning-depression-judith-joseph",
   "/podcasts/ed-mylett/stay-calm-in-control-when-talking-difficult-people-jefferson-fisher",
   "/podcasts/ed-mylett/unleash-story-of-greatness-that-lives-within-you",
