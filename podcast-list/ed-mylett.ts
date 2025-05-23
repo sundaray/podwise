@@ -1,5 +1,37 @@
 export const edMylettPodcastList = [
   {
+    title:
+      "#1 Researcher: You May Have High Functioning Depression But Don't Know It Yet! Ft. Dr. Judith Joseph",
+    slug: "high-functioning-depression-judith-joseph",
+    tags: [
+      "Mental Health",
+      "High Functioning Depression",
+      "Personal Development",
+    ],
+    image: "high-functioning-depression-judith-joseph.jpg",
+    podcastHost: "Ed Mylett",
+    isPremium: true,
+    videoId: "VQgT1BfjiEI",
+    videoUploadedAt: "2025-04-22T08:00:35Z",
+  },
+  {
+    title:
+      "How to Stay Calm and In Control When Talking to Difficult People Feat. Jefferson Fisher",
+    slug: "stay-calm-in-control-when-talking-difficult-people-jefferson-fisher",
+    tags: [
+      "Communication Skills",
+      "Conflict Resolution",
+      "Emotional Intelligence",
+    ],
+
+    image:
+      "stay-calm-in-control-when-talking-difficult-people-jefferson-fisher.jpg",
+    podcastHost: "Ed Mylett",
+    isPremium: true,
+    videoId: "ad2oHBH_SXk",
+    videoUploadedAt: "2025-04-01T08:00:01Z",
+  },
+  {
     title: "How To Unleash The Story of Greatness That Lives Within YOU",
     slug: "unleash-story-of-greatness-that-lives-within-you",
     tags: ["Personal Development", "Motivation", "Self-Improvement"],
