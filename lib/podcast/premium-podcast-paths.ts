@@ -24,6 +24,7 @@ export const premiumPodcastPaths = [
   "/podcasts/andrew-huberman/improve-vitality-heal-from-disease-mark-hyman",
   "/podcasts/andrew-huberman/what-pets-want-need-karolina-westlund",
   // Chris Williamson premium podcasts
+  "/podcasts/chris-williamson/tell-stories-people-love-will-storr",
   "/podcasts/chris-williamson/how-to-actually-build-discipline-stanley-mcchrystal",
   "/podcasts/chris-williamson/the-harsh-price-of-extreme-performance-cameron-hanes",
   "/podcasts/chris-williamson/how-to-break-free-from-chronic-anxiety-martha-beck",

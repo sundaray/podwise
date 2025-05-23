@@ -1,5 +1,15 @@
 export const chrisWilliamsonPodcastList = [
   {
+title: "How To Tell Stories That People Love - Will Storr",
+slug: "tell-stories-people-love-will-storr",
+tags: ["Storytelling", "Psychology", "Human Behavior"],
+image: "tell-stories-people-love-will-storr.jpg",
+podcastHost: "Ed Mylett",
+isPremium: true,
+videoId: "tXC-cgxYZZw",
+videoUploadedAt: "2025-05-22T15:01:32Z" 
+},
+  {
     title: "The Downfall Of CrossFit & The Future Of Fitness - Will Ahmed",
     slug: "the-downfall-of-crossfit-and-the-future-of-fitness-will-ahmed",
     tags: ["Fitness Industry", "Sleep Optimization", "Performance Psychology"],
