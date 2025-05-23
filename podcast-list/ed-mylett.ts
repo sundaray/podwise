@@ -1,6 +1,45 @@
 export const edMylettPodcastList = [
   {
     title:
+      "You’re Losing Influence Online—Here’s Why (And How To Fix It!) Feat. Andrew Brodsky",
+    slug: "losing-influence-online-why-how-to-fix-andrew-brodsky",
+    tags: [
+      "Virtual Communication",
+      "Professional Development",
+      "Digital Leadership",
+    ],
+    image: "losing-influence-online-why-how-to-fix-andrew-brodsky.jpg",
+    podcastHost: "Ed Mylett",
+    isPremium: true,
+    videoId: "nzzL6Qaoiiw",
+    videoUploadedAt: "2025-04-24T08:00:55Z",
+  },
+  {
+    title:
+      "You Don’t Need To SELL Your Company To Make A LOT of Money, You Need To Do This! Ft. Dave Whorton",
+    slug: "you-dont-need-to-sell-your-company-to-make-money-you-need-to-do-this-dave-whorton",
+    tags: ["Evergreen Business", "Entrepreneurship", "Business Strategy"],
+    published: false,
+    image:
+      "you-dont-need-to-sell-your-company-to-make-money-you-need-to-do-this-dave-whorton.jpg",
+    podcastHost: "Ed Mylett",
+    isPremium: true,
+    videoId: "6XuEynZhkek",
+    videoUploadedAt: "2025-04-29T08:00:08Z",
+  },
+  {
+    title:
+      "THIS Is Why High Achievers Are Secretly Struggling (and What To Do About It!) Ft. MARTHA BECK",
+    slug: "why-high-achievers-struggling-martha-beck",
+    tags: ["Anxiety Management", "Personal Development", "High Performance"],
+    image: "why-high-achievers-struggling-martha-beck.jpg",
+    podcastHost: "Ed Mylett",
+    isPremium: true,
+    videoId: "Fhj3CfDoPlg",
+    videoUploadedAt: "2025-05-06T08:00:24Z",
+  },
+  {
+    title:
       "If You Want TO Live As LONG As Humanly Possible, Don't Forget To Focus on This!",
     slug: "if-you-want-to-live-as-long-as-possible-focus-on-this",
     tags: ["Biohacking", "Longevity", "Personal Development"],
