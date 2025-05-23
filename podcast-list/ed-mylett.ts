@@ -1,6 +1,18 @@
 export const edMylettPodcastList = [
   {
     title:
+      "Former Navy SEAL Reveals Weird TRICK To Overcome FEAR & DO HARD STUFF | Rich Diviney",
+    slug: "former-navy-seal-reveals-weird-trick-overcome-fear-do-hard-stuff-rich-diviney",
+    tags: ["Personal Development", "Mental Resilience", "Leadership"],
+    image:
+      "former-navy-seal-reveals-weird-trick-overcome-fear-do-hard-stuff-rich-diviney.jpg",
+    podcastHost: "Ed Mylett",
+    isPremium: true,
+    videoId: "0G5nz8DYrNg",
+    videoUploadedAt: "2025-04-08T08:00:00Z",
+  },
+  {
+    title:
       "You’re Losing Influence Online—Here’s Why (And How To Fix It!) Feat. Andrew Brodsky",
     slug: "losing-influence-online-why-how-to-fix-andrew-brodsky",
     tags: [

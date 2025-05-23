@@ -135,8 +135,9 @@ export const premiumPodcastPaths = [
   "/podcasts/doac/women-health-expert-birth-control-changes-who-you-are-how-you-feel-about-your-partner",
 
   // Ed Mylett premium podcasts
-  "/podcasts/ed-mylett/losing-influence-online-why-how-to-fix-andrew-brodsky",
+  "/podcasts/ed-mylett/former-navy-seal-reveals-weird-trick-overcome-fear-do-hard-stuff-rich-diviney",
   "/podcasts/ed-mylett/why-high-achievers-struggling-martha-beck",
+  "/podcasts/ed-mylett/losing-influence-online-why-how-to-fix-andrew-brodsky",
   "/podcasts/ed-mylett/you-dont-need-to-sell-your-company-to-make-money-you-need-to-do-this-dave-whorton",
   "/podcasts/ed-mylett/if-you-want-to-live-as-long-as-possible-focus-on-this",
   "/podcasts/ed-mylett/if-you-are-on-mission-you-need-team-that-has-this-jon-gordon",
