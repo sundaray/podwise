@@ -1,6 +1,42 @@
 export const edMylettPodcastList = [
   {
     title:
+      "Leadership in the AI Age: You Need To Adapt or Get Left Behind! Feat. Brendon Burchard",
+    slug: "leadership-ai-age-adapt-or-get-left-behind-brendon-burchard",
+    tags: [
+      "Leadership Development",
+      "Artificial Intelligence",
+      "Team Management",
+    ],
+    image: "leadership-ai-age-adapt-or-get-left-behind-brendon-burchard.jpg",
+    podcastHost: "Ed Mylett",
+    isPremium: true,
+    videoId: "WZcCBJC2_ZQ",
+    videoUploadedAt: "2025-03-13T08:00:33Z",
+  },
+  {
+    title:
+      "Why Most People Fail After Success—And How to Avoid It Feat. Molly Fletcher",
+    slug: "why-most-people-fail-after-success-molly-fletcher",
+    tags: ["Personal Development", "Peak Performance", "Success Mindset"],
+    image: "why-most-people-fail-after-success-molly-fletcher.jpg",
+    podcastHost: "Ed Mylett",
+    isPremium: true,
+    videoId: "6uHnKBsajHg",
+    videoUploadedAt: "2025-03-18T08:00:05Z",
+  },
+  {
+    title: "Watch This If You're Tired Of Being BROKE! Feat. Morgan Housel",
+    slug: "tired-being-broke-morgan-housel",
+    tags: ["Money Mindset", "Wealth Building", "Personal Finance"],
+    image: "tired-being-broke-morgan-housel.jpg",
+    podcastHost: "Ed Mylett",
+    isPremium: true,
+    videoId: "_jrriM2lYro",
+    videoUploadedAt: "2025-03-25T08:00:30Z",
+  },
+  {
+    title:
       "Former Navy SEAL Reveals Weird TRICK To Overcome FEAR & DO HARD STUFF | Rich Diviney",
     slug: "former-navy-seal-reveals-weird-trick-overcome-fear-do-hard-stuff-rich-diviney",
     tags: ["Personal Development", "Mental Resilience", "Leadership"],
