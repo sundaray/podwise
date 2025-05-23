@@ -1,5 +1,16 @@
 export const edMylettPodcastList = [
   {
+    title:
+      "The Harsh Truth About Money & Happiness That NO ONE Is Talking About Feat. Sahil Bloom",
+    slug: "harsh-truth-about-money-happiness-sahil-bloom",
+    tags: ["Life Design", "Personal Development", "Time Management"],
+    image: "harsh-truth-about-money-happiness-sahil-bloom.jpg",
+    podcastHost: "Ed Mylett",
+    isPremium: true,
+    videoId: "xUXPCzh4_dk",
+    videoUploadedAt: "2025-04-15T08:01:05Z",
+  },
+  {
     title: "Powerful Strategies To Deal with Narcissism and Addiction",
     slug: "powerful-strategies-deal-with-narcissism-addiction",
     tags: ["Narcissism", "Relationship Advice", "Mental Health"],
