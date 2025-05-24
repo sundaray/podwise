@@ -93,7 +93,8 @@ function getHostPathForPodcast(podcast: any) {
   if (dailyStoicPodcastList.some((p) => p.slug === podcast.slug))
     return "daily-stoic";
   if (doacPodcastList.some((p) => p.slug === podcast.slug)) return "doac";
-  if (edMylettPodcastList.some((p) => p.slug === podcast.slug)) return "ed-mylett";
+  if (edMylettPodcastList.some((p) => p.slug === podcast.slug))
+    return "ed-mylett";
   if (jackNeelPodcastList.some((p) => p.slug === podcast.slug))
     return "jack-neel";
   if (jayShettyPodcastList.some((p) => p.slug === podcast.slug))
@@ -205,11 +206,12 @@ export default async function AllPodcastsPage({
             <span className="sr-only">Loading&hellip;</span>
           </div>
           <div className="grid grid-cols-1 gap-6 border-b pb-10 group-has-[[data-pending]]:animate-pulse sm:grid-cols-2 md:grid-cols-3 md:gap-10">
-            {paginatedPodcasts.map((podcast) => (
+            {paginatedPodcasts.map((podcast, index) => (
               <PodcastCard
                 key={podcast.slug}
                 podcast={podcast}
                 hostPath={getHostPathForPodcast(podcast)}
+                index={index}
               />
             ))}
           </div>

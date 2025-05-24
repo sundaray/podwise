@@ -13,16 +13,21 @@ type PodcastCardProps = {
     videoUploadedAt: string;
   };
   hostPath: string;
+  index: number;
 };
 
 // const solidColorPlaceholder =
 //   "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1' fill='%23F3F4F6'%3E%3Crect width='1' height='1'/%3E%3C/svg%3E";
 
-export async function PodcastCard({ podcast, hostPath }: PodcastCardProps) {
+export async function PodcastCard({
+  podcast,
+  hostPath,
+  index,
+}: PodcastCardProps) {
   const { title, slug, image, podcastHost, videoUploadedAt, isPremium } =
     podcast;
 
-  // Format the date without making API calls
+  const isAboveFold = index < 6;
   const formattedDate = formatVideoUploadDate(videoUploadedAt);
 
   return (
@@ -33,16 +38,6 @@ export async function PodcastCard({ podcast, hostPath }: PodcastCardProps) {
           <p className="text-xs font-medium text-gray-700">Premium</p>
         </div>
       )}
-      {/* <div className="relative aspect-[16/9] w-full bg-gray-100">
-        <img
-          src={`https://podcast-summaries-dev.s3.amazonaws.com/podcast-thumbnails/${hostPath}/${image}`}
-          alt={`Thumbnail of podcast titled ${title}`}
-          width="1280"
-          height="720"
-          loading="eager"
-          className="absolute inset-0 h-full w-full object-cover transition-all group-hover/card:brightness-80"
-        />
-      </div> */}
       <div className="relative aspect-[16/9] w-full bg-gray-100">
         <picture className="absolute inset-0 h-full w-full">
           <source
@@ -70,7 +65,9 @@ export async function PodcastCard({ podcast, hostPath }: PodcastCardProps) {
             alt={`Thumbnail of podcast titled ${title}`}
             width="1280"
             height="720"
-            loading="eager"
+            loading={isAboveFold ? "eager" : "lazy"}
+            fetchPriority={isAboveFold ? "high" : "auto"}
+            decoding={isAboveFold ? "auto" : "async"}
             className="h-full w-full object-cover transition-all group-hover/card:brightness-80"
           />
         </picture>

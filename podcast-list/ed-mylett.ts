@@ -1,5 +1,37 @@
 export const edMylettPodcastList = [
   {
+    title: "PROOF That Your Past Doesn’t Define Your Future Feat. Titus O'Neil",
+    slug: "proof-that-your-past-does-not-defiine-your-future-titus-oneil",
+    tags: ["Personal Development", "Overcoming Adversity", "Fatherhood"],
+    image: "proof-that-your-past-does-not-defiine-your-future-titus-oneil.jpg",
+    podcastHost: "Ed Mylett",
+    isPremium: true,
+    videoId: "DZYOwMOWohc",
+    videoUploadedAt: "2025-01-21T17:23:04Z",
+  },
+  {
+    title: "Is Your Gut Controlling Your Mind? Feat. Dr. Steven Gundry",
+    slug: "gut-controlling-mind-steven-gundry",
+    tags: ["Gut Health", "Mental Health", "Microbiome"],
+    image: "gut-controlling-mind-steven-gundry.jpg",
+    podcastHost: "Ed Mylett",
+    isPremium: true,
+    videoId: "FoAji-JOARQ",
+    videoUploadedAt: "2025-02-18T09:00:30Z",
+  },
+  {
+    title:
+      "Stop Making Excuses About Your Past and Take Control Of Winning Today! Feat. Eric Thomas",
+    slug: "stop-making-excuses-about-your-past-take-control-winning-today–eric-thomas",
+    tags: ["Personal Development", "Mindset Mastery", "Overcoming Adversity"],
+    image:
+      "stop-making-excuses-about-your-past-take-control-winning-today–eric-thomas.jpg",
+    podcastHost: "Ed Mylett",
+    isPremium: true,
+    videoId: "hY6qildcjok",
+    videoUploadedAt: "2024-12-17T09:00:42Z",
+  },
+  {
     title:
       "When You Understand THIS About Intelligence, It Will UNLOCK Your Potential Feat. Howard Gardner",
     slug: "understand-this-about-intelligence-unlock-potential-howard-gardner",

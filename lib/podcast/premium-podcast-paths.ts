@@ -135,7 +135,10 @@ export const premiumPodcastPaths = [
   "/podcasts/doac/women-health-expert-birth-control-changes-who-you-are-how-you-feel-about-your-partner",
 
   // Ed Mylett premium podcasts
+  "/podcasts/ed-mylett/proof-that-your-past-does-not-defiine-your-future-titus-oneil",
+  "/podcasts/ed-mylett/gut-controlling-mind-steven-gundry",
   "/podcasts/ed-mylett/understand-this-about-intelligence-unlock-potential-howard-gardner",
+  "/podcasts/ed-mylett/stop-making-excuses-about-your-past-take-control-winning-today–eric-thomas",
   "/podcasts/ed-mylett/going-through-tough-time-hear-this-matt-long",
   "/podcasts/ed-mylett/harsh-truth-about-money-happiness-sahil-bloom",
   "/podcasts/ed-mylett/powerful-strategies-deal-with-narcissism-addiction",
