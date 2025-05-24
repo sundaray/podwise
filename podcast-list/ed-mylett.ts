@@ -1,6 +1,27 @@
 export const edMylettPodcastList = [
   {
     title:
+      "The Ultimate Guide to Eating Healthy and Improving Your Diet Feat. Max Lugavere",
+    slug: "ultimate-guide-eating-healthy-improving-diet-max-lugavere",
+    tags: ["Nutrition Science", "Brain Health", "Healthy Eating"],
+    image: "ultimate-guide-eating-healthy-improving-diet-max-lugavere.jpg",
+    podcastHost: "Ed Mylett",
+    isPremium: true,
+    videoId: "z8lZWV31DoQ",
+    videoUploadedAt: "2025-02-22T09:01:11Z",
+  },
+  {
+    title: "Manage Your Mental Mess and Change Your Life in 5 steps",
+    slug: "manage-mental-mess-change-your-life-5-steps",
+    tags: ["Mental Health", "Neuroscience", "Brain Training"],
+    image: "manage-mental-mess-change-your-life-5-steps.jpg",
+    podcastHost: "Ed Mylett",
+    isPremium: true,
+    videoId: "FcoNXLqsgU4",
+    videoUploadedAt: "2025-03-29T08:00:13Z",
+  },
+  {
+    title:
       "Positive Thinking: How Changing Your Mindset Can Change Your Life Feat. Garrain Jones",
     slug: "positive-thinking-how-changing-your-mindset-can-change-your-life-garrain-jones",
     tags: [
