@@ -1,6 +1,21 @@
 export const edMylettPodcastList = [
   {
     title:
+      "If You're Going Through A Tough Time Right Now, You NEED To Hear This! Feat. Matt Long",
+    slug: "going-through-tough-time-hear-this-matt-long",
+    tags: [
+      "Overcoming Adversity",
+      "Mental Resilience",
+      "Inspirational Stories",
+    ],
+    image: "going-through-tough-time-hear-this-matt-long.jpg",
+    podcastHost: "Ed Mylett",
+    isPremium: true,
+    videoId: "kTbGALrMvP8",
+    videoUploadedAt: "2025-02-04T09:00:45Z",
+  },
+  {
+    title:
       "The Harsh Truth About Money & Happiness That NO ONE Is Talking About Feat. Sahil Bloom",
     slug: "harsh-truth-about-money-happiness-sahil-bloom",
     tags: ["Life Design", "Personal Development", "Time Management"],
