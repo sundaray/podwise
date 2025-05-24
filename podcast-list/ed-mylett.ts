@@ -1,6 +1,18 @@
 export const edMylettPodcastList = [
   {
     title:
+      "If You Are Thinking about Becoming An Entrepreneur, You Need To Focus On THIS! Feat. Candy Valentino",
+    slug: "thinking-about-becoming-entrepreneur-focus-on-this-candy-valentino",
+    tags: ["Entrepreneurship", "Business Growth", "Wealth Building"],
+    image:
+      "thinking-about-becoming-entrepreneur-focus-on-this-candy-valentino.jpg",
+    podcastHost: "Ed Mylett",
+    isPremium: true,
+    videoId: "UZMKTc5VjW4",
+    videoUploadedAt: "2025-01-14T09:00:35Z",
+  },
+  {
+    title:
       "The Power of Visualization: How Fighters Plan for Victory Feat. Michael Chandler",
     slug: "power-of-visualization-how-fighters-plan-for-victory–michael-chandler",
     tags: ["Mental Toughness", "Elite Performance", "Winning Mindset"],
