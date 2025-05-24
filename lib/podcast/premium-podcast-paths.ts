@@ -135,6 +135,7 @@ export const premiumPodcastPaths = [
   "/podcasts/doac/women-health-expert-birth-control-changes-who-you-are-how-you-feel-about-your-partner",
 
   // Ed Mylett premium podcasts
+  "/podcasts/ed-mylett/understand-this-about-intelligence-unlock-potential-howard-gardner",
   "/podcasts/ed-mylett/going-through-tough-time-hear-this-matt-long",
   "/podcasts/ed-mylett/harsh-truth-about-money-happiness-sahil-bloom",
   "/podcasts/ed-mylett/powerful-strategies-deal-with-narcissism-addiction",

@@ -1,6 +1,18 @@
 export const edMylettPodcastList = [
   {
     title:
+      "When You Understand THIS About Intelligence, It Will UNLOCK Your Potential Feat. Howard Gardner",
+    slug: "understand-this-about-intelligence-unlock-potential-howard-gardner",
+    tags: ["Multiple Intelligences", "Personal Development", "Human Potential"],
+    image:
+      "understand-this-about-intelligence-unlock-potential-howard-gardner.jpg",
+    podcastHost: "Ed Mylett",
+    isPremium: true,
+    videoId: "5_0UpobX1IM",
+    videoUploadedAt: "2025-03-04T09:00:06Z",
+  },
+  {
+    title:
       "If You're Going Through A Tough Time Right Now, You NEED To Hear This! Feat. Matt Long",
     slug: "going-through-tough-time-hear-this-matt-long",
     tags: [
