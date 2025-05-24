@@ -27,7 +27,7 @@ export async function PodcastCard({
   const { title, slug, image, podcastHost, videoUploadedAt, isPremium } =
     podcast;
 
-  const isAboveFold = index < 6;
+  const isAboveFold = index < 3;
   const formattedDate = formatVideoUploadDate(videoUploadedAt);
 
   return (
