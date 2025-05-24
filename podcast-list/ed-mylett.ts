@@ -1,5 +1,21 @@
 export const edMylettPodcastList = [
   {
+    title:
+      "Positive Thinking: How Changing Your Mindset Can Change Your Life Feat. Garrain Jones",
+    slug: "positive-thinking-how-changing-your-mindset-can-change-your-life-garrain-jones",
+    tags: [
+      "Personal Development",
+      "Mindset Transformation",
+      "Success Psychology",
+    ],
+    image:
+      "positive-thinking-how-changing-your-mindset-can-change-your-life-garrain-jones.jpg",
+    podcastHost: "Ed Mylett",
+    isPremium: true,
+    videoId: "Zk9gsJapf74",
+    videoUploadedAt: "2025-02-15T09:00:42Z",
+  },
+  {
     title: "What If Your Biggest Setback is Your Greatest Opportunity?",
     slug: "biggest-setback-greatest-opportunity",
     tags: ["Personal Development", "Failure Recovery", "Mental Toughness"],
