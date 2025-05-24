@@ -14,6 +14,7 @@ import { Icons } from "@/components/icons";
 import { chrisWilliamsonPodcastList } from "@/podcast-list/chris-williamson";
 import { dailyStoicPodcastList } from "@/podcast-list/daily-stoic";
 import { doacPodcastList } from "@/podcast-list/doac";
+import { edMylettPodcastList } from "@/podcast-list/ed-mylett";
 import { jackNeelPodcastList } from "@/podcast-list/jack-neel";
 import { jayShettyPodcastList } from "@/podcast-list/jay-shetty";
 import { lewisHowesPodcastList } from "@/podcast-list/lewis-howes";
@@ -39,6 +40,10 @@ function getAllPodcasts() {
     ...doacPodcastList.map((podcast) => ({
       ...podcast,
       hostPath: "doac",
+    })),
+    ...edMylettPodcastList.map((podcast) => ({
+      ...podcast,
+      hostPath: "ed-mylett",
     })),
     ...jackNeelPodcastList.map((podcast) => ({
       ...podcast,
@@ -186,15 +191,16 @@ export default async function TagPage({ params, searchParams }: TagPageProps) {
 
       {paginatedPodcasts.length > 0 ? (
         <div className="group grid grid-cols-1 gap-6 border-b pb-10 group-has-[[data-pending]]:animate-pulse sm:grid-cols-2 md:grid-cols-3 md:gap-10">
-          {paginatedPodcasts.map((podcast) => (
+          {paginatedPodcasts.map((podcast, index) => (
             <PodcastCard
               key={podcast.slug}
               podcast={podcast}
               hostPath={podcast.hostPath}
+              index={index}
             />
           ))}
         </div>
-      ) : (
+      ) : ( 
         <p className="text-center text-red-600">No podcasts found</p>
       )}
 
