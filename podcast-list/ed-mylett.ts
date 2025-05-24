@@ -1,5 +1,15 @@
 export const edMylettPodcastList = [
   {
+    title: "What If Your Biggest Setback is Your Greatest Opportunity?",
+    slug: "biggest-setback-greatest-opportunity",
+    tags: ["Personal Development", "Failure Recovery", "Mental Toughness"],
+    image: "biggest-setback-greatest-opportunity.jpg",
+    podcastHost: "Ed Mylett",
+    isPremium: true,
+    videoId: "G-vWU3O1Zyc",
+    videoUploadedAt: "2025-02-08T09:00:13Z",
+  },
+  {
     title:
       "If You Want To Have A Good Quality of Life , DO THIS! Feat. Brie Bauer",
     slug: "good-quality-life–brie-bauer",
