@@ -1,6 +1,17 @@
 export const jackNeelPodcastList = [
   {
     title:
+      "Marketing Expert: How I Built the Internet’s Fastest Growing Brand (Interview)",
+    slug: "marketing-expert-built-internets-fastest-growing-brand",
+    tags: ["E-commerce Strategy", "Digital Marketing", "Brand Building"],
+    image: "marketing-expert-built-internets-fastest-growing-brand.jpg",
+    podcastHost: "Jack Neel",
+    isPremium: true,
+    videoId: "Bg1MNt7nI9E",
+    videoUploadedAt: "2025-05-22T23:00:16Z",
+  },
+  {
+    title:
       "Your Mind Has Been Hijacked — Crypto, Cavities & Corruption | Luke Belmar",
     slug: "your-mind-has-been-hijacked-crypto-cavities-corruption-luke-belmar",
     tags: ["Success Mindset", "Cryptocurrency", "Personal Development"],

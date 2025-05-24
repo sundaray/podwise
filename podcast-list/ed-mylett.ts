@@ -1,6 +1,18 @@
 export const edMylettPodcastList = [
   {
     title:
+      "The Power of Never Settling: Building Global Brands with Constance Schwartz-Morini",
+    slug: "power-of-never-settling-building-global-brands-constance-schwartz-morini",
+    tags: ["Personal Branding", "Entrepreneurship", "Business Strategy"],
+    image:
+      "power-of-never-settling-building-global-brands-constance-schwartz-morini.jpg",
+    podcastHost: "Ed Mylett",
+    isPremium: true,
+    videoId: "mdzD63VJ_tw",
+    videoUploadedAt: "2025-02-11T09:00:59Z",
+  },
+  {
+    title:
       "If You Are Thinking about Becoming An Entrepreneur, You Need To Focus On THIS! Feat. Candy Valentino",
     slug: "thinking-about-becoming-entrepreneur-focus-on-this-candy-valentino",
     tags: ["Entrepreneurship", "Business Growth", "Wealth Building"],

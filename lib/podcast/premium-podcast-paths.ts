@@ -135,6 +135,7 @@ export const premiumPodcastPaths = [
   "/podcasts/doac/women-health-expert-birth-control-changes-who-you-are-how-you-feel-about-your-partner",
 
   // Ed Mylett premium podcasts
+  "/podcasts/ed-mylett/power-of-never-settling-building-global-brands-constance-schwartz-morini",
   "/podcasts/ed-mylett/thinking-about-becoming-entrepreneur-focus-on-this-candy-valentino",
   "/podcasts/ed-mylett/secret-winning-life-playing-hurt-leading-strong-deion-sanders",
   "/podcasts/ed-mylett/power-of-visualization-how-fighters-plan-for-victory–michael-chandler",
@@ -170,6 +171,7 @@ export const premiumPodcastPaths = [
   "/podcasts/ed-mylett/if-you-are-on-mission-you-need-team-that-has-this-jon-gordon",
 
   // Jack Neel premium podcasts
+  "/podcasts/jack-neel/marketing-expert-built-internets-fastest-growing-brand",
   "/podcasts/jack-neel/your-mind-has-been-hijacked-crypto-cavities-corruption-luke-belmar",
   "/podcasts/jack-neel/i-thought-i-was-broken-i-just-had-the-wrong-words-alex-hormozi",
   "/podcasts/jack-neel/app-expert-build-viral-apps-make-millions-retire-before-college",
