@@ -1,6 +1,18 @@
 export const edMylettPodcastList = [
   {
     title:
+      "If You Aren't Feeling Confident in Yourself, You Are Not Doing THIS! Feat. Brendon Burchard",
+    slug: "if-not-feeling-confident-you-are-not-doing-this-brendon-burchard",
+    tags: ["Self Confidence", "Accountability", "Personal Development"],
+    image:
+      "if-not-feeling-confident-you-are-not-doing-this-brendon-burchard.jpg",
+    podcastHost: "Ed Mylett",
+    isPremium: true,
+    videoId: "27lij-Pck0o",
+    videoUploadedAt: "2025-02-27T09:00:03Z",
+  },
+  {
+    title:
       "The Power of Never Settling: Building Global Brands with Constance Schwartz-Morini",
     slug: "power-of-never-settling-building-global-brands-constance-schwartz-morini",
     tags: ["Personal Branding", "Entrepreneurship", "Business Strategy"],

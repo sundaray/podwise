@@ -6,7 +6,7 @@ type SubscribeLayoutProps = {
   children: React.ReactNode;
 };
 
-//Subscribe
+// Subscribe
 export default function SubscribeLayout({ children }: SubscribeLayoutProps) {
   return (
     <div className="flex min-h-screen flex-col">

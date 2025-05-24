@@ -135,6 +135,7 @@ export const premiumPodcastPaths = [
   "/podcasts/doac/women-health-expert-birth-control-changes-who-you-are-how-you-feel-about-your-partner",
 
   // Ed Mylett premium podcasts
+  "/podcasts/ed-mylett/if-not-feeling-confident-you-are-not-doing-this-brendon-burchard",
   "/podcasts/ed-mylett/power-of-never-settling-building-global-brands-constance-schwartz-morini",
   "/podcasts/ed-mylett/thinking-about-becoming-entrepreneur-focus-on-this-candy-valentino",
   "/podcasts/ed-mylett/secret-winning-life-playing-hurt-leading-strong-deion-sanders",
