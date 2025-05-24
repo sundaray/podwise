@@ -1,6 +1,17 @@
 export const edMylettPodcastList = [
   {
     title:
+      "If You Want To Have A Good Quality of Life , DO THIS! Feat. Brie Bauer",
+    slug: "good-quality-life–brie-bauer",
+    tags: ["Resilience", "Overcoming Adversity", "Life Lessons"],
+    image: "good-quality-life–brie-bauer.jpg",
+    podcastHost: "Ed Mylett",
+    isPremium: true,
+    videoId: "7gtu7mAcciw",
+    videoUploadedAt: "2024-12-24T09:00:07Z",
+  },
+  {
+    title:
       "If You Focus On THESE 4 Things, You Will DRAMATICALLY Impact Your Health! Feat. Peter Diamandis",
     slug: "focus-on-these-4-things-dramatically-impact-your-health-peter-diamandis",
     tags: ["Longevity Science", "Health Optimization", "Anti Aging"],

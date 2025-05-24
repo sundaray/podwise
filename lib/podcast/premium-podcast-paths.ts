@@ -135,6 +135,7 @@ export const premiumPodcastPaths = [
   "/podcasts/doac/women-health-expert-birth-control-changes-who-you-are-how-you-feel-about-your-partner",
 
   // Ed Mylett premium podcasts
+  "/podcasts/ed-mylett/good-quality-life–brie-bauer",
   "/podcasts/ed-mylett/focus-on-these-4-things-dramatically-impact-your-health-peter-diamandis",
   "/podcasts/ed-mylett/chase-your-dreams-heidi-somers-guzman",
   "/podcasts/ed-mylett/manage-emotion-before-they-manage-you-ethan-kross",
