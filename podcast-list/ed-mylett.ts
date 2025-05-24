@@ -44,7 +44,7 @@ export const edMylettPodcastList = [
     podcastHost: "Ed Mylett",
     isPremium: true,
     videoId: "G6ASznwhXFw",
-    videoUploadedAt: "2024-12-21T09:00:20Z ",
+    videoUploadedAt: "2024-12-21T09:00:20Z",
   },
   {
     title:
