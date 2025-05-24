@@ -1,6 +1,29 @@
 export const edMylettPodcastList = [
   {
     title:
+      "If You Focus On THESE 4 Things, You Will DRAMATICALLY Impact Your Health! Feat. Peter Diamandis",
+    slug: "focus-on-these-4-things-dramatically-impact-your-health-peter-diamandis",
+    tags: ["Longevity Science", "Health Optimization", "Anti Aging"],
+    image:
+      "focus-on-these-4-things-dramatically-impact-your-health-peter-diamandis.jpg",
+    podcastHost: "Ed Mylett",
+    isPremium: true,
+    videoId: "z4eQEDTy3gQ",
+    videoUploadedAt: "2025-01-07T09:00:58Z",
+  },
+  {
+    title:
+      "If You Are AFRAID To Chase Your Dreams, Just Do THIS! Feat. Heidi Somers Guzman",
+    slug: "chase-your-dreams-heidi-somers-guzman",
+    tags: ["Entrepreneurship", "Personal Development", "Self Love"],
+    image: "chase-your-dreams-heidi-somers-guzman.jpg",
+    podcastHost: "Ed Mylett",
+    isPremium: true,
+    videoId: "M8H207riZ1s",
+    videoUploadedAt: "2025-01-28T09:00:32Z",
+  },
+  {
+    title:
       "How to Manage Emotions Before They Manage You! Feat. Dr. Ethan Kross",
     slug: "manage-emotion-before-they-manage-you-ethan-kross",
     tags: ["Emotional Intelligence", "Psychology", "Self Improvement"],
