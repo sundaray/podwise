@@ -1,5 +1,16 @@
 export const edMylettPodcastList = [
   {
+    title:
+      "How to Manage Emotions Before They Manage You! Feat. Dr. Ethan Kross",
+    slug: "manage-emotion-before-they-manage-you-ethan-kross",
+    tags: ["Emotional Intelligence", "Psychology", "Self Improvement"],
+    image: "manage-emotion-before-they-manage-you-ethan-kross.jpg",
+    podcastHost: "Ed Mylett",
+    isPremium: true,
+    videoId: "7LmdvuCjEgI",
+    videoUploadedAt: "2024-12-31T09:00:06Z",
+  },
+  {
     title: "PROOF That Your Past Doesn’t Define Your Future Feat. Titus O'Neil",
     slug: "proof-that-your-past-does-not-defiine-your-future-titus-oneil",
     tags: ["Personal Development", "Overcoming Adversity", "Fatherhood"],

@@ -135,6 +135,7 @@ export const premiumPodcastPaths = [
   "/podcasts/doac/women-health-expert-birth-control-changes-who-you-are-how-you-feel-about-your-partner",
 
   // Ed Mylett premium podcasts
+  "/podcasts/ed-mylett/manage-emotion-before-they-manage-you-ethan-kross",
   "/podcasts/ed-mylett/proof-that-your-past-does-not-defiine-your-future-titus-oneil",
   "/podcasts/ed-mylett/gut-controlling-mind-steven-gundry",
   "/podcasts/ed-mylett/understand-this-about-intelligence-unlock-potential-howard-gardner",

@@ -129,8 +129,13 @@ export default async function MelRobbinsPodcastPage({
 
       {paginatedPodcasts.length > 0 ? (
         <div className="grid grid-cols-1 gap-6 border-b pb-10 group-has-[[data-pending]]:animate-pulse sm:grid-cols-2 md:grid-cols-3 md:gap-10">
-          {paginatedPodcasts.map((podcast) => (
-            <PodcastCard key={podcast.slug} podcast={podcast} hostPath={host} />
+          {paginatedPodcasts.map((podcast, index) => (
+            <PodcastCard
+              key={podcast.slug}
+              podcast={podcast}
+              hostPath={host}
+              index={index}
+            />
           ))}
         </div>
       ) : (
