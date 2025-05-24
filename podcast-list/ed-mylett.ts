@@ -1,6 +1,29 @@
 export const edMylettPodcastList = [
   {
     title:
+      "The Power of Visualization: How Fighters Plan for Victory Feat. Michael Chandler",
+    slug: "power-of-visualization-how-fighters-plan-for-victory–michael-chandler",
+    tags: ["Mental Toughness", "Elite Performance", "Winning Mindset"],
+    image:
+      "power-of-visualization-how-fighters-plan-for-victory–michael-chandler.jpg",
+    podcastHost: "Ed Mylett",
+    isPremium: true,
+    videoId: "4Ul8JNJrBwQ",
+    videoUploadedAt: "2024-12-28T09:00:05Z",
+  },
+  {
+    title:
+      "The Secret to Winning in Life: Playing Hurt and Leading Strong! Feat. Deion Sanders",
+    slug: "secret-winning-life-playing-hurt-leading-strong-deion-sanders",
+    tags: ["Leadership", "Resilience", "Personal Development"],
+    image: "secret-winning-life-playing-hurt-leading-strong-deion-sanders.jpg",
+    podcastHost: "Ed Mylett",
+    isPremium: true,
+    videoId: "G6ASznwhXFw",
+    videoUploadedAt: "2024-12-21T09:00:20Z ",
+  },
+  {
+    title:
       "The Ultimate Guide to Eating Healthy and Improving Your Diet Feat. Max Lugavere",
     slug: "ultimate-guide-eating-healthy-improving-diet-max-lugavere",
     tags: ["Nutrition Science", "Brain Health", "Healthy Eating"],
