@@ -8,6 +8,7 @@ export const podcastHosts: PodcastHost[] = [
   { id: "chris-williamson", name: "Modern Wisdom by Chris Williamson" },
   { id: "daily-stoic", name: "Daily Stoic by Ryan Holiday" },
   { id: "doac", name: "The Diary Of a CEO by Steven Bartlett" },
+  { id: "ed-mylett", name: "The Ed Mylett Show" },
   { id: "jack-neel", name: "The Jack Neel Podcast" },
   { id: "jay-shetty", name: "On Purpose with Jay Shetty" },
   { id: "lewis-howes", name: "The School of Greatness by Lewis Howes" },

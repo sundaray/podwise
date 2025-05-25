@@ -41,6 +41,7 @@ function filterPodcastsByShows<T extends { podcastHost: string }>(
     "chris-williamson": "Chris Williamson",
     "daily-stoic": "Daily Stoic",
     doac: "The Diary Of A CEO",
+    "ed-mylett": "Ed Mylett",
     "jack-neel": "Jack Neel",
     "jay-shetty": "Jay Shetty",
     "lewis-howes": "Lewis Howes",
