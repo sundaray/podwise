@@ -1,6 +1,16 @@
 export const freePodcastPaths = [
-  "/podcasts/andrew-huberman/how-to-safeguard-your-hormone-health-and-fertility-shanna-swan",
+  "/podcasts/ed-mylett/if-you-do-not-have-this-you-will-never-create-your-dream-life-jasmine-star",
+  "/podcasts/ed-mylett/destroy-victim-mindset–build-generational-success-be-leader-jeezy",
+  "/podcasts/ed-mylett/if-you-do–not-build-your-personal-brand-you-are-missing-out-rory-vaden",
+  "/podcasts/ed-mylett/tap-into-your-unique-frequency-create-your-best-life-erwin-mcmanus",
+  "/podcasts/ed-mylett/keke-palmer-journey-self-mastery",
+  "/podcasts/ed-mylett/never-right-time-start-business-just-do-this-jesse-itzler",
+  "/podcasts/ed-mylett/ultimate-path-create-massive-value-for-people-dean-graziosi",
+  "/podcasts/ed-mylett/if-someone-has-ever-told-you-that-your-idea-was-unrealistic-watch-this-drew-davis",
+  "/podcasts/ed-mylett/stop-living-life-on-autopilot-build-life-of-your-dreams-dan-martell",
+
   "/podcasts/andrew-huberman/how-different-diets-impact-your-health-christopher-gardner",
+  "/podcasts/andrew-huberman/how-to-safeguard-your-hormone-health-and-fertility-shanna-swan",
   "/podcasts/andrew-huberman/charting-the-architecture-of-the-universe-and-human-life-brian-keating",
   "/podcasts/andrew-huberman/contracts-of-love-and-money-that-make-or-break-relationships-james-sexton",
 

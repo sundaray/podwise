@@ -1,6 +1,110 @@
 export const edMylettPodcastList = [
   {
     title:
+      "STOP Living Life On Autopilot and BUILD The Life Of Your Dreams With THIS! Feat. Dan Martell",
+    slug: "stop-living-life-on-autopilot-build-life-of-your-dreams-dan-martell",
+    tags: ["Personal Development", "Entrepreneurship", "Life Transformation"],
+    image:
+      "stop-living-life-on-autopilot-build-life-of-your-dreams-dan-martell.jpg",
+    podcastHost: "Ed Mylett",
+    isPremium: false,
+    videoId: "YVOmQ5KBc8c",
+    videoUploadedAt: "2024-10-15T08:00:20Z",
+  },
+  {
+    title:
+      "If Someone Has Ever Told You That Your Idea Was Unrealistic, WATCH THIS! Feat. Drew Davis",
+    slug: "if-someone-has-ever-told-you-that-your-idea-was-unrealistic-watch-this-drew-davis",
+    tags: ["Entrepreneurship", "Young Entrepreneurs", "Overcoming Adversity"],
+    image:
+      "if-someone-has-ever-told-you-that-your-idea-was-unrealistic-watch-this-drew-davis.jpg",
+    podcastHost: "Ed Mylett",
+    isPremium: false,
+    videoId: "tJrnUMfw8jE",
+    videoUploadedAt: "2024-10-22T08:00:42Z",
+  },
+  {
+    title:
+      "The Ultimate Path to Create MASSIVE Value For People with Dean Graziosi",
+    slug: "ultimate-path-create-massive-value-for-people-dean-graziosi",
+    tags: ["Personal Development", "Entrepreneurship", "Business Success"],
+    image: "ultimate-path-create-massive-value-for-people-dean-graziosi.jpg",
+    podcastHost: "Ed Mylett",
+    isPremium: false,
+    videoId: "uEo1Ph953Lo",
+    videoUploadedAt: "2024-10-26T08:00:46Z",
+  },
+  {
+    title:
+      "It's NEVER The Right Time To Start A Business, You Just Need To Do THIS! Feat. Jesse Itzler",
+    slug: "never-right-time-start-business-just-do-this-jesse-itzler",
+    tags: ["Entrepreneurship", "Personal Development", "Time Management"],
+    image: "never-right-time-start-business-just-do-this-jesse-itzler.jpg",
+    podcastHost: "Ed Mylett",
+    isPremium: false,
+    videoId: "HJ6VWYMsDgA",
+    videoUploadedAt: "2024-11-05T09:00:13Z",
+  },
+  {
+    title: "Master of Me: Keke Palmer’s Journey to Self-Mastery",
+    slug: "keke-palmer-journey-self-mastery",
+    tags: ["Personal Development", "Self Mastery", "Trauma Recovery"],
+    image: "keke-palmer-journey-self-mastery.jpg",
+    podcastHost: "Ed Mylett",
+    isPremium: false,
+    videoId: "Fzc2mmfqCdM",
+    videoUploadedAt: "2024-11-21T09:00:21Z",
+  },
+  {
+    title:
+      "How to Tap Into Your Unique Frequency To Create Your BEST Life Feat. Erwin McManus",
+    slug: "tap-into-your-unique-frequency-create-your-best-life-erwin-mcmanus",
+    tags: ["Communication Skills", "Personal Development", "Self Awareness"],
+    image:
+      "tap-into-your-unique-frequency-create-your-best-life-erwin-mcmanus.jpg",
+    podcastHost: "Ed Mylett",
+    isPremium: false,
+    videoId: "ZPh29fa0ZIg",
+    videoUploadedAt: "2024-11-26T09:00:29Z",
+  },
+  {
+    title:
+      "If You Don't Build Your Personal Brand In 2025, You Are Missing Out On THIS! Feat. Rory Vaden",
+    slug: "if-you-do–not-build-your-personal-brand-you-are-missing-out-rory-vaden",
+    tags: ["Personal Branding", "Entrepreneurship", "Business Strategy"],
+    image:
+      "if-you-do–not-build-your-personal-brand-you-are-missing-out-rory-vaden.jpg",
+    podcastHost: "Ed Mylett",
+    isPremium: false,
+    videoId: "fDKtFu-ME78",
+    videoUploadedAt: "2024-12-03T09:00:42Z",
+  },
+  {
+    title:
+      "Destroy The Victim Mindset, Build Generational Success, And BE A LEADER Feat. Jeezy",
+    slug: "destroy-victim-mindset–build-generational-success-be-leader-jeezy",
+    tags: ["Leadership", "Adversity", "Personal Development"],
+    image:
+      "destroy-victim-mindset–build-generational-success-be-leader-jeezy.jpg",
+    podcastHost: "Ed Mylett",
+    isPremium: false,
+    videoId: "mg9U4V4MN14",
+    videoUploadedAt: "2024-12-07T09:00:53Z",
+  },
+  {
+    title:
+      "If You Don't Have THIS In Your Life You Will NEVER Create Your Dream Life! Feat. Jasmine Star",
+    slug: "if-you-do-not-have-this-you-will-never-create-your-dream-life-jasmine-star",
+    tags: ["Personal Development", "Entrepreneurship", "Mindset"],
+    image:
+      "if-you-do-not-have-this-you-will-never-create-your-dream-life-jasmine-star.jpg",
+    podcastHost: "Ed Mylett",
+    isPremium: false,
+    videoId: "LKnpnz9QdI4",
+    videoUploadedAt: "2024-12-10T09:00:30Z",
+  },
+  {
+    title:
       "If You Aren't Feeling Confident in Yourself, You Are Not Doing THIS! Feat. Brendon Burchard",
     slug: "if-not-feeling-confident-you-are-not-doing-this-brendon-burchard",
     tags: ["Self Confidence", "Accountability", "Personal Development"],
