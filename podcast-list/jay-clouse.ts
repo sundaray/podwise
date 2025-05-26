@@ -1,5 +1,37 @@
 export const jayClousePodcastList = [
   {
+    title: "How He Built a $27 Million Gardening Empire on YouTube (interview)",
+    slug: "how-he-built-27-million-gardening-empire-on-youtube",
+    tags: ["Content Creation", "Creator Economy", "Business Growth"],
+    image: "how-he-built-27-million-gardening-empire-on-youtube.jpg",
+    podcastHost: "Jay Clouse",
+    isPremium: true,
+    videoId: "uOADp7EK6OU",
+    videoUploadedAt: "2023-05-08T22:46:02Z",
+  },
+  {
+    title: "How to Steal a YouTube Video (Ethically)",
+    slug: "steal-youtube-video-ethically",
+    tags: ["YouTube Strategy", "Content Creation", "Creator Economy"],
+    image: "steal-youtube-video-ethically.jpg",
+    podcastHost: "Jay Clouse",
+    isPremium: true,
+    videoId: "6p1jN4d4a6s",
+    videoUploadedAt: "2023-05-29T17:55:16Z",
+  },
+  {
+    title:
+      "Meet the Ex-YouTube Employee Changing YouTube Education (Jon Youshaei)",
+    slug: "meet-ex-youtube-employee-changing-youtube-education-jon-youshaei",
+    tags: ["YouTube Strategy", "Content Creation", "Creator Economy"],
+    image:
+      "meet-ex-youtube-employee-changing-youtube-education-jon-youshaei.jpg",
+    podcastHost: "Jay Clouse",
+    isPremium: true,
+    videoId: "8AyvAUl-6Bw",
+    videoUploadedAt: "2023-09-12T01:08:53Z",
+  },
+  {
     title: "Getting Brand Deals Is Easy, Actually",
     slug: "getting-brand-deals-easy",
     tags: ["Brand Partnerships", "Influencer Marketing", "Creator Economy"],

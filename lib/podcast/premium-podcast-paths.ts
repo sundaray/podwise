@@ -1,5 +1,8 @@
 export const premiumPodcastPaths = [
   // Jay Clouse premium podcasts
+  "/podcasts/jay-clouse/how-he-built-27-million-gardening-empire-on-youtube",
+  "/podcasts/jay-clouse/steal-youtube-video-ethically",
+  "/podcasts/jay-clouse/meet-ex-youtube-employee-changing-youtube-education-jon-youshaei",
   "/podcasts/jay-clouse/getting-brand-deals-easy",
   "/podcasts/jay-clouse/how-to-hire-youtube-editor",
   "/podcasts/jay-clouse/how-he-made-819k-in-3-years-with-small-audience",
