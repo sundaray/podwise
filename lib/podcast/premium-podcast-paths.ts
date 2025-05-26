@@ -1,7 +1,14 @@
 export const premiumPodcastPaths = [
+  // Jay Clouse premium podcasts
+  "/podcasts/jay-clouse/meet-woman-who-built-100m-online-education-empire",
+  "/podcasts/jay-clouse/meet-youtube-secret-title-guru-100-million-views",
+  "/podcasts/jay-clouse/meet-secret-strategist-behind-alex-hormozi-gary-vee",
+  "/podcasts/jay-clouse/how-to-make-merch-that-does-not-suck",
+  "/podcasts/jay-clouse/meet-woman-making-creators-millions-with-chatbots",
+
   // Andrew huberman premium podcasts
-  "/podcasts/andrew-huberman/the-science-and-art-of-comedy-and-creativity-tom-segura",
   "/podcasts/andrew-huberman/how-to-improve-memory-and-focus-using-science-protocols-charan-ranganath",
+  "/podcasts/andrew-huberman/the-science-and-art-of-comedy-and-creativity-tom-segura",
   "/podcasts/andrew-huberman/understand-and-apply-the-psychology-of-money-to-gain-greater-happiness-morgan-housel",
   "/podcasts/andrew-huberman/how-to-improve-your-mobility-posture-and-flexibility-kelly-starrett",
   "/podcasts/andrew-huberman/create-your-ideal-future-using-science-based-protocols-ari-wallach",
