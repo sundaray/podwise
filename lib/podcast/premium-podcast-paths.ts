@@ -1,5 +1,6 @@
 export const premiumPodcastPaths = [
   // Jay Clouse premium podcasts
+  "/podcasts/jay-clouse/meet-secret-scriptwriter-getting-youtubers-millions-views",
   "/podcasts/jay-clouse/how-he-built-27-million-gardening-empire-on-youtube",
   "/podcasts/jay-clouse/steal-youtube-video-ethically",
   "/podcasts/jay-clouse/meet-ex-youtube-employee-changing-youtube-education-jon-youshaei",

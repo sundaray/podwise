@@ -1,5 +1,15 @@
 export const jayClousePodcastList = [
   {
+    title: "Meet the Secret Scriptwriter Getting YouTubers Millions of Views",
+    slug: "meet-secret-scriptwriter-getting-youtubers-millions-views",
+    tags: ["YouTube Strategy", "Script Writing", "Content Creation"],
+    image: "meet-secret-scriptwriter-getting-youtubers-millions-views.jpg",
+    podcastHost: "Jay Clouse",
+    isPremium: true,
+    videoId: "S6Uq8cniC1Y",
+    videoUploadedAt: "2023-08-28T22:29:12Z",
+  },
+  {
     title: "How He Built a $27 Million Gardening Empire on YouTube (interview)",
     slug: "how-he-built-27-million-gardening-empire-on-youtube",
     tags: ["Content Creation", "Creator Economy", "Business Growth"],
