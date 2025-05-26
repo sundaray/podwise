@@ -1,5 +1,15 @@
 export const jayClousePodcastList = [
   {
+    title: "Getting Brand Deals Is Easy, Actually",
+    slug: "getting-brand-deals-easy",
+    tags: ["Brand Partnerships", "Influencer Marketing", "Creator Economy"],
+    image: "getting-brand-deals-easy.jpg",
+    podcastHost: "Jay Clouse",
+    isPremium: true,
+    videoId: "FhrDku715y4",
+    videoUploadedAt: "2024-01-22T22:19:12Z",
+  },
+  {
     title: "How to Hire a YouTube Editor",
     slug: "how-to-hire-youtube-editor",
     tags: ["YouTube Editing", "Content Creation", "Freelance Hiring"],
