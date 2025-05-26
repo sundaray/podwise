@@ -10,6 +10,7 @@ export const podcastHosts: PodcastHost[] = [
   { id: "doac", name: "The Diary Of a CEO by Steven Bartlett" },
   { id: "ed-mylett", name: "The Ed Mylett Show" },
   { id: "jack-neel", name: "The Jack Neel Podcast" },
+  { id: "jay-clouse", name: "Creator Science with Jay Clouse" },
   { id: "jay-shetty", name: "On Purpose with Jay Shetty" },
   { id: "lewis-howes", name: "The School of Greatness by Lewis Howes" },
   { id: "mel-robbins", name: "The Mel Robbins Podcast" },

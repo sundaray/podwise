@@ -1,5 +1,7 @@
 export const premiumPodcastPaths = [
   // Jay Clouse premium podcasts
+  "/podcasts/jay-clouse/how-he-made-819k-in-3-years-with-small-audience",
+  "/podcasts/jay-clouse/meet-best-selling-author-crushing-youtube-mark-manson",
   "/podcasts/jay-clouse/meet-youtuber-who-solved-shorts-jenny-hoyos-interview",
   "/podcasts/jay-clouse/what-he-learned-from-working-with-10000-creators",
   "/podcasts/jay-clouse/meet-youtube-next-golden-boy-dodford-interview",
