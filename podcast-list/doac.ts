@@ -1,6 +1,22 @@
 export const doacPodcastList = [
   {
     title:
+      "Simon Sinek: You're Being Lied To About AI's Real Purpose! We're Teaching Our Kids To Not Be Human!",
+    slug: "simon-sinek-you-are-being-lied-about-ai-real-purpose-we-are-teaching-kids-to-not-be-human",
+    tags: [
+      "Artificial Intelligence",
+      "Human Connection",
+      "Personal Development",
+    ],
+    image:
+      "simon-sinek-you-are-being-lied-about-ai-real-purpose-we-are-teaching-kids-to-not-be-human.jpg",
+    podcastHost: "Jay Clouse",
+    isPremium: false,
+    videoId: "W4tqbEmplug",
+    videoUploadedAt: "2025-05-26T07:00:27Z",
+  },
+  {
+    title:
       "AI AGENTS EMERGENCY DEBATE: These Jobs Won't Exist In 24 Months! We Must Prepare For What's Coming!",
     slug: "ai-agents-emergency-debate-these-jobs-wont-exist-in-24-months",
     tags: ["Artificial Intelligence", "Future of Work", "Automation"],
