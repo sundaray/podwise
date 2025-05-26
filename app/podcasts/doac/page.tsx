@@ -19,7 +19,6 @@ export async function generateMetadata({
   const { page, tier, query } =
     await loadPodcastListSearchParams(awaitedSearchParams);
 
-  // Base metadata
   const metadata: Metadata = {
     title: "The Diary Of A CEO by Steven Bartlett",
     description:
