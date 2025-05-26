@@ -10,7 +10,7 @@ export const doacPodcastList = [
     ],
     image:
       "simon-sinek-you-are-being-lied-about-ai-real-purpose-we-are-teaching-kids-to-not-be-human.jpg",
-    podcastHost: "Jay Clouse",
+    podcastHost: "The Diary Of A CEO",
     isPremium: false,
     videoId: "W4tqbEmplug",
     videoUploadedAt: "2025-05-26T07:00:27Z",
