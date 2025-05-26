@@ -1,5 +1,10 @@
 export const premiumPodcastPaths = [
   // Jay Clouse premium podcasts
+  "/podcasts/jay-clouse/meet-youtuber-who-solved-shorts-jenny-hoyos-interview",
+  "/podcasts/jay-clouse/what-he-learned-from-working-with-10000-creators",
+  "/podcasts/jay-clouse/meet-youtube-next-golden-boy-dodford-interview",
+  "/podcasts/jay-clouse/hidden-opportunity-tutorial-channels-thomas-frank-interview",
+  "/podcasts/jay-clouse/insane-logistics-youtube-biggest-production-challenge-accepted",
   "/podcasts/jay-clouse/meet-woman-who-built-100m-online-education-empire",
   "/podcasts/jay-clouse/meet-youtube-secret-title-guru-100-million-views",
   "/podcasts/jay-clouse/meet-secret-strategist-behind-alex-hormozi-gary-vee",
