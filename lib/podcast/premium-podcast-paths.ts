@@ -1,5 +1,7 @@
 export const premiumPodcastPaths = [
   // Jay Clouse premium podcasts
+  "/podcasts/jay-clouse/meet-man-changing-youtube-education-film-booth-interview",
+  "/podcasts/jay-clouse/meet-godfather-youtube-strategy-paddy-galloway-interview",
   "/podcasts/jay-clouse/meet-secret-scriptwriter-getting-youtubers-millions-views",
   "/podcasts/jay-clouse/how-he-built-27-million-gardening-empire-on-youtube",
   "/podcasts/jay-clouse/steal-youtube-video-ethically",

@@ -1,5 +1,25 @@
 export const jayClousePodcastList = [
   {
+    title: "Meet the Man Changing YouTube Education (Film Booth Interview)",
+    slug: "meet-man-changing-youtube-education-film-booth-interview",
+    tags: ["YouTube Strategy", "Content Creation", "Online Education"],
+    image: "meet-man-changing-youtube-education-film-booth-interview.jpg",
+    podcastHost: "Jay Clouse",
+    isPremium: true,
+    videoId: "MRz5QwkAJqw",
+    videoUploadedAt: "2023-07-03T22:03:25Z",
+  },
+  {
+    title: "Meet The Godfather of YouTube Strategy (Paddy Galloway Interview)",
+    slug: "meet-godfather-youtube-strategy-paddy-galloway-interview",
+    tags: ["YouTube Strategy", "Content Creation", "Video Marketing"],
+    image: "meet-godfather-youtube-strategy-paddy-galloway-interview.jpg",
+    podcastHost: "Jay Clouse",
+    isPremium: true,
+    videoId: "UHhTKwclHCs",
+    videoUploadedAt: "2023-06-12T23:20:17Z",
+  },
+  {
     title: "Meet the Secret Scriptwriter Getting YouTubers Millions of Views",
     slug: "meet-secret-scriptwriter-getting-youtubers-millions-views",
     tags: ["YouTube Strategy", "Script Writing", "Content Creation"],
