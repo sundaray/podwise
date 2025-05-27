@@ -1,5 +1,9 @@
 export const premiumPodcastPaths = [
   // Paul Millerd premium podcasts
+  "/podcasts/paul-millerd/from-law-number-one-poker-player-cate-hall",
+  "/podcasts/paul-millerd/thrive-second-act-after-40-henry-oliver",
+  "/podcasts/paul-millerd/finding-true-work-your-life-steve-schlafman-matt-yao",
+  "/podcasts/paul-millerd/taking-ownership-your-life-justin-welsh",
   "/podcasts/paul-millerd/essence-good-work-matt-yao-paul",
   "/podcasts/paul-millerd/secret-writing-great-books-nat-eliason",
   "/podcasts/paul-millerd/wander-with-wonder-dom-francks",
