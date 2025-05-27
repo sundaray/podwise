@@ -1,5 +1,25 @@
 export const paulMillerdPodcastList = [
   {
+    title: "I love what I do, should I take a break? David Pakman",
+    slug: "i-love-what-i-do-should-i-take-a-break-david-pakman",
+    tags: ["Creator Economy", "Work Life Balance", "Content Creation"],
+    image: "i-love-what-i-do-should-i-take-a-break-david-pakman.jpg",
+    podcastHost: "Paul Millerd",
+    isPremium: true,
+    videoId: "lnn3vXh3-rU",
+    videoUploadedAt: "2024-03-12T14:14:32Z",
+  },
+  {
+    title: "Kids Like To Work — Matt Bateman, Teacher & Philosopher",
+    slug: "kids-like-work-matt-bateman-teacher-philosopher",
+    tags: ["Education Philosophy", "Child Development", "Work Ethic"],
+    image: "kids-like-work-matt-bateman-teacher-philosopher.jpg",
+    podcastHost: "Paul Millerd",
+    isPremium: true,
+    videoId: "up4fHGtzmsk",
+    videoUploadedAt: "2024-03-25T19:26:33Z",
+  },
+  {
     title: "From Law to #1 Poker Player? - Cate Hall",
     slug: "from-law-number-one-poker-player-cate-hall",
     tags: ["Career Change", "Personal Development", "Agency"],

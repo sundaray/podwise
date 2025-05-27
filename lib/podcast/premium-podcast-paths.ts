@@ -1,7 +1,9 @@
 export const premiumPodcastPaths = [
   // Paul Millerd premium podcasts
-  "/podcasts/paul-millerd/from-law-number-one-poker-player-cate-hall",
+  "/podcasts/paul-millerd/i-love-what-i-do-should-i-take-a-break-david-pakman",
+  "/podcasts/paul-millerd/kids-like-work-matt-bateman-teacher-philosopher",
   "/podcasts/paul-millerd/thrive-second-act-after-40-henry-oliver",
+  "/podcasts/paul-millerd/from-law-number-one-poker-player-cate-hall",
   "/podcasts/paul-millerd/finding-true-work-your-life-steve-schlafman-matt-yao",
   "/podcasts/paul-millerd/taking-ownership-your-life-justin-welsh",
   "/podcasts/paul-millerd/essence-good-work-matt-yao-paul",
