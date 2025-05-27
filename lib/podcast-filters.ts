@@ -48,6 +48,7 @@ function filterPodcastsByShows<T extends { podcastHost: string }>(
     "jay-clouse": "Jay Clouse",
     "mel-robbins": "Mel Robbins",
     "nathan-barry": "Nathan Barry",
+    "paul-millerd": "Paul Millerd",
     "rangan-chatterjee": "Dr Rangan Chatterjee",
     "scott-d-clary": "Scott D. Clary",
     "simon-sinek": "Simon Sinek",

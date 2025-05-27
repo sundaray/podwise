@@ -2,10 +2,13 @@ import { andrewHubermanPodcastList } from "@/podcast-list/andrew-huberman";
 import { chrisWilliamsonPodcastList } from "@/podcast-list/chris-williamson";
 import { dailyStoicPodcastList } from "@/podcast-list/daily-stoic";
 import { doacPodcastList } from "@/podcast-list/doac";
+import { edMylettPodcastList } from "@/podcast-list/ed-mylett";
 import { jackNeelPodcastList } from "@/podcast-list/jack-neel";
 import { jayShettyPodcastList } from "@/podcast-list/jay-shetty";
 import { lewisHowesPodcastList } from "@/podcast-list/lewis-howes";
 import { melRobbinsPodcastList } from "@/podcast-list/mel-robbins";
+import { nathanBarryPodcastList } from "@/podcast-list/nathan-barry";
+import { paulMillerdPodcastList } from "@/podcast-list/paul-millerd";
 import { ranganChatterjeePodcastList } from "@/podcast-list/rangan-chatterjee";
 import { scottDClaryPodcastList } from "@/podcast-list/scott-d-clary";
 import { simonSinekPodcastList } from "@/podcast-list/simon-sinek";
@@ -17,10 +20,13 @@ export function getPodcastTags() {
     ...chrisWilliamsonPodcastList,
     ...dailyStoicPodcastList,
     ...doacPodcastList,
+    ...edMylettPodcastList,
     ...jackNeelPodcastList,
     ...jayShettyPodcastList,
     ...lewisHowesPodcastList,
     ...melRobbinsPodcastList,
+    ...nathanBarryPodcastList,
+    ...paulMillerdPodcastList,
     ...ranganChatterjeePodcastList,
     ...scottDClaryPodcastList,
     ...simonSinekPodcastList,

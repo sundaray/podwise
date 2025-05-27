@@ -1,4 +1,11 @@
 export const premiumPodcastPaths = [
+  // Paul Millerd premium podcasts
+  "/podcasts/paul-millerd/essence-good-work-matt-yao-paul",
+  "/podcasts/paul-millerd/secret-writing-great-books-nat-eliason",
+  "/podcasts/paul-millerd/wander-with-wonder-dom-francks",
+  "/podcasts/paul-millerd/inner-peace-for-high-achievers-joe-hudson",
+  "/podcasts/paul-millerd/he-reason-everyone-has-garden-now-kevin-espiritu",
+
   // Jay Clouse premium podcasts
   "/podcasts/jay-clouse/meet-man-changing-youtube-education-film-booth-interview",
   "/podcasts/jay-clouse/meet-godfather-youtube-strategy-paddy-galloway-interview",

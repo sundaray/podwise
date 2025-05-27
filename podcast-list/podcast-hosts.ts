@@ -15,6 +15,7 @@ export const podcastHosts: PodcastHost[] = [
   { id: "lewis-howes", name: "The School of Greatness by Lewis Howes" },
   { id: "mel-robbins", name: "The Mel Robbins Podcast" },
   { id: "nathan-barry", name: "The Nathan Barry Show" },
+  { id: "paul-millerd", name: "Pathless Path by Paul Millerd" },
   {
     id: "rangan-chatterjee",
     name: "Feel Better, Live More by Rangan Chatterjee",
