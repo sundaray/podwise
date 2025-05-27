@@ -1,5 +1,15 @@
 export const paulMillerdPodcastList = [
   {
+    title: "From NASA to Non-Profit to Author!! Nina Simon",
+    slug: "nasa-non-profit-author-nina-simon",
+    tags: ["Career Change", "Personal Development", "Financial Freedom"],
+    image: "nasa-non-profit-author-nina-simon.jpg",
+    podcastHost: "Paul Millerd",
+    isPremium: true,
+    videoId: "S7BaQ_4rNsU",
+    videoUploadedAt: "2023-01-04T13:00:14Z",
+  },
+  {
     title: "Rugby to TikTok Star!? - Ben Mercer",
     slug: "rugby-tiktok-star–ben-mercer",
     tags: ["Career Transition", "Content Creation", "Professional Sports"],

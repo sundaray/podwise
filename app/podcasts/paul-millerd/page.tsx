@@ -106,13 +106,14 @@ export default async function NathanBarryPodcastPage({
         Pathless Path by Paul Millerd
       </h1>
       <p className="mx-auto mb-20 max-w-5xl text-center text-lg/7 text-balance text-gray-700">
-        Paul Millerd hosts The Pathless Path podcast. As author of The Pathless
+        Paul Millerd hosts the Pathless Path podcast. As author of The Pathless
         Path and creator of StrategyU, he explores unconventional career paths
         through conversations with digital nomads, freelancers, and creative
         entrepreneurs. Paul shares insights on escaping traditional work
         constraints and building a meaningful work life on your terms. Whether
-        you&apos;re considering freelancing or remote work, these episodes provide
-        practical wisdom for anyone ready to craft their own pathless path.
+        you&apos;re considering freelancing or remote work, these episodes
+        provide practical wisdom for anyone ready to craft their own pathless
+        path.
       </p>
       <PodcastSearch
         placeholder="Search podcast summaries by title"
