@@ -1,5 +1,8 @@
 export const premiumPodcastPaths = [
   // Paul Millerd premium podcasts
+  "/podcasts/paul-millerd/rugby-tiktok-star–ben-mercer",
+  "/podcasts/paul-millerd/creating-luck-on-internet-jovian-gautama",
+  "/podcasts/paul-millerd/profit-freedom-good-culture-justin-jackson",
   "/podcasts/paul-millerd/i-love-what-i-do-should-i-take-a-break-david-pakman",
   "/podcasts/paul-millerd/kids-like-work-matt-bateman-teacher-philosopher",
   "/podcasts/paul-millerd/thrive-second-act-after-40-henry-oliver",
