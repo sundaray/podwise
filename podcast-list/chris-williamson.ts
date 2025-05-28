@@ -1,14 +1,24 @@
 export const chrisWilliamsonPodcastList = [
   {
-title: "How To Tell Stories That People Love - Will Storr",
-slug: "tell-stories-people-love-will-storr",
-tags: ["Storytelling", "Psychology", "Human Behavior"],
-image: "tell-stories-people-love-will-storr.jpg",
-podcastHost: "Chris Williamson",
-isPremium: true,
-videoId: "tXC-cgxYZZw",
-videoUploadedAt: "2025-05-22T15:01:32Z" 
-},
+    title: "The Art Of Self Mastery - Shaolin Master Shi Heng Yi",
+    slug: "art-self-mastery-shaolin-master-shi-heng-yi",
+    tags: ["Self Mastery", "Personal Development", "Eastern Philosophy"],
+    image: "art-self-mastery-shaolin-master-shi-heng-yi.jpg",
+    podcastHost: "Chris Williamson",
+    isPremium: true,
+    videoId: "OHxjZxg7K3w",
+    videoUploadedAt: "2025-05-24T15:00:37Z",
+  },
+  {
+    title: "How To Tell Stories That People Love - Will Storr",
+    slug: "tell-stories-people-love-will-storr",
+    tags: ["Storytelling", "Psychology", "Human Behavior"],
+    image: "tell-stories-people-love-will-storr.jpg",
+    podcastHost: "Chris Williamson",
+    isPremium: true,
+    videoId: "tXC-cgxYZZw",
+    videoUploadedAt: "2025-05-22T15:01:32Z",
+  },
   {
     title: "The Downfall Of CrossFit & The Future Of Fitness - Will Ahmed",
     slug: "the-downfall-of-crossfit-and-the-future-of-fitness-will-ahmed",
