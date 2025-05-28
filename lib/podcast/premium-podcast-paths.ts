@@ -152,7 +152,10 @@ export const premiumPodcastPaths = [
   "/podcasts/daily-stoic/stop-feeling-lost-in-career-timm-chiusano",
 
   // Diary Of A CEO premium podcasts
+  "/podcasts/doac/muscle-expert-jeff-cavaliere-know-this-about-creatine-melt-belly-fat",
+  "/podcasts/doac/chronic-disease-expert-reverse-stage-4-cancer-feeding-cancer-cells",
   "/podcasts/doac/peter-attia-anti-aging-cure-no-one-talks-about",
+  "/podcasts/doac/they-lied-about-alcohol-effect-brain-sarah-wakeman",
   "/podcasts/doac/masculinity-debate-are-dating-apps-creating-incels",
   "/podcasts/doac/menopause-expert-belly-fat-grows-during-menopause-your-estrogen-levels-controlling-you",
   "/podcasts/doac/speaking-coach-one-word-all-liars-use",

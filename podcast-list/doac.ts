@@ -1,5 +1,38 @@
 export const doacPodcastList = [
   {
+title: "Muscle Expert Jeff Cavaliere: You Need To Know This About Creatine! Melt Belly Fat With 1 Change!",
+slug: "muscle-expert-jeff-cavaliere-know-this-about-creatine-melt-belly-fat",
+tags: ["Fitness Training", "Exercise Science", "Longevity"],
+image: "muscle-expert-jeff-cavaliere-know-this-about-creatine-melt-belly-fat.jpg",
+podcastHost: "The Diary Of A CEO",
+isPremium: true,
+videoId: "epAVydG6IxI",
+videoUploadedAt: "2025-05-15T07:00:40Z" 
+},
+  {
+    title:
+      "The Chronic Disease Expert: We Can Now Reverse Stage 4 Cancer! This Is Feeding Your Cancer Cells!",
+    slug: "chronic-disease-expert-reverse-stage-4-cancer-feeding-cancer-cells",
+    tags: ["Cancer Prevention", "Food As Medicine", "Health Defense Systems"],
+    image:
+      "chronic-disease-expert-reverse-stage-4-cancer-feeding-cancer-cells.jpg",
+    podcastHost: "The Diary Of A CEO",
+    isPremium: true,
+    videoId: "LgsJ3V9pIG0",
+    videoUploadedAt: "2025-05-19T07:00:15Z",
+  },
+  {
+    title:
+      "They Lied About Alcohol’s Effect On Your Brain! Here’s The Proof | Dr. Sarah Wakeman",
+    slug: "they-lied-about-alcohol-effect-brain-sarah-wakeman",
+    tags: ["Alcohol", "Addiction Recovery", "Mental Health"],
+    image: "they-lied-about-alcohol-effect-brain-sarah-wakeman.jpg",
+    podcastHost: "The Diary Of A CEO",
+    isPremium: true,
+    videoId: "Fg7U-BhiZGE",
+    videoUploadedAt: "2025-05-22T07:00:12Z",
+  },
+  {
     title:
       "Simon Sinek: You're Being Lied To About AI's Real Purpose! We're Teaching Our Kids To Not Be Human!",
     slug: "simon-sinek-you-are-being-lied-about-ai-real-purpose-we-are-teaching-kids-to-not-be-human",
