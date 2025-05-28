@@ -1,5 +1,9 @@
 export const premiumPodcastPaths = [
   // Paul Millerd premium podcasts
+  "/podcasts/paul-millerd/achieve-nervous-system-mastery-jonny-miller",
+  "/podcasts/paul-millerd/quit-google-write-online-anne-laure-le-cunff",
+  "/podcasts/paul-millerd/online-wandering-monk-tasshin-fogleman",
+  "/podcasts/paul-millerd/creation-without-ego-isabel-unraveled",
   "/podcasts/paul-millerd/we-are-in-golden-age-visakan-veerasamy",
   "/podcasts/paul-millerd/embrace-change-live-courageously-derek-sivers",
   "/podcasts/paul-millerd/find-true-desires-luke-burgis",

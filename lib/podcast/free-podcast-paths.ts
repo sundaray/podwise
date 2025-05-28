@@ -1,4 +1,5 @@
 export const freePodcastPaths = [
+  "/podcasts/paul-millerd/online-wandering-monk-tasshin-fogleman",
   "/podcasts/paul-millerd/walk-until-day-gets-interesting-bilal-zaidi",
 
   "/podcasts/ed-mylett/destroy-victim-mindset–build-generational-success-be-leader-jeezy",
