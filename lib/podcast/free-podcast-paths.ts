@@ -1,6 +1,8 @@
 export const freePodcastPaths = [
-  "/podcasts/ed-mylett/if-you-do-not-have-this-you-will-never-create-your-dream-life-jasmine-star",
+  "/podcasts/paul-millerd/walk-until-day-gets-interesting-bilal-zaidi",
+
   "/podcasts/ed-mylett/destroy-victim-mindset–build-generational-success-be-leader-jeezy",
+  "/podcasts/ed-mylett/if-you-do-not-have-this-you-will-never-create-your-dream-life-jasmine-star",
   "/podcasts/ed-mylett/if-you-do–not-build-your-personal-brand-you-are-missing-out-rory-vaden",
   "/podcasts/ed-mylett/tap-into-your-unique-frequency-create-your-best-life-erwin-mcmanus",
   "/podcasts/ed-mylett/keke-palmer-journey-self-mastery",

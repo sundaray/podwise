@@ -1,5 +1,8 @@
 export const premiumPodcastPaths = [
   // Paul Millerd premium podcasts
+  "/podcasts/paul-millerd/we-are-in-golden-age-visakan-veerasamy",
+  "/podcasts/paul-millerd/embrace-change-live-courageously-derek-sivers",
+  "/podcasts/paul-millerd/find-true-desires-luke-burgis",
   "/podcasts/paul-millerd/nasa-non-profit-author-nina-simon",
   "/podcasts/paul-millerd/creating-luck-on-internet-jovian-gautama",
   "/podcasts/paul-millerd/rugby-tiktok-star–ben-mercer",
