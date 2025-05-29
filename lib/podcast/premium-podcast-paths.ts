@@ -470,7 +470,11 @@ export const premiumPodcastPaths = [
   "/podcasts/scott-d-clary/hack-genetics-look-feel-10-years-younger-kashif-khan-founder-the-dna-company",
   "/podcasts/scott-d-clary/art-of-storytelling-stephen-riggio-ceo-barnes-noble",
   "/podcasts/scott-d-clary/reclaiming-time-emotional-energy-israa-nasir",
-
+  "/podcasts/scott-d-clary/fitness-industry-myth-keeping-you-weak-sick-kim-constable-sculpted-vegan-founder",
+  "/podcasts/scott-d-clary/traditional-values-foundation-success-dennis-prager-radio-host-prageru-founder",
+  "/podcasts/scott-d-clary/get-anything-you-want-life-business–grant-cardone-billionaire-real-estate-mogul",
+  "/podcasts/scott-d-clary/building-700m-real-estate-portfolio-serving-1-percent-jonathan-campau-luxury-hospitality-pioneer",
+  
   // Simon Sinek premium podcasts
   "/podcasts/simon-sinek/who-are-you-really-maria-shriver",
   "/podcasts/simon-sinek/search-for-self-love-with-podcaster-lewis-howes",

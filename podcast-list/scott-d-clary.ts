@@ -1,6 +1,42 @@
 export const scottDClaryPodcastList = [
   {
     title:
+      "Why Traditional Values Are the Foundation of Success | Dennis Prager - Radio Host & PragerU Founder",
+    slug: "traditional-values-foundation-success-dennis-prager-radio-host-prageru-founder",
+    tags: ["Biblical Wisdom", "Traditional Values", "Cultural Commentary"],
+    image:
+      "traditional-values-foundation-success-dennis-prager-radio-host-prageru-founder.jpg",
+    podcastHost: "Scott D. Clary",
+    isPremium: true,
+    videoId: "eFJYb4V76Po",
+    videoUploadedAt: "2025-05-25T00:21:43Z",
+  },
+  {
+    title:
+      "The Fitness Industry Myth That’s Keeping You Weak and Sick | Kim Constable – Sculpted Vegan Founder",
+    slug: "fitness-industry-myth-keeping-you-weak-sick-kim-constable-sculpted-vegan-founder",
+    tags: ["Personal Development", "Fitness Industry", "Critical Thinking"],
+    image:
+      "fitness-industry-myth-keeping-you-weak-sick-kim-constable-sculpted-vegan-founder.jpg",
+    podcastHost: "Scott D. Clary",
+    isPremium: true,
+    videoId: "gUD_G0HrqxQ",
+    videoUploadedAt: "2025-05-23T00:19:45Z",
+  },
+  {
+    title:
+      "How To Get Anything You Want In Life or Business | Grant Cardone - Billionaire Real Estate Mogul",
+    slug: "get-anything-you-want-life-business–grant-cardone-billionaire-real-estate-mogul",
+    tags: ["Wealth Building", "Success Mindset", "Personal Development"],
+    image:
+      "get-anything-you-want-life-business–grant-cardone-billionaire-real-estate-mogul.jpg",
+    podcastHost: "Scott D. Clary",
+    isPremium: true,
+    videoId: "yN8lVm9mivo",
+    videoUploadedAt: "2025-05-26T22:24:21Z",
+  },
+  {
+    title:
       "How Biohacking Your Mind Transforms Entrepreneurial Success | Dave Asprey - Biohacking Pioneer",
     slug: "how-biohacking-your-mind-transforms-entrepreneurial-success-dave-asprey-biohacking-pioneer",
     tags: ["Biohacking", "Entrepreneurship", "Mental Performance"],
