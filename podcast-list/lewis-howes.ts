@@ -1,5 +1,38 @@
 export const lewisHowesPodcastList = [
   {
+title: "Stanford Psychologist: Ask This 2-Part Question! It Will Transform Your Communication Skills!",
+slug: "stanford-psychologist-ask-this-2-part-question-transform-your-communication-skills",
+tags: ["Communication Skills", "Psychology", "Personal Development"],
+image: "stanford-psychologist-ask-this-2-part-question-transform-your-communication-skills.jpg",
+podcastHost: "Lewis Howes",
+isPremium: true,
+videoId: "__Y33qftk4o",
+videoUploadedAt: "2025-05-21T14:00:07Z"
+},
+  {
+    title:
+      "The No. 1 Skill For Anyone to Learn! This Creates Movement in Your Life!",
+    slug: "number-one-skill-learn-this-creates-movement",
+    tags: ["Entrepreneurship", "Personal Development", "Mindset"],
+    image: "number-one-skill-learn-this-creates-movement.jpg",
+    podcastHost: "Lewis Howes",
+    isPremium: true,
+    videoId: "0h4BeKuC_g4",
+    videoUploadedAt: "2025-05-28T14:00:07Z",
+  },
+  {
+    title:
+      "Money Making Expert: You Need These 4 Things When Launching a Business!",
+    slug: "money-making-expert-you-need-these-4-things-when-launching-business",
+    tags: ["Entrepreneurship", "Business Strategy", "Personal Branding"],
+    image:
+      "money-making-expert-you-need-these-4-things-when-launching-business.jpg",
+    podcastHost: "Lewis Howes",
+    isPremium: true,
+    videoId: "8-kb9oG4gTU",
+    videoUploadedAt: "2025-05-26T14:00:07Z",
+  },
+  {
     title:
       "The Spiritual Teacher: The Universe is Love! Awaken To The New Consciousness To Manifest Anything!",
     slug: "the-spiritual-teacher-the-universe-is-love-awaken-to-the-new-consciousness-to-manifest-anything",

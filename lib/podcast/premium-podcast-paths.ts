@@ -313,6 +313,9 @@ export const premiumPodcastPaths = [
   "/podcasts/lewis-howes/live-longer-harvard-doctor-peter-diamandis",
   "/podcasts/lewis-howes/manifestation-technique-achieve-goals-yara-shahidi",
   "/podcasts/lewis-howes/neurologist-alzheimers-prevention-metabolic-health",
+  "/podcasts/lewis-howes/number-one-skill-learn-this-creates-movement",
+  "/podcasts/lewis-howes/money-making-expert-you-need-these-4-things-when-launching-business",
+  "/podcasts/lewis-howes/stanford-psychologist-ask-this-2-part-question-transform-your-communication-skills",
 
   // Mel Robbins premium podcasts
   "/podcasts/mel-robbins/reinvent-yourself-let-go-of-past-mistakes-create-new-version-of-you-with-charlamagne-tha-god",
