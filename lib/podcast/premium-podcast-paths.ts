@@ -152,6 +152,7 @@ export const premiumPodcastPaths = [
   "/podcasts/daily-stoic/stop-feeling-lost-in-career-timm-chiusano",
 
   // Diary Of A CEO premium podcasts
+  "/podcasts/doac/savings-expert-truth-about-america-collapsing-cost-living-skyrocket",
   "/podcasts/doac/shaolin-warrior-master-modern-habit-killing-millions",
   "/podcasts/doac/former-fbi-agent-narcissist-favorite-trick-control-you",
   "/podcasts/doac/number-one-neuroscientist-anxiety-just-predictive-error-brain",

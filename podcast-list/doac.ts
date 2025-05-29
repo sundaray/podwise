@@ -1,5 +1,27 @@
 export const doacPodcastList = [
   {
+title: "Michelle Obama: This Is A Scam! People Were Running From Us Because We Were Black!",
+slug: "michelle-obama-people-were-running-from-us-because-we-were-black",
+tags: ["Personal Development", "Leadership Lessons", "Family Values"],
+image: "michelle-obama-people-were-running-from-us-because-we-were-black.jpg",
+podcastHost: "The Diary Of A CEO",
+isPremium: false,
+videoId: "D67eWcX2XYQ",
+videoUploadedAt: "2025-05-01T07:00:17Z"
+},
+  {
+    title:
+      "The Savings Expert: The Truth About America Collapsing! The Cost Of Living Is About To Skyrocket!",
+    slug: "savings-expert-truth-about-america-collapsing-cost-living-skyrocket",
+    tags: ["Personal Finance", "Economic Policy", "Financial Psychology"],
+    image:
+      "savings-expert-truth-about-america-collapsing-cost-living-skyrocket.jpg",
+    podcastHost: "The Diary Of A CEO",
+    isPremium: true,
+    videoId: "uxu37dqVR90",
+    videoUploadedAt: "2025-04-28T07:00:52Z",
+  },
+  {
     title:
       "Shaolin Warrior Master: Hidden Epidemic Nobody Talks About! This Modern Habit Is Killing Millions!",
     slug: "shaolin-warrior-master-modern-habit-killing-millions",
