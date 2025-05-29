@@ -1,14 +1,70 @@
 export const doacPodcastList = [
   {
-title: "Muscle Expert Jeff Cavaliere: You Need To Know This About Creatine! Melt Belly Fat With 1 Change!",
-slug: "muscle-expert-jeff-cavaliere-know-this-about-creatine-melt-belly-fat",
-tags: ["Fitness Training", "Exercise Science", "Longevity"],
-image: "muscle-expert-jeff-cavaliere-know-this-about-creatine-melt-belly-fat.jpg",
-podcastHost: "The Diary Of A CEO",
-isPremium: true,
-videoId: "epAVydG6IxI",
-videoUploadedAt: "2025-05-15T07:00:40Z" 
-},
+    title:
+      "Shaolin Warrior Master: Hidden Epidemic Nobody Talks About! This Modern Habit Is Killing Millions!",
+    slug: "shaolin-warrior-master-modern-habit-killing-millions",
+    tags: ["Personal Development", "Ancient Wisdom", "Mindfulness"],
+    image: "shaolin-warrior-master-modern-habit-killing-millions.jpg",
+    podcastHost: "The Diary Of A CEO",
+    isPremium: true,
+    videoId: "atejm2w2jWY",
+    videoUploadedAt: "2025-04-24T07:00:03Z",
+  },
+  {
+    title:
+      "Former FBI Agent: If They Do This Please RUN! Narcissists Favourite Trick To Control You!",
+    slug: "former-fbi-agent-narcissist-favorite-trick-control-you",
+    tags: ["Body Language", "Psychology", "Communication"],
+    image: "former-fbi-agent-narcissist-favorite-trick-control-you.jpg",
+    podcastHost: "The Diary Of A CEO",
+    isPremium: true,
+    videoId: "ZuiIvevLg40",
+    videoUploadedAt: "2025-04-21T07:00:25Z",
+  },
+  {
+    title:
+      "(Major Discovery) No.1 Neuroscientist: Anxiety Is Just A Predictive Error In The Brain!",
+    slug: "number-one-neuroscientist-anxiety-just-predictive-error-brain",
+    tags: ["Neuroscience", "Psychology", "Personal Development"],
+    image: "number-one-neuroscientist-anxiety-just-predictive-error-brain.jpg",
+    podcastHost: "The Diary Of A CEO",
+    isPremium: true,
+    videoId: "rCtvAvZtJyE",
+    videoUploadedAt: "2025-04-17T07:00:46Z",
+  },
+  {
+    title:
+      "No.1 Nitric Oxide Expert: This is the anti-aging cure no one is talking about!",
+    slug: "number-one-nitric-oxide-expert–anti-aging-cure",
+    tags: ["Nitric Oxide", "Anti Aging", "Cardiovascular Health"],
+    image: "number-one-nitric-oxide-expert–anti-aging-cure.jpg",
+    podcastHost: "The Diary Of A CEO",
+    isPremium: true,
+    videoId: "zECoaEZRRFU",
+    videoUploadedAt: "2025-04-14T07:00:56Z",
+  },
+  {
+    title: "Body Language Expert Explains Why People Dislike You",
+    slug: "body-language-expert-explains-why-people-dislike-you",
+    tags: ["Body Language", "Communication Skills", "Personal Development"],
+    image: "body-language-expert-explains-why-people-dislike-you.jpg",
+    podcastHost: "The Diary Of A CEO",
+    isPremium: true,
+    videoId: "ldizQkuWpDE",
+    videoUploadedAt: "2025-04-10T07:00:39Z",
+  },
+  {
+    title:
+      "Muscle Expert Jeff Cavaliere: You Need To Know This About Creatine! Melt Belly Fat With 1 Change!",
+    slug: "muscle-expert-jeff-cavaliere-know-this-about-creatine-melt-belly-fat",
+    tags: ["Fitness Training", "Exercise Science", "Longevity"],
+    image:
+      "muscle-expert-jeff-cavaliere-know-this-about-creatine-melt-belly-fat.jpg",
+    podcastHost: "The Diary Of A CEO",
+    isPremium: true,
+    videoId: "epAVydG6IxI",
+    videoUploadedAt: "2025-05-15T07:00:40Z",
+  },
   {
     title:
       "The Chronic Disease Expert: We Can Now Reverse Stage 4 Cancer! This Is Feeding Your Cancer Cells!",

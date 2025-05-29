@@ -152,6 +152,11 @@ export const premiumPodcastPaths = [
   "/podcasts/daily-stoic/stop-feeling-lost-in-career-timm-chiusano",
 
   // Diary Of A CEO premium podcasts
+  "/podcasts/doac/shaolin-warrior-master-modern-habit-killing-millions",
+  "/podcasts/doac/former-fbi-agent-narcissist-favorite-trick-control-you",
+  "/podcasts/doac/number-one-neuroscientist-anxiety-just-predictive-error-brain",
+  "/podcasts/doac/number-one-nitric-oxide-expert–anti-aging-cure",
+  "/podcasts/doac/body-language-expert-explains-why-people-dislike-you",
   "/podcasts/doac/muscle-expert-jeff-cavaliere-know-this-about-creatine-melt-belly-fat",
   "/podcasts/doac/chronic-disease-expert-reverse-stage-4-cancer-feeding-cancer-cells",
   "/podcasts/doac/peter-attia-anti-aging-cure-no-one-talks-about",
