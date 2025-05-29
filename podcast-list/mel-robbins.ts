@@ -1,5 +1,53 @@
 export const melRobbinsPodcastList = [
   {
+    title: "4 Signs of Emotionally Immature Parents & How to Heal",
+    slug: "4-signs-emotionally-immature-parents-how-heal",
+    tags: ["Emotional Intelligence", "Family Dynamics", "Mental Health"],
+    image: "4-signs-emotionally-immature-parents-how-heal.jpg",
+    podcastHost: "Mel Robbins",
+    isPremium: true,
+    videoId: "wLsp_67xi4U",
+    videoUploadedAt: "2025-05-15T09:01:23Z",
+  },
+  {
+    title:
+      "How to Get What You Want Every Time: 3 Steps to Negotiate Anything With Anyone",
+    slug: "get-what-you-want-every-time-3-steps-negotiate-anything-with-anyone",
+    tags: [
+      "Difficult Conversations",
+      "Communication Skills",
+      "Personal Development",
+    ],
+    image:
+      "get-what-you-want-every-time-3-steps-negotiate-anything-with-anyone.jpg",
+    podcastHost: "Mel Robbins",
+    isPremium: true,
+    videoId: "MV8xSekK-KE",
+    videoUploadedAt: "2025-05-22T09:00:29Z",
+  },
+  {
+    title: "Understanding This Will Change How You Experience Your Entire Life",
+    slug: "understanding-this-will-change-how-you-experience-your-entire-life",
+    tags: ["Spiritual Development", "Mental Health", "Brain Science"],
+    image:
+      "understanding-this-will-change-how-you-experience-your-entire-life.jpg",
+    podcastHost: "Mel Robbins",
+    isPremium: true,
+    videoId: "H3Yir26FDok",
+    videoUploadedAt: "2025-05-19T09:00:24Z",
+  },
+  {
+    title:
+      "The Secret to Stopping Anxiety & Fear (That Actually Works) | The Mel Robbins Podcast",
+    slug: "secret-stopping-anxiety-fear-mel-robbins-podcast",
+    tags: ["Anxiety Management", "Mental Health", "Psychology"],
+    image: "secret-stopping-anxiety-fear-mel-robbins-podcast.jpg",
+    podcastHost: "Mel Robbins",
+    isPremium: true,
+    videoId: "FJ5tXuBi4EM",
+    videoUploadedAt: "2025-05-26T09:00:18Z",
+  },
+  {
     title:
       "Reinvent Yourself: Let Go of Past Mistakes & Create a New Version of You With Charlamagne tha God",
     slug: "reinvent-yourself-let-go-of-past-mistakes-create-new-version-of-you-with-charlamagne-tha-god",

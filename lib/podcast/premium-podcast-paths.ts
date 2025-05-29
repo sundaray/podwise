@@ -354,6 +354,10 @@ export const premiumPodcastPaths = [
   "/podcasts/mel-robbins/5-signs-incompatible-relationship-3-signs-found-the-one",
   "/podcasts/mel-robbins/6-tools-boost-focus-confidence-creativity",
   "/podcasts/mel-robbins/simple-tool-transform-family-dynamic",
+  "/podcasts/mel-robbins/secret-stopping-anxiety-fear-mel-robbins-podcast",
+  "/podcasts/mel-robbins/understanding-this-will-change-how-you-experience-your-entire-life",
+  "/podcasts/mel-robbins/get-what-you-want-every-time-3-steps-negotiate-anything-with-anyone",
+  "/podcasts/mel-robbins/4-signs-emotionally-immature-parents-how-heal",
 
   // Nathan Barry premium podcasts
   "/podcasts/nathan-barry/how-your-business-can-make-1-million-from-partnerships-in-60-days",
