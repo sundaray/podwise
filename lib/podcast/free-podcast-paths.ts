@@ -97,6 +97,7 @@ export const freePodcastPaths = [
   "/podcasts/mel-robbins/rewire-brain-for-happiness-purpose",
   "/podcasts/mel-robbins/understand-psychology-of-money",
 
+  "/podcasts/nathan-barry/turn-podcast-guesting-into-1m-business",
   "/podcasts/nathan-barry/building-creator-agencies-10m-per-year-sahil-bloom",
   "/podcasts/nathan-barry/personal-branding-expert-bad-habits-costing-millions-dollars",
   "/podcasts/nathan-barry/write-great-books-make-money-for-decades-tim-grahl",

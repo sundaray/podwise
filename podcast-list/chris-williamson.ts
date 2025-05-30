@@ -1,5 +1,15 @@
 export const chrisWilliamsonPodcastList = [
   {
+title: "How To Not Let Your Past Define You - Scott Barry Kaufman",
+slug: "not-let-your-past-define-you-scott-barry-kaufman",
+tags: ["Personal Development", "Mental Health", "Psychology"],
+image: "not-let-your-past-define-you-scott-barry-kaufman.jpg",
+podcastHost: "Chris Williamson",
+isPremium: true,
+videoId: "GOapR7tKQtk",
+videoUploadedAt: "2025-05-29T16:09:12Z" 
+},
+  {
     title: "The Art Of Self Mastery - Shaolin Master Shi Heng Yi",
     slug: "art-self-mastery-shaolin-master-shi-heng-yi",
     tags: ["Self Mastery", "Personal Development", "Eastern Philosophy"],

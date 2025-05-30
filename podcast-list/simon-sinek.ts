@@ -1,7 +1,15 @@
-// Auto-generated podcast list - DO NOT EDIT MANUALLY
-// Generated on 2025-04-29T18:19:05.327Z
-
 export const simonSinekPodcastList = [
+  {
+    title:
+      "The Cure for Nihilism with professor Suzy Welch | A Bit of Optimism Podcast",
+    slug: "cure-for-nihilism-with-professor-suzy-welch",
+    tags: ["Purpose Driven Life", "Personal Development", "Self Discovery"],
+    image: "cure-for-nihilism-with-professor-suzy-welch.jpg",
+    podcastHost: "Simon Sinek",
+    isPremium: true,
+    videoId: "gtQaIGFgyIU",
+    videoUploadedAt: "2025-05-06T13:01:16Z",
+  },
   {
     title:
       "Who Are You, Really? with journalist Maria Shriver | A Bit of Optimism Podcast",

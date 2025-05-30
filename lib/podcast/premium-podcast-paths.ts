@@ -71,6 +71,7 @@ export const premiumPodcastPaths = [
   "/podcasts/andrew-huberman/behaviors-alter-genes-improve-health-performance-melissa-lladro",
   "/podcasts/andrew-huberman/what-pets-want-need-karolina-westlund",
   // Chris Williamson premium podcasts
+  "/podcasts/chris-williamson/not-let-your-past-define-you-scott-barry-kaufman",
   "/podcasts/chris-williamson/art-self-mastery-shaolin-master-shi-heng-yi",
   "/podcasts/chris-williamson/how-to-actually-build-discipline-stanley-mcchrystal",
   "/podcasts/chris-williamson/tell-stories-people-love-will-storr",
@@ -474,8 +475,9 @@ export const premiumPodcastPaths = [
   "/podcasts/scott-d-clary/traditional-values-foundation-success-dennis-prager-radio-host-prageru-founder",
   "/podcasts/scott-d-clary/get-anything-you-want-life-business–grant-cardone-billionaire-real-estate-mogul",
   "/podcasts/scott-d-clary/building-700m-real-estate-portfolio-serving-1-percent-jonathan-campau-luxury-hospitality-pioneer",
-  
+
   // Simon Sinek premium podcasts
+  "/podcasts/simon-sinek/cure-for-nihilism-with-professor-suzy-welch",
   "/podcasts/simon-sinek/who-are-you-really-maria-shriver",
   "/podcasts/simon-sinek/search-for-self-love-with-podcaster-lewis-howes",
   "/podcasts/simon-sinek/does-gender-change-how-we-lead-with-retired-colonel-dede-halfhill",

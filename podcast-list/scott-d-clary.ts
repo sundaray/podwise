@@ -1,6 +1,18 @@
 export const scottDClaryPodcastList = [
   {
     title:
+      "Building a $700M Real Estate Portfolio Serving The 1% | Jonathan Campau - Luxury Hospitality Pioneer",
+    slug: "building-700m-real-estate-portfolio-serving-1-percent-jonathan-campau-luxury-hospitality-pioneer",
+    tags: ["Real Estate Investing", "Luxury Hospitality", "Entrepreneurship"],
+    image:
+      "building-700m-real-estate-portfolio-serving-1-percent-jonathan-campau-luxury-hospitality-pioneer.jpg",
+    podcastHost: "Scott D. Clary",
+    isPremium: true,
+    videoId: "XcFcsBhvOlc",
+    videoUploadedAt: "2025-05-20T21:57:40Z",
+  },
+  {
+    title:
       "Why Traditional Values Are the Foundation of Success | Dennis Prager - Radio Host & PragerU Founder",
     slug: "traditional-values-foundation-success-dennis-prager-radio-host-prageru-founder",
     tags: ["Biblical Wisdom", "Traditional Values", "Cultural Commentary"],

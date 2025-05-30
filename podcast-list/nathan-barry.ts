@@ -1,5 +1,15 @@
 export const nathanBarryPodcastList = [
   {
+    title: "How To Turn Podcast Guesting Into a $1M Business",
+    slug: "turn-podcast-guesting-into-1m-business",
+    tags: ["Podcast Marketing", "Business Growth", "Entrepreneurship"],
+    image: "turn-podcast-guesting-into-1m-business.jpg",
+    podcastHost: "Scott D. Clary",
+    isPremium: false,
+    videoId: "pN9t_kvMqEg",
+    videoUploadedAt: "2025-05-22T16:00:43Z",
+  },
+  {
     title: "Building Creator Agencies to $10M/Year with Sahil Bloom",
     slug: "building-creator-agencies-10m-per-year-sahil-bloom",
     tags: ["Creator Economy", "Business Strategy", "Entrepreneurship"],
