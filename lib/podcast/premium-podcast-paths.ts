@@ -393,6 +393,7 @@ export const premiumPodcastPaths = [
   "/podcasts/nathan-barry/how-to-turn-your-podcast-into-a-full-time-business",
 
   // Dr. Rangan Chatterjee premium podcasts
+  "/podcasts/rangan-chatterjee/these-daily-habits-destroying-your-brain-body-life",
   "/podcasts/rangan-chatterjee/fix-your-negative-thought-patterns-once-you-learn-this-you-will-never-be-the-same-bruce-lipton",
   "/podcasts/rangan-chatterjee/stop-sleepwalking-through-life-say-these-3-words-to-create-your-dream-life-deepak-chopra",
   "/podcasts/rangan-chatterjee/50-days-alone-in-antarctica-how-solitude-revealed-lifes-true-meaning-and-purpose-erling-kagge",

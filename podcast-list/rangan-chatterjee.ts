@@ -1,6 +1,17 @@
 export const ranganChatterjeePodcastList = [
   {
     title:
+      "These Daily Habits Are Destroying Your Brain, Body & Life! (But You Can Reverse Them)",
+    slug: "these-daily-habits-destroying-your-brain-body-life",
+    tags: ["Lifestyle Medicine", "Health Optimization", "Preventive Health"],
+    image: "these-daily-habits-destroying-your-brain-body-life.jpg",
+    podcastHost: "Scott D. Clary",
+    isPremium: true,
+    videoId: "rcVab3a3qVE",
+    videoUploadedAt: "2025-05-16T12:28:29Z",
+  },
+  {
+    title:
       "Fix Your Negative Thought Patterns - Once You Learn This, You'll Never Be The Same | Bruce Lipton",
     slug: "fix-your-negative-thought-patterns-once-you-learn-this-you-will-never-be-the-same-bruce-lipton",
     tags: ["Subconscious Programming", "Epigenetics", "Personal Development"],
