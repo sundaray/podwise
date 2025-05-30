@@ -1,6 +1,22 @@
 export const ranganChatterjeePodcastList = [
   {
     title:
+      "The Shocking Reason You're Tired, Lost & Doubting Yourself | Esther Perel",
+    slug: "shocking-reason-you-are-tired-lost-doubting-yourself-esther-perel",
+    tags: [
+      "Workplace Relationships",
+      "Communication Skills",
+      "Leadership Development",
+    ],
+    image:
+      "shocking-reason-you-are-tired-lost-doubting-yourself-esther-perel.jpg",
+    podcastHost: "Dr Rangan Chatterjee",
+    isPremium: true,
+    videoId: "kYDxqVFYkIg",
+    videoUploadedAt: "2025-05-21T12:01:24Z",
+  },
+  {
+    title:
       "These Daily Habits Are Destroying Your Brain, Body & Life! (But You Can Reverse Them)",
     slug: "these-daily-habits-destroying-your-brain-body-life",
     tags: ["Lifestyle Medicine", "Health Optimization", "Preventive Health"],
