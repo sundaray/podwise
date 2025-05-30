@@ -31,10 +31,13 @@ export default function Premium() {
           <p className="mt-4 text-center text-lg text-pretty text-gray-600">
             Unlock access to our complete library of podcast summaries
           </p>
+          <p className="mt-2 text-center text-lg text-gray-600">
+            New summaries added every week
+          </p>
         </div>
 
         {/* Price Double Notice */}
-        <div className="mx-auto mt-8 max-w-3xl rounded-lg border border-amber-200 bg-amber-50 px-6 py-4">
+        {/* <div className="mx-auto mt-8 max-w-3xl rounded-lg border border-amber-200 bg-amber-50 px-6 py-4">
           <div className="flex items-center">
             <div className="flex-shrink-0">
               <svg
@@ -63,7 +66,7 @@ export default function Premium() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Pricing Cards */}
         <div className="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
