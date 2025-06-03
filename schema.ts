@@ -15,6 +15,20 @@ export const CreatePodcastSummaryFormSchema = z.object({
   ),
 });
 
+export const BlogImageUploadFormSchema = z.object({
+  image: z
+    .instanceof(File, { message: "Please select an image file" })
+    .refine((file) => file.size > 0, "Please select an image file")
+    .refine(
+      (file) => file.size <= 5 * 1024 * 1024,
+      "File size must be less than 5MB",
+    )
+    .refine(
+      (file) => ["image/jpeg", "image/jpg", "image/png"].includes(file.type),
+      "Only PNG and JPG files are allowed",
+    ),
+});
+
 export const FetchYouTubeThumbnailFormSchema = z.object({
   videoId: z.string({ required_error: "YouTube video ID is required" }),
 

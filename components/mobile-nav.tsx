@@ -101,6 +101,7 @@ export function MobileNav() {
         <MobileNavLink href="/about">About</MobileNavLink>
         <MobileNavLink href="/podcasts">Podcasts</MobileNavLink>
         <MobileNavLink href="/tags">Tags</MobileNavLink>
+        <MobileNavLink href="/blog">Blog</MobileNavLink>
         <hr className="border-gray-200" />
 
         {/* ---- auth / pricing area ---- */}

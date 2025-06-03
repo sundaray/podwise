@@ -6,6 +6,10 @@ import {
   CreatePodcastSummaryFormSchema,
   FetchYouTubeThumbnailFormSchema,
 } from "@/schema";
+import { BlogImageUploadFormSchema } from "@/schema";
+import { processBlogImage } from "@/lib/process-blog-image";
+import { uploadBlogImagesToS3 } from "@/lib/upload-blog-images-to-s3";
+
 import { SubmissionResult } from "@conform-to/dom";
 
 type PodcastSummaryResult = SubmissionResult<string[]> & {
@@ -185,6 +189,97 @@ export async function fetchYouTubeUploadDate(
       );
     } else {
       console.error(chalk.red("[fetchYouTubeUploadDate] error: "), error);
+    }
+    return submission.reply({
+      formErrors: ["Something went wrong. Please try again."],
+    });
+  }
+}
+
+type BlogImageResult = SubmissionResult & {
+  success?: boolean;
+  message?: string;
+  paths?: {
+    jpg: {
+      original: string;
+      large: string;
+      medium: string;
+      small: string;
+      srcset: string;
+    };
+    webp: {
+      original: string;
+      large: string;
+      medium: string;
+      small: string;
+      srcset: string;
+    };
+  };
+};
+
+export async function uploadBlogImage(
+  prevState: unknown,
+  formData: FormData,
+): Promise<BlogImageResult> {
+  // Parse and validate form data
+  const submission = parseWithZod(formData, {
+    schema: BlogImageUploadFormSchema,
+  });
+
+  if (submission.status !== "success") {
+    return submission.reply();
+  }
+
+  const { image } = submission.value;
+
+  try {
+    // Get the original filename without extension
+    const originalName = image.name.replace(/\.[^/.]+$/, "");
+
+    // Convert file to buffer
+    const arrayBuffer = await image.arrayBuffer();
+    const imageBuffer = Buffer.from(arrayBuffer);
+
+    console.log(`Processing blog image: ${image.name}`);
+
+    // Process the image to create JPG and WebP variations
+    const processedImages = await processBlogImage(imageBuffer);
+    console.log("Created JPG and WebP variations of the blog image");
+
+    // Upload all images to S3
+    const uploadResults = await uploadBlogImagesToS3(
+      processedImages,
+      originalName,
+    );
+
+    console.log(`Successfully uploaded blog image: ${originalName}`);
+
+    return {
+      ...submission.reply({ resetForm: true }),
+      success: true,
+      message: `Successfully processed and uploaded image: ${originalName}`,
+      paths: {
+        jpg: {
+          original: uploadResults.originalJpg,
+          large: uploadResults.jpgLarge,
+          medium: uploadResults.jpgMedium,
+          small: uploadResults.jpgSmall,
+          srcset: uploadResults.jpgSrcset,
+        },
+        webp: {
+          original: uploadResults.webpOriginal,
+          large: uploadResults.webpLarge,
+          medium: uploadResults.webpMedium,
+          small: uploadResults.webpSmall,
+          srcset: uploadResults.webpSrcset,
+        },
+      },
+    };
+  } catch (error) {
+    if (error instanceof Error) {
+      console.error(chalk.red("[uploadBlogImage] error: "), error.message);
+    } else {
+      console.error(chalk.red("[uploadBlogImage] error: "), error);
     }
     return submission.reply({
       formErrors: ["Something went wrong. Please try again."],

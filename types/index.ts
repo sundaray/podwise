@@ -9,3 +9,12 @@ export type Frontmatter = {
   podcastHost: string;
   isPremium: boolean;
 };
+
+export type BlogFrontmatter = {
+  title: string;
+  description: string;
+  publishedAt: string;
+  updatedAt?: string;
+  tags?: string[];
+  image: string;
+};
