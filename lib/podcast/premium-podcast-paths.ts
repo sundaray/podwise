@@ -46,6 +46,7 @@ export const premiumPodcastPaths = [
   "/podcasts/jay-clouse/meet-woman-making-creators-millions-with-chatbots",
 
   // Andrew huberman premium podcasts
+  "/podcasts/andrew-huberman/healing-from-grief-loss-mary-frances-oconnor",
   "/podcasts/andrew-huberman/how-to-improve-memory-and-focus-using-science-protocols-charan-ranganath",
   "/podcasts/andrew-huberman/the-science-and-art-of-comedy-and-creativity-tom-segura",
   "/podcasts/andrew-huberman/understand-and-apply-the-psychology-of-money-to-gain-greater-happiness-morgan-housel",

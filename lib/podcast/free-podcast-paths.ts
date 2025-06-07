@@ -12,6 +12,7 @@ export const freePodcastPaths = [
   "/podcasts/ed-mylett/if-someone-has-ever-told-you-that-your-idea-was-unrealistic-watch-this-drew-davis",
   "/podcasts/ed-mylett/stop-living-life-on-autopilot-build-life-of-your-dreams-dan-martell",
 
+  "/podcasts/andrew-huberman/essentials-machines-creativity-love-lex-fridman",
   "/podcasts/andrew-huberman/how-different-diets-impact-your-health-christopher-gardner",
   "/podcasts/andrew-huberman/how-to-safeguard-your-hormone-health-and-fertility-shanna-swan",
   "/podcasts/andrew-huberman/charting-the-architecture-of-the-universe-and-human-life-brian-keating",

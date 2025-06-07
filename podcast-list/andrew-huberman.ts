@@ -1,5 +1,29 @@
 export const andrewHubermanPodcastList = [
   {
+    title: "Healing From Grief & Loss | Dr. Mary-Frances O'Connor",
+    slug: "healing-from-grief-loss-mary-frances-oconnor",
+    tags: ["Grief Recovery", "Mental Health", "Attachment Theory"],
+    image: "healing-from-grief-loss-mary-frances-oconnor.jpg",
+    podcastHost: "Andrew Huberman",
+    isPremium: true,
+    videoId: "inUkNZe5H3k",
+    videoUploadedAt: "2025-06-02T12:01:24Z",
+  },
+  {
+    title: "Essentials: Machines, Creativity & Love | Dr. Lex Fridman",
+    slug: "essentials-machines-creativity-love-lex-fridman",
+    tags: [
+      "Artificial Intelligence",
+      "Human Robot Interaction",
+      "Machine Learning",
+    ],
+    image: "essentials-machines-creativity-love-lex-fridman.jpg",
+    podcastHost: "Andrew Huberman",
+    isPremium: false,
+    videoId: "SCzecagKBjY",
+    videoUploadedAt: "2025-05-29T12:00:52Z",
+  },
+  {
     title:
       "Behaviors That Alter Your Genes to Improve Your Health & Performance | Dr. Melissa Ilardo",
     slug: "behaviors-alter-genes-improve-health-performance-melissa-lladro",
