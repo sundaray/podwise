@@ -365,8 +365,9 @@ export const premiumPodcastPaths = [
   "/podcasts/mel-robbins/4-signs-emotionally-immature-parents-how-heal",
 
   // Nathan Barry premium podcasts
-  "/podcasts/nathan-barry/how-your-business-can-make-1-million-from-partnerships-in-60-days",
+  "/podcasts/nathan-barry/founder-success-story-from-side-hustle-to-online-food-empire",
   "/podcasts/nathan-barry/build-100k-personal-brand-in-90-days",
+  "/podcasts/nathan-barry/how-your-business-can-make-1-million-from-partnerships-in-60-days",
   "/podcasts/nathan-barry/new-way-become-full-time-creator-12-months",
   "/podcasts/nathan-barry/how-to-pick-a-business-you-actually-enjoy-in-64-minutes",
   "/podcasts/nathan-barry/building-2m-business-plan-creator-62-minutes",

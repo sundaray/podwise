@@ -1,5 +1,15 @@
 export const nathanBarryPodcastList = [
   {
+    title: "Founder Success Story: From Side Hustle To Online Food Empire",
+    slug: "founder-success-story-from-side-hustle-to-online-food-empire",
+    tags: ["Content Creation", "Email Marketing", "Brand Building"],
+    image: "founder-success-story-from-side-hustle-to-online-food-empire.jpg",
+    podcastHost: "Nathan Barry",
+    isPremium: true,
+    videoId: "VdRijLT13YM",
+    videoUploadedAt: "2025-06-05T16:00:53Z",
+  },
+  {
     title: "How To Turn Podcast Guesting Into a $1M Business",
     slug: "turn-podcast-guesting-into-1m-business",
     tags: ["Podcast Marketing", "Business Growth", "Entrepreneurship"],
