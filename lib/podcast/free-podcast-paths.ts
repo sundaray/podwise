@@ -39,6 +39,7 @@ export const freePodcastPaths = [
   "/podcasts/chris-williamson/think-like-historys-greatest-genius-michael-gelb",
   "/podcasts/chris-williamson/why-mainstream-media-sucks-dave-smith",
 
+  "/podcasts/doac/world-leading-investing-expert-big-shift-coming-investment-15x-5-years",
   "/podcasts/doac/michelle-obama-people-were-running-from-us-because-we-were-black",
   "/podcasts/doac/simon-sinek-you-are-being-lied-about-ai-real-purpose-we-are-teaching-kids-to-not-be-human",
   "/podcasts/doac/ai-agents-emergency-debate-these-jobs-wont-exist-in-24-months",

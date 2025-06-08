@@ -1,14 +1,32 @@
 export const doacPodcastList = [
   {
-title: "Michelle Obama: This Is A Scam! People Were Running From Us Because We Were Black!",
-slug: "michelle-obama-people-were-running-from-us-because-we-were-black",
-tags: ["Personal Development", "Leadership Lessons", "Family Values"],
-image: "michelle-obama-people-were-running-from-us-because-we-were-black.jpg",
-podcastHost: "The Diary Of A CEO",
-isPremium: false,
-videoId: "D67eWcX2XYQ",
-videoUploadedAt: "2025-05-01T07:00:17Z"
-},
+    title:
+      "World Leading Investing Expert: The Big Shift Is Coming! This Investment Could 15x in 5 Years!",
+    slug: "world-leading-investing-expert-big-shift-coming-investment-15x-5-years",
+    tags: [
+      "Investment Strategy",
+      "Artificial Intelligence",
+      "Financial Planning",
+    ],
+    image:
+      "world-leading-investing-expert-big-shift-coming-investment-15x-5-years.jpg",
+    podcastHost: "The Diary Of A CEO",
+    isPremium: false,
+    videoId: "ZznpMh0DegE",
+    videoUploadedAt: "2025-06-05T07:00:37Z",
+  },
+  {
+    title:
+      "Michelle Obama: This Is A Scam! People Were Running From Us Because We Were Black!",
+    slug: "michelle-obama-people-were-running-from-us-because-we-were-black",
+    tags: ["Personal Development", "Leadership Lessons", "Family Values"],
+    image:
+      "michelle-obama-people-were-running-from-us-because-we-were-black.jpg",
+    podcastHost: "The Diary Of A CEO",
+    isPremium: false,
+    videoId: "D67eWcX2XYQ",
+    videoUploadedAt: "2025-05-01T07:00:17Z",
+  },
   {
     title:
       "The Savings Expert: The Truth About America Collapsing! The Cost Of Living Is About To Skyrocket!",
