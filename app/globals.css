@@ -131,8 +131,24 @@
     @apply mt-7 mb-2 text-2xl font-semibold tracking-tight text-pretty text-gray-900;
   }
 
+  .podcast-summary h3 {
+    @apply mt-7 mb-2 text-xl font-semibold tracking-tight text-pretty text-gray-900;
+  }
+
   .podcast-summary p {
     @apply mb-7 leading-7 text-gray-700 last:mb-0;
+  }
+
+  .podcast-summary ul {
+    @apply mb-7 list-disc space-y-2 pl-8 text-gray-700 last:mb-0;
+  }
+
+  .podcast-summary ol {
+    @apply mb-7 list-decimal space-y-2 pl-8 text-gray-700 last:mb-0;
+  }
+
+  .podcast-summary li {
+    @apply leading-7;
   }
 }
 
