@@ -72,6 +72,9 @@ export const premiumPodcastPaths = [
   "/podcasts/andrew-huberman/behaviors-alter-genes-improve-health-performance-melissa-lladro",
   "/podcasts/andrew-huberman/what-pets-want-need-karolina-westlund",
   // Chris Williamson premium podcasts
+  "/podcasts/chris-williamson/fix-brain-addiction-anxiety-worry-russell-kennedy",
+  "/podcasts/chris-williamson/secret-becoming-confident-speaker",
+  "/podcasts/chris-williamson/build-unstoppable-confidence-jocko-willink",
   "/podcasts/chris-williamson/not-let-your-past-define-you-scott-barry-kaufman",
   "/podcasts/chris-williamson/art-self-mastery-shaolin-master-shi-heng-yi",
   "/podcasts/chris-williamson/how-to-actually-build-discipline-stanley-mcchrystal",
