@@ -26,7 +26,7 @@ export default function BlogPage() {
           Blog
         </h1>
 
-        <div className="space-y-4">
+        <div className="space-y-2">
           {posts.map((post) => (
             <article
               key={post.slug}
