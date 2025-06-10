@@ -27,7 +27,7 @@ export default function MelRobbinsPodcastPage() {
         <p className="mb-7 leading-7 text-gray-700">
           Mel Robbins is a New York Times bestselling author and world-renowned
           expert on mindset, motivation, and behavior change. At 57 years old,
-          she's the leading female voice in personal development and
+          she&apos;s the leading female voice in personal development and
           transformation, with her work translated into 41 languages and
           millions of books sold worldwide.
         </p>
@@ -188,7 +188,7 @@ export default function MelRobbinsPodcastPage() {
               actions), and accountability (maintain momentum).
             </p>
             <p className="mb-7 leading-7 text-gray-700">
-              Manifestation works through your brain's selective filtering
+              Manifestation works through your brain&apos;s selective filtering
               system. When you repeatedly visualize and feel grateful for
               achieving something, you create new neural pathways that prime
               your brain to notice relevant opportunities. Visualization
@@ -206,8 +206,8 @@ export default function MelRobbinsPodcastPage() {
 
           <div>
             <h3 className="mb-3 text-xl font-semibold text-gray-900">
-              4. Dr. Ramani: Are You Dealing with a Narcissist? Here's How to
-              Spot Them
+              4. Dr. Ramani: Are You Dealing with a Narcissist? Here&apos;s How
+              to Spot Them
             </h3>
             <p className="mb-7 leading-7 text-gray-700">
               Dr. Ramani Durvasula clarifies that narcissism is a personality
@@ -230,7 +230,7 @@ export default function MelRobbinsPodcastPage() {
               others as objects to serve their needs and only think about you
               when they need something. Never confront a narcissist directly as
               it will backfire. Instead, focus on healing yourself and
-              understanding that their behavior isn't your fault.
+              understanding that their behavior isn&apos;t your fault.
             </p>
           </div>
 
@@ -249,18 +249,18 @@ export default function MelRobbinsPodcastPage() {
             </p>
             <p className="mb-7 leading-7 text-gray-700">
               The key to moving from Level 2 to Level 3 is having the hard
-              conversation you're avoiding. Focus on protecting your energy
-              rather than begging for commitment: "I'm investing time and energy
-              I wouldn't give if we were still seeing other people. I need to
-              know if you're in the same place."
+              conversation you&apos;re avoiding. Focus on protecting your energy
+              rather than begging for commitment: "I&apos;m investing time and
+              energy I wouldn&apos;t give if we were still seeing other people.
+              I need to know if you&apos;re in the same place."
             </p>
             <p className="mb-7 leading-7 text-gray-700">
               Level 4 compatibility is whether you can get your fundamental
               needs met and whether the relationship flows naturally without
-              constant friction. The brutal truth: you cannot change someone
+              constant friction. The brutal truth: you can&apos;t change someone
               else, and "love is not all you need." The foundation is self-love
-              as action - treating yourself like someone you're responsible for
-              protecting.
+              as action - treating yourself like someone you&apos;re responsible
+              for protecting.
             </p>
           </div>
         </div>
