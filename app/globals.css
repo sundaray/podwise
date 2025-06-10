@@ -131,12 +131,20 @@
     @apply mt-7 mb-2 text-2xl font-semibold tracking-tight text-pretty text-gray-900;
   }
 
+  .podcast-summary h2 a {
+    @apply text-2xl font-semibold tracking-tight text-pretty text-sky-600 hover:underline;
+  }
+
   .podcast-summary h3 {
     @apply mt-7 mb-2 text-xl font-semibold tracking-tight text-pretty text-gray-900;
   }
 
   .podcast-summary p {
     @apply mb-7 leading-7 text-gray-700 last:mb-0;
+  }
+
+  .podcast-summary p a {
+    @apply text-sky-600 hover:underline;
   }
 
   .podcast-summary ul {
