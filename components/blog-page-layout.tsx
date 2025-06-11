@@ -79,7 +79,7 @@ export async function BlogPageLayout({
               </time>
             </div>
           </div>
-          <div className="relative my-7 aspect-[16/9] w-full bg-gray-100">
+          <div className="relative my-7 aspect-[3/2] w-full bg-gray-100">
             <picture className="absolute inset-0 h-full w-full">
               <source
                 type="image/webp"
@@ -103,9 +103,9 @@ export async function BlogPageLayout({
               />
               <img
                 src={`https://podcast-summaries-dev.s3.amazonaws.com/blog-images/${image}`}
-                alt={`Thumbnail of podcast titled ${title}`}
-                width="1280"
-                height="720"
+                alt={`Thumbnail of blog post titled ${title}`}
+                width="1536"
+                height="1024"
                 loading="eager"
                 className="h-full w-full object-cover"
               />
