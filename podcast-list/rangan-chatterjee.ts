@@ -21,7 +21,7 @@ export const ranganChatterjeePodcastList = [
     slug: "these-daily-habits-destroying-your-brain-body-life",
     tags: ["Lifestyle Medicine", "Health Optimization", "Preventive Health"],
     image: "these-daily-habits-destroying-your-brain-body-life.jpg",
-    podcastHost: "Scott D. Clary",
+    podcastHost: "Dr Rangan Chatterjee",
     isPremium: true,
     videoId: "rcVab3a3qVE",
     videoUploadedAt: "2025-05-16T12:28:29Z",
