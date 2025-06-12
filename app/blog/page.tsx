@@ -26,11 +26,11 @@ export default function BlogPage() {
           Blog
         </h1>
 
-        <div className="space-y-2">
+        <div className="space-y-2 divide-y-2 divide-dotted divide-gray-200">
           {posts.map((post) => (
             <article
               key={post.slug}
-              className="group relative rounded-lg p-6 transition-colors hover:bg-gray-100"
+              className="group relative p-6 transition-colors hover:rounded-lg hover:bg-gray-100"
             >
               <time
                 dateTime={post.publishedAt}
