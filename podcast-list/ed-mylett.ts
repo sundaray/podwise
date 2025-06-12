@@ -82,10 +82,10 @@ export const edMylettPodcastList = [
   {
     title:
       "Destroy The Victim Mindset, Build Generational Success, And BE A LEADER Feat. Jeezy",
-    slug: "destroy-victim-mindset–build-generational-success-be-leader-jeezy",
+    slug: "destroy-victim-mindset-build-generational-success-be-leader-jeezy",
     tags: ["Leadership", "Adversity", "Personal Development"],
     image:
-      "destroy-victim-mindset–build-generational-success-be-leader-jeezy.jpg",
+      "destroy-victim-mindset-build-generational-success-be-leader-jeezy.jpg",
     podcastHost: "Ed Mylett",
     isPremium: false,
     videoId: "mg9U4V4MN14",
