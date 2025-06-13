@@ -1,5 +1,25 @@
 export const chrisWilliamsonPodcastList = [
   {
+    title: "41 Harsh Truths Nobody Wants To Admit - Alex Hormozi",
+    slug: "41-harsh-truths-nobody-wants-admit-alex-hormozi",
+    tags: ["Personal Development", "Success", "Mindset"],
+    image: "41-harsh-truths-nobody-wants-admit-alex-hormozi.jpg",
+    podcastHost: "Chris Williamson",
+    isPremium: true,
+    videoId: "ky1oHHJ5Ne8",
+    videoUploadedAt: "2025-06-09T15:01:12Z",
+  },
+  {
+    title: "Decoding The Secrets Of A Meaningful Life - Jimmy Carr",
+    slug: "decoding-secrets-meaningful-life-jimmy-carr",
+    tags: ["Personal Development", "Success", "Mindfulness"],
+    image: "decoding-secrets-meaningful-life-jimmy-carr.jpg",
+    podcastHost: "Chris Williamson",
+    isPremium: true,
+    videoId: "f2UK2saipp4",
+    videoUploadedAt: "2025-06-12T15:01:11Z",
+  },
+  {
     title:
       "Drugged In Colombia, Escaping Jail & Defeating UFC Wrestling - Craig Jones",
     slug: "drugged-colombia-escaping-jail-defeating-ufc-wrestling-craig-jones",

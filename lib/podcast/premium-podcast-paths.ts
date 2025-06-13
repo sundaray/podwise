@@ -72,6 +72,7 @@ export const premiumPodcastPaths = [
   "/podcasts/andrew-huberman/behaviors-alter-genes-improve-health-performance-melissa-lladro",
   "/podcasts/andrew-huberman/what-pets-want-need-karolina-westlund",
   // Chris Williamson premium podcasts
+  "/podcasts/chris-williamson/41-harsh-truths-nobody-wants-admit-alex-hormozi",
   "/podcasts/chris-williamson/fix-brain-addiction-anxiety-worry-russell-kennedy",
   "/podcasts/chris-williamson/secret-becoming-confident-speaker",
   "/podcasts/chris-williamson/build-unstoppable-confidence-jocko-willink",
@@ -118,6 +119,7 @@ export const premiumPodcastPaths = [
   "/podcasts/chris-williamson/psychology-finding-meaning-life-john-vervaeke",
   "/podcasts/chris-williamson/mastering-your-emotions-connor-beaton",
   "/podcasts/chris-williamson/build-extraordinary-life-tony-robbins",
+  "/podcasts/chris-williamson/decoding-secrets-meaningful-life-jimmy-carr",
 
   // Daily Stoic premium podcasts
   "/podcasts/daily-stoic/why-you-dont-want-to-win-the-argument-jefferson-fisher-and-ryan-holiday",
