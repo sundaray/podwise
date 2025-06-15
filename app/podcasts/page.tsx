@@ -13,6 +13,7 @@ import { Icons } from "@/components/icons";
 import { andrewHubermanPodcastList } from "@/podcast-list/andrew-huberman";
 import { chrisWilliamsonPodcastList } from "@/podcast-list/chris-williamson";
 import { dailyStoicPodcastList } from "@/podcast-list/daily-stoic";
+import { davidPerellPodcastList } from "@/podcast-list/david-perell";
 import { doacPodcastList } from "@/podcast-list/doac";
 import { edMylettPodcastList } from "@/podcast-list/ed-mylett";
 import { jayClousePodcastList } from "@/podcast-list/jay-clouse";
@@ -96,6 +97,8 @@ function getHostPathForPodcast(podcast: any) {
     return "chris-williamson";
   if (dailyStoicPodcastList.some((p) => p.slug === podcast.slug))
     return "daily-stoic";
+  if (davidPerellPodcastList.some((p) => p.slug === podcast.slug))
+    return "david-perell";
   if (doacPodcastList.some((p) => p.slug === podcast.slug)) return "doac";
   if (edMylettPodcastList.some((p) => p.slug === podcast.slug))
     return "ed-mylett";

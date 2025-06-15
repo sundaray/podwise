@@ -13,6 +13,7 @@ import { Icons } from "@/components/icons";
 // Import all podcast lists
 import { chrisWilliamsonPodcastList } from "@/podcast-list/chris-williamson";
 import { dailyStoicPodcastList } from "@/podcast-list/daily-stoic";
+import { davidPerellPodcastList } from "@/podcast-list/david-perell";
 import { doacPodcastList } from "@/podcast-list/doac";
 import { edMylettPodcastList } from "@/podcast-list/ed-mylett";
 import { jackNeelPodcastList } from "@/podcast-list/jack-neel";
@@ -36,6 +37,10 @@ function getAllPodcasts() {
     ...dailyStoicPodcastList.map((podcast) => ({
       ...podcast,
       hostPath: "daily-stoic",
+    })),
+    ...davidPerellPodcastList.map((podcast) => ({
+      ...podcast,
+      hostPath: "david-perell",
     })),
     ...doacPodcastList.map((podcast) => ({
       ...podcast,
@@ -200,7 +205,7 @@ export default async function TagPage({ params, searchParams }: TagPageProps) {
             />
           ))}
         </div>
-      ) : ( 
+      ) : (
         <p className="text-center text-red-600">No podcasts found</p>
       )}
 
