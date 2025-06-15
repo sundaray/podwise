@@ -71,6 +71,7 @@ function getAllPodcasts() {
     ...andrewHubermanPodcastList,
     ...chrisWilliamsonPodcastList,
     ...dailyStoicPodcastList,
+    ...davidPerellPodcastList,
     ...doacPodcastList,
     ...edMylettPodcastList,
     ...jayClousePodcastList,
