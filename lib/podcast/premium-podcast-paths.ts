@@ -1,4 +1,14 @@
 export const premiumPodcastPaths = [
+  // David Perell premium podcasts
+  "/podcasts/david-perell/learn-new-way-storytelling-72-minutes-will-storr",
+  "/podcasts/david-perell/case-against-writing-with-ai-ezra-klein",
+  "/podcasts/david-perell/dean-koontz-120-novels-published-500m-copies-sold",
+  "/podcasts/david-perell/harvard-professor-explains-rules-writing-steven-pinker",
+  "/podcasts/david-perell/learn-writing-from-oscar-winner-eric-roth",
+  "/podcasts/david-perell/new-way-think-about-writing-paul-harding",
+  "/podcasts/david-perell/84-minute-comedy-writing-masterclass-michael-jamin",
+  "/podcasts/david-perell/writing-visualized-michael-dean",
+
   // Paul Millerd premium podcasts
   "/podcasts/paul-millerd/achieve-nervous-system-mastery-jonny-miller",
   "/podcasts/paul-millerd/quit-google-write-online-anne-laure-le-cunff",
