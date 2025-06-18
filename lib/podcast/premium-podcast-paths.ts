@@ -290,6 +290,11 @@ export const premiumPodcastPaths = [
   "/podcasts/jay-shetty/andrew-huberman-hack-to-increase-dopamine-levels-boost-motivation",
 
   // Lewis Howes premium podcasts
+  "/podcasts/lewis-howes/quit-job-sold-everything-sailed-world",
+  "/podcasts/lewis-howes/blocking-abundance-with-these-wounds-change-this-immediately",
+  "/podcasts/lewis-howes/neuroscientist-root-cause-anxiety-heal-without-medication-caroline-leaf",
+  "/podcasts/lewis-howes/matthew-hussey-if-they-start-doing-this-stop-texting-them-immediately",
+  "/podcasts/lewis-howes/gene-simmons-mom-survived-3-nazi-concentration-camps-brought-america-with-nothing",
   "/podcasts/lewis-howes/the-spiritual-teacher-the-universe-is-love-awaken-to-the-new-consciousness-to-manifest-anything",
   "/podcasts/lewis-howes/the-investing-expert-why-investing-is-the-biggest-life-hack-and-everyone-should-start-today",
   "/podcasts/lewis-howes/mel-robbins-let-them-theory-transform-life",

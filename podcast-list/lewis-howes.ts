@@ -1,14 +1,74 @@
 export const lewisHowesPodcastList = [
   {
-title: "Stanford Psychologist: Ask This 2-Part Question! It Will Transform Your Communication Skills!",
-slug: "stanford-psychologist-ask-this-2-part-question-transform-your-communication-skills",
-tags: ["Communication Skills", "Psychology", "Personal Development"],
-image: "stanford-psychologist-ask-this-2-part-question-transform-your-communication-skills.jpg",
-podcastHost: "Lewis Howes",
-isPremium: true,
-videoId: "__Y33qftk4o",
-videoUploadedAt: "2025-05-21T14:00:07Z"
-},
+    title:
+      "I Quit My Job, Sold Everything & Sailed the World. Here’s Why I Did It.",
+    slug: "quit-job-sold-everything-sailed-world",
+    tags: ["Personal Development", "Career Change", "Courage"],
+    image: "quit-job-sold-everything-sailed-world.jpg",
+    podcastHost: "Lewis Howes",
+    isPremium: true,
+    videoId: "pFpP0iaqclI",
+    videoUploadedAt: "2025-06-18T14:00:07Z",
+  },
+  {
+    title:
+      "Neuroscientist: The Root Cause of Anxiety & How to Heal it WITHOUT Medication! | Dr. Caroline Leaf",
+    slug: "neuroscientist-root-cause-anxiety-heal-without-medication-caroline-leaf",
+    tags: ["Mental Health", "Anxiety Management", "Mind Body Connection"],
+    image:
+      "neuroscientist-root-cause-anxiety-heal-without-medication-caroline-leaf.jpg",
+    podcastHost: "Lewis Howes",
+    isPremium: true,
+    videoId: "n56ULzVAJIw",
+    videoUploadedAt: "2025-06-16T14:00:07Z",
+  },
+  {
+    title:
+      "You Are Blocking Your Abundance with These Wounds! Change This Immediately!",
+    slug: "blocking-abundance-with-these-wounds-change-this-immediately",
+    tags: ["Personal Development", "Spiritual Healing", "Abundance Mindset"],
+    image: "blocking-abundance-with-these-wounds-change-this-immediately.jpg",
+    podcastHost: "Lewis Howes",
+    isPremium: true,
+    videoId: "SFxR3Lpde6Q",
+    videoUploadedAt: "2025-06-11T14:00:07Z",
+  },
+  {
+    title:
+      "Matthew Hussey: If They Start Doing This, STOP Texting Them Immediately!",
+    slug: "matthew-hussey-if-they-start-doing-this-stop-texting-them-immediately",
+    tags: ["Relationship Advice", "Dating Psychology", "Personal Development"],
+    image:
+      "matthew-hussey-if-they-start-doing-this-stop-texting-them-immediately.jpg",
+    podcastHost: "Lewis Howes",
+    isPremium: true,
+    videoId: "pgipiutprLc",
+    videoUploadedAt: "2025-06-09T14:00:07Z",
+  },
+  {
+    title:
+      "Gene Simmons: My Mom Survived 3 Nazi Concentration Camps & Brought Me to America with Nothing!",
+    slug: "gene-simmons-mom-survived-3-nazi-concentration-camps-brought-america-with-nothing",
+    tags: ["Personal Development", "Success Mindset", "Entrepreneurship"],
+    image:
+      "gene-simmons-mom-survived-3-nazi-concentration-camps-brought-america-with-nothing.jpg",
+    podcastHost: "Lewis Howes",
+    isPremium: true,
+    videoId: "UM04mdhTryA",
+    videoUploadedAt: "2025-06-04T14:00:07Z",
+  },
+  {
+    title:
+      "Stanford Psychologist: Ask This 2-Part Question! It Will Transform Your Communication Skills!",
+    slug: "stanford-psychologist-ask-this-2-part-question-transform-your-communication-skills",
+    tags: ["Communication Skills", "Psychology", "Personal Development"],
+    image:
+      "stanford-psychologist-ask-this-2-part-question-transform-your-communication-skills.jpg",
+    podcastHost: "Lewis Howes",
+    isPremium: true,
+    videoId: "__Y33qftk4o",
+    videoUploadedAt: "2025-05-21T14:00:07Z",
+  },
   {
     title:
       "The No. 1 Skill For Anyone to Learn! This Creates Movement in Your Life!",
