@@ -1,5 +1,25 @@
 export const chrisWilliamsonPodcastList = [
   {
+    title: "Is Church The New Counterculture? - Girls Gone Bible",
+    slug: "church-new-counterculture-girls-gone-bible",
+    tags: ["Religious Revival", "Modern Christianity", "Mental Health"],
+    image: "church-new-counterculture-girls-gone-bible.jpg",
+    podcastHost: "Chris Williamson",
+    isPremium: false,
+    videoId: "6HfX6gwRA4o",
+    videoUploadedAt: "2025-06-16T15:00:09Z",
+  },
+  {
+    title: "Chasing The Most Hated Hacker In History - Joe Tidy",
+    slug: "chasing-most-hated-hacker-joe-tidy",
+    tags: ["Cybersecurity", "Hacking Culture", "Digital Crime"],
+    image: "chasing-most-hated-hacker-joe-tidy.jpg",
+    podcastHost: "Chris Williamson",
+    isPremium: false,
+    videoId: "aeXWY3TIwFU",
+    videoUploadedAt: "2025-06-14T15:00:03Z",
+  },
+  {
     title: "41 Harsh Truths Nobody Wants To Admit - Alex Hormozi",
     slug: "41-harsh-truths-nobody-wants-admit-alex-hormozi",
     tags: ["Personal Development", "Success", "Mindset"],

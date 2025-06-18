@@ -39,6 +39,8 @@ export const freePodcastPaths = [
   "/podcasts/chris-williamson/think-like-historys-greatest-genius-michael-gelb",
   "/podcasts/chris-williamson/why-mainstream-media-sucks-dave-smith",
   "/podcasts/chris-williamson/drugged-colombia-escaping-jail-defeating-ufc-wrestling-craig-jones",
+  "/podcasts/chris-williamson/chasing-most-hated-hacker-joe-tidy",
+  "/podcasts/chris-williamson/church-new-counterculture-girls-gone-bible",
 
   "/podcasts/doac/world-leading-investing-expert-big-shift-coming-investment-15x-5-years",
   "/podcasts/doac/michelle-obama-people-were-running-from-us-because-we-were-black",
