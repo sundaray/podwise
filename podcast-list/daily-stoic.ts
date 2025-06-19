@@ -1,5 +1,37 @@
 export const dailyStoicPodcastList = [
   {
+    title: "You Can Change Your Personality To Achieve More | Olga Khazan",
+    slug: "change-personality-achieve-more-olga-khazan",
+    tags: ["Personal Development", "Habit Formation", "Behavioral Change"],
+    image: "change-personality-achieve-more-olga-khazan.jpg",
+    podcastHost: "Daily Stoic",
+    isPremium: true,
+    videoId: "o-8By_klJP0",
+    videoUploadedAt: "2025-05-27T18:28:07Z",
+  },
+  {
+    title: "How To Raise Kids In A Cruel World | Melinda Wenner Moyer",
+    slug: "raise-kids-cruel-world-melinda-wenner-moyer",
+    tags: ["Parenting", "Moral Education", "Child Development"],
+    image: "raise-kids-cruel-world-melinda-wenner-moyer.jpg",
+    podcastHost: "Daily Stoic",
+    isPremium: true,
+    videoId: "VvXZMrLZiyI",
+    videoUploadedAt: "2025-06-18T19:48:08Z",
+  },
+  {
+    title:
+      "Body Language Expert Shares Unusual Tips For Awkward People (Vanessa Van Edwards & Ryan Holiday)",
+    slug: "body-language-expert-shares-unusual-tips-for-awkward-people-vanessa-van-edwards-ryan-holiday",
+    tags: ["Body Language", "Social Skills", "Communication"],
+    image:
+      "body-language-expert-shares-unusual-tips-for-awkward-people-vanessa-van-edwards-ryan-holiday.jpg",
+    podcastHost: "Daily Stoic",
+    isPremium: true,
+    videoId: "Ak-NLoahNnU",
+    videoUploadedAt: "2025-06-02T15:53:28Z",
+  },
+  {
     title:
       "Why You Don't Want To Win The Argument: Jefferson Fisher & Ryan Holiday",
     slug: "why-you-dont-want-to-win-the-argument-jefferson-fisher-and-ryan-holiday",

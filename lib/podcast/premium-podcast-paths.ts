@@ -167,6 +167,9 @@ export const premiumPodcastPaths = [
   "/podcasts/daily-stoic/brigid-delaney-life-changing-year-living-like-stoic",
   "/podcasts/daily-stoic/how-high-risk-takers-are-shaping-our-world-nate-silver",
   "/podcasts/daily-stoic/stop-feeling-lost-in-career-timm-chiusano",
+  "/podcasts/daily-stoic/body-language-expert-shares-unusual-tips-for-awkward-people-vanessa-van-edwards-ryan-holiday",
+  "/podcasts/daily-stoic/raise-kids-cruel-world-melinda-wenner-moyer",
+  "/podcasts/daily-stoic/change-personality-achieve-more-olga-khazan",
 
   // Diary Of A CEO premium podcasts
   "/podcasts/doac/savings-expert-truth-about-america-collapsing-cost-living-skyrocket",
