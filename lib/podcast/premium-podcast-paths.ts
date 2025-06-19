@@ -170,6 +170,8 @@ export const premiumPodcastPaths = [
   "/podcasts/daily-stoic/body-language-expert-shares-unusual-tips-for-awkward-people-vanessa-van-edwards-ryan-holiday",
   "/podcasts/daily-stoic/raise-kids-cruel-world-melinda-wenner-moyer",
   "/podcasts/daily-stoic/change-personality-achieve-more-olga-khazan",
+  "/podcasts/daily-stoic/control-attention-control-you-emmy-winning-journalist-chris-hayes",
+  "/podcasts/daily-stoic/mlk-malcom-x-civil-rights-strategy-peniel-joseph-ryan-holiday",
 
   // Diary Of A CEO premium podcasts
   "/podcasts/doac/savings-expert-truth-about-america-collapsing-cost-living-skyrocket",

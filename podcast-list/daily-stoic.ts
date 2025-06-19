@@ -1,5 +1,27 @@
 export const dailyStoicPodcastList = [
   {
+title: "MLK, Malcom X, & The Civil Rights Strategy | Dr. Peniel Joseph & Ryan Holiday",
+slug: "mlk-malcom-x-civil-rights-strategy-peniel-joseph-ryan-holiday",
+tags: ["Civil Rights", "Leadership Strategy", "Social Movements"],
+image: "mlk-malcom-x-civil-rights-strategy-peniel-joseph-ryan-holiday.jpg",
+podcastHost: "Daily Stoic",
+isPremium: true,
+videoId: "BXOLLOk-n40",
+videoUploadedAt: "2025-05-21T18:34:43Z"
+},
+  {
+    title:
+      "If They Control Your Attention, They Control You | Emmy-Winning Journalist Chris Hayes",
+    slug: "control-attention-control-you-emmy-winning-journalist-chris-hayes",
+    tags: ["Attention Economy", "Media Literacy", "Digital Wellness"],
+    image:
+      "control-attention-control-you-emmy-winning-journalist-chris-hayes.jpg",
+    podcastHost: "Daily Stoic",
+    isPremium: true,
+    videoId: "MkJbAMh80S0",
+    videoUploadedAt: "2025-06-08T10:00:35Z",
+  },
+  {
     title: "You Can Change Your Personality To Achieve More | Olga Khazan",
     slug: "change-personality-achieve-more-olga-khazan",
     tags: ["Personal Development", "Habit Formation", "Behavioral Change"],
