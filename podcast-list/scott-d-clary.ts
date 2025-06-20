@@ -15,6 +15,7 @@ export const scottDClaryPodcastList = [
     title:
       "The Marketing Genius Who Built $50B in Client Revenue | Jay Abraham - Strategy & Performance Expert",
     slug: "marketing-genius-built-50b-client-revenue-jay-abraham-strategy-performance-expert",
+    tags: ["Business Strategy", "Entrepreneurship", "Revenue Growth"]
     image:
       "marketing-genius-built-50b-client-revenue-jay-abraham-strategy-performance-expert.jpg",
     podcastHost: "Scott D. Clary",
