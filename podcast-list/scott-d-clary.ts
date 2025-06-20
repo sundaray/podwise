@@ -1,6 +1,18 @@
 export const scottDClaryPodcastList = [
   {
     title:
+      "Why Fast Learning Is the Only Protection Against AI Disruption | Jody Glidden - Tech Entrepreneur",
+    slug: "fast-learning-only-protection-against-ai-disruption-jody-glidden-tech-entrepreneur",
+    tags: ["Artificial Intelligence", "Entrepreneurship", "Career Development"],
+    image:
+      "fast-learning-only-protection-against-ai-disruption-jody-glidden-tech-entrepreneur.jpg",
+    podcastHost: "Scott D. Clary",
+    isPremium: true,
+    videoId: "0qN_6bog0u4",
+    videoUploadedAt: "2025-06-09T23:13:26Z",
+  },
+  {
+    title:
       "Building a $700M Real Estate Portfolio Serving The 1% | Jonathan Campau - Luxury Hospitality Pioneer",
     slug: "building-700m-real-estate-portfolio-serving-1-percent-jonathan-campau-luxury-hospitality-pioneer",
     tags: ["Real Estate Investing", "Luxury Hospitality", "Entrepreneurship"],
