@@ -1,5 +1,63 @@
 export const melRobbinsPodcastList = [
   {
+    title:
+      "What Every Dad Should Know: Lessons From Literary Legend James Patterson",
+    slug: "what-every-dad-should-know-lessons-from-literary-legend-james-patterson",
+    tags: ["Fatherhood", "Parenting", "Family Relationships"],
+    image:
+      "what-every-dad-should-know-lessons-from-literary-legend-james-patterson.jpg",
+    podcastHost: "Mel Robbins",
+    isPremium: true,
+    videoId: "Mbad2F4fvCc",
+    videoUploadedAt: "2025-06-12T09:00:26Z",
+  },
+  {
+    title:
+      "This Life-Changing Conversation Will Help You Make Peace With Who You Are",
+    slug: "this-life-changing-conversation-will-help-you-make-peace-with-who-you-are",
+    tags: ["Personal Development", "Trauma Healing", "Resilience Building"],
+    image:
+      "this-life-changing-conversation-will-help-you-make-peace-with-who-you-are.jpg",
+    podcastHost: "Mel Robbins",
+    isPremium: true,
+    videoId: "rN83hi9QxUM",
+    videoUploadedAt: "2025-06-19T09:01:18Z",
+  },
+  {
+    title:
+      "This Conversation Will Change Your Life: Do This to Find Purpose & Meaning",
+    slug: "this-conversation-will-change-your-life-find-purpose-meaning",
+    tags: ["Social Justice", "Criminal Justice Reform", "Hope and Resilience"],
+    image: "this-conversation-will-change-your-life-find-purpose-meaning.jpg",
+    podcastHost: "Mel Robbins",
+    isPremium: true,
+    videoId: "z4RNQk77Qro",
+    videoUploadedAt: "2025-06-05T09:01:34Z",
+  },
+  {
+    title:
+      "The Ultimate Guide to Women’s Hormones: Use Science to Reset Your Body, Balance Mood, & Feel Amazing",
+    slug: "women-hormones-reset-your-body-balance-mood-feel-amazing",
+    tags: ["Women's Health", "Hormone Balance", "Reproductive Health"],
+    image: "women-hormones-reset-your-body-balance-mood-feel-amazing.jpg",
+    podcastHost: "Mel Robbins",
+    isPremium: true,
+    videoId: "pawDZoLP6ic",
+    videoUploadedAt: "2025-05-29T09:01:26Z",
+  },
+  {
+    title:
+      "A Powerful Mindset Makes You Unstoppable: How to Train Your Mind & Unlock Your Full Potential",
+    slug: "powerful-mindset-makes-you-unstoppable-train-your-mind-unlock-your-full-potential",
+    tags: ["Mental Toughness", "Peak Performance", "Personal Development"],
+    image:
+      "powerful-mindset-makes-you-unstoppable-train-your-mind-unlock-your-full-potential.jpg",
+    podcastHost: "Mel Robbins",
+    isPremium: true,
+    videoId: "UlOEJC9rqK4",
+    videoUploadedAt: "2025-06-02T09:00:51Z",
+  },
+  {
     title: "4 Signs of Emotionally Immature Parents & How to Heal",
     slug: "4-signs-emotionally-immature-parents-how-heal",
     tags: ["Emotional Intelligence", "Family Dynamics", "Mental Health"],

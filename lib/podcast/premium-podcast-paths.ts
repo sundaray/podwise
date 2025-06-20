@@ -172,6 +172,7 @@ export const premiumPodcastPaths = [
   "/podcasts/daily-stoic/change-personality-achieve-more-olga-khazan",
   "/podcasts/daily-stoic/control-attention-control-you-emmy-winning-journalist-chris-hayes",
   "/podcasts/daily-stoic/mlk-malcom-x-civil-rights-strategy-peniel-joseph-ryan-holiday",
+  "/podcasts/daily-stoic/deadly-cost-honor-texas-bryan-burrough-wild-west",
 
   // Diary Of A CEO premium podcasts
   "/podcasts/doac/savings-expert-truth-about-america-collapsing-cost-living-skyrocket",
@@ -388,6 +389,11 @@ export const premiumPodcastPaths = [
   "/podcasts/mel-robbins/understanding-this-will-change-how-you-experience-your-entire-life",
   "/podcasts/mel-robbins/get-what-you-want-every-time-3-steps-negotiate-anything-with-anyone",
   "/podcasts/mel-robbins/4-signs-emotionally-immature-parents-how-heal",
+  "/podcasts/mel-robbins/powerful-mindset-makes-you-unstoppable-train-your-mind-unlock-your-full-potential",
+  "/podcasts/mel-robbins/women-hormones-reset-your-body-balance-mood-feel-amazing",
+  "/podcasts/mel-robbins/this-conversation-will-change-your-life-find-purpose-meaning",
+  "/podcasts/mel-robbins/this-life-changing-conversation-will-help-you-make-peace-with-who-you-are",
+  "/podcasts/mel-robbins/what-every-dad-should-know-lessons-from-literary-legend-james-patterson",
 
   // Nathan Barry premium podcasts
   "/podcasts/nathan-barry/founder-success-story-from-side-hustle-to-online-food-empire",

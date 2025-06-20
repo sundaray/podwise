@@ -1,14 +1,26 @@
 export const dailyStoicPodcastList = [
   {
-title: "MLK, Malcom X, & The Civil Rights Strategy | Dr. Peniel Joseph & Ryan Holiday",
-slug: "mlk-malcom-x-civil-rights-strategy-peniel-joseph-ryan-holiday",
-tags: ["Civil Rights", "Leadership Strategy", "Social Movements"],
-image: "mlk-malcom-x-civil-rights-strategy-peniel-joseph-ryan-holiday.jpg",
-podcastHost: "Daily Stoic",
-isPremium: true,
-videoId: "BXOLLOk-n40",
-videoUploadedAt: "2025-05-21T18:34:43Z"
-},
+    title:
+      "The Deadly Cost Of Honor In Texas | Bryan Burrough On The Wild West",
+    slug: "deadly-cost-honor-texas-bryan-burrough-wild-west",
+    tags: ["American History", "Honor Culture", "Wild West"],
+    image: "deadly-cost-honor-texas-bryan-burrough-wild-west.jpg",
+    podcastHost: "Daily Stoic",
+    isPremium: true,
+    videoId: "P0HMjcJ1AAM",
+    videoUploadedAt: "2025-06-11T23:03:05Z",
+  },
+  {
+    title:
+      "MLK, Malcom X, & The Civil Rights Strategy | Dr. Peniel Joseph & Ryan Holiday",
+    slug: "mlk-malcom-x-civil-rights-strategy-peniel-joseph-ryan-holiday",
+    tags: ["Civil Rights", "Leadership Strategy", "Social Movements"],
+    image: "mlk-malcom-x-civil-rights-strategy-peniel-joseph-ryan-holiday.jpg",
+    podcastHost: "Daily Stoic",
+    isPremium: true,
+    videoId: "BXOLLOk-n40",
+    videoUploadedAt: "2025-05-21T18:34:43Z",
+  },
   {
     title:
       "If They Control Your Attention, They Control You | Emmy-Winning Journalist Chris Hayes",
