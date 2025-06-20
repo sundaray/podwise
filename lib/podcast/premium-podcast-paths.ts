@@ -511,6 +511,7 @@ export const premiumPodcastPaths = [
   "/podcasts/scott-d-clary/get-anything-you-want-life-business–grant-cardone-billionaire-real-estate-mogul",
   "/podcasts/scott-d-clary/building-700m-real-estate-portfolio-serving-1-percent-jonathan-campau-luxury-hospitality-pioneer",
   "/podcasts/scott-d-clary/fast-learning-only-protection-against-ai-disruption-jody-glidden-tech-entrepreneur",
+  "/podcasts/scott-d-clary/marketing-genius-built-50b-client-revenue-jay-abraham-strategy-performance-expert",
 
   // Simon Sinek premium podcasts
   "/podcasts/simon-sinek/cure-for-nihilism-with-professor-suzy-welch",

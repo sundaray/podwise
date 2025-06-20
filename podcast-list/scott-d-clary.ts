@@ -1,6 +1,17 @@
 export const scottDClaryPodcastList = [
   {
     title:
+      "The Marketing Genius Who Built $50B in Client Revenue | Jay Abraham - Strategy & Performance Expert",
+    slug: "marketing-genius-built-50b-client-revenue-jay-abraham-strategy-performance-expert",
+    image:
+      "marketing-genius-built-50b-client-revenue-jay-abraham-strategy-performance-expert.jpg",
+    podcastHost: "Scott D. Clary",
+    isPremium: true,
+    videoId: "u9ZhCzu6PD0",
+    videoUploadedAt: "2025-06-18T22:08:28Z",
+  },
+  {
+    title:
       "Why Fast Learning Is the Only Protection Against AI Disruption | Jody Glidden - Tech Entrepreneur",
     slug: "fast-learning-only-protection-against-ai-disruption-jody-glidden-tech-entrepreneur",
     tags: ["Artificial Intelligence", "Entrepreneurship", "Career Development"],
