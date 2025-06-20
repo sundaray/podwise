@@ -1,6 +1,18 @@
 export const scottDClaryPodcastList = [
   {
     title:
+      "How Understanding Credit Changed Everything About Building Wealth | Marcus Barney - Financial Expert",
+    slug: "understanding-credit-changed-everything-about-building-wealth-marcus-barney-financial-expert",
+    tags: ["Credit Strategy", "Wealth Building", "Entrepreneurship"],
+    image:
+      "understanding-credit-changed-everything-about-building-wealth-marcus-barney-financial-expert.jpg",
+    podcastHost: "Scott D. Clary",
+    isPremium: true,
+    videoId: "xRSITMkKBe0",
+    videoUploadedAt: "2025-06-05T23:41:24Z",
+  },
+  {
+    title:
       "The Marketing Genius Who Built $50B in Client Revenue | Jay Abraham - Strategy & Performance Expert",
     slug: "marketing-genius-built-50b-client-revenue-jay-abraham-strategy-performance-expert",
     image:
