@@ -513,6 +513,10 @@ export const premiumPodcastPaths = [
   "/podcasts/scott-d-clary/fast-learning-only-protection-against-ai-disruption-jody-glidden-tech-entrepreneur",
   "/podcasts/scott-d-clary/marketing-genius-built-50b-client-revenue-jay-abraham-strategy-performance-expert",
   "/podcasts/scott-d-clary/understanding-credit-changed-everything-about-building-wealth-marcus-barney-financial-expert",
+  "/podcasts/scott-d-clary/supplement-reverses-aging-through-blood-flow-ilan-sobel-ceo-bioharvest-sciences",
+  "/podcasts/scott-d-clary/transhumanism-redefine-success-survival-zoltan-istvan-futurist",
+  "/podcasts/scott-d-clary/one-book-about-naval-ravikant-changed-everything-eric-jorgenson-author-angel-investor",
+  "/podcasts/scott-d-clary/lean-learning-million-dollar-empire-pat-flynn-smart-passive-income-founder",
   
   // Simon Sinek premium podcasts
   "/podcasts/simon-sinek/cure-for-nihilism-with-professor-suzy-welch",

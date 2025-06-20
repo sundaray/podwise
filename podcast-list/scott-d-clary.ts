@@ -1,5 +1,48 @@
 export const scottDClaryPodcastList = [
   {
+title: "How Lean Learning Created a Million-Dollar Empire | Pat Flynn - Smart Passive Income Founder",
+slug: "lean-learning-million-dollar-empire-pat-flynn-smart-passive-income-founder",
+tags: ["Lean Learning", "Entrepreneurship", "Skill Development"],
+image: "lean-learning-million-dollar-empire-pat-flynn-smart-passive-income-founder.jpg",
+podcastHost: "Scott D. Clary",
+isPremium: true,
+videoId: "KGqqdv3B_F8",
+videoUploadedAt: "2025-06-02T21:17:01Z"
+},
+  {
+title: "How One Book About Naval Ravikant Changed Everything | Eric Jorgenson - Author & Angel Investor",
+slug: "one-book-about-naval-ravikant-changed-everything-eric-jorgenson-author-angel-investor",
+tags: ["Content Creation", "Book Writing", "Entrepreneurship"],
+image: "one-book-about-naval-ravikant-changed-everything-eric-jorgenson-author-angel-investor.jpg",
+podcastHost: "Scott D. Clary",
+isPremium: true,
+videoId: "-lVtzA9NVUA",
+videoUploadedAt: "2025-06-15T23:56:05Z"
+},
+  {
+    title:
+      "How Transhumanism Will Redefine Success and Survival | Zoltan Istvan - Futurist",
+    slug: "transhumanism-redefine-success-survival-zoltan-istvan-futurist",
+    tags: ["Transhumanism", "Artificial Intelligence", "Entrepreneurship"],
+    image: "transhumanism-redefine-success-survival-zoltan-istvan-futurist.jpg",
+    podcastHost: "Scott D. Clary",
+    isPremium: true,
+    videoId: "Ihwhr5O264I",
+    videoUploadedAt: "2025-05-30T16:04:24Z",
+  },
+  {
+    title:
+      "The Supplement That Reverses Aging Through Blood Flow | Ilan Sobel - CEO BioHarvest Sciences",
+    slug: "supplement-reverses-aging-through-blood-flow-ilan-sobel-ceo-bioharvest-sciences",
+    tags: ["Health Technology", "Blood Flow", "Biotech Innovation"],
+    image:
+      "supplement-reverses-aging-through-blood-flow-ilan-sobel-ceo-bioharvest-sciences.jpg",
+    podcastHost: "Scott D. Clary",
+    isPremium: true,
+    videoId: "ujkZ375XL3A",
+    videoUploadedAt: "2025-06-13T18:29:23Z",
+  },
+  {
     title:
       "How Understanding Credit Changed Everything About Building Wealth | Marcus Barney - Financial Expert",
     slug: "understanding-credit-changed-everything-about-building-wealth-marcus-barney-financial-expert",
