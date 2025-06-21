@@ -4,7 +4,7 @@ export function PodcastSummariesAd() {
   return (
     <div className="podcast-summaries-ad flex flex-col items-center space-y-4 rounded-xl bg-sky-600 p-6">
       <h3 className="mt-0 text-center text-3xl font-bold text-pretty text-white">
-        Best Ideas from the World's Best Podcasts
+        Best Ideas from the World&apos;s Best Podcasts
       </h3>
       <p className="text-md text-center text-sky-200">
         Love podcasts but short on time? I extract the key takeaways from
