@@ -158,6 +158,10 @@
   .podcast-summary li {
     @apply leading-7;
   }
+
+  .podcast-summary .podcast-summaries-ad p {
+    @apply mb-0;
+  }
 }
 
 input {
