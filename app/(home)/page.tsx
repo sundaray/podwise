@@ -38,9 +38,9 @@ export default function Home() {
 
       {/* Centred hero */}
       <div className="flex flex-col items-center space-y-4 text-center">
-        <p className="text-sm font-medium tracking-widest text-gray-500 uppercase">
+        {/* <p className="text-sm font-medium tracking-widest text-gray-500 uppercase">
           AI-GENERATED
-        </p>
+        </p> */}
         <h1 className="text-4xl font-bold tracking-tight text-gray-900 uppercase">
           PODCAST SUMMARIES
         </h1>
