@@ -91,7 +91,6 @@ export const premiumPodcastPaths = [
   "/podcasts/chris-williamson/how-to-actually-build-discipline-stanley-mcchrystal",
   "/podcasts/chris-williamson/tell-stories-people-love-will-storr",
   "/podcasts/chris-williamson/the-harsh-price-of-extreme-performance-cameron-hanes",
-  "/podcasts/chris-williamson/how-to-break-free-from-chronic-anxiety-martha-beck",
   "/podcasts/chris-williamson/improve-memory-focus-charan-ranganath",
   "/podcasts/chris-williamson/23-lessons-for-being-kinder-to-yourself-joe-hudson",
   "/podcasts/chris-williamson/why-evolution-favours-beauty-over-survival-matt-ridley",
