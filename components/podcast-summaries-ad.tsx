@@ -7,8 +7,9 @@ export function PodcastSummariesAd() {
         Best Ideas from the World&apos;s Best Podcasts
       </h3>
       <p className="text-md text-center text-sky-200">
-        Love podcasts but short on time? I extract the key takeaways from
-        hour-long episodes, so you can learn faster and apply ideas immediately.
+        Love podcasts but short on time? I distill powerful ideas from the
+        world&apos;s best podcasts on business, health, and personal growth, so
+        you can turn insight into action.
       </p>
       <Link
         href="/podcasts"
