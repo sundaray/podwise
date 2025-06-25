@@ -131,9 +131,9 @@
     @apply mt-7 mb-2 text-2xl font-semibold tracking-tight text-pretty text-gray-900;
   }
 
-  .podcast-summary h2 a {
-    @apply text-2xl font-semibold tracking-tight text-pretty text-sky-600 hover:underline;
-  }
+  /* .podcast-summary h2 a {
+    @apply text-2xl font-semibold tracking-tight text-pretty text-sky-600;
+  } */
 
   .podcast-summary h3 {
     @apply mt-7 mb-2 text-xl font-semibold tracking-tight text-pretty text-gray-900;
@@ -161,6 +161,21 @@
 
   .podcast-summary .podcast-summaries-ad p {
     @apply mb-0;
+  }
+
+  /* Add this for headings to have relative positioning */
+  .podcast-summary :where(h1, h2, h3, h4, h5, h6) {
+    @apply relative;
+  }
+  /* Add anchor styles */
+  .podcast-summary .anchor {
+    @apply invisible absolute top-1/2 -left-6 w-full -translate-y-1/2 text-lg text-gray-500 no-underline after:content-['#'];
+  }
+  .podcast-summary .anchor:hover {
+    @apply visible;
+  }
+  .podcast-summary :where(h2, h3, h4, h5, h6):hover > .anchor {
+    @apply visible;
   }
 }
 
