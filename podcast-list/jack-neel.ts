@@ -1,6 +1,18 @@
 export const jackNeelPodcastList = [
   {
     title:
+      "TikTok Shop Expert: Copy This EASY Strategy— Teens Are Getting Filthy Rich (RobTheBank Interview)",
+    slug: "tiktok-shop-expert-copy-easy-strategy-teens-getting-filthy-rich-robthebank-interview",
+    tags: ["Creator Economy", "E-commerce Strategy", "Personal Branding"],
+    image:
+      "tiktok-shop-expert-copy-easy-strategy-teens-getting-filthy-rich-robthebank-interview.jpg",
+    podcastHost: "Jack Neel",
+    isPremium: true,
+    videoId: "VS5c8wmPD-0",
+    videoUploadedAt: "2025-06-17T22:00:37Z",
+  },
+  {
+    title:
       "Ashton Hall Breaks Silence On Controversial Morning Routine (First Podcast)",
     slug: "ashton-hall-breaks-silence-controversial-morning-routine",
     tags: ["Content Creation", "Morning Routines", "Viral Marketing"],

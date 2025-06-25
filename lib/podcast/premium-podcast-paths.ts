@@ -263,6 +263,7 @@ export const premiumPodcastPaths = [
   "/podcasts/jack-neel/memecoin-millionaire-spot-trends-early-get-rich-2025",
   "/podcasts/jack-neel/manipulation-expert-control-any-conversation-read-mind-instantly",
   "/podcasts/jack-neel/ashton-hall-breaks-silence-controversial-morning-routine",
+  "/podcasts/jack-neel/tiktok-shop-expert-copy-easy-strategy-teens-getting-filthy-rich-robthebank-interview",
 
   // Jay Shetty premium podcasts
   "/podcasts/jay-shetty/body-language-expert-the-secret-to-attracting-anyone-instantly",
