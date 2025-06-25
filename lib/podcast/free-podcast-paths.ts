@@ -18,6 +18,7 @@ export const freePodcastPaths = [
   "/podcasts/andrew-huberman/charting-the-architecture-of-the-universe-and-human-life-brian-keating",
   "/podcasts/andrew-huberman/contracts-of-love-and-money-that-make-or-break-relationships-james-sexton",
 
+  "/podcasts/chris-williamson/how-pornhub-became-internet-biggest-crime-scene-laila-mickelwait",
   "/podcasts/chris-williamson/the-downfall-of-crossfit-and-the-future-of-fitness-will-ahmed",
   "/podcasts/chris-williamson/why-has-the-world-gone-insane-douglas-murray",
   "/podcasts/chris-williamson/how-to-win-the-war-of-the-future-joe-lonsdale",

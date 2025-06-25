@@ -1,5 +1,25 @@
 export const chrisWilliamsonPodcastList = [
   {
+title: "How Pornhub Became The Internet’s Biggest Crime Scene - Laila Mickelwait",
+slug: "how-pornhub-became-internet-biggest-crime-scene-laila-mickelwait",
+tags: ["Internet Safety", "Corporate Accountability", "Digital Exploitation"],
+image: "how-pornhub-became-internet-biggest-crime-scene-laila-mickelwait.jpg",
+podcastHost: "Chris Williamson",
+isPremium: false,
+videoId: "f-yM5ejNlz0",
+videoUploadedAt: "2025-06-19T15:01:07Z"
+},
+  {
+title: "How To Live Freely In A Goal-Obsessed World - Anne-Laure Le Cunff",
+slug: "how-to-live-freely-in-goal-obsessed-world-anne-laure-le-cunff",
+tags: ["Personal Development", "Life Purpose", "Decision Making"],
+image: "how-to-live-freely-in-goal-obsessed-world-anne-laure-le-cunff.jpg",
+podcastHost: "Chris Williamson",
+isPremium: true,
+videoId: "QDieIKn45DU",
+videoUploadedAt: "2025-06-21T15:00:48Z"
+},
+  {
 title: "The 11 Risk Factors That Are Destroying Your Brain - Dr Daniel Amen",
 slug: "11-risk-factors-destroying-your-brain-daniel-amen",
 tags: ["Brain Health", "Mental Health", "Neuroscience"],
