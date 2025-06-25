@@ -84,6 +84,7 @@ export const premiumPodcastPaths = [
   "/podcasts/andrew-huberman/perfecting-your-sleep-huberman-lab",
   "/podcasts/andrew-huberman/grow-from-doing-hard-things-michael-easter",
   // Chris Williamson premium podcasts
+  "/podcasts/chris-williamson/11-risk-factors-destroying-your-brain-daniel-amen",
   "/podcasts/chris-williamson/41-harsh-truths-nobody-wants-admit-alex-hormozi",
   "/podcasts/chris-williamson/fix-brain-addiction-anxiety-worry-russell-kennedy",
   "/podcasts/chris-williamson/secret-becoming-confident-speaker",

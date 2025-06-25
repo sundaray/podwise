@@ -1,5 +1,15 @@
 export const chrisWilliamsonPodcastList = [
   {
+title: "The 11 Risk Factors That Are Destroying Your Brain - Dr Daniel Amen",
+slug: "11-risk-factors-destroying-your-brain-daniel-amen",
+tags: ["Brain Health", "Mental Health", "Neuroscience"],
+image: "11-risk-factors-destroying-your-brain-daniel-amen.jpg",
+podcastHost: "Chris Williamson",
+isPremium: true,
+videoId: "RUApBlqr7FM",
+videoUploadedAt: "2025-06-23T15:00:52Z"
+},
+  {
     title: "Is Church The New Counterculture? - Girls Gone Bible",
     slug: "church-new-counterculture-girls-gone-bible",
     tags: ["Religious Revival", "Modern Christianity", "Mental Health"],
