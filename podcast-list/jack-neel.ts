@@ -1,6 +1,17 @@
 export const jackNeelPodcastList = [
   {
     title:
+      "Ashton Hall Breaks Silence On Controversial Morning Routine (First Podcast)",
+    slug: "ashton-hall-breaks-silence-controversial-morning-routine",
+    tags: ["Content Creation", "Morning Routines", "Viral Marketing"],
+    image: "ashton-hall-breaks-silence-controversial-morning-routine.jpg",
+    podcastHost: "Jack Neel",
+    isPremium: true,
+    videoId: "N0yHHop1GM8",
+    videoUploadedAt: "2025-05-30T18:00:07Z",
+  },
+  {
+    title:
       "Marketing Expert: How I Built the Internet’s Fastest Growing Brand (Interview)",
     slug: "marketing-expert-built-internets-fastest-growing-brand",
     tags: ["E-commerce Strategy", "Digital Marketing", "Brand Building"],

@@ -262,6 +262,7 @@ export const premiumPodcastPaths = [
   "/podcasts/jack-neel/youtube-expert-how-i-make-250-thousand-dollars-per-month-with-3-faceless-channels",
   "/podcasts/jack-neel/memecoin-millionaire-spot-trends-early-get-rich-2025",
   "/podcasts/jack-neel/manipulation-expert-control-any-conversation-read-mind-instantly",
+  "/podcasts/jack-neel/ashton-hall-breaks-silence-controversial-morning-routine",
 
   // Jay Shetty premium podcasts
   "/podcasts/jay-shetty/body-language-expert-the-secret-to-attracting-anyone-instantly",
