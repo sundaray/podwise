@@ -1,5 +1,26 @@
 export const andrewHubermanPodcastList = [
   {
+    title: "How to Grow From Doing Hard Things | Michael Easter",
+    slug: "grow-from-doing-hard-things-michael-easter",
+    tags: ["Personal Development", "Mental Resilience", "Human Performance"],
+    image: "grow-from-doing-hard-things-michael-easter.jpg",
+    podcastHost: "Andrew Huberman",
+    isPremium: true,
+    videoId: "SsKkZTjUJEk",
+    videoUploadedAt: "2025-06-16T12:00:57Z",
+  },
+  {
+    title:
+      "The Science & Practice of Perfecting Your Sleep | Huberman Lab Essentials",
+    slug: "perfecting-your-sleep-huberman-lab",
+    tags: ["Sleep", "Sleep Hygiene", "Health and Wellness"],
+    image: "perfecting-your-sleep-huberman-lab.jpg",
+    podcastHost: "Andrew Huberman",
+    isPremium: true,
+    videoId: "JaRGJVrJBQ8",
+    videoUploadedAt: "2025-06-12T12:00:29Z",
+  },
+  {
     title: "Healing From Grief & Loss | Dr. Mary-Frances O'Connor",
     slug: "healing-from-grief-loss-mary-frances-oconnor",
     tags: ["Grief Recovery", "Mental Health", "Attachment Theory"],

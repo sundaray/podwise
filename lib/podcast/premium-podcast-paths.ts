@@ -81,6 +81,8 @@ export const premiumPodcastPaths = [
   "/podcasts/andrew-huberman/improve-vitality-heal-from-disease-mark-hyman",
   "/podcasts/andrew-huberman/behaviors-alter-genes-improve-health-performance-melissa-lladro",
   "/podcasts/andrew-huberman/what-pets-want-need-karolina-westlund",
+  "/podcasts/andrew-huberman/perfecting-your-sleep-huberman-lab",
+  "/podcasts/andrew-huberman/grow-from-doing-hard-things-michael-easter",
   // Chris Williamson premium podcasts
   "/podcasts/chris-williamson/41-harsh-truths-nobody-wants-admit-alex-hormozi",
   "/podcasts/chris-williamson/fix-brain-addiction-anxiety-worry-russell-kennedy",
@@ -516,7 +518,7 @@ export const premiumPodcastPaths = [
   "/podcasts/scott-d-clary/transhumanism-redefine-success-survival-zoltan-istvan-futurist",
   "/podcasts/scott-d-clary/one-book-about-naval-ravikant-changed-everything-eric-jorgenson-author-angel-investor",
   "/podcasts/scott-d-clary/lean-learning-million-dollar-empire-pat-flynn-smart-passive-income-founder",
-  
+
   // Simon Sinek premium podcasts
   "/podcasts/simon-sinek/cure-for-nihilism-with-professor-suzy-welch",
   "/podcasts/simon-sinek/who-are-you-really-maria-shriver",
