@@ -264,6 +264,7 @@ export const premiumPodcastPaths = [
   "/podcasts/jack-neel/manipulation-expert-control-any-conversation-read-mind-instantly",
   "/podcasts/jack-neel/ashton-hall-breaks-silence-controversial-morning-routine",
   "/podcasts/jack-neel/tiktok-shop-expert-copy-easy-strategy-teens-getting-filthy-rich-robthebank-interview",
+  "/podcasts/jack-neel/nate-belmar-burn-fat-without-exercise-look-younger-instantly",
 
   // Jay Shetty premium podcasts
   "/podcasts/jay-shetty/body-language-expert-the-secret-to-attracting-anyone-instantly",

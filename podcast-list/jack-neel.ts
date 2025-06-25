@@ -1,5 +1,15 @@
 export const jackNeelPodcastList = [
   {
+title: "Nate Belmar: How to Burn Fat WITHOUT Exercise & Look Younger Instantly",
+slug: "nate-belmar-burn-fat-without-exercise-look-younger-instantly",
+tags: ["Health Optimization", "Weight Loss", "Biohacking"],
+image: "nate-belmar-burn-fat-without-exercise-look-younger-instantly.jpg",
+podcastHost: "Jack Neel",
+isPremium: true,
+videoId: "ZiFBd-gmzW0",
+videoUploadedAt: "2025-06-09T23:00:37Z"
+},
+  {
     title:
       "TikTok Shop Expert: Copy This EASY Strategy— Teens Are Getting Filthy Rich (RobTheBank Interview)",
     slug: "tiktok-shop-expert-copy-easy-strategy-teens-getting-filthy-rich-robthebank-interview",
