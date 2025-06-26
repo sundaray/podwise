@@ -145,13 +145,13 @@ function createHeading(level: 1 | 2 | 3 | 4 | 5 | 6) {
         const [, numberPart, titlePart] = m; // ←✨ NEW
 
         const restNodes =
-          childArray.length > 1 ? childArray.slice(1) : titlePart; 
+          childArray.length > 1 ? childArray.slice(1) : titlePart;
 
         return (
           <h2 id={slug}>
             <a className="anchor scroll-m-20" href={`#${slug}`} />
             <span className="mr-1 text-gray-500">{numberPart}</span>
-            {restNodes} 
+            {restNodes}
           </h2>
         );
       }
@@ -160,14 +160,18 @@ function createHeading(level: 1 | 2 | 3 | 4 | 5 | 6) {
     /* -------------------------------------------
        default heading (all other cases)
     ------------------------------------------- */
-    return React.createElement(`h${level}`, { id: slug }, [
-      React.createElement("a", {
-        key: `link-${slug}`,
-        className: "anchor scroll-m-20",
-        href: `#${slug}`,
-      }),
-      ...childArray, // ✨ CHANGE ✨
-    ]);
+    return React.createElement(
+      `h${level}`,
+      { id: slug, className: "scroll-m-20" },
+      [
+        React.createElement("a", {
+          key: `link-${slug}`,
+          className: "anchor",
+          href: `#${slug}`,
+        }),
+        ...childArray, // ✨ CHANGE ✨
+      ],
+    );
   };
 
   Heading.displayName = `Heading${level}`;
