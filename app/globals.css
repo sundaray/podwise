@@ -144,8 +144,16 @@
   }
 
   .podcast-summary p a {
-    @apply text-sky-600 underline underline-offset-2 transition-colors hover:text-sky-800;
+    @apply relative inline bg-gradient-to-t from-sky-600 to-sky-600 bg-[length:100%_1.2px] bg-[position:0_100%] bg-no-repeat text-sky-600 transition-all duration-200 hover:bg-[length:100%_100%] hover:text-white;
   }
+
+  /* .podcast-summary p a {
+    @apply relative inline-block text-sky-600 transition-colors duration-200 after:absolute after:bottom-0 after:left-0 after:z-[-1] after:h-[1.5px] after:w-full after:bg-sky-600 after:transition-all after:duration-200 after:content-[''] hover:text-white hover:after:h-full;
+  } */
+
+  /* .podcast-summary p a {
+    @apply text-sky-600 underline underline-offset-2 transition-colors hover:text-sky-800;
+  } */
 
   .podcast-summary ul {
     @apply mb-7 list-disc space-y-2 pl-8 text-gray-700 last:mb-0;
