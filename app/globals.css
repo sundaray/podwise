@@ -144,7 +144,7 @@
   }
 
   .podcast-summary p a {
-    @apply relative inline bg-gradient-to-t from-sky-600 to-sky-600 bg-[length:100%_1.2px] bg-[position:0_100%] bg-no-repeat text-sky-600 transition-all duration-200 hover:bg-[length:100%_100%] hover:text-white;
+    @apply relative inline bg-gradient-to-t from-sky-600 to-sky-600 bg-[length:100%_1.3px] bg-[position:0_100%] bg-no-repeat text-sky-600 transition-all duration-200 hover:bg-[length:100%_100%] hover:text-white;
   }
 
   /* .podcast-summary p a {
