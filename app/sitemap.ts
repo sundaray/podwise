@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { freePodcastPaths } from "@/lib/podcast/free-podcast-paths";
+import { premiumPodcastPaths } from "@/lib/podcast/premium-podcast-paths";
 import { getAllBlogPosts } from "@/lib/blog";
 
 // Extract unique podcast show paths
@@ -21,8 +22,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const domain = "https://www.podwise.org";
   const currentDate = new Date();
 
+  // Combine all podcast paths (free + premium)
+  const allPodcastPaths = [...freePodcastPaths, ...premiumPodcastPaths];
+
   // Get unique podcast show paths
-  const podcastShowPaths = extractPodcastShowPaths(freePodcastPaths);
+  const podcastShowPaths = extractPodcastShowPaths(allPodcastPaths);
 
   // Get all blog posts
   const blogPosts = getAllBlogPosts();
@@ -35,12 +39,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  // Create sitemap entries for individual podcast pages
-  const podcastEntries = freePodcastPaths.map((path) => ({
+  // Create sitemap entries for FREE podcast pages
+  const freePodcastEntries = freePodcastPaths.map((path) => ({
     url: `${domain}${path}`,
     lastModified: currentDate,
     changeFrequency: "weekly" as const,
     priority: 0.5,
+  }));
+
+  // Create sitemap entries for PREMIUM podcast pages
+  const premiumPodcastEntries = premiumPodcastPaths.map((path) => ({
+    url: `${domain}${path}`,
+    lastModified: currentDate,
+    changeFrequency: "weekly" as const,
+    priority: 0.6, // Slightly higher priority for premium content
   }));
 
   // Create sitemap entries for individual blog posts
@@ -89,7 +101,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     ...staticPages,
     ...showEntries,
-    ...podcastEntries,
+    ...freePodcastEntries,
+    ...premiumPodcastEntries,
     ...blogPostEntries,
   ];
 }

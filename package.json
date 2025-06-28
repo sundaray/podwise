@@ -55,6 +55,7 @@
     "remark-frontmatter": "^5.0.0",
     "remark-mdx-frontmatter": "^5.1.0",
     "resend": "^4.4.1",
+    "schema-dts": "^1.1.5",
     "server-only": "^0.0.1",
     "sharp": "^0.34.1",
     "stripe": "^18.1.0",

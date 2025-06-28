@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { redirect } from "next/navigation";
 import { headers } from "next/headers";
 import { Frontmatter } from "@/types";
 import { format, parseISO } from "date-fns";
@@ -10,15 +9,12 @@ import { ScrollToTop } from "@/components/scroll-to-top";
 import { getUserSession } from "@/lib/auth/session";
 import type { Metadata } from "next";
 import { SubscriptionForm } from "@/components/subscription/subscription-form";
+import { Article, WithContext } from "schema-dts";
 
 type PodcastSummaryPageLayoutProps = {
   children: React.ReactNode;
   frontmatter: Frontmatter;
 };
-
-// Tiny 1x1 SVG for solid color #F3F4F6, URL-encoded for Data URL
-const solidColorPlaceholder =
-  "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1' fill='%23F3F4F6'%3E%3Crect width='1' height='1'/%3E%3C/svg%3E";
 
 export async function generateMetadata({
   frontmatter,
@@ -46,39 +42,7 @@ export async function generateMetadata({
     title: `${title} | ${podcastHost} Podcast Summary`,
     description: description,
     keywords: tags,
-
-    // Open Graph metadata (for Facebook, LinkedIn, etc.)
-    openGraph: {
-      title: title,
-      description: description,
-      type: "article",
-      publishedTime: publishedAt,
-      images: [
-        {
-          url: imageUrl,
-          width: 1280,
-          height: 720,
-          alt: `Thumbnail for ${title}`,
-        },
-      ],
-    },
-
-    // Twitter metadata
-    twitter: {
-      card: "summary_large_image",
-      title: title,
-      description: description,
-      images: [imageUrl],
-    },
   };
-
-  // Add noindex directive for premium content
-  if (isPremium) {
-    metadata.robots = {
-      index: false,
-      follow: true,
-    };
-  }
 
   return metadata;
 }
@@ -87,14 +51,8 @@ export async function PodcastSummaryPageLayout({
   children,
   frontmatter,
 }: PodcastSummaryPageLayoutProps) {
-  const {
-    title,
-    publishedAt,
-    tags,
-    image,
-    podcastHost,
-    isPremium,
-  } = frontmatter;
+  const { title, publishedAt, tags, image, podcastHost, isPremium } =
+    frontmatter;
 
   // Get user session
   const { user } = await getUserSession();
@@ -103,11 +61,6 @@ export async function PodcastSummaryPageLayout({
   // Check if the user has premium access
   const hasPremiumAccess =
     user && (user.annualAccessStatus || user.lifetimeAccessStatus);
-
-  // If this is a premium podcast and the user is authenticated but doesn't have premium access, redirect to premium page
-  if (isPremium && isAuthenticated && !hasPremiumAccess) {
-    redirect("/premium");
-  }
 
   const formattedPodcastHost = formatHostForUrl(podcastHost);
 
@@ -119,8 +72,35 @@ export async function PodcastSummaryPageLayout({
   const limitReachedStr = headersList.get("x-limit-reached") || "false";
   const limitReached = limitReachedStr === "true";
 
+  const showPaywall = isPremium && (!isAuthenticated || !hasPremiumAccess);
+
+  const jsonLd: WithContext<Article> | null = isPremium
+    ? {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        headline: title,
+        description: frontmatter.description,
+        image: `https://podcast-summaries-dev.s3.amazonaws.com/podcast-thumbnails/${formattedPodcastHost}/${image}`,
+        datePublished: publishedAt,
+        isAccessibleForFree: false,
+        hasPart: {
+          "@type": "WebPageElement",
+          isAccessibleForFree: false,
+          cssSelector: ".premium-content",
+        },
+      }
+    : null;
+
   return (
     <div className="mx-auto max-w-3xl px-4 md:px-8">
+      {isPremium && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
+          }}
+        />
+      )}
       <PodcastBreadcrumbs podcastHost={podcastHost} />
       <article className="podcast-summary relative">
         <header>
@@ -167,10 +147,39 @@ export async function PodcastSummaryPageLayout({
             </picture>
           </div>
         </header>
-        {children}
+        {/* Content wrapper with conditional styling */}
+        <div className={`${showPaywall ? "relative" : ""}`}>
+          {/* Content preview wrapper */}
+          <div className={showPaywall ? "max-h-80 overflow-hidden" : ""}>
+            <div className={isPremium ? "premium-content" : ""}>{children}</div>
+          </div>
 
-        {/* Conditional paywall overlay based on authentication status */}
-        {limitReached && (
+          {/* Gradient fade overlay */}
+          {showPaywall && (
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent from-20% via-white/80 via-60% to-white" />
+          )}
+        </div>
+
+        {/* Paywall CTA - positioned where the white gradient starts */}
+        {showPaywall && (
+          <div className="mx-auto max-w-md px-4 text-center">
+            <h2 className="mb-2 text-xl font-bold text-gray-900">
+              Continue Reading
+            </h2>
+            <p className="mb-4 text-sm text-gray-700">
+              Get unlimited access to all premium summaries.
+            </p>
+            <Link
+              href="/premium"
+              className="inline-flex items-center justify-center rounded-full bg-gradient-to-b from-amber-400 to-amber-500 px-4 py-2 text-sm font-medium text-gray-900 transition-colors hover:from-amber-300 hover:to-amber-400"
+            >
+              Go Premium
+            </Link>
+          </div>
+        )}
+
+        {/* Conditional paywall for FREE summary pages */}
+        {limitReached && !isPremium && (
           <div className="absolute inset-0 z-10 flex flex-col items-center bg-white/70 p-6 text-center backdrop-blur-sm">
             <h2 className="mb-2 text-2xl font-bold text-pretty">
               Daily Free Reading Limit Reached
