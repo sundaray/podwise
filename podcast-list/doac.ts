@@ -1,6 +1,17 @@
 export const doacPodcastList = [
   {
     title:
+      "Godfather of AI: I Tried to Warn Them, But We’ve Already Lost Control! Geoffrey Hinton",
+    slug: "godfather-ai-geoffrey-hinton-we-have-already-lost-control",
+    tags: ["Artificial Intelligence", "Future of Work", "Technology Ethics"],
+    image: "godfather-ai-geoffrey-hinton-we-have-already-lost-control.jpg",
+    podcastHost: "The Diary Of A CEO",
+    isPremium: true,
+    videoId: "giT0ytynSqg",
+    videoUploadedAt: "2025-06-16T07:00:44Z",
+  },
+  {
+    title:
       "World Leading Investing Expert: The Big Shift Is Coming! This Investment Could 15x in 5 Years!",
     slug: "world-leading-investing-expert-big-shift-coming-investment-15x-5-years",
     tags: [

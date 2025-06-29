@@ -216,6 +216,7 @@ export const premiumPodcastPaths = [
   "/podcasts/doac/orgasm-queen-do-this-before-sex-your-sex-will-feel-brand-new",
   "/podcasts/doac/brian-keating-how-god-fits-into-science-explained",
   "/podcasts/doac/women-health-expert-birth-control-changes-who-you-are-how-you-feel-about-your-partner",
+  "/podcasts/doac/godfather-ai-geoffrey-hinton-we-have-already-lost-control",
 
   // Ed Mylett premium podcasts
   "/podcasts/ed-mylett/if-not-feeling-confident-you-are-not-doing-this-brendon-burchard",
