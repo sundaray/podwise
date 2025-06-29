@@ -1,6 +1,18 @@
 export const doacPodcastList = [
   {
     title:
+      "Buddhist Monk: This Daily Habit Is Secretly Making You Lonely & Anxious!",
+    slug: "buddhist-monk-this-daily-habit-secretly-making-you-lonely-anxious",
+    tags: ["Mindfulness", "Mental Health", "Buddhist Philosophy"],
+    image:
+      "buddhist-monk-this-daily-habit-secretly-making-you-lonely-anxious.jpg",
+    podcastHost: "The Diary Of A CEO",
+    isPremium: true,
+    videoId: "vIbLQQ1i56Y",
+    videoUploadedAt: "2025-06-23T07:00:54Z",
+  },
+  {
+    title:
       "Sex Expert (Esther Perel): The Relationship Crisis No One Talks About That's Killing Your Sex Life!",
     slug: "sex-expert-esther-perel-relationship-crisis-killing-your-sex-life",
     tags: ["Relationship Advice", "Social Connection", "Modern Dating"],
