@@ -217,6 +217,7 @@ export const premiumPodcastPaths = [
   "/podcasts/doac/brian-keating-how-god-fits-into-science-explained",
   "/podcasts/doac/women-health-expert-birth-control-changes-who-you-are-how-you-feel-about-your-partner",
   "/podcasts/doac/godfather-ai-geoffrey-hinton-we-have-already-lost-control",
+  "/podcasts/doac/sex-expert-esther-perel-relationship-crisis-killing-your-sex-life",
 
   // Ed Mylett premium podcasts
   "/podcasts/ed-mylett/if-not-feeling-confident-you-are-not-doing-this-brendon-burchard",

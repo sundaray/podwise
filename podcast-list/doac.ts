@@ -1,6 +1,18 @@
 export const doacPodcastList = [
   {
     title:
+      "Sex Expert (Esther Perel): The Relationship Crisis No One Talks About That's Killing Your Sex Life!",
+    slug: "sex-expert-esther-perel-relationship-crisis-killing-your-sex-life",
+    tags: ["Relationship Advice", "Social Connection", "Modern Dating"],
+    image:
+      "sex-expert-esther-perel-relationship-crisis-killing-your-sex-life.jpg",
+    podcastHost: "The Diary Of A CEO",
+    isPremium: true,
+    videoId: "QCaFWrT0j-g",
+    videoUploadedAt: "2025-06-12T07:00:23Z",
+  },
+  {
+    title:
       "Godfather of AI: I Tried to Warn Them, But We’ve Already Lost Control! Geoffrey Hinton",
     slug: "godfather-ai-geoffrey-hinton-we-have-already-lost-control",
     tags: ["Artificial Intelligence", "Future of Work", "Technology Ethics"],
