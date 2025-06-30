@@ -1,5 +1,15 @@
 export const simonSinekPodcastList = [
   {
+title: "Your Unhappy Brain Needs Some Assistance with happiness expert Mo Gawdat | A Bit of Optimism Podcast",
+slug: "happiness-expert-mo-gawdat-unhappy-brain",
+tags: ["Happiness Science", "Personal Development", "Life Philosophy"],
+image: "happiness-expert-mo-gawdat-unhappy-brain.jpg",
+podcastHost: "Simon Sinek",
+isPremium: true,
+videoId: "47wZCt0YG_A",
+videoUploadedAt: "2025-06-24T13:00:08Z"
+},
+  {
 title: "The Extraordinary Magic of Ordinary People with author Brad Meltzer",
 slug: "extraordinary-magic-ordinary-people-brad-meltzer",
 tags: ["Human Potential", "Inspirational Stories", "Personal Development"],
