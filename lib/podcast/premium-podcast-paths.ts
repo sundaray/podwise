@@ -135,6 +135,7 @@ export const premiumPodcastPaths = [
   "/podcasts/chris-williamson/decoding-secrets-meaningful-life-jimmy-carr",
 
   // Daily Stoic premium podcasts
+  "/podcasts/daily-stoic/pain-power-purpose-alexander-hamilton-mark-twain-ron-chernow",
   "/podcasts/daily-stoic/why-you-dont-want-to-win-the-argument-jefferson-fisher-and-ryan-holiday",
   "/podcasts/daily-stoic/stoic-strategies-that-built-a-self-made-billionaire-robert-rosenkranz",
   "/podcasts/daily-stoic/ed-helms-on-his-secret-passion-history-acting-storytelling",

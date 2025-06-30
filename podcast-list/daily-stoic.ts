@@ -1,6 +1,17 @@
 export const dailyStoicPodcastList = [
   {
     title:
+      "PAIN, POWER, PURPOSE: The Emotional Struggles of Alexander Hamilton and Mark Twain (Ron Chernow)",
+    slug: "pain-power-purpose-alexander-hamilton-mark-twain-ron-chernow",
+    tags: ["Personal Development", "Stoicism", "Character Development"],
+    image: "pain-power-purpose-alexander-hamilton-mark-twain-ron-chernow.jpg",
+    podcastHost: "Daily Stoic",
+    isPremium: true,
+    videoId: "PvSgng0jogo",
+    videoUploadedAt: "2025-06-24T16:27:47Z",
+  },
+  {
+    title:
       "The Deadly Cost Of Honor In Texas | Bryan Burrough On The Wild West",
     slug: "deadly-cost-honor-texas-bryan-burrough-wild-west",
     tags: ["American History", "Honor Culture", "Wild West"],
