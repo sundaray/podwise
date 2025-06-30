@@ -1,5 +1,15 @@
 export const doacPodcastList = [
   {
+title: "(EXCLUSIVE) Tom Aspinall: The UFC Doesn't Want You To Know This!",
+slug: "tom-aspinall-ufc-secrets",
+tags: ["Mixed Martial Arts", "Personal Development", "Mental Health"],
+image: "tom-aspinall-ufc-secrets.jpg",
+podcastHost: "The Diary Of A CEO",
+isPremium: true,
+videoId: "puc5pZVsFPY",
+videoUploadedAt: "2025-06-26T07:00:49Z"
+},
+  {
 title: "Jimmy Fallon: I Didn't Expect It To Be This Brutal! The Hate Was Something I Wasn’t",
 slug: "jimmy-fallon-brutal-truth-behind-success",
 tags: ["Mental Health", "Personal Development", "Life Lessons"],

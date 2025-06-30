@@ -221,6 +221,7 @@ export const premiumPodcastPaths = [
   "/podcasts/doac/buddhist-monk-this-daily-habit-secretly-making-you-lonely-anxious",
   "/podcasts/doac/scooter-braun-the-lie-that-almost-broke-me",
   "/podcasts/doac/jimmy-fallon-brutal-truth-behind-success",
+  "/podcasts/doac/tom-aspinall-ufc-secrets",
 
   // Ed Mylett premium podcasts
   "/podcasts/ed-mylett/if-not-feeling-confident-you-are-not-doing-this-brendon-burchard",
