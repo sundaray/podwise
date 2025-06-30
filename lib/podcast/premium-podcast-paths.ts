@@ -220,6 +220,7 @@ export const premiumPodcastPaths = [
   "/podcasts/doac/sex-expert-esther-perel-relationship-crisis-killing-your-sex-life",
   "/podcasts/doac/buddhist-monk-this-daily-habit-secretly-making-you-lonely-anxious",
   "/podcasts/doac/scooter-braun-the-lie-that-almost-broke-me",
+  "/podcasts/doac/jimmy-fallon-brutal-truth-behind-success",
 
   // Ed Mylett premium podcasts
   "/podcasts/ed-mylett/if-not-feeling-confident-you-are-not-doing-this-brendon-burchard",

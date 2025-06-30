@@ -1,5 +1,15 @@
 export const doacPodcastList = [
   {
+title: "Jimmy Fallon: I Didn't Expect It To Be This Brutal! The Hate Was Something I Wasn’t",
+slug: "jimmy-fallon-brutal-truth-behind-success",
+tags: ["Mental Health", "Personal Development", "Life Lessons"],
+image: "jimmy-fallon-brutal-truth-behind-success.jpg",
+podcastHost: "The Diary Of A CEO",
+isPremium: true,
+videoId: "yHCtfU3syM4",
+videoUploadedAt: "2025-06-02T07:00:53Z"
+},
+  {
     title:
       "The Lie I Chased That Almost Broke Me & You’re Probably Chasing It Too! (Scooter Braun)",
     slug: "scooter-braun-the-lie-that-almost-broke-me",
