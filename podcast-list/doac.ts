@@ -1,6 +1,17 @@
 export const doacPodcastList = [
   {
     title:
+      "The Lie I Chased That Almost Broke Me & You’re Probably Chasing It Too! (Scooter Braun)",
+    slug: "scooter-braun-the-lie-that-almost-broke-me",
+    tags: ["Personal Development", "Mental Health", "Success Psychology"],
+    image: "scooter-braun-the-lie-that-almost-broke-me.jpg",
+    podcastHost: "The Diary Of A CEO",
+    isPremium: true,
+    videoId: "j4z25zj6bmE",
+    videoUploadedAt: "2025-06-09T07:00:42Z",
+  },
+  {
+    title:
       "Buddhist Monk: This Daily Habit Is Secretly Making You Lonely & Anxious!",
     slug: "buddhist-monk-this-daily-habit-secretly-making-you-lonely-anxious",
     tags: ["Mindfulness", "Mental Health", "Buddhist Philosophy"],
