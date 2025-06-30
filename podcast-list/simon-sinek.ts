@@ -1,5 +1,15 @@
 export const simonSinekPodcastList = [
   {
+title: "The Extraordinary Magic of Ordinary People with author Brad Meltzer",
+slug: "extraordinary-magic-ordinary-people-brad-meltzer",
+tags: ["Human Potential", "Inspirational Stories", "Personal Development"],
+image: "extraordinary-magic-ordinary-people-brad-meltzer.jpg",
+podcastHost: "Simon Sinek",
+isPremium: true,
+videoId: "0dUPAipIFZs",
+videoUploadedAt: "2025-06-10T11:00:04Z"
+},
+  {
     title:
       "The Cure for Nihilism with professor Suzy Welch | A Bit of Optimism Podcast",
     slug: "cure-for-nihilism-with-professor-suzy-welch",

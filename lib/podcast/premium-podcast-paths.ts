@@ -531,6 +531,7 @@ export const premiumPodcastPaths = [
   "/podcasts/scott-d-clary/lean-learning-million-dollar-empire-pat-flynn-smart-passive-income-founder",
 
   // Simon Sinek premium podcasts
+  "/podcasts/simon-sinek/extraordinary-magic-ordinary-people-brad-meltzer",
   "/podcasts/simon-sinek/cure-for-nihilism-with-professor-suzy-welch",
   "/podcasts/simon-sinek/who-are-you-really-maria-shriver",
   "/podcasts/simon-sinek/search-for-self-love-with-podcaster-lewis-howes",
