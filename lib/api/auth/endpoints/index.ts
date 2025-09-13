@@ -1,31 +1,16 @@
 import { HttpApiEndpoint, HttpApiGroup } from "@effect/platform";
 import { Schema } from "effect";
 
-export class EmailVerificationSessionNotFoundError extends Schema.TaggedError<EmailVerificationSessionNotFoundError>()(
-  "EmailVerificationSessionNotFoundError",
-  {},
-) {}
-
-export class TokenMismatchError extends Schema.TaggedError<TokenMismatchError>()(
-  "TokenMismatchError",
-  {},
-) {}
-
-export class UserCreationError extends Schema.TaggedError<UserCreationError>()(
-  "UserCreationError",
-  { cause: Schema.Unknown },
-) {}
-
-export class ConfigError extends Schema.TaggedError<ConfigError>()(
-  "ConfigError",
-  {},
-) {}
+import {
+  EmailVerificationSessionNotFoundError,
+  TokenMismatchError,
+  UserCreationError,
+} from "@/lib/api/auth/errors";
 
 export const VerifyEmailError = Schema.Union(
   EmailVerificationSessionNotFoundError,
   TokenMismatchError,
   UserCreationError,
-  ConfigError,
 );
 const UserSchema = Schema.Struct({
   email: Schema.String,
@@ -36,10 +21,22 @@ const SessionResponseSchema = Schema.Struct({
   user: Schema.NullOr(UserSchema),
 });
 
+const ForgotPasswordPayload = Schema.Struct({
+  email: Schema.String,
+});
+
+/**************************************
+ * getUserSession
+ *************************************/
+
 export const getUserSessionEndpoint = HttpApiEndpoint.get(
   "getUserSession",
   "/auth/session",
 ).addSuccess(SessionResponseSchema);
+
+/**************************************
+ * verifyEmail
+ *************************************/
 
 export const verifyEmailEndpoint = HttpApiEndpoint.get(
   "verifyEmail",
@@ -49,6 +46,34 @@ export const verifyEmailEndpoint = HttpApiEndpoint.get(
   .addSuccess(Schema.Void)
   .addError(VerifyEmailError);
 
+/**************************************
+ * forgotPassword
+ *************************************/
+
+const forgotPasswordEndpoint = HttpApiEndpoint.post(
+  "forgotPassword",
+  "/auth/forgot-password",
+)
+  .setPayload(ForgotPasswordPayload)
+  .addSuccess(Schema.Void);
+
+/**************************************
+ * verifyPasswordReset
+ *************************************/
+
+const verifyPasswordResetEndpoint = HttpApiEndpoint.get(
+  "verifyPasswordReset",
+  "/auth/verify-password-reset",
+)
+  .setUrlParams(Schema.Struct({ token: Schema.String }))
+  .addSuccess(Schema.Void);
+
+/**************************************
+ * authGroup
+ *************************************/
+
 export const authGroup = HttpApiGroup.make("auth")
   .add(getUserSessionEndpoint)
-  .add(verifyEmailEndpoint);
+  .add(verifyEmailEndpoint)
+  .add(forgotPasswordEndpoint)
+  .add(verifyPasswordResetEndpoint);

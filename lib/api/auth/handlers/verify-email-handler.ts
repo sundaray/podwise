@@ -4,9 +4,8 @@ import { Config, Effect, Option } from "effect";
 import {
   EmailVerificationSessionNotFoundError,
   TokenMismatchError,
-  TokenNotFoundError,
   UserCreationError,
-} from "@/lib/api/auth/endpoints";
+} from "@/lib/api/auth/errors";
 import { assignUserRole } from "@/lib/assign-user-role";
 import { timingSafeCompare } from "@/lib/auth/credentials/timing-safe-compare";
 import { createUser } from "@/lib/create-user";
