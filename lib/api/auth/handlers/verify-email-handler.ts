@@ -1,49 +1,56 @@
 import { HttpServerRequest, HttpServerResponse } from "@effect/platform";
-import { Config, Effect } from "effect";
+import { Config, Effect, Option } from "effect";
 
 import {
+  EmailVerificationSessionNotFoundError,
   TokenMismatchError,
   TokenNotFoundError,
   UserCreationError,
-} from "@/lib/api/auth.api";
+} from "@/lib/api/auth/endpoints";
 import { assignUserRole } from "@/lib/assign-user-role";
-import {
-  deleteEmailVerificationSession,
-  getEmailVerificationSession,
-} from "@/lib/auth/credentials/session";
 import { timingSafeCompare } from "@/lib/auth/credentials/timing-safe-compare";
 import { createUser } from "@/lib/create-user";
+import { deleteEmailVerificationSession } from "@/lib/delete-email-verification-session";
+import { getEmailVerificationSession } from "@/lib/get-email-verification-session";
 
 export const verifyEmailHandler = ({
   urlParams,
+  request,
 }: {
   urlParams: { token: string };
   request: HttpServerRequest.HttpServerRequest;
 }) => {
   const program = Effect.gen(function* () {
-    const sessionPayload = yield* Effect.tryPromise({
-      try: () => getEmailVerificationSession(),
-      catch: () => new TokenNotFoundError(),
-    });
+    const emailVerificationSessionOption = yield* Effect.option(
+      getEmailVerificationSession(),
+    );
 
-    if (!timingSafeCompare(urlParams.token, sessionPayload.token)) {
+    const emailVerificationSession = Option.getOrNull(
+      emailVerificationSessionOption,
+    );
+
+    if (!emailVerificationSession) {
+      return yield* Effect.fail(new EmailVerificationSessionNotFoundError());
+    }
+
+    if (!timingSafeCompare(urlParams.token, emailVerificationSession.token)) {
       return yield* Effect.fail(new TokenMismatchError());
     }
 
-    const role = assignUserRole(sessionPayload.email);
+    const role = assignUserRole(emailVerificationSession.email);
     yield* Effect.tryPromise({
       try: () =>
         createUser(
-          sessionPayload.email,
+          emailVerificationSession.email,
           role,
           "credentials",
           undefined,
-          sessionPayload.hashedPassword,
+          emailVerificationSession.hashedPassword,
         ),
       catch: (error) => new UserCreationError({ cause: error }),
     });
 
-    yield* Effect.promise(() => deleteEmailVerificationSession());
+    yield* deleteEmailVerificationSession();
   });
 
   const handledProgram = program.pipe(

@@ -1,6 +1,5 @@
 import { Schema } from "effect";
 
-
 export const OAuthStateSchema = Schema.Struct({
   state: Schema.String,
   codeVerifier: Schema.String,
@@ -20,6 +19,10 @@ export const EmailVerificationSessionSchema = Schema.Struct({
   hashedPassword: Schema.String,
 });
 
+export type EmailVerificationSession = Schema.Schema.Type<
+  typeof EmailVerificationSessionSchema
+>;
+
 export const PasswordResetSessionSchema = Schema.Struct({
   email: Schema.String,
   token: Schema.String,
@@ -35,7 +38,7 @@ export const EncryptableSessionSchema = Schema.Union(
   UserSessionSchema,
   EmailVerificationSessionSchema,
   PasswordResetSessionSchema,
-  OAuthStateSchema
+  OAuthStateSchema,
 );
 
 export type EncryptableSession = Schema.Schema.Type<

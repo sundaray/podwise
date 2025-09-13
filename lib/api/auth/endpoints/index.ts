@@ -1,13 +1,8 @@
 import { HttpApiEndpoint, HttpApiGroup } from "@effect/platform";
 import { Schema } from "effect";
 
-// export class UserSessionNotFoundError extends Schema.TaggedError<UserSessionNotFoundError>()(
-//   "UserSessionNotFoundError",
-//   {}
-// ) {}
-
-export class TokenNotFoundError extends Schema.TaggedError<TokenNotFoundError>()(
-  "TokenNotFoundError",
+export class EmailVerificationSessionNotFoundError extends Schema.TaggedError<EmailVerificationSessionNotFoundError>()(
+  "EmailVerificationSessionNotFoundError",
   {},
 ) {}
 
@@ -27,7 +22,7 @@ export class ConfigError extends Schema.TaggedError<ConfigError>()(
 ) {}
 
 export const VerifyEmailError = Schema.Union(
-  TokenNotFoundError,
+  EmailVerificationSessionNotFoundError,
   TokenMismatchError,
   UserCreationError,
   ConfigError,
@@ -41,12 +36,12 @@ const SessionResponseSchema = Schema.Struct({
   user: Schema.NullOr(UserSchema),
 });
 
-const getUserSessionEndpoint = HttpApiEndpoint.get(
+export const getUserSessionEndpoint = HttpApiEndpoint.get(
   "getUserSession",
   "/auth/session",
 ).addSuccess(SessionResponseSchema);
 
-const verifyEmailEndpoint = HttpApiEndpoint.get(
+export const verifyEmailEndpoint = HttpApiEndpoint.get(
   "verifyEmail",
   "/auth/verify-email",
 )
