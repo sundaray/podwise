@@ -7,6 +7,7 @@ config({ path: ".env.local" });
 
 // Create a PostgreSQL client with connection pooling
 const connectionString = process.env.DATABASE_URL!;
+
 // For Next.js edge runtime compatibility
 const client = postgres(connectionString, {
   prepare: false,

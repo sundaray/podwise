@@ -6,6 +6,9 @@ import { handleUnauthenticatedFreePodcast } from "@/lib/middleware/handle-unauth
 import { handleAuthenticatedFreePodcast } from "@/lib/middleware/handle-authenticated-free-podcast";
 import { updateAuthSession } from "@/lib/middleware/update-auth-session";
 
+  
+
+
 export async function middleware(request: NextRequest) {
   // Get user session
   const { user } = await getUserSession();
@@ -39,6 +42,7 @@ export async function middleware(request: NextRequest) {
 }
 
 export const config = {
+  runtime: 'nodejs',
   matcher: [
     // Skip all static files and Next.js internals
     "/((?!_next|[^?]*\\.(?:html?|css|js(?!on)|jpe?g|webp|png|gif|svg|ttf|woff2?|ico|csv|docx?|xlsx?|zip|webmanifest)).*)",
