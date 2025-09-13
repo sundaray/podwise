@@ -3,7 +3,7 @@ import {FetchHttpClient, HttpApiClient} from "@effect/platform"
 import { PodwiseApi } from "@/lib/api";
 
 
-class HttpClientService extends Effect.Service<HttpClientService>()("HttpClientService", {
+export class HttpClientService extends Effect.Service<HttpClientService>()("HttpClientService", {
     effect: Effect.gen(function*() {
         const baseUrl = yield* Config.string("NEXT_PUBLIC_APP_URL")
 
