@@ -4,7 +4,7 @@ import { cookies } from "next/headers";
 import { Effect } from "effect";
 
 import { encrypt } from "@/lib/encrypt";
-import { CreatePasswordResetSessionError } from "@/lib/errors";
+import { CreatePasswordResetSessionError } from "@/lib/api/auth/errors";
 
 // ============================================================================
 // Create password reset session

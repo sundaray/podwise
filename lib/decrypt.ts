@@ -1,21 +1,7 @@
 import "server-only";
 
-import { Config, Data, Effect, Schema } from "effect";
+import { Config, Effect, Schema } from "effect";
 import { base64url, jwtDecrypt } from "jose";
-
-import { EncryptableSession } from "@/lib/schema";
-
-class DecryptionError extends Data.TaggedError("DecryptionError")<{
-  operation: string;
-  cause: unknown;
-}> {}
-
-class InvalidJWTPayloadError extends Data.TaggedError(
-  "InvalidJWTPayloadError",
-)<{
-  operation: string;
-  cause: unknown;
-}> {}
 
 // ============================================================================
 // JWT secret configuration
@@ -29,19 +15,25 @@ const jwtKey = Config.string("JWT_ENCRYPTION_KEY").pipe(
 // Decrypt JWT
 // ============================================================================
 
-export function decrypt(jwt: string) {
+export function decrypt<A, I>(jwt: string, schema: Schema.Schema<A, I>) {
   return Effect.gen(function* () {
     const key = yield* jwtKey;
 
     const { payload } = yield* Effect.tryPromise({
       try: () => jwtDecrypt(jwt, key),
       catch: (error) =>
-        new DecryptionError({
+        new DecryptError({
           operation: "decrypt",
           cause: error,
         }),
     });
 
-    return payload;
+    const decoded = yield* Schema.decodeUnknown(schema)(payload).pipe(
+      Effect.mapError(
+        (cause) => new InvalidJWTPayloadError({ operation: "decrypt", cause }),
+      ),
+    );
+
+    return decoded;
   });
 }

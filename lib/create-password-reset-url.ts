@@ -1,6 +1,6 @@
 import { Config, Effect } from "effect";
 
-import { CreatePasswordResetUrlError } from "@/lib/errors";
+import { CreatePasswordResetUrlError } from "@/lib/api/auth/errors";
 
 // ============================================================================
 // Create password reset URL

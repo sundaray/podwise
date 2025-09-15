@@ -5,7 +5,7 @@ import { render } from "@react-email/render";
 import { Config, Effect } from "effect";
 
 import { PasswordResetTemplate } from "@/components/auth/password-reset-template";
-import { PasswordResetEmailTemplateRenderError } from "@/lib/errors";
+import { PasswordResetEmailTemplateRenderError } from "@/lib/api/auth/errors";
 import { EmailService } from "@/lib/services/email-service";
 
 // ============================================================================

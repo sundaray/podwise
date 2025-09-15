@@ -2,9 +2,16 @@ import { HttpApiEndpoint, HttpApiGroup } from "@effect/platform";
 import { Schema } from "effect";
 
 import {
+  ConfigError,
+  CreatePasswordResetSessionError,
+  CreatePasswordResetTokenError,
+  CreatePasswordResetUrlError,
+  CreateUserError,
+  EmailError,
   EmailVerificationSessionNotFoundError,
+  EncryptError,
+  PasswordResetEmailTemplateRenderError,
   TokenMismatchError,
-  UserCreationError,
 } from "@/lib/api/auth/errors";
 
 /**************************************
@@ -32,7 +39,7 @@ export const getUserSessionEndpoint = HttpApiEndpoint.get(
 export const VerifyEmailError = Schema.Union(
   EmailVerificationSessionNotFoundError,
   TokenMismatchError,
-  UserCreationError,
+  CreateUserError,
 );
 
 export const verifyEmailEndpoint = HttpApiEndpoint.get(
@@ -43,24 +50,30 @@ export const verifyEmailEndpoint = HttpApiEndpoint.get(
   .addSuccess(Schema.Void)
   .addError(VerifyEmailError);
 
-/**************************************
- * forgotPassword
- *************************************/
+// ============================================================================
+// forgotPassword
+// ============================================================================
 
 const ForgotPasswordPayload = Schema.Struct({
   email: Schema.String,
 });
 
-const SuccessResponse = Schema.Struct({
+const ForgotPasswordResponse = Schema.Struct({
   message: Schema.String,
 });
+
+export const ForgotPasswordError = Schema.Union(
+  CreatePasswordResetTokenError,
+  ConfigError,
+);
 
 const forgotPasswordEndpoint = HttpApiEndpoint.post(
   "forgotPassword",
   "/auth/forgot-password",
 )
   .setPayload(ForgotPasswordPayload)
-  .addSuccess(SuccessResponse);
+  .addSuccess(ForgotPasswordResponse)
+  .addError(ForgotPasswordError);
 
 /**************************************
  * verifyPasswordReset

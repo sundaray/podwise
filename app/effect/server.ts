@@ -9,7 +9,7 @@ import { verifyPasswordResetHandler } from "@/lib/api/auth/handlers/verify-passw
 
 const AuthGroupLive = HttpApiBuilder.group(PodwiseApi, "auth", (handlers) =>
   handlers
-    .handle("getUserSession", () => getUserSessionHandler)
+    .handle("getUserSession", () => getUserSessionHandler())
     .handle("verifyEmail", (req) => verifyEmailHandler(req))
     .handle("forgotPassword", (req) => forgotPasswordHandler(req))
     .handle("verifyPasswordReset", (req) => verifyPasswordResetHandler(req)),

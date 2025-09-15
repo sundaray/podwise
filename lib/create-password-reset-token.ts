@@ -4,21 +4,27 @@ import { Effect } from "effect";
 import { base64url } from "jose";
 import { getRandomValues } from "uncrypto";
 
-import { PasswordResetTokenGenerationError } from "@/lib/errors";
+import { CreatePasswordResetTokenError } from "@/lib/api/auth/errors";
 
 // ============================================================================
 // Create password reset token
 // ============================================================================
 
 export function createPasswordResetToken() {
-  return Effect.try({
+  return Effect.fail(
+    new CreatePasswordResetTokenError({
+      operation: "createPasswordResetToken",
+      cause: "test",
+    }),
+  );
+  Effect.try({
     try: () => {
       const randomValues = new Uint8Array(32);
       getRandomValues(randomValues);
       return base64url.encode(randomValues);
     },
     catch: (error) =>
-      new PasswordResetTokenGenerationError({
+      new CreatePasswordResetTokenError({
         operation: "createPasswordResetToken",
         cause: error,
       }),
