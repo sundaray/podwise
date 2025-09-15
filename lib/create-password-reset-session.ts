@@ -1,16 +1,10 @@
 import "server-only";
 
 import { cookies } from "next/headers";
-import { Data, Effect } from "effect";
+import { Effect } from "effect";
 
 import { encrypt } from "@/lib/encrypt";
-
-class CreatePasswordResetSessionError extends Data.TaggedError(
-  "CreatePasswordResetSessionError",
-)<{
-  operation: string;
-  cause: unknown;
-}> {}
+import { CreatePasswordResetSessionError } from "@/lib/errors";
 
 // ============================================================================
 // Create password reset session

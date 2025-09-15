@@ -1,13 +1,10 @@
 import "server-only";
 
-import { Data, Effect } from "effect";
+import { Effect } from "effect";
 import { base64url } from "jose";
 import { getRandomValues } from "uncrypto";
 
-class TokenGenerationError extends Data.TaggedError("TokenGenerationError")<{
-  operation: string;
-  cause: unknown;
-}> {}
+import { PasswordResetTokenGenerationError } from "@/lib/errors";
 
 // ============================================================================
 // Create password reset token
@@ -21,7 +18,7 @@ export function createPasswordResetToken() {
       return base64url.encode(randomValues);
     },
     catch: (error) =>
-      new TokenGenerationError({
+      new PasswordResetTokenGenerationError({
         operation: "createPasswordResetToken",
         cause: error,
       }),

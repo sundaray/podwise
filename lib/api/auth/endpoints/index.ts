@@ -51,12 +51,16 @@ const ForgotPasswordPayload = Schema.Struct({
   email: Schema.String,
 });
 
+const SuccessResponse = Schema.Struct({
+  message: Schema.String,
+});
+
 const forgotPasswordEndpoint = HttpApiEndpoint.post(
   "forgotPassword",
   "/auth/forgot-password",
 )
   .setPayload(ForgotPasswordPayload)
-  .addSuccess(Schema.Void);
+  .addSuccess(SuccessResponse);
 
 /**************************************
  * verifyPasswordReset

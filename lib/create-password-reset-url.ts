@@ -1,9 +1,6 @@
-import { Config, Data, Effect } from "effect";
+import { Config, Effect } from "effect";
 
-class UrlConstructionError extends Data.TaggedError("UrlConstructionError")<{
-  operation: string;
-  cause: unknown;
-}> {}
+import { CreatePasswordResetUrlError } from "@/lib/errors";
 
 // ============================================================================
 // Create password reset URL
@@ -20,7 +17,7 @@ export function createPasswordResetUrl(token: string) {
         return url.toString();
       },
       catch: (error) =>
-        new UrlConstructionError({
+        new CreatePasswordResetUrlError({
           operation: "createPasswordResetURL",
           cause: error,
         }),

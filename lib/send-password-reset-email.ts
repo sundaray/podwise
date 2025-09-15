@@ -2,14 +2,11 @@ import "server-only";
 
 import { SendEmailCommand, SendEmailCommandInput } from "@aws-sdk/client-ses";
 import { render } from "@react-email/render";
-import { Config, Data, Effect } from "effect";
+import { Config, Effect } from "effect";
 
 import { PasswordResetTemplate } from "@/components/auth/password-reset-template";
+import { PasswordResetEmailTemplateRenderError } from "@/lib/errors";
 import { EmailService } from "@/lib/services/email-service";
-
-class EmailTemplateRenderError extends Data.TaggedError(
-  "EmailTemplateRenderError",
-)<{ operation: string; cause: unknown }> {}
 
 // ============================================================================
 // Send password reset email
@@ -23,7 +20,7 @@ export function sendPasswordResetEmail(email: string, url: string) {
     const emailHtml = yield* Effect.tryPromise({
       try: () => render(PasswordResetTemplate({ url })),
       catch: (error) =>
-        new EmailTemplateRenderError({
+        new PasswordResetEmailTemplateRenderError({
           operation: "sendPasswordResetEmail",
           cause: error,
         }),
