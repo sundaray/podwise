@@ -1,8 +1,7 @@
 import "server-only";
 
 import { cookies } from "next/headers";
-import type { JWTPayload } from "jose";
-import { base64url, EncryptJWT, jwtDecrypt } from "jose";
+import { base64url, EncryptJWT, jwtDecrypt, type JWTPayload } from "jose";
 
 /************************************************
  *
@@ -72,35 +71,6 @@ export async function createUserSession(
     });
   } catch (error) {
     throw new Error("Failed to create user session.");
-  }
-}
-
-/************************************************
- *
- * Get user session
- *
- ************************************************/
-
-type User = {
-  email: string;
-  role: string;
-  annualAccessStatus: boolean;
-  lifetimeAccessStatus: boolean;
-};
-
-export async function getUserSession(): Promise<{ user: User | null }> {
-  try {
-    const cookieStore = await cookies();
-    const sessionCookie = cookieStore.get("user-session");
-
-    if (!sessionCookie) {
-      return { user: null };
-    }
-
-    const user = await decrypt<User>(sessionCookie.value);
-    return { user };
-  } catch (error) {
-    return { user: null };
   }
 }
 

@@ -5,6 +5,11 @@ export class EmailVerificationSessionNotFoundError extends Schema.TaggedError<Em
   {},
 ) {}
 
+export class PasswordResetSessionNotFoundError extends Schema.TaggedError<PasswordResetSessionNotFoundError>()(
+  "PasswordResetSessionNotFoundError",
+  {},
+) {}
+
 export class TokenMismatchError extends Schema.TaggedError<TokenMismatchError>()(
   "TokenMismatchError",
   {},

@@ -1,11 +1,7 @@
 import { HttpServerRequest, HttpServerResponse } from "@effect/platform";
-import { Config, Effect, Option } from "effect";
+import { Config, Effect } from "effect";
 
-import {
-  EmailVerificationSessionNotFoundError,
-  TokenMismatchError,
-  UserCreationError,
-} from "@/lib/api/auth/errors";
+import { UserCreationError } from "@/lib/api/auth/errors";
 import { assignUserRole } from "@/lib/assign-user-role";
 import { timingSafeCompare } from "@/lib/auth/credentials/timing-safe-compare";
 import { createUser } from "@/lib/create-user";
@@ -20,23 +16,12 @@ export const verifyEmailHandler = ({
   request: HttpServerRequest.HttpServerRequest;
 }) => {
   const program = Effect.gen(function* () {
-    const emailVerificationSessionOption = yield* Effect.option(
-      getEmailVerificationSession(),
-    );
+    const emailVerificationSession = yield* getEmailVerificationSession();
 
-    const emailVerificationSession = Option.getOrNull(
-      emailVerificationSessionOption,
-    );
-
-    if (!emailVerificationSession) {
-      return yield* Effect.fail(new EmailVerificationSessionNotFoundError());
-    }
-
-    if (!timingSafeCompare(urlParams.token, emailVerificationSession.token)) {
-      return yield* Effect.fail(new TokenMismatchError());
-    }
+    yield* timingSafeCompare(urlParams.token, emailVerificationSession.token);
 
     const role = assignUserRole(emailVerificationSession.email);
+    
     yield* Effect.tryPromise({
       try: () =>
         createUser(

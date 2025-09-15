@@ -11,8 +11,8 @@ const AuthGroupLive = HttpApiBuilder.group(PodwiseApi, "auth", (handlers) =>
   handlers
     .handle("getUserSession", () => getUserSessionHandler)
     .handle("verifyEmail", (req) => verifyEmailHandler(req))
-    .handle("forgotPassword", () => forgotPasswordHandler)
-    .handle("verifyPasswordReset", () => verifyPasswordResetHandler),
+    .handle("forgotPassword", (req) => forgotPasswordHandler(req))
+    .handle("verifyPasswordReset", (req) => verifyPasswordResetHandler(req)),
 );
 
 export const PodwiseApiLive = HttpApiBuilder.api(PodwiseApi).pipe(

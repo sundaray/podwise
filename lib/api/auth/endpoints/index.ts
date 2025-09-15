@@ -7,11 +7,10 @@ import {
   UserCreationError,
 } from "@/lib/api/auth/errors";
 
-export const VerifyEmailError = Schema.Union(
-  EmailVerificationSessionNotFoundError,
-  TokenMismatchError,
-  UserCreationError,
-);
+/**************************************
+ * getUserSession
+ *************************************/
+
 const UserSchema = Schema.Struct({
   email: Schema.String,
   role: Schema.String,
@@ -21,14 +20,6 @@ const SessionResponseSchema = Schema.Struct({
   user: Schema.NullOr(UserSchema),
 });
 
-const ForgotPasswordPayload = Schema.Struct({
-  email: Schema.String,
-});
-
-/**************************************
- * getUserSession
- *************************************/
-
 export const getUserSessionEndpoint = HttpApiEndpoint.get(
   "getUserSession",
   "/auth/session",
@@ -37,6 +28,12 @@ export const getUserSessionEndpoint = HttpApiEndpoint.get(
 /**************************************
  * verifyEmail
  *************************************/
+
+export const VerifyEmailError = Schema.Union(
+  EmailVerificationSessionNotFoundError,
+  TokenMismatchError,
+  UserCreationError,
+);
 
 export const verifyEmailEndpoint = HttpApiEndpoint.get(
   "verifyEmail",
@@ -49,6 +46,10 @@ export const verifyEmailEndpoint = HttpApiEndpoint.get(
 /**************************************
  * forgotPassword
  *************************************/
+
+const ForgotPasswordPayload = Schema.Struct({
+  email: Schema.String,
+});
 
 const forgotPasswordEndpoint = HttpApiEndpoint.post(
   "forgotPassword",

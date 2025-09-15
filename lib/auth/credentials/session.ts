@@ -1,8 +1,7 @@
 import "server-only";
 
 import { cookies } from "next/headers";
-import type { JWTPayload } from "jose";
-import { base64url, EncryptJWT, jwtDecrypt } from "jose";
+import { base64url, EncryptJWT, jwtDecrypt, type JWTPayload } from "jose";
 
 /************************************************
  *
@@ -76,62 +75,6 @@ export async function doesEmailVerificationSessionExist(): Promise<boolean> {
 
 /************************************************
  *
- * Decrypt JWT
- *
- ************************************************/
-
-export async function decrypt<T extends JWTPayload>(jwt: string): Promise<T> {
-  try {
-    const { payload } = await jwtDecrypt(jwt, secret);
-    return payload as T;
-  } catch (error) {
-    throw new Error("Failed to decrypt JWT.");
-  }
-}
-
-/************************************************
- *
- * Get the email verification session payload
- *
- ************************************************/
-type EmailVerificationSession = {
-  token: string;
-  email: string;
-  hashedPassword: string;
-};
-
-export async function getEmailVerificationSession(): Promise<EmailVerificationSession> {
-  try {
-    const cookieStore = await cookies();
-    const sessionCookie = cookieStore.get("email-verification-session");
-
-    if (!sessionCookie) {
-      throw new Error("Failed to get email verification session");
-    }
-
-    return await decrypt<EmailVerificationSession>(sessionCookie.value);
-  } catch (error) {
-    throw Error("Failed to get email verification session payload");
-  }
-}
-
-/************************************************
- *
- * Delete the email verification session
- *
- ************************************************/
-
-export async function deleteEmailVerificationSession() {
-  try {
-    const cookieStore = await cookies();
-    cookieStore.delete("email-verification-session");
-  } catch (error) {
-    throw Error("Failed to delete email verification session.");
-  }
-}
-
-/************************************************
- *
  * Create password reset session
  *
  ************************************************/
@@ -183,21 +126,6 @@ type PasswordResetSession = {
   email: string;
   token: string;
 };
-
-export async function getPasswordResetSession(): Promise<PasswordResetSession> {
-  try {
-    const cookieStore = await cookies();
-    const sessionCookie = cookieStore.get("password-reset-session");
-
-    if (!sessionCookie) {
-      throw new Error("Failed to get password reset session");
-    }
-
-    return await decrypt<PasswordResetSession>(sessionCookie.value);
-  } catch (error) {
-    throw Error("Failed to get password reset session");
-  }
-}
 
 /************************************************
  *
